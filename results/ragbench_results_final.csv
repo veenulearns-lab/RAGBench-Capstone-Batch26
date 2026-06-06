@@ -1,0 +1,247 @@
+idx,question,our_relevance,our_utilization,our_completeness,our_adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence
+0,Which viruses may not cause prolonged inflammation due to strong induction of antiviral clearance?,0.2353,0.1176,0.5,0,0.4117647058823529,0.1764705882352941,0.4285714285714285,0
+1,When was the first case of COVID-19 identified?,0.1154,0.0385,0.3333,1,0.2692307692307692,0.0769230769230769,0.2857142857142857,1
+2,How many antigens could be detected by Liew's multiplex ELISA test?,0.0625,0.0625,1.0,1,0.125,0.0625,0.5,1
+3,What is the structure of Hantaan virus?,0.25,0.05,0.2,0,0.3,0.3,1.0,1
+4,How many people did SARS-CoV infect?,0.6667,0.0667,0.1,1,0.0666666666666666,0.0666666666666666,1.0,1
+5,What was the focus of the study?,0.3529,0.2941,0.8333,1,0.2941176470588235,0.1764705882352941,0.6,1
+6,What contributed to a large part of mammalian genomic sequence?,0.0,0.0,0.0,1,0.0555555555555555,0.0555555555555555,1.0,1
+7,What is severe MARS noted for?,0.4545,0.0,0.0,1,0.3636363636363636,0.0454545454545454,0.125,1
+8,What animal models exist for both the asymptomatic carriage of PUUV and SNV?,0.2105,0.0526,0.25,0,0.1578947368421052,0.0526315789473684,0.3333333333333333,1
+9,What does Clade A contain?,0.0,0.0,0.0,1,1.0,0.0416666666666666,0.0416666666666666,1
+10,What is  an example of anti-viral defense in bats?,0.25,0.2,0.8,1,0.35,0.1,0.2857142857142857,1
+11,What could be novel candidates as potent inhibitors of papain like cysteine proteases in resistant m,0.5556,0.1111,0.2,1,0.3888888888888889,0.2222222222222222,0.5714285714285714,1
+12,What are exhibited in the two phases?,0.2667,0.0667,0.25,1,0.1333333333333333,0.0666666666666666,0.5,1
+13,How was HFRS  first brought to the attention of western medicine ?,0.0526,0.0526,1.0,1,0.1052631578947368,0.0526315789473684,0.5,1
+14,What has been the application of phage display technology?,0.6842,0.1053,0.1538,0,0.2631578947368421,0.1578947368421052,0.6,1
+15,Are the modern day Influenza viruses related to the 1918 Spanish Influenza virus?,0.2,0.2,1.0,0,0.2,0.2,1.0,1
+16,In how many cases the symptoms at diagnosis were consistent with the case definition for acute respi,0.5294,0.0,0.0,0,0.1764705882352941,0.1176470588235294,0.6666666666666666,0
+17,Which may be an occupational group with significantly higher incidence of seropositivity to MERS-CoV,0.1765,0.1176,0.6667,0,0.0588235294117647,0.0588235294117647,1.0,1
+18,Is there an Influenza vaccine?,1.0,1.0,1.0,1,0.3333333333333333,0.3333333333333333,1.0,0
+19,What is a future potential of filamentous phage?,0.3,0.05,0.1667,1,0.1,0.1,1.0,1
+20,What is the treatment for MERS-COV?,0.4828,0.1379,0.2857,0,0.4137931034482758,0.3448275862068966,0.8333333333333334,1
+21,What does LAIV rely on?,0.1304,0.0435,0.3333,1,0.1304347826086956,0.0434782608695652,0.3333333333333333,1
+22,What percentage of population was affected?,0.3636,0.1818,0.5,0,0.1818181818181818,0.1818181818181818,1.0,1
+23,"Is oral swab for detecting 2019-nCOV infection, sufficient?",0.4737,0.2632,0.5556,0,0.4210526315789473,0.1578947368421052,0.375,1
+24,How many people have persistent hepatitis C virus?,0.4706,0.0588,0.125,0,0.2352941176470588,0.1176470588235294,0.5,0
+25,What was the main finding in the study?,0.3077,0.2308,0.75,1,0.2307692307692307,0.1538461538461538,0.6666666666666666,1
+26,What CNS functions are changed by mutations in the KATNAL1 gene?,0.5,0.3889,0.7778,1,0.4444444444444444,0.4444444444444444,1.0,1
+27,What statistical tests were used to compare categorical variables?,0.1905,0.1905,1.0,0,0.1904761904761904,0.1904761904761904,1.0,1
+28,What is this disease  characterized by ?,0.2778,0.1667,0.6,0,0.2222222222222222,0.0555555555555555,0.25,1
+29,How do these exact processes ultimately restrict viral infectivity?,0.4286,0.2381,0.5556,0,0.3809523809523809,0.3809523809523809,1.0,0
+30,What are the ages of the patients in this study?,0.5,0.3182,0.6364,0,0.2727272727272727,0.2272727272727272,0.8333333333333334,0
+31,What types of viruses can be diagnosed through serological testing?,0.5714,0.2143,0.375,1,0.2857142857142857,0.1428571428571428,0.5,1
+32,What was used to measure the performance of the NINA heaters?,0.1429,0.0476,0.3333,1,0.2857142857142857,0.0952380952380952,0.3333333333333333,1
+33,How does COVID19 get spread?,0.45,0.2,0.4444,0,0.4,0.25,0.625,1
+34,Why does the claim lack any scientific  basis?,0.625,0.375,0.6,1,0.625,0.625,1.0,1
+35,What is the likely period of under-reporting?,0.2143,0.0,0.0,1,0.3571428571428571,0.3571428571428571,1.0,0
+36,What conditions are considered lower respiratory tract infections?,0.4,0.3333,0.8333,1,0.4,0.2666666666666666,0.6666666666666666,1
+37,hen did Asian genotype emerge?,0.2857,0.0476,0.1667,0,0.2857142857142857,0.1428571428571428,0.5,1
+38,"What was the prevalence of Coronavirus OC 229 E/NL63 in clinical subjects in Ilorin, Nigeria?",0.25,0.05,0.2,1,0.2,0.05,0.25,1
+39,What is the  relation between the new2019-nCOV and the conserved orf8?,0.2,0.05,0.25,1,0.15,0.05,0.3333333333333333,1
+40,What is the effect of chronic airway inflammatory disease  in patients?,0.4444,0.1667,0.375,1,0.6666666666666666,0.2222222222222222,0.3333333333333333,1
+41,What is neo-virology?,0.0455,0.0455,1.0,1,0.0454545454545454,0.0454545454545454,1.0,1
+42,What has this focus on mammalian defences and pathologies sidelined?,0.4286,0.0,0.0,1,0.4285714285714285,0.4285714285714285,1.0,1
+43,How do some respiratory viruses spread?,0.6316,0.5789,0.9167,0,0.5263157894736842,0.4210526315789473,0.8,1
+44,What's the recommended procedure to disinfect at CT scanner after a COVID-19 exposure?,0.5,0.25,0.5,0,0.5,0.5,1.0,1
+45,What is a lockdown?,1.0,0.2,0.2,0,0.2,0.2,1.0,0
+46,What genotype causes truncation of the IFITM3 protein?,0.4737,0.1053,0.2222,0,0.2105263157894736,0.2105263157894736,1.0,0
+47,What is the conclusion of this study?,0.3636,0.1818,0.5,1,0.2727272727272727,0.1818181818181818,0.6666666666666666,1
+48,Among whom are the coronaviruses distributed?,0.3636,0.0455,0.125,1,0.0909090909090909,0.0454545454545454,0.5,1
+49,What is the transmission of MERS-CoV is defined as?,0.125,0.0625,0.5,1,0.3125,0.0625,0.2,1
+50,What animals do gamma and delta coronavirus mainly infect?,0.087,0.0435,0.5,1,0.0434782608695652,0.0434782608695652,1.0,1
+51,What intestinal factors may reduce the effectiveness of orally-administered immunizations?,0.2632,0.1579,0.0,0,0.4210526315789473,0.2105263157894736,0.5,0
+52,Which Western European country is estimated to have the lowest attack rate?,0.4444,0.1111,0.25,1,0.3333333333333333,0.2222222222222222,0.6666666666666666,1
+53,Is there any evidence that MERS-CoV is a virus of pandemic concern?,0.1905,0.0476,0.25,1,0.3809523809523809,0.0476190476190476,0.125,1
+54,What is the Hepatitis C virus?,0.1579,0.1053,0.6667,1,0.8421052631578947,0.4736842105263157,0.5625,1
+55,How can present systems of surveillance be used?,0.55,0.2,0.3636,0,0.4,0.25,0.625,1
+56,What will the review focus on?,0.4375,0.0625,0.1429,0,0.75,0.4375,0.5833333333333334,1
+57,What are the most common methods of inhaled delivery of medications?,0.1333,0.1333,1.0,1,0.3333333333333333,0.0666666666666666,0.2,1
+58,"What methods exist for detecting multiple antigens simultaneously in a one-sample, laboratory test?",0.4667,0.2667,0.5714,0,0.4,0.4,1.0,1
+59,What was the case fatality rate?,0.2778,0.2222,0.8,0,0.2777777777777778,0.2222222222222222,0.8,1
+60,What makes phage display technology useful for other applications?,0.625,0.125,0.2,1,0.75,0.375,0.5,1
+61,"How many people were affected as of Feb. 10, 2020?",0.0,0.0,0.0,1,0.0,0.0,1.0,1
+62,What are examples of proinflammatory cytokines?,0.3929,0.3571,0.9091,0,0.3571428571428571,0.2857142857142857,0.8,0
+63,Who is at greater risk of dying from COVID19?,0.5,0.25,0.5,0,0.375,0.375,1.0,0
+64,What factors make bacterial and viral co-infections so lethal?,0.4167,0.25,0.6,0,0.375,0.1666666666666666,0.4444444444444444,1
+65,How was the contaminated area connected to the CT room and other facilities?,0.0,0.0,0.0,1,0.125,0.0,0.0,1
+66,What is the basic reproduction number (R 0)?,0.3889,0.0556,0.1429,1,0.5,0.4444444444444444,0.8888888888888888,1
+67,What causes Q fever?,0.9259,0.5926,0.64,0,0.1481481481481481,0.037037037037037,0.25,1
+68,Which is the major surface and attachment glycoprotein on influenza virus?,0.5,0.1818,0.3636,1,0.1818181818181818,0.1818181818181818,1.0,1
+69,What happens after  host infection?,0.2273,0.1364,0.6,0,0.2272727272727272,0.0909090909090909,0.4,1
+70,Why  have bats received attention in recent years?,0.5909,0.1818,0.3077,0,0.4090909090909091,0.2727272727272727,0.6666666666666666,1
+71,What is the result of all species tests of phage particles?,0.1818,0.1818,0.75,0,0.0909090909090909,0.0909090909090909,1.0,1
+72,What is the transmission of MERS-CoV is defined as?,0.1875,0.0625,0.3333,1,0.25,0.0625,0.25,1
+73,How many genotypes of CHIKV have been isilated?,0.1429,0.1429,1.0,1,0.0952380952380952,0.0952380952380952,1.0,1
+74,What is the added protection of NDV vector?,0.0455,0.0455,1.0,1,0.1363636363636363,0.0909090909090909,0.6666666666666666,1
+75,"How may this ""Achilles Heel"" be safely targeted?",0.2,0.0,0.0,0,0.2666666666666666,0.2666666666666666,1.0,1
+76,What are IFV infection shown to do?,0.3889,0.2222,0.0,1,0.2222222222222222,0.2222222222222222,1.0,1
+77,What was demonstrated in deriving the equation for R 0?,0.5,0.125,0.25,1,0.3125,0.0625,0.2,0
+78,What is the 5-year survival rate for colorectal cancer patients?,0.0,0.0,0.0,1,0.0,0.0,1.0,1
+79,What is the Newcastle disease virus?,0.6364,0.0909,0.1429,1,0.4545454545454545,0.3636363636363636,0.8,1
+80,What do the bats do instead?,0.5,0.375,0.75,0,0.5,0.375,0.75,1
+81,What  did the first report on adenovirus as a vector demonstrate?,0.3846,0.1538,0.4,1,0.2307692307692307,0.1538461538461538,0.6666666666666666,0
+82,What is France's estimated mean percentage [95% credible interval] of total population infected as o,1.0,0.0,0.0,0,0.25,0.25,1.0,0
+83,How many COVID deaths occurred in Chinese mainland as of March 11th?,0.5625,0.0,0.0,1,0.125,0.0625,0.5,1
+84,What is Reunion Island?,0.2222,0.1111,0.5,1,0.1666666666666666,0.1666666666666666,1.0,1
+85,How do the S1 subunits compare with that of SARS-likeCOV and human SARS-COV?,0.2,0.04,0.2,1,0.12,0.04,0.3333333333333333,1
+86,What percentage of newborns were infected from their mother?,0.4783,0.4783,1.0,1,0.2608695652173913,0.0434782608695652,0.1666666666666666,0
+87,How does MERS-CoV compare with SARS-CoV?,0.5,0.5,1.0,0,0.6111111111111112,0.5555555555555556,0.9090909090909092,1
+88,What has increased hand washing?,0.3158,0.1579,0.3333,1,0.4736842105263157,0.1578947368421052,0.3333333333333333,1
+89,What structural proteins are coded by Rotavirus?,0.4286,0.1429,0.3333,0,0.3809523809523809,0.1428571428571428,0.375,0
+90,What is Koch's third postulate?,0.3636,0.0,0.0,0,0.2727272727272727,0.0909090909090909,0.3333333333333333,1
+91,What followup is needed to confirm the results of the current study?,0.5455,0.5455,1.0,1,0.0909090909090909,0.0909090909090909,1.0,1
+92,What was the read coverage for the E-30 genome in this study?,0.1765,0.0588,0.3333,1,0.1176470588235294,0.0588235294117647,0.5,1
+93,"As an RNA-binding protein that engages the hairpin termini of the genomic segments, what does the N-",0.2727,0.0455,0.1667,1,0.0909090909090909,0.0909090909090909,1.0,1
+94,For how long were the cells infected before analysis?,0.1818,0.0455,0.0,0,0.2727272727272727,0.0909090909090909,0.3333333333333333,0
+95,What is the size of a flavivirus?,0.1579,0.1579,1.0,1,0.1578947368421052,0.1578947368421052,1.0,1
+96,What does the study suggest would make healthcare workers more willing to care for patients during a,0.2727,0.1364,0.5,0,0.4090909090909091,0.2272727272727272,0.5555555555555556,1
+97,"In non-flying mammals, what what would be elicited by IFN expression upon viral infection?",0.1364,0.0455,0.3333,1,0.0454545454545454,0.0454545454545454,1.0,1
+98,What has been correlated with the pathogenicity of the H5N1 infection?,0.4375,0.3125,0.7143,0,0.375,0.125,0.3333333333333333,0
+99,What is the effect of host immune response to the delivery vector on the efficacy of vaccination?,0.4118,0.4118,1.0,0,0.5882352941176471,0.4705882352941176,0.7,1
+100,What are both IFV and RSV infections shown to do?,0.5238,0.619,0.9091,0,0.4761904761904761,0.2857142857142857,0.6,1
+101,What compartments were the host animals divided into?,0.2778,0.2222,0.8,1,0.1111111111111111,0.1666666666666666,1.0,1
+102,What was the range of genomic sequencing depths?,0.2727,0.0455,0.1667,0,0.0909090909090909,0.0909090909090909,1.0,1
+103,Approximately how many people died during the 1918-1919 influenza pandemic?,0.1579,0.0526,0.3333,1,0.1578947368421052,0.0526315789473684,0.3333333333333333,0
+104,Why did the T20/N36 complex not show a typical alpha helical conformation?,0.0,0.0,0.0,0,0.0526315789473684,0.0526315789473684,1.0,0
+105,What is Bacillus subtilis?,0.2273,0.1818,0.8,0,0.4090909090909091,0.1818181818181818,0.3333333333333333,0
+106,What was the purpose of the search?,0.6,0.6,1.0,1,0.3,0.3,1.0,1
+107,The accumulation of what molecule hinders phagocytic activity in T cells?,0.3333,0.0,0.0,0,0.4666666666666667,0.0666666666666666,0.1428571428571428,0
+108,What was the primary threatening clinical finding in patients infected with SARS-CoV and MERS-CoV?,0.2593,0.0,0.0,0,0.1111111111111111,0.074074074074074,0.6666666666666666,0
+109,What was the performance of the vaccine candidates?,0.5333,0.4,0.75,0,0.4,0.3333333333333333,0.8333333333333334,1
+110,What  are the existing practices in detecting  genetic material of viruses?,0.3478,0.1739,0.5,0,0.2608695652173913,0.0869565217391304,0.3333333333333333,0
+111,What vaccinia vectors were created to address safety concerns?,0.4706,0.1765,0.375,1,0.3529411764705882,0.2352941176470588,0.6666666666666666,1
+112,What does ANFIS offer?,0.2143,0.0357,0.1667,1,0.1071428571428571,0.0714285714285714,0.6666666666666666,1
+113,What complications are associated with CHIKV?,0.4,0.0667,0.1667,0,0.2,0.2,1.0,1
+114,What  are the attractive features of the PIV5 vector?,0.1667,0.125,0.5,0,0.4583333333333333,0.2083333333333333,0.4545454545454545,1
+115,Which Human Coronavirus showed species specific clinical characteristics of its infection?,0.9,0.4,0.4444,1,0.4,0.1,0.25,1
+116,When was the Email  published?,0.3,0.3,1.0,1,0.2,0.2,1.0,1
+117,How does the presence of DC-SIGNR affect the MTCT of HIV-1?,0.3333,0.2,0.6,0,0.4,0.2,0.5,1
+118,What are MicroRNAs(miRNA)?,0.1739,0.1304,0.75,0,0.391304347826087,0.217391304347826,0.5555555555555556,1
+119,Which patients were excluded from the study?,0.5385,0.4615,0.8571,0,0.1538461538461538,0.1538461538461538,1.0,0
+120,Which city has had has had more MERS cases than any other region of the KSA ?,0.3333,0.1111,0.3333,0,0.0555555555555555,0.0555555555555555,1.0,1
+121,What is carageenan?,0.1579,0.0526,0.3333,1,0.2631578947368421,0.1578947368421052,0.6,1
+122,What is a Hantavirus?,2.05,0.05,0.0244,0,0.65,0.25,0.3846153846153846,1
+123,What have the studies on NP shown for the protection against influenza challege?,0.2609,0.3043,1.0,0,0.3043478260869565,0.217391304347826,0.7142857142857143,1
+124,How many known species of Rotavirus exist?,0.1739,0.087,0.5,1,0.0869565217391304,0.0869565217391304,1.0,1
+125,What is archazolid?,0.7143,0.2381,0.3333,0,0.6190476190476191,0.4285714285714285,0.6923076923076923,1
+126,What can RNA sequencing be used to monitor?,0.3333,0.2381,0.7143,0,0.3809523809523809,0.0952380952380952,0.25,1
+127,When is SSA generally employed?,0.4,0.4,1.0,1,0.4,0.05,0.125,1
+128,What are the most common DNA-based techniques for detecting viruses?,0.5882,0.5294,0.9,0,0.5294117647058824,0.5294117647058824,1.0,0
+129,What protein is in the critical path of immunity and cytokine expression?,0.7,0.15,0.2143,0,0.3,0.2,0.6666666666666666,1
+130,What is the mortality rate of Venezuelan equine encephalitis virus in adults?,0.1818,0.0455,0.25,0,0.0909090909090909,0.0454545454545454,0.5,1
+131,What organ produces hepcidin?,0.2308,0.0769,0.3333,1,0.1538461538461538,0.1538461538461538,1.0,1
+132,How has most of the analysis of MERS-CoV genetics  been performed?,0.1905,0.0476,0.25,1,0.2857142857142857,0.0476190476190476,0.1666666666666666,1
+133,What is the significance of this study?,0.3636,0.1818,0.5,0,0.1818181818181818,0.2727272727272727,1.0,1
+134,"What did the comparison of  the FPASSA-ANFIS model with several existing models, show?",0.1304,0.0435,0.3333,1,0.1739130434782608,0.0434782608695652,0.25,1
+135,Patients from how many medical centers were studied?,0.1538,0.1538,1.0,1,0.1923076923076923,0.1153846153846153,0.6,0
+136,What does the SARS-CoV protein activate?,0.45,0.35,0.7778,1,0.25,0.15,0.6,1
+137,How many new tuberculosis cases are there each year worldwide?,0.08,0.04,0.5,1,0.04,0.04,1.0,1
+138,How does NLRP3 detect RNA viral infection?,0.4286,0.0476,0.1111,1,0.4285714285714285,0.3333333333333333,0.6666666666666666,1
+139,How many controls were used in the second case study?,0.3,0.0,0.0,0,0.55,0.0,0.0,1
+140,What has been demonstrated to  be  effective for prevention?,0.4667,0.4,0.8571,1,0.5333333333333333,0.4666666666666667,0.875,1
+141,Which are the most abundant biological entities on Earth?,0.3913,0.1304,0.3333,0,0.1739130434782608,0.1304347826086956,0.75,1
+142,When were the fecal samples collected?,0.2381,0.2381,1.0,0,0.238095238095238,0.1904761904761904,0.8,1
+143,What is the structure of the Arenavirus?,0.28,0.28,1.0,0,0.32,0.2,0.625,1
+144,When does  generally MERS infection does not trigger a detectable immune response?,0.2353,0.0588,0.25,1,0.1176470588235294,0.1176470588235294,1.0,1
+145,What are potential vaccines based on?,0.5455,0.4545,0.8333,0,0.1818181818181818,0.0454545454545454,0.25,1
+146,What would  aid accurate calculation of a case fatality ratio?,0.25,0.3333,1.0,0,0.5833333333333334,0.3333333333333333,0.5714285714285714,1
+147,What were the differences in immune responses?,0.2353,0.2353,1.0,0,0.4705882352941176,0.2352941176470588,0.5,1
+148,What factors determine an effective mucosal immune response?,0.5,0.4444,0.7778,0,0.4444444444444444,0.3333333333333333,0.75,1
+149,How long is the protein Alpha-tubulin?,0.0,0.0625,0.0,0,0.0,0.0,1.0,1
+150,What is the relationship between proximity ofwater bodies to agricultural lands and spread of H5N1 l,0.4,0.2667,0.6667,0,0.2666666666666666,0.3333333333333333,1.0,0
+151,What are some alphavirus vectors that have been developed?,0.1364,0.0909,0.6667,0,0.1818181818181818,0.0909090909090909,0.5,1
+152,How were the radiology department areas divided?,0.3333,0.3333,1.0,0,0.3333333333333333,0.2222222222222222,0.6666666666666666,0
+153,What does hantavirus human disease  manifest as?,0.3684,0.0526,0.1429,0,0.1578947368421052,0.0526315789473684,0.3333333333333333,1
+154,What  will maximize the effectiveness of interventions?,0.3684,0.3684,1.0,0,0.1578947368421052,0.1052631578947368,0.6666666666666666,1
+155,What was the effect of phage displaying  peptides on tumor?,0.1154,0.0769,0.6667,0,0.4615384615384615,0.0384615384615384,0.0833333333333333,1
+156,What is  the result of rAd5 trials?,0.0,0.0476,0.0,1,0.0,0.4285714285714285,1.0,1
+157,Why is NTCP thought to not be sufficient for HBV infection?,0.1579,0.0526,0.3333,1,0.2105263157894736,0.1052631578947368,0.5,1
+158,How were the assays selected ?,0.9333,0.6,0.6429,0,0.5333333333333333,0.4,0.75,1
+159,What is the structure of the CD40 Ligand?,0.2222,0.1111,0.5,1,0.3333333333333333,0.1666666666666666,0.5,1
+160,What are the symptoms of H5N1 infection in humans?,0.4667,0.4667,1.0,0,0.36666666666666664,0.3,0.8181818181818182,1
+161,What cells are infected by the PED virus?,0.087,0.087,1.0,0,0.5217391304347826,0.0,0.0,0
+162,How can sustained immunity be generated?,0.5,0.3636,0.6364,0,0.5,0.36363636363636365,0.7272727272727273,1
+163,What is Denmark's estimated mean percentage [95% credible interval] of total population infected as ,0.7143,0.1429,0.2,0,0.14285714285714285,0.14285714285714285,1.0,1
+164,"In addition to oral swabs, which tests detected the presence of 2019-nCOV virus?",0.2778,0.2778,1.0,0,0.3333333333333333,0.2777777777777778,0.8333333333333334,1
+165,Which virus samples  from the 1918 swine flu pandemic have been identified?,0.4375,0.0625,0.1429,1,0.3125,0.1875,0.6,1
+166,What  may the destruction of the epithelial barrier  cause?,0.4286,0.381,0.7778,0,0.23809523809523808,0.23809523809523808,1.0,0
+167,What medications have shown good promise to in vivo delivery via dry powder inhalers?,0.1538,0.0769,0.5,0,0.19230769230769232,0.038461538461538464,0.2,1
+168,When did WHO declare a pandemic of pH1N1/2009v influenza?,0.1875,0.0625,0.3333,1,0.125,0.125,1.0,1
+169,What is Enfuvirtide?,0.1739,0.1304,0.75,1,0.2608695652173913,0.043478260869565216,0.16666666666666666,1
+170,How can the 2019-nCov spread?,0.4167,0.3333,0.8,1,0.4166666666666667,0.3333333333333333,0.8,1
+171,What reduces the antimicrobial activities of alveolar macrophages?,0.3333,0.1667,0.3333,0,0.2222222222222222,0.1111111111111111,0.5,1
+172,Who is at risk when health workers fail to wash their hands?,0.2667,0.1333,0.5,0,0.2,0.13333333333333333,0.6666666666666666,1
+173,Which is the primary contact/infection site of most respiratory viruses?,0.2105,0.3158,1.0,0,0.3684210526315789,0.3684210526315789,1.0,1
+174,What do individual studies report on viral  shedding?,0.3684,0.1579,0.4286,0,0.42105263157894735,0.15789473684210525,0.375,1
+175,What happened to the report with initial claims?,0.8182,0.0909,0.1111,1,0.18181818181818182,0.09090909090909091,0.5,1
+176,What were the VRPs derived from VEE developed for?,0.0769,0.0769,1.0,1,0.038461538461538464,0.038461538461538464,1.0,1
+177,How many control samples were used in this study?,0.125,0.125,0.6667,0,0.125,0.125,1.0,0
+178,What is the advantage of AAV vector?,0.5417,0.625,1.0,0,0.4166666666666667,0.25,0.6,1
+179,How can Bacilius subtilis be used as an oral vaccine?,0.4167,0.2083,0.5,0,0.5833333333333334,0.5416666666666666,0.9285714285714286,1
+180,What is the the primary means for diagnosing the new virus strain?,0.5625,0.1875,0.3333,1,0.1875,0.125,0.6666666666666666,1
+181,What is the advantage of virus vectored vaccines?,0.6,0.5,0.8333,1,0.4,0.15,0.375,1
+182,What have confocal microscopy and biochemical-inhibitor studies shown on what N tracks?,0.5625,0.375,0.6667,0,0.375,0.3125,0.8333333333333334,1
+183,What was the most common virus detected in community members in this sample?,0.0769,0.0385,0.5,1,0.15384615384615385,0.07692307692307693,0.5,1
+184,"What was a characteristic of  SARS-CoV and MERS-CoV, specimens collected from the lower respiratory ",0.1304,0.1304,0.6667,0,0.17391304347826086,0.043478260869565216,0.25,1
+185,What did this mutation allow?,0.0833,0.0833,1.0,0,0.16666666666666666,0.08333333333333333,0.5,1
+186,What is the observed benefit of the molecules?,0.3889,0.4444,1.0,0,0.2222222222222222,0.2222222222222222,1.0,1
+187,What was the difference between community and clinic cases of acute respiratory infections?,0.24,0.16,0.6667,0,0.4,0.16,0.4,1
+188,One way to understand the impact of interventions?,0.2857,0.1429,0.5,0,0.2857142857142857,0.2857142857142857,1.0,1
+189,What are the key factors preventing the elimination of HCV infection in some patients?,0.4,0.35,0.875,0,0.25,0.2,0.8,1
+190,What analysis functions may be useful?,0.5,0.25,0.5,0,0.4,0.3,0.75,0
+191,How were  the spread of GFP-expressing virus-infected cells tracked?,0.2632,0.2105,0.8,0,0.21052631578947367,0.21052631578947367,1.0,1
+192,What changes do viruses make to be unrecognizable to previously neutralizing antibodies?,0.2105,0.1579,0.75,0,0.21052631578947367,0.10526315789473684,0.5,1
+193,What do ANDV-infected hamsters fitted with physiologic monitoring devices exhibit?,0.6429,0.0714,0.1111,1,0.07142857142857142,0.07142857142857142,1.0,1
+194,What is the relationship between aquaculture and spread of H5N1 like diseases?,0.25,0.125,0.25,1,0.25,0.25,1.0,1
+195,Why are E Coli and lactic acid are safe choices as delivery vectors for vaccines?,0.3,0.3,0.8333,0,0.45,0.25,0.5555555555555556,1
+196,In what direction does the Vesicular stomatitis virus spread through the nervous system?,0.65,0.1,0.1538,1,0.2,0.2,1.0,1
+197,What is another  case in point?,0.3333,0.5833,0.75,0,0.25,0.16666666666666666,0.6666666666666666,1
+198,Why might we underestimate the spread of COVID19?,0.6667,0.3333,0.5,0,0.5833333333333334,0.3333333333333333,0.5714285714285714,1
+199,What was the hairpin morphology first described for?,0.5556,0.1111,0.2,0,0.2777777777777778,0.1111111111111111,0.4,1
+200,"What past research has been done on severe, single-wave pandemics?",0.4,0.4,1.0,0,0.26666666666666666,0.26666666666666666,1.0,1
+201,How many times more likely was an infection found in patients over 85 years old?,0.1818,0.0455,0.25,1,0.09090909090909091,0.045454545454545456,0.5,1
+202,What conditions are caused by Staphylococcus aureus?,0.4762,0.381,0.8,0,0.23809523809523808,0.23809523809523808,1.0,1
+203,What explains the pain associated with CHIKV?,0.2632,0.2105,0.8,0,0.3157894736842105,0.2631578947368421,0.6666666666666666,0
+204,What is an effective public health hygiene?,0.4667,0.5333,1.0,0,0.4666666666666667,0.2,0.42857142857142855,1
+205,What strains were included in  this study?,0.2222,0.2222,1.0,0,0.2222222222222222,0.1111111111111111,0.5,1
+206,What was the most frequent coinfection?,0.0435,0.087,1.0,1,0.13043478260869565,0.043478260869565216,0.3333333333333333,1
+207,What has CRISPR/Cas antiviral immune system of prokaryotes been repurposed as?,0.0556,0.0556,1.0,1,0.2222222222222222,0.05555555555555555,0.25,1
+208,What is the result of increased eosinophilia?,0.3571,0.1429,0.4,0,0.35714285714285715,0.21428571428571427,0.6,1
+209,What is the presence of Ae.albopictus in North America?,0.3448,0.1724,0.5,0,0.10344827586206896,0.10344827586206896,1.0,1
+210,Why should future studies  be performed using metagenomics in addition to PCR analysis ?,0.4375,0.4375,1.0,0,0.625,0.3125,0.5,1
+211,Why is the Spanish Influenza virus the Mother of the modern influenza viruses?,0.4,0.4,1.0,0,0.4,0.4,1.0,1
+212,What preventative measure has been taken to decrease the incidence of diarrhea in children?,0.25,0.25,1.0,0,0.1875,0.125,0.6666666666666666,1
+213,How are Mammarenaviruses spread from rodents to humans?,0.2727,0.1818,0.6667,0,0.18181818181818182,0.18181818181818182,0.75,1
+214,How many reported viral pneumonia?,0.375,0.1875,0.5,0,0.125,0.125,1.0,1
+215,What is the mean time from onset of symptoms to dyspnea in human adenovirus type 55 (HAdV-55)?,0.1081,0.0811,0.75,1,0.05405405405405406,0.05405405405405406,1.0,1
+216,What   has prevented worldwide spread of MERS-COV?,0.2917,0.3333,0.8571,0,0.3333333333333333,0.3333333333333333,1.0,1
+217,What are the results of the study?,0.8571,1.0,1.0,0,0.42857142857142855,0.42857142857142855,1.0,0
+218,what will the investigation of external subdomain reveal?,0.0,0.0,0.0,0,0.25,0.25,1.0,1
+219,What happens when a recipient of a vaccine has immune response to the delivery vector?,0.5,0.35,0.6,0,0.7,0.2,0.2857142857142857,1
+220,When was HBoV1 first identified?,0.1765,0.0588,0.3333,1,0.058823529411764705,0.058823529411764705,1.0,1
+221,What are viroporins?,0.5,0.2222,0.4444,0,0.3333333333333333,0.2777777777777778,0.8333333333333334,1
+222,Was the 1918 swine flu virus novel to humans are was it derived from older viruses?,0.2778,0.2222,0.8,0,0.3333333333333333,0.1111111111111111,0.3333333333333333,1
+223,"What are associated with cancer, diabetes, inflammatory disease, and osteoporosis?",0.2941,0.2353,0.8,0,0.6470588235294118,0.11764705882352941,0.18181818181818182,0
+224,What assay played an important role?,0.1818,0.1364,0.75,0,0.18181818181818182,0.09090909090909091,0.5,1
+225,How many facilities believed they were adequately equipped to handle Ebla virus disease?,0.1176,0.0588,0.5,1,0.35294117647058826,0.058823529411764705,0.16666666666666666,1
+226,Why is it highly unlikely that RaTG13 CoV is the immediate source of SARS-CoV-2.,0.2105,0.0526,0.25,1,0.21052631578947367,0.10526315789473684,0.5,1
+227,What is the most common cause of viral gastroenteritis in children?,0.2632,0.1579,0.6,1,0.15789473684210525,0.15789473684210525,1.0,1
+228,What is HTNV?,0.2381,0.0952,0.4,1,0.19047619047619047,0.19047619047619047,1.0,1
+229,What percentage of these infections are identified?,0.4444,0.4444,1.0,0,0.4444444444444444,0.4444444444444444,1.0,1
+230,What is an example of this?,0.2222,0.0556,0.25,1,0.16666666666666666,0.1111111111111111,0.6666666666666666,1
+231,What is the conclusion of this report?,0.5,1.0,1.0,0,0.375,0.125,0.3333333333333333,1
+232,What are juvenile DCs more often positive for?,0.7895,0.0526,0.0667,1,0.05263157894736842,0.05263157894736842,1.0,1
+233,What is predicted these efforts on neo-virology will unlock?,0.3125,0.0625,0.2,1,0.25,0.0625,0.25,1
+234,What is the transmission of MERS-CoV is defined as?,0.1875,0.0625,0.3333,1,0.1875,0.0625,0.3333333333333333,1
+235,Precisely how does the virus transmit to humans?,0.4737,0.4211,0.8889,0,0.2631578947368421,0.21052631578947367,0.8,1
+236,Did the Spanish Influenza or Swine flu or the H1N1 virus disappear in humans for some time?,0.3,0.25,0.8333,0,0.15,0.1,0.6666666666666666,0
+237,What happens  during the replication process?,0.7778,0.3889,0.5,0,0.4444444444444444,0.5,1.0,1
+238,What does the  study show?,0.6316,0.4737,0.6667,0,0.631578947368421,0.47368421052631576,0.75,1
+239,What is the regularity of the virion major coat protein lattice useful for?,0.3684,0.3684,1.0,0,0.3157894736842105,0.10526315789473684,0.3333333333333333,1
+240,In vitro comparison of antiviral activity of Chloroquine(CQ) and Hydroxychloroquine(HCQ) against COV,0.3158,0.2105,0.3333,0,0.5789473684210527,0.10526315789473684,0.18181818181818182,1
+241,What is a conclusion of this report?,0.5,0.375,0.5,0,0.125,0.125,1.0,1
+242,What are the results of filamentous phage immunizations in mice?,0.3333,0.2222,0.3333,0,0.2222222222222222,0.2222222222222222,0.75,1
+243,What is marked in green?,0.2105,0.1579,0.75,0,0.10526315789473684,0.10526315789473684,1.0,1
+244,How can CCR5's effect in HIV-1 transmission be reduced?,0.5263,0.1053,0.1,0,0.21052631578947367,0.10526315789473684,0.5,0
+245,What followed the reverse transcription step in the analysis?,0.2381,0.1429,0.6,0,0.19047619047619047,0.14285714285714285,0.75,1
