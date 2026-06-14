@@ -16,3 +16,16 @@
 - Generator: llama-3.1-8b-instant
 - Judge LLM: llama-3.1-8b-instant (RAGBench paper prompt)
 - Date: June 2026
+
+
+## General Knowledge (hotpotqa) — 390 examples
+
+| Metric | Our Score | Paper GPT-3.5 |
+|--------|-----------|---------------|
+| Context Relevance RMSE | 0.1662 | 0.18 |
+| Context Utilization RMSE | 0.1618 | 0.11 |
+| Completeness RMSE | 0.7714 | N/A |
+| Adherence AUCROC | 0.6390 | 0.57 |
+
+- Dataset: RAGBench hotpotqa test split (full)
+- Same pipeline as Biomedical baseline
