@@ -29,3 +29,15 @@
 
 - Dataset: RAGBench hotpotqa test split (full)
 - Same pipeline as Biomedical baseline
+
+## Finance (finqa) — 195 examples
+
+| Metric | Our Score |
+|--------|-----------|
+| Context Relevance RMSE | 0.4212 |
+| Context Utilization RMSE | 0.1670 |
+| Completeness RMSE | 0.8314 |
+| Adherence AUCROC | 0.5929 |
+
+- Dataset: RAGBench finqa test split (subset)
+- Same pipeline as Biomedical baseline
