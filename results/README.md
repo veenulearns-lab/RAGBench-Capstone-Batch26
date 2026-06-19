@@ -41,3 +41,18 @@
 
 - Dataset: RAGBench finqa test split (subset)
 - Same pipeline as Biomedical baseline
+
+## Legal (cuad) — 195 examples
+
+| Metric | Our Score |
+|--------|-----------|
+| Context Relevance RMSE | 0.7353 |
+| Context Utilization RMSE | 0.5399 |
+| Completeness RMSE | 0.8130 |
+| Adherence AUCROC | 0.5220 |
+
+- Dataset: RAGBench cuad test split (subset)
+- Note: documents truncated to 2000 chars to avoid Groq API 413 token limit errors
+  (cuad legal contracts are significantly longer than other domains)
+- This is a key CP-2 finding: Legal domain needs proper clause-level chunking,
+  not truncation, to preserve full document context
