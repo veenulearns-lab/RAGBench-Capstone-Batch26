@@ -56,3 +56,37 @@
   (cuad legal contracts are significantly longer than other domains)
 - This is a key CP-2 finding: Legal domain needs proper clause-level chunking,
   not truncation, to preserve full document context
+
+## Customer Support (techqa) — 192 examples
+
+| Metric | Our Score |
+|--------|-----------|
+| Context Relevance RMSE | 0.3938 |
+| Context Utilization RMSE | 0.5420 |
+| Completeness RMSE | 0.6523 |
+| Adherence AUCROC | 0.5254 |
+
+- Dataset: RAGBench techqa test split (subset)
+- Documents truncated to 2000 chars (some technical manuals exceed token limit)
+
+---
+
+# CP-1 FINAL SUMMARY — All 5 Domains Complete
+
+| Domain | Examples | Relevance RMSE↓ | Utilization RMSE↓ | Completeness RMSE↓ | Adherence AUCROC↑ |
+|--------|----------|------------------|---------------------|----------------------|----------------------|
+| Biomedical (covidqa) | 246 | 0.2410 | 0.1627 | 0.4500 | 0.6446 |
+| General Knowledge (hotpotqa) | 390 | 0.1662 | 0.1618 | 0.7714 | 0.6390 |
+| Finance (finqa) | 195 | 0.4212 | 0.1670 | 0.8314 | 0.5929 |
+| Legal (cuad) | 195 | 0.7353 | 0.5399 | 0.8130 | 0.5220 |
+| Customer Support (techqa) | 192 | 0.3938 | 0.5420 | 0.6523 | 0.5254 |
+
+**Total examples evaluated: 1,218 across 5 domains**
+
+Paper reference (GPT-3.5 judge): Adherence AUCROC 0.57. We beat this on 2/5 domains
+(Biomedical, General Knowledge) using Llama 3.1 8B as Judge LLM.
+
+Key finding: Legal and Customer Support show higher RMSE due to document truncation
+(2000 char limit) needed to avoid Groq API 413 errors. This is a primary target for
+CP-2 — proper domain-specific chunking instead of truncation should significantly
+improve these scores.
