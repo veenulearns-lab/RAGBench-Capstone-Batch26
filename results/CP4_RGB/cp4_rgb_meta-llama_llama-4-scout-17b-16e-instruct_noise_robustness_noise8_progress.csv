@@ -1,0 +1,455 @@
+id,model,ability,noise_ratio,query,model_response,accuracy
+0,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the premiere of 'Carole King & James Taylor: Just Call Out My Name'?,"January 2, 2022, at 9:00pm ET/PT on CNN.",1
+1,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"The genre of the drama ""Good Sam"" is what?",Medical drama.,1
+2,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the 2022 Citrus Bowl?,Kentucky won the 2022 Citrus Bowl with a score of 20-17 over Iowa.,1
+3,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What position did Jason Semore hold at Valdosta State before returning to Georgia Tech?,Jason Semore was the defensive coordinator at Valdosta State before returning to Georgia Tech.,1
+4,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many vehicles did Tesla deliver in 2021?,"According to Document 5, Tesla delivered 936,172 vehicles in 2021.",1
+5,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which company acquired ShowBiz Cinemas?,EVO Entertainment Group acquired 100% of ShowBiz Cinemas.,1
+6,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where is the Super Bowl held in 2022?,"SoFi Stadium in Inglewood, California.",1
+7,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will Truth Social launch on iOS?,"February 21st, 2022.",1
+8,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What won best drama at 79th Golden Globes?,The Power of the Dog,1
+9,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much are GA Tech softball 2022 season tickets?,$100 per seat.,1
+10,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does the 2022 Olympic Winter Games end?,"The 2022 Winter Olympics, officially called the XXIV Olympic Winter Games, ended on February 20, 2022.",1
+11,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Spanish Super Cup 2022?,I can not answer the question because of the insufficient information in documents.,0
+12,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much is Microsoft acquiring Activision Blizzard for?,Microsoft is acquiring Activision Blizzard for $68.7 billion in an all-cash deal.,1
+13,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the price for a 30-second spot during the Super Bowl 2022?,"According to Document 4, in 2022, a 30-second commercial slot cost less than $7 million (the 2023 rate), but the exact price is not provided. However, Document 5 mentions that the last two Super Bowls (2020 and 2021) saw bids as high as $5.6 million.
+
+Document 4 also states that in 2023, the price for a 30-second spot is $7 million, and Document 5 mentions that this year's (2023) price is about a 20 percent increase from the last time NBC hosted the Super Bowl in 2018, but it does not give the price for 2022.
+
+However, Document 5 also states that:  ""The last two Super Bowls, hosted by Fox (2020) and CBS (2021) only saw bids as high as $5.6 million."" 
+No higher bound of 2022 price was found. But Document 4 stated a 2023 price. Comparing 2021 ($5.6 million) and 2023 ($7 million), and the related increase; we can still assume; Document 4 and 3 state 2023 price but Document 5 and related give $5.6 million for 2020 and 2021; no value from $5.6 million to $7 million; the average; Document 3; $7 million; documents 2022 related data void, but likely similar upper $6 million  5.6 between upper found; $6 million -  5.6 is .4; and 7- 5.6  is 1.4  $7 million; $5.6; and related to 6.28 ( a guess; found; likely; upper .4*2= .8+ 5.6 or $6.4 related 2022  estimate likely similar $6.5 found or NBC host  bid. so upper and get; in between )  I can not provide  the accurate number.
+
+
+ So my best possible guess based on information; ($6.5 from 2023 nbc) similar  $6.4 to  6.5; nbc host; cost NBC  $6.5 million; similar; 
+I can state : the closest and related or I have from Doc; likely; $ 6.5; Document  5: NBC host  $6.5; Upper $5.6 (202",1
+14,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the Sports Star of the Year Awards Show 2022?,"The 87th annual Seattle Sports Star of the Year Awards Show was held on May 26, 2022, at the Westin in Seattle, Wash.",1
+15,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who are the recipients of the 2022 Ivan Allen Jr. Prize for Social Courage?,"Ford Greene, Ralph Long Jr., late Lawrence Williams and Ronald Yancey.",1
+16,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the codename for Google's AR headset project?,Project Iris.,1
+17,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of Meta's AI supercomputer?,The AI Research SuperCluster (RSC).,1
+18,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will American students start taking digital SAT exams?,I can not answer the question because of the insufficient information in documents.,0
+19,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When do the Paralympic Winter Games 2022 start?,"The 2022 Winter Paralympics begin on March 4, 2022.",1
+20,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Super Bowl 2022 date,"Sunday, Feb. 13",1
+21,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the 2022 Nobel Prize for chemistry?,"K. Barry Sharpless, Carolyn R. Bertozzi, and Morten Meldal won the 2022 Nobel Prize in Chemistry for the development of click chemistry and bioorthogonal chemistry.",1
+22,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Super Bowl 2022?,The Los Angeles Rams are Super Bowl LVI champions after a 23-20 win over the Cincinnati Bengals on Sunday at SoFi Stadium.,1
+23,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won women's 500m speed skating at the 2022 Winter Olympics?,"Erin Jackson of the United States. She became the Olympic champion, winning her first Olympic medal, and was also the first female Black athlete to medal in speed skating.",1
+24,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was Lost Ark game release on Steam?,"Feb 11. 
+
+This information was found in Document 3: Lost Ark on Steam Title: Lost Ark ; Genre: Action, Adventure, Massively Multiplayer, RPG, Free to Play. Developer: Smilegate RPG. Publisher: Amazon Games ; Release Date: Feb 11.",1
+25,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?,"According to the documents, Jessie Diggins won two medals at the Beijing 2022 Olympic Games: 
+
+1. A bronze medal in the individual sprint on February 8, 2022 (Document 1 and Document 3).
+2. A silver medal in the 30-kilometer freestyle race on February 20, 2022 (Document 4).",1
+26,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the genre of The Endgame (TV show)?,The genre of The Endgame (TV show) is an American crime drama thriller.,1
+27,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Russia invade Ukraine?,"February 24, 2022. 
+
+According to Document 3: ""On Feb. 24, 2022, the world watched as Russia invaded its neighboring country, Ukraine.""",1
+28,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was Elden Ring being released?,"February 25, 2022.",1
+29,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who did Iga Swiatek defeat to win the Qatar Open 2022?,"Jessica Pegula, 6-3, 6-0.",0
+30,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which country won the most medals at the 2022 Winter Olympics?,"Norway. According to Document 3, Norway won the most medals overall at the 2022 Winter Olympics, with a total of 37 medals (Gold: 16, Silver: 8, Bronze: 13).",1
+31,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Male Vocalist of the Year at the 2022 CMA ?,Chris Stapleton.,1
+32,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the ACC Tournament in 2022?,"Virginia Tech. 
+
+(This answer is based on Document 5.)",1
+33,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What chip does the iPhone 14 have?,"The iPhone 14 has the A15 chip with a five-core GPU, as found in iPhone 13 Pro models.",1
+34,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is Google I/O 2022 scheduled to take place?,"Google I/O 2022 is scheduled to take place on May 11 and 12, 2022.",1
+35,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who will direct Irredeemable film?,"Jeymes Samuel, a BAFTA Film Award winner, will direct the film adaptation of the graphic novel series Irredeemable and Incorruptible for Netflix. He is known for directing The Harder They Fall.",1
+36,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of China's rover on Mars?,The name of China's rover on Mars is Zhurong.,1
+37,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is being honored with the 2022 Warrior Award?,Shad Gaspard.,1
+38,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the weight of the Surface Laptop SE?,The weight of the Surface Laptop SE is 2.45 lbs.,1
+39,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who stars in The Lost City?,"Sandra Bullock as Loretta Sage, Channing Tatum as Alan, and Daniel Radcliffe as Fairfax. 
+
+Additionally, Da'Vine Joy Randolph plays Beth, Loretta's publisher. 
+
+The full cast list from the documents include:
+- Sandra Bullock as Loretta Sage 
+- Channing Tatum as Alan 
+- Daniel Radcliffe as Fairfax 
+- and many others including but not limited to: 
+  - Abigail Fairfax 
+  - Beth Hatten 
+  - Jack Trainer 
+  - Oscar 
+  - Allison 
+  - Ray the Moderator 
+  - Fantasy Villain (as Slang) 
+  - Nana 
+  - Rafi 
+  - Julian 
+  - Shades 
+  - Woman Singing in Village 
+  - Officer Sawyer 
+  - Officer Gomez 
+  - Limo Driver 
+  - Cigar Man 
+  - Biker 
+  - Chef 
+  - Barb 
+  - Audience Member 
+  - Nerdy Teenage Girl 
+  - Airline Employee 
+  - Dash Fan 
+  - Uniformed Man 
+  - Villager 
+  - Local 
+  - Consular Clerk 
+  - Sound Person 
+  - PA Announcer 
+  - Meditation Leader 
+  - Randy the Goat 
+  - Local Policeman 
+  - Henchman",1
+40,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What happened at the Academy Awards involving Will Smith and Chris Rock?,"Will Smith slapped Chris Rock onstage at the Academy Awards. The incident occurred after Rock made a joke about Smith's wife, Jada Pinkett Smith, and Smith reacted by walking on stage and slapping Rock. The incident received significant attention and was widely reported. Smith later apologized to the Academy and his fellow nominees, but not directly to Rock, during his acceptance speech for Best Actor for his role in 'King Richard'. The incident was addressed by the Academy, with President Janet Yang stating that the organization's response was ""inadequate"" and that they would act swiftly and decisively in similar situations in the future. Chris Rock later joked about the incident during a stand-up comedy show.",1
+41,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Apple M2 chip?,"Apple announced the M2 on June 6, 2022.",1
+42,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What film won the 2022 Academy Award for Best Picture?,CODA.,1
+43,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will the 94th Academy Awards be held?,"The 94th Academy Awards were held at Dolby Theatre at the Hollywood. Although the exact date isn't mentioned in the provided documents, based on Document 2, which is dated Mar 27, 2022, and mentions the 94th Academy Awards, it can be inferred that the 94th Academy Awards took place prior to that date. However, the exact date isn't provided.",1
+44,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was A House Between the Earth and the Moon published?,"March 29, 2022.",1
+45,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which alnum won the Album of the Year GRAMMYs 2022,"Jon Batiste. 
+
+According to Document 3, Jon Batiste won Album of the Year for his latest LP ""We Are"" at the 2022 Grammy Awards.",1
+46,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the final of the 2022 FIFA World Cup?,18 December,1
+47,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many vehicles did Tesla deliver in the first quarter of 2022?,"310,048 vehicles. 
+
+According to Document 2, Tesla delivered 310,048 vehicles from January through March 2022, up 70% from the same period in 2021.",1
+48,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who acquired Twitter?,"Elon Musk. 
+
+According to Document 4, ""Tesla CEO Elon Musk completed the deal to acquire Twitter at his original offer price of $54.20 a share at a total cost of roughly $44 billion.""",1
+49,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much did Elon Musk bought Twitter?,Elon Musk bought Twitter for $44 billion (£38bn). The price per share was $54.20.,1
+50,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the 2022 Masters Tournament?,"Scottie Scheffler. According to Document 2, he is the 2022 Masters champion after shooting a final day 71 to finish ten under and crown four days of outrageously good golf.",1
+51,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the women's singles Australian Open 2022?,"Ashleigh Barty, who won her first Australian Open title and third major title, defeating 27th seed Danielle Collins.",1
+52,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the women's singles Australian Open 2023?,"Aryna Sabalenka of Belarus. She defeated Elena Rybakina of Kazakhstan in the women’s singles final at the Australian Open tennis championship in Melbourne, Australia, on Saturday, Jan. 28, 2023.",1
+53,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles Australian Open 2022?,"Rafael Nadal defeated Daniil Medvedev in the final, 2–6, 6–7(5–7), 6–4, 6–4, 7–5 to win the men's singles tennis title at the 2022 Australian Open.",1
+54,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles Australian Open 2023?,Novak Djokovic.,1
+55,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the women's singles French Open 2022?,Iga Swiatek.,1
+56,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the women's singles French Open 2023?,"Iga Swiatek won the women's singles French Open 2023 title, beating Karolina Muchova in the final with a score of 6-2, 5-7, 6-4.",1
+57,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the runner-up in the women's singles at the 2023 French Open?,Karolina Muchova.,1
+58,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles French Open 2022?,Rafael Nadal,1
+59,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles French Open 2023?,Novak Djokovic beat Casper Ruud to win French Open men's singles 2023.,1
+60,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who the women's singles wimbledon 2022?,I can not answer the question because of the insufficient information in documents.,0
+61,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who the women's singles wimbledon 2023?,Marketa Vondrousova.,1
+62,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles wimbledon 2022?,Novak Djokovic beat Nick Kyrgios in four sets in the final to win his fourth Wimbledon title in a row last year.,1
+63,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles wimbledon 2023?,Carlos Alcaraz.,1
+64,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many titles has Swiatek won in 2022 season?,"According to Document 2 and Document 5, Swiatek won eight titles in 2022, and Document 5 also mentions that Swiatek has won seven titles this season which seems to refer to a different season. However, the information provided indicates eight titles won in 2022.
+
+So, the answer is: 8 titles.",1
+65,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who the women's singles U.S. Open 2022?,"Iga Swiatek won the women's title at the 2022 US Open tennis grand slam, defeating Ons Jabeur 6-2, 7-6 [7-5].",1
+66,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the men's singles U.S. Open 2022?,Carlos Alcaraz of Spain beat Norway's Casper Ruud in four sets to win the men's singles U.S. Open championship.,1
+67,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new head coach of the Virginia Tech football team in 2022?,Brent Pry,1
+68,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where is Consensus 2022 taking place?,"Austin, Texas. 
+
+(Document 2: Jun 14, 2022 ... “Everything is bigger in Texas” proved to be true during Consensus 2022. The crypto conference took place June 9–12 in Austin, Texas, ...)",1
+69,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did the 148th Kentucky Derby take place?,"The 148th Kentucky Derby took place on Saturday, May 7, 2022.",1
+70,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was Tesla's revenue in Q1 2022?,Tesla's revenue in Q1 2022 was $18.76 billion.,1
+71,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will Splatoon 3 be released?,"Splatoon 3 was released on September 9, 2022.",1
+72,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who acquired STX Entertainment?,Jahm Najafi's Phoenix-based The Najafi Companies acquired STX Entertainment for $173M.,1
+73,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Orrin G. Hatch pass away?,I can not answer the question because of the insufficient information in documents.,0
+74,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was the new CEO of CNN?,Chris Licht,1
+75,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the French Presidential Election 2022?,"Emmanuel Macron. According to Document 4, ""French President Emmanuel Macron appeared to comfortably win reelection Sunday in a runoff..."". Additionally, Document 5 mentions that ""Macron was congratulated by several world leaders on his re-election"". Document 2 also states that ""European leaders... swiftly congratulated Macron on his re-election.""",1
+76,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the megapixel in main camera on the iPhone 14 Pro?,"48 megapixel. 
+
+According to Document 5, the iPhone 14 Pro was announced with a 48 megapixel camera, which is an upgrade from the 12 megapixel main camera on previous iPhones (Document 1).",1
+77,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much does it cost to rent a tool kit for Apple device repairs?,"According to Document 4, the toolkit can be rented for $49. Document 5 also mentions that the $1200 iPhone repair toolkit can be rented. Therefore, the cost to rent a tool kit for Apple device repairs is $49.",1
+78,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where will the 2022 Met Gala take place?,"The 2022 Met Gala will take place at the Metropolitan Museum of Art on Monday, May 2.",1
+79,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Champions League in the 2022-2023 season?,Manchester City. They beat Inter on Saturday night to win the UEFA Champions League for the first time in their history and complete an iconic treble.,1
+80,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which teams are playing in the 2021-22 NBA Finals?,The Golden State Warriors and the Boston Celtics.,1
+81,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the prize money for the Squid Game-inspired reality competition?,The prize money for the Squid Game-inspired reality competition is $4.56 million.,1
+82,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was Overwatch 2 released?,"October 4. 
+In another source, it is mentioned that Overwatch 2 release date on 4th October.",0
+83,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the 2022 Tour de France?,"Jonas Vingegaard. 
+
+According to Document 3, Denmark's Jonas Vingegaard (Jumbo-Visma) won the yellow jersey as the overall winner of the 2022 Tour de France. This information is corroborated by Document 2, which also mentions Vingegaard as the winner of the Tour.",1
+84,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much was Apple's revenue in Q3? 2022,"According to Document 1, Apple's revenue in Q3 2022 was $83.0 billion.",1
+85,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the 2022 Atlanta Open?,Alex de Minaur.,1
+86,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was the revenue of AWS in Q2 2022?,"According to Document 3, Q2 2022 saw AWS post net sales of $19.7 billion for the quarter. 
+
+Therefore, the revenue of AWS in Q2 2022 was $19.7 billion.",1
+87,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when was xenoblade chronicles 3 released?,"July 29, 2023 (also stated as July 29 for an earlier release date shift from September).",1
+88,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"What is the name of the horse in the movie ""Nope""?","The names of the horses in the movie ""Nope"" mentioned in the documents are: 
+
+* Ghost 
+* Lucky 
+* Clover 
+* Jean Jacket 
+
+However, it does not appear that only one horse is specified as ""the horse"". Instead, there are multiple horses referenced.",1
+89,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Neal Lemlein pass away?,"Neal Lemlein passed away on July 22, 2022, in Aurora, Colorado, due to kidney cancer. He was 71 years old.",1
+90,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the lead actor in the film Carter?,The lead actor in the film Carter is Joo Won.,1
+91,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was BlenderBot 3 released?,"Today, according to Document 2. No specific date is mentioned in Document 2, but Document 3 and Document 4 mention August 10, 2022, and Document 5 mentions August 5, 2022, which likely relate to the announcement of the release. Unfortunately, I could not find the exact date of the release.",1
+92,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,which company invented BlenderBot 3?,"Meta's AI research labs. 
+
+According to Document 1, Meta's AI research labs have created a new state-of-the-art chatbot called BlenderBot 3. Additionally, Document 2 mentions that Facebook's parent company (which is Meta) has created the bot.",1
+93,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was ChatGPT released?,"November 30, 2022 – OpenAI introduced ChatGPT using GPT-3.5 as a part of a free research preview.",1
+94,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was GPT4 released?,"March 14, 2023.",1
+95,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much did Amazon agree to pay to acquire iRobot?,"Amazon will acquire iRobot for $61 per share in an all-cash transaction valued at approximately $1.7 billion, including iRobot's net debt.",1
+96,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the location of the Major League Baseball Field of Dreams Game 2022?,"The location of the Major League Baseball Field of Dreams Game 2022 is Field of Dreams ballpark in Dyersville, Iowa. (Document 2)
+
+Coordinates: 42°29′56″N 91°03′26″W (Document 5)",1
+97,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Microsoft release Windows 11 22H2?,"September 20, 2022.",1
+98,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did AMD unveil Ryzen 7000 processors?,"AMD unveiled the next generation Ryzen processors in a livestream event on August 29th, 2022, but the actual unveiling might have happened on August 16, 2022, when AMD announced to host a livestream event. However, according to Document 5, it is also mentioned that AMD announced the unveiling on August 16 but actually did the unveiling on August 29. No precise date was given about the actual launch of Ryzen 7000 processors. It was mentioned that they are slated to launch on September 27.",1
+99,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the U.S. all-around title at the U.S. Gymnastics Nationals 2022?,Konnor McClain won her first U.S. gymnastics national championship.,1
+100,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the new price of Tesla's Full-Self Driving (FSD) software?,"The new price of Tesla's Full-Self Driving (FSD) software is $15,000, as mentioned in Document 4.",1
+101,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the date of the premiere of House of the Dragon?,"August 21, 2022.",1
+102,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the release date for Sony's PlayStation VR2 headset?,"The PlayStation VR2 headset was launched worldwide on February 22, 2023.",1
+103,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the new venture launched by Tiger Woods and Rory McIlroy?,TMRW Sports.,1
+104,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which company recently acquired Super.tech?,I can not answer the question because of the insufficient information in documents.,0
+105,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the Heisman Trophy winner in 2022?,"Caleb Williams, the Southern California quarterback, is the winner of the 2022 Heisman Trophy.",1
+106,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does The Amazing Race Season 34 premiere?,"Season 34 of ""The Amazing Race"" premiered on Wednesday, Sept. 21 at 10/9c on CBS, and on Wednesday, Nov. 2, it moved up an hour to 9/8c, where it will air for the remainder of the season.",1
+107,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the chairman of Toulouse and under whose ownership are they currently?,"The president of Toulouse FC is Damien Comolli. 
+
+There is no information about the chairman of Toulouse, but based on the provided documents, it seems that the term ""president"" is used instead.
+
+As for the ownership, it is stated that Damien Comolli succeeded Olivier Sadran, who took over the club following its bankruptcy in 2001. However, there is no information about the current ownership structure beyond the presidency of Damien Comolli. 
+
+Therefore, based on the documents provided, the answer can be rephrased as: 
+The president of Toulouse FC is Damien Comolli. The club was previously owned or controlled by Olivier Sadran, but current ownership details are not provided.",1
+108,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will the TGL (Tech-Infused Golf League) season start?,The TGL season will kick off in January 2024.,1
+109,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the director of BioShock movie?,Francis Lawrence.,1
+110,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the premiere date of New Amsterdam Season 5?,"The premiere date of New Amsterdam Season 5 is September 20, 2022. 
+
+Note that although document 2 mentions a release date in 2023 on Netflix, document 4 specifically mentions that New Amsterdam season five will stream on NBC on September 20, 2022.",1
+111,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the World Cup Final in 2022?,"Argentina. 
+
+According to Document 3, it says ""Glory for Argentina"" and ""ARGENTINA WINS THE 2022 FIFA WORLD CUP"". Document 1 also mentions that it was the perfect ending for Lionel Messi on the international stage, implying that he won the World Cup with Argentina.",1
+112,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the chief meteorologist for KPLR-TV?,John Fuller.,1
+113,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new head of development at Riff Raff Entertainment?,Katie Sinclair.,1
+114,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much money did Texas Tech pay Marlene Stollings in the settlement?,"According to Document 3, Texas Tech paid $740,000 to settle a breach-of-contract lawsuit filed by former women's basketball coach Marlene Stollings.",1
+115,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who acquired a stake in FromSoftware?,"According to Document 2 and Document 3, it appears that Sony and Tencent acquired a minority stake in FromSoftware, with Kadokawa retaining a 69.66% majority stake. The exact percentage of the stake acquired by Sony and Tencent is not explicitly stated, but Document 3 mentions it as 14% overall.",1
+116,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new Coach for The Voice Season 22?,Camila Cabello.,1
+117,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was the unemployment rate in August 2022 in U.S.?,I can not answer the question because of the insufficient information in documents.,0
+118,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who did Serena Williams lose to in her last match at the U.S. Open?,Ajla Tomljanović.,0
+119,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many people were injured in the shuttle van accident on Palisades Interstate Parkway?,"Eight others are hurt after a van shuttling factory workers, in addition to the four people who died, according to Palisades Interstate Parkway police. Therefore, eight people were injured.",1
+120,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the head coach of Virginia Tech football?,Brent Pry.,1
+121,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How did Tanya Pardazi die?,Tanya Pardazi died in a skydiving accident at Skydive Toronto on the evening of August 27.,1
+122,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was named interim coach for Nebraska's 2022 season?,Mickey Joseph.,1
+123,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the release date of Jackie Evancho's album Carousel of Time?,"September 9th, 2022.",1
+124,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which companies are part of MATANA?,"According to Document 4, the MATANA group is composed of six high-level technology companies: 
+
+1. Microsoft Corporation (NASDAQ: MSFT)
+2. Apple Inc
+3. Tesla Inc (NASDAQ: TSLA)
+4. Alphabet Inc (NASDAQ: GOOGL)
+5. Nvidia Corp (NASDAQ: NVDA)
+6. Amazon.com Inc.",1
+125,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which animated series won the Emmy Award for Best Animated Program?,"Arcane. It was episode 6, ""When These Walls Come Tumbling Down,"" which took home the achievement, securing an Emmy award for Best Animated Program, the first streaming series to do so.",1
+126,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many teams will be included in the expanded College Football Playoff?,"12 teams. According to Document 2, the expansion includes ""more teams, more participation and more excitement"" and Document 4 provides a detailed explainer of the 12-team College Football Playoff bracket.",1
+127,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which team will host nation Qatar play against in the opening match of the 2022 World Cup?,"According to Document 4, Qatar, the host nation, played against Ecuador in the opening match of the 2022 World Cup, and lost 2-0.",1
+128,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where did Leonard Francis escape from?,"San Diego. According to Document 1, Francis was under home arrest in San Diego when he cut off his GPS ankle bracelet and escaped on Sept. 4.",1
+129,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does the 2022 NFL Football Season begin?,"The 2022 NFL season begins Thursday, Sept. 8.",1
+130,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Meta Connect take place?,The Meta Connect event took place on October 11.,1
+131,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much is the fine that Meta is facing for failing to safeguard children's information on Instagram?,"The fine that Meta (Instagram) is facing for failing to safeguard children's information is 405 million euros, which is equivalent to U.S. $401 million.",1
+132,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was Gotham Knights released?,"According to Document 4, the game ""Gotham Knights"" was released on October 21, 2022.",1
+133,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How did Bernard Shaw die?,pneumonia,1
+134,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Queen Elizabeth II die?,"She died at 15:10 BST on 8 September 2022 at the age of 96, ending her 70-year reign.",1
+135,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where did Queen Elizabeth II die?,Balmoral Castle in Scotland.,1
+136,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who did Alcaraz beat in U.S. Open 2022 Men's Semifinals?,Frances Tiafoe.,1
+137,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when did king charles iii get crowned?,"May 6, 2023.",1
+138,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"What is Trace Adkins' role in ""Monarch""?","Albie Roman, the patriarch.",1
+139,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does the iPhone 14 Plus release?,"According to Document 3, the iPhone 14 Plus will be available starting on Friday, October 7.",1
+140,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who stars as Susie Wallis in Susie Searches?,Kiersey Clemons stars as Susie Wallis in Susie Searches.,1
+141,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the new product at Chick-fil-A in fall 2022?,"The new product at Chick-fil-A in fall 2022 is the Autumn Spice Milkshake, a drinkable dessert mixing rich flavors like cinnamon with crunchy bits of brown sugar cookies, and also the Grilled Spicy Deluxe Sandwich was brought back for a limited time.",1
+142,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which team will Kyle Busch join in 2023?,Richard Childress Racing (RCR).,1
+143,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is men's year-end No 1 in tennis in 2022?,Carlos Alcaraz is set to become the youngest year-end No. 1 in the history of men's tennis after Rafael Nadal was knocked out of the ATP.,1
+144,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was playing Lex Luthor in Titans?,Titus Welliver was playing Lex Luthor in Titans.,1
+145,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is Columbia University's QS ranking in 2023?,"According to the information in Document 5, Columbia University was ranked 22nd in the QS World University Rankings 2023.",1
+146,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was the first Asian man to win Lead Actor in a Drama Series?,"Lee Jung-jae. He won for his performance in Netflix’s hit series Squid Game, making him the first Asian actor to receive the award and the first ever to win the award for a non-English speaking role.",1
+147,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much did Google acquire Mandiant for?,$5.4 billion.,1
+148,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was the inflation rate in the U.S. in August 2022?,"The inflation rate in the U.S. in August 2022 was 8.3%. This rate was down from 8.5% in July and 9.1% in June, which was the highest rate in four decades.",1
+149,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is receiving the 39th Walter Cronkite Award for Excellence in Journalism?,Gayle King.,1
+150,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of the sequel to The Legend of Zelda: Breath of the Wild?,The Legend of Zelda: Tears of the Kingdom.,1
+151,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when was The Legend of Zelda: Tears of the Kingdom released?,"May 12, 2023.",1
+152,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was Hocus Pocus 2 released on Disney+?,Hocus Pocus 2 premieres Sept. 30 on Disney+.,1
+153,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is ACL 2023 taking place?,I can not answer the question because of the insufficient information in documents.,0
+154,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where is ACL 2023 taking place?,"Toronto, Canada. Specifically, it will take place from July 9th to July 14th, 2023.",1
+155,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is EMNLP 2023 taking place?,"December 6 –10, 2023.",1
+156,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where is EMNLP 2023 taking place?,Singapore.,1
+157,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the starting price for Virginia Tech 2023 football season tickets?,The starting price for Virginia Tech 2023 football season tickets is $350 per ticket.,1
+158,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the date of the Wine OFF the Fox benefit concert?,"The Wine OFF the Fox benefit concert will take place on Saturday, October 22.",1
+159,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the funeral of Queen Elizabeth II?,"The documents do not explicitly state the date of the funeral, but Document 3 mentions that the state funeral was on September 19, 2022.",1
+160,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where did Queen Elizabeth II's state funeral take place?,"Westminster Abbey. (The coffin was then taken in procession to Wellington Arch, at Hyde Park Corner, and then on to Windsor, where the queen was laid to rest in St. George's Chapel in Windsor Castle.)",1
+161,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who were the top two contestants in the America's Got Talent Season 17 finale?,"The top two contestants in the America's Got Talent Season 17 finale were Mayyas, a Lebanese dance troupe, and Kristy Sellars, an Australian pole dancer. Mayyas ultimately won the $1 million prize and a headlining slot at the Luxor Hotel & Casino in Las Vegas, while Kristy placed second.",1
+162,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is MotorCity Cage Night XII?,Nov. 18.,1
+163,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many people died in the mid-air collision in Boulder County?,"At least three people died in the mid-air collision in Boulder County, Colorado. Specifically, two people died in the Cessna 172 and one person died in the Sonex Xenos.",1
+164,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is Italy's first female prime minister?,Giorgia Meloni.,1
+165,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What caused Ben Davies to be unavailable for Wales in the upcoming Nations League matches?,"Ben Davies was unavailable for Wales in the upcoming Nations League matches due to an injury, specifically a hairline fracture of the leg just below his knee, which he sustained during Tottenham's 2-0 loss to Sporting in the Champions League.",1
+166,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the WNBA Finals 2022?,I can not answer the question because of the insufficient information in documents.,0
+167,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did the Golden Globe Awards 2023 take place?,"The Golden Globe Awards 2023 took place on January 10, 2023, at the Beverly Hilton in California.",1
+168,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the release date of the Pixel Watch?,"The Pixel Watch was released on October 13, 2022, in nine countries, after being announced by Google on October 6, 2022, alongside the Pixel 7 and Pixel 7 Pro smartphones, at the annual Made by Google event.",1
+169,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was honored with a Lifetime Professional Achievement Award at the Seton Hall's Center for Sports Media Gala?,Robin Roberts was honored with the Lifetime Professional Achievement Award at the Seton Hall's Center for Sports Media Gala.,1
+170,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who performed at the Super Bowl LVII Halftime Show?,"Rihanna performed at the Super Bowl LVII Halftime Show, on Sunday, February 12, 2023, at State Farm Stadium in Glendale, Arizona.",1
+171,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when did Shinzo Abe die?,"Shinzo Abe died on July 8, 2022, after being shot during a campaign speech in western Japan.",1
+172,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who killed Shinzo Abe?,"Tetsuya Yamagami. According to Document 4, Yamagami was formally charged with murder and violating a gun control law, and he allegedly shot Abe with a homemade gun. Additionally, Document 1 and Document 4 mention that Yamagami told police that he killed Abe.",1
+173,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when was the State funeral of Shinzo Abe,"The state funeral of Shinzo Abe was on September 27, 2022.",1
+174,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the title of House of the Dragon's sixth episode?,The Princess and the Queen.,1
+175,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who has acquired Times Square Grand Slam?,"EVO Entertainment Group has acquired Times Square Grand Slam, as of Friday, Sept. 23.",1
+176,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the premiere date of Derry Girls Season 3?,"According to Document 2, Derry Girls Season 3 starts streaming on Oct. 7. 
+
+Additionally, Document 1 mentions that the third and final season will premiere in the U.K. and Ireland before the rest of the world, but it does not provide a specific date, only that it is before the rest of the world. 
+
+Document 4 does not provide a premiere date but discusses the episodes. 
+
+So the provided premiere date is Oct. 7.",1
+177,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was awarded the 2022 Nobel Prize for Physiology and Medicine?,"The 2022 Nobel Prize in Physiology or Medicine was awarded to Svante Pääbo, a Swedish geneticist, ""for his research in the field of genomes of ..."". The document does not provide further details.",1
+178,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who was awarded the 2022 nobel prize in literature?,"Annie Ernaux. 
+She was awarded the 2022 Nobel Prize in Literature ""for the courage and clinical acuity with which she uncovers the roots, estrangements and collective restraints of personal memory"".",1
+179,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new CEO of Fox Entertainment?,Rob Wade. He replaced Charlie Collier as the CEO of Fox Entertainment.,1
+180,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Japanese Grand Prix 2022?,"Max Verstappen won a chaotic, rain-shortened Japanese Grand Prix to seal his second Formula 1 world championship.",1
+181,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who played Adrianna Tomaz in Black Adam?,Sarah Shahi.,1
+182,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who stars as Dr. Ben Seong in the Quantum Leap revival?,Raymond Lee plays Dr. Ben Seong in the new Quantum Leap revival.,1
+183,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the price of RTX 4090 GPU?,"According to Document 1, the Nvidia GeForce RTX 4090 comes in at $1,599 USD /£1,679 GBP. Document 2 also mentions a $1600 asking price, which seems to be close but not exactly the same. However, based on Document 1, I can confirm that:
+
+The price of RTX 4090 GPU is $1,599 USD.",1
+184,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the release date of Sweetwater?,"April 14, 2023.",1
+185,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did the Google Pixel Watch start sell?,"October 13th. 
+
+According to Document 2, ""both [WiFi/Bluetooth and LTE models] expected to begin shipping on October 13th."" This implies that the Google Pixel Watch started selling on October 13th.",1
+186,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the recipient of the 2022 Tom Hanks Caregiver Champion Award?,Savannah Guthrie.,1
+187,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the president of the Prospect Park Alliance?,Morgan Monaco.,1
+188,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What gaming software development studio did Riot Games acquire?,Wargaming Sydney. The development staff of Wargaming Sydney joined Riot Sydney.,1
+189,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new CEO of Yahoo?,"According to Document 4, the new CEO of Yahoo is Jim Lanzone, who is currently the CEO of Tinder. He will be taking over as the chief of Yahoo, and former Yahoo boss Guru Gowrappan will become an advisor to Yahoo.",1
+190,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the subscriber growth of Netflix in Q3 2022?,"The subscriber growth of Netflix in Q3 2022 was 2.41 million net new paid subscribers, bringing the total to 223.1 million worldwide as of the end of September.",1
+191,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"What is the title of Chicago P.D. Season 10, Episode 4?",Dónde Vives,1
+192,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much does the YouTube Premium family plan cost now?,The YouTube Premium family plan now costs $22.99 per month.,1
+193,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the release date of God of War Ragnarok?,"November 9, 2022.",1
+194,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who voices Batman in Batwheels?,Ethan Hawke.,1
+195,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new prime minister of the United Kingdom?,Rishi Sunak.,1
+196,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when did rishi sunak became prime minister of uk?,Rishi Sunak became Prime Minister on 25 October 2022.,1
+197,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much does the Netflix Basic with Ads subscription cost?,The Netflix Basic with Ads subscription costs $6.99 per month.,1
+198,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does season 5 of The Crown premiere?,November 9.,1
+199,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where does The White Lotus Season 2 take place,"The White Lotus Season 2 takes place at the Four Seasons resort, specifically the San Domenico Palace hotel in Taormina, Sicily. The season also films in some of Sicily's most beautiful towns and coastal spots.",1
+200,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Arizona Senatorial Election 2022?,"Incumbent Democrat Mark Kelly won reelection, defeating Republican nominee Blake Masters.",1
+201,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,which party controls the house after 2022 midterm elections?,"Based on the information provided in the documents, it appears that the Republican party gained control of the House after the 2022 midterm elections. Document 1 states: ""A new House Republican majority will mean Biden's legislative agenda is essentially dead, unless he can find bipartisan support for some narrowly crafted proposals."" This suggests that Republicans won a majority of seats in the House.",1
+202,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the U.S. Senate race in Nevada in the 2022 midterm elections?,Catherine Cortez Masto (D) won the race for Nevada Senate.,1
+203,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who directed Lullaby?,John R. Leonetti.,1
+204,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the Doctor's new companion in Doctor Who?,"Millie Gibson, who will play the role of Ruby Sunday.",1
+205,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who designed Naomi Biden's wedding dress?,"Naomi Biden's wedding dress was designed by Ralph Lauren. Specifically, it was a custom Ralph Lauren Collection gown made of Chantilly lace, featuring hand-placed organza petals along the bodice and cascading into the skirt.",1
+206,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What grouping is France in World Cup 2022?,"According to Document 1, it does not specify the group for France. However, Document 2 seems to indicate that France, as the reigning champions, was mentioned alongside other details about their team.
+
+Document 3 seems to hold some information about groups; it mentions Group D which includes France, Denmark, Australia, and Tunisia, suggesting France was in Group D. 
+
+The other documents do not provide such information. 
+
+Thus, we could conclude France was in Group D.",1
+207,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What grouping is U.S. in World Cup 2022?,"Group B. 
+
+According to Document 1, ""The United States Men's soccer team has been drawn in Group B at the Qatar World.""",1
+208,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What grouping is Argentina in World Cup 2022?,"Group C. According to Document 2, Group C of the 2022 FIFA World Cup consisted of Argentina, Saudi Arabia, Mexico, and Poland.",1
+209,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"What is the title of the new season of ""Criminal Minds""?",Criminal Minds: Evolution.,1
+210,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is Nebraska's new head football coach?,Matt Rhule.,1
+211,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the TikTok text-to-speech voice?,"Kat Callaghan, a Canadian radio host and podcaster.",1
+212,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is Merriam-Webster's 2022 Word of the Year?,gaslighting,1
+213,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where is SM Entertainment setting up its Southeast Asian headquarters?,Singapore.,1
+214,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was the unemployment rate in November 2022?,"According to Document 5, the unemployment rate in November 2022 was 5.1%. 
+
+Additionally, Document 2 also mentions that the U.S. unemployment rate, not seasonally adjusted, in November 2022 was 3.4% and seasonally adjusted, the U.S. unemployment rate in November 2022 was 3.7%.
+
+ Document 3 provides more detailed information on unemployment rates for different groups in November 2022 but does not provide a single overall rate. 
+
+No direct information from Document 1 applies to November 2022. Document 4 does not provide a general unemployment rate.",1
+215,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who did the USA play in the round of 16 at 2022 FIFA World Cup?,The Netherlands.,1
+216,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is Argentina's semi opponent?,"If Argentina were to make it to the semi-finals as Group C winners, they could face Spain or Brazil. If Argentina reach the semifinals as Group C runners-up, they could face the potential winners of Groups F and H - either Belgium or 2016 European champions Portugal.",0
+217,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the election in Georgia?,"According to Document 2, Brian Kemp defeats Stacey Abrams to win Georgia governor reelection bid.",1
+218,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"Who is starring Barbie in the movie ""Barbie""?","Margot Robbie is starring as Barbie in the movie ""Barbie"".",1
+219,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the captain of the USA soccer team in the FIFA Men's World Cup 2022?,Tyler Adams.,1
+220,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"Which company won Yahoo Finance's 2022 ""Company of the Year"" Award?","Costco is the company that earned Yahoo Finance's Company of the Year award in 2022, specifically it is the 11th company to earn this award, joining others like Amazon, Microsoft, and Meta.",1
+221,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much money will President Joe Biden put into the union pension plan?,Nearly $36 billion.,1
+222,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Maxwell Award 2022 in college football?,"Caleb Williams. 
+
+According to Document 3, USC quarterback Caleb Williams took home the Maxwell Award, which is handed out to the Player of the Year in college football, on December 8, 2022.",1
+223,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is Africa's first World Cup semi-finalists,"Morocco. According to Document 1, Morocco will attempt to become Africa's first World Cup semi-finalists by beating Portugal. Document 4 also confirms that Morocco are Africa's first-ever FIFA World Cup semi-finalists.",1
+224,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the 2022 CNN Hero of the Year?,Nelly Cheboi is CNN's 2022 Hero of the Year.,1
+225,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the championship game of the Patriot League Men’s Lacrosse Championship 2023?,I can not answer the question because of the insufficient information in documents.,0
+226,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who will be receiving the Mark Twain Prize for American Humor in 2023?,Adam Sandler.,1
+227,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new president of the NCAA?,"Charlie Baker, the Governor of the Commonwealth of Massachusetts, will serve as the next NCAA President, assuming the role effective March 2023.",1
+228,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who is the ceo of twitter?,"Linda Yaccarino. She began as Twitter’s chief executive on June 5. Previously, Elon Musk served as the CEO of the company.",1
+229,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the CEO of Yuga Labs?,Daniel Alegre.,1
+230,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much did Avatar: The Way of Water earn in its debut weekend at U.S.?,"$134 million. 
+
+According to Document 2, ""The sequel earned $134 million from North American theaters..."" which refers to its debut weekend in the U.S. Additionally, Document 1 mentions that it earned $53 million in its opening day release in the U.S.",1
+231,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was the Final Fantasy Pixel Remaster Series be released on Nintendo Switch?,"The Final Fantasy Pixel Remaster Series was released on Nintendo Switch on April 19, 2023.",1
+232,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What movie won the Oscar for Best Animated Film in 2023?,Guillermo del Toro’s Pinocchio.,0
+233,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who discovered asteroid 2022 YG?,"Amateur astronomer Gennadiy Borisov at Nauchnyi, Crimea on 15 December 2022.",1
+234,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which team won the Peach Bowl 2022?,"The Georgia Bulldogs won the Peach Bowl 2022, as the final score was Ohio State Buckeyes 41, Georgia Bulldogs 42, meaning Georgia Bulldogs had a higher score. 
+
+ So, Georgia Bulldogs.",1
+235,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which team won the 2023 Desert Hockey Classic?,No. 16 Michigan Tech won the 2023 Desert Hockey Classic with a 3-2 victory over No. 6 Boston University.,1
+236,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the price of Microsoft 365 Basic per month?,"According to Document 5, the yearly price of Microsoft 365 Basic is $20. To find the monthly price, we can divide $20 by 12. However, Document 1 directly mentions that the price of Microsoft 365 Basic is $1.99 per month. 
+
+The price of Microsoft 365 Basic per month is $1.99.",1
+237,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Calvin Edgar Fox pass away?,"January 18, 2023.",1
+238,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will Rebel Moon be released on Netflix?,Rebel Moon hits Netflix on Dec. 22.,1
+239,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does Scream VI release?,"March 10, 2023.",1
+240,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was the annual GDP growth rate of the U.S. economy in 2022?,"According to Document 2, in 2022, the real gross domestic product (GDP) of the United States increased by 2.1 percent compared to 2021. 
+
+Therefore, the annual GDP growth rate of the U.S. economy in 2022 was 2.1 percent.",1
+241,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who will be playing the role of Billy Batson in Shazam! Fury of the Gods?,"Zachary Levi plays the role of Billy Batson's superhero alter-ego, Shazam, but as Billy Batson, the role is played by Asher Angel.",1
+242,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was the runner-up of the 2022 World Cup?,France,1
+243,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the congressional hearing for TikTok CEO Shou Zi Chew?,"March 23, 2023.",1
+244,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When will the final season of The Blacklist premiere?,"The final season of The Blacklist, Season 10, premiered on Sunday, February 26.",1
+245,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the title of the AI-generated episode of Seinfeld?,"Nothing, Forever",1
+246,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the voucher amount per student in the Students First Act?,"The voucher amount per student in the Students First Act is estimated at $7,598 per pupil for the 2023-2024 school year. This amount will be deposited into an education savings account (ESA) to be used for tuition, fees, and other qualified education expenses.",1
+247,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Best R&B Album at the 2023 Grammys?,"Robert Glasper. 
+
+According to Document 4, Chris Brown didn't win, instead, Robert Glasper won for best R&B album at the 65th Annual Grammy Awards. This information is also likely listed in Document 5, which provides a list of R&B winners at the 2023 Grammy Awards, but the specific list is not fully shown.",1
+248,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is Google's new AI chatbot called?,Google's new AI chatbot is called Bard.,1
+249,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who founded midjourney?,"David Holz, previously co-founder of Leap Motion, founded Midjourney, Inc. in San Francisco, California.",1
+250,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What technology has Microsoft incorporated into the new Bing?,"The new Bing uses an upgraded version of GPT 3.5, the AI OpenAI language model that powers ChatGPT, which Microsoft calls the ""Prometheus Model"".",1
+251,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new CEO of Pinterest?,Bill Ready.,1
+252,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the release date for Pikmin 4 on Nintendo Switch?,"July 21, 2023.",1
+253,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many employees did Meta lay off in November?,"According to Document 1, Meta laid off over 11,000 workers in November, which equated to roughly 13% of Meta’s overall staff.",1
+254,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What company acquired iRobot?,"Amazon acquired iRobot for $61 per share in an all-cash transaction valued at approximately $1.7 billion, including iRobot's net debt.",1
+255,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which team won Super Bowl LVII?,"The Kansas City Chiefs defeated the Philadelphia Eagles, 38–35, in Super Bowl LVII.",1
+256,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much did SM Entertainment's revenue grow in 2022?,SM Entertainment’s revenue in 2022 grew 18.7% to 848.3 billion won ($657 million at the average 2022 exchange rate).,1
+257,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,who trained LLaMA?,"According to Document 3, LLaMA was trained by Meta AI. Specifically, it states: ""LLaMA is a large language model (LLM) released by Meta AI in February 2023. Four model sizes were trained: 7, 13, 33 and 65 billion parameters."" 
+
+Therefore, the answer is Meta AI.",1
+258,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which movie won Best Picture at the 95th Academy Awards Ceremony?,“Everything Everywhere All at Once” won the Academy Award for best picture.,1
+259,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won Best Director at the 95th Academy Awards Ceremony?,"Daniel Kwan and Daniel Scheinert, collectively known as the Daniels, won the Oscar for best director for their film ""Everything Everywhere All at Once.""",1
+260,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won Best Actor at the 95th Academy Awards Ceremony?,"Brendan Fraser won the Oscar for Best Actor for “The Whale” during the Oscars show at the 95th Academy Awards in Hollywood, Los Angeles, California, March 12, 2023.",1
+261,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won Best Actress at the 95th Academy Awards Ceremony?,"Michelle Yeoh, Everything Everywhere All at Once.",1
+262,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which movie won Best International Feature Film at the 95th Academy Awards Ceremony?,All Quiet on the Western Front.,1
+263,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How much is the new monthly price for YouTube TV?,$73,0
+264,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won The Voice Season 23?,Gina Miles.,1
+265,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the CEO of Hasbro?,"According to Document 4, Chris Cocks is the CEO of Hasbro. 
+
+Additionally, Document 1 mentions Brian Goldner as the former CEO and chairman of Hasbro. 
+
+Document 3 does not mention the CEO, but it mentions Steve Zoltick as the Chief Information Officer and Chief Transformation Officer.",1
+266,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which network received the most nominations for the 2023 Sports Emmy Awards?,ESPN led all network groups with 59 total nominations.,1
+267,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the Chairman of NBCUniversal Telemundo Enterprises?,Beau Ferrari.,1
+268,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of Elon Musk's new AI company?,X.AI Corp.,1
+269,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the Virginia Tech spring game 2023?,"Team Maroon won the 2023 Virginia Tech spring game, defeating Team White with a final score of 34-0.",1
+270,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was named the 2023 National Teacher of the Year?,"Rebecka Peterson, a high school math teacher.",1
+271,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When does the 2023 Douglas County Fair & Rodeo start?,"The 2023 Douglas County Fair & Rodeo starts on Friday, July 28 at 4:00 p.m.",1
+272,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Where are Apple's first two stores in India?,"Mumbai and New Delhi. 
+
+According to Document 3, Apple's first two official retail stores in India were opened in Mumbai and New Delhi, and Apple CEO Tim Cook described the opening as a ""milestone"" for the company.",1
+273,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,where is 2023 CAA World Congress of Sports?,The JW Marriott Los Angeles L.A. LIVE.,1
+274,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What was Sundar Pichai's total compensation in 2022?,"Sundar Pichai's total compensation in 2022 was $226 million. This includes a stock award of $218 million and a salary of $2 million, which has remained steady for the past three years, along with $6.3 million in other compensation is not broken down but it  was $6.3 million in 2021.",1
+275,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the Google I/O conference 2023?,May 10-August 31,1
+276,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the lead actress in Prima Facie?,Jodie Comer.,1
+277,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of the AI dating tool Coyne Lloyd used?,Rizz.,1
+278,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new sporting director of U.S. Soccer?,Matt Crocker.,1
+279,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which team won the 2023 Big 12 Championships in women's golf?,"Oklahoma State. According to document 3: Oklahoma State Wins Its 11th Big 12 Women’s Golf Championship Title - Big 12 Conference. 
+
+However, Document 5 seems to indicate that Oklahoma won, not Oklahoma State. Therefore, based on document 5: Oklahoma.",1
+280,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the main character in Jedi: Survivor?,Cal Kestis.,1
+281,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,"Who is the director of ""Polite Society""?",Nida Manzoor.,1
+282,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When did Grand Crew Season 2 end?,"The final two episodes of Grand Crew Season 2 aired on Friday, April 28.",1
+283,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who hosted the 2023 White House Correspondents' Dinner?,Roy Wood Jr. hosted the 2023 White House Correspondents' Dinner.,1
+284,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Which city will host The World Games 2025?,Chengdu.,1
+285,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the new CEO of TCW Group?,Katie Koch.,1
+286,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When was Pixel Fold announced?,"The Pixel Fold was announced on May 10, 2023.",1
+287,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of Google's foldable smartphone?,The Pixel Fold.,1
+288,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,How many jobs were created in April 2023?,I can not answer the question because of the insufficient information in documents.,0
+289,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,When is the end date for the federal PHE for COVID-19?,"The federal PHE for COVID-19 expired at the end of the day on May 11, 2023.",1
+290,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of Microsoft's ai assistant in office?,Microsoft 365 Copilot.,1
+291,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of Google's AI image editing tool?,Magic Editor.,1
+292,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,when is chatgpt app for ios launched?,"May 18, 2023. 
+
+According to Document 3, OpenAI has launched an iOS app for ChatGPT on May 18, 2023, and promised that an Android version is coming “soon.”",1
+293,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the date of the 2023 NBA Draft?,"Thursday, June 22.",1
+294,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the price of the Apple Vision Pro headset?,"The price of the Apple Vision Pro headset starts at $3,499.",1
+295,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the name of Apple's headset?,"Apple's headset is referred to as ""Apple Vision Pro"" according to Document 1, and its software is referred to as ""realityOS"" according to Documents 2 and 5. However, the headset itself is not explicitly stated to be named ""Reality"", only its operating system. The document does not provide a straightforward single name for the headset, but one of the names associated with it is ""Apple Vision Pro"".",1
+296,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who is the CEO of Maven?,Kate Ryder.,1
+297,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who won the U.S. Open golf tournament 2023?,Wyndham Clark of the United States. (Document 2),1
+298,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,What is the start date of Prime Day 2023?,"According to Document 5, Prime Day 2023 took place on July 11-12. Therefore, the start date of Prime Day 2023 is July 11.",1
+299,meta-llama/llama-4-scout-17b-16e-instruct,noise_robustness,0.8,Who was the MVP of Super Bowl 2022?,Cooper Kupp.,1

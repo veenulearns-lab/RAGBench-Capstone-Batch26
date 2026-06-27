@@ -1,0 +1,241 @@
+id,model,ability,query,model_response,accuracy
+0,llama-3.1-8b-instant,info_integration,Who is the director of 'Carole King & James Taylor: Just Call Out My Name' and when is its premiere?,"The director of 'Carole King & James Taylor: Just Call Out My Name' is Frank Marshall. 
+
+The film premiered on January 2, 2022, at 9:00pm ET/PT on CNN.",1
+1,llama-3.1-8b-instant,info_integration,Who won the 2022 and 2023 Citrus Bowl?,"The 2022 Citrus Bowl was won by Kentucky with a final score of 20-17 against Iowa. 
+
+The 2023 Citrus Bowl was won by LSU with a final score of 63-7 against Purdue.",1
+2,llama-3.1-8b-instant,info_integration,Where are the Super Bowl held in 2022 and 2023?,"According to the documents, the Super Bowl was held in the following locations:
+
+- 2022: SoFi Stadium in Inglewood, California
+- 2023: State Farm Stadium in Glendale, Arizona",1
+3,llama-3.1-8b-instant,info_integration,What won best drama and best Musical/Comedy at 79th Golden Globes?,"According to Document 1, ""Succession"" won Best Television Series — Drama, but it does not mention the winner of Best Picture Drama. However, it does mention that ""The Power of the Dog"" won Best Picture Drama.
+
+Document 1 also mentions that ""The Power of the Dog"" won Best Picture Drama, Best Director Motion Picture (Jane Campion), and Best Supporting Actor — Motion Picture (Kodi Smit-McPhee), but it does not mention the winner of Best Picture Musical/Comedy.
+
+However, Document 2 mentions that ""West Side Story"" won Best Motion Picture — Musical or Comedy.
+
+Document 3 does not mention the winners of Best Picture Drama and Best Picture Musical/Comedy.
+
+Document 4 does not mention the winners of Best Picture Drama and Best Picture Musical/Comedy.
+
+Document 5 mentions that ""The Fabelmans"" won Best motion picture - drama and ""The Banshees of Inisherin"" won Best motion picture - musical or comedy.
+
+Therefore, the answer is: ""The Power of the Dog"" won Best Picture Drama and ""West Side Story"" won Best Picture Musical/Comedy at the 79th Golden Globes.",1
+4,llama-3.1-8b-instant,info_integration,When does the 2022 Olympic Winter Games start and end?,The 2022 Olympic Winter Games started on 4 February 2022 and ended on 20 February 2022.,1
+5,llama-3.1-8b-instant,info_integration,When do the Paralympic and Olympic Winter Games 2022 start?,"The 2022 Winter Paralympics begin on Friday, March 4, 2022, and the 2022 Winter Olympics officially kick off with the Opening Ceremony on Friday, February 4, 2022.",1
+6,llama-3.1-8b-instant,info_integration,Super Bowl 2022 date and location?,"The Super Bowl 2022 date and location are as follows:
+
+- Date: Sunday, February 13, 2022
+- Location: SoFi Stadium in Inglewood, California",1
+7,llama-3.1-8b-instant,info_integration,Who are the winners of the 2022 Nobel Prizes for chemistry and physics?,"The winners of the 2022 Nobel Prizes are as follows:
+
+- Chemistry: Carolyn R. Bertozzi, Morten Meldal, and K. Barry Sharpless were awarded the Nobel Prize in Chemistry for their development of click chemistry and bio-orthogonal chemistry.
+- Physics: Alain Aspect, John F. Clauser, and Anton Zeilinger were awarded the Nobel Prize in Physics for their experiments with entangled photons, establishing the violation of Bell inequalities, and pioneering quantum information science.",1
+8,llama-3.1-8b-instant,info_integration,Who won the Super Bowl 2022 and who was named the MVP?,The Los Angeles Rams won the Super Bowl 2022. Cooper Kupp was named the MVP.,1
+9,llama-3.1-8b-instant,info_integration,Who won men's and women's 500m speed skating at the 2022 Winter Olympics?,"According to the documents, the winners of the 500m speed skating events at the 2022 Winter Olympics are:
+
+- Men's 500m: Gao Tingyu of China (gold medal)
+- Women's 500m: Erin Jackson of the United States (gold medal)",1
+10,llama-3.1-8b-instant,info_integration,When were Elden Ring and Splatoon 3 being released?,"Elden Ring was released on February 25, 2022, and Splatoon 3 was released on September 9, 2022.",1
+11,llama-3.1-8b-instant,info_integration,Who were the Male and Female Vocalists of the Year at the 2022 CMA?,"According to the documents, the winners of the 2022 CMA Awards are:
+
+- Male Vocalist of the Year: Chris Stapleton
+- Female Vocalist of the Year: Lainey Wilson",1
+12,llama-3.1-8b-instant,info_integration,What chips do the iPhone 14 and iPhone 14 pro have?,"According to the documents, the iPhone 14 has an A15 Bionic chip, while the iPhone 14 Pro has an A16 Bionic chip.",1
+13,llama-3.1-8b-instant,info_integration,When and where is Google I/O 2022 scheduled to take place?,Google I/O 2022 will be held on May 11 and May 12 at the Shoreline Amphitheater.,1
+14,llama-3.1-8b-instant,info_integration,What films won the 2022 and 2023 Academy Awards for Best Picture?,[ERROR_MAX_RETRIES],0
+15,llama-3.1-8b-instant,info_integration,When will the 95th and 94th Academy Awards be held?,[ERROR_MAX_RETRIES],0
+16,llama-3.1-8b-instant,info_integration,What won Album of the Year at the GRAMMYs 2022 and what was the song of the year?,"Based on the provided documents:
+
+Jon Batiste's 'We Are' won Album of the Year at the 2022 GRAMMYs. 
+
+However, the song of the year is not specified in the provided documents. Document 2 mentions ""Just Like That"" as a Song Of The Year winner, but it does not specify the artist. Document 4 mentions Silk Sonic winning Song of the Year for ""Leave the Door Open"", but it does not confirm if ""Just Like That"" is the actual song of the year.",1
+17,llama-3.1-8b-instant,info_integration,Who won the men's and women's singles Australian Open 2022?,"Rafael Nadal won the men's singles title, defeating Daniil Medvedev in the final, 2–6, 6–7(5–7), 6–4, 6–4, 7–5. 
+Ashleigh Barty won the women's singles title, defeating Danielle Collins in the final, 6–3, 7–6(7–2).",1
+18,llama-3.1-8b-instant,info_integration,Who won the men's and women's singles Australian Open 2023?,[ERROR_MAX_RETRIES],0
+19,llama-3.1-8b-instant,info_integration,Who are the champions of the French Open 2022 in men's and women's singles? ,"The champions of the French Open 2022 in men's and women's singles are Rafael Nadal and Iga Świątek, respectively.",1
+20,llama-3.1-8b-instant,info_integration,Who won the men's and women's singles French Open 2023?,[ERROR_MAX_RETRIES],0
+21,llama-3.1-8b-instant,info_integration,Who are the runners-up in the men's and women's singles at the 2023 French Open?,"Based on the provided documents, the runners-up in the men's and women's singles at the 2023 French Open are:
+
+Men's Singles: Casper Ruud
+Women's Singles: Karolina Muchova",1
+22,llama-3.1-8b-instant,info_integration,Who are the champion of the men's and women's singles at Wimbledon 2022?,"According to Document 1 and Document 2, the champion of the men's singles at Wimbledon 2022 was Novak Djokovic, and the champion of the women's singles at Wimbledon 2022 was Elena Rybakina.",1
+23,llama-3.1-8b-instant,info_integration,Who are the champion of the men's and women's singles at Wimbledon 2023?,[ERROR_MAX_RETRIES],0
+24,llama-3.1-8b-instant,info_integration,How many titles have both Swiatek and Djokovic won in the 2022 season?,"According to Document 1, Swiatek won 8 titles in the 2022 season. 
+
+According to Document 2, Djokovic won 5 titles in the 2022 season.",1
+25,llama-3.1-8b-instant,info_integration,Who are the champions of the U.S. Open 2022 men's and women's singles?,"Carlos Alcaraz and Iga Świątek won the men's and women's singles titles, respectively.",1
+26,llama-3.1-8b-instant,info_integration,What were Tesla's revenues in Q1 and Q2 of 2022 respectively?,"Based on the provided documents, here are the revenues for Q1 and Q2 of 2022:
+
+- Q1 2022: $18.76 billion (Document 1) and $18.8 billion (Document 4)
+- Q2 2022: $16.93 billion (Document 2)
+
+Note that there is a slight discrepancy between the revenues reported in Document 1 and Document 4 for Q1 2022.",1
+27,llama-3.1-8b-instant,info_integration,Who won the French Presidential Election 2022 and who were the candidates?,"Emmanuel Macron won the French Presidential Election 2022. The candidates included Emmanuel Macron, Marine Le Pen, Jean-Luc Mélenchon, Valérie Pécresse, Éric Zemmour, Jean Lassalle, Philippe Poutou, and Nicolas Dupont-Aignan.",1
+28,llama-3.1-8b-instant,info_integration,Where and when will the 2022 Met Gala take place?,"The 2022 Met Gala will take place on Monday, May 2, 2022, in New York City.",1
+29,llama-3.1-8b-instant,info_integration,What were the revenues of Apple and Google in Q3 2022?,"According to the documents, the revenues of Apple and Google in Q3 2022 were:
+
+- Apple: $83.0 billion (as reported in Document 1, Document 4, and Document 5)
+- Google (Alphabet): $69.1 billion (as reported in Document 2, Document 5, and Document 6)",1
+30,llama-3.1-8b-instant,info_integration,When was the ChatGPT and GPT4 released?,"According to Document 1, ChatGPT was released on November 30, 2022. 
+
+According to Document 2, GPT-4 was released on March 14, 2023.",1
+31,llama-3.1-8b-instant,info_integration,What is the location and date of the Major League Baseball Field of Dreams Game 2022?,"The location of the Major League Baseball Field of Dreams Game 2022 is Dyersville, Iowa. The date of the game is Thursday, August 11, 2022.",1
+32,llama-3.1-8b-instant,info_integration,Who won the World Cup Final in 2022 and who were the runners-up?,Argentina won the World Cup Final in 2022. The runners-up were France.,1
+33,llama-3.1-8b-instant,info_integration,What were the unemployment rate in August and September  2022 in the U.S.?,"According to Document 1, the U.S. unemployment rate, not seasonally adjusted, in August 2022 was 3.8% or 0.8 percentage points below the transportation sector rate. Seasonally adjusted, the U.S. unemployment rate in August 2022 was 3.7%.
+
+According to Document 2, the U.S. unemployment rate declined to 3.5 percent in September 2022.",1
+34,llama-3.1-8b-instant,info_integration,Where and when did Queen Elizabeth II die?,"Based on the provided documents, Queen Elizabeth II died at Balmoral Castle in Scotland. 
+
+Document 1: 'The queen ""died peacefully"" on Thursday afternoon at Balmoral Castle, her estate in the Scottish Highlands, royal family officials announced.'
+Document 2: 'On 8 September 2022, at 15:10 BST, Elizabeth II, Queen of the United Kingdom and the other Commonwealth realms, and the longest-reigning British monarch,...'
+Document 3: 'The document, published by National Records of Scotland on Thursday, says the late British monarch died at 3:10 p.m. UK time (10:10 a.m. ET) on ...'
+
+Combining the information from these documents, Queen Elizabeth II died at Balmoral Castle in Scotland on September 8, 2022, at 3:10 p.m. UK time (10:10 a.m. ET).",1
+35,llama-3.1-8b-instant,info_integration,Who stars as Susie Wallis and who is the director of Susie Searches?,"Kiersey Clemons stars as Susie Wallis, and Sophie Kargman is the director of Susie Searches.",1
+36,llama-3.1-8b-instant,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,[ERROR_MAX_RETRIES],0
+37,llama-3.1-8b-instant,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,"Based on the provided documents, here are the QS rankings for Columbia University and Carnegie Mellon University (CMU) in 2023:
+
+Columbia University:
+- According to QS World University Rankings 2023, Columbia University is placed at the 22nd position.
+- In the QS World University Rankings by Subject 2023, Columbia University is ranked 7th globally in the top 10 institutions globally with the leading academic programmes in the subject area.
+
+Carnegie Mellon University (CMU):
+- According to QS World University Rankings 2024, CMU is ranked #52.
+
+Note: The QS rankings mentioned in the documents are for different years (2023 and 2024).",1
+38,llama-3.1-8b-instant,info_integration,What were the inflation and unemployment rates in the U.S. in August?,[ERROR_MAX_RETRIES],0
+39,llama-3.1-8b-instant,info_integration,When and where is ACL 2023 taking place?,I can not answer the question because of the insufficient information in documents.,0
+40,llama-3.1-8b-instant,info_integration,Where and when is EMNLP 2023 taking place?,"EMNLP 2023 will be held in Singapore, with the exact dates of the Workshops & Tutorials & Conference being December 6-10, 2023.",1
+41,llama-3.1-8b-instant,info_integration,When and where did Queen Elizabeth II's state funeral take place?,"The state funeral of Queen Elizabeth II took place on Monday, 19 September, at Westminster Abbey in London.",1
+42,llama-3.1-8b-instant,info_integration,When and where did the Golden Globe Awards 2023 take place?,"The Golden Globe Awards 2023 took place on Tuesday, January 10, 2023, at the Beverly Hilton in California.",1
+43,llama-3.1-8b-instant,info_integration,Who killed Shinzo Abe and when it happened?,"Tetsuya Yamagami killed Shinzo Abe. The assassination occurred on July 8, 2022, while Abe was giving a campaign speech in Nara, Japan.",1
+44,llama-3.1-8b-instant,info_integration,who won the 2022 nobel prize in economics and literature?,[ERROR_MAX_RETRIES],0
+45,llama-3.1-8b-instant,info_integration,Who played Adrianna Tomaz and Ishmael Gregor in the movie Black Adam?,[ERROR_MAX_RETRIES],0
+46,llama-3.1-8b-instant,info_integration,Who stars as Dr. Ben Seong and Addison Augustine in the Quantum Leap revival?,Raymond Lee stars as Dr. Ben Seong and Caitlin Bassett stars as Addison Augustine in the Quantum Leap revival.,1
+47,llama-3.1-8b-instant,info_integration,What are the prices of RTX 4080 and RTX 4090 GPUs at launch?,[ERROR_MAX_RETRIES],0
+48,llama-3.1-8b-instant,info_integration,What is the release date of Sweetwater and who is the director of the film?,"Based on the provided documents, the release date of Sweetwater is April 14, 2023. 
+
+The director of the film Sweetwater is Martin Guigui, as stated in Document 2.",1
+49,llama-3.1-8b-instant,info_integration,Who voice Batman and Redbird in Batwheels?,Ethan Hawke voices Batman in Batwheels. Jordan Reed voices Redbird in Batwheels.,1
+50,llama-3.1-8b-instant,info_integration,When did Rishi Sunak and Liz Truss become Prime Ministers of the UK?,"Rishi Sunak became Prime Minister of the UK on 25 October 2022. 
+Liz Truss became Prime Minister of the UK on 6 September 2022.",1
+51,llama-3.1-8b-instant,info_integration,How much do the Netflix Basic with Ads and without ADs subscription cost?,"According to Document 1, the Netflix Basic with Ads subscription costs $6.99 per month. 
+
+According to Document 2, the Netflix Basic plan without Ads costs $15.49 per month.",1
+52,llama-3.1-8b-instant,info_integration,Where and when does The White Lotus Season 2 take place?,"The White Lotus Season 2 takes place in Sicily, Italy. The exact locations include Taormina, Palermo, Noto, and the neighboring Ionian Sea. The season premiered on October 30, 2022.",1
+53,llama-3.1-8b-instant,info_integration,Which party controls the house and the senate after the 2022 midterm elections?,"Based on the provided documents, the answer is:
+
+The Democrats control the Senate after the 2022 midterm elections, as stated in Document 2: ""Sen. Raphael Warnock (D) defeated challenger Herschel Walker (R) during the 2022 Georgia run-off race, giving Democrats a 51-49 majority in the Senate.""
+
+However, the control of the House of Representatives is not explicitly stated in the provided documents.",1
+54,llama-3.1-8b-instant,info_integration,Who won the U.S. Senate in Nevada and Florida in the 2022 midterm elections?,"Based on the provided documents, the winners of the U.S. Senate in Nevada and Florida in the 2022 midterm elections are:
+
+- Nevada: Catherine Cortez Masto (D) won the U.S. Senate seat in Nevada, defeating Republican Adam Laxalt.
+- Florida: Marco Rubio (R) won the race for Florida Senate, defeating Democratic nominee Val Demings.",1
+55,llama-3.1-8b-instant,info_integration,Who designed Naomi Biden's wedding dress and when was their wedding held?,"Naomi Biden's wedding dress was designed by Ralph Lauren. Her wedding was held on November 19, 2022, on the South Lawn of the White House.",1
+56,llama-3.1-8b-instant,info_integration,What groupings are France and Germany in World Cup 2022? ,"According to Document 1, France is in Group D of the 2022 FIFA World Cup. 
+
+According to Document 2, Germany is in Group E of the 2022 FIFA World Cup.",1
+57,llama-3.1-8b-instant,info_integration,What grouping is U.S. and Spain in World Cup 2022,I can not answer the question because of the insufficient information in documents.,0
+58,llama-3.1-8b-instant,info_integration,"What groupings are Argentina and Brazil in World Cup 2022, and who are their first opponents?","According to the documents, Argentina is in Group C and Brazil is in Group G. 
+
+Argentina's first opponent is Saudi Arabia, as mentioned in Document 1: ""The first match of the group was between Argentina and Saudi Arabia.""
+
+Brazil's first opponent is Serbia, as mentioned in Document 2: ""Brazil had already reached the knockout stage after victories over Serbia and Switzerland.""",1
+59,llama-3.1-8b-instant,info_integration,What were the unemployment rate and inflation rate in November 2022?,"According to Document 1, the U.S. unemployment rate, seasonally adjusted, in November 2022 was 3.7%. 
+
+According to Document 2, the Consumer Prices Index (CPI) rose by 10.7% in the 12 months to November 2022, and the largest downward contribution to the change in both the CPIH and CPI annual inflation rates between October and November 2022 came from transport, particularly motor fuels.",1
+60,llama-3.1-8b-instant,info_integration,Who did the USA and Germany play in the round of 16 at 2022 FIFA World Cup?,[ERROR_MAX_RETRIES],0
+61,llama-3.1-8b-instant,info_integration,Who are the semi opponents of Argentina and Germany in the World Cup?,I can not answer the question because of the insufficient information in documents.,0
+62,llama-3.1-8b-instant,info_integration,"Who is starring Barbie and Ken in the movie ""Barbie""?","According to the documents, Margot Robbie is starring as Barbie in the movie ""Barbie"". As for Ken, the documents mention that Ryan Gosling, Kingsley Ben-Adir, Simu Liu, Ncuti Gatwa, and Scott Evans are all playing the role of Ken in the movie.",1
+63,llama-3.1-8b-instant,info_integration,When are the championship game of the Patriot League Men’s and Women's Lacrosse Championship 2023?,"Based on the provided documents, the championship game of the Patriot League Men's Lacrosse Championship 2023 was held on Sunday, May 7, 2023. 
+
+The championship game of the Patriot League Women's Lacrosse Championship 2023 was held on Saturday, May 6, 2023.",1
+64,llama-3.1-8b-instant,info_integration,How much did Avatar: The Way of Water earn in its debut weekend at U.S. and worldwide?,"Based on the provided documents, here are the earnings for Avatar: The Way of Water in its debut weekend at U.S. and worldwide:
+
+- U.S. box office: $134 million (Document 1)
+- Worldwide box office: $435 million (Document 2)
+- International markets: $301 million (Document 2)",1
+65,llama-3.1-8b-instant,info_integration,What movies won the Oscars for Best Animated Film and Best Picture in 2023?,[ERROR_MAX_RETRIES],0
+66,llama-3.1-8b-instant,info_integration,Which teams won the Peach Bowl 2022 and Super Bowl 2022?,[ERROR_MAX_RETRIES],0
+67,llama-3.1-8b-instant,info_integration,What are the prices of Microsoft 365 Basic per month and per year?,"According to Document 2, the price of Microsoft 365 Basic is $1.99 per month or $19.99 per year.",1
+68,llama-3.1-8b-instant,info_integration,When does Scream VI release amd who directed it?,"Scream VI was released in theaters on March 10, 2023, and was later released digitally on April 25, 2023, in the US, where it also began streaming on Paramount+. It was directed by Matt Bettinelli-Olpin and Tyler Gillett.",1
+69,llama-3.1-8b-instant,info_integration,What was the annual GDP growth rates of the U.S. and China economy in 2022?,"According to the provided documents, the annual GDP growth rates for 2022 are as follows:
+
+- For the U.S. economy, the real GDP increased by 2.1 percent in 2022 (from the 2021 annual level to the 2022 annual level), as stated in Document 1 and Document 7.
+
+- For the China economy, the real GDP grew by 3% in 2022, as stated in Document 2.",1
+70,llama-3.1-8b-instant,info_integration,Who will be playing the role of Billy Batson and Hespera in Shazam! Fury of the Gods?,"Based on the provided documents, the following actors will be playing the roles in Shazam! Fury of the Gods:
+
+- Billy Batson will be played by Asher Angel.
+- Hespera will be played by Helen Mirren.",1
+71,llama-3.1-8b-instant,info_integration,Who won the Best R&B Album and Best Rap Album at the 2023 Grammys?,[ERROR_MAX_RETRIES],0
+72,llama-3.1-8b-instant,info_integration,What is Google's and Baidu's new AI chatbots called?,[ERROR_MAX_RETRIES],0
+73,llama-3.1-8b-instant,info_integration,Who founded midjourney and Stability AI?,"David Holz founded Midjourney, and Mohammad Emad Mostaque founded Stability AI.",1
+74,llama-3.1-8b-instant,info_integration,Who are the new CEO of Pinterest and Twitter,[ERROR_MAX_RETRIES],0
+75,llama-3.1-8b-instant,info_integration,What is the release dates for Pikmin 4 and Splatoon 3 on Nintendo Switch?,"Pikmin 4 is set to release on July 21, 2023, and Splatoon 3 is set to release on September 9, 2022.",1
+76,llama-3.1-8b-instant,info_integration,Which team won Super Bowl LVII and who was the MVP of the game?,The Kansas City Chiefs won Super Bowl LVII. The MVP of the game was Patrick Mahomes.,1
+77,llama-3.1-8b-instant,info_integration,Who trained LLaMA and Alpaca? ,I can not answer the question because of the insufficient information in documents.,0
+78,llama-3.1-8b-instant,info_integration,Which movie won Best Picture and Best International Feature Film at the 95th Academy Awards Ceremony?,Everything Everywhere All at Once won Best Picture and All Quiet on the Western Front won Best International Feature Film at the 95th Academy Awards Ceremony.,1
+79,llama-3.1-8b-instant,info_integration,"Who won Best Director, Actor at the 95th Academy Awards Ceremony?","Daniel Kwan and Daniel Scheinert won Best Director for their film ""Everything Everywhere All at Once."" 
+
+Brendan Fraser won Best Actor for his performance in ""The Whale.""",1
+80,llama-3.1-8b-instant,info_integration,Who won Best Actor and Best Actress at the 95th Academy Awards Ceremony?,"According to Document 1, Brendan Fraser won the Academy Award for Best Actor for his performance in ""The Whale."" 
+
+According to Document 3, Michelle Yeoh won the Academy Award for Best Actress for her performance in ""Everything Everywhere All at Once.""",1
+81,llama-3.1-8b-instant,info_integration,Who won the Best Actress and Best Supporting Actress at the 95th Academy Awards Ceremony?,"Based on the provided documents, the winners of the Best Actress and Best Supporting Actress at the 95th Academy Awards Ceremony are:
+
+- Best Actress: Michelle Yeoh for her role in ""Everything Everywhere All at Once""
+- Best Supporting Actress: Jamie Lee Curtis for her role in ""Everything Everywhere All at Once""",1
+82,llama-3.1-8b-instant,info_integration,Which movies won Best International Feature Film and Best Animated Feature Film at the 95th Academy Awards Ceremony?,"Based on the provided documents, the answer is:
+
+- Best International Feature Film: All Quiet on the Western Front
+- Best Animated Feature Film: Guillermo del Toro's Pinocchio",0
+83,llama-3.1-8b-instant,info_integration,Who won The Voice Season 23 and Season 22?,[ERROR_MAX_RETRIES],0
+84,llama-3.1-8b-instant,info_integration,Who are the CEOs of Hasbro and burberry?,"Based on the provided documents, the CEOs of Hasbro and Burberry are:
+
+1. Chris Cocks - CEO of Hasbro
+2. Jonathan Akeroyd - CEO of Burberry",1
+85,llama-3.1-8b-instant,info_integration,Where and when is the 2023 CAA World Congress of Sports?,"The 2023 CAA World Congress of Sports will be held at the JW Marriott at L.A. Live in Los Angeles, CA, on April 18-19, 2023.",1
+86,llama-3.1-8b-instant,info_integration,"Who are the director of ""Polite Society"" and when was the release date of it?","The director of ""Polite Society"" is Nida Manzoor. 
+
+The release date of ""Polite Society"" was April 28, 2023.",1
+87,llama-3.1-8b-instant,info_integration,What is the name and release date of Google's foldable smartphone?,"Based on the provided documents, the name of Google's foldable smartphone is the ""Pixel Fold"". 
+
+The release date of the Pixel Fold is mentioned in multiple documents, but the exact date varies. Document 1 mentions that it will be launched in June, Document 2 mentions that it is out on June 27, and Document 5 mentions that it was officially unveiled on May 10th. However, Document 1 also mentions that it was launched at the Google I/O conference on May 10th, which implies that it was available on that date.",1
+88,llama-3.1-8b-instant,info_integration,What is the name of Google's AI image editing tool and Microsoft's ai assistant in office?,[ERROR_MAX_RETRIES],0
+89,llama-3.1-8b-instant,info_integration,When were the chatgpt apps for ios and chatgpt api launched?,"I can answer the question based on the provided documents.
+
+The ChatGPT app for iOS was launched on May 18, 2023 (Document 1, Document 3, Document 4).
+
+The ChatGPT API Connector was launched on March 15, 2023 (Document 2).",1
+90,llama-3.1-8b-instant,info_integration,What is the datesof the 2023 and 2022 NBA Draft?,"The 2023 NBA Draft was held on June 22, 2023. 
+The 2022 NBA Draft was held on June 23, 2022.",1
+91,llama-3.1-8b-instant,info_integration,Who won the U.S. Open golf tournament 2023 and the 2023 Open Championship?,[ERROR_MAX_RETRIES],0
+92,llama-3.1-8b-instant,info_integration,Who were the MVP of Super Bowl 2022 and 2023,[ERROR_MAX_RETRIES],0
+93,llama-3.1-8b-instant,info_integration,Who won the 2022 Nobel Prize for chemistry?,"The 2022 Nobel Prize in Chemistry was awarded to Carolyn Bertozzi, Morten Meldal, and K. Barry Sharpless for the development of click chemistry and bioorthogonal chemistry.",1
+94,llama-3.1-8b-instant,info_integration,When is Google I/O 2022 scheduled to take place?,"Google I/O 2022 is scheduled to take place on Wednesday, May 11th, 2022. The event will begin with its main keynote happening at 10AM PT / 1PM ET.",1
+95,llama-3.1-8b-instant,info_integration,Which teams are playing in the 2021-22 NBA Finals?,"According to Document 2, the teams playing in the 2022 NBA Finals are the Golden State Warriors and the Boston Celtics.",1
+96,llama-3.1-8b-instant,info_integration,Who acquired a stake in FromSoftware?,"Based on the provided documents, the following acquired a stake in FromSoftware:
+
+1. Sony: They acquired a 14.09% stake in FromSoftware, in addition to the 1.93% stake they previously purchased in February 2021, making the total stake 16%.
+
+2. Sixjoy (a Tencent subsidiary): They acquired a 16.25% stake in FromSoftware.
+
+3. Kadokawa: They retained a 69.66% majority stake in FromSoftware.",1
+97,llama-3.1-8b-instant,info_integration,Which companies are part of MATANA?,"According to Document 4, the companies that are part of MATANA are: 
+
+1. Microsoft
+2. Apple
+3. Tesla
+4. Alphabet (Google)
+5. Nvidia",1
+98,llama-3.1-8b-instant,info_integration,Where are Apple's first two stores in India?,"According to Document 1, Apple's first two stores in India are located in Mumbai and Delhi. Specifically, the first store is Apple BKC in Mumbai, which will open on April 18, and the second store is Apple Saket in Delhi, which will open on April 20.",1
+99,llama-3.1-8b-instant,info_integration,What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?,"Based on the provided documents, Jessie Diggins won the following medals in the Beijing 2022 Olympic Games:
+
+1. Bronze medal in the women's cross-country skiing individual sprint free event (Document 2)
+2. Silver medal in the women's 30km mass start freestyle event (Document 1 and Document 2)
+
+Note that Document 3 is not a relevant document for answering this question, as it only mentions that Diggins won her second 2022 Olympic medal, but does not specify which medal.",1

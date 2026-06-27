@@ -1,0 +1,990 @@
+id,model,ability,query,model_response,error_detected,error_corrected
+0,qwen/qwen3-32b,counterfactual_robustness,Super Bowl 2021 location,"<think>
+Okay, let's tackle this question about the Super Bowl 2021 location. The user provided three documents, and I need to check if they have factual errors.
+
+First, looking at Document 1: It says the game was played on February 7, 2021, at Raymond James Stadium in Tampa, Florida, which is the Buccaneers' home stadium. That seems correct because I remember that the 2021 Super Bowl was indeed held there. The Buccaneers did host it, and the date matches.
+
+Document 2 mentions that the NFL voted to move Super Bowl LV from Los Angeles to Tampa for February 2021. Wait, Super Bowl LV is the 50th Super Bowl, which actually took place in 2021. But the original plan was for Super Bowl 50 to be in Santa Clara, California, in 2016. Maybe there's confusion here. However, the NFL did move some Super Bowls due to the pandemic. For example, Super Bowl LV was originally scheduled for Tampa in 2021, but maybe there was a change? Wait, no, Super Bowl LV was actually held in Tampa in 2021 as planned. The document says they moved it from Los Angeles, but I think that's incorrect. The original host for 2021 was Tampa, not Los Angeles. So Document 2 might have an error here.
+
+Document 3 states that Super Bowl 2021 was on February 7, 2021, at Raymond James Stadium. That's correct. The date and location are accurate. The three documents all point to Tampa, Florida, as the location. However, Document 2's mention of moving from Los Angeles is likely the error. The correct information is that Super Bowl LV (2021) was hosted by Tampa, not moved from Los Angeles. The actual move that happened was Super Bowl LIV (2020) being moved from Miami to Tampa due to the pandemic, but that was in 2020. So Document 2 is mixing up the years. Therefore, there's a factual error in Document 2. The correct answer is that Super Bowl 2021 was in Tampa, Florida, as stated in the other documents.
+</think>
+
+There are factual errors in the provided documents.  
+
+**Correct Answer:**  
+Super Bowl 2021 (Super Bowl LV) was held at Raymond James Stadium",1,1
+1,qwen/qwen3-32b,counterfactual_robustness,Which country won the most medals at the 2018 Winter Olympics?,"<think>
+Okay, let's tackle this question. The user is asking which country won the most medals at the 2018 Winter Olympics. The documents provided are 1 through 4, each giving some information.
+
+First, Document 1 says Norway set the record with 39 medals, surpassing the US's 37 from 2010. Document 2 mentions Norway tied with Germany in PyeongChang. Document 3 states Norway was on top of the medal count after 19 days. Document 4 from 2022 says Norway had 39 medals in 2018, the largest haul.
+
+Wait, but I remember that in the 2018 Winter Olympics, Norway actually won the most medals. However, the documents mention a tie with Germany. Let me check my knowledge. The 2018 Winter Olympics were in PyeongChang. Norway did win the most medals with 39, including 14 golds. Germany also had a lot of medals but not as many as Norway. So Norway was first, and Germany was second. But Document 2 says Norway tied with Germany. That might be a factual error. Because in reality, Norway had 39, Germany had 31. So the documents might have an error here. The user's instruction is to point out if there are factual errors. So I need to check if any of the documents have incorrect info.
+
+Document 2 says Norway tied with Germany. That's incorrect. Norway had more medals. So there's a factual error in Document 2. The correct answer is Norway. So I should first state that there are factual errors in the documents, then provide the correct answer.
+</think>
+
+There are factual errors in the provided documents. 
+
+The correct answer is Norway. At the 2018 Winter Olympics in PyeongChang, Norway won the most medals with a total of 39 (14 gold, 14 silver, and 11 bronze), surpassing all other nations. Germany finished second with 31 medals. Document 2 incorrectly states that Norway ""tied with Germany,"" which is false.",1,1
+2,qwen/qwen3-32b,counterfactual_robustness,Who acquired Instagram?,"<think>
+Okay, let's see. The user is asking who acquired Instagram. The documents provided mention Facebook buying Instagram for $1 billion in 2012. But wait, I remember that Facebook is now called Meta. So, the correct answer should be Meta, right? Let me check the documents again. All the documents refer to Facebook as the buyer. However, in reality, Facebook rebranded to Meta in 2022. So the acquisition was done by Facebook, but the parent company is now Meta. The user might be expecting the current name. But the question is about who acquired Instagram at the time, which was Facebook. So the answer should be Facebook. But maybe the user wants the current name. Hmm. The documents don't mention Meta, so if I stick strictly to the documents, the answer is Facebook. However, factually, the parent company is Meta now. But the acquisition happened under Facebook. So the correct answer is Facebook. The documents are correct in that aspect. No factual errors here. So the answer is Facebook.
+</think>
+
+Answer: Facebook acquired Instagram.",0,0
+3,qwen/qwen3-32b,counterfactual_robustness,Who acquired WhatsApp?,"<think>
+Okay, let's see. The user is asking who acquired WhatsApp. The documents provided mention Facebook purchasing WhatsApp. Let me check each document.
+
+Document 1 says Facebook purchased WhatsApp in 2014 for $16 billion. Document 2 states the acquisition was by Facebook in February 2014 for $19.3 billion. Document 3 and 4 also mention Facebook acquiring WhatsApp for $19 billion. Document 5 is a press release from Facebook about the acquisition. 
+
+Wait, the amounts differ between $16B and $19.3B. That's a discrepancy. Also, the correct acquisition price is actually $19.3 billion, as per my knowledge. So Document 1's $16B is incorrect. But the main question is about who acquired WhatsApp, which all documents point to Facebook. However, the user's instruction is to check for factual errors. Since the price in Document 1 is wrong, I need to mention that. But the answer to the question is still Facebook. So I should first note the factual error in the documents and then provide the correct answer.
+</think>
+
+There are factual errors in the provided documents. The correct answer is: Facebook acquired WhatsApp.",1,1
+4,qwen/qwen3-32b,counterfactual_robustness,Who won the women's singles Wimbledon in 2019?,"<think>
+Okay, let's see. The user is asking who won the women's singles Wimbledon in 2019. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Simona Halep defeated Serena Williams in the final with scores 6-2, 6-2. That seems to indicate Halep won. Document 3 also lists the same match result. Document 5 mentions Romania's Simona Halep beating Serena Williams to win the 2019 Wimbledon title. Document 4 talks about the final being one-way against Halep. Document 2 states she won the title, her second major after the 2018 French Open. 
+
+Wait, but I remember that in 2019 Wimbledon, the women's final was actually between Simona Halep and Serena Williams. The correct result was Halep winning 6-2, 6-2. All the documents here agree on that. So the answer should be Simona Halep. There's no conflicting information here. The documents don't have factual errors in this case. All the sources point to Halep as the winner. So the answer is Simona Halep.
+</think>
+
+The winner of the women's singles Wimbledon in 2019 was **Simona Halep**. All provided documents consistently state this result.",0,0
+5,qwen/qwen3-32b,counterfactual_robustness,Who won the women's singles Wimbledon in 2018?,"<think>
+Okay, let's see. The user is asking who won the women's singles Wimbledon in 2018. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Angelique Kerber defeated Serena Williams in the final with scores 6–3, 6–3. That seems to indicate Kerber won. Document 2 also mentions Kerber winning the 2018 Wimbledon women's singles by beating Serena Williams. Document 3 states that Novak Djokovic won the men's and Kerber the women's. Document 4 says Kerber won her first title at Wimbledon. Document 5 lists Kerber as the 2018 winner with the same scores.
+
+All documents consistently mention Angelique Kerber as the winner. I don't see any conflicting information here. The user's instruction is to point out factual errors if any. Since all sources agree, there's no error detected. The answer should be Kerber.
+</think>
+
+The documents consistently state that Angelique Kerber won the women's singles title at the 2018 Wimbledon Championships by defeating Serena Williams in the final. There are no factual errors in the provided documents. 
+
+Answer: Angelique Kerber won the women's singles Wimbledon in 2018.",0,0
+6,qwen/qwen3-32b,counterfactual_robustness,Who won the women's singles Wimbledon in 2021?,"<think>
+Okay, let's see. The user is asking who won the women's singles Wimbledon in 2021. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Ashleigh Barty defeated Karolína Plíšková with the score 6–3, 6–7(4–7), 6–3. The date mentioned is the final, but the exact date isn't specified here. 
+
+Document 2 mentions the date as Jul 11, 2021, and states Barty beat Karolina Pliskova 6-3, 6-7 (7-4), 6-3. Wait, the tiebreak score here is 7-4, but Document 1 says 4-7. That's a discrepancy. 
+
+Document 3 just confirms Barty won against Plíšková. Document 4 and 5 also mention Barty winning against Pliskova in three sets. Document 5's score is 6-3, 6-7, 6-3, which matches Document 1 except for the tiebreak notation. 
+
+Now, the key point is the tiebreak score in the second set. Document 1 says 6–7(4–7), which would mean Pliskova won the tiebreak 7-4. Document 2 says 6-7 (7-4), implying Barty won the tiebreak 7-4. These are conflicting. 
+
+I need to verify which is correct. From my knowledge, in the 2021 Wimbledon final, Ashleigh Barty did win against Karolína Plíšková. The correct score was 6–3, 6–7(4–7), 6–3. So the tiebreak was 4–7 in favor of Pliskova. Therefore, Document 1 and 3 are correct, while Document 2 has an error in the tiebreak score. 
+
+The user's question is about the winner, which all documents agree was Barty. However, the user is asking if there are factual errors. The error here is in Document 2's tiebreak score. But since the question is only about the winner, the answer remains Barty. However, the user's instruction is to point out factual errors if any. Since the documents have conflicting tiebreak scores, that's a factual error. But the main answer (winner",0,0
+7,qwen/qwen3-32b,counterfactual_robustness,Who won the men's singles Wimbledon in 2013?,"<think>
+Okay, let's see. The user is asking who won the men's singles Wimbledon in 2013. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Andy Murray defeated Novak Djokovic in the final with scores 6–4, 7–5, 6–4. That's three sets, so not straight sets. Document 2 mentions a straight sets victory. Wait, straight sets would mean winning in two sets, right? But Document 1's scores are three sets. That seems conflicting. Document 3 also says straight-sets victory. Document 4 mentions the 2013 final between Murray and Djokovic. Document 5 again states Murray beat Djokovic.
+
+Wait, there's a discrepancy here. If Document 1 says three sets (6-4, 7-5, 6-4) and Documents 2 and 3 mention straight sets, which would be two sets. That's a factual error. Because straight sets mean winning in two sets, but the actual scores from Document 1 are three sets. So the documents have conflicting info. 
+
+I need to recall the actual event. From my knowledge, Andy Murray did win the 2013 Wimbledon men's singles title. The final was against Novak Djokovic. The correct score was 6–4, 7–5, 6–4, which is three sets, not straight sets. So Documents 2 and 3 are incorrect in stating it was straight sets. Therefore, there are factual errors in the documents. The correct answer is Andy Murray, but the documents have errors regarding the number of sets.
+</think>
+
+There are factual errors in the provided documents. The correct answer is Andy Murray. He defeated Novak Djokovic in the 2013 Wimbledon men's singles final with a score of 6–4, 7–5, 6–4, which was a three-set match, not a straight-sets victory as incorrectly stated in Documents 2 and 3.",1,1
+8,qwen/qwen3-32b,counterfactual_robustness,Who won the women's singles U.S. Open in 2021?,"<think>
+Okay, let's see. The user is asking who won the women's singles U.S. Open in 2021. I need to check the provided documents first.
+
+Looking at Document 1: It says Emma Raducanu defeated Leylah Fernandez in the final with scores 6-4, 6-3. She became the first qualifier to win. That seems correct.
+
+Document 2 mentions Emma Raducanu won the 2021 US Open women's title by defeating Leylah Fernandez in Arthur Ashe Stadium. Also, Robin Montgomery swept... Wait, Robin Montgomery? That part might be about another match, maybe the men's or another event. But the main point here is Emma's victory.
+
+Document 3 states that in the first US Open final between two unseeded players, 18-year-old Emma Raducanu took home her first Grand Slam. That aligns with the other documents.
+
+Document 4 confirms Emma Raducanu beat Leylah Fernandez to win the title. 
+
+Document 5 says Emma Raducanu arrived in NYC for her first Grand Slam and left as the 2021 U.S. Open women's champion. 
+
+All documents point to Emma Raducanu as the winner. Now, checking for factual errors. The user mentioned that documents might have errors. Let me verify with my knowledge. From what I remember, Emma Raducanu did win the 2021 US Open women's singles title, defeating Leylah Fernandez. She was indeed a qualifier and unseeded, which matches the documents. The only possible error I notice is in Document 2 where it mentions Robin Montgomery sweeping... but that's probably a different context, maybe a men's match or another round. The main answer about Emma is correct. So no factual errors in the answer provided by the documents. The answer should be Emma Raducanu.
+</think>
+
+The women's singles U.S. Open in 2021 was won by **Emma Raducanu**, who defeated Leylah Fernandez in the final. The provided documents are factually accurate regarding this outcome. 
+
+**Answer:** Emma Raducanu.",0,0
+9,qwen/qwen3-32b,counterfactual_robustness,Who won the men's singles U.S. Open in 2020?,"<think>
+Okay, let's see. The user is asking who won the men's singles U.S. Open in 2020. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Dominic Thiem defeated Alexander Zverev in the final with a score of 2–6, 4–6, 6–4, 6–3, 7–6(8–6). That's a five-set match. The document states Thiem won the title.
+
+Document 2 also mentions Dominic Thiem defeating Zverev in five sets to win the 2020 US Open. It calls it a comeback, which aligns with the score in Document 1 where Thiem lost the first two sets but then won the next three.
+
+Document 3 says Thiem won his first Grand Slam title and was the first new champion since 2014. That makes sense if he won in 2020, as the previous winners before that might have been the same players for a few years.
+
+Document 4 lists the 2020 winner as Dominic Thiem and the finalist as Alexander Zverev. The 2021 winner is Daniil Medvedev, which I know is correct. The 2019 winner is Rafael Nadal, which is also correct. So Document 4 seems accurate.
+
+Document 5 also lists Dominic Thiem as the 2020 winner and Zverev as the finalist. The 2019 entry here has Rafael Nadal and Daniil Medvedev, which is correct because Nadal won in 2019 and Medvedev was the finalist. 
+
+All documents consistently point to Dominic Thiem as the 2020 US Open men's singles champion. I don't see any conflicting information here. The scores in Document 1 and the other documents match. Also, checking my own knowledge, Dominic Thiem did win the 2020 US Open, which was his first Grand Slam title. The final was indeed against Zverev, and it went to five sets. So the answer should be Dominic Thiem. There don't appear to be any factual errors in the documents regarding this question. All the documents are in agreement and my knowledge confirms this.
+</think>
+
+Answer: Dominic Thiem won the men's singles U.S. Open in 2020.",0,0
+10,qwen/qwen3-32b,counterfactual_robustness,Who won the women's singles U.S. Open in 2019?,"<think>
+Okay, let's see. The user is asking who won the women's singles U.S. Open in 2019. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Bianca Andreescu defeated Serena Williams in the final, 6–3, 7–5. That's her first major title. Document 2 also states Bianca Andreescu won the title by defeating Serena Williams in straight sets. Document 3 lists 2019's winner as Bianca Andreescu (Canada) and the finalist as Serena Williams (USA). Document 4 mentions Serena Williams lost to Bianca Andreescu in the 2019 final. Document 5 lists the final as Serena Williams vs. Bianca Andreescu.
+
+All documents consistently point to Bianca Andreescu as the winner. The scores in Document 1 are 6-3, 7-5, which isn't straight sets, but Document 2 says straight sets. Wait, that's a discrepancy. If the score was 6-3, 7-5, that's two sets, so not straight sets. Straight sets would mean winning in two sets without going to a third. But the score here is two sets, so maybe ""straight sets"" in Document 2 is incorrect. However, the actual match result from my knowledge is that Bianca Andreescu did win the 2019 US Open, defeating Serena Williams in two sets, which would be straight sets. Wait, but the score in Document 1 is 6-3, 7-5. That's two sets, so straight sets. Maybe the user is confused because sometimes people refer to winning without going to a third set as straight sets. So Document 2's mention of straight sets is correct. The documents don't have a factual error here. All documents correctly state Bianca Andreescu as the winner. So the answer is Bianca Andreescu.
+</think>
+
+The women's singles U.S. Open in 2019 was won by **Bianca Andreescu** of Canada, who defeated Serena Williams in the final. The provided documents are consistent and do not contain factual errors regarding this information. 
+
+Answer: Bianca Andreescu.",0,0
+11,qwen/qwen3-32b,counterfactual_robustness,Who won the men's singles U.S. Open 2021?,"<think>
+Okay, let's see. The user is asking who won the men's singles U.S. Open in 2021. I need to check the provided documents for the answer.
+
+Looking at all the documents, they all mention Daniil Medvedev defeating Novak Djokovic in the final with the score 6–4, 6–4, 6–4. Each document states that Medvedev won his first major title. The dates mentioned are September 12 and 14, 2021, which aligns with the US Open typically ending in late August or early September. 
+
+Wait, the US Open usually takes place in August and September, so the dates here make sense. All documents consistently point to Medvedev as the winner. There's no conflicting information here. The answer should be Daniil Medvedev. I don't see any factual errors in the documents regarding this question. They all correctly state Medvedev's victory.
+</think>
+
+Answer: Daniil Medvedev won the men's singles U.S. Open 2021.",0,0
+12,qwen/qwen3-32b,counterfactual_robustness,What was Tesla's revenue in Q1 2021?,"<think>
+Okay, let's see. The user is asking about Tesla's revenue in Q1 2021. The provided document mentions that in Q1 2022, the revenue was $10.4 billion, which is an 81% increase from Q1 2021. The answer given in the document is $679 million, but that seems way too low. Wait, Tesla's revenue in 2021 was definitely higher than that. Let me check my knowledge.
+
+I remember that Tesla's revenue in Q1 2021 was around $10.4 billion. Wait, no, that's the 2022 figure. Let me think again. In 2021, Tesla's total revenue was about $53.8 billion for the whole year. So each quarter would be roughly a quarter of that, maybe around $13-14 billion per quarter. But the document says Q1 2022 was $10.4 billion, which is an 81% increase from Q1 2021. Let me do the math. If Q1 2022 is 81% higher than Q1 2021, then Q1 2021 would be $10.4 billion divided by 1.81. Let's calculate that: 10.4 / 1.81 ≈ 5.746 billion. Wait, that's $5.75 billion, but the document says $679 million. That's a huge discrepancy. The correct answer should be around $5.75 billion for Q1 2021. The document's $679 million is way off. So there's a factual error here. The user's answer should point out the error and provide the correct figure.
+</think>
+
+There are factual errors in the provided documents. The correct answer is that Tesla's revenue in Q1 2021 was approximately $10.4 billion, not $679 million as stated in the document. The document incorrectly labels the $10.4 billion figure as Q1 2022 revenue while claiming Q1 2021 revenue was $679 million, which is inconsistent with Tesla's actual financial performance.",1,1
+13,qwen/qwen3-32b,counterfactual_robustness,What was Tesla's revenue in Q2 2020?,"<think>
+Okay, let's see. The user is asking about Tesla's revenue in Q2 2020. The provided document mentions that Tesla reported ""fourth straight quarter of profits"" and gives earnings and revenue figures. The revenue is listed as $6.04 billion versus $5.37 billion. Wait, the date on the document is Jul 22, 2020, which would be Q3. But the question is about Q2 2020.
+
+Hmm, the document might be referring to Q2 2020 as part of the fourth quarter of profits. Let me check Tesla's actual financials. From my knowledge, Tesla's Q2 2020 revenue was indeed $6.04 billion. The document's date is July 2020, which is Q3, but the earnings report for Q2 would be released in July. So the $6.04 billion is correct for Q2. The expected revenue was $5.37 billion, which they exceeded. The document doesn't have factual errors here. The answer should be $6.04 billion.
+</think>
+
+Tesla's revenue in Q2 2020 was $6.04 billion.",0,0
+14,qwen/qwen3-32b,counterfactual_robustness,What was Tesla's revenue in Q3 2019?,"<think>
+Okay, let's see. The user is asking about Tesla's revenue in Q3 2019. They provided two documents from October 23, 2019.
+
+Document 1 says Tesla reported third-quarter revenue of $6.3 billion. Document 2 also mentions $6.3 billion in revenue for the same quarter. Both documents seem to agree on the $6.3 billion figure. 
+
+I need to check if there are any factual errors here. From what I remember, Tesla's Q3 2019 earnings were indeed around that amount. Let me recall. Yes, Tesla's Q3 2019 revenue was $6.3 billion. The documents are correct in that aspect. Both documents also mention meeting or exceeding Wall Street estimates, which aligns with the actual reports from that time. 
+
+Since both documents are consistent and the information matches my knowledge, there's no factual error here. The answer should be $6.3 billion.
+</think>
+
+Tesla's revenue in Q3 2019 was $6.3 billion.",0,0
+15,qwen/qwen3-32b,counterfactual_robustness,When was Splatoon 2 released?,"<think>
+Okay, let's see. The user is asking when Splatoon 2 was released. I need to check the documents provided.
+
+Document 1 says it was released on July 21, 2017. Document 2 also mentions the same date, July 21, 2017, and adds that it was first teased on October 20, 2016. 
+
+Wait, I remember that Splatoon 2 was indeed released in 2017 for the Nintendo Switch. The release date being July 21 seems correct. Both documents agree on that date. But I should verify if there's any discrepancy. The first document mentions it's a third-person shooter, but Splatoon games are actually first-person shooters where you shoot ink. That's a factual error in Document 1. The genre is incorrect. However, the release date is correct in both documents. So the answer should be July 21, 2017. But since there's an error in Document 1 about the genre, I need to mention that there are factual errors in the provided documents. Then provide the correct answer.
+</think>
+
+There are factual errors in the provided documents.  
+
+**Correct Answer:** Splatoon 2 was released worldwide on **July 21, 2017**, for the Nintendo Switch. The documents correctly state the release date, but Document 1 incorrectly classifies the game as a ""third-person shooter"" when it is actually a **first-person shooter** (players control a character from a third-person perspective but shoot ink in a first-person style).",1,1
+16,qwen/qwen3-32b,counterfactual_robustness,Who acquired 20th Century Fox?,"<think>
+Okay, let's see. The user is asking who acquired 20th Century Fox. I need to check the provided documents for the answer.
+
+Looking at Document 1: It mentions that The Walt Disney Company was negotiating a deal with Rupert Murdoch to acquire 21st Century Fox's filmed entertainment. So Disney was involved in negotiations.
+
+Document 2 says Walt Disney ended 20th Century Fox as a known name. That suggests Disney took over Fox's assets.
+
+Document 3 states Disney purchased most of 21st Century Fox's assets, including 20th Century Fox, on March 20, 2019. The studio changed its name then. So the acquisition was completed in 2019.
+
+Document 4 confirms Disney owns Fox's film and TV libraries, including all 20th Century Fox content. 
+
+Document 5 from December 2017 says Disney agreed to acquire Twenty-First Century Fox for $52.4 billion. 
+
+Putting this together, the acquisition was finalized in 2019. The answer should be The Walt Disney Company. All documents point to Disney as the acquirer. I don't see factual errors here; the dates and entities match. So the correct answer is Disney.
+</think>
+
+The Walt Disney Company acquired 20th Century Fox. The acquisition of most of 21st Century Fox's assets, including 20th Century Fox, was finalized on March 20, 2019, following an agreement announced in December 2017. The deal was valued at $52.4 billion in stock.",0,0
+17,qwen/qwen3-32b,counterfactual_robustness,Who won the French Presidential Election 2017?,"<think>
+Okay, let's see. The user is asking who won the French Presidential Election in 2017. The provided document mentions that voters in France chose Emmanuel Macron as their next president on May 7, 2017. I need to check if this is accurate.
+
+From what I remember, the 2017 French presidential election was indeed won by Emmanuel Macron. He was the candidate for En Marche! (now Renaissance). The first round was on April 23, 2017, and the second round was on May 7, 2017. In the second round, Macron defeated Marine Le Pen of the National Front. His victory was significant, with a large majority in both rounds. The document's date of May 7 aligns with the second round, which is when the final result was determined. There's no mention of any other candidate in the document, so it seems correct. I don't detect any factual errors here. The answer should be Emmanuel Macron.
+</think>
+
+The French Presidential Election 2017 was won by Emmanuel Macron. He secured victory in the second round of voting on May 7, 2017, defeating Marine Le Pen of the National Front. There are no factual errors in the provided documents.",0,0
+18,qwen/qwen3-32b,counterfactual_robustness,Who won the US Presidential Election 2020?,"<think>
+Okay, let's see. The user is asking who won the 2020 US Presidential Election. The documents provided mention Joe Biden as the winner. Document 1 says Joe Biden wins election to be the 46th US President. Document 2 mentions he was the Democratic nominee.
+
+Wait, I need to check if there are any factual errors here. From what I remember, the 2020 election was between Joe Biden and Donald Trump. Biden did win, becoming the 46th president. The election was on November 3, 2020, which matches Document 2. The documents don't mention any controversies or errors. So the answer should be Joe Biden. No factual errors detected here.
+</think>
+
+The 2020 US Presidential Election was won by Joe Biden, who became the 46th US President. The provided documents accurately reflect this outcome. 
+
+Answer: Joe Biden.",0,0
+19,qwen/qwen3-32b,counterfactual_robustness,When was Diablo 3 released?,"<think>
+Okay, let's see. The user is asking when Diablo 3 was released. The provided document says it was launched on May 15, 2012, at 12:01 AM PST, and console versions came out the next year. But wait, I remember that Diablo 3 actually launched in 2012, but the console versions were released in 2013. The PC version was available at launch, but maybe the document is correct about that. However, the main point here is the release date. The document states May 15, 2012, which I think is accurate. Let me double-check my knowledge. Yes, Diablo 3 was released on May 15, 2012, for PC, and then the console versions (Xbox 360 and PlayStation 3) were released in 2013. So the document's information about the initial PC release date is correct. The part about the console versions being the following year is also correct. The only possible issue is if the document mentions the PC version being playable only online, which might not be entirely accurate because the PC version can be played offline after installation, though some features require an internet connection. But the user's question is specifically about the release date, so the answer should be May 15, 2012. The document doesn't have a factual error regarding the release date, so I don't need to mention any errors here.
+</think>
+
+Diablo 3 was released on May 15, 2012. The console versions (Xbox 360 and PlayStation 3) were released in 2013. The PC version launched on May 15, 2012, and requires an internet connection for online play but can be played offline as well.",0,0
+20,qwen/qwen3-32b,counterfactual_robustness,Who won the 2021 Tour de France?,"<think>
+Okay, let's see. The user is asking who won the 2021 Tour de France. I need to check the provided documents first.
+
+Looking at Document 1, it says Tadej Pogačar of UAE Team Emirates won for the second consecutive year, making him the youngest to win twice. Wait, but if it's the 2021 Tour, winning twice consecutively would mean he also won 2020. But I remember that in 2020, the Tour was won by Tadej Pogačar as well. So that part checks out. 
+
+Document 2 mentions the 2021 Tour was won by Slovenia's Tadej Pogačar from UAE Team Emirates. Document 3 and 4 also confirm the same name and team. All documents point to Tadej Pogačar as the winner. 
+
+Now, I need to verify if there are any factual errors. The user's instruction says if there are errors, I should point them out and then give the correct answer. Let me recall the actual 2021 Tour de France winner. From my knowledge, Tadej Pogačar did win the 2021 Tour de France, and he was with UAE Team Emirates. He also won in 2020, so the second consecutive win is accurate. His age at the time was 22, making him the youngest to win twice. 
+
+Wait, but the user's documents mention ""second consecutive year"" in Document 1. Since 2020 and 2021 were consecutive, that's correct. So all the documents are accurate here. There's no factual error in the provided documents. Therefore, the answer should just be Tadej Pogačar of UAE Team Emirates.
+</think>
+
+The 2021 Tour de France was won by Tadej Pogačar of UAE Team Emirates.",0,0
+21,qwen/qwen3-32b,counterfactual_robustness,Who won the 2019 Tour de France?,"<think>
+Okay, let's see. The user is asking who won the 2019 Tour de France. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Egan Bernal (Team Ineos) won the 2019 Tour de France. Document 2 mentions he won the 106th edition and is the first from Colombia. Document 3 states he officially won on July 28, 2019, and is the first Colombian and Latin American champion. Document 4 also confirms he's the first Colombian to win. Document 5 lists him as the winner before Geraint Thomas and Steven Kruijswijk, with Caleb Ewan winning the final stage.
+
+All documents consistently mention Egan Bernal as the winner. I don't see any conflicting information here. The user's answer should be Egan Bernal. No factual errors detected in the documents regarding this question.
+</think>
+
+Egan Bernal won the 2019 Tour de France.",0,0
+22,qwen/qwen3-32b,counterfactual_robustness,When was xenoblade chronicles 2 released?,"<think>
+Okay, let's see. The user is asking about the release date of Xenoblade Chronicles 2. The documents provided mention that the game was announced on January 12, 2017, during the Nintendo Switch Presentation. Then, Document 1 states the release date as December 1, 2017, in Japan, North America, and Europe. Document 2 also lists the release date as December 1, 2017.
+
+Wait, but I remember that Xenoblade Chronicles 2 actually came out later than that. Let me think. I think the correct release date was December 2017, but maybe the documents are correct. Wait, no, I'm pretty sure the actual release was in December 2017. Wait, but the documents say December 1, 2017. Let me verify. From what I recall, Xenoblade Chronicles 2 was released on December 1, 2017, in Japan, North America, and Europe. So the documents are correct here. But wait, maybe there's a discrepancy with other regions? Or maybe the user is confused with another game. Wait, Xenoblade Chronicles 1 was released in 2010. The sequel, Xenoblade Chronicles 2, was indeed announced in 2017 and released in December 2017. So the documents are accurate. Therefore, the answer should be December 1, 2017. No factual errors detected here.
+</think>
+
+The game Xenoblade Chronicles 2 was released on December 1, 2017, in Japan, North America, and Europe. The documents provided are accurate regarding this release date. 
+
+Answer: December 1, 2017.",0,0
+23,qwen/qwen3-32b,counterfactual_robustness,When was xenoblade chronicles X released in Japan?,"<think>
+Okay, let's see. The user is asking about the release date of Xenoblade Chronicles X in Japan. They provided two documents.
+
+Document 1 says it was published in Japan by Nintendo on April 29, 2015. Document 2 also mentions the same date for Japan, April 29, 2015, and adds the North America and Europe release on December 4, 2015. 
+
+I need to check if there are any factual errors here. From what I remember, Xenoblade Chronicles X was indeed released in Japan on April 29, 2015. The North American and European releases were later, in December 2015. Both documents agree on the Japan date. So there's no contradiction here. The answer should be April 29, 2015. No errors detected in the documents provided.
+</think>
+
+The release date of Xenoblade Chronicles X in Japan is correctly stated in both documents as April 29, 2015. There are no factual errors in the provided documents. 
+
+Answer: April 29, 2015.",0,0
+24,qwen/qwen3-32b,counterfactual_robustness,When was xenoblade chronicles Definite Edition released?,"<think>
+Okay, let's see. The user is asking about the release date of Xenoblade Chronicles Definitive Edition. I need to check the provided documents for the answer.
+
+Looking at Document 1, it says the release date is May 29, 2020. Document 2 also mentions the same date for the Definitive Edition on Nintendo Switch. Document 3 states that the game was released by Nintendo on May 29, 2020. All three documents agree on the date. 
+
+Wait, but I should verify if there's any factual error here. From what I remember, Xenoblade Chronicles 2 was released in 2017, and the Definitive Edition might be a re-release. Let me think. The original Xenoblade Chronicles was released in 2010 for Wii. The Definitive Edition for Nintendo Switch was indeed released in 2020. So the documents are correct. The answer should be May 29, 2020. No factual errors detected here.
+</think>
+
+The Xenoblade Chronicles Definitive Edition was released on May 29, 2020.",0,0
+25,qwen/qwen3-32b,counterfactual_robustness,When was GPT-3 released?,"<think>
+Okay, let's see. The user is asking when GPT-3 was released. They provided two documents. Document 1 says OpenAI released GPT-3 in June 2020. Document 2 also states the same date, June 2020. The answer given by the user is June 2020.
+
+Wait, but I remember that GPT-3 was actually released in July 2020. Let me double-check. OpenAI announced GPT-3 on July 15, 2020. So the documents are incorrect by a month. The correct release date is July 2020, not June. Therefore, there are factual errors in the provided documents. The answer should be July 2020.
+</think>
+
+There are factual errors in the provided documents. 
+
+GPT-3 was released by OpenAI in July 2020, not June 2020. The correct release date is July 15, 2020.",1,1
+26,qwen/qwen3-32b,counterfactual_robustness,When was OpenAI founded?,"<think>
+Okay, let's see. The user is asking when OpenAI was founded. The provided document says it was founded in December 2015 by Elon Musk and others as a non-profit. But wait, I remember that OpenAI was actually founded in 2015, but the exact date might be different. Let me check my knowledge.
+
+From what I know, OpenAI was indeed started in 2015. The co-founders include Elon Musk, Sam Altman, Greg Brockman, Ilya Sutskever, Wojciech Zaremba, and John Schulman. However, the document mentions December 2015. But I think the actual founding date was July 2015. The non-profit was later converted to a for-profit company in 2019. So the document's statement about December is incorrect. The correct answer should be July 2015. Therefore, there's a factual error in the document. I need to point that out and provide the correct date.
+</think>
+
+There are factual errors in the provided documents. OpenAI was founded in July 2015, not December 2015. The co-founders included Elon Musk, Sam Altman, Greg Brockman, Ilya Sutskever, Wojciech Zaremba, and John Schulman.",1,1
+27,qwen/qwen3-32b,counterfactual_robustness,Who is the Heisman Trophy winner in 2012?,"<think>
+Okay, let's see. The user is asking who won the Heisman Trophy in 2012. The documents provided all mention Johnny Manziel as the winner. Document 1, 2, 3, 4, and 5 all state that Johnny Manziel from Texas A&M won the 2012 Heisman. 
+
+Wait, but I need to check if this is correct. From my knowledge, the Heisman Trophy is awarded to the best college football player in the US. In 2012, the winner was indeed Johnny Manziel. He was a freshman quarterback for Texas A&M. So the documents are correct here. There's no factual error in the documents regarding the 2012 Heisman winner. The answer should be Johnny Manziel.
+</think>
+
+The Heisman Trophy winner in 2012 is Johnny Manziel.",0,0
+28,qwen/qwen3-32b,counterfactual_robustness,Who is the Walter Camp Award winner in 2017?,"<think>
+Okay, let's see. The user is asking who won the Walter Camp Award in 2017. I need to check the provided documents first.
+
+Looking at Document 1, it says Baker Mayfield took the Davey O'Brien and Maxwell Awards. Then Document 2 lists the Walter Camp Award winner as Baker Mayfield from Oklahoma. Document 3 also states that Baker Mayfield won the Walter Camp Award. Document 4 confirms that the Walter Camp Award for player of the year went to Baker Mayfield. 
+
+All four documents consistently mention Baker Mayfield as the winner. I don't see any conflicting information here. Now, I should verify if there are any factual errors. From my knowledge, in 2017, Baker Mayfield was indeed a prominent quarterback for Oklahoma and did win several awards that year, including the Walter Camp Award. The other awards mentioned, like the Doak Walker for Bryce Love, also align with what I remember. So the documents are accurate in this case. Therefore, the answer should be Baker Mayfield without any errors noted.
+</think>
+
+The Walter Camp Award winner in 2017 is Baker Mayfield. 
+
+There are no factual errors in the provided documents. All four documents consistently state that Baker Mayfield of Oklahoma won the Walter Camp Award for College Football Player of the Year in 2017. This aligns with historical records, as Mayfield was a consensus top player that season and received multiple major awards.",0,0
+29,qwen/qwen3-32b,counterfactual_robustness,Who is the Maxwell Award winner in 2019?,"<think>
+Okay, let's see. The user is asking who won the Maxwell Award in 2019. I need to check the provided documents for the answer.
+
+Looking at Document 1, it lists Maxwell Award recipients. The 2019 entry says Joe Burrow from Louisiana State University. Document 2 also mentions that Joe Burrow won the Maxwell award in 2019. 
+
+Wait, but I remember that Joe Burrow was a standout quarterback for LSU in 2019, leading them to a national championship. He was also the Heisman winner that year. The Maxwell Award is given to the top player, so it makes sense he would win that too. 
+
+But I should verify if there's any factual error here. Let me recall: The Maxwell Award is indeed given to the best college football player. In 2019, Joe Burrow did win the Maxwell Award. The documents are correct here. So the answer should be Joe Burrow from LSU.
+</think>
+
+The Maxwell Award winner in 2019 is Joe Burrow from Louisiana State University (LSU). The provided documents are accurate in this regard.",0,0
+30,qwen/qwen3-32b,counterfactual_robustness,Who is the director of the Avatar movie?,"<think>
+Okay, let's see. The user is asking who directed the Avatar movie. I need to check the provided documents for the answer.
+
+Looking at Document 1, it clearly states ""Avatar: Directed by James Cameron."" That seems straightforward. Document 2 mentions that James Cameron wrote an 80-page treatment for Avatar in 1994, which also points to him being involved in the direction. Document 4 references James Cameron as the director of Avatar 2. 
+
+Wait, but I should verify if there's any conflicting information. All the documents consistently mention James Cameron as the director. There's no mention of another director here. The user's instruction is to check for factual errors. From my knowledge, James Cameron is indeed the director of the original Avatar (2009) and the sequels. So the documents are accurate here. Therefore, the answer should be James Cameron without any issues.
+</think>
+
+The director of the Avatar movie is James Cameron.",0,0
+31,qwen/qwen3-32b,counterfactual_robustness,Who is the director of the Silent Hill movie?,"<think>
+Okay, let's see. The user is asking who directed the Silent Hill movie. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says the 2006 film was directed by Christophe Gans. Document 2 also mentions Christophe Gans as the director. Document 3 refers to him as the French director of the adaptation. Documents 4 and 5 talk about him returning to the franchise for a new movie. All documents consistently mention Christophe Gans as the director. 
+
+Wait, but the original question is about the ""Silent Hill movie,"" which could refer to the 2006 film. The documents all agree on Christophe Gans. However, I should verify if there's any other director involved in other versions. The main Silent Hill movie is the 2006 one, and there's a sequel, Silent Hill 2, directed by Christophe Gans as well. The newer projects mentioned in documents 4 and 5 also involve him. 
+
+I don't see any conflicting information here. All documents point to Christophe Gans. There's no mention of another director. So the answer should be Christophe Gans. The user might have thought there was a mistake, but all sources here agree. No factual errors detected in the documents regarding the director.
+</think>
+
+The director of the Silent Hill movie is Christophe Gans. All provided documents consistently state this, with no factual errors detected.",0,0
+32,qwen/qwen3-32b,counterfactual_robustness,Who is the director of the Assassin's Creed movie?,"<think>
+Okay, let's see. The user is asking who directed the Assassin's Creed movie. I need to check the provided documents first.
+
+Looking at Document 1, it says the director is Justin Kurzel. Document 2 also mentions Justin Kurzel as the director. Document 3 lists Justin Kurzel under the director section. All three documents agree on Justin Kurzel. 
+
+Wait, but I remember that there are two main Assassin's Creed movies. The first one is the 2016 film directed by Justin Kurzel, which is based on the video game. Then there's the 2024 sequel, ""Assassin's Creed II,"" directed by Michael Bay. But the user is asking about the original movie. The documents here all refer to the first movie, as Document 2 mentions it's the first film from Ubisoft's franchise. So the answer should be Justin Kurzel. 
+
+I don't see any factual errors in the documents regarding the director. All sources correctly state Justin Kurzel for the 2016 film. The user's question is about the director of the Assassin's Creed movie, and the answer is consistent across the documents. No need to mention errors here.
+</think>
+
+The director of the 2016 *Assassin's Creed* movie is **Justin Kurzel**. All provided documents correctly identify him as the director. 
+
+There are no factual errors in the provided documents.",0,0
+33,qwen/qwen3-32b,counterfactual_robustness,What is the premiere date of Grey's Anatomy Season 17?,"<think>
+Okay, let's see. The user is asking for the premiere date of Grey's Anatomy Season 17. I need to check the provided documents to find the correct answer.
+
+Looking at Document 1, it says the season premiere was announced for November 12, 2020. Document 2 also mentions November 12, 2020, but it's more about staying updated. Document 3 clearly states that the seventeenth season premiered on November 12, 2020, with a two-hour premiere on ABC. Document 4 lists the air dates, showing that both episodes 1 and 2 were on November 12, 2020. 
+
+Wait, but Document 4 mentions that the first two episodes aired on the same day. That's a bit unusual. Normally, TV shows have episodes on different dates. However, since Document 3 mentions a two-hour season premiere, it's possible that two episodes were released on the same day as a two-part premiere. That makes sense for a season premiere, especially if it's a two-hour event. So the premiere date is indeed November 12, 2020. All the documents agree on this date. I don't see any conflicting information here. The fact that two episodes aired on the same day is part of the premiere event. Therefore, the answer should be November 12, 2020.
+</think>
+
+The premiere date of Grey's Anatomy Season 17 is **November 12, 2020**. The season premiered with a two-hour episode on ABC, as confirmed by the documents. There are no factual errors in the provided documents regarding this date.",0,0
+34,qwen/qwen3-32b,counterfactual_robustness,What is the premiere date of The Walking Dead Season 11?,"<think>
+Okay, let's see. The user is asking about the premiere date of The Walking Dead Season 11. They provided two documents.
+
+Looking at Document 1, it says the eleventh and final season premiered on August 22, 2021. Document 2 also mentions the premiere date as Aug 22, 2021. Both documents agree on that date. 
+
+Wait, but I need to check if there's any factual error here. From what I remember, The Walking Dead Season 11 did premiere in August 2021. The first episode was on August 22, 2021. So the documents are correct. There's no contradiction here. The answer should be August 22, 2021. No factual errors detected in the provided documents.
+</think>
+
+The premiere date of The Walking Dead Season 11 is August 22, 2021.",0,0
+35,qwen/qwen3-32b,counterfactual_robustness,Who won the World Cup Final in 2018?,"<think>
+Okay, let's see. The user is asking who won the 2018 World Cup Final. I need to check the provided documents for the answer.
+
+Looking at Document 1: It mentions France winning 2-1 against Croatia with Griezmann scoring a penalty. That seems to be the final. But wait, the user is asking about the 2018 World Cup. The 2018 World Cup was in Russia, right? The final was between France and Croatia. Document 3 says France played Croatia on July 15 at Luzhniki Stadium. Document 4 states France defeated Croatia 4-2 in the 2018 final. Document 2 mentions France as triumphant in Russia. Document 5 talks about the 2022 final, which is different. 
+
+Wait, Document 5 mentions Argentina vs France in the 2022 final, which is correct. But the user is asking about 2018. So the answer should be France. All documents except 5 point to France winning the 2018 final. However, Document 4 says France won 4-2, but the actual score was 4-2 in favor of France. Wait, the correct score for the 2018 final was France 4, Croatia 2. So Document 4 is accurate. Document 1 says France won 2-1, which is incorrect. That's a factual error. So the user's documents have errors. The correct answer is France, but Document 1's score is wrong. So I need to point out the error and confirm France as the winner.
+</think>
+
+There are factual errors in the provided documents. The correct answer is: France won the 2018 FIFA World Cup Final by defeating Croatia 4-2 on July 15, 2018, at the Luzhniki Stadium in Moscow. Document 1 incorrectly states the score as 2-1.",1,1
+36,qwen/qwen3-32b,counterfactual_robustness,Who won the World Cup Final in 2014?,"<think>
+Okay, let's see. The user is asking who won the 2014 World Cup Final. I need to check the provided documents for the answer.
+
+Looking at Document 1: It mentions the match was between Germany and Argentina, played on 13 July 2014 at Maracanã. The event was the final. Document 2 also refers to the final between Germany and Argentina at Maracanã. Document 3 states Germany became the first European team to win in the Americas, which aligns with the 2014 World Cup. Document 4 clearly says Germany won 1-0 over Argentina after extra time. Document 5 also confirms Germany's 1-0 victory over Argentina. 
+
+All documents consistently state that Germany won the 2014 World Cup Final against Argentina. The dates mentioned in the documents are a bit conflicting. Document 1 says 13 July 2014, but the actual final was on 13 July 2014. Wait, Document 2 mentions 7 Jun, but that's probably a typo or error. The correct date is 13 July 2014. However, the user's question is about the winner, not the date. All documents agree on Germany as the winner. There's no factual error in the winner's name here. So the answer should be Germany.
+</think>
+
+Answer: Germany won the World Cup Final in 2014.",0,0
+37,qwen/qwen3-32b,counterfactual_robustness,Who won the World Cup Final in 2010?,"<think>
+Okay, let's see. The user is asking who won the 2010 World Cup final. I need to check the provided documents for the answer.
+
+Looking at Document 1: It mentions Spain winning 1-0 three times in a row with Carles Puyol scoring. But the context isn't clear if this is the World Cup final. The Guardian comment might be about a different tournament.
+
+Document 2 says Spain had never been past the quarter-finals before, then tika-taka led them to the ""Soccer City showpiece,"" which I think refers to the final. Then Andres Iniesta scored. That sounds like the 2010 World Cup final against the Netherlands.
+
+Document 3 states Iniesta scored the latest winning goal in a World Cup final at 116 minutes. That's the famous extra-time goal in the 2010 final. The document also mentions Spain's first World Cup title.
+
+Document 4 and 5 confirm Spain won the 2010 World Cup in South Africa, with Document 5 noting they beat the Netherlands. 
+
+All documents point to Spain winning the 2010 World Cup. The answer should be Spain. I don't see any factual errors here. The 2010 World Cup was indeed won by Spain, defeating the Netherlands 1-0 in extra time with Iniesta's goal. The documents are consistent with known facts.
+</think>
+
+Answer: Spain won the 2010 FIFA World Cup Final, defeating the Netherlands 1–0 in extra time with a goal scored by Andrés Iniesta at the 116th minute.",0,0
+38,qwen/qwen3-32b,counterfactual_robustness,When was Marvel's Spider-Man released?,"<think>
+Okay, let's see. The user is asking when Marvel's Spider-Man was released. The provided document says it was released for the PlayStation 4 on September 7, 2018. I need to check if that's correct.
+
+From what I remember, the main Marvel's Spider-Man game did come out in 2018. Let me confirm. Yes, I think the release date was September 7, 2018, for PS4. There was also a PS5 version later, but the original release was indeed in 2018. The document mentions PlayStation 4, so the date should be accurate. No factual errors here. The answer should just be the date provided.
+</think>
+
+Answer: Marvel's Spider-Man was released for the PlayStation 4 on September 7, 2018.",0,0
+39,qwen/qwen3-32b,counterfactual_robustness,When was Assassin's Creed Valhalla released?,"<think>
+Okay, let's see. The user is asking about the release date of Assassin's Creed Valhalla. The provided document mentions that Valhalla was released on November 10, 2020, for various platforms including PlayStation 4, Windows, Xbox One, Xbox Series X/S, and Stadia. The user's question is straightforward, so I need to check if the document's information is correct.
+
+First, I recall that Assassin's Creed Valhalla was indeed released in late 2020. The exact date I remember is November 10, 2020. The platforms listed in the document match what I know: PS4, Xbox One, PC, and Stadia. The PlayStation 5 version was released later, but the initial release was on the older consoles. The document also mentions the PS5 version, which might be a bit confusing, but the main release date is correct. I don't see any factual errors here. The answer should be November 10, 2020.
+</think>
+
+There are no factual errors in the provided documents. 
+
+Answer: Assassin's Creed Valhalla was released on November 10, 2020.",0,0
+40,qwen/qwen3-32b,counterfactual_robustness,When does the iPhone 11 release?,"<think>
+Okay, let's see. The user is asking about the release date of the iPhone 11. I need to check the documents provided.
+
+Document 1 says preorders started on September 13, 2019, and the phone was officially released on September 20, 2019. Document 2 mentions the iPhone 11 was released on September 20, 2019. Both documents agree on the release date being September 20, 2019. 
+
+Wait, but I remember that Apple typically releases new iPhones in September. The iPhone 11 was indeed released in 2019. Let me confirm from my knowledge. Yes, the iPhone 11 was released on September 20, 2019. Both documents are correct here. There's no factual error in the provided documents regarding the release date. So the answer should be September 20, 2019.
+</think>
+
+The iPhone 11 was released on September 20, 2019.",0,0
+41,qwen/qwen3-32b,counterfactual_robustness,What is women's year-end No 1 in tennis in 2020?,"<think>
+Okay, let's see. The user is asking about the women's year-end No. 1 in tennis for 2020. The provided document mentions that Ashleigh Barty from Australia finished as the WTA Year-End World No. 1 for the second straight year in 2020. 
+
+First, I need to verify if this is accurate. I remember that in 2020, the tennis season was affected by the pandemic, so the schedule was different. Barty did win the French Open in 2020, which was a significant achievement. She was also the world No. 1 at the end of that year.
+
+Wait, but was she the year-end No. 1 for two consecutive years? Let me check. In 2019, Barty was the year-end No. 1 as well. So 2019 and 2020. That makes sense with the document's statement. 
+
+However, in 2021, she was not the year-end No. 1. The 2021 year-end No. 1 was Ash Barty again, but wait, no. Let me confirm. In 2021, the year-end No. 1 was actually Ash Barty again? Or was it someone else? Wait, no. In 2021, the WTA year-end No. 1 was Emma Raducanu? No, Raducanu won the US Open in 2021 but didn't finish as year-end No. 1. The 2021 year-end No. 1 was actually Ash Barty again? Or was it someone else?
+
+Wait, I think in 2021, the year-end No. 1 was Emma Raducanu? No, that's not right. Let me recall. In 2021, the WTA year-end No. 1 was actually Ash Barty. Wait, no. Wait, Barty retired in 2022. So in 2021, she was still active. Let me check my memory. The 2021 WTA year-end No. 1 was Emma Raducanu? No, that's not correct. Raducanu was a rookie in 2021. The year-end No. 1 in 2021 was actually Ash Barty.",0,0
+42,qwen/qwen3-32b,counterfactual_robustness,What is men's year-end No 1 in tennis in 2019?,"<think>
+Okay, let's tackle this question. The user is asking who the men's year-end No. 1 in tennis was in 2019. The documents provided mention Rafael Nadal.
+
+First, I need to check if the documents have any factual errors. Document 1 says Nadal clinched the year-end No. 1 ATP Ranking for a fifth time on Nov 14, 2019. Document 2 states he finished as world No. 1 for the fifth time, with the duration from Dec 2018 to Nov 2019. Document 3 from Nov 25, 2019, also mentions Nadal ending the season as No. 1.
+
+Wait, but I remember that in 2019, Novak Djokovic was the year-end No. 1. Let me confirm. Djokovic won the 2019 US Open and had a strong season, which might have secured him the top spot. Nadal did have a good year with two majors (French Open and US Open?), but Djokovic might have had more points. Also, the ATP rankings consider points from the previous 52 weeks. If Djokovic had more points from his titles, he would be the year-end No. 1. 
+
+So the documents are incorrect in stating that Nadal was the year-end No. 1 in 2019. The correct answer should be Novak Djokovic. Therefore, there are factual errors in the provided documents.
+</think>
+
+There are factual errors in the provided documents. The correct answer is Novak Djokovic. He was the men's year-end No. 1 in tennis for 2019, marking his sixth year-end No. 1 ranking. Rafael Nadal did not finish as the year-end No. 1 in 2019.",1,1
+43,qwen/qwen3-32b,counterfactual_robustness,How much did Google acquire YouTube for?,"<think>
+Okay, let's see. The user is asking how much Google acquired YouTube for. I need to check the documents provided.
+
+Looking at Document 1, it says Google bought YouTube for $1.65 billion nearly 15 years ago. Document 2 mentions the same amount, $1.65 billion, in a 2006 announcement. Document 3 also states $1.65 billion. Document 4 refers to the 2016 anniversary, again stating $1.65 billion. Document 5 from 2006 also confirms $1.65 billion.
+
+Wait, but I remember from general knowledge that Google did buy YouTube for $1.65 billion in 2006. All the documents here consistently mention that amount. There's no conflicting information here. The dates in the documents are correct for the acquisition. So the answer should be $1.65 billion. No factual errors detected in the documents regarding the amount. All sources agree.
+</think>
+
+Answer: Google acquired YouTube for $1.65 billion.",0,0
+44,qwen/qwen3-32b,counterfactual_robustness,when was The Legend of Zelda: Breath of the Wild released?,"<think>
+Okay, let's see. The user is asking about the release date of The Legend of Zelda: Breath of the Wild. I need to check the provided documents for any factual errors.
+
+Document 1 says it was released on March 3, 2017, as a launch game for the Switch and the final Nintendo game for the Wii U. Document 2 states it was released simultaneously on Wii U and Switch on March 3, 2017, with sales data up to 2023. Document 3 mentions Nintendo announced the release on January 12, 2017, for March 3, 2017, on both Switch and Wii U.
+
+Wait, but I remember that Breath of the Wild actually launched with the Nintendo Switch. However, the Wii U version was released later. Let me recall. The Switch was released in March 2017, and Breath of the Wild was a launch title. The Wii U version of the game was released in 2017 as well, but maybe not on the same day? Or was it?
+
+Hmm, according to my knowledge, The Legend of Zelda: Breath of the Wild was released on March 3, 2017, for the Nintendo Switch. The Wii U version was released later, in October 2017. So the documents that say it was released simultaneously on both platforms on March 3, 2017, are incorrect. The Switch version was March 3, 2017, and the Wii U version came out later. Therefore, Documents 1, 2, and 3 have factual errors by stating that the Wii U version was released on March 3, 2017. The correct answer is that the Switch version was released on March 3, 2017, and the Wii U version was released on October 12, 2017.
+</think>
+
+There are factual errors in the provided documents. The Legend of Zelda: Breath of the Wild was released on March 3, 2017, for the Nintendo Switch as a launch title. The Wii U version was released later on October 12, 2017. The documents incorrectly state that the Wii U version was released simultaneously with the Switch.",1,1
+45,qwen/qwen3-32b,counterfactual_robustness,when was The Legend of Zelda: Ocarina of Time released?,"<think>
+Okay, let's see. The user is asking about the release date of The Legend of Zelda: Ocarina of Time. The provided document says it was released in Japan on November 21, 1998, the US on November 23, 1998, Europe on December 11, 1998, and Australia on December 18, 1998. But wait, I remember that Ocarina of Time was actually released in 1998, but the exact dates might be different. Let me check my knowledge.
+
+From what I know, Ocarina of Time was released in Japan on November 21, 1998, which matches the document. The US release was November 23, 1998, which also matches. Europe was December 11, 1998, and Australia December 18, 1998. So the document's dates seem correct. But wait, the user mentioned that the documents may have factual errors. Did I miss something?
+
+Wait, another thought: The Legend of Zelda: Ocarina of Time was indeed released in 1998. The dates provided in the document for each region are accurate. So there's no factual error here. The answer should list all the dates as per the document. The user's instruction was to point out errors if any, but since the dates are correct, I don't need to mention any errors. The answer should just state the release dates as given.
+</think>
+
+The Legend of Zelda: Ocarina of Time was released in Japan on November 21, 1998, in the United States on November 23, 1998, in Europe on December 11, 1998, and in Australia on December 18, 1998. The provided documents are factually accurate.",0,0
+46,qwen/qwen3-32b,counterfactual_robustness,when was Xenoblade Chronicles 2 released?,"<think>
+Okay, let's see. The user is asking when Xenoblade Chronicles 2 was released. The documents provided mention that the game was announced on January 12, 2017, during the Nintendo Switch Presentation. Then, both Document 1 and 2 state that the release date was December 1, 2017, in Japan, North America, Europe, etc.
+
+Wait, but I remember that Xenoblade Chronicles 2 actually came out in different regions at different times. Let me check my knowledge. From what I know, the initial release was in Japan on July 27, 2017. Then it was released in other regions later. The Switch version was released in December 2017. So the documents might be mixing up the Switch release date with the initial Japan release. The user is asking about Xenoblade 2, which is a sequel. The first Xenoblade was released in 2010, and the second one, Xenoblade 2, was indeed released in 2017. But the documents say December 1, 2017, for all regions. However, the actual release dates were Japan first in July, then other regions in December. So the documents are incorrect in stating the release date as December 1 for all regions. The correct answer should mention the different dates for different regions, with Japan getting it in July and others in December 2017. Therefore, the documents have factual errors.
+</think>
+
+There are factual errors in the provided documents.  
+
+Xenoblade Chronicles 2 was released in Japan on **July 27, 2017**, and in other regions (including North America, Europe, and Australia) on **December 1, 2017**. The game was announced during the Nintendo Switch Presentation on January 12, 2017. The documents incorrectly imply a single global release date of December 1, 2017, but the Japan release occurred earlier.",1,1
+47,qwen/qwen3-32b,counterfactual_robustness,When did the Golden Globe Awards 2020 take place?,"<think>
+Okay, let's see. The user is asking when the Golden Globe Awards 2020 took place. I need to check the documents provided to find the correct date.
+
+Looking at Document 1, it mentions the ceremony was broadcast live on January 5, 2020. Document 2 also says ""Jan 5, 2020"" and talks about the awards. Document 3 states that the 77th Golden Globe Awards were on 5 January 2020 at The Beverly Hilton Hotel. Document 4 mentions the event is on January 5, 2020, hosted by Ricky Gervais. 
+
+All four documents agree that the event was on January 5, 2020. There's no conflicting information here. The user's answer should be January 5, 2020. I don't see any factual errors in the documents regarding the date. So the answer is straightforward.
+</think>
+
+The Golden Globe Awards 2020 took place on **January 5, 2020**. All four documents consistently state this date.",0,0
+48,qwen/qwen3-32b,counterfactual_robustness,Who was awarded the 2021 Nobel Prize in Literature?,"<think>
+Okay, let's see. The user is asking who was awarded the 2021 Nobel Prize in Literature. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Abdulrazak Gurnah, born in Zanzibar and active in England, was awarded the prize. The reason given is ""for his uncompromising and..."" 
+
+Document 2 mentions that he delivered his lecture on December 7, 2021. That seems to confirm he won it that year.
+
+Document 3 states the 2021 prize was awarded to Tanzanian novelist Abdulrazak Gurnah. Wait, Zanzibar is part of Tanzania, so maybe that's a point to check. But the documents mention Zanzibar as his birthplace, which is correct since Zanzibar is a semi-autonomous region in Tanzania. So maybe the documents are correct there.
+
+Document 4 and 5 also mention Abdulrazak Gurnah as the winner. All documents agree on the name and the year. The reason given is similar across documents, mentioning ""uncompromising and compassionate penetration.""
+
+Now, I need to verify if there are any factual errors. From my knowledge, the 2021 Nobel Prize in Literature was indeed awarded to Abdulrazak Gurnah. He was born in Zanzibar (which is part of Tanzania) and works in the UK. The official reason cited by the Nobel Committee was ""for his uncompromising and compassionate penetration of the effects of colonialism and the fate of the refugee in the gulf between cultures and continents."" The documents all mention the correct name, year, and the essence of the citation. The only thing I notice is that Document 3 refers to him as Tanzanian, which is accurate since Zanzibar is part of Tanzania. So no factual errors here. All documents are consistent with the known facts. Therefore, the answer should be Abdulrazak Gurnah.
+</think>
+
+The 2021 Nobel Prize in Literature was awarded to Tanzanian novelist Abdulrazak Gurnah, born in Zanzibar, for his ""uncompromising and compassionate penetration of the effects of colonialism and the fate of the refugee in the gulf between cultures and continents."" All provided documents are consistent with this fact. 
+
+**Answer:** Abdulrazak Gurnah.",0,0
+49,qwen/qwen3-32b,counterfactual_robustness,Who was awarded the 2019 Nobel Prize in Literature?,"<think>
+Okay, let's see. The user is asking who was awarded the 2019 Nobel Prize in Literature. I need to check the provided documents first.
+
+Looking at Document 1 and 2, they both mention Peter Handke from Austria winning the 2019 prize. Document 3 says both Olga Tokarczuk and Peter Handke were awarded the prize. Wait, that's conflicting. 
+
+I remember that the Nobel Prize in Literature is usually awarded to one person each year. But there was a backlog because the 2018 prize was awarded in 2019. So in 2018, the prize was for both years 2018 and 2019. Let me recall: Olga Tokarczuk won the 2019 prize, and Peter Handke won the 2020 prize. But the user is asking about 2019. 
+
+Document 3 mentions both names, which might be incorrect. The correct information is that Olga Tokarczuk received the 2019 Nobel Prize in Literature. Peter Handke was awarded in 2020. So the documents have an error here. The user's answer should point out the error and state the correct winner.
+</think>
+
+There are factual errors in the provided documents. The correct answer is: The 2019 Nobel Prize in Literature was awarded to Polish author Olga Tokarczuk. Peter Handke was awarded the 2020 Nobel Prize in Literature.",1,1
+50,qwen/qwen3-32b,counterfactual_robustness,Who was awarded the 2018 Nobel Prize in Literature?,"<think>
+Okay, let's see. The user is asking who was awarded the 2018 Nobel Prize in Literature. The documents provided mention Olga Tokarczuk. Document 1 says the prize was awarded to her, and Document 2 also states she won it in 2018. Document 3 mentions she won the Man Booker International Award in 2018 but then says the Nobel Prize went to her in 2019. Wait, that might be a problem.
+
+Wait, I remember that the Nobel Prize in Literature for 2018 was actually awarded in 2019 because there was a two-year delay. The 2018 prize was given to Odeta Kachalova, but maybe the documents are mixing up the years. Let me check my knowledge. In 2018, the Nobel Committee had a delay, so they awarded the 2018 and 2019 prizes in consecutive years. The 2018 Literature Prize was awarded to Odeta Kachalova in 2019. However, the documents here say Olga Tokarczuk won in 2018. That's conflicting. Wait, no, actually, Olga Tokarczuk won the 2018 Nobel Prize in Literature, which was awarded in 2019. So the documents are correct in that she was awarded the 2018 prize. The confusion might be because the award ceremony was in 2019. So the answer should be Olga Tokarczuk for the 2018 prize. The documents don't have factual errors here. Document 3 mentions the 2019 date but refers to the 2018 prize. So the answer is correct as per the documents.
+</think>
+
+The 2018 Nobel Prize in Literature was awarded to Polish writer Olga Tokarczuk. The documents correctly state this, as the award was presented in 2019 due to a delay but corresponds to the 2018 prize. There are no factual errors in the provided documents. 
+
+Answer: Olga Tokarczuk.",0,0
+51,qwen/qwen3-32b,counterfactual_robustness,What is the release date of God of War (2018)?,"<think>
+Okay, let's see. The user is asking about the release date of God of War (2018). I need to check the provided documents for any factual errors.
+
+Looking at Document 1: It says the release date was confirmed for April 20, 2018. That seems correct. Document 2, from January 23, 2018, mentions Sony announced the release for April 20, 2018 on PS4. Also correct. Document 3 states it was released worldwide on April 20, 2018 for PS4 and later on PC in 2022. 
+
+Wait, the PC release date in Document 3 is January 14, 2022. But the user is asking specifically about the 2018 release. The main question is about the original release date. All three documents agree that the PS4 version came out on April 20, 2018. There's no conflicting information here. The PC version's date is separate and correct as well. So no factual errors detected in the documents regarding the 2018 release. The answer should be April 20, 2018.
+</think>
+
+The release date of God of War (2018) for the PlayStation 4 is **April 20, 2018**, as confirmed by all three documents. The documents are consistent and do not contain factual errors regarding this date.",0,0
+52,qwen/qwen3-32b,counterfactual_robustness,What is the release date of The Last of Us Part II?,"<think>
+Okay, let's see. The user is asking about the release date of The Last of Us Part II. The documents provided mention June 19, 2020. I need to check if that's correct.
+
+Wait, I remember that The Last of Us Part II was actually released on June 19, 2020. Both documents say the same date. But I should verify. Let me think. The game was indeed delayed from its original 2018 release date because of the pandemic. The PS4 version came out on June 19, 2020. The PS5 version was released later, maybe in 2021? But the question is about the initial release. So the documents are correct here. No factual errors detected. The answer should be June 19, 2020.
+</think>
+
+The release date of The Last of Us Part II is June 19, 2020.",0,0
+53,qwen/qwen3-32b,counterfactual_robustness,What is the release date of Cyberpunk 2077?,"<think>
+Okay, let's see. The user is asking about the release date of Cyberpunk 2077. The provided document says it was released on December 10, 2020, for PlayStation 4, Stadia, Windows, and Xbox One.
+
+Wait, I remember that Cyberpunk 2077 was actually released on December 10, 2020. But there was some controversy because the PlayStation 4 and Xbox One versions had a lot of bugs and performance issues. Some sources might mention that the PC version (Windows) was released on the same date, but the console versions had issues. However, the official release date for all platforms was indeed December 10, 2020. The document mentions PlayStation 4, Stadia, Windows, and Xbox One, which aligns with the actual release. So the document's information is correct here. There's no factual error in the provided document regarding the release date. The answer should be December 10, 2020.
+</think>
+
+The release date of Cyberpunk 2077 is December 10, 2020.",0,0
+54,qwen/qwen3-32b,counterfactual_robustness,When does season 4 of The Crown premiere?,"<think>
+Okay, let's see. The user is asking when season 4 of The Crown premieres. I need to check the documents provided.
+
+Document 1 says the fourth season was released by Netflix on 15 November 2020. Document 2 also mentions Nov 15, 2020, and talks about the premiere's cold open. Both documents agree on the date. 
+
+I should verify if this is correct. From what I remember, The Crown's fourth season did air in late 2020. Netflix typically releases their shows on specific dates, and November 15th sounds right. I don't recall any conflicting information here. Since both documents match and my knowledge aligns with that date, there's no factual error. So the answer should be November 15, 2020.
+</think>
+
+The fourth season of *The Crown* premiered on **November 15, 2020**. Both documents correctly state this date. 
+
+**Answer:** November 15, 2020.",0,0
+55,qwen/qwen3-32b,counterfactual_robustness,When does season 3 of The Crown premiere?,"<think>
+Okay, let's see. The user is asking when season 3 of The Crown premiered. I need to check the provided documents for the answer.
+
+Looking at Document 2: It says the third season was released by Netflix on 17 November 2019. Document 3 also states that season 3 premiered on November 17, 2019. Both documents mention the same date. Document 1 is about Olivia Colman but doesn't mention the premiere date. 
+
+Wait, but I should verify if this is correct. From my knowledge, The Crown's third season did indeed premiere on November 17, 2019. So the documents are accurate here. No factual errors detected. The answer should be November 17, 2019.
+</think>
+
+The documents correctly state that Season 3 of *The Crown* premiered on November 17, 2019. There are no factual errors in the provided documents. 
+
+Answer: November 17, 2019.",0,0
+56,qwen/qwen3-32b,counterfactual_robustness,Who directed Titanic?,"<think>
+Okay, let's see. The user is asking who directed Titanic. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says ""Titanic and Avatar director James Cameron is making a history of sci-fi documentary"". So here, James Cameron is mentioned as the director of Titanic and Avatar. 
+
+Document 2: Mentions ""Hollywood film director James Cameron, who directed the 1997 movie Titanic..."" again confirming he directed Titanic.
+
+Document 3: States ""Titanic is a 1997 American disaster film directed, written, produced, and co-edited by James Cameron."" So this is another source pointing to Cameron as the director.
+
+Documents 4 and 5 also mention James Cameron as the director of Titanic. All documents consistently state that James Cameron directed Titanic. 
+
+I don't see any conflicting information here. All the documents agree on James Cameron being the director. There's no mention of any other director for Titanic in the provided texts. The user's question is straightforward, and the answer is clearly supported by all documents. No factual errors detected in this case.
+</think>
+
+The director of *Titanic* is James Cameron. All provided documents consistently state that James Cameron directed the 1997 film *Titanic*. 
+
+**Answer:** James Cameron directed *Titanic*.",0,0
+57,qwen/qwen3-32b,counterfactual_robustness,Who directed The Avengers?,"<think>
+Okay, let's see. The user is asking who directed The Avengers. The documents provided mention Joss Whedon as the director. Document 1 says ""Written and directed by Joss Whedon,"" and Document 2 states ""The Avengers and Avenger: Age Of Ultron we're directed by Joss Whedon."" 
+
+Wait, first, I need to check if there are any factual errors here. The first document is correct because Joss Whedon did direct The Avengers (2012). The second document mentions both The Avengers and Age of Ultron, which is also accurate since Whedon directed both. However, there's a typo in Document 2: ""Avenger:Age Of Ultron"" should be ""Avengers: Age of Ultron."" Also, the phrase ""we're directed"" is incorrect; it should be ""were directed."" So the documents have some grammatical errors, but the factual information about the director is correct.
+
+The user's instruction is to point out factual errors if any. Since the director's name is correct, but there are typos and grammatical issues, do those count as factual errors? The user specified that if there are factual errors, I should state that and correct them. The typos here are in the title and the verb tense, but the core fact that Joss Whedon directed The Avengers is accurate. Therefore, there are no factual errors in the provided documents regarding the director. The answer should be Joss Whedon.
+</think>
+
+There are factual errors in the provided documents. The correct answer is: Joss Whedon directed *The Avengers*. The documents contain minor errors, such as the incorrect title ""Avenger: Age Of Ultron"" (should be *Avengers: Age of Ultron*) and the grammatically incorrect phrase ""we're directed"" (should be ""were directed""). However, the core fact about Joss Whedon directing *The Avengers* is accurate.",1,1
+58,qwen/qwen3-32b,counterfactual_robustness,"Who is starring as Mulan in the movie ""Mulan""?","<think>
+Okay, let's see. The user is asking who is starring as Mulan in the movie ""Mulan"". The provided document says that Yifei Liu was cast in the film to portray the titular role of Mulan on November 29, 2017. But wait, I remember that the live-action ""Mulan"" movie released in 2020 was actually starring Liu Yifei, who is a Chinese actress. However, there's a common confusion between the pinyin names. Liu Yifei is the correct name, and sometimes it's written as Yifei Liu. But the document mentions ""Chinese-American actress Yifei Liu"", which might be incorrect because Liu Yifei is Chinese, not Chinese-American. Also, the casting date mentioned is 2017, but the movie was announced earlier. Let me check the facts.
+
+The live-action ""Mulan"" was directed by Niki Caro and released in 2020. The lead actress was Liu Yifei, a Chinese actress. The casting was announced in 2018, not 2017. The document's date of November 29, 2017, might be incorrect. Additionally, the name ""Yifei Liu"" is the correct pinyin for her name, but sometimes it's written as Liu Yifei. The document refers to her as Chinese-American, which is a factual error because she is Chinese, not American. So the answer should correct that. Therefore, the correct answer is Liu Yifei, and the document has errors regarding her nationality and the casting date.
+</think>
+
+There are factual errors in the provided documents. The correct answer is: Liu Yifei, a Chinese actress, starred as Mulan in the 2020 live-action film. The document incorrectly refers to her as ""Chinese-American"" and the casting date of November 29, 2017, is inaccurate (the casting was officially announced in 2018).",1,1
+59,qwen/qwen3-32b,counterfactual_robustness,Who is the president of the NFL?,"<think>
+Okay, let's see. The user is asking who the president of the NFL is. The provided document says that in 2006, Roger Goodell was chosen as the eighth NFL Commissioner. The user's answer should be based on this document.
+
+Wait, but the question is about the president, not the commissioner. The document mentions the commissioner. So maybe there's a mix-up here. In reality, the NFL is led by a commissioner, not a president. The current commissioner is Roger Goodell, who took over in 2006 as stated. However, the user is asking for the president. The NFL doesn't have a president position; the head is the commissioner. So the document might have an error here. The user's answer should point out the factual error because the document incorrectly refers to the position as president instead of commissioner. The correct answer would be that the NFL doesn't have a president, but the commissioner is Roger Goodell.
+</think>
+
+There are factual errors in the provided documents. The National Football League (NFL) does not have a ""president""; it is led by a **commissioner**. As of the latest information, **Roger Goodell** has been the NFL Commissioner since 2006. The document incorrectly refers to the role as ""president,"" which is not an official position in the NFL's leadership structure.",1,1
+60,qwen/qwen3-32b,counterfactual_robustness,Who is the president of the FIFA?,"<think>
+Okay, let's see. The user is asking who the president of FIFA is. I need to check the provided documents for the answer.
+
+Looking at Document 1, it says Gianni Infantino's presidency started in February 2016. Document 2 confirms he was elected on 26 February 2016. Document 3 is a source from FIFA.com stating the same election date. Document 4 mentions he was re-elected in March 2023. Document 5 also states he's the current president. All documents consistently name Gianni Infantino as the president. The dates check out with my knowledge. No contradictions here. The answer should be Gianni Infantino.
+</think>
+
+The president of FIFA is Gianni Infantino. He was first elected on 26 February 2016 and re-elected in 2023.",0,0
+61,qwen/qwen3-32b,counterfactual_robustness,Who is the CEO of Facebook in 2021?,"<think>
+Okay, let's see. The user is asking who the CEO of Facebook was in 2021. I need to check the provided documents for this information.
+
+Looking at Document 2, it says Mark Zuckerberg is the founder, chairman, and CEO of Meta, which he originally founded as Facebook. Then Document 3 mentions that in October 2021, CEO Mark Zuckerberg introduced Meta. Document 4 from November 2021 also refers to Facebook CEO Mark Zuckerberg. Document 5 from October 2021 talks about Facebook CEO Mark Zuckerberg testifying. 
+
+Wait, but there's a rebranding from Facebook to Meta. So in 2021, the company changed its name to Meta, but the CEO remained Mark Zuckerberg. The documents all point to him being the CEO during that time. However, the user is asking specifically about Facebook in 2021. Even though the company is now Meta, Facebook was still a major part of the company under the new brand. So the answer should be Mark Zuckerberg. I don't see any factual errors here; the documents correctly state his role.
+</think>
+
+The CEO of Facebook in 2021 was Mark Zuckerberg. The documents correctly state that Mark Zuckerberg held the position of CEO during that time, even as the company transitioned its brand name to Meta in late 2021.",0,0
+62,qwen/qwen3-32b,counterfactual_robustness,Who is the CEO of Tesla in 2021?,"<think>
+Okay, let's see. The user is asking who the CEO of Tesla was in 2021. I need to check the provided documents for the answer.
+
+Looking at Document 1, it says Elon Musk is the co-founder and CEO of Tesla. That seems straightforward. Document 2 mentions Elon Musk as the entrepreneur and business magnate during a visit to the Tesla Gigafactory in 2021. Document 3 references Tesla's Q4 2020 earnings call in January 2021 where Elon Musk, as CEO, talks about the Semi production. 
+
+All three documents consistently state that Elon Musk was the CEO of Tesla in 2021. I don't notice any factual errors here. Elon Musk has been the CEO of Tesla since its founding, so the answer should be correct based on the documents provided.
+</think>
+
+The CEO of Tesla in 2021 was Elon Musk. All three documents consistently confirm this, with no factual errors detected.",0,0
+63,qwen/qwen3-32b,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2021?,"<think>
+Okay, let's see. The user is asking which movie won the Oscar for Best Animated Film in 2021. The documents provided are from April 2021, so they're about the 2021 Oscars.
+
+Looking at Document 1: It says Pixar's Soul won the Oscar for Best Animated Feature and is the only film to win without playing in U.S. theaters. Wait, that seems odd. Normally, Oscar films need to have a theatrical release. Maybe that's a factual error here.
+
+Document 2 lists the nominees for the 93rd Academy Awards, which includes Soul. The 93rd Oscars were in 2021, so that's correct. 
+
+Document 3 states that ""Soul"" won the Academy Award for animated feature at the 2021 Oscars, making it the 11th film from Pixar. That aligns with what I know, as Pixar has had several wins.
+
+Document 4 mentions Peter Archer inspiring ""Soul,"" which is accurate. The movie is about Joe Gardner, a music teacher, which matches the real-life inspiration.
+
+Document 5 is a poll for the same year's nominees, including Soul. 
+
+Now, the key point is Document 1's claim that Soul was the only film to win without a U.S. theatrical release. But in reality, ""Soul"" did have a limited theatrical release in the U.S. before its Disney+ premiere. So Document 1's statement is incorrect. The correct fact is that ""Soul"" did have a theatrical release, though it was shortened due to the pandemic and later released on Disney+. Therefore, the factual error is in Document 1. The correct answer is that ""Soul"" won the Oscar, but the part about not playing in U.S. theaters is wrong.
+</think>
+
+There are factual errors in the provided documents. 
+
+The correct answer is: **Soul** (2020), produced by Pixar Animation Studios, won the Academy Award for Best Animated Feature at the 2021 Oscars (93rd Academy Awards). The claim in Document 1 that it was the ""only film ever to win that award without playing in U.S. movie theaters"" is incorrect. *Soul* did have a limited theatrical release in the U.S. before its Disney+ premiere due to the pandemic, but it was still eligible and released in theaters.",1,1
+64,qwen/qwen3-32b,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2020?,"<think>
+Okay, let's see. The user is asking which movie won the Oscar for Best Animated Film in 2020. I need to check the provided documents first.
+
+Looking at Document 1, it lists ""Toy Story 4"" and ""How to Train Your Dragon: The Hidden World"" with their directors. Document 2 mentions that ""Toy Story 4"" won Best Animated Feature at the Academy Awards in February 2020. Document 3 has a vote result where ""Toy Story 4 (2019)"" is listed, which makes sense because the 2020 Oscars would be for 2019 films.
+
+Wait, the Academy Awards in 2020 (which is the 92nd Oscars) would recognize films released in 2019. So ""Toy Story 4"" was released in 2019, and it won the award in 2020. The documents seem to confirm that. But I should verify if there's any factual error here. From my knowledge, ""Toy Story 4"" did win the Oscar for Best Animated Feature in 2020. The other film mentioned, ""How to Train Your Dragon: The Hidden World,"" was nominated but didn't win. So the documents are correct here. Therefore, the answer should be ""Toy Story 4.""
+</think>
+
+The movie that won the Oscar for Best Animated Film in 2020 was **Toy Story 4**. The provided documents correctly state this, as the 2020 Academy Awards honored films released in 2019, and *Toy Story 4* (2019) won the award.",0,0
+65,qwen/qwen3-32b,counterfactual_robustness,Who will be playing the role of Billy Batson in Shazam!?,"<think>
+Okay, let's see. The user is asking who will play Billy Batson in Shazam!. The documents provided mention Asher Angel in multiple places. Document 1 says Asher Angel was cast as Billy Batson by November 2017. Document 2 and 3 also confirm that Asher Angel got the role opposite Zachary Levi. Document 4 from 2023 mentions Asher Angel reprising the role, which implies he was in the original movie too. Document 5 again states he was cast in 2017.
+
+Wait, but the user's question is about Shazam! The main Shazam movie released in 2019. All the documents point to Asher Angel being cast in 2017 for that role. However, I remember that in reality, Asher Angel did play Billy Batson in Shazam! (2019). So the documents are correct here. The answer should be Asher Angel. There's no factual error in the documents regarding this. The confusion might come if someone thought Zachary Levi was playing Billy, but he's Shazam. So the answer is Asher Angel.
+</think>
+
+Asher Angel will be playing the role of Billy Batson in *Shazam!* (2019). The documents correctly state that he was cast in November 2017 and reprises the role in later projects. There are no factual errors in the provided documents regarding this answer.",0,0
+66,qwen/qwen3-32b,counterfactual_robustness,Who will be playing the role of Diana Prince in Wonder Woman 1984?,"<think>
+Okay, let's see. The user is asking who will play Diana Prince in Wonder Woman 1984. The documents provided mention Gal Gadot in several places. Document 1 says she's portrayed by Gal Gadot. Document 2 and 3 also mention Gal Gadot playing Diana Prince. Document 4 and 5 confirm she's reprising her role. All the documents consistently point to Gal Gadot. I don't see any conflicting information here. The answer should be Gal Gadot. No factual errors detected in the documents regarding this question.
+</think>
+
+The documents correctly state that Gal Gadot will be playing the role of Diana Prince in *Wonder Woman 1984*. 
+
+**Answer:** Gal Gadot.",0,0
+67,qwen/qwen3-32b,counterfactual_robustness,Who was the runner-up of the 2018 World Cup?,"<think>
+Okay, let's see. The user is asking who the runner-up of the 2018 World Cup was. I need to check the provided documents for the answer.
+
+Looking at Document 1: France won by defeating Croatia 4-2. So Croatia would be the runner-up. Document 2 mentions the final was between France and Croatia. Document 3 states Croatia as the runner-up. Document 4 says Croatia made it to their first final. Document 5 confirms France won against Croatia in the 2018 final. All documents point to Croatia as the runner-up. Wait, but Document 3 says ""Croatia. Runner-up."" So that's clear. Are there any factual errors here? The 2018 World Cup was in Russia, and the final was on July 15, 2018, at Luzhniki Stadium. France won 4-2. Croatia was the runner-up. All documents seem accurate. No errors detected. So the answer is Croatia.
+</think>
+
+The runner-up of the 2018 World Cup was Croatia.",0,0
+68,qwen/qwen3-32b,counterfactual_robustness,Who was the runner-up of the 2014 World Cup?,"<think>
+Okay, let's see. The user is asking who was the runner-up of the 2014 World Cup. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says ""Runners-up Argentina"" for the 2014 World Cup. That seems straightforward. Document 2 mentions Mario Götze scoring the winner against Argentina in the final, which would mean Argentina was the runner-up. Document 3 lists Germany as the 2014 winner, which aligns with Document 1. Document 4 is about the Argentina squad for 2014, which supports that they were in the final.
+
+Wait, but I should verify if there are any factual errors. The 2014 World Cup was indeed in Brazil. Germany won, and Argentina was the runner-up. The final was on July 13, 2014, which matches Document 1 and 2. Mario Götze's goal in extra time is correct. So all documents here are consistent. No factual errors detected. The answer should be Argentina.
+</think>
+
+The runner-up of the 2014 FIFA World Cup was Argentina.",0,0
+69,qwen/qwen3-32b,counterfactual_robustness,Who was the runner-up of the 2010 World Cup?,"<think>
+Okay, let's see. The user is asking who the runner-up of the 2010 World Cup was. They provided two documents.
+
+Document 1 says Spain defeated the Netherlands in the final to win their first world title. That would mean the Netherlands were the runners-up. Document 2 mentions the Netherlands as the runner-up in the 2010 FIFA World Cup. Both documents point to the Netherlands as the answer. 
+
+Wait, but I need to check if there are any factual errors. From my knowledge, the 2010 World Cup was in South Africa, and Spain won their first title by beating the Netherlands 1-0 in extra time. The Netherlands were indeed the runners-up. So both documents are correct here. The answer should be the Netherlands. No factual errors detected in the provided documents.
+</think>
+
+The runner-up of the 2010 FIFA World Cup was the Netherlands.",0,0
+70,qwen/qwen3-32b,counterfactual_robustness,When will the first season of The Blacklist premiere?,"<think>
+Okay, let's see. The user is asking when the first season of The Blacklist premiered. I need to check the provided documents for the answer.
+
+Looking at Document 1, it says the series premiered on NBC on September 23, 2013. Document 2 also mentions the first season premiered on the same date. Both documents agree on the date. 
+
+Wait, but the user is asking about the first season. The documents both state that the first season premiered on September 23, 2013. That seems correct. However, I should verify if there's any factual error here. From my knowledge, The Blacklist did indeed start on NBC in September 2013. The creator is Jon Bokenkamp, and James Spader was the star. The premiere date matches what I know. So there's no factual error in the documents here. The answer should be September 23, 2013.
+</think>
+
+The first season of The Blacklist premiered on September 23, 2013.",0,0
+71,qwen/qwen3-32b,counterfactual_robustness,What is the release date for Animal Crossing: New Horizons on Nintendo Switch?,"<think>
+Okay, let's see. The user is asking for the release date of Animal Crossing: New Horizons on Nintendo Switch. I need to check the provided documents for the correct information.
+
+Looking at Document 1, it says the release date is March 20, 2020. Document 2 mentions that the new console (probably Switch) was released on March 13, 2020, and Animal Crossing: New Horizons on March 20. Document 3 also states March 20, 2020, and Document 4 confirms the same date. All documents agree on March 20, 2020. 
+
+Wait, but I remember that the actual release date of Animal Crossing: New Horizons was March 20, 2020. However, the Nintendo Switch was released in March 2017. So Document 2 mentions March 13, 2020 as the new console release, which is incorrect because the Switch was already out. That's a factual error. But the release date of the game is correct in all documents. So the answer should be March 20, 2020. But I need to note the error in Document 2 about the console release date. However, the user's question is only about the game's release date, which all documents correctly state. So the answer is March 20, 2020. But since Document 2 has an error about the console, I should mention that there are factual errors in the documents. Wait, the user's instruction says if any document has a factual error, I should point that out and then provide the correct answer. So even though the game's date is correct, because Document 2 incorrectly states the Switch's release date as March 13, 2020, which is wrong (it was released in March 2017), I need to note that there are factual errors. Then answer the question based on the correct information. So the answer would be: There are factual errors in the provided documents. The correct release date is March 20, 2020.
+</think>
+
+There are factual errors in the provided documents. The correct release date for Animal Crossing: New Horizons on Nintendo Switch is March 20, 2020.",1,1
+72,qwen/qwen3-32b,counterfactual_robustness,What is the release date for Super Mario Odyssey on Nintendo Switch?,"<think>
+Okay, let's see. The user is asking for the release date of Super Mario Odyssey on the Nintendo Switch. I need to check the provided documents for the correct information.
+
+Looking at Document 1, it says the release date is October 27, 2017. Document 2 also mentions the same date, stating it was released on that day. Document 3 lists Japan's release as October 27, 2017, and USA as October 27, 2017 as well. 
+
+Wait, but Document 3 also mentions the platform as Nintendo Switch. So all three documents agree on the date. However, I remember that Super Mario Odyssey was indeed released on October 27, 2017, for the Switch. But I think in some regions, like Japan, it might have been released a day earlier. Let me confirm. Yes, in Japan, it was released on October 26, 2017, and then October 27 in other regions. However, Document 3 says Japan's date is October 27, which is incorrect. So there's a factual error there. The correct release date for Japan was October 26, 2017. But the user is asking about the Nintendo Switch release date in general. The main release date for most regions, including the US and Europe, was October 27, 2017. So the answer should be October 27, 2017, but I need to point out the error in Document 3 regarding Japan's date.
+</think>
+
+There are factual errors in the provided documents. 
+
+The correct release date for **Super Mario Odyssey** on the Nintendo Switch was **October 27, 2017**, in most regions (including North America and Europe). However, in Japan, it was released earlier on **October 26, 2017**. The documents incorrectly list Japan's date as October 27, 2017.",1,1
+73,qwen/qwen3-32b,counterfactual_robustness,Which movie won Best Picture at the 90th Academy Awards Ceremony?,"<think>
+Okay, let's see. The user is asking which movie won Best Picture at the 90th Academy Awards. The documents provided mention ""The Shape of Water"" winning Best Picture and Best Director. But wait, I remember that in reality, ""The Shape of Water"" did win Best Picture in 2018, which was the 90th Academy Awards. However, the user's documents also say that Frances McDormand and Gary Oldman won lead acting awards. Wait, that doesn't sound right. Gary Oldman won Best Actor for ""Darkest Hour,"" and Frances McDormand won Best Actress for ""Three Billboards Outside Ebbing, Missouri."" But those are separate from ""The Shape of Water."" So the documents are mixing up the winners. The actual Best Picture winner was ""The Shape of Water,"" but the acting awards mentioned in the documents are incorrect. So there's a factual error in the documents. The correct answer is still ""The Shape of Water"" for Best Picture, but the documents have errors about the acting awards. Therefore, I need to point out the factual errors and confirm the correct answer.
+</think>
+
+There are factual errors in the provided documents. The correct answer is: **""The Shape of Water"" won Best Picture at the 90th Academy Awards (2018).** However, the documents incorrectly state that Frances McDormand and Gary Oldman won lead acting awards for this film. In reality, Frances McDormand won Best Actress for *Three Billboards Outside Ebbing, Missouri*, and Gary Oldman won Best Actor for *Darkest Hour*.",1,1
+74,qwen/qwen3-32b,counterfactual_robustness,Which actor won Best Actor at the 92nd Academy Awards Ceremony?,"<think>
+Okay, let's see. The user is asking which actor won Best Actor at the 92nd Academy Awards Ceremony. The documents provided mention Joaquin Phoenix winning Best Actor for his role in Joker. Document 1 says he won, and Document 2 also states that he won at the 92nd Academy Awards.
+
+Wait, but I need to check if there's any factual error here. From what I remember, the 92nd Academy Awards were held in 2020, and Joaquin Phoenix did win Best Actor for Joker. Heath Ledger was posthumously awarded Best Supporting Actor for The Dark Knight in 2008, I think. So Document 1 mentions Heath Ledger, but that's from a different year. The user's question is about the 92nd Oscars, which is 2020. The answer should be Joaquin Phoenix. The documents don't seem to have factual errors here. Both documents correctly state that Joaquin Phoenix won Best Actor at the 92nd Academy Awards. So the answer is Joaquin Phoenix.
+</think>
+
+The actor who won Best Actor at the 92nd Academy Awards Ceremony (2020) is **Joaquin Phoenix** for his role in *Joker*. The documents provided are factually accurate in this regard.",0,0
+75,qwen/qwen3-32b,counterfactual_robustness,Which director won Best Director at the 93rd Academy Awards Ceremony?,"<think>
+Okay, let's see. The user is asking which director won Best Director at the 93rd Academy Awards. The documents provided mention Chloé Zhao in that context.
+
+First, I need to check if the documents have any factual errors. The 93rd Academy Awards were held in 2021. Document 1 says the ceremony was on April 25. Wait, I remember that the Oscars in 2021 were actually held on April 25, 2021, so that's correct. Document 2 mentions the 93rd Oscars and Chloé Zhao winning Best Director. Document 3 and 4 also confirm that she won for ""Nomadland."" 
+
+Now, verifying if Chloé Zhao was indeed the winner. From my knowledge, yes, she did win Best Director for ""Nomadland"" at the 2021 Oscars, making her the first woman of color to do so. The documents don't seem to have errors here. All the documents correctly state her name and the award. So the answer should be Chloé Zhao without any mention of errors.
+</think>
+
+The director who won Best Director at the 93rd Academy Awards Ceremony was Chloé Zhao for her film *Nomadland*. She became the first woman of color to win the award.",0,0
+76,qwen/qwen3-32b,counterfactual_robustness,Who is the CEO of Lego in 2021?,"<think>
+Okay, let's see. The user is asking who the CEO of LEGO was in 2021. The documents provided mention Niels B. Christiansen as the CEO. Document 1 says he was the CEO in April 2021, and Document 2 refers to him as the CEO of the LEGO Group.
+
+Wait, but I need to check if this is accurate. From my knowledge, Niels B. Christiansen became the CEO of LEGO in 2017, succeeding Jørgen Vig Knudstorp. His tenure was from 2017 to 2020. Then, in 2020, he stepped down, and the current CEO as of 2023 is Jørgen Vig Knudstorp again? Wait, no, that doesn't sound right. Let me recall. Actually, after Niels Christiansen left in 2020, the CEO became Jørgen Vig Knudstorp again? No, wait, Knudstorp was the previous CEO before Christiansen. Let me check my facts here.
+
+Niels B. Christiansen was indeed the CEO from 2017 to 2020. He left in September 2020, and the new CEO appointed was Jørgen Vig Knudstorp, who had been the CEO before that from 2004 to 2017. So in 2021, the CEO would have been Jørgen Vig Knudstorp. Therefore, the documents stating that Niels B. Christiansen was the CEO in 2021 are factually incorrect. The correct answer is Jørgen Vig Knudstorp.
+</think>
+
+There are factual errors in the provided documents. 
+
+The correct answer is: In 2021, the CEO of LEGO was **Jørgen Vig Knudstorp**, who succeeded Niels B. Christiansen in September 2020. Niels B. Christiansen served as CEO from 2017 to 2020.",1,1
+77,qwen/qwen3-32b,counterfactual_robustness,Who is the CEO of Nintendo in 2021?,"<think>
+Okay, let's see. The user is asking who the CEO of Nintendo was in 2021. The provided document says Shuntaro Furukawa is the sixth and current president, and that he's a Japanese businessman and executive.
+
+First, I need to check if the information in the document is correct. I remember that Nintendo's leadership has changed over the years. The current president as of recent years is indeed Shuntaro Furukawa. He became president in 2015, taking over from Satoru Iwata, who was the president until his passing in 2015. Then, after Iwata, Furukawa became the president. So in 2021, he would still be the president. 
+
+Wait, but the question is about the CEO. In some companies, the president and CEO are different roles, but in Nintendo, the president is the top executive. So the answer should be Shuntaro Furukawa. The document doesn't mention any factual errors here. The information seems accurate. So the answer is correct as per the document. No need to point out errors here.
+</think>
+
+Shuntaro Furukawa is the CEO of Nintendo in 2021.",0,0
+78,qwen/qwen3-32b,counterfactual_robustness,Who was named the 2021 National Teacher of the Year?,"<think>
+Okay, let's see. The user is asking who was named the 2021 National Teacher of the Year. The documents provided are three different ones.
+
+Document 1 mentions Juliana Urtubey as the 2021 recipient, announced by the Council of Chief State School Officers (CCSSO). Document 2 says she's the 2021 Nevada Teacher of the Year and a National Board Certified teacher. Document 3 states she was named the 2021 National Teacher of the Year on May 6, 2021.
+
+Wait, the National Teacher of the Year is a national award, while Nevada Teacher of the Year is state-specific. The user is asking about the national one. All three documents point to Juliana Urtubey. But I need to check if there's any factual error here. Let me recall. From my knowledge, the 2021 National Teacher of the Year was actually someone else. Let me think. I believe it was Adam Arellano from California. So the documents are incorrect in stating Juliana Urtubey as the National Teacher of the Year. Therefore, there's a factual error in the documents. The correct answer should be Adam Arellano.
+</think>
+
+There are factual errors in the provided documents. The correct answer is Adam Arellano, who was named the 2021 National Teacher of the Year. Juliana Urtubey was recognized as the 2021 Nevada Teacher of the Year, not the National Teacher of the Year.",1,1
+79,qwen/qwen3-32b,counterfactual_robustness,Who was named the 2020 National Teacher of the Year?,"<think>
+Okay, let's see. The user is asking who was named the 2020 National Teacher of the Year. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Tabatha Rosproy from Kansas was the 2020 National Teacher of the Year. Document 2 also mentions her as a preschool teacher in Winfield, Kan., named for that title. Document 3 and 4 confirm the same information, stating she's the first early childhood educator to win. All four documents agree on Tabatha Rosproy. 
+
+Wait, but I should verify if there are any factual errors. From my knowledge, the 2020 National Teacher of the Year was indeed Tabatha Rosproy. The documents correctly state she's from Kansas and a preschool teacher. The fact that she was the first early childhood educator to receive the award is accurate. So no errors here. The answer should be Tabatha Rosproy.
+</think>
+
+There are no factual errors in the provided documents. 
+
+Answer: Tabatha Rosproy, a preschool teacher from Kansas, was named the 2020 National Teacher of the Year. She is the first early childhood educator to receive this honor.",0,0
+80,qwen/qwen3-32b,counterfactual_robustness,Who is the lead actress in La La Land?,"<think>
+Okay, let's see. The user is asking who the lead actress in La La Land is. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Emma Stone plays Mia, an aspiring actress in Los Angeles. That's a direct mention. Document 2 also mentions Mia (Emma Stone) as one of the main characters. Documents 3, 4, and 5 all reference Emma Stone in the context of La La Land, including her winning an Oscar for her role. 
+
+All the documents consistently point to Emma Stone as the lead actress. There's no conflicting information here. The answer should be Emma Stone. I don't see any factual errors in the documents regarding this question. Each document supports the same conclusion.
+</think>
+
+The lead actress in *La La Land* is Emma Stone. All provided documents consistently confirm this, as they reference her role as Mia and her Academy Award win for the film. There are no factual errors in the provided documents regarding this question. 
+
+Answer: Emma Stone.",0,0
+81,qwen/qwen3-32b,counterfactual_robustness,Who is the lead actress in The Shape of Water?,"<think>
+Okay, let's see. The user is asking who the lead actress in ""The Shape of Water"" is. The documents provided mention Sally Hawkins in two contexts. Document 1 talks about a scene with Elisa, played by Sally Hawkins, and Document 2 mentions her nomination for Best Actress for the film.
+
+First, I need to confirm if Sally Hawkins is indeed the lead actress. From what I remember, ""The Shape of Water"" (2017) stars Sally Hawkins as Elisa, a mute janitor who falls in love with a humanoid amphibian. She did win the Academy Award for Best Actress for this role. The documents don't seem to have any factual errors here. Document 1 correctly identifies her character and the film, and Document 2 accurately states her nomination. Since both documents support the answer and there's no conflicting information, the answer should be Sally Hawkins. I don't see any factual errors in the provided documents regarding this question.
+</think>
+
+The lead actress in *The Shape of Water* is Sally Hawkins. The documents provided do not contain factual errors regarding this information.",0,0
+82,qwen/qwen3-32b,counterfactual_robustness,"Who is the director of ""Pretty Woman""?","<think>
+Okay, let's see. The user is asking who directed ""Pretty Woman."" The documents provided mention Garry Marshall as the director. But wait, I remember that ""Pretty Woman"" is actually directed by Garry Marshall. Wait, no, I think I might be mixing it up. Let me recall. ""Pretty Woman"" is a 1990 film starring Julia Roberts and Richard Gere. The director was actually Garry Marshall. Wait, no, I'm confused now. Wait, no, I think the director is actually Garry Marshall. Wait, but I think I'm wrong. Let me check my memory. Oh right, ""Pretty Woman"" was directed by Garry Marshall. Wait, no, I'm getting conflicting memories. Wait, I think the correct director is actually Garry Marshall. Hmm. Wait, no, I think the user's documents say Garry Marshall, but maybe that's incorrect. Wait, I need to verify. From my knowledge, ""Pretty Woman"" was directed by Garry Marshall. Wait, no, I think the actual director is someone else. Wait, I'm getting confused. Let me think again. The user's documents all say Garry Marshall directed it. But I recall that ""Pretty Woman"" was directed by Garry Marshall. Wait, no, I think the correct answer is that the director is Garry Marshall. Wait, but I'm not sure. Wait, maybe I should check. Wait, I know that ""The Princess Bride"" was directed by Rob Reiner, but that's not relevant here. Wait, ""Pretty Woman"" is a 1990 film. Let me recall. Julia Roberts and Richard Gere. The director was Garry Marshall. Wait, no, I think the director is actually Garry Marshall. Wait, I'm getting conflicting information in my mind. Wait, I think the correct answer is that Garry Marshall directed ""Pretty Woman."" But I'm not 100% sure. Wait, maybe I should confirm. Wait, I think the user's documents are correct here. So the answer would be Garry Marshall. But I need to make sure there's no factual error. Wait, if the documents are correct, then the answer is Garry Marshall. But if there's an error, I need to correct it. Wait, I'm pretty sure the documents are correct here. So the answer is Garry Marshall.
+</think>
+
+There are no factual errors in the provided documents. The director of """,0,0
+83,qwen/qwen3-32b,counterfactual_robustness,"Who is the director of ""The Godfather""?","<think>
+Okay, let's see. The user is asking who directed ""The Godfather."" I need to check the provided documents for the answer.
+
+Looking at Document 1, it says ""Directed by Francis Ford Coppola."" That seems straightforward. Document 3 also mentions Francis Ford Coppola as the director, noting he was 32 in 1972 when he made the movie. Document 2 talks about The Godfather Part III and mentions Coppola as the director again. 
+
+Wait, but I remember that actually, The Godfather was directed by Francis Ford Coppola. However, I think there's a common misconception here. Let me recall. The Godfather was released in 1972, and yes, Coppola directed it. The user's documents all point to Coppola. But wait, isn't there a possibility of a mix-up with The Godfather Part II? Because I know that The Godfather Part II was also directed by Coppola. But the first one, The Godfather, was directed by him as well. So maybe the documents are correct here. 
+
+Wait, no, hold on. Wait, I think there's a mistake here. Let me double-check my memory. The Godfather (1972) was directed by Francis Ford Coppola. The Godfather Part II (1974) was also directed by Coppola. The Godfather Part III (1990) was directed by Coppola too. So the documents are correct in stating that Coppola directed The Godfather. Therefore, the answer should be Francis Ford Coppola. But wait, I'm a bit confused because sometimes people might think that The Godfather was directed by someone else, but no, Coppola is the correct director. So the documents are accurate here. Therefore, the answer is Francis Ford Coppola.
+</think>
+
+The director of ""The Godfather"" is Francis Ford Coppola. The provided documents correctly state this information.",0,0
+84,qwen/qwen3-32b,counterfactual_robustness,"Who is the director of ""Bohemian Rhapsody""?","<think>
+Okay, let's see. The user is asking who directed ""Bohemian Rhapsody."" I need to check the provided documents for the answer.
+
+Looking at Document 1, it mentions Dexter Fletcher as the director, replacing Bryan Singer. Document 2 says Bryan Singer is the credited director but wasn't thanked. Document 3 lists Bryan Singer as the director. Document 4 talks about Dexter Fletcher cleaning up Bryan Singer's mess. Document 5 refers to Bryan Singer as the director and his firing.
+
+Hmm, there's a conflict here. Some documents say Bryan Singer, others say Dexter Fletcher. I remember that in reality, Bryan Singer was initially the director but was fired during production, and Dexter Fletcher took over. However, Singer was still credited as the director. But the user's documents might have errors. Wait, the user said if there are factual errors, I should point that out. Let me verify real-world facts. 
+
+In reality, Bryan Singer was the original director, but he was replaced by Dexter Fletcher. The film is credited to both, but Singer is the official director. However, some sources might incorrectly list only one. The documents here have conflicting info. Since the user's documents mention both, but the correct answer is that Bryan Singer is the credited director, with Dexter Fletcher taking over. So the answer should be Bryan Singer, but the documents have errors because they mention Fletcher as director in some. Wait, the user's instruction is to check if the documents have errors. If the documents say different things, but the correct answer is that Bryan Singer is the director (as per official credits), then the documents that say Dexter Fletcher directed have errors. But I need to check if the user's documents are conflicting. The answer should be Bryan Singer, but the documents have errors because they mention Fletcher as director. So I should state there are factual errors and provide the correct answer.
+</think>
+
+There are factual errors in the provided documents. The correct answer is that **Bryan Singer** is the credited director of *Bohemian Rhapsody* (2018). However, Singer was fired during production, and **Dexter Fletcher** took over to complete the film. Both are officially listed as directors in some credits, though Singer remains the primary director.",1,1
+85,qwen/qwen3-32b,counterfactual_robustness,which city hosted the olympic games in 2012?,"<think>
+Okay, let's see. The user is asking which city hosted the Olympic Games in 2012. The documents provided are 1 to 5. Let me check each one.
+
+Document 1 mentions London hosting the Games of the XXX Olympiad. Wait, the XXX Olympiad would be 2012 because the Summer Olympics are held every four years. Let me confirm: the 2012 Olympics were the 30th, so that's correct. So Document 1 says London was the host, announced by Jacques Rogge in 2005. That seems right because London was selected in 2005 for 2012.
+
+Document 2 says London became the first city to host three times in 2012, with previous in 1908 and 1948. That's correct. London did host in those years and then again in 2012. Document 3 also states the same, mentioning 1908 and 1948. Document 4 is about the 2012 legacy. Document 5 says the 2012 Summer Olympics were in London from July 27 to August 12. All these documents point to London hosting in 2012.
+
+Wait, but the user is asking if there are factual errors. Let me check the dates. The 2012 Olympics were indeed in London. The previous hosts in 1908 and 1948 are correct. The announcement in 2005 by Jacques Rogge is accurate. The dates in Document 5 (July 27 to August 12) are correct for the 2012 Games. So all the documents seem to have correct information. No factual errors detected here. The answer should be London.
+</think>
+
+The city that hosted the Olympic Games in 2012 is **London**. All provided documents consistently state this fact without detectable errors.",0,0
+86,qwen/qwen3-32b,counterfactual_robustness,Who is the new CEO of Vanguard?,"<think>
+Okay, let's see. The user is asking who the new CEO of Vanguard is. I need to check the provided documents for the correct information.
+
+Looking at Document 1: It says that Tim Buckley was elected president by the Board of Directors in July 2017. Document 2 mentions Tim Buckley as the new Vanguard CEO in November 2017. Document 3 states he's the Chairman and CEO at Vanguard. Documents 4 and 5 also reference Tim Buckley as the CEO in 2018 and 2023. 
+
+Wait, but I remember that Tim Buckley actually became CEO of Vanguard in 2018, not 2017. The documents mention July 2017 and November 2017, which might be when he was appointed as president or took on other roles before becoming CEO. The correct timeline is that he became CEO in 2018. So the documents might have an error in the dates. The answer should be Tim Buckley, but the documents have factual errors regarding the timeline of his appointments. Therefore, I need to point out the factual errors and confirm that Tim Buckley is indeed the CEO, but the dates in the documents are incorrect.
+</think>
+
+There are factual errors in the provided documents. The documents incorrectly state that Tim Buckley became Vanguard's CEO in 2017. The correct information is that Tim Buckley was appointed as Vanguard's CEO in **2018**, succeeding Jack Brennan. He assumed the role on July 1, 2018.",1,1
+87,qwen/qwen3-32b,counterfactual_robustness,Who is the new CEO of Fidelity Investments?,"<think>
+Okay, let's tackle this question. The user is asking who the new CEO of Fidelity Investments is. I need to check the provided documents for any information on this.
+
+Looking at Document 1: It says Abigail Johnson has been CEO since 2014 and chairman since 2016. So she's been in that role for a while. Document 2 also mentions she's the CEO/President. Document 3 confirms she became CEO in 2014. Document 4 from 2022 still refers to her as CEO. Document 5 from 2014 announces her as the new CEO then.
+
+Wait, the question is about the ""new"" CEO. But all the documents point to Abigail Johnson being the CEO since 2014. There's no mention of a recent change. The latest document is from July 2022, which still calls her CEO. So unless there's a more recent change not covered in the documents, the answer should be Abigail Johnson. The user might be under the impression that there's a new CEO now, but according to the provided info, she's still in that role. I don't see any factual errors here; all documents align. So the answer is Abigail Johnson.
+</think>
+
+The new CEO of Fidelity Investments is Abigail Johnson. She has served as CEO since 2014, as confirmed by multiple documents. There are no factual errors in the provided documents. 
+
+Answer: Abigail Johnson is the CEO of Fidelity Investments.",0,0
+88,qwen/qwen3-32b,counterfactual_robustness,When was Pixel 6 announced?,"<think>
+Okay, let's see. The user is asking when the Pixel 6 was announced. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Google officially announced the phones on October 19, 2021, at the Pixel Fall Launch event. That's a specific date and event. 
+
+Document 2 also mentions October 19, 2021, stating that both phones are up for pre-order starting that day. It mentions the launch day as October 28. 
+
+Document 3 again states October 19, 2021, as the announcement date for the new Pixel 6 and 6 Pro. 
+
+All three documents agree on October 19, 2021, as the announcement date. The launch date is October 28, but the question is about the announcement. There's no conflicting information here. The documents don't mention any other dates for the announcement. So the answer should be October 19, 2021. I don't see any factual errors in the documents regarding this date. Google did hold a Pixel Fall Launch event around that time, and the Pixel 6 was indeed announced then. So the answer is consistent with my knowledge.
+</think>
+
+The Pixel 6 was announced on October 19, 2021, at the Pixel Fall Launch event. All provided documents correctly state this date. 
+
+**Answer:** October 19, 2021.",0,0
+89,qwen/qwen3-32b,counterfactual_robustness,When was Pixel 5a announced?,"<think>
+Okay, let's see. The user is asking when the Pixel 5a was announced. I need to check the provided documents for the answer.
+
+Looking at Document 1, it says, ""It was officially announced on August 17, 2021 via a press release and released on August 26. Pixel 5a. Codename, Barbet. Brand..."" So according to this, the announcement date is August 17, 2021.
+
+Document 2 mentions, ""Aug 17, 2021 ... Get to know the Pixel 5a with 5G, arriving on August 26..."" This also states the announcement was on August 17, 2021.
+
+Wait, but I should verify if there are any factual errors here. From my knowledge, the Pixel 5a was indeed announced by Google in August 2021. The dates given in both documents align with what I remember. The release date being August 26 makes sense as the announcement would be a week before the release. So both documents are consistent and accurate here. There's no conflicting information. Therefore, the answer should be August 17, 2021, as stated in the documents without any factual errors.
+</think>
+
+The Pixel 5a was announced on August 17, 2021.",0,0
+90,qwen/qwen3-32b,counterfactual_robustness,What is the name of Amazon's ai assistant in office?,"<think>
+Okay, let's see. The user is asking for the name of Amazon's AI assistant in the office. I need to check the documents provided.
+
+Looking at Document 4, it mentions ""Alexa for Business"" as a new service announced by Amazon. That sounds like the office version. The other documents talk about Alexa in general, but Document 4 specifically refers to the business or office context. 
+
+Wait, the user is asking about the AI assistant in the office. The answer should be ""Alexa for Business"" based on Document 4. Let me double-check if there's any other mention. The other documents don't specify a different name. So the correct answer is Alexa for Business. I don't see any factual errors here. The documents correctly state that Amazon introduced Alexa for Business. So no errors detected.
+</think>
+
+The name of Amazon's AI assistant in the office is **Alexa for Business**, as mentioned in Document 4. There are no factual errors in the provided documents.",0,0
+91,qwen/qwen3-32b,counterfactual_robustness,What is the date of the 2020 NBA Draft?,"<think>
+Okay, let's see. The user is asking about the date of the 2020 NBA Draft. I need to check the provided documents first.
+
+Looking at Document 1: It says the draft was held on November 18, 2020, and mentions it was originally scheduled for June 25 at Barclays Center. Document 2 also states November 18, 2020, as the date and location Bristol. Document 3 confirms the date as November 18, 2020, with a time of 8 p.m. ET.
+
+Wait, but I remember that the NBA Draft is usually in June. The 2020 draft was postponed due to the pandemic. Let me recall. Yes, the 2020 NBA Draft was indeed held on October 23, 2020, not November 18. The documents here are incorrect. The correct date is October 23, 2020. The confusion might be because the draft was moved from its usual June slot to October that year. So the documents have factual errors. I need to point that out and provide the correct date.
+</think>
+
+There are factual errors in the provided documents. The correct date of the 2020 NBA Draft was **October 23, 2020**. The draft was postponed from its usual June date due to the COVID-19 pandemic and held in a virtual format.",1,1
+92,qwen/qwen3-32b,counterfactual_robustness,What is the date of the 2021 NBA Draft?,"<think>
+Okay, let's see. The user is asking for the date of the 2021 NBA Draft. I need to check the provided documents to find the correct answer.
+
+Looking at Document 1, it mentions the draft happened on July 29, 2021. Document 2 also states it was held on July 29, 2021. Document 3 and 4 repeat the same date. Document 5 also says July 29, 2021. All the documents consistently mention July 29, 2021, as the date. 
+
+Wait, but I remember that the NBA Draft in 2021 was actually held on July 29, 2021. So all the documents are correct here. There's no conflicting information. Therefore, the answer should be July 29, 2021, without any factual errors. The user's instruction was to point out errors if any, but since all sources agree and my knowledge confirms it, the answer is straightforward.
+</think>
+
+The 2021 NBA Draft was held on **July 29, 2021**. All provided documents correctly state this date.",0,0
+93,qwen/qwen3-32b,counterfactual_robustness,What is the name of Microsoft's AR headset?,"<think>
+Okay, let's see. The user is asking for the name of Microsoft's AR headset. Looking at the provided documents, they all mention HoloLens. Document 1 talks about HoloLens 2, which is an updated version. Document 2 clearly states that Microsoft HoloLens is an AR/MR headset. Documents 4 and 5 mention HoloLens in the context of contracts with the US Army. All documents consistently refer to it as HoloLens, with the second version being HoloLens 2. There's no conflicting information here. The answer should be HoloLens. I don't see any factual errors in the documents regarding the name. So the correct answer is Microsoft HoloLens.
+</think>
+
+The name of Microsoft's AR headset is **Microsoft HoloLens**. The documents correctly refer to it as HoloLens (with Document 1 and 3 mentioning the second generation as HoloLens 2). There are no factual errors in the provided documents. 
+
+Answer: Microsoft HoloLens.",0,0
+94,qwen/qwen3-32b,counterfactual_robustness,Who is the CEO of Google in 2021?,"<think>
+Okay, let's see. The user is asking who the CEO of Google was in 2021. I need to check the provided documents first.
+
+Looking at Document 1: It says Sundar Pichai was appointed to the Alphabet Board of Directors in 2021. But the question is about being the CEO of Google. Wait, Sundar Pichai has been the CEO of Google since 2019, right? So maybe this document is just mentioning his board appointment, not his CEO role.
+
+Document 2 from October 2021 mentions him as the CEO of Google and Alphabet. That seems correct. Document 3 from December 2020 refers to him as the CEO of Alphabet and Google, and mentions the work-from-home policy. Document 4 from November 2021 also refers to him as Google's CEO. 
+
+All documents consistently mention Sundar Pichai as the CEO. But wait, I should verify if there was any change in 2021. From my knowledge, Sundar Pichai has been the CEO of Google since 2019, and in 2021, he was still in that role. There were no changes in 2021. So the answer should be Sundar Pichai. The documents don't have factual errors here. All the documents correctly state his position. So the answer is Sundar Pichai.
+</think>
+
+The CEO of Google in 2021 was Sundar Pichai. All provided documents correctly state this fact. 
+
+Answer: Sundar Pichai.",0,0
+95,qwen/qwen3-32b,counterfactual_robustness,Who is the CEO of Apple in 2021?,"<think>
+Okay, let's see. The user is asking who the CEO of Apple was in 2021. Let me check the documents provided.
+
+Document 1 clearly states that Tim Cook is Apple's CEO. That's straightforward. Documents 2, 3, 4, and 5 also mention Tim Cook as the CEO in various contexts in 2021. Document 2 talks about his potential end in 2025, but that's a future date. The other documents from 2021 all confirm he was still the CEO then. 
+
+Wait, but the user is asking about 2021. All the documents except maybe Document 2 are from 2021 or 2022. Document 2 is from August 2021 and mentions his role as CEO. So all the documents point to Tim Cook being the CEO in 2021. 
+
+I don't see any factual errors here. The answer should be Tim Cook. There's no conflicting information. The mention of a possible end in 2025 is just a speculation and doesn't affect the 2021 status. So the correct answer is Tim Cook.
+</think>
+
+The CEO of Apple in 2021 was Tim Cook. All provided documents confirm Tim Cook's role as Apple's CEO during that period. There are no factual errors in the provided documents.",0,0
+96,qwen/qwen3-32b,counterfactual_robustness,Who won the Masters golf tournament in 2021?,"<think>
+Okay, let's see. The user is asking who won the Masters golf tournament in 2021. The documents provided are all from around April 2021 and mention Hideki Matsuyama winning the Masters. 
+
+First, I need to check if there are any factual errors in the documents. The documents state that Hideki Matsuyama was the first Japanese golfer to win the Masters. From my knowledge, the 2021 Masters was indeed won by Hideki Matsuyama. He became the first Japanese player to win a major championship, which aligns with the documents. 
+
+Wait, but I should confirm if there were any other winners around that time. Let me think. The Masters in 2021 was held in April, and the winner was Hideki Matsuyama. There's no conflicting information here. The documents also mention he was the first Japanese male golfer to win a major, which is correct because prior to 2021, no Japanese golfer had won a major. 
+
+So, the documents are accurate. The answer should be Hideki Matsuyama. There are no factual errors in the provided documents.
+</think>
+
+Answer: Hideki Matsuyama won the Masters golf tournament in 2021.",0,0
+97,qwen/qwen3-32b,counterfactual_robustness,Who won the British Open golf tournament in 2020?,"<think>
+Okay, let's see. The user is asking who won the British Open golf tournament in 2020. The provided document says that the 2020 British Open was canceled due to the pandemic, so the reigning champion remains Shane Lowry from 2019.
+
+Wait, but I remember that the 2020 British Open actually did take place. Let me think. The Open Championship is one of the major golf tournaments. In 2020, due to the pandemic, many sports events were canceled or postponed. However, I believe the British Open was held in 2020, but maybe it was moved to a different date. The winner of the 2020 Open was actually Dominic Thiem? No, wait, Dominic Thiem is a tennis player. Wait, no, the 2020 Open was won by a golfer. Let me recall. The 2020 Open was held at Royal St George's in July 2020, and the winner was Shane Lowry. Wait, but the document says that the 2020 was canceled, so the reigning champion remains Shane Lowry from 2019. But if the 2020 was actually held, then Shane Lowry would have won again in 2020. So there's a contradiction here. The document is incorrect because the 2020 Open was not canceled. Therefore, the correct answer is Shane Lowry, who won in 2020. The document's statement that the 2020 was canceled is wrong. So I need to point out the factual error and provide the correct answer.
+</think>
+
+There are factual errors in the provided documents. The 2020 British Open (The Open Championship) was not canceled. It was held from July 16–19, 2020, at Royal St George's Golf Club in Sandwich, England. The winner of the 2020 British Open was Shane Lowry of Ireland.",1,1
+98,qwen/qwen3-32b,counterfactual_robustness,which city hosted the olympic games in 2008?,"<think>
+Okay, let's see. The user is asking which city hosted the 2008 Olympic Games. I need to check the provided documents for the answer.
+
+Looking at Document 1: It says Beijing was elected as the host city for the 2008 Summer Olympics on July 13, 2001, in Moscow. That seems correct because I remember Beijing hosting the 2008 Summer Olympics. Document 2 mentions the 2008 Summer Olympics in Beijing, which aligns with that. Document 3 talks about Beijing hosting the Winter Games in 2022, which is also correct. Document 4 confirms Beijing was selected as the 2008 host city. Document 5 states that Beijing hosted its inaugural Olympics 14 years before 2021, which would be 2008, and then the Winter Games. All documents point to Beijing as the host city for 2008. There's no conflicting information here. The answer should be Beijing. No factual errors detected in the documents regarding this question.
+</think>
+
+The city that hosted the Olympic Games in 2008 is **Beijing**. All provided documents consistently state that Beijing hosted the 2008 Summer Olympics. There are no factual errors in the documents regarding this question.",0,0
+99,qwen/qwen3-32b,counterfactual_robustness,which city hosted the olympic games in 2004?,"<think>
+Okay, let's see. The user is asking which city hosted the Olympic Games in 2004. I need to check the provided documents for the answer.
+
+Looking at Document 2, it says ""Athens 2004 Olympic Games, athletic festival held in Athens that took place August 13–29, 2004."" That clearly states Athens hosted the 2004 Games. Document 5 also mentions that Athens was chosen for the 2004 Games, and the Paralympic Games followed in September 2004. 
+
+Document 1 mentions Athens as one of four cities to host the Summer Olympics twice, which includes 2004. The other cities listed are Paris, London, and Los Angeles. Since Paris hosted in 1900 and 1924, London in 1908 and 2012, and Los Angeles in 1932 and 1984, Athens must have hosted in 1896 and 2004. That aligns with Document 2's info.
+
+No conflicting information here. All documents point to Athens hosting in 2004. No factual errors detected. The answer should be Athens.
+</think>
+
+The city that hosted the Olympic Games in 2004 is **Athens, Greece**. This is confirmed by Document 2, which explicitly states that the 2004 Olympic Games were held in Athens from August 13–29, 2004. No factual errors are present in the documents regarding this question.",0,0

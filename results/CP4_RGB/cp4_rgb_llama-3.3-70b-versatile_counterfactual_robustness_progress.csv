@@ -1,0 +1,246 @@
+id,model,ability,query,model_response,error_detected,error_corrected
+0,llama-3.3-70b-versatile,counterfactual_robustness,Super Bowl 2021 location,"There are factual errors in the provided documents. 
+The correct answer is: Raymond James Stadium in Tampa, Florida. This is consistent across the provided documents and aligns with historical records. Super Bowl LV (55) indeed took place on February 7, 2021, at Raymond James Stadium in Tampa, Florida.",1,1
+1,llama-3.3-70b-versatile,counterfactual_robustness,Which country won the most medals at the 2018 Winter Olympics?,"There are factual errors in the provided documents. 
+
+The correct answer is: Norway and Germany tied for the most medals, but according to the Olympic records, Norway indeed won the most medals at the 2018 Winter Olympics with a total of 39 medals, including 14 gold medals.",1,1
+2,llama-3.3-70b-versatile,counterfactual_robustness,Who acquired Instagram?,"Facebook acquired Instagram. According to the documents, the acquisition occurred in 2012 for $1 billion.",0,0
+3,llama-3.3-70b-versatile,counterfactual_robustness,Who acquired WhatsApp?,"Facebook acquired WhatsApp. 
+
+Note: Document 1 contains a factual error regarding the acquisition price. 
+There are factual errors in the provided documents. 
+The correct answer is that Facebook acquired WhatsApp for approximately $19.3 billion.",1,1
+4,llama-3.3-70b-versatile,counterfactual_robustness,Who won the women's singles Wimbledon in 2019?,"The documents provided all consistently state that Simona Halep won the women's singles title at Wimbledon in 2019 by defeating Serena Williams in the final. Therefore, the answer is:
+
+Simona Halep.",0,0
+5,llama-3.3-70b-versatile,counterfactual_robustness,Who won the women's singles Wimbledon in 2018?,"The documents consistently state that Angelique Kerber won the women's singles title at the 2018 Wimbledon Championships, defeating Serena Williams in the final with a score of 6–3, 6–3. This information is consistent across all provided documents, and it aligns with historical records. Therefore, the answer is:
+
+Angelique Kerber.",0,0
+6,llama-3.3-70b-versatile,counterfactual_robustness,Who won the women's singles Wimbledon in 2021?,"There are factual errors in the provided documents. 
+
+The correct answer is: Ashleigh Barty won the women's singles Wimbledon in 2021, defeating Karolína Plíšková in the final with a score of 6-3, 6-7(4-7), 6-3.",1,1
+7,llama-3.3-70b-versatile,counterfactual_robustness,Who won the men's singles Wimbledon in 2013?,"There are factual errors in the provided documents. 
+
+The correct answer is: Andy Murray won the men's singles Wimbledon in 2013. He defeated Novak Djokovic in the final with a score of 6–4, 7–5, 6–4.",1,1
+8,llama-3.3-70b-versatile,counterfactual_robustness,Who won the women's singles U.S. Open in 2021?,"The documents provided all consistently state that Emma Raducanu won the women's singles title at the 2021 US Open by defeating Leylah Fernandez. There is no indication of any factual error regarding this specific question within the provided documents. 
+
+Answer: Emma Raducanu.",0,0
+9,llama-3.3-70b-versatile,counterfactual_robustness,Who won the men's singles U.S. Open in 2020?,"The documents provided all consistently state that Dominic Thiem won the men's singles title at the 2020 US Open by defeating Alexander Zverev. Therefore, the answer is: Dominic Thiem. 
+
+There is no need to say ""There are factual errors in the provided documents"" in this case, as all the documents agree on the winner of the 2020 US Open men's singles title, and this information is also correct according to general knowledge.",1,1
+10,llama-3.3-70b-versatile,counterfactual_robustness,Who won the women's singles U.S. Open in 2019?,"The documents consistently state that Bianca Andreescu won the women's singles title at the 2019 US Open, defeating Serena Williams in the final. Therefore, the answer is: Bianca Andreescu. 
+
+No factual errors were detected in the provided documents regarding this question.",0,0
+11,llama-3.3-70b-versatile,counterfactual_robustness,Who won the men's singles U.S. Open 2021?,"The documents consistently state that Daniil Medvedev won the men's singles title at the 2021 US Open by defeating Novak Djokovic in the final with a score of 6–4, 6–4, 6–4. Therefore, the answer is: Daniil Medvedev.",0,0
+12,llama-3.3-70b-versatile,counterfactual_robustness,What was Tesla's revenue in Q1 2021?,"According to the document, Tesla's revenue in Q1 2021 was $10.4 billion, but the document does not explicitly state that it is referring to Tesla. However, based on general knowledge, the information appears to be related to Tesla.
+
+Answer: $10.4 billion.",0,0
+13,llama-3.3-70b-versatile,counterfactual_robustness,What was Tesla's revenue in Q2 2020?,"According to the document, Tesla's revenue was $6.04 billion. However, the document mentions ""fourth straight quarter of profits"" which could imply this is not Q2. Typically, Q2 would be the second quarter, and the fourth quarter would be at the end of the year. 
+
+There are factual errors in the provided documents. 
+The correct answer based on general knowledge is that Tesla's Q2 2020 revenue was indeed around $6.04 billion, but the document's reference to the ""fourth straight quarter of profits"" might be inconsistent with it being Q2.",1,1
+14,llama-3.3-70b-versatile,counterfactual_robustness,What was Tesla's revenue in Q3 2019?,"According to both Document 1 and Document 2, Tesla's revenue in Q3 2019 was $6.3 billion. I do not detect any factual errors in the provided documents regarding this specific question. 
+
+Answer: $6.3 billion.",0,0
+15,llama-3.3-70b-versatile,counterfactual_robustness,When was Splatoon 2 released?,"The documents agree on the release date of Splatoon 2. According to both Document 1 and Document 2, Splatoon 2 was released on July 21, 2017. Therefore, the answer is: July 21, 2017.",0,0
+16,llama-3.3-70b-versatile,counterfactual_robustness,Who acquired 20th Century Fox?,"The Walt Disney Company acquired 20th Century Fox. According to the documents, the acquisition was completed on March 20, 2019, as part of Disney's purchase of 21st Century Fox's assets, which included 20th Century Fox, for $52.4 billion in stock.",0,0
+17,llama-3.3-70b-versatile,counterfactual_robustness,Who won the French Presidential Election 2017?,"There are factual errors in the provided documents. 
+Emmanuel Macron won the French Presidential Election in 2017, defeating Marine Le Pen in the second round on May 7, 2017.",1,1
+18,llama-3.3-70b-versatile,counterfactual_robustness,Who won the US Presidential Election 2020?,"There are factual errors in the provided documents. Joe Biden won the 2020 US Presidential Election, but he became the 46th President is incorrect. He actually became the 46th President, but the correct statement should be that he became the 46th President after winning the election as the 46th President of the United States, not as stated. Joe Biden won the election to become the 46th President of the United States, but the correct statement is that he is the 46th President, after winning the election to succeed the 45th President, Donald Trump. 
+
+Answer: Joe Biden won the US Presidential Election 2020.",1,1
+19,llama-3.3-70b-versatile,counterfactual_robustness,When was Diablo 3 released?,"To answer the question, I need to identify the game mentioned in Document 1. Although the game is not explicitly mentioned, based on the context and the release date, it appears to be Diablo 3. 
+
+According to historical records, Diablo 3 was indeed released on May 15, 2012. However, I must verify if the provided time and other details are accurate. The official release time for Diablo 3 was 12:01 AM PST on May 15, 2012, which matches the document. But, I must check for any other discrepancies.
+
+After verifying, I found that the document's information about the release date and time is correct, but it does not explicitly state that it is Diablo 3. Nevertheless, based on the given date, it is indeed Diablo 3. However, another potential discrepancy is the statement that the ""PC version is only playable online,"" which, while largely true due to the game's always-online requirement at launch, might be considered a factual error in the context of implying it was the only version with this requirement, as the console versions also required online connectivity for certain features.
+
+Given the potential for a factual error in the interpretation of the document's details about online play and the lack of explicit game identification, the response should reflect the detection of potential errors while providing the correct answer based on known information.
+
+There are factual errors in the provided documents. 
+Diablo 3 was released on May 15, 2012, at 12:01 AM PST.",1,1
+20,llama-3.3-70b-versatile,counterfactual_robustness,Who won the 2021 Tour de France?,[ERROR_MAX_RETRIES],0,0
+21,llama-3.3-70b-versatile,counterfactual_robustness,Who won the 2019 Tour de France?,"Egan Bernal won the 2019 Tour de France. According to the documents, he is the first Colombian and the first Latin American to achieve this. The documents consistently report that Egan Bernal, riding for Team Ineos, won the 2019 Tour de France.",0,0
+22,llama-3.3-70b-versatile,counterfactual_robustness,When was xenoblade chronicles 2 released?,"To answer the question, I need to find information about the release date of Xenoblade Chronicles 2. 
+
+According to Document 1, the game was released on December 1, 2017. Document 2 also mentions the release date as December 1, 2017.
+
+The information provided in both documents is consistent. However, I must verify if it is accurate. 
+
+Xenoblade Chronicles 2 was indeed released on December 1, 2017, for the Nintendo Switch. The provided documents appear to be correct in this case.
+
+Answer: December 1, 2017.",0,0
+23,llama-3.3-70b-versatile,counterfactual_robustness,When was xenoblade chronicles X released in Japan?,"According to the provided documents, Xenoblade Chronicles X was released in Japan on April 29, 2015. However, I must verify this information. After verification, I found that the release date in Japan was actually April 29, 2015, which matches the documents. 
+
+Answer: April 29, 2015.",0,0
+24,llama-3.3-70b-versatile,counterfactual_robustness,When was xenoblade chronicles Definite Edition released?,"There are factual errors in the provided documents. 
+The correct answer is: Xenoblade Chronicles: Definitive Edition was released on May 29, 2020.",1,1
+25,llama-3.3-70b-versatile,counterfactual_robustness,When was GPT-3 released?,"The documents state that GPT-3 was released in June 2020, but I must verify this information. According to my knowledge, GPT-3 was indeed released in 2020, and the exact date is not certain, but it is often reported as being released in May or June is not accurate for the general release, however, GPT-3 was initially released as a private beta in May or June is not certain but it is often reported as being released to limited beta in June or July is not certain but it is often reported as being released to private beta testers, with a wider release in October or November is not certain, and more widely in 2021 for some, and more widely available through an API in 2021 for some, and more widely in 2022 and 2023 for some. However, I did not detect any clear factual errors regarding the question of when GPT-3 was released in the provided documents, as the provided documents only mention the year and the month, which is June 2020. Therefore, I will provide the answer based on the provided documents.
+
+GPT-3 was released in June 2020.",0,0
+26,llama-3.3-70b-versatile,counterfactual_robustness,When was OpenAI founded?,"There are factual errors in the provided documents. 
+OpenAI was founded in December 2015, but it was initially founded as a non-profit research organization by Sam Altman, Greg Brockman, Ilya Sutskever, John Schulman, and Wojciech Zaremba, with Elon Musk as a co-chair, not a founder in the classical sense, and later in 2019, it transitioned into a 'capped' for-profit company.",1,1
+27,llama-3.3-70b-versatile,counterfactual_robustness,Who is the Heisman Trophy winner in 2012?,"There are factual errors in the provided documents. 
+The correct answer is: Johnny Manziel. He won the 2012 Heisman Trophy as a freshman quarterback for Texas A&M.",1,1
+28,llama-3.3-70b-versatile,counterfactual_robustness,Who is the Walter Camp Award winner in 2017?,"There are factual errors in the provided documents. 
+The correct answer is: Baker Mayfield. According to the provided documents and general knowledge, Baker Mayfield, the quarterback from Oklahoma, won the Walter Camp Award in 2017.",1,1
+29,llama-3.3-70b-versatile,counterfactual_robustness,Who is the Maxwell Award winner in 2019?,"According to the provided documents, the Maxwell Award winner in 2019 is Joe Burrow, Louisiana State University. This information is consistent across both Document 1 and Document 2. Therefore, the answer is: Joe Burrow, Louisiana State University.",0,0
+30,llama-3.3-70b-versatile,counterfactual_robustness,Who is the director of the Avatar movie?,The director of the Avatar movie is James Cameron.,0,0
+31,llama-3.3-70b-versatile,counterfactual_robustness,Who is the director of the Silent Hill movie?,The director of the Silent Hill movie is Christophe Gans.,0,0
+32,llama-3.3-70b-versatile,counterfactual_robustness,Who is the director of the Assassin's Creed movie?,"The director of the Assassin's Creed movie is Justin Kurzel, as stated in all three documents. Therefore, the answer is: Justin Kurzel. 
+
+No factual errors were detected in the provided documents regarding this question.",0,0
+33,llama-3.3-70b-versatile,counterfactual_robustness,What is the premiere date of Grey's Anatomy Season 17?,"The premiere date of Grey's Anatomy Season 17 is November 12, 2020. 
+
+All the documents provided (Document 1, Document 2, Document 3, Document 4) agree on this date, so there's no need to say ""There are factual errors in the provided documents"" in this case.",1,1
+34,llama-3.3-70b-versatile,counterfactual_robustness,What is the premiere date of The Walking Dead Season 11?,"The premiere date of The Walking Dead Season 11 is August 22, 2021.",0,0
+35,llama-3.3-70b-versatile,counterfactual_robustness,Who won the World Cup Final in 2018?,"There are factual errors in the provided documents. 
+The correct answer is France. They won the 2018 World Cup Final by defeating Croatia 4-2 in the final at Luzhniki Stadium in Moscow on July 15, 2018.",1,1
+36,llama-3.3-70b-versatile,counterfactual_robustness,Who won the World Cup Final in 2014?,[ERROR_MAX_RETRIES],0,0
+37,llama-3.3-70b-versatile,counterfactual_robustness,Who won the World Cup Final in 2010?,"There are factual errors in the provided documents. 
+The correct answer is: Spain won the World Cup Final in 2010, defeating the Netherlands 1-0 with a goal from Andres Iniesta in extra time.",1,1
+38,llama-3.3-70b-versatile,counterfactual_robustness,When was Marvel's Spider-Man released?,"Marvel's Spider-Man was released for the PlayStation 4 on September 7, 2018.",0,0
+39,llama-3.3-70b-versatile,counterfactual_robustness,When was Assassin's Creed Valhalla released?,"There are factual errors in the provided documents. 
+Assassin's Creed Valhalla was released on November 10, 2020, for PlayStation 4, Windows, Xbox One, and Xbox Series X and Series S, and on November 12, 2020, for PlayStation 5.",1,1
+40,llama-3.3-70b-versatile,counterfactual_robustness,When does the iPhone 11 release?,"According to the provided documents, the iPhone 11 was released on September 20, 2019. However, I also know that iOS 13 was officially released on September 19, 2019. Since Document 1 states the iPhone was released one day after the official public release of iOS 13, it seems to be consistent with the actual release date of iOS 13. 
+
+The release date of the iPhone 11 is consistent across both documents, so I do not detect any factual errors regarding the question. 
+
+Answer: September 20, 2019.",0,0
+41,llama-3.3-70b-versatile,counterfactual_robustness,What is women's year-end No 1 in tennis in 2020?,"There are factual errors in the provided documents. 
+Ashleigh Barty was indeed the year-end No. 1 in 2019, but in 2020, the WTA year-end world No. 1 was actually Ashleigh Barty's ranking was affected by the COVID-19 pandemic and she did not compete after February 2020. The year-end No. 1 for 2020 was actually Ashleigh Barty, but she did not actively compete for the position, the actual number one was determined by the limited number of tournaments played that year. The WTA year-end world No. 1 for 2020 was Ashleigh Barty.",1,1
+42,llama-3.3-70b-versatile,counterfactual_robustness,What is men's year-end No 1 in tennis in 2019?,"Based on the provided documents, the answer is: Rafael Nadal.
+
+All documents (Document 1, Document 2, and Document 3) consistently state that Rafael Nadal finished the year 2019 as the world No. 1 in men's tennis. Therefore, there is no indication of factual errors in the provided documents regarding this specific question. 
+
+Answer: Rafael Nadal.",0,0
+43,llama-3.3-70b-versatile,counterfactual_robustness,How much did Google acquire YouTube for?,"The documents consistently state that Google acquired YouTube for $1.65 billion. Therefore, the answer is: $1.65 billion. 
+
+No factual errors were detected regarding the acquisition price.",0,0
+44,llama-3.3-70b-versatile,counterfactual_robustness,when was The Legend of Zelda: Breath of the Wild released?,"The documents provided all agree on the release date of The Legend of Zelda: Breath of the Wild. According to the documents, it was released on March 3, 2017. This information is consistent across all documents and aligns with known factual information about the game's release. Therefore, no factual errors are detected in the provided context regarding the question asked.
+
+Answer: March 3, 2017.",0,0
+45,llama-3.3-70b-versatile,counterfactual_robustness,when was The Legend of Zelda: Ocarina of Time released?,[ERROR_MAX_RETRIES],0,0
+46,llama-3.3-70b-versatile,counterfactual_robustness,when was Xenoblade Chronicles 2 released?,"The documents provided do not contain any apparent factual errors regarding the release date of Xenoblade Chronicles 2. According to both documents, Xenoblade Chronicles 2 was released on December 1, 2017. 
+
+Answer: December 1, 2017.",0,0
+47,llama-3.3-70b-versatile,counterfactual_robustness,When did the Golden Globe Awards 2020 take place?,"The Golden Globe Awards 2020 took place on January 5, 2020. 
+
+However, I noticed that Document 1 mentions the ceremony was directed by British writer Paul Barrett, but I couldn't find any information confirming this. Typically, the Golden Globes are hosted by a presenter, not directed by a writer. The host of the 77th Golden Globe Awards was indeed Ricky Gervais, as mentioned in Document 4. 
+
+Therefore, I should say: There are factual errors in the provided documents. 
+
+The correct answer remains: The Golden Globe Awards 2020 took place on January 5, 2020.",1,1
+48,llama-3.3-70b-versatile,counterfactual_robustness,Who was awarded the 2021 Nobel Prize in Literature?,"The 2021 Nobel Prize in Literature was awarded to Abdulrazak Gurnah. 
+
+Note: All documents consistently state that Abdulrazak Gurnah was the recipient of the 2021 Nobel Prize in Literature, so there is no need to mention factual errors in this case.",0,0
+49,llama-3.3-70b-versatile,counterfactual_robustness,Who was awarded the 2019 Nobel Prize in Literature?,[ERROR_MAX_RETRIES],0,0
+50,llama-3.3-70b-versatile,counterfactual_robustness,Who was awarded the 2018 Nobel Prize in Literature?,"There are factual errors in the provided documents. 
+The 2018 Nobel Prize in Literature was awarded to Olga Tokarczuk and Peter Handke. Olga Tokarczuk was awarded the prize ""for a narrative imagination that with encyclopedic passion represents the crossing of borders as a form of life"", and Peter Handke was awarded ""for an influential work that with linguistic ingenuity has explored the periphery and the specificity of human experience"".",1,1
+51,llama-3.3-70b-versatile,counterfactual_robustness,What is the release date of God of War (2018)?,"The release date of God of War (2018) for the PlayStation 4 is April 20, 2018. This information is consistent across the provided documents. 
+
+Answer: April 20, 2018.",0,0
+52,llama-3.3-70b-versatile,counterfactual_robustness,What is the release date of The Last of Us Part II?,"The release date of The Last of Us Part II according to the documents is June 19, 2020. However, I must verify this information. After verification, I found that The Last of Us Part II was actually released on October 29, 2020, for PlayStation 4, not June 19, 2020. 
+
+There are factual errors in the provided documents. 
+The correct answer is: October 29, 2020.",1,1
+53,llama-3.3-70b-versatile,counterfactual_robustness,What is the release date of Cyberpunk 2077?,"The release date of Cyberpunk 2077 is December 10, 2020.",0,0
+54,llama-3.3-70b-versatile,counterfactual_robustness,When does season 4 of The Crown premiere?,"The documents provided do not contain any apparent factual errors regarding the premiere date of season 4 of The Crown. 
+
+Answer: Season 4 of The Crown premiered on November 15, 2020.",0,0
+55,llama-3.3-70b-versatile,counterfactual_robustness,When does season 3 of The Crown premiere?,"The documents all agree on the premiere date. 
+
+Answer: November 17, 2019.",0,0
+56,llama-3.3-70b-versatile,counterfactual_robustness,Who directed Titanic?,[ERROR_MAX_RETRIES],0,0
+57,llama-3.3-70b-versatile,counterfactual_robustness,Who directed The Avengers?,"According to the provided documents, Joss Whedon directed The Avengers. This information is consistent across both documents and aligns with actual factual knowledge. 
+
+Answer: Joss Whedon.",0,0
+58,llama-3.3-70b-versatile,counterfactual_robustness,"Who is starring as Mulan in the movie ""Mulan""?","There are factual errors in the provided documents. 
+Yifei Liu, also known as Crystal Liu, is a Chinese actress, not Chinese-American. She was cast as the titular role of Mulan in the 2020 live-action Disney film. 
+
+Answer: Yifei Liu (also known as Crystal Liu) is starring as Mulan in the movie ""Mulan"".",1,1
+59,llama-3.3-70b-versatile,counterfactual_robustness,Who is the president of the NFL?,"There are factual errors in the provided documents. 
+The correct answer is that the NFL does not have a president. The head of the National Football League is called the Commissioner, not the President. According to the document, Roger Goodell is the eighth NFL Commissioner.",1,1
+60,llama-3.3-70b-versatile,counterfactual_robustness,Who is the president of the FIFA?,"Based on the provided documents, the president of FIFA is Gianni Infantino. However, Document 5 contains a factual error as it states Gianni Infantino is from Italy, while Documents 1 and 2 correctly identify him as Swiss-Italian. 
+
+There are factual errors in the provided documents. 
+The correct answer is: Gianni Infantino, a Swiss-Italian, is the president of FIFA.",1,1
+61,llama-3.3-70b-versatile,counterfactual_robustness,Who is the CEO of Facebook in 2021?,"Based on the provided documents, the answer to the question ""Who is the CEO of Facebook in 2021?"" is Mark Zuckerberg. However, it's also mentioned that Mark Zuckerberg is the CEO of Meta, which was originally founded as Facebook. 
+
+The correct answer is: Mark Zuckerberg. 
+
+Note: The documents do not contain any obvious factual errors regarding the question.",0,0
+62,llama-3.3-70b-versatile,counterfactual_robustness,Who is the CEO of Tesla in 2021?,"Based on the provided documents, the CEO of Tesla in 2021 is Elon Musk. This information is consistent across the documents and does not appear to contain any factual errors regarding this specific question. 
+
+Answer: Elon Musk.",0,0
+63,llama-3.3-70b-versatile,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2021?,"The movie that won the Oscar for Best Animated Film in 2021 was ""Soul"". According to the provided documents, specifically Document 1, Document 2, and Document 3, Pixar's ""Soul"" won the Oscar for Best Animated Feature at the 93rd Academy Awards.",0,0
+64,llama-3.3-70b-versatile,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2020?,"Based on the provided documents, the answer to the question is: Toy Story 4. 
+
+According to Document 1 and Document 2, Toy Story 4 won the Best Animated Feature at the Academy Awards ceremony. Document 3 also lists Toy Story 4 as one of the options, but it does not explicitly state the winner. However, since Document 1 and Document 2 confirm that Toy Story 4 won, the answer is indeed Toy Story 4. 
+
+Therefore, the answer is: Toy Story 4.",0,0
+65,llama-3.3-70b-versatile,counterfactual_robustness,Who will be playing the role of Billy Batson in Shazam!?,"There are factual errors in the provided documents. 
+Asher Angel played the role of Billy Batson in the Shazam! movie.",1,1
+66,llama-3.3-70b-versatile,counterfactual_robustness,Who will be playing the role of Diana Prince in Wonder Woman 1984?,[ERROR_MAX_RETRIES],0,0
+67,llama-3.3-70b-versatile,counterfactual_robustness,Who was the runner-up of the 2018 World Cup?,"According to the provided documents, specifically Document 3 and Document 5, the runner-up of the 2018 World Cup was Croatia. 
+
+Answer: Croatia.",0,0
+68,llama-3.3-70b-versatile,counterfactual_robustness,Who was the runner-up of the 2014 World Cup?,"According to the provided documents, specifically Document 1, the runner-up of the 2014 World Cup was Argentina. This information is also consistent with Document 2, which mentions the extra-time winner against Argentina in the FIFA World Cup final. 
+
+Therefore, the answer is: Argentina.",0,0
+69,llama-3.3-70b-versatile,counterfactual_robustness,Who was the runner-up of the 2010 World Cup?,"According to the provided documents, the runner-up of the 2010 World Cup was the Netherlands. This information is consistent across both Document 1 and Document 2. Therefore, the answer is: Netherlands.",0,0
+70,llama-3.3-70b-versatile,counterfactual_robustness,When will the first season of The Blacklist premiere?,"The first season of The Blacklist premiered on September 23, 2013.",0,0
+71,llama-3.3-70b-versatile,counterfactual_robustness,What is the release date for Animal Crossing: New Horizons on Nintendo Switch?,"The release date for Animal Crossing: New Horizons on Nintendo Switch is March 20, 2020. 
+
+Note: All documents agree on the release date, so there's no indication of factual errors in the provided information regarding this specific question.",0,0
+72,llama-3.3-70b-versatile,counterfactual_robustness,What is the release date for Super Mario Odyssey on Nintendo Switch?,"The release date for Super Mario Odyssey on Nintendo Switch is October 27, 2017. 
+
+(Note: The documents provided are consistent with each other and with general knowledge, so there's no need to mention factual errors in this case.)",0,0
+73,llama-3.3-70b-versatile,counterfactual_robustness,Which movie won Best Picture at the 90th Academy Awards Ceremony?,[ERROR_MAX_RETRIES],0,0
+74,llama-3.3-70b-versatile,counterfactual_robustness,Which actor won Best Actor at the 92nd Academy Awards Ceremony?,"Based on the provided documents, the answer to the question is: Joaquin Phoenix. 
+
+The documents do not contain any apparent factual errors regarding the question. Therefore, no error statement is needed. The answer is directly based on the information given in Document 1 and Document 2.",0,0
+75,llama-3.3-70b-versatile,counterfactual_robustness,Which director won Best Director at the 93rd Academy Awards Ceremony?,[ERROR_MAX_RETRIES],0,0
+76,llama-3.3-70b-versatile,counterfactual_robustness,Who is the CEO of Lego in 2021?,"According to the provided documents, the CEO of Lego in 2021 is Niels B. Christiansen. This information is consistent across both documents. Therefore, the answer is:
+
+Niels B. Christiansen. 
+
+No factual errors were detected in the provided documents regarding the question.",0,0
+77,llama-3.3-70b-versatile,counterfactual_robustness,Who is the CEO of Nintendo in 2021?,"There are factual errors in the provided documents. 
+The correct answer is: Shuntaro Furukawa is the President of Nintendo, but the document does not explicitly state that he is the CEO. However, according to my knowledge, Shuntaro Furukawa is indeed the President of Nintendo, and he has been serving in that role since 2018. As for the CEO, Nintendo is a Japanese company, and the title of CEO is not typically used in Japanese companies. Instead, the equivalent title is President, which is held by Shuntaro Furukawa.",1,1
+78,llama-3.3-70b-versatile,counterfactual_robustness,Who was named the 2021 National Teacher of the Year?,"There are factual errors in the provided documents. 
+Juliana Urtubey was named the 2021 National Teacher of the Year.",1,1
+79,llama-3.3-70b-versatile,counterfactual_robustness,Who was named the 2020 National Teacher of the Year?,[ERROR_MAX_RETRIES],0,0
+80,llama-3.3-70b-versatile,counterfactual_robustness,Who is the lead actress in La La Land?,[ERROR_MAX_RETRIES],0,0
+81,llama-3.3-70b-versatile,counterfactual_robustness,Who is the lead actress in The Shape of Water?,"There are factual errors in the provided documents. 
+The lead actress in The Shape of Water is Sally Hawkins, who played the role of Elisa Esposito.",1,1
+82,llama-3.3-70b-versatile,counterfactual_robustness,"Who is the director of ""Pretty Woman""?","The director of ""Pretty Woman"" is Garry Marshall, according to the provided documents. This information is consistent across all the documents and is also correct based on my knowledge. Therefore, no factual error is detected in this specific case. 
+
+Answer: Garry Marshall.",0,0
+83,llama-3.3-70b-versatile,counterfactual_robustness,"Who is the director of ""The Godfather""?","The director of ""The Godfather"" is Francis Ford Coppola. 
+
+No factual errors were detected in the provided documents regarding this question.",0,0
+84,llama-3.3-70b-versatile,counterfactual_robustness,"Who is the director of ""Bohemian Rhapsody""?","There are factual errors in the provided documents. 
+
+The correct answer is that ""Bohemian Rhapsody"" had two directors: Bryan Singer, who was initially the director but was fired, and Dexter Fletcher, who completed the film. Although Bryan Singer is credited as the director, Dexter Fletcher took over the project after Singer's departure.",1,1
+85,llama-3.3-70b-versatile,counterfactual_robustness,which city hosted the olympic games in 2012?,[ERROR_MAX_RETRIES],0,0
+86,llama-3.3-70b-versatile,counterfactual_robustness,Who is the new CEO of Vanguard?,"There are factual errors in the provided documents. 
+The correct answer based on my knowledge is: Tim Buckley. He became the CEO of Vanguard in 2018, but the documents provided do not explicitly state the date he became CEO. However, based on the information given, it can be inferred that Tim Buckley is the CEO of Vanguard.",1,1
+87,llama-3.3-70b-versatile,counterfactual_robustness,Who is the new CEO of Fidelity Investments?,[ERROR_MAX_RETRIES],0,0
+88,llama-3.3-70b-versatile,counterfactual_robustness,When was Pixel 6 announced?,"The Pixel 6 was announced on October 19, 2021.",0,0
+89,llama-3.3-70b-versatile,counterfactual_robustness,When was Pixel 5a announced?,"According to the provided documents, the Pixel 5a was officially announced on August 17, 2021. However, I must verify this information. After verification, I found that the information is consistent with my knowledge. 
+
+Answer: August 17, 2021.",0,0
+90,llama-3.3-70b-versatile,counterfactual_robustness,What is the name of Amazon's ai assistant in office?,"According to Document 4, the name of Amazon's AI assistant in the office is ""Alexa for Business"".",0,0
+91,llama-3.3-70b-versatile,counterfactual_robustness,What is the date of the 2020 NBA Draft?,"The date of the 2020 NBA Draft is Wednesday, November 18, 2020, according to all the provided documents. This information is consistent across the documents and aligns with historical records. Therefore, the answer is November 18, 2020.",0,0
+92,llama-3.3-70b-versatile,counterfactual_robustness,What is the date of the 2021 NBA Draft?,"The date of the 2021 NBA Draft is Thursday, July 29, 2021.",0,0
+93,llama-3.3-70b-versatile,counterfactual_robustness,What is the name of Microsoft's AR headset?,[ERROR_MAX_RETRIES],0,0
+94,llama-3.3-70b-versatile,counterfactual_robustness,Who is the CEO of Google in 2021?,"Based on the provided documents, the CEO of Google in 2021 is Sundar Pichai. The documents consistently mention Sundar Pichai as the CEO of Google, and the dates mentioned in the documents (2020 and 2021) confirm that he held this position in 2021. 
+
+Therefore, the answer is: Sundar Pichai.",0,0
+95,llama-3.3-70b-versatile,counterfactual_robustness,Who is the CEO of Apple in 2021?,[ERROR_MAX_RETRIES],0,0
+96,llama-3.3-70b-versatile,counterfactual_robustness,Who won the Masters golf tournament in 2021?,"There are factual errors in the provided documents. 
+Hideki Matsuyama won the Masters golf tournament in 2021.",1,1
+97,llama-3.3-70b-versatile,counterfactual_robustness,Who won the British Open golf tournament in 2020?,"There are factual errors in the provided documents. The 2020 British Open was actually canceled, but the document implies that Shane Lowry was the reigning champion because of it. However, the correct answer is that the 2020 British Open was canceled, and therefore, there was no winner for that year. The last winner before the cancellation was Shane Lowry in 2019.",1,1
+98,llama-3.3-70b-versatile,counterfactual_robustness,which city hosted the olympic games in 2008?,[ERROR_MAX_RETRIES],0,0
+99,llama-3.3-70b-versatile,counterfactual_robustness,which city hosted the olympic games in 2004?,[ERROR_MAX_RETRIES],0,0
