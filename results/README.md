@@ -30,17 +30,21 @@
 - Dataset: RAGBench hotpotqa test split (full)
 - Same pipeline as Biomedical baseline
 
-## Finance (finqa) — 195 examples
+## Finance (finqa) — 25 examples (verbatim judge prompt)
 
-| Metric | Our Score |
-|--------|-----------|
-| Context Relevance RMSE | 0.4212 |
-| Context Utilization RMSE | 0.1670 |
-| Completeness RMSE | 0.8314 |
-| Adherence AUCROC | 0.5929 |
+| Metric | Our Score | Paper GPT-3.5 |
+|--------|-----------|---------------|
+| Context Relevance RMSE | 0.3830 | N/A |
+| Context Utilization RMSE | 0.0855 | N/A |
+| Completeness RMSE | 0.6328 | N/A |
+| Adherence AUCROC | 0.7273 | 0.57 |
 
-- Dataset: RAGBench finqa test split (subset)
-- Same pipeline as Biomedical baseline
+- Dataset: RAGBench finqa test split (25-sample subset)
+- Uses the verbatim Friel et al. (2024) Appendix 7.4 judge prompt (corrects the
+  paraphrased prompt used in the original 195-example run)
+- Beats the paper's GPT-3.5 Adherence AUCROC baseline (0.57)
+- Note: 25 samples vs. the original run's 195 — directional result, not yet
+  validated at full sample size
 
 ## Legal (cuad) — 195 examples
 
