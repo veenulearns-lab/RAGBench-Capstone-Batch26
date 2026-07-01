@@ -1,0 +1,7 @@
+{
+  "n_examples": 25,
+  "relevance_rmse": 0.46195184124970023,
+  "utilization_rmse": 0.1231100892346601,
+  "completeness_rmse": 0.61315827160465,
+  "adherence_aucroc": 0.5326086956521738
+}
