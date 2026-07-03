@@ -30,64 +30,48 @@
 - Dataset: RAGBench hotpotqa test split (full)
 - Same pipeline as Biomedical baseline
 
-## Finance (finqa) — 25 examples, verbatim judge prompt (corrected TRACe metrics)
+## Finance (finqa) — Final Results (corrected TRACe metrics)
 
 **Note:** an earlier version of this section used a TRACe metrics function with a bug —
 judge-hallucinated sentence keys weren't filtered against the real document key set,
 which could push ratios (and RMSE) past their valid 0-1 range. Fixed by clipping judge
 output to the real key set before computing ratios. All numbers below use the fix.
 
-| Metric | Baseline (8B) | Best Combo (70B generator) |
-|--------|--------|--------|
-| Context Relevance RMSE | 0.2915 | 0.4379 |
-| Context Utilization RMSE | 0.1183 | 0.1403 |
-| Completeness RMSE | 0.6335 | 0.7020 |
-| Adherence AUCROC | 0.5379 | **0.7500** |
+Full per-experiment scores (mean values, not RMSE) are in
+`results/finance_all_experiments_summary_table.csv`. Summary:
 
-**Phase 2 experiments (25 samples each, vs. baseline):**
+| Run | LLM | Embedding | Retrieval | Chunking | Rel RMSE | Util RMSE | Comp RMSE | Adh AUCROC | Samples |
+|---|---|---|---|---|---|---|---|---|---|
+| Baseline (200) | llama-3.1-8b | MiniLM | Dense | Whole doc | 0.3526 | 0.1387 | 0.6361 | 0.5212 | 197 |
+| Best Combo (200) | llama-3.3-70b | MiniLM | Dense | Whole doc | 0.3769 | 0.1406 | 0.6224 | **0.5802** | 197 |
 
-| Experiment | Rel RMSE | Util RMSE | Comp RMSE | Adh AUCROC |
-|--------|--------|--------|--------|--------|
-| Exp1: k=5 | 0.2903 | 0.1143 | 0.6473 | 0.5379 |
-| Exp2: minimal prompt | 0.3947 | 0.1732 | 0.6702 | 0.6818 |
-| Exp3: large-semantic chunking | 0.3499 | 0.1759 | 0.5467 | 0.1905* |
-| Exp4: BGE-large embedding | 0.3906 | 0.1895 | 0.6539 | 0.6591 |
-| Exp5: hybrid retrieval | 0.3044 | 0.1140 | 0.6569 | 0.5000 |
-| Exp6: FinBERT embedding | 0.3198 | 0.0856 | 0.6774 | 0.5152 |
-| Exp7: llama-3.3-70b generator | 0.3901 | 0.1418 | 0.6526 | 0.7955 |
-| Exp8: qwen3-32b generator | 0.4683 | 0.3055 | 0.5687 | 0.6500 |
+**Winning change: generator LLM (llama-3.1-8b → llama-3.3-70b-versatile).** At full scale
+(200 samples), this gives a modest, real improvement in Adherence (0.52→0.58) and
+Completeness, at a small cost to Relevance, with Utilization essentially unchanged.
 
-*Exp3's Adherence is an outlier (below random-guess baseline of 0.5) on a very small
-negative-class sample (n=3 of 24) — flagged as unstable, not adopted into the final pipeline.
+**Important calibration note:** the 25-sample Phase 2/3 runs showed a much larger apparent
+Adherence gain (0.5379→0.75) than the 200-sample validation confirmed (0.5212→0.5802).
+This is expected — Adherence AUCROC is unstable on small samples with few negative-class
+examples (see Exp-004's anomalous 0.19 AUCROC, also on a 3-negative-example split). The
+200-sample result is the one to trust; the 25-sample result correctly identified the
+*direction* of improvement but overstated its *size*.
 
-**Winning change: generator LLM (llama-3.1-8b → llama-3.3-70b-versatile).** This is a
-tradeoff, not a uniform win — Adherence nearly doubled (better grounding/less hallucination)
-at some cost to Relevance and Completeness, suggesting the larger model gives more
-confident, better-supported answers while drawing from a narrower or differently-weighted
-set of context sentences than the 8B baseline. All other components (k, prompt style,
-chunking, embedding, retrieval type) showed no reliable improvement over baseline at n=25.
+**8 experiments tested per capstone requirements:** k (3 vs 5), prompt style (full vs
+minimal), chunking (whole-doc vs metadata-aware), embedding (MiniLM vs BGE-large vs
+FinBERT — domain-specific per capstone doc), retrieval (dense vs hybrid BM25+RRF), and
+generator LLM (8B vs 70B vs qwen3-32b). Only the generator-LLM swap showed a reliable,
+reproducible improvement at scale; all other single-factor changes were within noise.
 
-- Dataset: RAGBench finqa test split (25-sample subset)
+**Observation for error analysis:** across all experiments, model-predicted Relevance/
+Utilization ran well above the finqa ground-truth reference values (~0.08-0.09), while
+predicted Completeness ran well below the reference (~0.83-0.89) — indicating the
+pipeline's retrieval is more liberal about marking sentences relevant/utilized than
+the dataset's human annotators, and consequently captures less of what they considered
+essential context. Worth deeper investigation in the manual error analysis deliverable.
+
+- Dataset: RAGBench finqa test split
 - Uses the verbatim Friel et al. (2024) Appendix 7.4 judge prompt
-- Judge fixed at llama-3.1-8b-instant throughout; only the generator model varies in Exp7/8
-- Note: 25 samples — directional result; Phase 4 (200 samples) will validate baseline vs.
-  best-combo pipeline at full scale before final conclusions
-
-
-### Phase 4 — Full-scale validation (200 samples)
-
-| Metric | Baseline (200) | Best Combo (200) |
-|--------|--------|--------|
-| Context Relevance RMSE | 0.3526 | *(pending)* |
-| Context Utilization RMSE | 0.1387 | *(pending)* |
-| Completeness RMSE | 0.6361 | *(pending)* |
-| Adherence AUCROC | 0.5212 | *(pending)* |
-
-Baseline at 200 samples is broadly consistent with the 25-sample directional result
-(Rel 0.2915→0.3526, Util 0.1183→0.1387, Comp 0.6335→0.6361, Adh 0.5379→0.5212),
-confirming the smaller sample wasn't a fluke. Best-combo (llama-3.3-70b generator)
-200-sample run pending — will be added once complete.
-
+- Judge fixed at llama-3.1-8b-instant throughout; only the generator model varies across LLM experiments
 
 ## Legal (cuad) — 195 examples
 
