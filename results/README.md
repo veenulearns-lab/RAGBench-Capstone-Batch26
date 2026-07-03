@@ -73,6 +73,22 @@ chunking, embedding, retrieval type) showed no reliable improvement over baselin
 - Note: 25 samples — directional result; Phase 4 (200 samples) will validate baseline vs.
   best-combo pipeline at full scale before final conclusions
 
+
+### Phase 4 — Full-scale validation (200 samples)
+
+| Metric | Baseline (200) | Best Combo (200) |
+|--------|--------|--------|
+| Context Relevance RMSE | 0.3526 | *(pending)* |
+| Context Utilization RMSE | 0.1387 | *(pending)* |
+| Completeness RMSE | 0.6361 | *(pending)* |
+| Adherence AUCROC | 0.5212 | *(pending)* |
+
+Baseline at 200 samples is broadly consistent with the 25-sample directional result
+(Rel 0.2915→0.3526, Util 0.1183→0.1387, Comp 0.6335→0.6361, Adh 0.5379→0.5212),
+confirming the smaller sample wasn't a fluke. Best-combo (llama-3.3-70b generator)
+200-sample run pending — will be added once complete.
+
+
 ## Legal (cuad) — 195 examples
 
 | Metric | Our Score |
