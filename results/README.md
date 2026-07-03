@@ -69,6 +69,25 @@ pipeline's retrieval is more liberal about marking sentences relevant/utilized t
 the dataset's human annotators, and consequently captures less of what they considered
 essential context. Worth deeper investigation in the manual error analysis deliverable.
 
+### Update: Domain-recommended combo (EXP-013) — new best result
+
+Testing the domain-matrix-recommended stack together (metadata-aware chunking + FinBERT
++ hybrid retrieval + llama-3.3-70b generator), at 200 samples:
+
+| Run | Rel RMSE | Util RMSE | Comp RMSE | Adh AUCROC |
+|---|---|---|---|---|
+| Baseline (8B) | 0.3526 | 0.1387 | 0.6361 | 0.5212 |
+| Generator-only combo (70B) | 0.3769 | 0.1406 | 0.6224 | 0.5802 |
+| **Domain-recommended combo (70B+FinBERT+Hybrid+Metadata)** | 0.3561 | 0.1583 | **0.5964** | **0.5905** |
+
+This is the best Completeness and Adherence of any Finance run, despite FinBERT, hybrid
+retrieval, and metadata-aware chunking each underperforming individually in isolated
+testing (see EXP-004, 006, 007) — the components combine better than they perform alone,
+at a small cost to Relevance/Utilization. **This is now the recommended Finance pipeline.**
+Full per-run scores: `results/finance_all_experiments_summary_table.csv` (13 experiments).
+
+
+
 - Dataset: RAGBench finqa test split
 - Uses the verbatim Friel et al. (2024) Appendix 7.4 judge prompt
 - Judge fixed at llama-3.1-8b-instant throughout; only the generator model varies across LLM experiments
