@@ -1,0 +1,2 @@
+exp_id,domain,chunking,embedding,retrieval,rerank,k,llm,samples,relevance,utilization,completeness,adherence_rate,ref_relevance,ref_utilization,ref_completeness,rmse_relevance,rmse_utilization,rmse_completeness,aucroc_adherence,notes
+EXP-001,General Knowledge,whole_doc,minilm,dense,False,5,llama-3.1-8b-instant,24,0.36817916666666667,0.17542500000000003,0.5589124999999999,0.8333333333333334,0.19994848883200275,0.15322199837486214,0.7965277777777778,0.2537258486437334,0.13036189572636794,0.4743122750947476,,baseline
