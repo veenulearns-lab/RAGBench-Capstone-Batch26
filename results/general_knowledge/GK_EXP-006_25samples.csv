@@ -19,3 +19,8 @@ i,error,question,response,retrieved_idx,context_relevance,context_utilization,co
 17,False,Which tendencies does a group like Uyoku dantai fall under?,"A group like Uyoku dantai falls under authoritarian tendencies, as well as extreme nationalist and nativist ideologies, which are characteristic of far-right politics.","[1, 0, 3, 2]",0.2222,0.2222,1.0,True,0.4444444444444444,0.2222222222222222,0.5,True
 18,False,What is the capitol of the district that also includes the village of Shienga?,"The capital of the East Mamprusi District, which includes the village of Shienga, is Gambaga.","[1, 0, 2, 3]",0.2353,0.1176,0.5,True,0.17647058823529413,0.11764705882352941,0.6666666666666666,True
 19,False,How many disciplines are combined in the degree that Hector Janse van Rensburg graduated from the University of York wit,"Hector Janse van Rensburg graduated with a degree in Philosophy, Politics and Economics, which combines study from 3 disciplines.","[2, 3, 0, 1]",0.25,0.25,1.0,True,0.25,0.25,1.0,True
+20,True,,,,,,,,,,,
+21,True,,,,,,,,,,,
+22,True,,,,,,,,,,,
+23,True,,,,,,,,,,,
+24,True,,,,,,,,,,,
