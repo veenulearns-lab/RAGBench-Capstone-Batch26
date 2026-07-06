@@ -1,0 +1,26 @@
+i,error,question,response,retrieved_idx,context_relevance,context_utilization,completeness,adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence
+0,False,Are Portuguese Podengo and Russo-European Laika the same breed of dog?,"No, the Portuguese Podengo and Russo-European Laika are not the same breed of dog. According to the documents, the Portuguese Podengo is an ancient multi-sensory hound breed from Portugal (Document 2)","[1, 2, 3, 0]",0.4375,0.125,0.2857,True,0.375,0.375,1.0,True
+1,False,The Meadowbrook State Parkway connects to the Southern State Parkway in a community with what population as of the 2010 ,"The Meadowbrook State Parkway connects to the Southern State Parkway in North Merrick. According to Document 4, the population of North Merrick as of the 2010 census was 12,272.","[3, 1, 2, 0]",0.25,0.1875,0.75,True,0.1875,0.1875,1.0,True
+2,False,Socialist conferences were held with what countries that opposed the Central Powers in the First World War?,"The socialist conferences were held with countries that were originally neutral during World War I, as stated in Document 1. However, Document 2 mentions that there were conferences of the socialist p","[0, 1, 3, 2]",0.3,0.3,1.0,False,0.2,0.2,1.0,True
+3,False,What was the name of a land where Maria Anna of Spain's husband was king?,"According to Document 1, Maria Anna of Spain's husband was Ferdinand III, and he was King of Hungary and Bohemia, among other titles. Therefore, two lands where Maria Anna of Spain's husband was king ","[0, 2, 3, 1]",0.4286,0.2857,0.6667,False,0.2857142857142857,0.2857142857142857,1.0,True
+4,False,which nuclear reservation in the United States  did  the U.S. Atomic Energy Commission acquired Meyers Mill  as part of ,"The U.S. Atomic Energy Commission acquired Meyers Mill as part of the Savannah River Site (SRS) nuclear reservation in the United States, located in the state of South Carolina.","[3, 2, 1, 0]",0.2105,0.1053,0.5,True,0.21052631578947367,0.05263157894736842,0.25,True
+5,True,,,,,,,,,,,
+6,True,,,,,,,,,,,
+7,True,,,,,,,,,,,
+8,True,,,,,,,,,,,
+9,True,,,,,,,,,,,
+10,True,,,,,,,,,,,
+11,True,,,,,,,,,,,
+12,True,,,,,,,,,,,
+13,True,,,,,,,,,,,
+14,True,,,,,,,,,,,
+15,True,,,,,,,,,,,
+16,True,,,,,,,,,,,
+17,True,,,,,,,,,,,
+18,True,,,,,,,,,,,
+19,True,,,,,,,,,,,
+20,True,,,,,,,,,,,
+21,True,,,,,,,,,,,
+22,True,,,,,,,,,,,
+23,True,,,,,,,,,,,
+24,True,,,,,,,,,,,
