@@ -1,0 +1,66 @@
+Experiment ID,Domain,Chunking Strategy,Embedding Model,Retrieval Technique,Re-ranking,Generator LLM Used,Context Relevance (score) / Rel RMSE ↓,Context Utilization (score) / Util RMSE ↓,Completeness (score) / Comp RMSE ↓,Adherence (score) / Adh AUCROC ↑,Reference Relevance,Reference Utilization,Reference Completeness,Reference Adherence,Samples,Notes / Error Analysis
+EXP-001,General Knowledge,Whole Document,all-MiniLM-L6-v2,FAISS (dense),None,llama-3.1-8b-instant,"0.3682
+RMSE 0.2537","0.1754
+RMSE 0.1304","0.5589
+RMSE 0.4743","0.8333
+AUCROC n/a",0.1999,0.1532,0.7965,1.0,24,baseline
+EXP-001-J70,General Knowledge,Whole Document,all-MiniLM-L6-v2,FAISS (dense),None,llama-3.1-8b-instant,"0.2418
+RMSE 0.1439","0.1276
+RMSE 0.0865","0.6078
+RMSE 0.4729","0.7200
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,judge upgraded to 70b; pipeline identical to EXP-001
+EXP-002,General Knowledge,Whole Document,all-MiniLM-L6-v2,FAISS (dense),None,llama-3.3-70b-versatile,"0.2430
+RMSE 0.0945","0.1418
+RMSE 0.0663","0.6715
+RMSE 0.3440","0.8000
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,"generator 8b->70b, judge=70b, rest baseline"
+EXP-003,General Knowledge,Whole Document,intfloat/e5-large-v2,FAISS (dense),None,llama-3.3-70b-versatile,"0.2528
+RMSE 0.1194","0.1538
+RMSE 0.0675","0.6873
+RMSE 0.3766","0.8000
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,"embedding minilm->e5, generator 70b carried, judge 70b"
+EXP-004,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",None,llama-3.3-70b-versatile,"0.2313
+RMSE 0.1006","0.1552
+RMSE 0.0630","0.7408
+RMSE 0.3676","0.8400
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,"retrieval dense->hybrid (RRF), e5+70b carried"
+EXP-005,General Knowledge,Semantic,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",None,llama-3.3-70b-versatile,"0.2206
+RMSE 0.0905","0.1537
+RMSE 0.0615","0.7587
+RMSE 0.3350","0.7600
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,"chunking whole_doc->semantic, e5+hybrid+70b carried"
+EXP-L1,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",None,llama-3.1-8b-instant,"0.2288
+RMSE 0.1128","0.1136
+RMSE 0.0999","0.5644
+RMSE 0.5341","0.7600
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,LLM sweep on best combo: llama-3.1-8b-instant
+EXP-L2,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",None,meta-llama/llama-4-scout-17b-16e-instruct,"0.2486
+RMSE 0.1376","0.1568
+RMSE 0.0659","0.7177
+RMSE 0.3450","0.8000
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,LLM sweep on best combo: meta-llama/llama-4-scout-17b-16e-instruct
+EXP-L3,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",None,qwen/qwen3-32b,"0.2538
+RMSE 0.1500","0.1673
+RMSE 0.0711","0.7293
+RMSE 0.3467","0.6400
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,LLM sweep on best combo: qwen/qwen3-32b
+EXP-006,General Knowledge,Whole Document,BAAI/bge-large-en-v1.5,"Hybrid (BM25+dense, RRF)",None,llama-3.3-70b-versatile,"0.2309
+RMSE 0.0999","0.1657
+RMSE 0.0366","0.7563
+RMSE 0.3136","0.8000
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,embedding e5->bge on best combo; chunking=whole_doc per EXP-005 revert
+EXP-008,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",Cross-encoder (ms-marco-MiniLM),llama-3.3-70b-versatile,"0.2174
+RMSE 0.0885","0.1676
+RMSE 0.0444","0.7820
+RMSE 0.3400","0.8800
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,mentor: reranking with hybrid
+EXP-007,General Knowledge,Recursive (300c/60c overlap),intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",None,llama-3.3-70b-versatile,"0.2468
+RMSE 0.1052","0.1653
+RMSE 0.0527","0.7324
+RMSE 0.3230","0.7600
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,mentor: recursive chunking 300c/60c overlap
+EXP-009,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",Cross-encoder (ms-marco-MiniLM),llama-3.3-70b-versatile,"0.2479
+RMSE 0.0892","0.1668
+RMSE 0.0663","0.7201
+RMSE 0.2889","0.7600
+AUCROC n/a",0.2014,0.1518,0.7847,1.0,25,"mentor: prompt change (generator only, judge untouched)"
