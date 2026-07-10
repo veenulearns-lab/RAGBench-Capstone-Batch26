@@ -11,4 +11,4 @@ EXP-L3,General Knowledge,whole_doc,e5,hybrid,False,qwen/qwen3-32b,0.2538,0.1673,
 EXP-006,General Knowledge,whole_doc,bge,hybrid,False,llama-3.3-70b-versatile,0.2309,0.1657,0.7563,0.8,0.2014,0.1518,0.7847,0.0999,0.0366,0.3136,,25,embedding e5->bge on best combo; chunking=whole_doc per EXP-005 revert
 EXP-008,General Knowledge,whole_doc,e5,hybrid,True,llama-3.3-70b-versatile,0.2174,0.1676,0.782,0.88,0.2014,0.1518,0.7847,0.0885,0.0444,0.34,,25,mentor: reranking with hybrid
 EXP-007,General Knowledge,recursive,e5,hybrid,False,llama-3.3-70b-versatile,0.2468,0.1653,0.7324,0.76,0.2014,0.1518,0.7847,0.1052,0.0527,0.323,,25,mentor: recursive chunking 300c/60c overlap
-EXP-009,General Knowledge,whole_doc,e5,hybrid,True,llama-3.3-70b-versatile,0.3253,0.2007,0.6405,0.6,0.2517,0.2202,0.85,0.0874,0.1227,0.3863,,5,"mentor: prompt change (generator only, judge untouched)"
+EXP-009,General Knowledge,whole_doc,e5,hybrid,True,llama-3.3-70b-versatile,0.2479,0.1668,0.7201,0.76,0.2014,0.1518,0.7847,0.0892,0.0663,0.2889,,25,"mentor: prompt change (generator only, judge untouched)"
