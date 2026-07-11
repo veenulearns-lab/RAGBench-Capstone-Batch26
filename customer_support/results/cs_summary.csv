@@ -1,0 +1,2 @@
+exp,chunking,embedding,retrieval,rerank,ordering,generator,judge,relevance_rmse,utilization_rmse,completeness_rmse,adherence_aucroc,adherence_accuracy
+CS-EXP-001,fixed,minilm,dense,False,normal,scout,70b,0.4400992250067951,0.09183925578959656,0.6225503793103611,0.638888888888889,0.6
