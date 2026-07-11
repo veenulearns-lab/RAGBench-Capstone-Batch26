@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes.",
+    "pred": {
+      "relevance": 0.2,
+      "utilization": 0.06666666666666667,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error \"Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long\" occurs because the ARG_MAX configuration parameter, which limits the number of arguments in a command line, is too low (131072) for the number of arguments being used with many program *.c files. \n\nTo resolve this issue, you need to increase the ARG_MAX value.\n\nTo check the current ARG_MAX value, use the command: \n$ getconf ARG_MAX \n\nHowever for AIX, to check the value use: \nlsattr -E -l sys0 -a ncargs \n\nTo change the value on AIX, use: \nchdev -l sys0 -a ncargs='32' \n\nNote that on AIX, the value can be in the range of 6 through 1024 and the default value is 6. \n\nFor systems supporting up to Redhat 5.11, ARG_MAX is limited to 131072. For systems with kernel release 2.6.23 or higher, ARG_MAX is 2621440.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.3333333333333333,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5625,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "I don't know. \n\nThe provided context discusses problems related to upgrading CICS Transaction Server for z/OS and mentions abends like 0C4 and AKEA but does not specifically mention an abend 0C1 in module EQA10OSM after upgrading to CICS TS 5.2. It does mention that there should be no mismatch in z/OS levels between Language Environment modules for another issue but does not address the specific question about CICS TS 5.2, DFHAP1203I, DFHSR0601, and an abend 0C1 in EQA10OSM.",
+    "pred": {
+      "relevance": 0.9259259259259259,
+      "utilization": 0.25925925925925924,
+      "completeness": 0.28,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
