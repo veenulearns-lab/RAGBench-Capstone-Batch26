@@ -253,5 +253,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 15,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5294117647058824,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.13513513513513514,
+      "utilization": 0.016891891891891893,
+      "completeness": 0.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 16,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The issue you're experiencing, as described, seems to relate to an Eclipse defect (defect 255268) which causes issues launching the Eclipse Platform due to a `ClassNotFoundException` for `org.eclipse.core.runtime.adaptor.EclipseStarter`. This problem appears to be associated with specific versions of Eclipse and might be triggered by various factors including corrupted Eclipse or RFT installations, or conflicts with other software.\n\nGiven the stack trace you provided:\n\n```\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n```\n\nThe error indicates that the class `org.eclipse.core.runtime.adaptor.EclipseStarter` cannot be found, which is crucial for launching the Eclipse Platform.\n\nBased on the context provided:\n\n1. **Check the Eclipse/RFT Installation:** Ensure that your RFT 8.2 installation is correct and not corrupted. Consider reinstalling if necessary.\n\n2. **Eclipse Defect 255268:** This issue has been identified as a known Eclipse defect. Check if there are any patches or updates available for your version of Eclipse or RFT that address this defect.\n\n3. **Launching with Options:** You've tried launching with `-clean` and `-vm` options, which didn't help. However, it's worth trying other options or combinations that might help isolate or resolve the issue.\n\n4. **Log File Analysis:** The log file seems to point towards a class loading issue. Look for any other errors or warnings that might give a clue about missing dependencies or bundles.\n\n5. **Workspace and Configuration:** Sometimes, issues can arise from the workspace or configuration. Try launching RFT with a clean workspace or resetting your Eclipse/RFT configuration to default.\n\nIf these steps do not help, given the information from the context provided, **I don't know** any more specific solutions beyond what's mentioned. The defect seems to be a known issue, and troubleshooting would likely involve looking deeper into the specifics of your installation and environment.",
+    "pred": {
+      "relevance": 0.16279069767441862,
+      "utilization": 0.16279069767441862,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.024630541871921183,
+      "utilization": 0.029556650246305417,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 17,
+    "question": "How do I run the prerequisite scan for jazzSM? How do I run the prerequisite scan? ",
+    "answer": "To run the prerequisite scan for JazzSM, you should pass the codes for DASH and JazzSM simultaneously to the prerequisite scanner script, like this: \n\nTIPL2INST; DASHL2INST; \n\nYou can use the prereq_checker.bat script and pass the product codes for both DASH and JazzSM. This will provide a detailed listing of the prerequisites for both products, along with which items have passed and which items have failed and need to be addressed before the installation will succeed. \n\nAlternatively, you can upgrade the prerequisite scanner to version 1.2.0.11 or higher, and then run the scan. \n\nYou can also refer to: \nprereq_checker.bat; \n\nto properly run the prerequisite scanner.",
+    "pred": {
+      "relevance": 0.6153846153846154,
+      "utilization": 0.19230769230769232,
+      "completeness": 0.3125,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.044444444444444446,
+      "utilization": 0.02962962962962963,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 18,
+    "question": "What things are important to consider when installing a fix pack for IIB running on a multi-instance environment? I am planning to apply a fix pack to my current version of IBM Integration Bus (IIB) using multi-instance brokers and I am looking for any important information regarding the process.\n\nFor example:\n\n \n\n- installation and verification tasks\n \n\n- is it possible to back out this fix pack in case there are issues\n \n\n- any specific tasks for multi instance configuration",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.036734693877551024,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 19,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
