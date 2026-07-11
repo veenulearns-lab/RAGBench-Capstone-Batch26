@@ -247,5 +247,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 15,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6153846153846154,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.13513513513513514,
+      "utilization": 0.016891891891891893,
+      "completeness": 0.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 16,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.024630541871921183,
+      "utilization": 0.029556650246305417,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 17,
+    "question": "How do I run the prerequisite scan for jazzSM? How do I run the prerequisite scan? ",
+    "answer": "You must pass the codes for DASH and Jazz simultaneously to the prerequisite scanner script. \n\nTo run the prerequisite scan, you can run prerequisite check scripts to determine whether your environment is set up correctly. These scripts are available in the Process Automation community: icd_76_pre\u200b-req check scripts.zi\u200bp. \n\nWhen IBM Control Desk V7.6 is installed, the prerequisite check tooling is included. The installation program uses this tooling to determine whether prerequisites are met. \n\nYou can also run the scripts in the directory where InstallationManager files are located after you run the installation program. For more information, see Verifying prerequisites from the command line in the IBM Control Desk installation documentation.",
+    "pred": {
+      "relevance": 0.391304347826087,
+      "utilization": 0.391304347826087,
+      "completeness": 0.8888888888888888,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.044444444444444446,
+      "utilization": 0.02962962962962963,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 18,
+    "question": "What things are important to consider when installing a fix pack for IIB running on a multi-instance environment? I am planning to apply a fix pack to my current version of IBM Integration Bus (IIB) using multi-instance brokers and I am looking for any important information regarding the process.\n\nFor example:\n\n \n\n- installation and verification tasks\n \n\n- is it possible to back out this fix pack in case there are issues\n \n\n- any specific tasks for multi instance configuration",
+    "answer": "I don't know. \n\nThe provided context does not contain information about installing a fix pack for IIB running on a multi-instance environment, or specific tasks related to installation, verification, and back out procedures for such an environment.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.036734693877551024,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 19,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "To address the issue of missing VM manager data, you can utilize a utility that already exists for repairing missing data. This utility is designed to fix the problem without the need for a new code delivery. The issue seems to have been reported on version V5R18 but is not reproducible on version V5R19 SP6.\n\nTo run the repair utility, follow the provided documentation:\n- Inside catstart, run `CorrectARMatrixPos` with the following parameters:\n  - `-user USERNAME`\n  - `-pwd PASSWORD`\n\nReplace `USERNAME` and `PASSWORD` with your actual credentials. This step should help in rectifying the missing VM manager data issue. \n\nThere's also a mention of creating a dummy VM guest as a local fix to bypass the error when there are no VM guests in the environment, but this seems more applicable to different scenarios described. \n\nGiven the specific error of \"invalid credentials - suspended,\" ensure that the ID and password you are using are correct and then proceed with running the utility as described. If issues persist, further diagnostics like reviewing specific log files may be necessary, but based on the provided context, running the repair utility is the suggested action.",
+    "pred": {
+      "relevance": 0.40625,
+      "utilization": 0.40625,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
