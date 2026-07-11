@@ -338,5 +338,66 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.42424242424242425,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
