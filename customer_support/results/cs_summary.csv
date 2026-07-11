@@ -1,2 +1,4 @@
 exp,chunking,embedding,retrieval,rerank,ordering,generator,judge,relevance_rmse,utilization_rmse,completeness_rmse,adherence_aucroc,adherence_accuracy
 CS-EXP-001,fixed,minilm,dense,False,normal,scout,70b,0.4400992250067951,0.09183925578959656,0.6225503793103611,0.638888888888889,0.6
+CS-EXP-002,sliding,minilm,dense,False,normal,scout,70b,0.46961707040610456,0.18130353916467382,0.589174625248023,0.75,0.68
+CS-EXP-003,semantic,minilm,dense,False,normal,scout,70b,0.38462241145067155,0.15512837239005017,0.5468072626855869,0.6631944444444444,0.6
