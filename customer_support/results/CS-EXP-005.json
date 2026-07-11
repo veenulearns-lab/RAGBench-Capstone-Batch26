@@ -168,5 +168,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "Fix for this issue incorporated in JCC driver version 3.59.81 that was shipped with DB2 v9.5fp6a.",
+    "pred": {
+      "relevance": 0.20588235294117646,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.14285714285714285,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "To resolve the error \"MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\", follow these steps:\n\n1. Open the WAS admin console.\n2. Navigate to Resources > Resource environment providers > WP ScriptingService > Custom properties.\n3. You should see an entry with the name \"ServerExt.applications\" and value \"com.ibm.wps.scripting.server.ApplicationServerExtensions\".\n4. Delete this entry, save, and restart the server.\n\nAlternatively, a code fix for this issue is integrated into the WebSphere Portal & WCM Combined Cumulative Fix 05 (PI31198) or later (e.g., Cumulative Fix 06 (PI36060) for Portal 8.5.0.0), available from Fix Central.",
+    "pred": {
+      "relevance": 0.7307692307692307,
+      "utilization": 0.23076923076923078,
+      "completeness": 0.3157894736842105,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "I don't know. \n\nThe provided context does not mention version 7.5.2. It talks about OpenSSH 6.6, 6.7, and 6.9p1, and IBM i releases R610, R710, and R720, but does not provide information about version 7.5.2.",
+    "pred": {
+      "relevance": 0.56,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "Based on the provided context, I don't see any information related to the uninstallation process of ITCAM for MQ agent or the specific error message mentioned. The context seems to be focused on silent installation and troubleshooting.\n\nHowever, I notice that in the installation context, there is a mention of `AGREETOLICENSE=YES` to agree to the license agreement. \n\nGiven that the question is about uninstallation and not installation, I don't know.",
+    "pred": {
+      "relevance": 0.2727272727272727,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.22727272727272727,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
