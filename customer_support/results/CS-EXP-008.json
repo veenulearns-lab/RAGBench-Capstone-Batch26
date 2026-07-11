@@ -83,5 +83,72 @@
       "completeness": 0.3333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 5,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.006993006993006993,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 6,
+    "question": "Using cobol copybooks Sometimes, there will be errors/fields missing in typetree, while importing cobol copybooks. Is there any format for copybooks(specifically to be used in wtx), that we need to follow? ",
+    "answer": "I don't know. \n\nThe provided context does not mention any specific format for COBOL copybooks to be used in WTX, nor does it provide guidance on avoiding errors or missing fields in the type tree when importing COBOL copybooks. It discusses a problem with the COBOL Copybook importer being missing after upgrading WTX Design Studio and issues related to field names in generated COBOL copybooks being too long or having incorrect copyright statements.",
+    "pred": {
+      "relevance": 0.65625,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.01171875,
+      "utilization": 0.01171875,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 7,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "Configure the WebSphere Application Server data source connection pool so as to eliminate occurrences of StaleConnectionException: \n- Set the Minimum connections to 0 \n- Set the values for Unused timeout and Reap timeout so that the sum does not exceed any network level idle connection timeout.",
+    "pred": {
+      "relevance": 0.8333333333333334,
+      "utilization": 0.05555555555555555,
+      "completeness": 0.06666666666666667,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1297709923664122,
+      "utilization": 0.03816793893129771,
+      "completeness": 0.29411764705882354,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 8,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.06382978723404255,
+      "utilization": 0.010638297872340425,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 9,
+    "error": "groq_chat failed after 5 retries for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
