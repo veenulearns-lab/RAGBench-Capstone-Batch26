@@ -132,3 +132,21 @@ So, 1899 - 1989 ","[2, 3, 1, 0]",0.1667,0.1667,1.0,True,0.25,0.16666666666666666
 117,False,"Who is the director of Hollywood film ""7th Heaven"" (1927), Jerry Belson or  Frank Borzage?","The director of the Hollywood film ""7th Heaven"" (1927) is Frank Borzage.","[0, 1, 2, 3]",0.2222,0.2222,1.0,True,0.3333333333333333,0.2222222222222222,0.6666666666666666,True
 118,False,What sport does 200-foot game and Jonathan Toews have in common?,Ice hockey.,"[1, 3, 0, 2]",0.3684,0.2105,0.5714,True,0.3684210526315789,0.15789473684210525,0.42857142857142855,True
 119,False,Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?,"Isabella Kelly was born at Cairnburgh Castle, which is characterized as ""one of the most isolated fortifications in Britain"" by the author of ""The Changing Scottish Landscape"" in 1991.","[2, 1, 3, 0]",0.3333,0.2222,0.6667,True,0.4444444444444444,0.3333333333333333,0.75,True
+120,False,Securinega and Zamioculcas are both examples of what?,Securinega and Zamioculcas are both examples of genera of plants.,"[1, 0]",0.3333,0.3333,1.0,True,0.3333333333333333,0.3333333333333333,1.0,True
+121,True,,,,,,,,,,,
+122,False,What city is the most populous city in Australia and Oceania and the birthplace of a silver and bronze medalist from the,"Sydney. According to Document 1, Marsha Green, a silver and bronze medalist from the 1992 Barcelona Paralympics, was born in Sydney. Document 2 states that Sydney is the most populous city in Australi","[0, 1, 3, 2]",0.1667,0.1667,1.0,True,0.16666666666666666,0.16666666666666666,1.0,True
+123,False,Petroglyphs on Ingaro isalnd indicate it has been innhabited since an era that lasted until what year?,"Petroglyphs on Ingarö island indicate it has been inhabited since the Nordic Bronze Age. According to Document 3, the Nordic Bronze Age lasted until 500 BC.","[2, 0, 3, 1]",0.1304,0.087,0.6667,False,0.08695652173913043,0.08695652173913043,1.0,True
+124,False,Kam Heskin plays Paige Morgan in a 2004 film directed by who?,"According to Document 1, Kam Heskin plays Paige Morgan in ""The Prince and Me"" film franchise (2006–2010), but it does not specify the 2004 film. However, Document 2 states that ""The Prince and Me"" is ","[0, 2, 3, 1]",0.3846,0.3846,1.0,False,0.23076923076923078,0.07692307692307693,0.3333333333333333,True
+125,False,When was  Evelyn Waugh famous work first published ,"Evelyn Waugh's famous works were first published on the following dates: 
+- ""Decline and Fall"" in 1928
+- ""A Handful of Dust"" in 1934
+- ""Brideshead Revisited"" in 1945
+- ""Sword of Honour"" trilogy from 1","[2, 1, 0, 3]",0.2667,0.1333,0.5,True,0.13333333333333333,0.06666666666666667,0.5,True
+126,False,What intrusment did Jem Finer play in the band The Pogues?,Jem Finer played the banjo in the band The Pogues.,"[3, 1, 0, 2]",0.3077,0.0769,0.25,True,0.23076923076923078,0.07692307692307693,0.3333333333333333,True
+127,False,What three categories does income get levied under the Parliament of Australia's tax code?,"According to Document 1, income tax in Australia is levied upon three sources of income for individual taxpayers: 
+
+1. ""Personal earnings"" (such as salary and wages)
+2. ""Business income""
+3. ""Capital g","[1, 0, 3, 2]",0.3571,0.1429,0.4,True,0.07142857142857142,0.07142857142857142,1.0,True
+128,False,Are Out Traveler and Reader's Digest both magazines?,"Yes, both Out Traveler and Reader's Digest are magazines, although Out Traveler is no longer available as a stand-alone title and is now incorporated as a supplement to ""Out"" magazine.","[0, 3, 1, 2]",0.2308,0.2308,1.0,True,0.15384615384615385,0.15384615384615385,1.0,True
+129,False,"In which European language is ""Olympischerer"" an adjective?","The word ""Olympischer"" is the German adjective for ""Olympic"". Since ""Olympischerer"" is not a standard German word and ""Olympischer"" is, it can be inferred that ""Olympischer"" is an adjective in the Ger","[2, 1, 0, 3]",0.2727,0.0909,0.3333,False,0.18181818181818182,0.0,0.0,False
