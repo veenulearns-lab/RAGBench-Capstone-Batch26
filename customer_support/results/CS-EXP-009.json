@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes. \n\nThe context lists \"7.2.0.0.7\" as one of the available versions of ITCAM Agent for WebSphere Applications, specifically mentioning it on two separate occasions: \n\n1. \"7.2.0.0.7 [http://www.ibm.com/support/fixcentral/swg/quickorder?product=ibm/Tivoli/Tivoli+Composite+Application+Manager+for+Applications&release=All&platform=All&function=fixId&fixids=7.2.0.0-TIV-ITCAMAD_WS-IF0007&includeSupersedes=0&source=fc]\" \n2. \"7.2.0.0.7 Aug 23, 2013\"",
+    "pred": {
+      "relevance": 0.13333333333333333,
+      "utilization": 0.13333333333333333,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The ARG_MAX configuration parameter limits the number of argument list in command line. You can check the ARG_MAX value using the command: getconf ARG_MAX, which returns 131072 in your case. \n\nTo resolve the issue, unfortunately, increasing ARG_MAX is not possible as we support up to Redhat 5.11 in Twinfin which is less than kernel release 2.6.23, where ARG_MAX was adjusted to a much larger value. \n\nHowever, for a similar issue with another command, it was suggested to increase the ARG_MAX value on an AIX system using the commands: \n\n- To check the value: lsattr -E -l sys0 -a ncargs \n- To change the value: chdev -l sys0 -a ncargs='32' \n\nBut this might not be applicable in your case.",
+    "pred": {
+      "relevance": 0.6296296296296297,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.35294117647058826,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.875,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.9259259259259259,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
