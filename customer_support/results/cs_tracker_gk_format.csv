@@ -1,0 +1,71 @@
+Experiment ID,Domain,Chunking Strategy,Embedding Model,Retrieval Technique,Re-ranking,Generator LLM Used,Context Relevance (score) / Rel RMSE,Context Utilization (score) / Util RMSE,Completeness (score) / Comp RMSE,Adherence (score) / Adh AUCROC,Reference Relevance,Reference Utilization,Reference Completeness,Reference Adherence,Samples,Notes / Error Analysis
+CS-EXP-001,Customer Support (techqa),Fixed (120w),all-MiniLM-L6-v2,FAISS (dense),None,llama-4-scout,"0.4110
+RMSE 0.4401","0.0757
+RMSE 0.0918","0.1799
+RMSE 0.6226","0.4000
+AUCROC 0.6389",0.0750,0.0435,0.5394,0.6400,25,Baseline. Acc 0.60.
+CS-EXP-002,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,llama-4-scout,"0.4654
+RMSE 0.4696","0.1220
+RMSE 0.1813","0.2141
+RMSE 0.5892","0.3200
+AUCROC 0.7500",0.0750,0.0435,0.5394,0.6400,25,Stage-1 winner. Sliding preserves conversational flow. Acc 0.68.
+CS-EXP-003,Customer Support (techqa),Semantic,all-MiniLM-L6-v2,FAISS (dense),None,llama-4-scout,"0.3655
+RMSE 0.3846","0.1163
+RMSE 0.1551","0.3104
+RMSE 0.5468","0.3200
+AUCROC 0.6632",0.0750,0.0435,0.5394,0.6400,25,"Best Rel/Comp RMSE, no adherence gain - cleaner sentences but broken dialogue context."
+CS-EXP-004,Customer Support (techqa),Sliding (120w/40),bge-large-en-v1.5,FAISS (dense),None,llama-4-scout,"0.4562
+RMSE 0.4815","0.1047
+RMSE 0.1468","0.2076
+RMSE 0.5855","0.3600
+AUCROC 0.6944",0.0750,0.0435,0.5394,0.6400,25,Large embedder below minilm.
+CS-EXP-005,Customer Support (techqa),Sliding (120w/40),e5-large-v2,FAISS (dense),None,llama-4-scout,"0.4845
+RMSE 0.4980","0.0739
+RMSE 0.0869","0.1432
+RMSE 0.6194","0.4000
+AUCROC 0.7257",0.0750,0.0435,0.5394,0.6400,25,No gain vs minilm (delta 0.024 = noise). Mirrors Biomedical finding.
+CS-EXP-006,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,BM25,None,llama-4-scout,"0.3510
+RMSE 0.3752","0.1005
+RMSE 0.1532","0.2829
+RMSE 0.5871","0.3200
+AUCROC 0.6632",0.0750,0.0435,0.5394,0.6400,25,Best Rel RMSE (lexical match on error codes) but adherence drops.
+CS-EXP-007,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,Hybrid RRF,None,llama-4-scout,"0.4367
+RMSE 0.4471","0.0989
+RMSE 0.1391","0.2391
+RMSE 0.5873","0.3600
+AUCROC 0.6944",0.0750,0.0435,0.5394,0.6400,25,Hybrid below dense - contradicts cross-team note for techqa.
+CS-EXP-008,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),Cross-encoder ms-marco-MiniLM,llama-4-scout,"0.4535
+RMSE 0.4685","0.0672
+RMSE 0.0821","0.1737
+RMSE 0.6185","0.4000
+AUCROC 0.7257",0.0750,0.0435,0.5394,0.6400,25,"Tied w/ 002 (1 flip, idx24 induced hallucination). Reranker changed 35% of top-5; hallucination not selection-limited."
+CS-EXP-008b,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,Hybrid RRF,Cross-encoder ms-marco-MiniLM,llama-4-scout,"0.3922
+RMSE 0.3902","0.0772
+RMSE 0.0892","0.1917
+RMSE 0.6046","0.3200
+AUCROC 0.6632",0.0750,0.0435,0.5394,0.6400,25,"Hybrid+reranker (team rec) directly tested - REJECTED, last on adherence."
+CS-EXP-009,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,llama-4-scout (reverse ctx),"0.5052
+RMSE 0.5098","0.0895
+RMSE 0.1279","0.1582
+RMSE 0.6463","0.2800
+AUCROC 0.7188",0.0750,0.0435,0.5394,0.6400,25,Reverse ordering (LitM) no gain - k=5 context too short for position effects.
+CS-EXP-010,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,llama-3.1-8b-instant,"0.4853
+RMSE 0.4893","0.0992
+RMSE 0.1233","0.1924
+RMSE 0.6126","0.3600
+AUCROC 0.6944",0.0750,0.0435,0.5394,0.6400,25,Stage 6. Below scout reference.
+CS-EXP-011,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,llama-3.3-70b-versatile,"0.4869
+RMSE 0.4941","0.1262
+RMSE 0.1456","0.2936
+RMSE 0.6216","0.3200
+AUCROC 0.7500",0.0750,0.0435,0.5394,0.6400,25,Matches scout (0.750/0.68).
+CS-EXP-012,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b,"0.4887
+RMSE 0.4807","0.2465
+RMSE 0.3255","0.4519
+RMSE 0.6541","0.4800
+AUCROC 0.8750",0.0750,0.0435,0.5394,0.6400,25,WINNER + LOCKED. Best adherence recorded. Util RMSE inflated by comprehensive answers vs sparse GT (grounded per adherence). Acc 0.84.
+CS-EXP-013,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b (judge=8b),"0.5116
+RMSE 0.5055","0.2223
+RMSE 0.2982","0.4346
+RMSE 0.6739","0.4000
+AUCROC 0.6389",0.0750,0.0435,0.5394,0.6400,25,JUDGE CHECK - NOT comparable to other rows. 8b judge 0.639 vs 70b 0.875 on same pipeline: 'smaller judge preferred' REFUTED; 70b judge mandatory.
