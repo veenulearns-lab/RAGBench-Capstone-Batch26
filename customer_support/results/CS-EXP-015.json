@@ -338,5 +338,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "question": "Additional steps to apply fix pack to Decision Center \n\nWe are upgrading ODM 8.8.1 Decision Center to the latest 8.8.1.3.\n\nAre there any additional steps to apply the fixpack to Decision Center after we install the fixpack with Installation Manager?",
+    "answer": "Yes. After you install the fix pack with Installation Manager you must still perform a few extra actions for Decision\u202fCenter:\n\n1. **Stop the Decision\u202fCenter (or the ODM sample) server** before running the fix\u2011pack installation.  \n2. **Uninstall any interim fixes** that were previously applied to ODM\u202f8.5.1 (or any earlier interim fixes). If none are present you can skip this step.  \n3. **Add the fix\u2011pack repository** (`WDC/updates`) in Installation Manager (UI or CLI) and run an **Update** to apply the fix\u2011pack changes to the Decision\u202fCenter installation.  \n   - UI: browse to `WDC\\updates`, select `repository.config`, Apply, then Update.  \n   - CLI: `imcl updateAll -repositories WDC/updates -acceptLicense` (add `-installDirectory <path>` if updating a specific installation).  \n4. **Restart the Decision\u202fCenter server** once the update completes.\n\nIf no interim fixes are present and the server is already stopped, the only extra action needed is the repository\u2011update step (add `WDC/updates` and run the Update).",
+    "pred": {
+      "relevance": 0.4827586206896552,
+      "utilization": 0.4827586206896552,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "**Action required**\n\nBoth IBM Integration\u202fBus Hypervisor\u202fEdition\u202fV9.0 and WebSphere\u202fMessage\u202fBroker Hypervisor\u202fEdition\u202fV8.0 ship on **Red\u202fHat\u202fEnterprise\u202fLinux\u202fServer\u202f6.2**.  \nIBM\u2019s remediation guidance for all of the CVE alerts is:\n\n> \u201c**IBM strongly recommends that you contact Red\u202fHat to obtain and install fixes for Red\u202fHat\u202fEnterprise\u202fLinux (RHEL) Server\u202f6.2, as applicable.**\u201d\n\nIn practice, the customer must work with Red\u202fHat (through the Red\u202fHat support portal, a subscription, or an account manager) to get the appropriate security patches for RHEL\u202f6.2 and apply those patches to the underlying OS of the hypervisor\u2011based IIB/WMB installations.\n\n---\n\n**Where to find this information**\n\nThe guidance is published in IBM\u2019s **Flash Alerts (Security Advisories)** for the two products. Look for the alerts titled:\n\n* **\u201cIBM Integration Bus Hypervisor Edition V9.0 \u2013 Security Vulnerabilities in Red\u202fHat\u202fLinux\u201d**  \n* **\u201cWebSphere Message Broker Hypervisor Edition V8.0 \u2013 Security Vulnerabilities in Red\u202fHat\u202fLinux\u201d**\n\nThese alerts are available on the **IBM Support / Fix Central** site (search for \u201cIIB\u202fHVE\u202fV9.0\u202fFlash Alert\u201d or \u201cWMB\u202fHVE\u202fV8.0\u202fFlash Alert\u201d). The alerts list the full CVE identifiers and contain the remediation statement quoted above.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.625,
+      "completeness": 0.8333333333333334,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.41379310344827586,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.4782608695652174,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
