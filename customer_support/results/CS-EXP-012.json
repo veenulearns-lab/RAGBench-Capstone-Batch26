@@ -168,5 +168,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "The \u201cStaleConnectionException\u201d you are seeing is a known problem with the DB2 JCC driver.  \nIn the logs it appears as:\n\n```\ncom.ibm.websphere.ce.cm.StaleConnectionException:\n[jcc][t4][2028][11149][3.58.136] Actual code point, 0x2413 does not match expected code point, 0x2408.\nERRORCODE=-4499\n```\n\nThe root cause is a mismatch in the driver\u2019s internal code\u2011point handling. IBM fixed the problem in the JCC driver **version\u202f3.59.81** (shipped with **DB2\u202fv9.5\u202ffp6a**).  \n\n**What to do**\n\n* **Upgrade the JCC driver** to version\u202f3.59.81 or any later release.  \n* If you are using the IBM supplied fix, **apply the corresponding PTF** (the recommendation in the note is \u201cApply the PTF\u201d).  \n\nAdditionally, if you are using remote TEMS connections, make sure the remote TEMS performs a normal shutdown so that stale GLB entries (e.g., \u201c0.0.0.n\u201d) are removed; the code in Basic Services was changed to clean up those ephemeral addresses.  \n\nApplying the driver upgrade/PTF and ensuring proper TEMS shutdown will eliminate the StaleConnectionException errors you are seeing with BPM databases.",
+    "pred": {
+      "relevance": 0.29411764705882354,
+      "utilization": 0.2647058823529412,
+      "completeness": 0.9,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "**Resolution**\n\n1. Open the **WebSphere Application Server (WAS) administrative console**.  \n2. Navigate to **Resources \u2192 Resource environment providers**.  \n3. Select **WP\u202fScriptingService** and open its **Custom properties**.  \n4. Locate the property whose **Name** is **`ServerExt.applications`** and whose **Value** is **`com.ibm.wps.scripting.server.ApplicationServerExtensions`**.  \n5. **Delete** this entry, **save** the changes, and **restart** the Portal server.\n\n*Why this works* \u2013 The entry is an outdated resource\u2011environment\u2011provider definition that causes the MBeanStarter to fail when loading the `ApplicationServerExtensions` extension. Removing it eliminates the error.  \n\n*Additional note* \u2013 A code fix for this problem is included in the WebSphere Portal\u202f8.5.0.0 cumulative fixes (e.g., PI31198, PI36060). Applying the appropriate cumulative fix will also add a task that automatically removes the obsolete entry during installation.",
+    "pred": {
+      "relevance": 0.782608695652174,
+      "utilization": 0.782608695652174,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to version\u202f7.5.2 (and later) because that release tightens the default security settings. Starting with OpenSSH\u202f6.7 the default list of ciphers, MACs and key\u2011exchange algorithms was changed to **remove unsafe algorithms** \u2013 e.g., all CBC\u2011mode ciphers, the arcfour family, and the old Diffie\u2011Hellman\u2011group1/\u2011group\u2011exchange\u2011sha1 KEX methods.  \n\nWhen the IBM\u202fDataPower (or other) system is upgraded to 7.5.2, it inherits these stricter defaults. If the remote SSH client or server is an older implementation that only supports the now\u2011disabled algorithms, the two sides cannot agree on a common cipher, MAC, or KEX algorithm, and the connection aborts with errors such as:\n\n* \u201cNo matching cipher found\u201d\n* \u201cNo matching MAC algorithm found\u201d\n* \u201cNo matching kex algorithm found\u201d\n\nThus the same configuration that worked on v7.2 (which still allowed those unsafe algorithms by default) no longer works after the upgrade. The problem can be resolved by either upgrading the peer to a version that supports the newer safe algorithms, or temporarily re\u2011enabling the legacy algorithms (e.g., via the `enable\u2011legacy\u2011kex` option or by explicitly configuring the older ciphers/MACs).",
+    "pred": {
+      "relevance": 0.6129032258064516,
+      "utilization": 0.6129032258064516,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "The failure is caused by the uninstall script not seeing a valid \u201cagree to license\u201d setting.  \nFor silent installs/uninstalls the response file must contain the **AGREETOLICENSE** property set to **YES** (the literal \u201cLicense Agreement= \u2026\u201d line is ignored).  \n\n**Fix**\n\n1. Edit *MQ_Silent_Uninstall.txt* (or create a new response file) and add the line  \n\n   ```\n   AGREETOLICENSE=YES\n   ```\n\n   (or replace the existing \u201cLicense Agreement= \u2026\u201d line with this exact entry).\n\n2. When you invoke the uninstall, be sure to give the full path to the response file, e.g.:\n\n   ```\n   start /wait setup /z\"/sfE:\\FULL\\PATH\\MQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\"\n   ```\n\nAfter adding `AGREETOLICENSE=YES` and using the complete file path, the silent uninstall proceeds without the \u201cYou must agree to the License Agreement\u201d error.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.4,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "The message is telling you that the firmware upgrade could not finish because the appliance does not have enough free flash memory to preserve the user\u2011modified data while the new image is being written. As a result the install aborts and the system will not reboot.\n\n**What to do next (based on the guidance in the provided documentation)**  \n\n1. **Check the USB flash drive** \u2013 Make sure the USB stick you are using actually contains the correct firmware fix (the *.rpm and *.xml files).  \n2. **Re\u2011copy the firmware** \u2013 If the files on the USB may be corrupted or incomplete, copy them to the USB flash drive again.  \n3. **Try a different USB stick** \u2013 Use another generic USB flash drive that is formatted to FAT32 (the instructions note that the drive must be FAT32).  \n4. **Free flash space on the appliance** \u2013 The error \u201cInsufficient flash space available\u201d indicates that the internal flash does not have enough room for the new image plus the user\u2011modified data. Delete any unnecessary files or configurations, or otherwise reduce the amount of data stored on the flash so that enough space is available for the upgrade.  \n5. **If the problem persists, contact support** \u2013 The document advises consulting your service provider if the above steps do not resolve the failure.\n\nFollowing these steps should allow the firmware image to be loaded successfully, or at least give you a clear path to get assistance from IBM support.",
+    "pred": {
+      "relevance": 0.7777777777777778,
+      "utilization": 0.08888888888888889,
+      "completeness": 0.11428571428571428,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
