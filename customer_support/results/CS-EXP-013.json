@@ -338,5 +338,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "question": "Additional steps to apply fix pack to Decision Center \n\nWe are upgrading ODM 8.8.1 Decision Center to the latest 8.8.1.3.\n\nAre there any additional steps to apply the fixpack to Decision Center after we install the fixpack with Installation Manager?",
+    "answer": "Yes. After you run the Installation Manager command you still need to finish the update manually. According to the documentation you must:\n\n* Stop the Operational Decision Manager (Decision\u202fCenter) server (the sample server for that installation) before the fix\u2011pack can be applied.  \n* If any interim fixes have been installed for the ODM version, uninstall those fixes first; otherwise the fix\u2011pack installation will fail.  \n\nOnce those steps are done, follow the \u201cWhen and how to apply a modification or fix pack\u201d instructions to complete the update.",
+    "pred": {
+      "relevance": 0.4827586206896552,
+      "utilization": 0.13793103448275862,
+      "completeness": 0.2857142857142857,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "The information you need is in the **IBM Flash\u202fAlert (security\u2011alert) for IBM Integration\u202fBus Hypervisor\u202fEdition\u202fV9.0 and WebSphere\u202fMessage\u202fBroker Hypervisor\u202fEdition\u202fV8.0**.  \n\nThat alert states that the products ship with Red\u202fHat\u202fEnterprise\u202fLinux\u202fServer\u202f6.2, which is vulnerable to a large number of CVEs, and that **the required action is for the customer to contact Red\u202fHat and obtain/install the Red\u202fHat fixes for RHEL\u202f6.2**.  \n\nSo, to see the full list of vulnerabilities and the remediation steps, refer to the IBM\u202fFlash\u202fAlert titled something like:\n\n*\u201cIBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 \u2013 Customer Action Required for Security Vulnerabilities in Red\u202fHat\u202fLinux.\u201d*  \n\nThat document contains the complete CVE list and the recommended remediation (contact Red\u202fHat for the appropriate patches).",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.625,
+      "completeness": 0.625,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8620689655172413,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.08695652173913043,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
