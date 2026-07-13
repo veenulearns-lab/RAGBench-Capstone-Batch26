@@ -168,5 +168,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "The log entry you are seeing is the same one described in the IBM technote for the WebSphere\u202fJCC driver:\n\n```\ncom.ibm.websphere.ce.cm.StaleConnectionException:\n[jcc][t4][2028][11149][3.58.136] Actual code point, 0x2413 does not match expected code point, 0x2408.\nERRORCODE=-4499, SQLSTATE=null\n```\n\nThis exception is caused by a bug in the JCC driver (versions\u202f3.58.x) that can leave \u201cstale\u201d connection entries in the driver\u2019s internal pool. IBM fixed the problem in **JCC driver version\u202f3.59.81**, which was shipped with **DB2\u202fv9.5\u202ffp6a** (and any later releases).\n\n**What to do**\n\n1. Verify the version of the JCC driver that your BPM environment is using.  \n2. If it is older than 3.59.81, replace the driver JARs with the 3.59.81 (or any newer) version.  \n3. Restart the application server so the new driver is loaded.\n\nAfter upgrading, the \u201cActual code point \u2026 does not match expected code point\u201d StaleConnectionException should no longer appear.",
+    "pred": {
+      "relevance": 0.22580645161290322,
+      "utilization": 0.16129032258064516,
+      "completeness": 0.7142857142857143,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "**Resolution**\n\n1. Open the **WebSphere Application Server Administration Console**.  \n2. Navigate to **Resources \u2192 Resource environment providers \u2192 WP\u202fScriptingService \u2192 Custom properties**.  \n3. Locate the custom\u2011property entry:  \n\n   * **Name:** `ServerExt.applications`  \n   * **Value:** `com.ibm.wps.scripting.server.ApplicationServerExtensions`  \n\n4. **Delete** this entry.  \n5. **Save** the changes and **restart** the Portal server.\n\nAfter the entry is removed the MBeanStarter will no longer try to load the obsolete `ApplicationServerExtensions` class, and the startup error disappears.\n\n*Note:* A code fix for this problem is included in the WebSphere\u202fPortal 8.5.0.0 cumulative fixes (e.g., Cumulative Fix\u202f05\u202fPI31198 and Cumulative Fix\u202f06\u202fPI36060), which add a task to remove the outdated resource\u2011environment\u2011provider entry during PTF installation. If you apply those cumulative fixes, the manual deletion is not required.",
+    "pred": {
+      "relevance": 0.5555555555555556,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.4,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to v7.5.2 (and later) because those releases disable the legacy\u2011unsafe algorithms that older SSH clients or servers still rely on.  \n\n* Starting with OpenSSH\u202f6.7 the default cipher, MAC and KEX lists were changed to **remove CBC ciphers, arcfour, and other weak algorithms**.  \n* When the IBM i is upgraded to a newer OpenSSH (e.g., 6.9p1 or the v7.5.2\u2011based package), the server/client now offers only the safe defaults (chacha20\u2011poly1305, aes\u2011ctr, aes\u2011gcm, etc.).  \n* If the peer is running a very old SSH implementation that supports only the now\u2011disabled algorithms, the negotiation ends with errors such as **\u201cNo matching cipher found\u201d, \u201cNo matching MAC algorithm found\u201d or \u201cNo matching kex algorithm found.\u201d**  \n\nThe same configuration works on v7.2 because that version still allowed those unsafe algorithms by default.  \n\nTo restore connectivity you must either:\n\n1. **Upgrade the older SSH client/server** so it supports the newer safe algorithms, **or**  \n2. **Re\u2011enable the legacy algorithms** in the OpenSSH configuration (e.g., add the needed ciphers/MACs/KEXs to `ssh_config`/`sshd_config` or use the `enable-legacy-kex` command available in the v7.5.2 profiles).  \n\nThus, the failures are caused by the newer OpenSSH\u2019s default removal of unsafe ciphers/MACs/kex algorithms, which older peers cannot match.",
+    "pred": {
+      "relevance": 0.4642857142857143,
+      "utilization": 0.4642857142857143,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "The failure is caused by the uninstall command not being given the full path to the silent\u2011response file.  \nSpecify the complete path to **MQ_Silent_Uninstall.txt** when you invoke the uninstall, e.g.:\n\n```bat\nstart /wait setup /z\"/sfC:\\Full\\Path\\to\\MQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\"\n```\n\nProviding the absolute path lets the installer locate the \u201cLicense Agreement=I agree \u2026\u201d entry and eliminates the \u201cYou must agree to the License Agreement\u201d error.",
+    "pred": {
+      "relevance": 0.21875,
+      "utilization": 0.21875,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.775,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
