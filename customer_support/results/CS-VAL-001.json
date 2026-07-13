@@ -253,5 +253,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 15,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the details in IBM\u2019s **Java\u202fSDK Security Bulletin** (the January\u202f2017 update).\u202fThe bulletin lists all of the CVEs you mentioned (CVE\u20112016\u20115546, CVE\u20112016\u20115548, CVE\u20112016\u20115549, CVE\u20112016\u20115547, CVE\u20112016\u20112183, CVE\u20112017\u20113511) and provides the descriptions, scores and impact information for each.  \n\nIn the bulletins the \u201cReferences\u201d section contains a link titled **\u201cIBM Java SDK Security Bulletin,\u201d** which is the authoritative source for the full list of vulnerabilities affecting the IBM Java Runtime used by API\u202fConnect.",
+    "pred": {
+      "relevance": 0.9545454545454546,
+      "utilization": 0.5454545454545454,
+      "completeness": 0.5714285714285714,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.13513513513513514,
+      "utilization": 0.016891891891891893,
+      "completeness": 0.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 16,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The log you posted is the same one that is reported in the IBM\u202fRational\u202fTechnical Note **RN1.2.1 \u2013 SRX**.  \nIt occurs when an Eclipse\u2011based product (such as RFT) is installed by an administrator but later run by a non\u2011administrator.  Stale configuration data that remains in the user\u2019s **.eclipse** directory prevents the Eclipse runtime from finding the class  \n\n```\norg.eclipse.core.runtime.adaptor.EclipseStarter\n```  \n\nand the product aborts with the \u201cException launching the Eclipse Platform\u201d message.\n\n**What to do**\n\n1. **Delete the user\u2019s Eclipse configuration directory** \u2013 the one that starts with  \n\n   ```\n   ~/.eclipse/ibm.software.delivery.platform_7.5.0_....\n   ```\n\n   (the exact name will contain a timestamp, e.g. `ibm.software.delivery.platform_7.5.0_1529064711`).\n\n   ```bash\n   rm -rf /home/<user>/.eclipse/ibm.software.delivery.platform_7.5.0_*\n   ```\n\n2. **Start RFT again** (you can use the normal launch command; no need for `-clean` or `-vm` options).\n\nThe stale configuration is removed, the Eclipse runtime can locate `EclipseStarter`, and RFT 8.2 should start normally.\n\n*This problem is tracked as Eclipse defect\u202f255268; the workaround above is the recommended fix until the defect is patched.*",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.2,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.024630541871921183,
+      "utilization": 0.029556650246305417,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 17,
+    "question": "How do I run the prerequisite scan for jazzSM? How do I run the prerequisite scan? ",
+    "answer": "Run the prerequisite scanner by invoking the scanner script and passing **both** product codes \u2013 the code for DASH and the code for JazzSM \u2013 on the same command line.  \nFor example, using the supplied batch file:\n\n```bat\nprereq_checker.bat  TIPL2INST  DASHL2INST  CRIMA1217E\n```\n\n(Replace the three codes with the actual product\u2011code values for DASH and JazzSM as listed in the product\u2011code table.)  \n\nRunning the scanner this way will produce a detailed list of all prerequisites for both products and indicate which items have passed.  \n\n*Note:* Make sure you are using prerequisite\u2011scanner version\u202f1.2.0.11 or higher (upgrade via the Fix Central link in the note) so the scan works correctly.",
+    "pred": {
+      "relevance": 0.28125,
+      "utilization": 0.125,
+      "completeness": 0.4444444444444444,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.044444444444444446,
+      "utilization": 0.02962962962962963,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 18,
+    "question": "What things are important to consider when installing a fix pack for IIB running on a multi-instance environment? I am planning to apply a fix pack to my current version of IBM Integration Bus (IIB) using multi-instance brokers and I am looking for any important information regarding the process.\n\nFor example:\n\n \n\n- installation and verification tasks\n \n\n- is it possible to back out this fix pack in case there are issues\n \n\n- any specific tasks for multi instance configuration",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.625,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.036734693877551024,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 19,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "Create a dummy VM guest to bypass the error.\u202fAlso review the\u202fmessages.log\u202ffile (C:\\IBM\\tivoli\\tsm\\tdpvmware\\webserver\\usr\\servers\\veProfile\\VMwarePlugin\\logs) for details about the credential problem.",
+    "pred": {
+      "relevance": 0.34782608695652173,
+      "utilization": 0.08695652173913043,
+      "completeness": 0.25,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
