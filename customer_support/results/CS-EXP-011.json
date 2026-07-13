@@ -168,5 +168,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "I don't know. The context provided does not specifically address \"StaleConnectionException errors with BPM databases\". It discusses StaleConnectionException in the context of Websphere JCC driver and DB2/z zOS, but does not provide information about BPM databases.",
+    "pred": {
+      "relevance": 0.9117647058823529,
+      "utilization": 0.20588235294117646,
+      "completeness": 0.22580645161290322,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "To resolve the error, follow these steps:\n\n1. Open the WAS admin console.\n2. Navigate to Resources > Resource environment providers > WP ScriptingService > Custom properties.\n3. You should see an entry with the name \"ServerExt.applications\" and value \"com.ibm.wps.scripting.server.ApplicationServerExtensions\".\n4. Delete this entry, save, and restart the server.\n\nThis should resolve the error. Alternatively, you can also apply the Combined Cumulative Fix for Portal 8.5.0.0, which includes a code fix for this issue.",
+    "pred": {
+      "relevance": 0.4782608695652174,
+      "utilization": 0.4782608695652174,
+      "completeness": 0.8181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after the upgrade to v7.5.2 and above because the default set of ciphers and MACs has been altered to remove unsafe algorithms, such as CBC ciphers and arcfour*. If the SSH client or server is older and does not support the safer ciphers and MACs, the connection will fail. Additionally, the upgrade to v7.5.2 and above may have disabled certain algorithms by default, such as diffie-hellman-group-exchange-sha1 and diffie-hellman-group1-sha1, and limited DH-GEX to 4096 bits for Cisco devices.",
+    "pred": {
+      "relevance": 0.41935483870967744,
+      "utilization": 0.22580645161290322,
+      "completeness": 0.5384615384615384,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "The issue is that the silent uninstall command is not specifying the complete path to the silent response file (MQ_Silent_Uninstall.txt). To resolve the issue, specify the complete path to the silent response file, for example: \n\nstart /wait setup /z\"/sfC:\\Path\\To\\MQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" \n\nAdditionally, the response file should contain AGREETOLICENSE=YES to agree to the license agreement. The line \"License Agreement=I agree to use the software only in accordance with the installed license\" is not sufficient. It should be replaced with AGREETOLICENSE=YES.",
+    "pred": {
+      "relevance": 0.44,
+      "utilization": 0.24,
+      "completeness": 0.5454545454545454,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3333333333333333,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
