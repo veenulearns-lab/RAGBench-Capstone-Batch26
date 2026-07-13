@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes.",
+    "pred": {
+      "relevance": 0.13333333333333333,
+      "utilization": 0.13333333333333333,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error \"Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long\" is due to the ARG_MAX configuration parameter limiting the number of arguments in the command line. To resolve the issue, you need to increase the ARG_MAX value. You can check the current value using the command \"getconf ARG_MAX\" and increase it using the command \"chdev -l sys0 -a ncargs='32'\" (on AIX systems) or by other means on other systems.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.25925925925925924,
+      "completeness": 0.3888888888888889,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "I don't know. The provided context does not contain information about a JVMSERVER remaining in a \"BEING DISABLED\" state or becoming hung when trying to disable it. It discusses how to refresh a Java program that runs in a JVM server, resolve problems with JVM Servers, and troubleshoot error messages, but it does not address the specific issue described in the question.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "I don't know. The provided context does not contain information about upgrading to CICS TS 5.2 or an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. However, it does mention that a similar set of messages (DFHAP1203I and DFHSR0601) can be caused by a mismatch in z/OS levels between Language Environment modules, CEECCICS and CEEPLPKA.",
+    "pred": {
+      "relevance": 0.18518518518518517,
+      "utilization": 0.18518518518518517,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
