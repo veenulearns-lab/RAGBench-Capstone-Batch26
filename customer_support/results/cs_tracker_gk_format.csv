@@ -69,3 +69,18 @@ RMSE 0.5055","0.2223
 RMSE 0.2982","0.4346
 RMSE 0.6739","0.4000
 AUCROC 0.6389",0.0750,0.0435,0.5394,0.6400,25,JUDGE CHECK - NOT comparable to other rows. 8b judge 0.639 vs 70b 0.875 on same pipeline: 'smaller judge preferred' REFUTED; 70b judge mandatory.
+CS-EXP-014,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b (soft prompt),"0.6878
+RMSE 0.6438","0.5789
+RMSE 0.6066","0.8516
+RMSE 0.6307","0.1000
+AUCROC 0.6000",0.1066,0.0729,0.6267,0.5000,10,PROMPT TEST - soft/lenient prompt CRASHED adherence (0.600 vs 0.875): strict IDK instruction is protective; leniency trades honest refusals for unsupported partial answers. All RMSEs degraded.
+CS-EXP-015,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b (compress-then-answer),"0.4503
+RMSE 0.4247","0.2278
+RMSE 0.2705","0.4643
+RMSE 0.4945","0.3600
+AUCROC 0.6944",0.0750,0.0435,0.5394,0.6400,25,"COMPRESSION TEST - no adherence gain (0.694): IDK root cause is retrieval-miss at k=5, not needle-in-noise. Best Comp RMSE (0.49) shows distillation works, but of the wrong haystack."
+CS-VAL-001,Customer Support (techqa),Fixed (120w),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b,"0.4131
+RMSE 0.4130","0.1626
+RMSE 0.1967","0.3759
+RMSE 0.6068","0.4400
+AUCROC 0.7569",0.0750,0.0435,0.5394,0.6400,25,"TRANSFER VALIDATION - fixed chunking under gpt-oss lands below locked config (0.757 vs 0.875): Stage-1 sliding decision transfers; stage-generator independence empirically supported, not just assumed."
