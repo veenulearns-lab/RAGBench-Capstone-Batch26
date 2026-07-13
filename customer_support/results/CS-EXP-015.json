@@ -83,5 +83,175 @@
       "completeness": 0.3333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 5,
+    "question": "BPM AppTarget startup hangs during startup \n\nDuring startup of the apptarget, JVM hangs with the following messages\n\n[9/8/14 14:11:01:709 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 10 minutes. [9/8/14 14:11:32:810 CDT] 00000022 ThreadMonitor W WSVR0605W: Thread \"server.startup : 0\" (0000001f) has been active for 654582 milliseconds and may be hung. There is/are 1 thread(s) in total in the server that may be hung. at java.lang.Thread.sleep(Native Method) at java.lang.Thread.sleep(Thread.java:896) at com.lombardisoftware.server.core.GroupCore.getAllGroups(GroupCore.java:545) at com.lombardisoftware.server.ejb.security.SecurityCore.listAllGroups(SecurityCore.java:566) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37) at java.lang.reflect.Method.invoke(Method.java:611) ... [9/8/14 14:21:02:662 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 20 minutes. [9/8/14 14:31:03:193 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 30 minutes. [9/8/14 14:41:03:749 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 40 minutes.",
+    "answer": "The JVM is hanging because the startup thread is blocked inside **`GroupCore.getAllGroups()`** while it repeatedly waits for the **group replication lock**.  \n\n- The log repeatedly reports **CWLND0004W** \u2013 \u201cThe system has been waiting for the group replication lock to be released\u2026\u201d, with the wait time increasing (10\u202fmin, 20\u202fmin, 30\u202fmin, 40\u202fmin).  \n- The thread\u2011monitor warning **WSVR0605W** shows the startup thread (\u201cserver.startup : 0\u201d) has been active for many minutes and may be hung.  \n- The stack trace confirms the hang occurs in `GroupCore.getAllGroups()` (sleeping on the lock) which is called from `SecurityCore.listAllGroups()` during startup.\n\nThus, the BPM AppTarget startup hangs because the startup thread cannot acquire the group replication lock, causing it to remain blocked in `GroupCore.getAllGroups()`.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006993006993006993,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 6,
+    "question": "Using cobol copybooks Sometimes, there will be errors/fields missing in typetree, while importing cobol copybooks. Is there any format for copybooks(specifically to be used in wtx), that we need to follow? ",
+    "answer": "There is no special WTX\u2011specific copy\u2011book format you have to follow \u2013 a normal COBOL copy\u2011book is sufficient.  \n\nTypical causes of missing fields or typetree errors are environmental or syntax problems, such as:\n\n* BIDI option processing \u2013 if BIDI is enabled and the Property Group\u2019s COBOL SYSLIB contains two or more PDSEs, copy\u2011books may fail to download.  \n* COBOL naming rules \u2013 level\u201188 field names longer than 30 characters (the COBOL limit) will cause compile\u2011time errors, even when `NAME\u2011TRUNCATION=RIGHT` is used.  \n* Comment syntax \u2013 copy\u2011books that contain PL/1\u2011style comments (e.g., in DFHTCTTE and DFHJCADS) will cause compilation errors in COBOL programs.\n\nSo, just make sure your copy\u2011books conform to standard COBOL conventions (\u2264\u202f30\u2011character field names, COBOL\u2011style comments) and that the BIDI/PDSE configuration is correct. No additional WTX\u2011specific formatting is required.",
+    "pred": {
+      "relevance": 0.45161290322580644,
+      "utilization": 0.22580645161290322,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.01171875,
+      "utilization": 0.01171875,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 7,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To stop rule\u2011execution failures caused by recurring **StaleConnectionException** on an ODM\u202f8.8 Rule Execution Server running in WebSphere, configure the WebSphere data\u2011source connection pool so that idle connections are never kept longer than the network\u2019s idle\u2011connection timeout.\n\n**Preventive configuration steps**\n\n1. **Set \u201cMinimum connections\u201d to\u202f0** \u2013 this stops the pool from retaining a connection that may become stale while the server is idle (e.g., overnight).\n\n2. **Adjust the \u201cUnused timeout\u201d and \u201cReap timeout\u201d** \u2013 make sure the **sum of these two values is less than or equal to any firewall or other network idle\u2011connection timeout**. This forces stale connections to be closed before the network drops them.\n\n3. **Apply the settings to the data source used by the Rule Execution Server** (see IBM\u2019s \u201cConfigure the WebSphere Application Server data source connection pool\u201d documentation).\n\n**References for detailed guidance**\n\n- IBM WebSphere connection\u2011pool configuration:  \n  `http://publib.boulder.ibm.com/infocenter/wasinfo/v7r0/index.jsp?topic=/com.ibm.websphere.nd.multiplatform.doc/info/ae/ae/udat_conpoolset.html`\n\n- IBM troubleshooting guide for stale connections:  \n  `http://www-01.ibm.com/support/docview.wss?uid=swg21247168#SCETroubleshooting`\n\n- Related support notes on RES rule\u2011set loading after inactivity:  \n  `http://www-01.ibm.com/support/docview.wss?uid=swg21615801`\n\nImplementing the above pool settings eliminates the stale\u2011connection condition and prevents rule execution from failing due to `StaleConnectionException`.",
+    "pred": {
+      "relevance": 0.5294117647058824,
+      "utilization": 0.5294117647058824,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1297709923664122,
+      "utilization": 0.03816793893129771,
+      "completeness": 0.29411764705882354,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 8,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes. IBM provides a **Support\u2019s Guide to the IBM CORBA probes**.\n\nYou can download it from the IBM Support site:\n\n- **Main guide page**:  \n  http://www-01.ibm.com/support/docview.wss?uid=swg21614208  \n\n- **Direct PDF download(s)** (both point to the same guide):  \n  - http://www-01.ibm.com/support/docview.wss?uid=swg21614208&aid=1  \n  - http://www-01.ibm.com/support/docview.wss?uid=swg21614208&aid=2  \n\nThese links give you access to the \u201cSupport\u2019s Guide to IBM CORBA probes\u201d (often named\u202fGENERIC_CORBA_SupportsGuide_20.pdf).",
+    "pred": {
+      "relevance": 0.35714285714285715,
+      "utilization": 0.21428571428571427,
+      "completeness": 0.6,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06382978723404255,
+      "utilization": 0.010638297872340425,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 9,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699) I need to understand details regarding Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699). Where can I find this information?\n",
+    "answer": "You can find the IBM security\u2011bulletin information for CVE\u20112017\u20111699 (the undefined\u2011behavior / insecure file\u2011permission vulnerability affecting IBM\u202fWebSphere\u202fMQ and IBM\u202fMQ\u202fManaged\u202fFile\u202fTransfer) on the IBM sites listed below:\n\n- **IBM Secure Engineering Web Portal (Security Bulletins)**  \n  <http://www.ibm.com/security/secure-engineering/bulletins.html>\n\n- **IBM Product Security Incident Response (PSIRT) Blog**  \n  <http://www.ibm.com/blogs/PSIRT>\n\n- **IBM support documents that list fixes and maintenance releases for WebSphere\u202fMQ**  \n  - Recommended fixes for WebSphere\u202fMQ: <http://www-01.ibm.com/support/docview.wss?rs=171&uid=swg27006037>  \n  - Planned maintenance release dates for WebSphere\u202fMQ: <http://www-01.ibm.com/support/docview.wss?rs=171&uid=swg27006309>\n\nThese pages contain the official IBM security bulletins, detailed vulnerability information (including CVE\u20112017\u20111699), and the associated fix\u2011pack or remediation guidance.",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.09090909090909091,
+      "completeness": 0.18181818181818182,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "The stale\u2011connection errors are caused by a bug in the IBM DB2 JCC driver (version\u202f3.58.136).  \nThe fix is to upgrade to **JCC driver version\u202f3.59.81** (shipped with **DB2\u202fv9.5 Fix\u202fPack\u202f6a**) or apply the corresponding PTF. After installing that driver version the \u201cStaleConnectionException\u201d messages disappear.",
+    "pred": {
+      "relevance": 0.20588235294117646,
+      "utilization": 0.11764705882352941,
+      "completeness": 0.5714285714285714,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "To fix the \u201cMBeanStarter\u202floadExtensions failed to load extension \u2026 ServerExt.applications\u201d error, remove the obsolete\u202f`ServerExt.applications`\u202fcustom property from the\u202f**WP\u202fScriptingService**\u202fresource\u2011environment\u2011provider and then restart the Portal server.\n\n**Steps**\n\n1. Open the WebSphere Application Server administrative console.  \n2. Go to **Resources \u2192 Resource environment providers**.  \n3. Select **WP\u202fScriptingService**.  \n4. Open **Custom properties**.  \n5. Find the entry:  \n   - **Name:** `ServerExt.applications`  \n   - **Value:** `com.ibm.wps.scripting.server.ApplicationServerExtensions`  \n6. **Delete** this property.  \n7. Save the configuration and **restart** the Portal server.\n\n(Alternatively, applying the appropriate WebSphere\u202fPortal\u202f8.5.0.0 cumulative fix\u2014e.g., APAR\u202fPI31198, PI36060, or PI38040\u2014will automatically remove the outdated entry.)",
+    "pred": {
+      "relevance": 0.4782608695652174,
+      "utilization": 0.391304347826087,
+      "completeness": 0.8181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to DataPower\u202fGateway\u202fv7.5.2 (and later) because that release disables a number of legacy algorithms that were still enabled in v7.2.  \n\n- **Key\u2011exchange algorithms** such as `diffie-hellman-group-exchange\u2011sha1` and `diffie-hellman-group1\u2011sha1` are turned off by default.  \n- **MAC algorithms** that use MD5 are disabled.  \n- **Cipher algorithms** that use CBC mode (and the `arcfour*` ciphers) are removed from the default set.  \n\nWhen the other side of the SSH session (client or server) is an older implementation that does not support the newer default algorithms, the handshake cannot find a common cipher, MAC, or kex algorithm, resulting in errors like \u201cNo matching cipher found\u201d, \u201cNo matching MAC algorithm found\u201d, or \u201cNo matching kex algorithm found.\u201d  \n\nThus the same configuration that worked on v7.2 fails on v7.5.2 because the newer version no longer offers the legacy algorithms required by the peer. Enabling the `enable-legacy-kex` option (or explicitly configuring compatible ciphers/MACs) restores compatibility.",
+    "pred": {
+      "relevance": 0.4838709677419355,
+      "utilization": 0.25806451612903225,
+      "completeness": 0.5333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "The uninstall is aborting because the installer isn\u2019t seeing a valid license\u2011agreement flag.  \n\n**Fix**\n\n1. **Supply the full path to the response file** when you run the silent command, e.g.:  \n\n   ```\n   setup /z\"/sfE:\\FULL\\PATH\\MQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\"\n   ```\n\n2. **Add the required license flag** to the response file:  \n\n   ```\n   AGREETOLICENSE=YES\n   ```\n\nBoth steps are required; the \u201cLicense Agreement=I agree \u2026\u201d line is not sufficient. Once the response file is referenced with its full path and contains `AGREETOLICENSE=YES`, the silent uninstall will proceed.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.2,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "The message indicates that the firmware installation has failed (checkpoint\u202fC100B104).  \nTo resolve it, follow the recommended steps for a C100B104 failure:\n\n1. Verify that the USB flash drive you are using actually contains the firmware fix. If needed, copy the firmware image to the USB flash drive again.  \n2. Retry the upgrade using a different USB flash drive.  \n3. If the problem persists, contact your service provider for assistance.  \n4. Once checkpoint\u202fC100B103 (firmware installation completed successfully) is reached, you can proceed with normal operation.",
+    "pred": {
+      "relevance": 0.6222222222222222,
+      "utilization": 0.17777777777777778,
+      "completeness": 0.2857142857142857,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
