@@ -12,3 +12,5 @@ EXP-006,General Knowledge,whole_doc,bge,hybrid,False,llama-3.3-70b-versatile,0.2
 EXP-008,General Knowledge,whole_doc,e5,hybrid,True,llama-3.3-70b-versatile,0.2174,0.1676,0.782,0.88,0.2014,0.1518,0.7847,0.0885,0.0444,0.34,,25,mentor: reranking with hybrid
 EXP-007,General Knowledge,recursive,e5,hybrid,False,llama-3.3-70b-versatile,0.2468,0.1653,0.7324,0.76,0.2014,0.1518,0.7847,0.1052,0.0527,0.323,,25,mentor: recursive chunking 300c/60c overlap
 EXP-009,General Knowledge,whole_doc,e5,hybrid,True,llama-3.3-70b-versatile,0.2479,0.1668,0.7201,0.76,0.2014,0.1518,0.7847,0.0892,0.0663,0.2889,,25,"mentor: prompt change (generator only, judge untouched)"
+EXP-FINAL-BASE,General Knowledge,whole_doc,minilm,dense,False,llama-3.1-8b-instant,0.2373,0.1191,0.5541,0.695,0.2156,0.1525,0.74,0.1316,0.101,0.4665,0.5583,200,FINAL baseline 200 (resumed across sessions)
+EXP-FINAL-BEST,General Knowledge,whole_doc,e5,hybrid,True,llama-3.3-70b-versatile,0.2359,0.1525,0.7067,0.799,0.2159,0.1526,0.7387,0.1104,0.0684,0.309,0.4866,199,FINAL best combo 200 samples (= EXP-008 config)
