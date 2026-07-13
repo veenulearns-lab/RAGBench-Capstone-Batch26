@@ -68,9 +68,9 @@ EXP-FINAL-BASE,General Knowledge,Whole Document,all-MiniLM-L6-v2,FAISS (dense),N
 RMSE 0.1316","0.1191
 RMSE 0.1010","0.5541
 RMSE 0.4665","0.6950
-AUCROC 0.5583",0.2156,0.1525,0.74,1.0,200,FINAL baseline 200 (resumed across sessions)
+AUCROC 0.5583",0.2156,0.1525,0.74,0.915,200,FINAL baseline 200 (resumed across sessions)
 EXP-FINAL-BEST,General Knowledge,Whole Document,intfloat/e5-large-v2,"Hybrid (BM25+dense, RRF)",Cross-encoder (ms-marco-MiniLM),llama-3.3-70b-versatile,"0.2359
 RMSE 0.1104","0.1525
 RMSE 0.0684","0.7067
 RMSE 0.3090","0.7990
-AUCROC 0.4866",0.2159,0.1526,0.7387,1.0,199,FINAL best combo 200 samples (= EXP-008 config)
+AUCROC 0.4866",0.2159,0.1526,0.7387,0.9146,199,FINAL best combo 200 samples (= EXP-008 config)
