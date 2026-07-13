@@ -253,5 +253,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 15,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the detailed IBM Security Bulletin for these vulnerabilities at the following IBM sites:\n\n- **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21997194  \n- **IBM Secure Engineering Web Portal (Bulletins)** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n- **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt",
+    "pred": {
+      "relevance": 0.9523809523809523,
+      "utilization": 0.047619047619047616,
+      "completeness": 0.05,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.13513513513513514,
+      "utilization": 0.016891891891891893,
+      "completeness": 0.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 16,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The problem is caused by a known Eclipse defect (255268).  \nThe workaround is to delete the user\u2019s Eclipse configuration directory for the IBM Software Delivery Platform and then start RFT again. For example:\n\n```bash\nrm -rf ~/.eclipse/ibm.software.delivery.platform_7.5.0_*\n```\n\n(e.g., `rm -rf /home/joe/.eclipse/ibm.software.delivery.platform_7.5.0_1529064711`)\n\nAfter removing that directory, relaunch RFT 8.2.",
+    "pred": {
+      "relevance": 0.2777777777777778,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.8,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.024630541871921183,
+      "utilization": 0.029556650246305417,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 17,
+    "question": "How do I run the prerequisite scan for jazzSM? How do I run the prerequisite scan? ",
+    "answer": "To run the JazzSM prerequisite scan:\n\n1. **Verify the scanner version** \u2013 it must be **v\u202f1.2.0.11 or higher**.  \n   *If you have an older version (the one that returns code\u202f5), download the newer scanner from Fix Central:*  \n   `http://www-01.ibm.com/support/docview.wss?uid=swg24039536`\n\n2. **Execute the scanner script** \u2013 use the batch file **`prereq_checker.bat`** and supply the required product codes on the same command line.  \n   Example command (use the exact codes from the product\u2011code table in the documentation):\n\n   ```bat\n   prereq_checker.bat TIPL2INST DASHL2INST CRIMA1217E\n   ```\n\n   * `TIPL2INST` \u2013 JazzSM product code  \n   * `DASHL2INST` \u2013 DASH product code (needed when both JazzSM and DASH are being installed)  \n   * `CRIMA1217E` \u2013 additional code required by the scanner\n\n3. **Review the output** \u2013 the scan lists each prerequisite and marks it **PASS** or **FAIL**.  \n\n4. **Proceed** \u2013 if all items PASS, continue with the installation. If any FAIL, resolve the issues and re\u2011run the same command until the scan reports a clean pass.",
+    "pred": {
+      "relevance": 0.625,
+      "utilization": 0.25,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.044444444444444446,
+      "utilization": 0.02962962962962963,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 18,
+    "question": "What things are important to consider when installing a fix pack for IIB running on a multi-instance environment? I am planning to apply a fix pack to my current version of IBM Integration Bus (IIB) using multi-instance brokers and I am looking for any important information regarding the process.\n\nFor example:\n\n \n\n- installation and verification tasks\n \n\n- is it possible to back out this fix pack in case there are issues\n \n\n- any specific tasks for multi instance configuration",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.24242424242424243,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.036734693877551024,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 19,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "The situation you describe is the same one that is covered in the IBM\u202fSpectrum\u202fProtect for Virtual Environments documentation:\n\n1. **Verify the VM\u2011Manager connection state** \u2013 only hosts whose connection state is **CONNECTED\u202f(0)** are processed.  \n   Use the supplied command to re\u2011query the manager:  \n\n   ```\n   vmcli.cmd -f inquire_detail -t TSM -q dmverify -d <DC node name> -o <DM node name>\n   ```\n\n   If the manager appears as **DISCONNECTED\u202f(1)** or **NOT_RESPONDING\u202f(2)** you will get the \u201cinvalid credentials \u2013 suspended\u201d symptom.\n\n2. **Re\u2011enter the VM\u2011Manager credentials** \u2013 even though no password change was made, the stored credentials may have become out\u2011of\u2011sync (e.g., after a password policy rotation). Updating the credentials in the IBM\u202fSpectrum\u202fProtect console and re\u2011saving the VM\u2011Manager definition will bring the manager back to the CONNECTED state.\n\n3. **Apply the known fix** \u2013 the error you are seeing is addressed by the **Version\u202f8.1.0 IBM Spectrum Protect for Virtual Environments** fix (download link provided in the source). Installing this version (or a later cumulative fix) resolves the \u201cinvalid credentials \u2013 suspended\u201d condition for missing VM\u2011Manager data.\n\n4. **Temporary workaround** \u2013 if the VM\u2011Manager has no VM guests at the moment, you can create a dummy VM guest. This bypasses the error while you work on restoring the proper manager connection.\n\n**Action summary**\n\n- Run the `vmcli` command above to confirm the manager\u2019s connection state.  \n- If it is not CONNECTED, edit the VM\u2011Manager definition and re\u2011enter the correct ID/password.  \n- Install the **Version\u202f8.1.0** fix (or a newer fix) to permanently resolve the issue.  \n- As a short\u2011term measure, create a dummy VM guest if no guests exist.  ",
+    "pred": {
+      "relevance": 0.7368421052631579,
+      "utilization": 0.7894736842105263,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
