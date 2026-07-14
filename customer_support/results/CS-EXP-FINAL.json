@@ -2457,5 +2457,66 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 145,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.08333333333333333,
+      "utilization": 0.046296296296296294,
+      "completeness": 0.5555555555555556,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 146,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.02072538860103627,
+      "utilization": 0.0051813471502590676,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 147,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.00816326530612245,
+      "utilization": 0.012244897959183673,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 148,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.1643192488262911,
+      "utilization": 0.03755868544600939,
+      "completeness": 0.22857142857142856,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 149,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to version\u202f7.5.2 (and later) because that release changes the default algorithm lists. Starting with OpenSSH\u202f6.7 the server disables unsafe algorithms \u2013 all CBC\u2011mode ciphers, the arcfour family, MD5\u2011based MACs and older key\u2011exchange methods \u2013 and limits DH\u2011GEX size. The newer IBM\u202fDataPower\u202f7.5.2 SSH server therefore no longer offers the legacy ciphers/MACs/kex algorithms that the older client or server (which works with v7.2) expects. When the two ends cannot agree on a common cipher, MAC or KEX, the connection aborts with errors such as \u201cNo matching cipher found\u201d, \u201cNo matching MAC algorithm found\u201d or \u201cNo matching kex algorithm found\u201d.  \n\nIn short, the upgrade disables the insecure algorithms that the older peer still relies on, causing the handshake to fail. To restore connectivity you must either upgrade the peer to a version that supports the newer safe algorithms, or temporarily re\u2011enable the legacy algorithms (e.g., via the `enable\u2011legacy\u2011kex` option) and then remove that change once both sides are updated.",
+    "pred": {
+      "relevance": 0.5806451612903226,
+      "utilization": 0.22580645161290322,
+      "completeness": 0.3888888888888889,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.125,
+      "utilization": 0.125,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
