@@ -1103,5 +1103,90 @@
       "completeness": 0.5333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 65,
+    "question": "We got a NullPointerException when bootstrapping the object store or accessing Site Preferences/Access Role on WorkplaceXT \n\nAfter logging into FileNet Workplace XT, a java.lang.NullPointerException error is logged when bootstrapping the object store or when accessing Site Preferences/Access Role.\n\nHere's the error stack,\n\nError Stack Trace extracted from the J2EE Application Server error log:\n\njava.lang.NullPointerException\n\nat org.apache.jasper.runtime.JspWriterImpl.write(JspWriterImpl.java:421)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRoleMembers(PrefAccessRolesInfoPage.java:254)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRole(PrefAccessRolesInfoPage.java:220)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.renderAdminRole(PrefBootstrapInfoPage.java:131)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.render(PrefBootstrapInfoPage.java:303)",
+    "answer": "The problem is caused by an invalid entry in the **User\u202fDisplay\u202fName Attribute** or **Group\u202fDisplay\u202fName Attribute** that is defined in the **Directory Services Configuration** in FileNet Enterprise Manager (FEM).  \n\nWhen Workplace\u202fXT boots the object store or renders the Site\u202fPreferences/Access\u202fRole pages it tries to resolve the user and group names that are defined in the Access\u202fRoles using the directory\u2011service settings. If the attribute mapping is wrong (or points to a value that does not exist), the lookup returns **null** and the code that writes the role information throws a `java.lang.NullPointerException`, producing the stack trace you see.\n\n**What to do**\n\n1. Open **FileNet Enterprise Manager** \u2192 **Directory Services Configuration**.  \n2. Verify the values set for:  \n   * **User Display Name Attribute**  \n   * **Group Display Name Attribute**  \n3. Make sure each attribute points to a valid LDAP (or other directory) attribute that actually contains a non\u2011null display name for every user/group used in the Access\u202fRoles.  \n4. Save the configuration and restart the Workplace\u202fXT application (or reload the object store).  \n\nAfter correcting the attribute mappings, the bootstrap and Site\u202fPreferences/Access\u202fRole pages should render without the NullPointerException.",
+    "pred": {
+      "relevance": 0.19047619047619047,
+      "utilization": 0.19047619047619047,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1,
+      "utilization": 0.06363636363636363,
+      "completeness": 0.6363636363636364,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 66,
+    "question": "Help with Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IIB and WMB (CVE-2015-0138) I need to understand details regarding Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker (CVE-2015-0138). This is also commonly referenced as \u201cFREAK: Factoring Attack on RSA-EXPORT keys\" TLS/SSL client and server vulnerability. Where can I find this information? ",
+    "answer": "You can find the details in the IBM security\u2011bulletin pages referenced in the text, for example:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21695474  \n* **Security Bulletin: Vulnerability with RSA Export Keys may affect IBM WebSphere Application Server (CVE\u20112015\u20110138)** \u2013\u202fhttp://www.ibm.com/support/docview.wss?uid=swg21698613  \n* **Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect WebSphere Application Server January\u00a02015 CPU** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21695362  \n\nAdditional related resources are:\n\n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/PSIRT  \n\nThese links contain the full bulletin, vulnerability description, CVE information, and remediation guidance for CVE\u20112015\u20110138 (the \u201cFREAK\u201d attack) affecting IBM Integration Bus and WebSphere Message Broker.",
+    "pred": {
+      "relevance": 0.9166666666666666,
+      "utilization": 0.2916666666666667,
+      "completeness": 0.3181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.10970464135021098,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 67,
+    "question": "Does the BPM internal Document Store work with IBM DB2 pureScale? I use IBM DB2 pureScale with my BPM installation. During startup of the server and initialization of the internal document store I see hanging threads in the systemOut.log and the process will not finish. How can this be solved? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7307692307692307,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.11797752808988764,
+      "utilization": 0.03932584269662921,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 68,
+    "question": "Why is my Portal 8.5 install saying it cannot detect WAS? When I try to install WebSphere PortaV8.5, I am getting the message\n\nThe required version 8.5.5 or later of WebSphere Application Server has not been detected on this system. Select the WebSphere Application Server Package to install WebSphere Application Server and WebSphere Portal.\n\nThe required IBM WebSphere SDK Java Technology Edition version 7.0 or later is not detected on this system. Select the IBM WebSphere SDK Java Technology Edition package to install it.",
+    "answer": "The installer cannot find a suitable WebSphere\u202fApplication\u202fServer because it is looking for a WAS installation of version\u202f8.5.5\u202for later in the directory you have specified, and either that version is not present or the path you gave does not point to a valid WAS installation. The documentation was updated to remind users that the **installation_directory** option must be set to the correct WebSphere\u202fApplication\u202fServer installation path; if it is wrong (or the required WAS version isn\u2019t installed), the Portal installer will report that WAS cannot be detected.",
+    "pred": {
+      "relevance": 0.2692307692307692,
+      "utilization": 0.07692307692307693,
+      "completeness": 0.2857142857142857,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 69,
+    "question": "recently installed Impact 7.1.0. fixpack 3, now when ever start the secondary impact server, the primary servers logging stops?  How can I fix this? when NCI1 is running by itself, all logging is functioning. When NCI2\nis started, logging stops on NCI1 and the \"reader\" logs indicate that\nthe readers have stopped. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.39285714285714285,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04318936877076412,
+      "utilization": 0.036544850498338874,
+      "completeness": 0.8461538461538461,
+      "adherence": 0
+    }
   }
 ]
