@@ -1358,5 +1358,90 @@
       "completeness": 0.4375,
       "adherence": 1
     }
+  },
+  {
+    "idx": 80,
+    "question": "I need to move my perpetual license of SPSS v24 to my new machine. I have my authorization code first given to me, but since we did not renew our support contract we can't seem to download the software. I was originally told that I could download the trial version and it would have the authorization wizard where I could input the code and move forward. But the only downloadable version is subscription version with no authorization wizard. How do I move forward? ",
+    "answer": "You need to obtain the **full SPSS\u202fStatistics\u202f24** (perpetual) installer \u2013 the trial/subscription download does not contain the License Authorization Wizard that is required for a perpetual license.  \n\n1. **Download the correct installer**  \n   * Use the IBM download page for the version you own (Statistics\u202f24).  \n   * If you cannot see the full installer because your support contract has expired, request the permanent installer from IBM (e.g., via the Licensing forum or by contacting IBM support) and provide your **authorization code**.\n\n2. **Install the product** on the new machine using the installer you obtained.\n\n3. **Run the License Authorization Wizard** (the steps are the same on Windows and macOS):  \n\n   * Windows \u2013 open the *IBM\u202fSPSS* \u2192 *Statistics* \u2192 *24* folder and launch **License Authorization Wizard**.  \n   * macOS \u2013 Finder \u2192 *Applications* \u2192 *IBM* \u2192 *SPSS* \u2192 *Statistics* \u2192 *24* \u2192 **License Authorization Wizard**.  \n\n4. In the wizard:  \n\n   * Choose **\u201cLicense my product now.\u201d**  \n   * Click **Next** \u2013 the lower\u2011left pane will display **\u201cLock Code for this machine is \u2026\u201d**. Write down the lock code.  \n   * Click **Cancel**, then **Yes** to close the wizard.\n\n5. **Obtain a license code** using the lock code and your **authorization code**:  \n\n   * Return to the License Authorization Wizard (or use the web/phone method indicated in the wizard).  \n   * Enter the **authorization code** when prompted and let the wizard contact SPSS (via Internet, telephone, or e\u2011mail) to generate a **license code** for your machine.  \n\n6. **Enter the license code** in the wizard to activate the perpetual license.\n\n**Additional notes from the context**\n\n* On non\u2011Windows platforms you must run the wizard as **root** (or an administrator).  \n* The detailed licensing steps for each version are documented in the \u201cLicensing your product\u201d sections of the IBM installation guides (e.g., for Statistics\u202f24 see the Authorized User License Installation Instructions).  \n\nIf you still cannot obtain the proper installer, open a ticket on the **IBM Licensing forum** (https://developer.ibm.com/answers/topics/spsslicensing.html) and provide your authorization code; IBM can supply the correct perpetual\u2011license installer.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 1.0,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07482993197278912,
+      "utilization": 0.027210884353741496,
+      "completeness": 0.36363636363636365,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 81,
+    "question": "Why am I seeing \"CWSXM0100E: Multiple replies have been produced for a single request flow in module\" ? We are building a simple mediation module, consisting only of the request flow. The mediation module has one service invoke calling an external service through web service binding. Upon testing the process, we observe see that the service invoke is being called twice. There is no Fan-in or fan -out in the request flow. Below is the error: \"Caused by: com.ibm.wsspi.sibx.mediation.flow.MediationRuntimeException: CWSXM1023E: Exception when calling flow action: CWSXM0100E: Multiple replies have been produced for a single request flow in module\" ",
+    "answer": "You are seeing the **CWSXM0100E** error because the mediation flow contains **more than one wire** between primitives, even though it may look like a single connection. When a primitive (for example, the Service Invoke) is wired to the next primitive more than once, the flow is executed twice, so the request generates multiple replies. This duplicate wiring is the cause of the \u201cmultiple replies have been produced for a single request flow\u201d message and the double invocation of the external service.\n\n**What to do**\n\n1. Open the mediation flow in the editor.  \n2. Look carefully at the connections between the primitives \u2013 you may see hidden or overlapping wires.  \n3. Delete any redundant/duplicate wires so that each primitive is connected only once to the next one.  \n4. Save the project and redeploy the application.\n\nAfter removing the extra wire, the flow will produce a single reply for the request and the Service Invoke will be called only once.",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.5,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.029023746701846966,
+      "utilization": 0.018469656992084433,
+      "completeness": 0.6363636363636364,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 82,
+    "question": "Help with Security Bulletin: WMB and IIB Toolkit cannot connect to a remote WMB broker or IIB node with a TLS-compliant cipher (CVE-2015-0118) I need to understand details regarding Security Bulletin: WebSphere Message Broker Toolkit and IBM Integration Toolkit cannot connect to a remote WebSphere Message Broker broker or IBM Integration Bus node with a TLS-compliant cipher (CVE-2015-0118). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5789473684210527,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 83,
+    "question": "How do I configure TLS/SSL for an IIB web service provider and consumer? I'm investigating ways and technologies for use with IIB to run a web service that runs as both a provider and consumer. I'm looking at HTTP and SOAP messages/nodes. At a high level it might look like this:\nHTTPInput (TLS over HTTPS) -> Compute -> HTTPRequest (SSL over HTTPS) -> Compute -> HTTPReply\nor\nSOAPInput (TLS over HTTPS) -> Compute -> SOAPRequest (SSL over HTTPS) -> Compute -> SOAPReply\nDoes anyone have more details/references beyond the knowledge center on how to configure the TLS/SSL portions?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.36,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 84,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The problem is the same Eclipse defect\u202f255268 that causes a\u202fClassNotFoundException for\u202forg.eclipse.core.runtime.adaptor.EclipseStarter.  \nFix it by removing the corrupted user configuration directory and then starting RFT again:\n\n```bash\nrm -rf /home/joe/.eclipse/ibm.software.delivery.platform_7.5.0_1529064711\n# (or the corresponding .eclipse directory for your RFT installation)\n```\n\nAfter deleting the *.eclipse* folder, relaunch RFT\u202f8.2. This clears the bad cache and resolves the launch error.",
+    "pred": {
+      "relevance": 0.2777777777777778,
+      "utilization": 0.2777777777777778,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08866995073891626,
+      "utilization": 0.0049261083743842365,
+      "completeness": 0.05555555555555555,
+      "adherence": 0
+    }
   }
 ]
