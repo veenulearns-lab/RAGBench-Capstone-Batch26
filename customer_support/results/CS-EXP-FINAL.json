@@ -508,5 +508,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 30,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? I tried to export OMNIbus configuration using nco_confpack command and I get the following message:\r\nTool in menu but not found, menu: AlertsMenu, tool: Close\r\nI've also tried using it with -list command and I get the same error. ",
+    "answer": "nco_confpack fails because the menu it is processing (\u202fAlertsMenu\u202f) contains a reference to a tool that no longer exists in the system.  \nWhen the command scans the menu it finds the entry (e.g., **CLEAR_LWY** or **Close**) but cannot locate the corresponding tool definition, so it aborts with the message:\n\n```\nTool in menu but not found, menu: AlertsMenu, tool: \u2026\n```\n\n**Fix** \u2013 recreate the missing tool (or delete the stale entry from the menu) and then re\u2011associate it with the menu. After the tool is present again, rerun the nco_confpack command and the export/list operation will succeed.",
+    "pred": {
+      "relevance": 0.36,
+      "utilization": 0.16,
+      "completeness": 0.4444444444444444,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.01079136690647482,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 31,
+    "question": "What is the latest version of the Log File Agent? What is the latest version of the Log File Agent?",
+    "answer": "The latest version of the Log File Agent mentioned in the context is **Log File Agent\u202fv6.3**.",
+    "pred": {
+      "relevance": 0.6,
+      "utilization": 0.04,
+      "completeness": 0.06666666666666667,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.012295081967213115,
+      "utilization": 0.004098360655737705,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 32,
+    "question": "Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? ",
+    "answer": "The service becomes Vulnerable because the Dataserver does not have a supported amount of memory allocated. Insufficient or incorrectly sized memory can cause the health status to drop after you log into the StoredIQ Application Stack.  \n\nTo resolve it, review the Dataserver\u2019s memory settings and adjust them as needed (e.g., increase the allocated memory to a supported level). After adjusting the memory, the service should remain Healthy.",
+    "pred": {
+      "relevance": 0.1,
+      "utilization": 0.06666666666666667,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.027777777777777776,
+      "utilization": 0.08333333333333333,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 33,
+    "question": "Is using a monitored JBoss server with ITCAM supported in a Windows Service? Is using a monitored JBoss server with ITCAM supported in a Windows Service? ",
+    "answer": "No. Running a monitored JBoss Application Server with the ITCAM for J2EE agent as a Windows service is not supported.",
+    "pred": {
+      "relevance": 0.45,
+      "utilization": 0.1,
+      "completeness": 0.2222222222222222,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08823529411764706,
+      "utilization": 0.058823529411764705,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 34,
+    "question": "How to generate Javacores automatically in on hung threads reported in SystemOut.log for WebSphere Application Server? Need Javacores to be generated on hung threads messages reported in SystemOut.log for WebSphere Applicaiton Server.Example:WSVR0605W: Thread has been active for and may be hung. There are in total in the server that may be hung.",
+    "answer": "To have WebSphere automatically write a javacore when a hung\u2011thread warning (WSVR0605W) appears in **SystemOut.log**, configure the thread\u2011monitor properties that control javacore generation:\n\n1. **Set the dump frequency** \u2013 tell the monitor to write only one javacore per hung thread:  \n\n   ```text\n   -Dcom.ibm.websphere.threadmonitor.dump.java=1\n   ```\n\n2. **(Optional but recommended) limit the \u201ctrack\u201d behavior** \u2013 if the *track* property is left unset it inherits the value of the above property.  To be explicit you can also set:\n\n   ```text\n   -Dcom.ibm.websphere.threadmonitor.dump.java.track=1\n   ```\n\n   (Setting this property to **true** causes continuous dumps every 3\u202fminutes, which quickly fills storage.)\n\nAdd the `-D` options to the JVM arguments of the server (e.g., in the server\u2019s **Java and Process Management \u2192 Process Definition \u2192 Java Virtual Machine** page) and restart the server.  \n\nWith these settings, whenever the hung\u2011thread detector logs a message such as:\n\n```\nWSVR0605W: Thread \"...\" has been active for ... ms and may be hung.\n```\n\nWebSphere will automatically generate a single javacore for that thread, allowing you to analyse the problem without the dump stream filling up the disk.",
+    "pred": {
+      "relevance": 0.43333333333333335,
+      "utilization": 0.4,
+      "completeness": 0.9230769230769231,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04085603112840467,
+      "utilization": 0.011673151750972763,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
   }
 ]
