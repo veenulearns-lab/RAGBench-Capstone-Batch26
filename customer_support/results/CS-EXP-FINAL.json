@@ -1953,5 +1953,90 @@
       "completeness": 0.38461538461538464,
       "adherence": 1
     }
+  },
+  {
+    "idx": 115,
+    "question": "Want to find out if Microsoft Edge is supported with ICC? Want to find out Microsoft Edge is supported with ICC? ",
+    "answer": "Yes. Microsoft Edge is supported with IBM\u202fContent\u202fCollector (ICC) starting with IBM\u202fContent\u202fCollector\u202f4.0.1\u202fFix\u202fPack\u202f2.",
+    "pred": {
+      "relevance": 0.2857142857142857,
+      "utilization": 0.07142857142857142,
+      "completeness": 0.25,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.003989361702127659,
+      "utilization": 0.0026595744680851063,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 116,
+    "question": "What should I do if I observed \"ghost queue building up\" issue? There are lots of ghost queues in the system, which have already took up most of file system space. What can I do under such situation?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3148148148148148,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3315508021390374,
+      "utilization": 0.0855614973262032,
+      "completeness": 0.22580645161290322,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 117,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "The error is caused by the IBM Installation Manager not being able to locate the **zip** files that contain the\u202f*im.properties*\u202fand\u202f*config.registry*\u202fmetadata for the BPM 7.5.1.2 Fix\u202fPack.  \nThe fix is to make sure the Fix\u202fPack repository you point the Installation Manager at actually contains those zip files.  \n\n**What the IBM documentation says**\n\n* \u201cDirectory name\u202f`70033 \u2026`\u202fcontains the following images \u2026  \n  * **Fix\u2011pack image for all operating systems** \u2013 `was.7.0.0.33.fp.all_Part1of2.zip` / `Part2of2.zip`  \n  * **Fix\u2011pack image for a specific operating system** \u2013 e.g. `was.nd.7.0.0.33.fp.win.zip` (Windows) or `was.nd.7.0.0.33.fp.linux.x86.zip` (Linux)  \n\n* \u201cExtract both parts under the same directory, which includes all WebSphere Application Server offerings for all supported operating systems and architectures.\u201d  \n\n* \u201cSliced for specific operating system is much smaller \u2026 It will be faster to download and require less hard\u2011drive space to extract and upgrade the \u2026\u201d\n\n**How to resolve the CRIMC1020E \u201czip \u2026 not found\u201d error**\n\n1. **Download the correct Fix\u202fPack image**  \n   * If you are installing on Windows, download the **Windows\u2011specific** zip (`was.nd.7.0.0.33.fp.win.zip`).  \n   * If you are on Linux, download the **Linux\u2011specific** zip (`was.nd.7.0.0.33.fp.linux.x86.zip`).  \n   * (You can also use the \u201call\u2011OS\u201d image, but the OS\u2011specific image is smaller and guarantees that the required zip files are present.)\n\n2. **Extract the image correctly**  \n   * Unzip the file (or the two parts of the \u201call\u2011OS\u201d image) **into a single directory**.  \n   * Do **not** create a sub\u2011folder for each part; the two parts must be merged so that the repository layout is exactly what the Installation Manager expects.\n\n3. **Point IBM Installation Manager to that directory**  \n   * In Installation Manager, add the directory you just created as a **repository** (or edit the existing repository entry to point to the new location).  \n   * Refresh the repository list so that the manager can see the newly extracted zip files.\n\n4. **Run the Fix\u202fPack installation again**  \n   * The Installation Manager will now locate `im.properties`, `config.registry`, and the other zip files, and the CRIMC1020E messages will disappear.\n\n**Why this works**\n\nThe CRIMC1020E messages (\u201czip\u202fim.properties\u202f\u2026 not found\u201d) occur when the manager looks for a zip that is referenced in the repository metadata but cannot find it on disk. By using the proper OS\u2011specific Fix\u202fPack image and extracting it correctly, the missing zip files become part of the repository, satisfying the manager\u2019s lookup and allowing the BPM 7.5.1.2 Fix\u202fPack to install successfully.",
+    "pred": {
+      "relevance": 0.17391304347826086,
+      "utilization": 0.17391304347826086,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08585858585858586,
+      "utilization": 0.09090909090909091,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 118,
+    "question": "Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license? Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.35,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.019801980198019802,
+      "utilization": 0.01485148514851485,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 119,
+    "question": "res-deploy-xom ant task does not deploy xom based on checksum difference when xom is a .zip extension Question: Is re-naming the WebSphere Portal installation directory and cell name for an existing clustered installation possible? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
