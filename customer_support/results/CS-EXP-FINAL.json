@@ -1698,5 +1698,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 100,
+    "question": "Why are the users unable to login to Web GUI 8.1 after I modify timeout to 2147483647 in security.xml file ? \n\nI followed the Web GUI 8.1 reference guide here to switching off the session timeout\n\nhttp://www-01.ibm.com/support/knowledgecenter/SSSHTQ_8.1.0/com.ibm.netcool_OMNIbus.doc_8.1.0/webtop/wip/task/web_adm_settimeout.html\n\nAfter I edited /config/cells/JazzSMNode01Cell/security.xml file, modified timeout setting to 2147483647, users are not able to login anymore.",
+    "answer": "The users can\u2019t log in because the timeout value you set (2147483647) is far too large for the Web\u202fGUI/DASH components.  \n\n* The timeout parameter in **security.xml** is a WebSphere Application Server setting, but DASH (the Web GUI) uses a JavaScript\u202f`setTimeout` call. When the timeout is set to the maximum 32\u2011bit signed integer (2147483647), the JavaScript timer overflows and a condition is triggered that blocks the login process.  \n\n* As a result, after entering credentials the login page stays \u201cprocessing\u201d and then returns to the login screen, effectively locking all users out.  \n\nSo the users are unable to log in because the excessively large timeout value (2147483647) causes a JavaScript timeout overflow that prevents successful authentication. Use a reasonable timeout value instead.",
+    "pred": {
+      "relevance": 0.5128205128205128,
+      "utilization": 0.5384615384615384,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.024390243902439025,
+      "utilization": 0.024390243902439025,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 101,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? I tried to export OMNIbus configuration using nco_confpack command and I get the following message:\r\nTool in menu but not found, menu: AlertsMenu, tool: Close\r\nI've also tried using it with -list command and I get the same error. ",
+    "answer": "nco_confpack fails because the menu it is processing (e.g., **AlertsMenu**) contains a reference to a tool that no longer exists in the system.  \nWhen the command scans the menu it finds the entry (e.g., **CLEAR_LWY** or **Close**) but cannot locate the corresponding tool definition, so it aborts with the message:\n\n```\nTool in menu but not found, menu: AlertsMenu, tool: <tool\u2011name>\n```\n\n**Fix** \u2013 recreate the missing tool (or delete the stale entry from the menu) and then run the nco_confpack command again.  Once the menu no longer points to a non\u2011existent tool, the export (or list) operation succeeds.",
+    "pred": {
+      "relevance": 0.32,
+      "utilization": 0.16,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.014388489208633094,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 102,
+    "question": "Help with Action required for IIB H.E. V9 & WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nThis is related to CVEIDs:\nCVE-2018-1000001\nCVE-2017-16997\nCVE-2017-1000408\nCVE-2017-1000409\nCVE-2017-17426\n\nWhere can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7142857142857143,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 103,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "**Resolution**\n\n1. Open the WebSphere\u202fApplication\u202fServer administrative console.  \n2. Navigate to **Resources\u202f>\u202fResource environment providers** and select **WP\u202fScriptingService**.  \n3. Open the **Custom properties** tab.  \n4. Locate the property whose **Name** is **ServerExt.applications** and whose **Value** is **com.ibm.wps.scripting.server.ApplicationServerExtensions**.  \n5. **Delete** this entry, **save** the changes, and then **restart** the Portal server.\n\n(If desired, you can also apply the cumulative fix for Portal\u202f8.5.0.0 \u2013 the code fix for this issue is included in the combined cumulative fixes PI31198, PI36060, etc.)",
+    "pred": {
+      "relevance": 0.6521739130434783,
+      "utilization": 0.2608695652173913,
+      "completeness": 0.4,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.13025210084033614,
+      "utilization": 0.13445378151260504,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 104,
+    "question": "What are the files created in $TEMP on startup of IIB or WMB? What are the 0 byte files created in $TEMP/.com_ibm_tools_attach directory upon IBM Integration Bus (IIB) / WebSphere Message Broker (WMB) startup?\nFor example: The following files are created on UNIX / Windows if $TEMP is /tmp:\n/tmp/.com_ibm_tools_attach/_attachlock\n/tmp/.com_ibm_tools_attach/_master\n/tmp/.com_ibm_tools_attach/_notifier",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.23809523809523808,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04918032786885246,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
