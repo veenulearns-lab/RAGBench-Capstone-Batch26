@@ -678,5 +678,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 40,
+    "question": "Problem with Postal database in Parascript  Hi\n\ni am working with Parascript and i have installed successfully in my local system by folloing this guide [ Parascript FieldScript for Taskmaster Guide ]\n\nhere i can able to create vocabulary file, but storing multiple values into this the values are overridden and i do not understand how to create a postal database and access it\n\nis that postal database is separate component ,,?? do we need to get somewhere and install ,,? they just mention in Guide the use of actions only\n\nand does this parascript really helps to get better recognize.",
+    "answer": "The USPS (postal) database is **not** built into the Parascript FieldScript installation itself. It is supplied as a separate data\u2011disk that is packaged with Parascript FieldScript for IBM\u202fDatacap (versions\u202f8.0.1,\u202f8.1.0 and\u202f9.0.0).  \n\n**How to obtain it**\n\n1. Sign in to **Passport Advantage** with your IBM ID (or register for an IBM ID if you do not have one).  \n2. After signing in, select the Parascript FieldScript software you are entitled to download.  \n3. The download package includes the **USPS database data\u2011disk**.  \n\n**What to know about the database**\n\n- The address information on the data\u2011disk is automatically **disabled 105\u202fdays after the date of issue**.  \n- IBM **refreshes the data disk on the 14th day of each month** (or the previous business day). You should regularly download the refreshed disk from Passport Advantage to avoid the disabled\u2011address issue.  \n\n**Purpose**\n\nThe USPS database is used by Parascript FieldScript to improve recognition of postal addresses, so obtaining and keeping it up\u2011to\u2011date does help achieve better recognition results.  \n\nIn short, the postal database is a separate component that you must download from Passport Advantage and keep refreshed on a regular schedule.",
+    "pred": {
+      "relevance": 0.3125,
+      "utilization": 0.3125,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.008968609865470852,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 41,
+    "question": "Jobtask long description How do I modify the JP sheet to include the JOBTASK Long description in the query.  I have tried JOBTASK.DESCRIPTION.DESCRIPTION_LONGDESCRITION and other combinations but they do not seem to work. ",
+    "answer": "Use the **LONGDESCRIPTION** table \u2013 not a direct join to JOBTASK \u2013 to pull the long\u2011description text.  \nThe JP sheet should reference LONGDESCRIPTION with the following criteria:\n\n* **LDOWNERTABLE** = \u2018JOBTASK\u2019  \n* **LDOWNERCOL**   = \u2018DESCRIPTION\u2019  \n* **LDKEY**        = the JOBTASK\u2019s primary key (JOBTASKID)\n\nA typical way to add the long description column to the JP sheet is:\n\n```sql\nSELECT\n    jt.JOBTASKID,\n    jt.DESCRIPTION,\n    ( SELECT LDTEXT\n        FROM LONGDESCRIPTION ld\n        WHERE ld.LDOWNERTABLE = 'JOBTASK'\n          AND ld.LDOWNERCOL   = 'DESCRIPTION'\n          AND ld.LDKEY        = jt.JOBTASKID ) AS DESCRIPTION_LONGDESCRIPTION\nFROM JOBTASK jt\nWHERE jt.JOBPLANID = :jobplanid;\n```\n\n**Key points from the documentation**\n\n* Do **not** use an outer join between JOBTASK and LONGDESCRIPTION.  \n* Retrieve the text via a sub\u2011query (or a separate SELECT) that filters on the three fields above.  \n\nSo, instead of trying `JOBTASK.DESCRIPTION.DESCRIPTION_LONGDESCRIPTION`, add a sub\u2011query (or a view) that selects `LDTEXT` from LONGDESCRIPTION with the conditions shown, and alias it (e.g., `DESCRIPTION_LONGDESCRIPTION`) in your JP sheet. This will return the long description for each job task that has one (e.g., \u201ctask10 LDTEXT\u201d).",
+    "pred": {
+      "relevance": 0.24,
+      "utilization": 0.16,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.037267080745341616,
+      "utilization": 0.043478260869565216,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 42,
+    "question": "Where I can get ITNM 4.2.0.1 GA version download details with Part number?. How to download and install IBM Tivoli Network Manager IP Edition Version 4.2 Fix Pack 1 (GA) using the Passport Advantage Web site?. ",
+    "answer": "**How to download and install IBM\u202fTivoli\u202fNetwork\u202fManager\u202fIP\u202fEdition\u202fVersion\u202f4.2\u202fFix\u202fPack\u202f1 (GA) from the Passport Advantage Web site**\n\n1. Open a browser and go to the IBM Passport Advantage login page:  \n   **https://www.ibm.com/software/howtobuy/passportadvantage/pao_customers.htm**  \n\n2. Log in with your IBM Passport Advantage credentials.\n\n3. After logging in, click **\u201cSoftware download & media access.\u201d**\n\n4. Click **\u201cDownload finder.\u201d**\n\n5. In the Download Finder, select **\u201cFind by \u2026\u201d** (the option to search by product name or part number).\n\n6. Locate **\u201cIBM Tivoli Network Manager IP Edition V4.2\u201d** (the Quick Start Guide is listed in multiple languages; the guide URL is https://www\u201101.ibm.com/support/docview.wss?uid=swg27048605).\n\n7. Choose the download option for **Network Manager\u202f4.2.0.1 for AIX and Linux** (release date\u202f22\u202fSep\u202f2016, English). The download link is the HTTPS address shown in the document.\n\n8. Download the package (the file size is indicated in the document).\n\n9. Once downloaded, unpack the files into a single temporary directory on your system.\n\n10. Follow the installation instructions provided in the **IBM Tivoli Network Manager\u202f3.9 Quick Start Guide** (the same guide format is used for version\u202f4.2). The guide contains the step\u2011by\u2011step installation procedure.\n\n**Part number for ITNM\u202f4.2.0.1\u202fGA**\n\nThe provided context does not list the part number for the ITNM\u202f4.2.0.1 GA version.  \n\n*I don't know.*",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.14285714285714285,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09859154929577464,
+      "utilization": 0.046948356807511735,
+      "completeness": 0.47619047619047616,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 43,
+    "question": "Is there a scripting feature in ITM? Is there a scripting feature in ITM? ",
+    "answer": "Yes. IBM Tivoli Monitoring includes a Custom\u202fScripting feature that lets you run scripts on agents and collect their output (e.g., via the KXX_Custom_Scripts_Rtm_Smp attribute group and the KXXSCRTSM sampled table).",
+    "pred": {
+      "relevance": 0.5384615384615384,
+      "utilization": 0.07692307692307693,
+      "completeness": 0.14285714285714285,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.03305785123966942,
+      "utilization": 0.012396694214876033,
+      "completeness": 0.375,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 44,
+    "question": "What process do i neet to follow to upgrade our SPSS Modeler deployment (concurrent license) from v16 to v18? We have 5 users with SPSS Modeler 16 installed using the Concurrent license manager supplied for that version. We need to upgrade to v18.  Do we need to upgrade the license manager as well? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.1891891891891892,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02459016393442623,
+      "utilization": 0.02459016393442623,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
