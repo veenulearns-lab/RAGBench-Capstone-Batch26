@@ -1528,5 +1528,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 90,
+    "question": "where is the websphere application server 9.0.0.4 fix for developers I am using the was 9.0.0.0 in rad/rsa 9.6.1 for Windows. I cannot upgrade to the 9.0.0.4 fixpack, because there is no developer edition. On the downloadpage there are Base, Network Deployment, DMZ Secure Proxy Server and IBM Web Enablement for IBM i, but no Developers! See link text For was 8.5.5.10 there exists a developers edition. Where can I download the Websphere Application Server fix pack 9.0.0.4 Developers?",
+    "answer": "The 9.0.0.4 fix for the **Developer** edition is no longer a separate \u201cWebSphere\u202fApplication\u202fServer\u202ffor\u202fDevelopers\u201d download.  \nIt is now shipped as **WAS\u202fILAN** (formerly WAS\u202f4D) and can be obtained through IBM\u2019s repository manager.\n\n**How to get it**\n\n1. Open IBM Installation Manager.  \n2. Add the following repository URL:  \n\n```\nhttps://www.ibm.com/software/repositorymanager/com.ibm.websphere.ILAN.v90/\n```\n\n3. In the repository you will find the WAS\u202fILAN 9.0.0.4 fix pack (the same code base that was previously the \u201cDevelopers\u201d edition).  \n4. Install/upgrade from that repository.\n\nSo, the WebSphere\u202fApplication\u202fServer\u202f9.0.0.4 fix for developers is available via the **WAS\u202fILAN v90** repository at the URL above.",
+    "pred": {
+      "relevance": 0.4375,
+      "utilization": 0.125,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07853403141361257,
+      "utilization": 0.005235602094240838,
+      "completeness": 0.06666666666666667,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 91,
+    "question": "MQ jobs and some user jobs are in semaphore wait (SEMW) status After upgrading WMQ on IBM i, MQ jobs and some user jobs are in a semaphore wait (SEMW) status. I've tried to end and restart MQ, performed cold start, delete and rebuild MQ system with no luck. Where do I need to look?\n",
+    "answer": "Check the hostname\u2011related semaphore information.\u202fAfter an upgrade (or a hostname change) MQ may be using a semaphore ID that collides with another program, and the trace\u2011related semaphores can end up stuck in SEMW.\u202fVerify that the directory\u202f`/var/mqm/sockets/@SYSTEM/qmgrlocl`\u202fcontains a sub\u2011directory whose name matches the current system hostname (it is created only at install time), and look for any semaphore\u2011ID clashes with other software on the machine. Resolving the hostname/sem\u2011ID conflict should clear the SEMW condition.",
+    "pred": {
+      "relevance": 0.4074074074074074,
+      "utilization": 0.3333333333333333,
+      "completeness": 0.8181818181818182,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.035269709543568464,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 92,
+    "question": "mqsireportdbparms missing? The mqsireportdbparms command described in the following knowledge center topic is missing from the IIB installation.\nhttp://www-01.ibm.com/support/knowledgecenter/# !/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an09156_.htm (http://www-01.ibm.com/support/knowledgecenter/# %21/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an09156_.htm)",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.10909090909090909,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 93,
+    "question": "Why is MQ pattern showing installed MQ version as 8.0.0.2, instead of 8.0.0.4 when client tries to deploy pattern at the MQ 8.0.0.4 version in PureApplication System? In the pattern, it was clearly showing MQ version 8.0.0.4. After deployment, client checked the MQ version on the Virtual Machine and it shows 8.0.0.2 instead.\n",
+    "answer": "The pattern is not actually installing the 8.0.0.4 fix\u2011pack because of a known limitation in the PureApplication System software.  \n\n* In PureApplication System releases\u202f2.1.2.0,\u202f2.2.0.0 and later, the only MQ version that can be installed by the pattern is **IBM\u202fMQ\u202f8.0.0.2**.  \n* An interface change in those releases causes the \u201cinstall the latest maintenance level\u201d step to fail silently \u2013 the installation appears to succeed, but the subsequent fix\u2011pack (8.0.0.4) is never applied.  \n* Consequently, even though the pattern definition shows version\u202f8.0.0.4, the runtime ends up with the base version\u202f8.0.0.2.  \n\nThis behavior is documented in the tech note (APAR\u202fIT15252) and is why the deployed VM reports MQ\u202f8.0.0.2 instead of the expected\u202f8.0.0.4.",
+    "pred": {
+      "relevance": 0.7307692307692307,
+      "utilization": 0.3076923076923077,
+      "completeness": 0.3684210526315789,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.038348082595870206,
+      "utilization": 0.017699115044247787,
+      "completeness": 0.38461538461538464,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 94,
+    "question": "How to fix XAER_RMFAIL messages in WebSphere Portal's SystemOut.log? SystemOut.log contains various exceptions with caused by statements like:\nCaused by: com.ibm.db2.jcc.am.SqlTransactionRollbackException: DB2 SQL\nError: SQLCODE=-911, SQLSTATE=40001, SQLERRMC=68, DRIVER=4.14.88 \nand: \nCaused by: com.ibm.db2.jcc.am.SqlException: [jcc][t4][2041][11392] [4.14.88] Error executing XAResource.commit(). Server returned XAER_RMFAIL. ERRORCODE=-4203, SQLSTATE=null ",
+    "answer": "The problem is caused by a bug in the DB2 JCC driver.  \nThe fix is to upgrade the driver to the version that contains the fix for the XA\u2011resource errors (XAER_PROTO / XAER_RMFAIL).  \n\n**What the context says to do**\n\n1. **Upgrade the IBM Data Server driver for JDBC\u202f&\u202fSQLJ for DB2** \u2013 install the latest fix\u2011pack (DB2\u202fLUW\u202fV9.7\u202fFix\u202fPack\u202f7).  \n2. The fix is included in APAR\u202fIC82934, which is closed as \u201cfixed\u201d. Applying that fix pack removes the \u201cError executing XAResource\u2026 Server returned XAER_RMFAIL\u201d (ERRORCODE\u202f\u20114203) and the related \u201cSQLCODE\u202f\u2011911\u201d roll\u2011back errors.  \n3. The issue is only seen when the application runs on Oracle\u202fJava; using IBM\u202fJava also avoids the problem, but the proper permanent solution is the driver upgrade.\n\n**In practice**\n\n* Download the V9.7\u202fFP7 driver (or a later version) from IBM Fix Central.  \n* Replace the existing `db2jcc.jar` / `db2jcc4.jar` in the WebSphere Portal classpath with the new JARs.  \n* Restart the WebSphere server (or the Portal application) so the new driver is loaded.  \n\nAfter the driver is upgraded (or IBM Java is used), the XAER_RMFAIL messages disappear from `SystemOut.log`.",
+    "pred": {
+      "relevance": 0.2857142857142857,
+      "utilization": 0.23809523809523808,
+      "completeness": 0.8333333333333334,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006872852233676976,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
