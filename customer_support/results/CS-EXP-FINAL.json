@@ -933,5 +933,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 55,
+    "question": "Help with Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affects IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920) I need to understand details regarding Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affects IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920). Where can I find this information? ",
+    "answer": "You can find the details in the IBM security bulletin that references CVE\u20112015\u20111920, and the full CVE description is available at the following URL:\n\n**CVE\u20112015\u20111920 details:**  \nhttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1920  \n\nThe bulletin also notes that the affected product is **IBM\u202fSOA\u202fPolicy\u202fGateway\u202fPattern for AIX Server version\u202f2.5** and that the recommended remediation is to install **WebSphere Application Server Interim Fix\u202fPI38302** (see the IBM support link for that fix).",
+    "pred": {
+      "relevance": 0.7222222222222222,
+      "utilization": 0.16666666666666666,
+      "completeness": 0.23076923076923078,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07926829268292683,
+      "utilization": 0.07926829268292683,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 56,
+    "question": "I am using persistent messages, but I never got the messages I am using persistent messages, but I never got the messages. How can I determine what happen to the messages?\n",
+    "answer": "The only way to find out why the persistent messages never arrived is to look at what the queue manager actually did with them.  \nAccording to the IBM\u2011MQ technote the symptoms you are seeing occur when a queue contains a mix of persistent and non\u2011persistent messages and the queue manager is **not shut down cleanly** (i.e. not using\u202f`endmqm`). In that situation a checkpoint can fail, the queue\u2019s message chain can be left with a **null head**, and the queue can be truncated \u2013 causing the persistent messages to be lost.\n\nTo determine what happened to your messages you should:\n\n1. **Check the queue\u2011manager shutdown method** \u2013 verify that the queue manager was stopped with `endmqm`. If it was stopped abruptly, the problem described in the note is likely the cause.\n\n2. **Examine the queue state** \u2013 use MQSC commands such as  \n   ```  \n   DISPLAY QSTATUS(<queueName>) ALL  \n   DISPLAY QUEUE(<queueName>) ALL  \n   ```  \n   Look for a **null head of the message chain** or an unexpected depth (e.g., depth\u202f0 when you expect persistent messages).\n\n3. **Review the queue\u2011manager error logs** \u2013 the logs will contain entries about a **failed checkpoint** or a **truncated queue**. Those entries confirm that the persistent messages were discarded during the checkpoint failure.\n\n4. **Check the dead\u2011letter queue** \u2013 if the messages were moved there, the DLQ will contain them and a reason code indicating why they were redirected.\n\n5. **Confirm the mix of message types** \u2013 ensure the queue does not contain both persistent and non\u2011persistent messages when you are relying on checkpoint\u2011driven flushing. The technote notes that this mixture is a prerequisite for the issue.\n\nIf the logs show a checkpoint failure and the queue status shows a null head, you have identified the root cause: the persistent messages were lost because the queue manager was not ended gracefully and the checkpoint could not flush the message chain. The remedy is to always shut down the queue manager with `endmqm` (or use a graceful shutdown) and avoid mixing persistent and non\u2011persistent messages on the same queue when you need reliable delivery.",
+    "pred": {
+      "relevance": 0.4827586206896552,
+      "utilization": 0.4827586206896552,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02029520295202952,
+      "utilization": 0.01845018450184502,
+      "completeness": 0.9090909090909091,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 57,
+    "question": "Suppose I can well describe my problem and my symptoms - what is the best way to find a matching solution or a known code fix (APAR)? Suppose I can well describe my problem and my symptoms - what is the best way to find a matching solution or a known code fix (APAR), in particular if I want to void opening a PMR.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3793103448275862,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09885931558935361,
+      "utilization": 0.07984790874524715,
+      "completeness": 0.8076923076923077,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 58,
+    "question": "Want to find out if Microsoft Edge is supported with ICC? Want to find out Microsoft Edge is supported with ICC? ",
+    "answer": "Yes. Microsoft Edge is supported with IBM\u202fContent\u202fCollector (ICC) starting with IBM\u202fContent\u202fCollector\u202f4.0.1\u202fFix\u202fPack\u202f2.",
+    "pred": {
+      "relevance": 0.2857142857142857,
+      "utilization": 0.07142857142857142,
+      "completeness": 0.25,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0026595744680851063,
+      "utilization": 0.0013297872340425532,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 59,
+    "question": "Subnodes are still present on TEP after unconfiguring SOA DC After unconfiguring the ITCAM for SOA DC via the unconfig.sh script, I can still see SOA subnodes and workspaces on TEP.The Websphere instances were restarted and are no longer collecting data and forwarding to the D4 agent.I have shut down the ITCAM agent and deleted the offline entries for the managed systems, but the subnodes appear back once you restart the ITCAM agent.How can I remove them?",
+    "answer": "**To permanently remove the SOA sub\u2011nodes that keep re\u2011appearing after you have un\u2011configured the SOA DC, follow the procedure that is used for deleting a SOA node entry from the TEPS workspace:**\n\n1. **Stop the SOA Agent** (the ITCAM for SOA/DC agent).  \n2. **Clear the offline entry for each sub\u2011node** you want to delete:  \n   * In the TEPS tree view, right\u2011click (second\u2011mouse\u2011click) the sub\u2011node and choose **\u201cClear offline entry.\u201d**  \n   * If you have more than one sub\u2011node, repeat this step for each one.  \n3. **Edit the KD4.dc.properties file** and remove the corresponding entries for the host/server you just cleared:  \n\n   * Windows: `<ITM_HOME>\\TMAITM6\\KD4\\config\\KD4.dc.properties`  \n   * Unix: `<ITM_HOME>/<platform>/d4/KD4/config/KD4.dc.properties`  \n\n   The lines to delete look similar to the example below (replace `<DP hostname>` with the actual host name you removed):\n\n   ```\n   8.<DP hostname>.monitor=on\n   8.<DP hostname>.log=error\n   8.<DP hostname>.trace=off\n   8.<DP hostname>.control.count=1\n   8.<DP hostname>.control.1=*;*;*;*;*;none\n   8.<DP hostname>.filter.control.count=0\n   ```\n\n4. **Delete the persisted cache directory** that holds the old records:  \n\n   * Windows: `<ITM_HOME>\\TMAITM6\\KD4\\logs\\KD4.DCA.CACHE\\persist`  \n   * Unix: `<ITM_HOME>/<platform>/d4/KD4/logs/KD4.DCA.CACHE/persist`  \n\n   Remove the entire `persist` directory (or its contents).  \n\n5. **Restart the SOA Agent**.  \n\n6. **Verify** in the TEPS view that the unwanted sub\u2011nodes are no longer present.\n\n---\n\n**Alternative one\u2011step clean\u2011up**\n\nIf you prefer to clear all offline managed\u2011system entries in a single command, you can use the `tacmd cleanMS` command:\n\n1. Log in to TEMS: `tacmd login <username> <password>`  \n2. Run: `tacmd cleanMS`  \n\nThis command removes all offline entries at once; the entries will not re\u2011appear until the corresponding applications come back online.\n\n---\n\nBy performing the steps above (or using `tacmd cleanMS`), the SOA sub\u2011nodes and workspaces that keep re\u2011appearing after the un\u2011configuration will be permanently removed from the TEPS workspace.",
+    "pred": {
+      "relevance": 0.5357142857142857,
+      "utilization": 0.4642857142857143,
+      "completeness": 0.8,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.23148148148148148,
+      "utilization": 0.17592592592592593,
+      "completeness": 0.76,
+      "adherence": 1
+    }
   }
 ]
