@@ -2123,5 +2123,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 125,
+    "question": "Is using a monitored JBoss server with ITCAM supported in a Windows Service? Is using a monitored JBoss server with ITCAM supported in a Windows Service? ",
+    "answer": "No. Running a monitored JBoss Application Server with the ITCAM for J2EE agent as a Windows service is not supported.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.05,
+      "completeness": 0.125,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.058823529411764705,
+      "utilization": 0.04411764705882353,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 126,
+    "question": "Netcool/Impact 7.1.0: The StateChange value being used by the OMNIbusEventReader is too high  The value being used is a date and time in the future and as such is preventing the EventReader from capturing the current events. ",
+    "answer": "**Resolution (as described in the TechNote)**  \n\n1. **Identify the offending event(s).**  \n   - Run the same SQL that the EventReader uses, but **remove** the `and StateChange >= <high\u2011value>` clause.  \n   - The rows that are returned are the events whose **StateChange** field has been set to a future date/time.\n\n2. **Correct the StateChange value.**  \n   - In the ObjectServer, update the\u202f`StateChange`\u202ffield of those events to a current (or appropriate) timestamp, e.g.:  \n\n     ```sql\n     UPDATE events\n        SET StateChange = CURRENT_TIMESTAMP\n      WHERE <criteria that selects the future\u2011dated rows>;\n     ```\n\n   - Alternatively, delete the offending event(s) if they are not needed.\n\n3. **Restart the EventReader (or clear its state file).**  \n   - After the StateChange values are fixed, restart the OMNIbusEventReader so it re\u2011reads the correct high\u2011watermark.  \n   - If the reader still uses the old high value, delete or reset its state file (the file that stores the last captured StateChange) and let it rebuild the watermark on start\u2011up.\n\n4. **Verify.**  \n   - Check the EventReader log \u2013 the \u201cnumber of events being captured in each Read\u201d should now be >\u202f0.  \n   - Run the original SQL with the `StateChange >=` clause; it should now return the expected current events.\n\n**Summary** \u2013 A component (probe, trigger, etc.) artificially increased an event\u2019s\u202f`StateChange`\u202fto a future timestamp. The EventReader then used that future value as its high\u2011watermark, causing it to miss all current events. Fix the problem by locating the future\u2011dated events, resetting their\u202f`StateChange`\u202fto a valid time (or deleting them), and restarting/clearing the EventReader\u2019s state so it can resume normal processing.",
+    "pred": {
+      "relevance": 0.55,
+      "utilization": 0.55,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06231454005934718,
+      "utilization": 0.06231454005934718,
+      "completeness": 0.9523809523809523,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 127,
+    "question": "Is ITCAM for J2EE 7.1.1 agent supported on RHEL7.x? \n\nWhen I try to install IBM Tivoli Composite Application Manager Agent for J2EE V7.1.1.0,Linux on x86, English (CN0PKEN) on RHEL 7.2 64-bits\n\nI am getting the following error message:\n\ninstall.sh failure: KCI1138E could not determine the machine's architecture.\n\nIs ITCAM for J2EE 7.1.1 supported on RHEL7?\n",
+    "answer": "Yes.\u202fAs of\u202f4Q\u202f2015, Red\u202fHat\u202fEnterprise\u202fLinux\u202f7\u202f(64\u2011bit) is certified for use with ITCAM for J2EE\u202fv7.1.1.0.1 and later versions. (The earlier v7.1.1.0 release may not be recognized correctly, so use v7.1.1.0.1 or a higher build.)",
+    "pred": {
+      "relevance": 0.2,
+      "utilization": 0.06666666666666667,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05263157894736842,
+      "utilization": 0.02631578947368421,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 128,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes.\u202fIBM provides a **Support\u2019s Guide to IBM\u202fCORBA probes**.  \nYou can download it from the IBM support site, e.g.:\n\n- **Main guide page:**  \n  `http://www-01.ibm.com/support/docview.wss?uid=swg21614208`\n\n- **Direct PDF links (for version\u202f20):**  \n  `\u2026/docview.wss?uid=swg21614208&aid=1`  (GENERIC_CORBA_SupportsGuide_20.pdf)  \n  `\u2026/docview.wss?uid=swg21614208&aid=2`  (GENERIC_CORBA_SupportsGuide_20.pdf)  \n\nThese links give you the downloadable support guide for the IBM CORBA probes.",
+    "pred": {
+      "relevance": 0.35714285714285715,
+      "utilization": 0.21428571428571427,
+      "completeness": 0.6,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.031914893617021274,
+      "utilization": 0.02127659574468085,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 129,
+    "question": "Does the BPM internal Document Store work with IBM DB2 pureScale? I use IBM DB2 pureScale with my BPM installation. During startup of the server and initialization of the internal document store I see hanging threads in the systemOut.log and the process will not finish. How can this be solved? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6538461538461539,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.23595505617977527,
+      "utilization": 0.0449438202247191,
+      "completeness": 0.19047619047619047,
+      "adherence": 0
+    }
   }
 ]
