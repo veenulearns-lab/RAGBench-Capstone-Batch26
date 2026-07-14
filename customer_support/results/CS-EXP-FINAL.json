@@ -1018,5 +1018,90 @@
       "completeness": 0.76,
       "adherence": 1
     }
+  },
+  {
+    "idx": 60,
+    "question": "Help with Security Bulletin: WMB and IIB Toolkit cannot connect to a remote WMB broker or IIB node with a TLS-compliant cipher (CVE-2015-0118) I need to understand details regarding Security Bulletin: WebSphere Message Broker Toolkit and IBM Integration Toolkit cannot connect to a remote WebSphere Message Broker broker or IBM Integration Bus node with a TLS-compliant cipher (CVE-2015-0118). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5789473684210527,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.07222222222222222,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 61,
+    "question": "Executing a scenario suite with a Scenario Service Provider (SSP) over HTTPS How to configure the machines hosting the WebSphere Operational Decision Management modules with regard to HTTPS when executing scenario suites ?\nHow to avoid the exception below while requesting from Decision Center the execution of a scenario suite on Scenario Service Provider (SSP) over HTTPS ?\n Exception caught while contacting RES ilog.rules.res.util.http.IlrConnectionException: IO error when contacting \"/res/repositoryService\"\n ....\n Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.g: PKIX path building failed: java.security.cert.CertPathBuilderException: unable to find valid certification path to requested target",
+    "answer": "The problem is caused by the SSL context being created with the **default** SSL configuration, which does not contain the certificate of the Scenario Service Provider (SSP).  \nTo avoid the \u201cPKIX path building failed \u2026 unable to find valid certification path to requested target\u201d error you must configure the WebSphere\u202fOD\u202fM machines so that the correct trust store is loaded **before** any HTTPS call to the SSP is made.\n\n**What has to be done (as described in the IBM fix):**\n\n1. **Import the SSP certificate (or the CA that signed it) into the trust store** that will be used by Decision\u202fCenter/Scenario\u202fService\u202fProvider.  \n2. **Set the system SSL properties early enough** (e.g. in the start\u2011up script or the StartHandler) so that the JVM picks up the proper trust store when the HTTPS connection is created.  \n   - Typical properties are:  \n     ```\n     -Djavax.net.ssl.trustStore=<path\u2011to\u2011truststore>\n     -Djavax.net.ssl.trustStorePassword=<password>\n     ```\n3. Restart the affected servers (Decision\u202fCenter, SSP, and any collective members) so that the new SSL configuration is applied.  \n4. The IBM APAR\u202fIC91195 (WSDATAPOWER\u202fXC1) already contains a correction that moves the SSL\u2011property initialization to the earliest point in the start\u2011up sequence; applying that fix (or the corresponding iFix) guarantees the properties are set before the connection attempt.\n\n**Result** \u2013 With the correct trust store loaded at start\u2011up, the SSL handshake succeeds and the scenario suite can be executed over HTTPS without the PKIX path\u2011building exception.",
+    "pred": {
+      "relevance": 0.5454545454545454,
+      "utilization": 0.5454545454545454,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02570694087403599,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 62,
+    "question": "Help with Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IIB and WMB (CVE-2015-0138) I need to understand details regarding Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker (CVE-2015-0138). This is also commonly referenced as \u201cFREAK: Factoring Attack on RSA-EXPORT keys\" TLS/SSL client and server vulnerability. Where can I find this information? ",
+    "answer": "You can find the full details in IBM\u2019s own security\u2011bulletin pages, for example:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21695474  \n* **Security Bulletin: Vulnerability with RSA Export Keys may affect IBM WebSphere Application Server (CVE\u20112015\u20110138)** \u2013\u202fhttp://www.ibm.com/support/docview.wss?uid=swg21698613  \n* **Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect WebSphere Application Server January\u00a02015 CPU** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21695362  \n\nAdditional reference sites that list these bulletins are:\n\n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/PSIRT  \n\nThese links contain the \u201cFREAK: Factoring Attack on RSA\u2011EXPORT keys\u201d (CVE\u20112015\u20110138) information for IBM Integration Bus and WebSphere Message Broker.",
+    "pred": {
+      "relevance": 0.9166666666666666,
+      "utilization": 0.25,
+      "completeness": 0.2727272727272727,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.16033755274261605,
+      "utilization": 0.09282700421940929,
+      "completeness": 0.5789473684210527,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 63,
+    "question": "I need to move my perpetual license of SPSS v24 to my new machine. I have my authorization code first given to me, but since we did not renew our support contract we can't seem to download the software. I was originally told that I could download the trial version and it would have the authorization wizard where I could input the code and move forward. But the only downloadable version is subscription version with no authorization wizard. How do I move forward? ",
+    "answer": "You need to obtain the **full SPSS\u202fStatistics\u202f24** (perpetual) installer \u2013 the trial/subscription download does not contain the License Authorization Wizard that is required for a perpetual license.  \n\n1. **Download the correct installer**  \n   * Use the IBM download page for the version you own (Statistics\u202f24).  \n   * If you cannot see the full installer because your support contract has expired, request the permanent installer from IBM (e.g., via the Licensing forum or by contacting IBM support) and provide your **authorization code**.\n\n2. **Install the product** on the new machine using the installer you obtained.\n\n3. **Run the License Authorization Wizard** (the steps are the same on Windows and macOS):  \n\n   * Windows \u2013 open the *IBM\u202fSPSS* \u2192 *Statistics* \u2192 *24* folder and launch **License Authorization Wizard**.  \n   * macOS \u2013 Finder \u2192 *Applications* \u2192 *IBM* \u2192 *SPSS* \u2192 *Statistics* \u2192 *24* \u2192 **License Authorization Wizard**.  \n\n4. In the wizard:  \n\n   * Choose **\u201cLicense my product now.\u201d**  \n   * Click **Next** \u2013 the lower\u2011left pane will display **\u201cLock Code for this machine is \u2026\u201d**. Note this lock code.  \n   * Click **Cancel**, then **Yes** to close the wizard.\n\n5. **Obtain a license code** using the lock code and your **authorization code**:  \n\n   * Return to the License Authorization Wizard (or use the web/phone/email licensing portal).  \n   * Enter the **authorization code** when prompted and let the wizard contact IBM (or call/email IBM) to generate a **license code** for your machine.  \n\n6. **Enter the license code** in the wizard to activate the product.\n\n**Additional notes from the context**\n\n* On non\u2011Windows platforms you must be logged in as **root** before running the wizard.  \n* The detailed licensing steps for each version are documented in the \u201cLicensing your product\u201d sections of the IBM installation guides (e.g., for Statistics\u202f24 see the Authorized User License Installation Instructions).  \n\nIf you still cannot obtain the full installer, open a ticket on the **IBM Licensing forum** (https://developer.ibm.com/answers/topics/spsslicensing.html) and provide your authorization code; IBM can supply the proper perpetual\u2011license installer.",
+    "pred": {
+      "relevance": 0.7407407407407407,
+      "utilization": 0.6851851851851852,
+      "completeness": 0.775,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06802721088435375,
+      "utilization": 0.04081632653061224,
+      "completeness": 0.6,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 64,
+    "question": "How to install Packaging utility? How to install Packaging utility? ",
+    "answer": "**Installation steps (as described in the provided context)**  \n\n1. **Obtain the installer package**  \n   * Download the platform\u2011specific installer zip file named  \n     `pu.offering.disk.<platform>_<version>.zip` (e.g., for Linux\u202fx86\u201164).  \n   * This zip contains the files for **one** operating\u2011system platform and includes both the **Packaging Utility** and **IBM Installation Manager**.\n\n2. **Run the install command**  \n   * Unzip the package.  \n   * From a command line, execute the Installation Manager install command (the \u201cinstall command\u201d referenced in the context).  \n   * This command installs both Installation Manager and the Packaging Utility in one step.\n\n3. **(Alternative) Install via Installation Manager wizard**  \n   * After the zip is downloaded, you can add it as a repository in Installation Manager:  \n     * Open Installation Manager \u2192 **Repositories** \u2192 **Add Repository**.  \n     * Browse to the extracted directory (or to a `repository.config` file such as `C:\\temp\\pu\\updates\\repository.config`).  \n   * In the Installation Manager start page, choose **Install Packages**, select **IBM Packaging Utility**, and follow the wizard pages.\n\n4. **(Alternative) Install via console mode or imcl commands**  \n   * Use the console\u2011mode installation topics or the `imcl` command\u2011line syntax referenced in the Knowledge Center links (e.g., `t_pu_console_install.html` or `t_pu_install_imcl.html`).  \n   * The same repository (the extracted zip) is specified in the command.\n\n5. **Post\u2011install \u2013 Updating (optional)**  \n   * If you later need to update, add the fix\u2011pack zip (`pu.update_<version>.zip`) as a repository and run **Update Packages** in Installation Manager, or use the console/imcl update commands.\n\n**Summary** \u2013 Download the platform\u2011specific `pu.offering.disk` zip, unzip it, and either run the Installation Manager install command, use the Installation Manager wizard (adding the extracted repository first), or invoke the console/imcl install commands. This installs both Installation Manager and the Packaging Utility.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.6666666666666666,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07009345794392523,
+      "utilization": 0.04672897196261682,
+      "completeness": 0.5333333333333333,
+      "adherence": 1
+    }
   }
 ]
