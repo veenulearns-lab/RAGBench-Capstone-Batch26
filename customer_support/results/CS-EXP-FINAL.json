@@ -1273,5 +1273,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 75,
+    "question": "What should I do if I observed \"ghost queue building up\" issue? There are lots of ghost queues in the system, which have already took up most of file system space. What can I do under such situation?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3148148148148148,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3315508021390374,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 76,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the details in IBM\u2019s security\u2011bulletin resources that are listed in the document:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21997194  \n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure\u2011engineering/bulletins.html  \n* **IBM Product Security Incident Response (PSIRT) Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt  \n\nThese pages contain the full security\u2011bulletin information for the IBM Java Runtime vulnerabilities (including CVE\u20112016\u20115546, CVE\u20112016\u20115548, CVE\u20112016\u20115549, CVE\u20112016\u20115547, CVE\u20112016\u20112183, CVE\u20112017\u20113511) that affect API\u202fConnect.",
+    "pred": {
+      "relevance": 0.9047619047619048,
+      "utilization": 0.047619047619047616,
+      "completeness": 0.05263157894736842,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.5304054054054054,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 77,
+    "question": "How to change the maximum string length for properties in FileNet Administration Console for Content Engine (ACCE) I am trying to change the maximum string length in ACCE like we do in FileNet Enterprise Manager, but in the more Tab, I am not seeing the option. In this case, how can I change it? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7586206896551724,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08187134502923976,
+      "utilization": 0.04678362573099415,
+      "completeness": 0.5714285714285714,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 78,
+    "question": "TLS protocol with ITCAM for Datapower We have a DataPower appliance with TLS security protocol enabled. Can we configure ITCAM for DataPower appliance v7.1 to specifically use the TLS protocol v1.2 (not v1.0)?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5172413793103449,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06363636363636363,
+      "utilization": 0.03636363636363636,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 79,
+    "question": "What version / level of Java JRE and GSKit is included with each WebSphere MQ version? What version / level of Java JRE and GSKit is included with WebSphere MQ? for each MQ version? ",
+    "answer": "**Java\u202fJRE versions included with the different WebSphere\u202fMQ releases (as given in the context)**  \n\n| WebSphere\u202fMQ version | Java\u202fJRE level (per platform) |\n|----------------------|--------------------------------|\n| **MQ\u202f7.0** | Java\u202f5.0\u202fService\u202fRefresh\u202f16\u202fFix\u202fPack\u202f8 (SR16\u2011FP8) |\n| **MQ\u202f7.1\u202f&\u202f7.5** | Java\u202f6.0\u202fSR16\u2011FP26 (or SR16\u2011FP25 for some Solaris platforms) \u2013 the exact level per platform is: <br>\u2022 AIX \u2013 6.0\u202f(SR16\u2011FP26) <br>\u2022 HP\u2011UX\u202fIA32 \u2013 6.0\u202f(SR16\u2011FP22) <br>\u2022 HP\u2011UX\u202fIA64 \u2013 6.0\u202f(SR16\u2011FP22) <br>\u2022 Linux\u202fx86\u201132 \u2013 6.0\u202f(SR16\u2011FP26) <br>\u2022 Linux\u202fx86\u201164 \u2013 6.0\u202f(SR16\u2011FP26) <br>\u2022 Linux\u202fPPC64 \u2013 6.0\u202f(SR16\u2011FP26) <br>\u2022 zLinux \u2013 6.0\u202f(SR16\u2011FP26) <br>\u2022 Solaris\u202fx86\u201164 \u2013 6.0\u202f(SR16\u2011FP25) <br>\u2022 Solaris\u202fSPARC \u2013 6.0\u202f(SR16\u2011FP25) <br>\u2022 Windows \u2013 6.0\u202f(SR16\u2011FP26) |\n| **MQ\u202f8.0** | Java\u202f7.x \u2013 either Java\u202f7.1\u202fSR3\u2011FP40 (7.1.3.40) or Java\u202f7.0\u202fSR9\u2011FP40 (7.0.9.40) depending on the platform: <br>\u2022 AIX \u2013 7.1\u202f(SR3\u2011FP40) <br>\u2022 HP\u2011UX\u202fIA32 \u2013 7.0\u202f(SR9\u2011FP32) <br>\u2022 HP\u2011UX\u202fIA64 \u2013 7.0\u202f(SR9\u2011FP32) <br>\u2022 Linux\u202fx86\u201132 \u2013 7.1\u202f(SR3\u2011FP40) <br>\u2022 Linux\u202fx86\u201164 \u2013 7.1\u202f(SR3\u2011FP40) <br>\u2022 Linux\u202fPPC64LE \u2013 7.1\u202f(SR3\u2011FP40) <br>\u2022 zLinux \u2013 7.1\u202f(SR3\u2011FP40) <br>\u2022 Solaris\u202fx86\u201164 \u2013 7.0\u202f(SR9\u2011FP40) <br>\u2022 Solaris\u202fSPARC \u2013 7.0\u202f(SR9\u2011FP40) <br>\u2022 Windows\u202f32\u2011bit \u2013 7.1\u202f(SR3\u2011FP40) <br>\u2022 Windows\u202f64\u2011bit \u2013 7.1\u202f(SR3\u2011FP40) |\n\n**GSKit version**\n\nThe provided context mentions that the embedded JRE is used by the \u201cGSKit graphical interface,\u201d but it does **not** specify the GSKit version or level that is bundled with any WebSphere\u202fMQ release.\n\n**Answer**\n\n- The Java\u202fJRE levels for MQ\u202f7.0,\u202f7.1/7.5, and\u202f8.0 are listed above.  \n- The GSKit version/level is not given in the supplied context.  \n\nI don't know.",
+    "pred": {
+      "relevance": 0.7272727272727273,
+      "utilization": 0.2727272727272727,
+      "completeness": 0.375,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07424593967517401,
+      "utilization": 0.03480278422273782,
+      "completeness": 0.4375,
+      "adherence": 1
+    }
   }
 ]
