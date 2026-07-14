@@ -2038,5 +2038,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 120,
+    "question": "Cognos Analytics - Images not displayed in PDF/Excel, working in HTML I've just completed an upgrade to Cognos Analytics 11.0.3. When running existing reports in HTML, the images are displayed but when I try to run them in PDF/Excel they are not. ",
+    "answer": "**Solution**\n\nThe problem is caused by the Cognos server being unable to read the image files when it renders PDF or Excel output.  \nFix it by making sure the image files are reachable by the Cognos application tier:\n\n1. **Check IIS authentication**  \n   * Open IIS\u202f7.5.  \n   * Select the root folder of the Cognos installation (e.g., *C1021GA*).  \n   * Double\u2011click **Authentication** and be sure **Anonymous Access** is enabled.  \n   * Do the same for the folder that contains the images and for its parent folder.\n\n2. **Verify folder permissions**  \n   * The folder that holds the images must have read permission for the account under which the Cognos services run.  \n   * If the folder is not the one specified in the report, move the image files to the correct directory (e.g., `<cognos\u2011install>/webcontent/samples/images/`).\n\n3. **If SSL is used**  \n   * Ensure the full SSL certificate chain is imported into the IBM Cognos keystore, otherwise the application tier cannot retrieve the image over HTTPS.\n\n4. **Retest**  \n   * Run the report again and export to **Excel\u202f2007** or **PDF**. The images should now appear.\n\nThese steps resolve the \u201cimage not displayed in PDF/Excel but works in HTML\u201d issue.",
+    "pred": {
+      "relevance": 0.44,
+      "utilization": 0.46,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.2823529411764706,
+      "utilization": 0.047058823529411764,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 121,
+    "question": "Executing a scenario suite with a Scenario Service Provider (SSP) over HTTPS How to configure the machines hosting the WebSphere Operational Decision Management modules with regard to HTTPS when executing scenario suites ?\nHow to avoid the exception below while requesting from Decision Center the execution of a scenario suite on Scenario Service Provider (SSP) over HTTPS ?\n Exception caught while contacting RES ilog.rules.res.util.http.IlrConnectionException: IO error when contacting \"/res/repositoryService\"\n ....\n Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.g: PKIX path building failed: java.security.cert.CertPathBuilderException: unable to find valid certification path to requested target",
+    "answer": "**Solution \u2013 configure the SSL trust material before the SSP call is made**\n\nThe \u201cPKIX path building failed\u201d error is caused by the client (Decision\u202fCenter) not being able to locate a trusted certificate for the HTTPS endpoint of the Scenario Service Provider (SSP).  \nAll of the IBM\u2011provided fixes for the same symptom (xsa.admin, collective members, Liberty\u2011profile apps) use the same remedy:\n\n1. **Import the SSP certificate (or the CA that signed it) into the trust store that the Decision\u202fCenter JVM uses.**  \n   * `keytool -import -alias ssp\u2011cert -file <ssp\u2011cert.pem> -keystore <truststore.jks>`  \n\n2. **Make the trust\u2011store available to the JVM *before* any HTTPS connection is created.**  \n   * Add the system properties to the server start\u2011up (or to the `jvm.options` file):  \n     ```\n     -Djavax.net.ssl.trustStore=/path/to/truststore.jks\n     -Djavax.net.ssl.trustStorePassword=********\n     ```  \n   * In Liberty this can also be done in `server.xml` with an `<ssl>` element that points to the same keystore/truststore.\n\n3. **Ensure the SSL context is created early enough.**  \n   The APAR\u202fIC91195 fix shows that the *StartHandler* was changed to set the SSL properties early in the start\u2011up sequence.  \n   For Decision\u202fCenter/SSP you must do the equivalent \u2013 set the above system properties in the JVM launch script (or in the `bootstrap.properties` of the Liberty server) so that the default `SSLContext` is built with the correct trust store before any `HttpsURLConnection` is opened.\n\n4. **Restart the server after the changes.**  \n   The new trust store will be used for all subsequent HTTPS calls, and the PKIX path can be built successfully.\n\n---\n\n### What to configure on each machine that hosts an ODM module (Decision\u202fCenter, Decision\u202fServer, SSP)\n\n| Machine | Action |\n|---------|--------|\n| **Decision\u202fCenter** (client) | Import the SSP certificate into the trust store used by the Decision\u202fCenter JVM and set `javax.net.ssl.trustStore`/`trustStorePassword` as JVM arguments (or Liberty `<ssl>` config). |\n| **Scenario Service Provider (SSP)** | Ensure its HTTPS listener presents a certificate that is signed by a CA present in the Decision\u202fCenter trust store (or use a self\u2011signed cert that you import as above). |\n| **Any collective / Liberty profile member** | Do **not** rely on the default SSL configuration. Explicitly configure an SSL configuration (or set the system properties) so that the default `SSLContext` is built with the correct trust material, exactly as the corrected *StartHandler* does. |\n\n---\n\n### Result\n\nWhen the trust store containing the SSP\u2019s certificate (or its signing CA) is correctly referenced **before** the HTTPS connection is created, the JVM can build a valid certification path and the `javax.net.ssl.SSLHandshakeException: PKIX path building failed` disappears. The scenario suite can then be executed over HTTPS without error.",
+    "pred": {
+      "relevance": 0.6818181818181818,
+      "utilization": 0.2727272727272727,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.028277634961439587,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 122,
+    "question": "Help with Security Bulletin: IIB is affected by Node.js security vulnerability ( CVE-2017-1000381 and CVE-2017-11499 ) I need to understand details regarding Security Bulletin: IBM Integration Bus is affected by Node.js security vulnerability ( CVE-2017-1000381 and CVE-2017-11499 ). Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6521739130434783,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.02336448598130841,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.2,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 123,
+    "question": "What are the files created in $TEMP on startup of IIB or WMB? What are the 0 byte files created in $TEMP/.com_ibm_tools_attach directory upon IBM Integration Bus (IIB) / WebSphere Message Broker (WMB) startup?\nFor example: The following files are created on UNIX / Windows if $TEMP is /tmp:\n/tmp/.com_ibm_tools_attach/_attachlock\n/tmp/.com_ibm_tools_attach/_master\n/tmp/.com_ibm_tools_attach/_notifier",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5238095238095238,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09289617486338798,
+      "utilization": 0.11475409836065574,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 124,
+    "question": "Port number error starting 9.0 Launcher \n\nI'm attempting to start up v9.0 for the first time with one .msl file on a Windows server and get the following error.  I also have v8.4 on this server and it starts fine.  I do not have v8.4 running when I attempt to start v9.0.\n\nCannot recognize if the system RecordChangeSystem.msl; has started. Reason: Server is unable to get the status of the system on port number 6,002.\n\nI have the port range set to 7000/8000.  Why am I seeing this?  ",
+    "answer": "The server is trying to contact the system on **port\u202f6002**, which is outside of the 7000\u20118000 block you configured and is already being used (or reserved) on the machine. WebSphere checks the whole port block (starting port\u202f+\u202f20) and will fail if any port in that range is in use. Because 6002 is already occupied, the launcher cannot get the system status and reports the error.\n\n**What to do**\n\n1. Verify that none of the ports in the block you intend to use are already in use (you can use the Profile Port Checker tool for this).  \n2. Choose a different starting port (or a different port range) that does not include any ports that are currently bound, and update the \u201cFirst port in range\u201d field accordingly.  \n3. Restart the server with the new port range.\n\nIn short, the error appears because port\u202f6002 is already in use (or otherwise unavailable), so you need to select a new, conflict\u2011free port range.",
+    "pred": {
+      "relevance": 0.3333333333333333,
+      "utilization": 0.3333333333333333,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
