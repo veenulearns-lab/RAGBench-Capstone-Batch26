@@ -848,5 +848,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 50,
+    "question": "Help with Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730) I need to understand details regarding \"Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730)\". Where can I find this information? ",
+    "answer": "You can find the full security\u2011bulletin details on IBM\u2019s security sites.  The bulletin is published on:\n\n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt  \n* The specific \u201cSecurity Access Manager for Web Security Bulletin (CVE\u20112014\u20118730)\u201d page \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21692802  \n\nYou can also subscribe for future alerts (including this bulletin) via IBM\u2019s e\u2011Info notification service:\u202fhttp://www-01.ibm.com/software/support/einfo.html.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.1111111111111111,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.11428571428571428,
+      "utilization": 0.11428571428571428,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 51,
+    "question": "Error #2070 I purchased the SPSS grad pack and put one of the licenses on one computer and another on this one. This computer crashed and I was forced to reformat the hard drive. Subsequently, I lost SPSS in the process.  I am now reinstalling with the single user copy option.\n\nThe error it gave me now when I attempted to authorize the program with the original authorization number I received was:\n\nAuthorization in progress ... (removed) Authorization failed.: You are not allowed to generate any more new licenses. End Of Transaction. All permitted authorizations for the provided authorization code(s) have been utilized. No additional authorizations are permitted on this code. If you think this is an error, please contact IBM Corp. Customer Service at spssls@us.ibm.com ( http://www-01.ibm.com/software/analytics/spss ) with your product and purchase details. Click \"Finish\" to exit.",
+    "answer": "The message means that the authorization code you are trying to use has already been used for the maximum number of licenses allowed.  \nTo resolve it you need to contact IBM\u202fSPSS Customer Service (email\u202fspssls@us.ibm.com) and provide your product and purchase details. They can verify the code, confirm that it is for the correct product, and issue a new authorization or otherwise unlock the code for you.",
+    "pred": {
+      "relevance": 0.425,
+      "utilization": 0.125,
+      "completeness": 0.29411764705882354,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.087248322147651,
+      "utilization": 0.006711409395973154,
+      "completeness": 0.07692307692307693,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 52,
+    "question": "Can I change the UUID value on the Messaging Engine? After dropping the SIB object, a new UUID value was generated for the new SIB object. However, the messaging application points to the old UUID value.\nIs it possible to change the new UUID value back to the old value?",
+    "answer": "No. The UUID of a messaging engine cannot be changed back to a previous value. If the UUIDs become mismatched (for example after dropping and recreating the SIB object), the only supported remedy is to delete the existing file\u2011store files (log, temporary and permanent) for that messaging engine and restart the JVM. This forces the creation of a new file store with the new UUID, but all messages in the old file store will be lost.",
+    "pred": {
+      "relevance": 0.3888888888888889,
+      "utilization": 0.2777777777777778,
+      "completeness": 0.7142857142857143,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.057777777777777775,
+      "utilization": 0.02666666666666667,
+      "completeness": 0.46153846153846156,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 53,
+    "question": "Can I perform a silent install of fix packs for IIB or WMB Toolkit? How do I perform a silent install of fix packs for IBM Integration Bus (IIB) or WebSphere Message Broker (WMB) Toolkit?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 54,
+    "question": "Is Java 7 supported for BPM? What versions of BPM, if any,  support Java 7?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.15384615384615385,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018140589569160998,
+      "utilization": 0.018140589569160998,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
