@@ -1613,5 +1613,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 95,
+    "question": "Which version of the WebSphere MQ Resource Adapter is shipped with  WebSphere Application Server? Which version of WebSphere MQ JCA resource adapter is shipped with WebSphere Application Server ? ",
+    "answer": "**WebSphere MQ Resource Adapter shipped with WebSphere Application Server**\n\n| WebSphere Application Server version | WebSphere\u202fMQ Resource Adapter version shipped |\n|--------------------------------------|----------------------------------------------|\n| WAS\u202f7 (and WAS\u202f8)                     | **WebSphere\u202fMQ\u202f7.0** resource adapter |\n| WAS\u202f8.5                               | **WebSphere\u202fMQ\u202f7.1** resource adapter |\n\n**WebSphere MQ JCA (J2EE Connector Architecture) resource adapter shipped with WebSphere Application Server**\n\nAll of the above adapters are JCA\u202fV1.5 adapters \u2013 i.e., the WebSphere\u202fMQ resource adapter implements the **J2EE Connector Architecture version\u202f1.5** specification.",
+    "pred": {
+      "relevance": 0.7777777777777778,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.040740740740740744,
+      "utilization": 0.06296296296296296,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 96,
+    "question": "Help with vulnerability have been identified in WebSphere Application Server shipped with WSRR I need to understand details regarding Multiple vulnerabilities have been identified in WebSphere Application Server shipped with WebSphere Service Registry and Repository (CVE-2017-1583). Where can I find this information? ",
+    "answer": "You can find the details in the IBM security bulletin that covers the multiple vulnerabilities in WebSphere Application Server shipped with WebSphere Service Registry and\u202fRepository.  See the bulletin at:\n\n**http://www.ibm.com/support/docview.wss?uid=swg22008707**\n\n(That bulletin lists the vulnerabilities\u2014including CVE\u20112017\u20111583\u2014and provides information about the fixes.)",
+    "pred": {
+      "relevance": 0.5555555555555556,
+      "utilization": 0.1111111111111111,
+      "completeness": 0.2,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.025906735751295335,
+      "utilization": 0.025906735751295335,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 97,
+    "question": "Why is the file db2jcc.jar missing after an upgrade to BPM V8.5.7 CF2016.12? After upgrading to IBM Business Process Manager V8.5.7 Cumulative Fix 2016.12, I have encountered several JDBC related exceptions during my process application development. It seems that the file db2jcc.jar was removed during the installation of the cumulative fix pack. What happened? ",
+    "answer": "The\u202fdb2jcc.jar file is no longer shipped with BPM\u202fV8.5.7\u202fCF\u202f2016.12 because that cumulative fix marks a number of components as **deprecated and removed**. The DB2 JDBC driver was one of the items that IBM removed in this fix pack, so after installing the 2016.12 cumulative fix the jar is no longer present, which leads to the JDBC\u2011related exceptions you are seeing. To resolve the issue you must supply the driver yourself (or use the newer driver that IBM now supports) because it is no longer included in the product distribution.",
+    "pred": {
+      "relevance": 0.4444444444444444,
+      "utilization": 0.037037037037037035,
+      "completeness": 0.08333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04610951008645533,
+      "utilization": 0.025936599423631124,
+      "completeness": 0.5625,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 98,
+    "question": "I need to transfer my SPSS 24 licence to a new computer I need to transfer my SPSS 24 license to a new machine. I have only used my activation code on one computer so far, and that computer was found to be defective which has led me to get a new computer. I was able to download SPSS 24 Gradpack onto the new computer, but every time I put in the activation code, the program gives me an error message saying that I am not allowed to generate any new licenses.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2549019607843137,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05426356589147287,
+      "utilization": 0.05426356589147287,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 99,
+    "question": "Must the TOKEN_SEPARATOR value be enclosed in quotes for the custom scripting feature? Must the TOKEN_SEPARATOR value be enclosed in quotes for the custom scripting feature?",
+    "answer": "No. The documentation does not require the\u202fTOKEN_SEPARATOR\u202fvalue to be enclosed in quotes.",
+    "pred": {
+      "relevance": 0.13043478260869565,
+      "utilization": 0.13043478260869565,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0030534351145038168,
+      "utilization": 0.0030534351145038168,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
