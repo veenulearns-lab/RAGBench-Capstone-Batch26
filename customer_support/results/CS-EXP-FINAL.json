@@ -83,5 +83,90 @@
       "completeness": 0.3333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 5,
+    "question": "BPM AppTarget startup hangs during startup \n\nDuring startup of the apptarget, JVM hangs with the following messages\n\n[9/8/14 14:11:01:709 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 10 minutes. [9/8/14 14:11:32:810 CDT] 00000022 ThreadMonitor W WSVR0605W: Thread \"server.startup : 0\" (0000001f) has been active for 654582 milliseconds and may be hung. There is/are 1 thread(s) in total in the server that may be hung. at java.lang.Thread.sleep(Native Method) at java.lang.Thread.sleep(Thread.java:896) at com.lombardisoftware.server.core.GroupCore.getAllGroups(GroupCore.java:545) at com.lombardisoftware.server.ejb.security.SecurityCore.listAllGroups(SecurityCore.java:566) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37) at java.lang.reflect.Method.invoke(Method.java:611) ... [9/8/14 14:21:02:662 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 20 minutes. [9/8/14 14:31:03:193 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 30 minutes. [9/8/14 14:41:03:749 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 40 minutes.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.9259259259259259,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006993006993006993,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 6,
+    "question": "Using cobol copybooks Sometimes, there will be errors/fields missing in typetree, while importing cobol copybooks. Is there any format for copybooks(specifically to be used in wtx), that we need to follow? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6451612903225806,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.01171875,
+      "utilization": 0.01171875,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 7,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To stop rule execution from failing with a **StaleConnectionException** on an ODM\u202f8.8 Rule Execution Server, configure the application\u2011server data source so that idle connections are not kept alive longer than the network (or firewall) timeout.\n\n**WebSphere (the environment mentioned in the note)**  \n\n1. Open the data\u2011source connection\u2011pool settings.  \n2. **Set \u201cMinimum connections\u201d to\u202f0** \u2013 this prevents the pool from keeping a connection alive just to satisfy a minimum\u2011size requirement.  \n3. Adjust the two timeout values:  \n   * **Unused timeout** \u2013 how long a connection may sit idle in the pool.  \n   * **Reap timeout** \u2013 how often the pool scans for idle connections to close.  \n   Make sure that **Unused timeout\u202f+\u202fReap timeout \u2264 any network\u2011level idle\u2011connection timeout** (for example, the timeout enforced by a firewall between the server and the database).  \n4. Save the changes and restart the server (if required).\n\n**Result** \u2013 When a JRules/ODM module (RES, RTS, DC, etc.) tries to obtain a connection after a period of inactivity, the pool will have already discarded any stale connection, forcing a fresh connection to be created and eliminating the `com.ibm.websphere.ce.cm.StaleConnectionException`.\n\n**Note for WebLogic users** \u2013 the same symptom can occur; apply the equivalent connection\u2011pool configuration in WebLogic (limit idle connections, set appropriate idle\u2011timeout values) as described in the IBM support note \u201cRule Execution Server on WebLogic unable to load ruleset after period of inactivity\u201d.\n\nBy ensuring the connection pool does not retain idle connections beyond the network\u2019s idle\u2011timeout, rule execution will no longer fail due to recurrent StaleConnectionException.",
+    "pred": {
+      "relevance": 0.5294117647058824,
+      "utilization": 0.35294117647058826,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1297709923664122,
+      "utilization": 0.03816793893129771,
+      "completeness": 0.29411764705882354,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 8,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes.\u202fIBM provides a **Support\u2019s Guide to IBM CORBA probes**.  \nYou can download it from the IBM support site, e.g.:\n\n- **Main guide page:**  \n  `http://www-01.ibm.com/support/docview.wss?uid=swg21614208`\n\n- **Direct PDF links (for the current version):**  \n  `\u2026/docview.wss?uid=swg21614208&aid=1`  \n  `\u2026/docview.wss?uid=swg21614208&aid=2`\n\nThese links give you the \u201cGENERIC_CORBA_SupportsGuide_20.pdf\u201d (or the latest version) for the IBM CORBA probes.",
+    "pred": {
+      "relevance": 0.35714285714285715,
+      "utilization": 0.21428571428571427,
+      "completeness": 0.6,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06382978723404255,
+      "utilization": 0.010638297872340425,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 9,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699) I need to understand details regarding Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699). Where can I find this information?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
