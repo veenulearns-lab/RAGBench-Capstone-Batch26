@@ -1,2 +1,2 @@
 exp,chunking,embedding,retrieval,rerank,ordering,generator,judge,relevance_rmse,utilization_rmse,completeness_rmse,adherence_aucroc,adherence_accuracy
-CS-EXP-FINAL,sliding,minilm,dense,False,normal,gpt-oss,70b,0.4646340218799173,0.2502609348706475,0.616968144120821,0.6654320987654323,0.6506849315068494
+CS-EXP-FINAL,sliding,minilm,dense,False,normal,gpt-oss,70b,0.4589999880955678,0.24020284247765855,0.6083767668327552,0.6429608880589273,0.615
