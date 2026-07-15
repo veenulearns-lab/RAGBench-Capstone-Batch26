@@ -1523,5 +1523,72 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 95,
+    "question": "Which version of the WebSphere MQ Resource Adapter is shipped with  WebSphere Application Server? Which version of WebSphere MQ JCA resource adapter is shipped with WebSphere Application Server ? ",
+    "answer": "**WebSphere MQ Resource Adapter that is bundled with the Application Server**\n\n| Application Server version | WebSphere\u202fMQ Resource Adapter that ships with it |\n|----------------------------|-------------------------------------------------|\n| **WebSphere Application Server\u202f7** | WebSphere\u202fMQ **7.0** Resource Adapter |\n| **WebSphere Application Server\u202f8** | WebSphere\u202fMQ **7.0** Resource Adapter |\n| **WebSphere Application Server\u202f8.5** | WebSphere\u202fMQ **7.1** Resource Adapter |\n\n**WebSphere MQ JCA resource adapter that is shipped**\n\nThe JCA (J2EE Connector Architecture) resource adapter supplied with the server is the same version as the MQ resource adapter listed above (it implements JCA\u202fV1.5):\n\n* WAS\u202f7 and WAS\u202f8 \u2013 JCA resource adapter version **7.0** (JCA\u202f1.5)  \n* WAS\u202f8.5 \u2013 JCA resource adapter version **7.1** (JCA\u202f1.5)",
+    "pred": {
+      "relevance": 0.9722222222222222,
+      "utilization": 0.9722222222222222,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.040740740740740744,
+      "utilization": 0.06296296296296296,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 96,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.025906735751295335,
+      "utilization": 0.025906735751295335,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 97,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.04610951008645533,
+      "utilization": 0.025936599423631124,
+      "completeness": 0.5625,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 98,
+    "question": "I need to transfer my SPSS 24 licence to a new computer I need to transfer my SPSS 24 license to a new machine. I have only used my activation code on one computer so far, and that computer was found to be defective which has led me to get a new computer. I was able to download SPSS 24 Gradpack onto the new computer, but every time I put in the activation code, the program gives me an error message saying that I am not allowed to generate any new licenses.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.08433734939759036,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05426356589147287,
+      "utilization": 0.05426356589147287,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 99,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0030534351145038168,
+      "utilization": 0.0030534351145038168,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
