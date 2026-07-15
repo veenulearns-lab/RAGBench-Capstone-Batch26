@@ -218,5 +218,66 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "The crash is most often caused by Studio running out of memory.  \nTo resolve it, increase the heap size that Studio uses and free any unused memory:\n\n1. **Increase the Studio heap memory** \u2013 edit the Studio launch configuration (or the\u202f*.ini\u202ffile) to raise the maximum heap (e.g.,\u202f\u2011Xmx\u202fto a value above the default 520\u202fMB).  \n2. **Run garbage\u2011collection** from within Studio to free unused space.  \n3. **Check the XML\u2011Schema preference settings** \u2013 make sure the memory\u2011use setting is within the default 520\u202fMB or raise it to a permissible higher value.  \n\nIf the problem persists after raising the heap and adjusting the XML\u2011Schema settings, open a service request with IBM Cast Iron Support for further assistance.",
+    "pred": {
+      "relevance": 0.28205128205128205,
+      "utilization": 0.10256410256410256,
+      "completeness": 0.36363636363636365,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
