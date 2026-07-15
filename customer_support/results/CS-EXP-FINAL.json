@@ -2973,5 +2973,90 @@
       "completeness": 0.5428571428571428,
       "adherence": 0
     }
+  },
+  {
+    "idx": 175,
+    "question": "Why is OCR is putting multiple lines on one line? I am running an APT application, and multiple detail lines are getting put on a single line within my .TXT file.  Is there something I can do about this? ",
+    "answer": "The OCR engine is merging separate lines because the **NormalizeCCO line\u2011offset setting** is allowing words that are only slightly vertically displaced to be treated as part of the same line.  \n\n- When the line\u2011offset value is not set, it defaults to **50** (about 35\u202f% of the character height).  \n- **Higher values** make the engine more tolerant of vertical offsets, so it will combine words that are actually on different lines.  \n- **Lower values** make the engine stricter, causing it to treat even small vertical gaps as separate lines.\n\n**What to do**\n\n1. Open the NormalizeCCO configuration for your APT application.  \n2. Locate the **line\u2011offset (or line\u2011split) parameter** that controls how far two words must be vertically offset to be considered separate lines.  \n3. Reduce this value (e.g., set it below the default 50, such as 30\u201140 depending on your document\u2019s font size).  \n4. Re\u2011run the OCR process.\n\nBy decreasing the line\u2011offset threshold, the OCR engine will recognize the detail lines as distinct lines instead of concatenating them into a single line in the .TXT output. If the problem persists, verify that the source image has clean, consistently spaced lines; irregular fonts or vertical offsets can also cause merging.",
+    "pred": {
+      "relevance": 0.2727272727272727,
+      "utilization": 0.18181818181818182,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08264462809917356,
+      "utilization": 0.08264462809917356,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 176,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "The information you need is in the **IBM\u202fIntegration\u202fBus / WebSphere\u202fMessage\u202fBroker \u201cFlash (Alert)\u201d documents** for the Hypervisor Editions.  \n\nThese alerts state that:\n\n* **IBM Integration Bus Hypervisor Edition\u202fV9.0** and **WebSphere Message Broker Hypervisor Edition\u202fV8.0** ship with Red\u202fHat\u202fEnterprise\u202fLinux\u202fServer\u202f6.2, which is vulnerable to a large number of CVEs.  \n* **Remediation / Action required:** *\u201cIBM strongly recommends that you contact Red\u202fHat to obtain and install fixes for Red\u202fHat Enterprise Linux (RHEL) Server\u202f6.2, as applicable.\u201d*\n\nSo, to get the detailed action steps, refer to the **Flash (Alert) abstracts** for IIB\u202fV9.0 and WMB\u202fV8.0 that describe the Red\u202fHat Linux vulnerabilities and the recommended contact\u2011Red\u202fHat remediation.",
+    "pred": {
+      "relevance": 0.625,
+      "utilization": 0.5,
+      "completeness": 0.8,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.42424242424242425,
+      "utilization": 0.2727272727272727,
+      "completeness": 0.6428571428571429,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 177,
+    "question": "TEP to TEPS communication issues with different Java versions Recent Java updates have caused connection problems when logging into the TEPS via the TEP client (Browser or Java Web Start). Is there an updated list of known issues?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.38461538461538464,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.13930348258706468,
+      "utilization": 0.05472636815920398,
+      "completeness": 0.39285714285714285,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 178,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971) I need to understand details regarding Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971). Where can I find this information?\n",
+    "answer": "You can view the full security\u2011bulletin details on IBM\u2019s support web site.\u202fSee the IBM Security Bulletin page linked in the document, for example:\n\n**Security Bulletin:**\u202fVulnerabilities in OpenSSL affect IBM WebSphere\u202fMQ Advanced Message Security for IBM\u202fi, IBM WebSphere\u202fMQ Client for HP\u2011NSS  \nURL:\u202f<http://www.ibm.com/support/docview.wss?uid=swg21902519>\n\n(That page is the IBM Security Bulletin where the CVE\u20112016\u20118971 details are published.)",
+    "pred": {
+      "relevance": 0.5238095238095238,
+      "utilization": 0.047619047619047616,
+      "completeness": 0.09090909090909091,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07011070110701106,
+      "utilization": 0.05904059040590406,
+      "completeness": 0.8421052631578947,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 179,
+    "question": "Why is the reload() not clearing the attribute cache so I can see my newly updated LDAP data in real time? You are leveraging the reload() functionality as described in the blog post:\n  https://www.ibm.com/developerworks/community/blogs/PortalL2Thoughts/entry/how_to_programatically_refresh_data_from_ldap64?lang=en\n\nto refresh the attribute cache after a change has been made to data within your LDAP. The purpose of this reload() is to update the data in real time on the Portal server. You discover that you are calling the reload(); however, the newly updated data is not immediately available to the application. Why is that?\n",
+    "answer": "The reload() you are calling is only setting the **maxsession.RELOADCACHE** flag \u2013 it does **not** instantly empty the VMM attribute cache.  \nThe VMM has a background thread that polls the **maxsession** table (by default once every 60\u202fseconds). When it sees a non\u2011null value in the RELOADCACHE column it reloads the indicated caches and then clears the flag. Until that thread runs, the cached LDAP attributes remain unchanged.  \n\nIn addition, the VMM cache\u2011clear logic has a known defect when **clearEntity** mode is used and the base entry in LDAP differs from the name stored in the repository. In that situation the VMM continues to read the stale entry from its cache even though reload() was invoked.  \n\nSo the newly\u2011updated LDAP data is not visible immediately because:\n\n1. **reload() only marks the cache for reload; the actual reload occurs on the next poll (\u224860\u202fseconds later).**  \n2. **If you are using clearEntity mode with a mismatched base entry, the VMM bug prevents the cache from being cleared at all.**  \n\nUntil the polling thread runs (or the APAR fix for the clearEntity issue is applied), the attribute cache will not be refreshed in real time.",
+    "pred": {
+      "relevance": 0.3870967741935484,
+      "utilization": 0.3225806451612903,
+      "completeness": 0.8333333333333334,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08450704225352113,
+      "utilization": 0.035211267605633804,
+      "completeness": 0.4166666666666667,
+      "adherence": 1
+    }
   }
 ]
