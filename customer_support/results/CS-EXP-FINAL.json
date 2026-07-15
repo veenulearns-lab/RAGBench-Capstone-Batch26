@@ -3058,5 +3058,90 @@
       "completeness": 0.4166666666666667,
       "adherence": 1
     }
+  },
+  {
+    "idx": 180,
+    "question": "DB2 Non Reclaimable Storage . We have tablespaces defined under DB2 9.5 that apparently are not able\nto reclaim storage back to the OS, but does that mean DB2 cannot reuse\nthis space as well?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5714285714285714,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.026578073089700997,
+      "utilization": 0.036544850498338874,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 181,
+    "question": "Netcool/Impact 7.1.0: The StateChange value being used by the OMNIbusEventReader is too high  The value being used is a date and time in the future and as such is preventing the EventReader from capturing the current events. ",
+    "answer": "**Resolution**\n\nThe symptom is caused by an event whose **StateChange** field has been set to a time in the future.  \nThe OMNIbus\u202fEventReader stores the highest StateChange it has seen and then uses that\nvalue in its \u201c`\u2026 and StateChange >= <value>`\u201d clause. Because the stored value is\nlater than the current time, every subsequent read returns **0 rows** and the\nEventReader appears to stop processing events.\n\nTo fix the problem:\n\n1. **Identify the offending event(s).**  \n   ```sql\n   SELECT * FROM events\n   WHERE StateChange > UNIX_TIMESTAMP(NOW());\n   ```\n   (or use the equivalent `nco_sql` syntax for your platform).\n\n2. **Correct the StateChange value** \u2013 set it to the current time (or to a\n   reasonable past value) for each offending row, e.g.:  \n   ```sql\n   UPDATE events\n   SET StateChange = UNIX_TIMESTAMP(NOW())\n   WHERE StateChange > UNIX_TIMESTAMP(NOW());\n   ```\n   *Alternatively, if the event is not needed, you can delete it.*\n\n3. **Restart the EventReader** (or issue a \u201creset\u201d command) so that it re\u2011reads\n   the highest StateChange value from the database. After the bad future\u2011dated\n   value is removed, the reader will again capture current events.\n\n4. **Prevent recurrence** \u2013 investigate the component that set the future\n   StateChange (probe, trigger, custom script, etc.) and correct its logic so\n   it no longer writes a future timestamp to the StateChange field.\n\nOnce the future\u2011dated StateChange values are cleared and the source of the\nincorrect timestamp is fixed, the OMNIbusEventReader will resume normal\nevent acquisition.",
+    "pred": {
+      "relevance": 0.55,
+      "utilization": 0.4,
+      "completeness": 0.7272727272727273,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08011869436201781,
+      "utilization": 0.08011869436201781,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 182,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "Create a dummy VM guest on each of the affected hosts to bypass the \u201cinvalid credentials \u2013 suspended\u201d error. This will allow the plug\u2011in to complete its verification step and avoid the missing VM\u2011manager data condition. After adding the dummy VM, re\u2011run the validation (or review the\u202fmessages.log\u202fas described) to confirm the error is cleared.",
+    "pred": {
+      "relevance": 0.6842105263157895,
+      "utilization": 0.15789473684210525,
+      "completeness": 0.23076923076923078,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 183,
+    "question": "startNode failed with ADML3000E after a deployment failure Client had a deployment failure due to \"Too many open files\" error.\n\nAfterwards, the startNode failed with ADML3000E:\n\nWhat could cause the \"Too many open files error?",
+    "answer": "The \u201cToo many open files\u201d error occurs when the process exhausts the operating\u2011system limit on file handles.  According to the provided technote, this can happen because:\n\n* The system\u2019s file\u2011handle (ulimit) setting is too low (often the default value).  \n* File handles or sockets are being leaked by the application \u2013 i.e., they are opened but never closed.  \n\nWhen the limit is reached, new files or sockets cannot be opened, producing the error.",
+    "pred": {
+      "relevance": 0.84,
+      "utilization": 0.24,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07871720116618076,
+      "utilization": 0.0728862973760933,
+      "completeness": 0.9259259259259259,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 184,
+    "question": "Is Java 8 supported for BPM? \n\nI understand that support for Java 6 on WebSphere Application Server is ending April 2018, see: http://www-01.ibm.com/support/docview.wss?uid=swg21999583\n\nNow I can switch to Java 7. But what about Java 8? Does BPM 8.5.6 support Java 8?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8571428571428571,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.038834951456310676,
+      "utilization": 0.038834951456310676,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
