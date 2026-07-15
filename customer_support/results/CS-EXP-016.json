@@ -508,5 +508,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 30,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? I tried to export OMNIbus configuration using nco_confpack command and I get the following message:\r\nTool in menu but not found, menu: AlertsMenu, tool: Close\r\nI've also tried using it with -list command and I get the same error. ",
+    "answer": "`nco_confpack` fails because the configuration it is trying to export contains a menu entry that points to a tool that no longer exists.  \nIn the OMNIbus configuration the **AlertsMenu** menu still references a tool (e.g.,\u202f`CLEAR_LWY` or `Close`). Since that tool has been deleted, the export process cannot resolve the reference and aborts with the message:\n\n```\nTool in menu but not found, menu: AlertsMenu, tool: \u2026\n```\n\n**How to fix it**\n\n1. **Re\u2011create the missing tool** (or any tool that the menu references).  \n2. **Associate the newly created tool with the menu** (AlertsMenu).  \n3. Run the `nco_confpack` command again.\n\n(If the problem was caused by a group that was removed directly with SQL (`DROP GROUP \u2026`), the stale tool\u2011access data can also trigger the same error; in that case you must also clean up the orphaned tool\u2011access entries or delete the group through the Administrator GUI.)",
+    "pred": {
+      "relevance": 0.16923076923076924,
+      "utilization": 0.07692307692307693,
+      "completeness": 0.45454545454545453,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.01079136690647482,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 31,
+    "question": "What is the latest version of the Log File Agent? What is the latest version of the Log File Agent?",
+    "answer": "The latest version of the Log File Agent mentioned in the context is **Log File Agent\u202fv6.3**.",
+    "pred": {
+      "relevance": 0.16981132075471697,
+      "utilization": 0.018867924528301886,
+      "completeness": 0.1111111111111111,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.012295081967213115,
+      "utilization": 0.004098360655737705,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 32,
+    "question": "Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? ",
+    "answer": "The Dataserver becomes Vulnerable because the amount of memory allocated to it is not within the supported range. Incorrect memory allocation can cause the service status to change from Healthy to Vulnerable. Adjust the Dataserver\u2019s memory settings to a supported value.",
+    "pred": {
+      "relevance": 0.10843373493975904,
+      "utilization": 0.024096385542168676,
+      "completeness": 0.2222222222222222,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.027777777777777776,
+      "utilization": 0.08333333333333333,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 33,
+    "question": "Is using a monitored JBoss server with ITCAM supported in a Windows Service? Is using a monitored JBoss server with ITCAM supported in a Windows Service? ",
+    "answer": "No. Running a JBoss Application Server that is monitored by the ITCAM for J2EE agent/DC as a Windows service is not supported. The required changes to the JBoss native connector files prevent the JBoss service from being run as a Windows service.",
+    "pred": {
+      "relevance": 0.1320754716981132,
+      "utilization": 0.018867924528301886,
+      "completeness": 0.14285714285714285,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08823529411764706,
+      "utilization": 0.058823529411764705,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 34,
+    "question": "How to generate Javacores automatically in on hung threads reported in SystemOut.log for WebSphere Application Server? Need Javacores to be generated on hung threads messages reported in SystemOut.log for WebSphere Applicaiton Server.Example:WSVR0605W: Thread has been active for and may be hung. There are in total in the server that may be hung.",
+    "answer": "Use the built\u2011in thread\u2011monitor properties that WebSphere provides for hung\u2011thread detection.\n\n1. **Enable the Java\u2011core dump for hung threads**  \n   Set the system property  \n\n   ```\n   -Dcom.ibm.websphere.threadmonitor.dump.java=1\n   ```\n\n   (or any positive integer).  \n   This tells the thread monitor to write a javacore when a thread is reported as hung.\n\n2. **Limit the dump to a single file per hung thread**  \n   Also set the \u201ctrack\u201d property so that only one dump is produced for each hung thread:\n\n   ```\n   -Dcom.ibm.websphere.threadmonitor.dump.java.track=1\n   ```\n\n   (If the property is left unset or set to **true**, the monitor will keep dumping javacores at the default interval (every 3\u202fminutes) and can fill the disk.)\n\n3. **Apply the properties**  \n   Add the two `-D` options to the JVM arguments of the server (e.g., in the server\u2019s **Java and Process Management \u2192 Process Definition \u2192 Java Virtual Machine** page) and restart the server.\n\nAfter these settings are in place, whenever the log shows a message such as  \n\n```\nWSVR0605W: Thread \"...\" has been active for ... ms and may be hung.\n```\n\nWebSphere will automatically generate a javacore file for that hung thread. The dump will be written once (or the number you specified) instead of continuously.",
+    "pred": {
+      "relevance": 0.1694915254237288,
+      "utilization": 0.15254237288135594,
+      "completeness": 0.9,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.04085603112840467,
+      "utilization": 0.011673151750972763,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
   }
 ]
