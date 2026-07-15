@@ -253,5 +253,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 15,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the full details in IBM\u2019s official security\u2011bulletin resources, specifically:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21997194  \n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response (PSIRT) Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt  \n\nThese pages contain the security\u2011bulletin information for the IBM Java Runtime vulnerabilities (CVE\u20112016\u20115546, CVE\u20112016\u20115548, CVE\u20112016\u20115549, CVE\u20112016\u20115547, CVE\u20112016\u20112183, CVE\u20112017\u20113511) that affect API Connect.",
+    "pred": {
+      "relevance": 0.725,
+      "utilization": 0.425,
+      "completeness": 0.4827586206896552,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.13513513513513514,
+      "utilization": 0.016891891891891893,
+      "completeness": 0.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 16,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The problem you are seeing is the same one that is documented for other IBM\u202fRational\u202fproducts that are built on Eclipse.  \nThe log entry\n\n```\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n```\n\nis caused by Eclipse defect\u202f255268. The Eclipse configuration that is stored in the user\u2019s **.eclipse** directory has become corrupted (often after an administrator\u2011installed package is used by a non\u2011administrator).\n\n**Fix**\n\n1. Close Rational\u202fFunctional Tester.  \n2. Delete the Eclipse configuration directory that belongs to the Rational\u202fSoftware\u202fDelivery\u202fPlatform you are using.  \n   For example, on Linux the directory will be something like  \n\n   ```\n   /home/<your\u2011user>/.eclipse/ibm.software.delivery.platform_7.5.0_********\n   ```\n\n   You can remove it with:\n\n   ```bash\n   rm -rf /home/<your\u2011user>/.eclipse/ibm.software.delivery.platform_7.5.0_*\n   ```\n\n   (Replace `<your\u2011user>` with your actual login name; the trailing numbers will differ.)\n\n3. Start RFT again (no special `-clean` or `-vm` options are required).\n\nThe configuration will be recreated automatically and RFT should launch normally.  \n\n*(This is the recommended workaround for Eclipse defect\u202f255268; the issue will be fixed in a later Eclipse release.)*",
+    "pred": {
+      "relevance": 0.17391304347826086,
+      "utilization": 0.17391304347826086,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.024630541871921183,
+      "utilization": 0.029556650246305417,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 17,
+    "question": "How do I run the prerequisite scan for jazzSM? How do I run the prerequisite scan? ",
+    "answer": "To run the JazzSM prerequisite scan you must invoke the **prereq\u2011checker script** and give it the product codes for **both JazzSM and DASH** at the same time.  \n\n1. **Make sure the scanner is up\u2011to\u2011date** \u2013 it must be version\u202f1.2.0.11 or higher (the defect that causes a false \u201cError\u201d was fixed in that release). If you are on an older version, download the latest scanner from IBM Fix Central:  \n\n   ```\n   http://www\u201101.ibm.com/support/docview.wss?uid=swg24039536\n   ```\n\n2. **Run the scanner script** (the script is called\u202f`prereq_checker.bat` on Windows or the equivalent shell script on Unix).  \n   Pass the two product codes as arguments. The codes for the two integration services are:\n\n   * **JazzSM** \u2013 `TIPL2INST`  \n   * **DASH** \u2013 `DASHL2INST`  \n\n   Example command (Windows):\n\n   ```bat\n   prereq_checker.bat -product TIPL2INST -product DASHL2INST\n   ```\n\n   (On Unix you would use the analogous `prereq_checker.sh` with the same `-product` switches.)\n\n3. The scanner will produce a **result.txt** (and log files) that list each prerequisite and show whether it **PASS**es or **FAIL**s. If all items show PASS, the installation can proceed.\n\n**In short:**  \n- Upgrade the prerequisite scanner to \u2265\u202f1.2.0.11.  \n- Execute `prereq_checker.bat` (or the Unix equivalent) and supply both product codes (`TIPL2INST` for JazzSM and `DASHL2INST` for DASH) in the same command line. This will run the prerequisite scan for JazzSM (and DASH) correctly.",
+    "pred": {
+      "relevance": 0.23214285714285715,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.6153846153846154,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.044444444444444446,
+      "utilization": 0.02962962962962963,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 18,
+    "question": "What things are important to consider when installing a fix pack for IIB running on a multi-instance environment? I am planning to apply a fix pack to my current version of IBM Integration Bus (IIB) using multi-instance brokers and I am looking for any important information regarding the process.\n\nFor example:\n\n \n\n- installation and verification tasks\n \n\n- is it possible to back out this fix pack in case there are issues\n \n\n- any specific tasks for multi instance configuration",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6615384615384615,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.036734693877551024,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 19,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "The documentation notes that missing VM\u2011Manager data can be repaired with the built\u2011in repair utility.\u202fRun the utility (for example, via\u202fcatstart\u202fusing the\u202fCorrectARMatrixPos\u202fcommand) with a valid user name and password, e.g.:\n\n```\nCorrectARMatrixPos -user <valid\u2011username> -pwd <valid\u2011password>\n```\n\nThis will re\u2011establish the connection to the VM Manager and repopulate the missing data. If the credentials are truly unchanged, verify that the account isn\u2019t locked or expired, then re\u2011enter the correct credentials before running the repair utility.",
+    "pred": {
+      "relevance": 0.6170212765957447,
+      "utilization": 0.06382978723404255,
+      "completeness": 0.10344827586206896,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
