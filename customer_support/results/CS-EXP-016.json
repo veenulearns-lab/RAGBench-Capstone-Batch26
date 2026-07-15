@@ -848,5 +848,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 50,
+    "question": "Help with Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730) I need to understand details regarding \"Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730)\". Where can I find this information? ",
+    "answer": "You can find the full security\u2011bulletin details on IBM\u2019s security sites.\u202fThe bulletin for CVE\u20112014\u20118730 (TLS\u2011padding/POODLE) on the PureApplication System is published in the IBM Secure Engineering\u202fBulletins portal:\n\n- **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n\nAdditional information and updates are also posted on the IBM Product Security Incident Response Blog:\n\n- **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt  \n\nIf you want to be alerted when new bulletins are released, you can subscribe via IBM\u2019s e\u2011Info notification service:\n\n- **My Notifications (e\u2011Info)** \u2013\u202fhttp://www-01.ibm.com/software/support/einfo.html  ",
+    "pred": {
+      "relevance": 0.875,
+      "utilization": 0.275,
+      "completeness": 0.3142857142857143,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.11428571428571428,
+      "utilization": 0.11428571428571428,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 51,
+    "question": "Error #2070 I purchased the SPSS grad pack and put one of the licenses on one computer and another on this one. This computer crashed and I was forced to reformat the hard drive. Subsequently, I lost SPSS in the process.  I am now reinstalling with the single user copy option.\n\nThe error it gave me now when I attempted to authorize the program with the original authorization number I received was:\n\nAuthorization in progress ... (removed) Authorization failed.: You are not allowed to generate any more new licenses. End Of Transaction. All permitted authorizations for the provided authorization code(s) have been utilized. No additional authorizations are permitted on this code. If you think this is an error, please contact IBM Corp. Customer Service at spssls@us.ibm.com ( http://www-01.ibm.com/software/analytics/spss ) with your product and purchase details. Click \"Finish\" to exit.",
+    "answer": "The message means that the authorization code you are trying to use has already been used for the maximum number of installations.  \nThe only way to resolve it is to get a new (or reset) authorization from IBM\u202fSPSS support.\n\n**What to do**\n\n1. **Contact IBM\u202fSPSS Customer Service** \u2013 e\u2011mail\u202f`spssls@us.ibm.com` (or the general support address `spsscs@us.ibm.com`) or call the support line (800\u2011521\u20111337).  \n2. Provide them with:  \n   * Your product name and version (the Grad\u2011Pack you purchased).  \n   * The original authorization code you are trying to use.  \n   * Details of the reinstall (the machine was reformatted and the previous license was removed).  \n3. Ask them to:  \n   * Confirm that the authorization code is for the correct product/version.  \n   * Reset or issue a new authorization code so you can generate a new license for this machine.  \n\n(If you have multiple authorization codes, double\u2011check that you are using the one that matches this product/version, but the error you see indicates that the code\u2019s allowed activations have already been exhausted, so support must intervene.)",
+    "pred": {
+      "relevance": 0.3291139240506329,
+      "utilization": 0.11392405063291139,
+      "completeness": 0.34615384615384615,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.087248322147651,
+      "utilization": 0.006711409395973154,
+      "completeness": 0.07692307692307693,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 52,
+    "question": "Can I change the UUID value on the Messaging Engine? After dropping the SIB object, a new UUID value was generated for the new SIB object. However, the messaging application points to the old UUID value.\nIs it possible to change the new UUID value back to the old value?",
+    "answer": "No. The UUID of a messaging engine cannot be changed back to a previous value. When the UUID mismatches (for example after dropping and recreating a SIB object), the only remedy described in the documentation is to delete the existing file\u2011store files (log, temporary and permanent) for that messaging engine and restart the JVM. This forces the creation of a new file store with the new UUID (and all messages in the old file store are lost). Changing the UUID itself is not supported.",
+    "pred": {
+      "relevance": 0.26785714285714285,
+      "utilization": 0.08928571428571429,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.057777777777777775,
+      "utilization": 0.02666666666666667,
+      "completeness": 0.46153846153846156,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 53,
+    "question": "Can I perform a silent install of fix packs for IIB or WMB Toolkit? How do I perform a silent install of fix packs for IBM Integration Bus (IIB) or WebSphere Message Broker (WMB) Toolkit?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 54,
+    "question": "Is Java 7 supported for BPM? What versions of BPM, if any,  support Java 7?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.07547169811320754,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.018140589569160998,
+      "utilization": 0.018140589569160998,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
