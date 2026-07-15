@@ -1267,5 +1267,84 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 75,
+    "question": "What should I do if I observed \"ghost queue building up\" issue? There are lots of ghost queues in the system, which have already took up most of file system space. What can I do under such situation?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7802197802197802,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3315508021390374,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 76,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the full details in IBM\u2019s official security\u2011bulletin resources, specifically:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21997194  \n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response (PSIRT) Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt  \n\nThese pages contain the vulnerability descriptions (including CVE\u20112016\u20115546, CVE\u20112016\u20115548, CVE\u20112016\u20115549, CVE\u20112016\u20115547, CVE\u20112016\u20112183, CVE\u20112017\u20113511) and related remediation information for the IBM Java Runtime used by API Connect.",
+    "pred": {
+      "relevance": 0.725,
+      "utilization": 0.425,
+      "completeness": 0.4827586206896552,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.5304054054054054,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 77,
+    "question": "How to change the maximum string length for properties in FileNet Administration Console for Content Engine (ACCE) I am trying to change the maximum string length in ACCE like we do in FileNet Enterprise Manager, but in the more Tab, I am not seeing the option. In this case, how can I change it? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3559322033898305,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08187134502923976,
+      "utilization": 0.04678362573099415,
+      "completeness": 0.5714285714285714,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 78,
+    "question": "TLS protocol with ITCAM for Datapower We have a DataPower appliance with TLS security protocol enabled. Can we configure ITCAM for DataPower appliance v7.1 to specifically use the TLS protocol v1.2 (not v1.0)?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2222222222222222,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06363636363636363,
+      "utilization": 0.03636363636363636,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 79,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.07424593967517401,
+      "utilization": 0.03480278422273782,
+      "completeness": 0.4375,
+      "adherence": 1
+    }
   }
 ]
