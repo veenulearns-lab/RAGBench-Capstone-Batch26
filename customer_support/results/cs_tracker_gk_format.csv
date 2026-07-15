@@ -84,3 +84,8 @@ RMSE 0.4130","0.1626
 RMSE 0.1967","0.3759
 RMSE 0.6068","0.4400
 AUCROC 0.7569",0.0750,0.0435,0.5394,0.6400,25,"TRANSFER VALIDATION - fixed chunking under gpt-oss lands below locked config (0.757 vs 0.875): Stage-1 sliding decision transfers; stage-generator independence empirically supported, not just assumed."
+CS-EXP-FINAL,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b,"0.4525
+RMSE 0.4590","0.1731
+RMSE 0.2402","0.3747
+RMSE 0.6084","0.3800
+AUCROC 0.6430",0.0677,0.0371,0.6563,0.5950,200,"AUTHORITATIVE N=200 FINAL on locked config. AUCROC 0.643 / Acc 0.615 vs 0.875/0.84 @ N=25 - small-sample AUCROC substantially overestimated performance (Finance instability confirmed at scale). 80% per-example agreement w/ EXP-012 on shared 25: drop is sample composition, not run instability. RMSEs improved at scale (util 0.24 vs 0.33). Residual error dominated by answer-absent queries at k=5."
