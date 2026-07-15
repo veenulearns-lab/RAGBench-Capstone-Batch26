@@ -1401,5 +1401,72 @@
       "completeness": 0.05555555555555555,
       "adherence": 0
     }
+  },
+  {
+    "idx": 85,
+    "question": "Why is OCR is putting multiple lines on one line? I am running an APT application, and multiple detail lines are getting put on a single line within my .TXT file.  Is there something I can do about this? ",
+    "answer": "The OCR is merging separate lines because the **NormalizeCCO** step is treating the words as belonging to the same line.  \nWhen the text on the image isn\u2019t printed in clean, uniform lines (different fonts, vertical offsets, etc.), NormalizeCCO uses a default offset\u2011percentage of **50\u202f%** to decide whether two words are on different lines. If the vertical offset between the words is less than that threshold, they are merged into a single line (e.g., \u201cWord\u202f1\u202fWord\u202f2\u201d).\n\n**What you can do**\n\nAdd an action **before** the NormalizeCCO step and set the line\u2011offset parameter to a lower value. The first parameter of the action is the percentage of a line that two words must be vertically offset to be considered separate lines. For example, setting it to **35** (or any value lower than the default 50) will cause words that are offset by more than 35\u202f% of the word height to be kept on separate lines, preventing the unwanted merging.\n\nSo, the multiple detail lines are being combined because the default line\u2011offset threshold is too high for your document; lower that threshold (or otherwise adjust the NormalizeCCO settings) to keep the lines separate.",
+    "pred": {
+      "relevance": 0.25396825396825395,
+      "utilization": 0.25396825396825395,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0743801652892562,
+      "utilization": 0.08264462809917356,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 86,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 87,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.04524886877828054,
+      "utilization": 0.04072398190045249,
+      "completeness": 0.9,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 88,
+    "question": "IBM Content Navigator v2.0.3 is adding a .dat extension to a CSV file during Download action on a document. IBM Content Navigator v2.0.3 is adding a .dat extension to a CSV file during Download action on a document. Why is this the case?",
+    "answer": "The .dat extension is added because the CSV document\u2019s MIME type in the repository is not set to **text/csv**. When the MIME type is something other than text/csv, IBM Content Navigator cannot recognize the file as a CSV and therefore appends a .dat extension during the download.",
+    "pred": {
+      "relevance": 0.16981132075471697,
+      "utilization": 0.018867924528301886,
+      "completeness": 0.1111111111111111,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.025510204081632654,
+      "utilization": 0.015306122448979591,
+      "completeness": 0.6,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 89,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
