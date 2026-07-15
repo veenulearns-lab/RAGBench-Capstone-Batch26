@@ -719,5 +719,66 @@
       "completeness": 0.5333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 65,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.1,
+      "utilization": 0.06363636363636363,
+      "completeness": 0.6363636363636364,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 66,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.10970464135021098,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 67,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.11797752808988764,
+      "utilization": 0.03932584269662921,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 68,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 69,
+    "question": "recently installed Impact 7.1.0. fixpack 3, now when ever start the secondary impact server, the primary servers logging stops?  How can I fix this? when NCI1 is running by itself, all logging is functioning. When NCI2\nis started, logging stops on NCI1 and the \"reader\" logs indicate that\nthe readers have stopped. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3148148148148148,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04318936877076412,
+      "utilization": 0.036544850498338874,
+      "completeness": 0.8461538461538461,
+      "adherence": 0
+    }
   }
 ]
