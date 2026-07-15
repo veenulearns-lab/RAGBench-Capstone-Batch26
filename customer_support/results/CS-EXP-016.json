@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes. The context lists ITCAM Agent for WebSphere Applications version\u202f7.2.0.0.7 (with a link and release date of Aug\u202f23\u202f2013), indicating that this version is available.",
+    "pred": {
+      "relevance": 0.07692307692307693,
+      "utilization": 0.02564102564102564,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "**Cause**  \nThe error is caused by the AIX **ARG_MAX** limit being exceeded.  \nDuring UDX compilation the `nzudxcompile` command is invoked with more\narguments than the system allows (the default limit is 6\u202f\u00d7\u202f4\u202fKB blocks,\nor about 131\u202f072 bytes).\n\n**Resolution** \u2013 increase the ARG_MAX (ncargs) value:\n\n1. **Check the current setting**  \n\n   ```sh\n   lsattr -E -l sys0 -a ncargs\n   ```\n\n2. **Raise the limit** (choose a value larger than the default; 32 is a\n   common choice, and you can go up to 1024):\n\n   ```sh\n   chdev -l sys0 -a ncargs='32'\n   ```\n\n   *or* use **smitty** \u2192 \u201cSystem Environments\u201d \u2192 \u201cChange System\n   Attributes\u201d \u2192 `ncargs` and set it to a value in the range 6\u20111024.\n\n3. The change takes effect immediately and persists across reboots.\n\nAfter increasing `ncargs` (i.e., the ARG_MAX size), re\u2011run the UDX\ncompilation; the \u201cArgument list too long\u201d error should be gone.",
+    "pred": {
+      "relevance": 0.4126984126984127,
+      "utilization": 0.4126984126984127,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "The JVMSERVER stays in **BEING\u202fDISABLED** because the Language\u202fEnvironment (LE) enclave that the server needs never gets created.  \nIn the environment described, the LE enclave fails to start when the required zFS files are missing \u2013 typically after a maintenance install where the updated zFS files were not propagated to the target CICS systems. Without that enclave the JVMSERVER cannot complete the disable operation, so it remains hung in the *BEING\u202fDISABLED* state (and the same condition can be seen when the region is shut down).  \n\n**In short:** the JVMSERVER is \u201cbeing disabled\u201d because the Language\u202fEnvironment enclave was not created, usually due to missing or un\u2011propagated zFS files after maintenance.",
+    "pred": {
+      "relevance": 0.10294117647058823,
+      "utilization": 0.04411764705882353,
+      "completeness": 0.2857142857142857,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "The dump is showing a **program\u2011check (0C1) in the LE debug module (EQA10OSM)** that occurs right after the Language Environment is being started:\n\n```\nDFHAP1203I  Language Environment is being initialized.\nDFHSR0601   Program interrupt occurred with system task III in control.\n```\n\nIn the provided material the same symptom is explained as:\n\n*\u201cThere is a mismatch in z/OS levels between Language Environment modules, **CEECCICS** and **CEEPLPKA**.\u201d*  \n\nThe fix is to **ensure that only one copy of CEECCICS and CEEPLPKA is present in the CICS library concatenations and that those copies are at the correct (matching) z/OS level**.  \n\nSo the region is failing during startup because the Language\u2011Environment modules that CICS loads are from different z/OS releases, causing the 0C1 abend in EQA10OSM. Align the LE modules (remove duplicate or out\u2011of\u2011date copies) and the CICS region will start normally.",
+    "pred": {
+      "relevance": 0.8387096774193549,
+      "utilization": 0.0967741935483871,
+      "completeness": 0.11538461538461539,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
