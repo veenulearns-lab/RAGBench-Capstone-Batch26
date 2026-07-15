@@ -3143,5 +3143,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 185,
+    "question": "res-deploy-xom ant task does not deploy xom based on checksum difference when xom is a .zip extension Question: Is re-naming the WebSphere Portal installation directory and cell name for an existing clustered installation possible? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 186,
+    "question": "Help with Security Bulletin: Vulnerabilities in OpenSSL affect WebSphere MQ 5.3 for HP NonStop Server (CVE-2017-3735) I need to understand details regarding Security Bulletin: Vulnerabilities in OpenSSL affect WebSphere MQ 5.3 for HP NonStop Server (CVE-2017-3735). What  versions of the product are affected?",
+    "answer": "All versions of **WebSphere\u202fMQ\u202f5.3 for HP\u202fNonStop Server** are affected by the CVE\u20112017\u20113735 vulnerability. (The bulletin also notes that all versions of MQ\u202f8 for HPE\u202fNonStop are affected.)",
+    "pred": {
+      "relevance": 0.29411764705882354,
+      "utilization": 0.29411764705882354,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.011834319526627219,
+      "utilization": 0.011834319526627219,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 187,
+    "question": "iLMT - incomplete virtualisation hierarchy \n\nthis query is regarding support case 1109598 that has been raised.\n\nIf we set up an account is this providing access to information for other accounts/servers where we use the same ESX hosts for multiple customers. What specifically is being asked in terms of logical structure and permissions of the account?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 188,
+    "question": "Jobtask long description How do I modify the JP sheet to include the JOBTASK Long description in the query.  I have tried JOBTASK.DESCRIPTION.DESCRIPTION_LONGDESCRITION and other combinations but they do not seem to work. ",
+    "answer": "Use the **LONGDESCRIPTION** table \u2013 the long\u2011text for a job task is not stored in a column on the JOBTASK record itself.  \nTo bring the long description onto the JP sheet you must query LONGDESCRIPTION with the\nproper owner table/column and key values.\n\n**Typical query**\n\n```sql\nSELECT  jt.JOBTASKID,\n        jt.DESCRIPTION,\n        ld.LDTEXT\nFROM    JOBTASK jt\nJOIN    LONGDESCRIPTION ld\n        ON ld.LDOWNERTABLE = 'JOBTASK'\n       AND ld.LDOWNERCOL   = 'DESCRIPTION'\n       AND ld.LDKEY        = jt.JOBTASKID\nWHERE   jt.JOBPLANID = :jobplanId      -- e.g. 51 for JP \u201cIT\u2011ISSUE\u201d\n```\n\nor, using the sub\u2011query pattern shown in the documentation:\n\n```sql\nSELECT LDTEXT\nFROM   LONGDESCRIPTION\nWHERE  LDOWNERTABLE = 'JOBTASK'\n  AND  LDOWNERCOL   = 'DESCRIPTION'\n  AND  LDKEY IN (SELECT JOBTASKID\n                 FROM   JOBTASK\n                 WHERE  JOBPLANID = 51);\n```\n\n**Key points from the context**\n\n* Do **not** try to reference a column such as `JOBTASK.DESCRIPTION_LONGDESCRIPTION`; the long text lives only in LONGDESCRIPTION.  \n* The owner table must be `'JOBTASK'` and the owner column `'DESCRIPTION'`.  \n* The link between the two tables is `LDKEY = JOBTASK.JOBTASKID`.  \n* Avoid using an outer join between JOBTASK and LONGDESCRIPTION \u2013 use the join (or IN\u2011subquery) as shown above.\n\nAdd the `LDTEXT` field (or alias it as you need) to your JP sheet using one of the queries above, and the job\u2011task long description will appear correctly.",
+    "pred": {
+      "relevance": 0.24,
+      "utilization": 0.04,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.037267080745341616,
+      "utilization": 0.037267080745341616,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 189,
+    "question": "Help with Security Bulletin: WMB and IIB are affected by 'Information Disclosure' vulnerability I need to understand details regarding Security Bulletin: WebSphere Message Broker and IBM Integration Bus are affected by 'Information Disclosure' vulnerability. Where can I find this information? ",
+    "answer": "You can find the details in the security bulletins that IBM publishes for **WebSphere\u202fMessage\u202fBroker** and **IBM\u202fIntegration\u202fBus**. The vulnerability information is included in the respective product security bulletins for those components.",
+    "pred": {
+      "relevance": 0.16666666666666666,
+      "utilization": 0.05555555555555555,
+      "completeness": 0.3333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.26666666666666666,
+      "utilization": 0.08666666666666667,
+      "completeness": 0.325,
+      "adherence": 1
+    }
   }
 ]
