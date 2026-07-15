@@ -1182,5 +1182,90 @@
       "completeness": 0.8461538461538461,
       "adherence": 0
     }
+  },
+  {
+    "idx": 70,
+    "question": "I am receiving AC power supply failures on my DataPower 9235 appliance. How can I resolve this? \n\nI am observing the following errors on my DataPower 9235 device:\n\n[failure] Power supply '1' has no AC input power, or is not present. [failure] Power supply '2' has no AC input power, or is not present.\nDo i need to replace the power supplies?",
+    "answer": "The messages you are seeing are a known, intermittent sensor\u2011reading problem on the DataPower\u202fM/T\u202f9235.  \nThey do **not** indicate a real hardware failure and the power supplies usually are still functioning correctly.\n\n**What to do**\n\n1. **Verify the LEDs** on the two power\u2011supply modules.  \n   - If the LEDs are green, the supplies are operating normally and do not need to be replaced.\n\n2. **Reset the sensor state** by rebooting the appliance.  \n   - **From the WebGUI:**\u202fControl\u202fPanel \u2192 System\u202fControl \u2192 \u201cShutdown\u201d section \u2192 choose **Reboot System** and click **Shutdown**.  \n   - **From the CLI:**  \n     ```\n     top\n     shutdown reboot y\n     ```\n\n   The reboot clears the false sensor readings; after the appliance comes back up the spurious \u201cPower supply \u2026 has no AC input power\u201d messages should disappear.\n\n3. **If the false errors return** on the same appliance, gather the following information and open a case with IBM DataPower support:  \n\n   - How many times the issue has been seen on this appliance.  \n   - CLI command outputs: `show clock`, `show version`, `show ipmi`, `show sensors`, `show service`, `show test hardware`.\n\n   Provide these details to IBM support (http://www.ibm.com/support/docview.wss?uid=swg21236322).\n\n**Conclusion**\n\nYou do **not** need to replace the power supplies at this point. Check that the LEDs are green and perform a reboot to clear the false error messages. If the problem recurs, follow the escalation steps above.",
+    "pred": {
+      "relevance": 0.3617021276595745,
+      "utilization": 0.3404255319148936,
+      "completeness": 0.8823529411764706,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.14534883720930233,
+      "utilization": 0.14534883720930233,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 71,
+    "question": "IBM Support Assistant data collector for BPM What can I use to obtain some standard information in order to debug my IBM Business Process Manager environment? ",
+    "answer": "You can use the IBM\u202fBusiness\u202fProcess\u202fManager data\u2011collector tool (the **bpmdc** command\u2011line utility) to gather the standard log, configuration and other information needed to debug your BPM environment.",
+    "pred": {
+      "relevance": 0.32653061224489793,
+      "utilization": 0.08163265306122448,
+      "completeness": 0.25,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17286652078774617,
+      "utilization": 0.10940919037199125,
+      "completeness": 0.6329113924050633,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 72,
+    "question": "Hello - I recently installed SPSS 20, my temporary period for running spss has expired, I am in need of the actual license code to fully install. my Lock code is: 4-20C30 Hello - I recently installed SPSS 20, my temporary period for running spss has expired, I am in need of the actual license code to fully install. my Lock code is: 4-20C30 . please help! ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10810810810810811,
+      "utilization": 0.08108108108108109,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 73,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971) I need to understand details regarding Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971). Where can I find this information?\n",
+    "answer": "You can view the full bulletin on IBM\u2019s Security\u202fBulletin site.\u202fThe IBM WebSphere\u202fMQ security bulletin that describes CVE\u20112016\u20118971 is available at  \n\n**http://www.ibm.com/support/docview.wss?uid=swg21902519**  \n\n(see the \u201cSecurity Bulletin Summary\u201d section for the administration\u2011command denial\u2011of\u2011service issue).  \n\nFor additional CVE details you can also consult the IBM X\u2011Force entry:  \n\n**https://exchange.xforce.ibmcloud.com/vulnerabilities/118862**",
+    "pred": {
+      "relevance": 0.2127659574468085,
+      "utilization": 0.06382978723404255,
+      "completeness": 0.3,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06642066420664207,
+      "utilization": 0.06642066420664207,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 74,
+    "question": "Help with Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031) I need to understand details regarding Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031). Where can I find this information?",
+    "answer": "You can find the details in the IBM security bulletin that summarizes the Apache\u202fCommons\u202fFileUpload issue for CVE\u20112016\u20111000031 \u2013 the bulletin titled **\u201cA vulnerability in Apache Commons FileUpload was addressed by IBM\u202fInfoSphere\u202fInformation\u202fServer.\u201d**  \n\nThe bulletin includes the full vulnerability description, CVSS scores and affected product versions, and it points to the official CVE entry:\n\n- **CVE\u20112016\u20111000031 details:**\u202fhttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1000031  \n\nConsult that IBM security bulletin (and the linked CVE page) for the complete information about the Apache\u202fCommons\u202fFileUpload vulnerability in the IBM\u202fWebSphere\u202fMQ\u202fFile\u202fTransfer\u202fEdition component.",
+    "pred": {
+      "relevance": 0.2765957446808511,
+      "utilization": 0.0851063829787234,
+      "completeness": 0.3076923076923077,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
