@@ -2524,5 +2524,60 @@
       "completeness": 0.5,
       "adherence": 1
     }
+  },
+  {
+    "idx": 148,
+    "error": "generate() got an unexpected keyword argument 'prompt_variant'",
+    "pred": null,
+    "gt": {
+      "relevance": 0.1643192488262911,
+      "utilization": 0.03755868544600939,
+      "completeness": 0.22857142857142856,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 150,
+    "error": "generate() got an unexpected keyword argument 'prompt_variant'",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 151,
+    "error": "generate() got an unexpected keyword argument 'prompt_variant'",
+    "pred": null,
+    "gt": {
+      "relevance": 0.04801670146137787,
+      "utilization": 0.04801670146137787,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 152,
+    "error": "generate() got an unexpected keyword argument 'prompt_variant'",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 153,
+    "error": "generate() got an unexpected keyword argument 'prompt_variant'",
+    "pred": null,
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
