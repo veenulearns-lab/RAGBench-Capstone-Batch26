@@ -1097,5 +1097,90 @@
       "completeness": 0.5333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 65,
+    "question": "We got a NullPointerException when bootstrapping the object store or accessing Site Preferences/Access Role on WorkplaceXT \n\nAfter logging into FileNet Workplace XT, a java.lang.NullPointerException error is logged when bootstrapping the object store or when accessing Site Preferences/Access Role.\n\nHere's the error stack,\n\nError Stack Trace extracted from the J2EE Application Server error log:\n\njava.lang.NullPointerException\n\nat org.apache.jasper.runtime.JspWriterImpl.write(JspWriterImpl.java:421)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRoleMembers(PrefAccessRolesInfoPage.java:254)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRole(PrefAccessRolesInfoPage.java:220)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.renderAdminRole(PrefBootstrapInfoPage.java:131)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.render(PrefBootstrapInfoPage.java:303)",
+    "answer": "**Cause**  \nThe NPE is thrown because Workplace\u202fXT cannot resolve the user or group names that are stored in the Access\u2011Roles definitions. This happens when the **User\u202fDisplay\u202fName\u202fAttribute** or **Group\u202fDisplay\u202fName\u202fAttribute** that you configured in **FileNet Enterprise Manager \u2192 Directory Services Configuration** is invalid (or points to an attribute that returns *null* for the queried users/groups). When Workplace\u202fXT tries to render the Access\u2011Role information it receives a null value and the JSP code fails with a `java.lang.NullPointerException`.\n\n**Resolution**  \n\n1. Open **FileNet Enterprise Manager (FEM)**.  \n2. Navigate to **Directory Services \u2192 Configuration** for the directory that Workplace\u202fXT uses.  \n3. Verify the settings:  \n\n   * **User Display Name Attribute** \u2013 must be an attribute that exists in the directory and returns a non\u2011null, printable string for every user.  \n   * **Group Display Name Attribute** \u2013 must be an attribute that exists in the directory and returns a non\u2011null, printable string for every group.  \n\n4. If either attribute is set to an LDAP attribute that does not exist or that can be empty, change it to a valid attribute (e.g., `cn`, `displayName`, `sAMAccountName`, etc., depending on your directory schema).  \n5. Save the configuration and **restart the J2EE application server** (or at least redeploy the Workplace\u202fXT web application) so the new settings are picked up.  \n6. Log in again and open **Site\u202fPreferences \u2192 Access\u202fRoles** or re\u2011bootstrap the object store \u2013 the pages should now render without the NPE.\n\n**Summary** \u2013 The NullPointerException during bootstrap or when viewing Site Preferences/Access Role is caused by an invalid or missing User/Group Display Name attribute in the Directory Services configuration. Correct the attribute mapping in FEM and restart the server to resolve the problem.",
+    "pred": {
+      "relevance": 0.08333333333333333,
+      "utilization": 0.08333333333333333,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1,
+      "utilization": 0.06363636363636363,
+      "completeness": 0.6363636363636364,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 66,
+    "question": "Help with Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IIB and WMB (CVE-2015-0138) I need to understand details regarding Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker (CVE-2015-0138). This is also commonly referenced as \u201cFREAK: Factoring Attack on RSA-EXPORT keys\" TLS/SSL client and server vulnerability. Where can I find this information? ",
+    "answer": "You can find the full details in IBM\u2019s security\u2011bulletin pages that are listed in the excerpt:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21695474  \n* **Security Bulletin: Vulnerability with RSA Export Keys may affect IBM WebSphere Application Server (CVE\u20112015\u20110138)** \u2013\u202fhttp://www.ibm.com/support/docview.wss?uid=swg21698613  \n* **Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect WebSphere Application Server \u2013 January\u202f2015 CPU** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21695362  \n\nThese bulletins describe the \u201cFREAK: Factoring Attack on RSA\u2011EXPORT keys\u201d TLS/SSL client\u2011server vulnerability (CVE\u20112015\u20110138) that affects the IBM Runtime Environment Java Technology Edition used by **IBM Integration Bus** and **WebSphere Message Broker**.",
+    "pred": {
+      "relevance": 0.8367346938775511,
+      "utilization": 0.16326530612244897,
+      "completeness": 0.1951219512195122,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.10970464135021098,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 67,
+    "question": "Does the BPM internal Document Store work with IBM DB2 pureScale? I use IBM DB2 pureScale with my BPM installation. During startup of the server and initialization of the internal document store I see hanging threads in the systemOut.log and the process will not finish. How can this be solved? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6190476190476191,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.11797752808988764,
+      "utilization": 0.03932584269662921,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 68,
+    "question": "Why is my Portal 8.5 install saying it cannot detect WAS? When I try to install WebSphere PortaV8.5, I am getting the message\n\nThe required version 8.5.5 or later of WebSphere Application Server has not been detected on this system. Select the WebSphere Application Server Package to install WebSphere Application Server and WebSphere Portal.\n\nThe required IBM WebSphere SDK Java Technology Edition version 7.0 or later is not detected on this system. Select the IBM WebSphere SDK Java Technology Edition package to install it.",
+    "answer": "The installer cannot find the required products because the installation path you gave it does not point to a valid WebSphere\u202fApplication\u202fServer (or SDK) installation.\u202fThe documentation was updated to note that when you run the\u202fimcl\u202fcommand you must use the **\u2011installationDirectory** option to specify the correct WAS installation directory. If that option points to the wrong location (or is omitted), the Portal installer will report that WAS\u202f8.5.5\u202for later and the IBM\u202fWebSphere\u202fSDK\u202fJava\u202fTechnology\u202fEdition\u202f7.0\u202for later are not detected.",
+    "pred": {
+      "relevance": 0.2653061224489796,
+      "utilization": 0.061224489795918366,
+      "completeness": 0.23076923076923078,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 69,
+    "question": "recently installed Impact 7.1.0. fixpack 3, now when ever start the secondary impact server, the primary servers logging stops?  How can I fix this? when NCI1 is running by itself, all logging is functioning. When NCI2\nis started, logging stops on NCI1 and the \"reader\" logs indicate that\nthe readers have stopped. ",
+    "answer": "The problem you are seeing is the same one described in the troubleshooting note for a corrupted **policylist** file.  \nWhen the secondary Impact server starts it tries to replicate the **policylist** from the primary. If the file on the primary is damaged (missing entries or properties) the replication fails, the secondary will not come up correctly and the event\u2011reader processes on the primary are stopped \u2013 exactly the behaviour you are observing (the \u201creader\u201d logs show that the readers have stopped).\n\n**Fix \u2013 rebuild the policylist**\n\n1. **Stop the Impact cluster** (stop both NCI1 and NCI2).  \n   ```bash\n   $NCHOME/bin/ewas.sh stop -user wasadmin -password <pwd>\n   ```\n\n2. **Replace the corrupted policylist** with a good copy.  \n   The installation creates a backup called `NCI1_policylist.orig` (or the equivalent for your node).  \n   ```bash\n   cp $NCHOME/impact/etc/NCI1_policylist.orig $NCHOME/impact/etc/policylist\n   ```\n   If you have a manual backup of the policylist, copy that instead.\n\n3. **Verify the file** \u2013 make sure it contains all required entries and properties (no missing lines, proper XML/INI syntax, etc.).\n\n4. **Start the primary server first** and confirm that logging is working.  \n   ```bash\n   $NCHOME/impact/install/nci_startsvn $NCHOME/platform/[Arch]/svn/bin $NCHOME/platform/[Arch]/svn/repository\n   ```\n\n5. **Start the secondary server**. The replication of the policylist should now succeed and the readers on the primary will remain active.\n\nAfter the policylist is restored, the secondary Impact server can be started without causing the primary\u2019s logging to stop. If the problem persists, repeat the steps and ensure that the policylist file is not being overwritten or corrupted by any custom scripts or deployments.",
+    "pred": {
+      "relevance": 0.1276595744680851,
+      "utilization": 0.0851063829787234,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04318936877076412,
+      "utilization": 0.036544850498338874,
+      "completeness": 0.8461538461538461,
+      "adherence": 0
+    }
   }
 ]
