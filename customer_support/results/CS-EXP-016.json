@@ -423,5 +423,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 25,
+    "question": "How do I resolve a WSVR0605W hung thread issue in the WebSphere MQ Resource Adapter? The following WebSphere MQ Resource Adapter hung thread can prevent an application server from starting...\n\nWSVR0605W: Thread \"WMQJCAResourceAdapter : 6\" (0000001b) has been active for 698530 milliseconds and may be hung. There is 1 thread(s) in total in the server that may be hung. at java.lang.Object.wait(Native Method) at java.lang.Object.wait(Object.java:167) at com.ibm.ejs.container.MessageEndpointFactoryImpl.createEndpoint(MessageEndpointFactoryImpl.java:498) at com.ibm.mq.connector.inbound.WorkImpl.run(WorkImpl.java:149)",
+    "answer": "The hang is caused by the resource\u2011adapter\u2019s work being blocked because the WebSphere work\u2011manager thread pool does not have enough free threads.  \nThe fix is to **increase the size of the work\u2011manager thread pool that the adapter uses** (the same \u201ces\u2011workmanager\u201d pool that is used for event\u2011sequencing).  \n\n**Steps (as described in the IBM notes)**  \n\n1. Open the WebSphere Administrative Console.  \n2. Navigate to **Servers \u2192 Server Types \u2192 WebSphere application servers \u2192\u202f\\<your server\\> \u2192 Thread pools**.  \n3. Locate the **es\u2011workmanager** (or the work manager that the WMQ JCA adapter is bound to).  \n4. Raise the **Maximum size** (and optionally the **Minimum size**) of the pool so that enough threads are available for the adapter\u2019s `startWork` calls.  \n5. Save the changes and restart the server.\n\nAfter the pool is enlarged, the `startWork` calls will no longer block, the `WSVR0605W` warnings disappear, and the server can start normally.  \n\n*(The same principle applies to any other work manager that shows a \u201chung\u2011thread\u201d warning \u2013 increase its thread\u2011pool size to eliminate the blockage.)*",
+    "pred": {
+      "relevance": 0.32,
+      "utilization": 0.26666666666666666,
+      "completeness": 0.8333333333333334,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 26,
+    "question": "When and why Apache Storm process of ITNM creating db2 files in /tmp? \n\nWhen and why should the following files be generated ?\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/connlicj.bin\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/jccdiag.log\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/license.lock\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/serverlist.lock",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 27,
+    "question": "Help with Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730) I need to understand details regarding \"Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730)\". Where can I find this information? ",
+    "answer": "You can find the full security\u2011bulletin details on IBM\u2019s security sites.\u202fThe bulletin for CVE\u20112014\u20118730 (TLS\u2011padding/POODLE) affecting the PureApplication System is published on the **IBM Secure Engineering Web Portal**:\n\n- **IBM Secure Engineering Web Portal \u2013 Security Bulletins**  \n  <http://www.ibm.com/security/secure-engineering/bulletins.html>\n\nAdditional information and updates are also posted on the **IBM Product Security Incident Response Blog**:\n\n- **IBM Product Security Incident Response Blog**  \n  <http://www.ibm.com/blogs/psirt>\n\nIf you want to be alerted when new bulletins are released, you can subscribe via IBM\u2019s e\u2011Info notification service:\n\n- **My Notifications (e\u2011Info)**  \n  <http://www-01.ibm.com/software/support/einfo.html>",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.05,
+      "completeness": 0.05,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.17142857142857143,
+      "utilization": 0.1,
+      "completeness": 0.5833333333333334,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 28,
+    "question": "IBM Support Assistant data collector for BPM What can I use to obtain some standard information in order to debug my IBM Business Process Manager environment? ",
+    "answer": "You can use the IBM\u202fBusiness\u202fProcess\u202fManager data\u2011collector utility (the **bpmdc** command\u2011line tool) to gather the standard log, configuration and other information needed to debug a BPM environment.",
+    "pred": {
+      "relevance": 0.24489795918367346,
+      "utilization": 0.24489795918367346,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05470459518599562,
+      "utilization": 0.006564551422319475,
+      "completeness": 0.12,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 29,
+    "question": "Help with Action required for IIB H.E.V9 and WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nWhere can I find this information?",
+    "answer": "The information you need is contained in IBM\u2019s **Flash (Alert)\u202f/\u202fAbstract** notices for the two products.  \nThe alerts are titled:\n\n* **\u201cIBM Integration Bus Hypervisor Edition\u202fV9.0 and WebSphere Message Broker Hypervisor Edition\u202fV8.0 require customer action for security vulnerabilities in Red\u202fHat\u202fLinux.\u201d**\n\nThese documents state the required action:\n\n* **Contact Red\u202fHat and obtain/install the fixes for Red\u202fHat\u202fEnterprise\u202fLinux\u202fServer\u202f6.2** (the OS that is shipped with IIB\u202fH.E.\u202fV9 and WMB\u202fH.E.\u202fV8).\n\nThe same guidance is repeated in the related IBM support articles, e.g.:\n\n* **IBM\u202fSupport\u202fDoc\u202fswg21695798** \u2013 English translation of the alert.  \n* **IBM\u202fSupport\u202fDoc\u202fswg21695676** \u2013 Action required for the glibc (CVE\u20112015\u20110235) vulnerability.  \n* **Red\u202fHat\u202fCustomer\u202fPortal \u2013 GHOST vulnerability** (https://access.redhat.com/articles/1332213).\n\nSo, to view the full details, go to the IBM\u202fSupport site and locate the Flash\u202f/\u202fAlert documents (search for the titles above or the doc IDs\u202fswg21695798 / swg21695676). The Red\u202fHat Customer Portal article linked above also provides the specific RHEL patches you must apply.",
+    "pred": {
+      "relevance": 0.59375,
+      "utilization": 0.5,
+      "completeness": 0.8421052631578947,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3125,
+      "utilization": 0.3125,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
