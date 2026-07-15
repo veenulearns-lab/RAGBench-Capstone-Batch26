@@ -338,5 +338,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.4146341463414634,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "question": "Additional steps to apply fix pack to Decision Center \n\nWe are upgrading ODM 8.8.1 Decision Center to the latest 8.8.1.3.\n\nAre there any additional steps to apply the fixpack to Decision Center after we install the fixpack with Installation Manager?",
+    "answer": "Yes.\u202fAfter the fix\u2011pack is installed with Installation Manager you must still complete the update in the environment.\u202fThe documentation says you may need to:\n\n*\u202fUninstall any interim fixes that were previously applied to the ODM 8.8.1 installation.  \n*\u202fStop the Operational Decision Manager server (the sample server for that installation) before the fix\u2011pack installation finishes.  \n*\u202fAfter the fix\u2011pack is applied, re\u2011apply any product customizations you had made to the updated EAR/WAR modules and re\u2011package any client applications with the new libraries.  \n\nIn short, follow the \u201cWhen and how to apply a modification or fix pack\u201d technote to perform these post\u2011installation steps for Decision Center.",
+    "pred": {
+      "relevance": 0.7142857142857143,
+      "utilization": 0.7142857142857143,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "The details are in the **IBM\u202fIIB/WMB \u201cFLASH (ALERT)\u201d security bulletins** for the Hypervisor Editions.  \nEach alert (shown in the excerpts above) states the required action:\n\n* **Remediation** \u2013\u202fIBM strongly recommends that you **contact Red\u202fHat and obtain/install the fixes for Red\u202fHat Enterprise Linux (RHEL)\u202fServer\u202f6.2** that address the listed CVEs.\n\nSo, to get the full list of CVEs and the exact remediation steps, locate the **IBM Integration Bus Hypervisor Edition\u202fV9.0 / WebSphere Message Broker Hypervisor Edition\u202fV8.0 FLASH (ALERT) documents** (often titled \u201cIIB\u202fWMB\u202fFLASH (ALERT) ABSTRACT\u201d). Those alerts contain the complete vulnerability list and the recommended action of contacting Red\u202fHat for the appropriate RHEL\u202f6.2 patches.",
+    "pred": {
+      "relevance": 0.4444444444444444,
+      "utilization": 0.3888888888888889,
+      "completeness": 0.875,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6545454545454545,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "**Resolution \u2013 make sure the fix\u2011pack repository is present and correctly added to IBM\u202fInstallation\u202fManager**\n\nThe error  \n\n```\nCRIMC1020E: zip im.properties \u2026 not found\nCRIMC1020E: zip config.registry \u2026 not found\n```  \n\nmeans that the Installation Manager cannot locate the zip files that belong to the\nBPM fix\u2011pack repository. The repository was either not downloaded, not fully\nextracted, or not added to the manager\u2019s repository list.\n\nFollow the steps below (all taken from the IBM documentation that appears in the\nprovided context) to correct the problem and complete the fix\u2011pack installation.\n\n---\n\n### 1. Download the correct fix\u2011pack repository\n\n* Use the **sliced** repository for the operating system you are installing on\n  (much smaller and faster) **or** download the \u201call\u2011platforms\u201d repository if you\n  prefer a single image.\n\nExample (for WAS\u202f7.0\u202fFix\u202fPack\u202f33 \u2013 the same pattern is used for the BPM\nrepositories):\n\n```\nftp://public.dhe.ibm.com/software/websphere/bpm/repositories/downloads/was/70033/\n```\n\n* Files you may see:\n  * `was.7.0.0.33.fp.all_Part1of2.zip`\n  * `was.7.0.0.33.fp.all_Part2of2.zip`\n  * or the sliced files such as `was.nd.7.0.0.33.fp.win.zip`,\n    `was.nd.7.0.0.33.fp.linux.x86.zip`, etc.\n\n**Important:** Download **both** parts of the \u201call\u2011platforms\u201d image (or the single\nsliced zip for your OS).\n\n---\n\n### 2. Extract the zip files\n\n* Create a clean directory, e.g. `C:\\temp\\BPMFixPack`.\n* Extract **both** parts of the archive into that same directory so that the\n  following structure appears:\n\n```\nC:\\temp\\BPMFixPack\\disk1\\diskTag.inf\nC:\\temp\\BPMFixPack\\disk1\\\u2026 (all other zip files such as im.properties, config.registry, etc.)\n```\n\nIf the files are not in `disk1` after extraction, the repository is incomplete\nand the Installation Manager will raise the CRIMC1020E errors.\n\n---\n\n### 3. Add the repository to IBM Installation Manager\n\n1. Start **IBM Installation Manager**.  \n2. Choose **File\u202f>\u202fPreferences** \u2192 **Repositories**.  \n3. Click **Add Repository**.  \n4. Browse to (or type) the full path of the **diskTag.inf** file you just\n   extracted, e.g.:\n\n```\nC:\\temp\\BPMFixPack\\disk1\\diskTag.inf\n```\n\n5. Click **OK**, then **OK** again to close the Preferences window.\n\nThe repository now appears in the list and the manager can locate every zip\nfile referenced by the fix\u2011pack.\n\n---\n\n### 4. Re\u2011run the BPM Fix\u2011Pack installation\n\n* In Installation Manager select the BPM product and the desired Fix\u202fPack level,\n  then click **Install** (or **Update**).  \n* The manager will now find `im.properties`, `config.registry`, and all other\n  required zip files, and the installation should proceed without the\n  CRIMC1020E messages.\n\n---\n\n### 5. If the error persists\n\n* **Re\u2011download** the repository \u2013 a corrupted download can cause missing zip\n  entries.  \n* Verify that the extracted directory contains the exact zip names shown in the\n  error (e.g., `im.properties 1.0.0.200911091101.zip`).  \n* Ensure you are using the repository that matches the **exact version** of the\n  BPM fix\u2011pack you are installing (the version numbers in the zip names must\n  correspond to the fix\u2011pack level).\n\n---\n\n#### Quick checklist\n\n| \u2705 | Action |\n|---|---|\n| \u2705 | Download the full or sliced BPM fix\u2011pack repository (all parts). |\n| \u2705 | Extract both parts into the **same** directory so `disk1\\diskTag.inf` exists. |\n| \u2705 | Add that `diskTag.inf` to IBM Installation Manager\u2019s repository list. |\n| \u2705 | Run the Fix\u202fPack install again. |\n| \u2705 | Re\u2011download if any zip file is still reported missing. |\n\nFollowing these steps resolves the `CRIMC1020E: zip \u2026 not found` errors and\nallows the BPM 7.5.x Fix\u202fPack to be installed successfully.",
+    "pred": {
+      "relevance": 0.423728813559322,
+      "utilization": 0.423728813559322,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
