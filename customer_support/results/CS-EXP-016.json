@@ -933,5 +933,84 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 55,
+    "question": "Help with Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affects IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920) I need to understand details regarding Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affects IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920). Where can I find this information? ",
+    "answer": "You can find the full security\u2011bulletin information for this issue in the IBM WebSphere\u202fApplication\u202fServer bulletin that references **CVE\u20112015\u20111920**.  The bulletin contains the description of the vulnerability, the affected product (IBM\u202fSOA\u202fPolicy\u202fGateway\u202fPattern\u202ffor\u202fAIX\u202fServer\u202f2.5), and the recommended fix.\n\n**Where to look**\n\n| Item | Link (from the provided context) |\n|------|-----------------------------------|\n| IBM security bulletin that describes CVE\u20112015\u20111920 (remote\u2011code\u2011execution via the management port) | `http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1920` (CVE entry) |\n| IBM remediation \u2013 WebSphere Application Server Interim Fix\u202fPI38302 | `http://www-01.ibm.com/support/docview.wss?uid=swg24039898` |\n| General IBM security\u2011bulletin page (for additional details or updates) | `http://www.ibm.com/security/secure-engineering/bulletins.html` |\n\nThese links give you:\n\n* **The vulnerability details** (description, CVSS score, vector) \u2013 see the CVE\u20112015\u20111920 entry.  \n* **The affected product/version** \u2013 IBM\u202fSOA\u202fPolicy\u202fGateway\u202fPattern\u202ffor\u202fAIX\u202fServer\u202f2.5.  \n* **The fix** \u2013 install WebSphere Application Server Interim Fix\u202fPI38302 (link above).  \n\nSo, to understand the security bulletin, start with the CVE page and then follow the IBM interim\u2011fix link for the exact remediation steps.",
+    "pred": {
+      "relevance": 0.6,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.23809523809523808,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07926829268292683,
+      "utilization": 0.07926829268292683,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 56,
+    "question": "I am using persistent messages, but I never got the messages I am using persistent messages, but I never got the messages. How can I determine what happen to the messages?\n",
+    "answer": "The only way to find out why persistent messages never arrived is to look for the queue\u2011damage condition described in the technote.\n\n1. **Check how the queue manager was stopped** \u2013 the problem only occurs when the queue manager is not ended cleanly (i.e.,\u202fnot using `endmqm`). If you have been stopping the queue manager abruptly, that is the first clue.\n\n2. **Examine the queue\u2019s\u202fq\u202ffile** \u2013 have IBM Service (or a qualified administrator) open the queue\u2019s\u202fq\u202ffile and look for a **non\u2011null head of the message chain but no message**.  \n   * A damaged queue will usually be exactly **1712\u202fbytes** (or more commonly **10\u202f240\u202fbytes**) in size.  \n   * The q\u2011file will show a non\u2011null head pointer with no actual message data.\n\n3. **Look for the \u201cre\u2011appearance\u201d of previously\u2011got persistent messages** \u2013 the symptom can also be that persistent messages you already retrieved show up again on the queue, which is another sign of the same corruption.\n\n4. **Review the queue manager logs** \u2013 any messages about checkpoint failures, flushing of persistent messages, or truncation of the queue are indicators that the above scenario has occurred.\n\nIf the q\u2011file shows the described non\u2011null head with no message (or the queue size matches the 1712\u202f/\u202f10\u202f240\u2011byte pattern), the persistent messages were lost because the queue became damaged after an ungraceful shutdown combined with a mix of persistent and non\u2011persistent messages. The only remedy is to recreate the queue (or restore it from backup) and ensure future shutdowns are performed with `endmqm`.",
+    "pred": {
+      "relevance": 0.37037037037037035,
+      "utilization": 0.2037037037037037,
+      "completeness": 0.55,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02029520295202952,
+      "utilization": 0.01845018450184502,
+      "completeness": 0.9090909090909091,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 57,
+    "question": "Suppose I can well describe my problem and my symptoms - what is the best way to find a matching solution or a known code fix (APAR)? Suppose I can well describe my problem and my symptoms - what is the best way to find a matching solution or a known code fix (APAR), in particular if I want to void opening a PMR.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.16176470588235295,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09885931558935361,
+      "utilization": 0.07984790874524715,
+      "completeness": 0.8076923076923077,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 58,
+    "question": "Want to find out if Microsoft Edge is supported with ICC? Want to find out Microsoft Edge is supported with ICC? ",
+    "answer": "Yes. Microsoft Edge is supported with IBM Content Collector (ICC) starting with IBM Content Collector\u202f4.0.1\u202fFix\u202fPack\u202f2.",
+    "pred": {
+      "relevance": 0.41379310344827586,
+      "utilization": 0.06896551724137931,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0026595744680851063,
+      "utilization": 0.0013297872340425532,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 59,
+    "error": "Expecting value: line 48 column 3 (char 10687)",
+    "pred": null,
+    "gt": {
+      "relevance": 0.23148148148148148,
+      "utilization": 0.17592592592592593,
+      "completeness": 0.76,
+      "adherence": 1
+    }
   }
 ]
