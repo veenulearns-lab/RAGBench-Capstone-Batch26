@@ -334,5 +334,60 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 30,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.01079136690647482,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 31,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.012295081967213115,
+      "utilization": 0.004098360655737705,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 32,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.027777777777777776,
+      "utilization": 0.08333333333333333,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 33,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.08823529411764706,
+      "utilization": 0.058823529411764705,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 34,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.04085603112840467,
+      "utilization": 0.011673151750972763,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
   }
 ]
