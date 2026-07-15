@@ -2888,5 +2888,90 @@
       "completeness": 0.5,
       "adherence": 0
     }
+  },
+  {
+    "idx": 170,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ is affected by a privilege escalation vulnerability (CVE-2017-1612) I need to understand details regarding Security Bulletin: IBM WebSphere MQ is affected by a privilege escalation vulnerability (CVE-2017-1612).",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.043478260869565216,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 171,
+    "question": "How do I upgrade my virtual DataPower Appliance from 5.0 firmware to 6.0+ firmware? When attempting to upgrade my Virtual DataPower Appliance from 5.0.0.8 firmware version to 6.0+ firmware versions, I receive a failure message. ",
+    "answer": "To upgrade a virtual DataPower appliance from any 5.0\u2011series firmware to a 6.0\u2011series (or later) firmware you must first be running **the 5.0.0.8 fix pack or any later 5.x fix pack**.  \n\n**Why the failure occurs**  \nThe 5.0.0.8 fix pack includes a required change that lets the larger\u2011sized 6.0 firmware image fit on the virtual appliance. If the appliance is still on a 5.0 fix pack earlier than 5.0.0.8, the upgrade to 6.0+ will fail.\n\n**Steps to perform the upgrade**\n\n1. **Confirm your current fix pack**  \n   - Log in to the appliance and run `show component-firmware` (or similar) to see the exact fix\u2011pack version.  \n   - If the version is earlier than **5.0.0.8**, you must upgrade to 5.0.0.8 (or any later 5.x fix pack) first.\n\n2. **Install the 5.0.0.8 (or later) fix pack**  \n   - Download the 5.0.0.8 fix pack from IBM Fix Central.  \n   - Apply it to the virtual appliance following the normal firmware\u2011upgrade procedure (upload the .zip, run the upgrade command, and let the appliance reboot).  \n\n3. **Upgrade to 6.0.0.0 or later**  \n   - Once the appliance is running 5.0.0.8 (or a newer 5.x) firmware, download the desired 6.0.x (or later) fix pack/OVA from Fix Central.  \n   - **Do not** install any fix pack that is earlier than 5.0.0.8; the 6.0+ upgrade must be performed from 5.0.0.8 or newer.  \n   - Apply the 6.0.x fix pack (or import the 6.0.0.0 OVA) using the standard upgrade process.  \n\n4. **Verify the upgrade**  \n   - After the reboot, run `show component-firmware` again to confirm the appliance now reports a 6.0.x version.  \n\n**Key points to remember**\n\n- **5.0.0.8 is mandatory** before moving to any 6.0+ firmware.  \n- Do **not** mix earlier fix packs (e.g., 5.0.0.0, 5.0.0.5, 5.0.0.6) with a 6.0 upgrade.  \n- The 5.0.0.8 fix pack contains the critical fix that allows the larger 6.0 firmware image to be installed successfully.  \n\nIf you follow these steps and ensure the appliance is on 5.0.0.8 (or later) before attempting the 6.0+ upgrade, the failure message should no longer appear.",
+    "pred": {
+      "relevance": 0.4375,
+      "utilization": 0.1875,
+      "completeness": 0.42857142857142855,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05747126436781609,
+      "utilization": 0.022988505747126436,
+      "completeness": 0.3,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 172,
+    "question": "Security Bulletin: MQ Explorer directory created with owner '555' on Linux x86-64 vulnerability affects IBM MQ (CVE-2016-6089) I need to understand details regarding Security Bulletin: MQ Explorer directory created with owner '555' on Linux x86-64 vulnerability affects IBM MQ (CVE-2016-6089). Where can I find this information?",
+    "answer": "You can find the full details in IBM\u2019s own security bulletin for IBM\u202fWebSphere\u202fMQ (the bulletin that lists CVE\u20112016\u20116089).\u202fThe bulletin is published on IBM\u2019s support web site and is linked from the \u201cWebSphere\u202fMQ Recommended\u202fFixes\u201d page:\n\n**WebSphere\u202fMQ Recommended\u202fFixes**  \nhttp://www\u20111.ibm.com/support/docview.wss?rs=171&uid=swg27006037  \n\nIf the fix level you need is not yet released, the planned availability is shown on the \u201cWebSphere\u202fMQ Planned Maintenance Release Dates\u201d page:\n\n**WebSphere\u202fMQ Planned Maintenance Release Dates**  \nhttp://www\u20111.ibm.com/support/docview.wss?rs=171&uid=swg27006309  \n\nThese pages contain the security\u2011bulletin information, the CVE reference (CVE\u20112016\u20116089), the affected platforms (Linux\u202fx86\u201164), the description of the \u201cMQ Explorer directory created with owner \u2018555\u2019\u201d issue, and the recommended PTFs/maintenance levels to apply.",
+    "pred": {
+      "relevance": 0.3125,
+      "utilization": 0.1875,
+      "completeness": 0.6,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 173,
+    "question": "Problem with Postal database in Parascript  Hi\n\ni am working with Parascript and i have installed successfully in my local system by folloing this guide [ Parascript FieldScript for Taskmaster Guide ]\n\nhere i can able to create vocabulary file, but storing multiple values into this the values are overridden and i do not understand how to create a postal database and access it\n\nis that postal database is separate component ,,?? do we need to get somewhere and install ,,? they just mention in Guide the use of actions only\n\nand does this parascript really helps to get better recognize.",
+    "answer": "The USPS \u201cpostal\u201d database is **not** created by the Parascript FieldScript guide itself \u2013 it is a separate data component that IBM supplies on a data\u2011disk.  \n\n* The disk that contains the United States Postal Service (USPS) database is shipped with Parascript FieldScript for Datacap (versions\u202f8.0.1,\u202f8.1.0 and\u202f9.0.0).  \n* It is **downloadable only through Passport Advantage**. After you sign in with your IBM ID you can select the Parascript FieldScript package and the associated data\u2011disk.  \n* The address information on that disk is automatically disabled 105\u202fdays after the issue date, and IBM refreshes the disk on the 14th of each month (or the previous business day). You must regularly obtain the refreshed data from Passport Advantage to avoid disabled address information.  \n\nSo, to use a postal database you need to:\n\n1. Sign in to Passport Advantage (or register for an IBM ID).  \n2. Download the Parascript FieldScript package **and** the accompanying data\u2011disk that contains the USPS database.  \n3. Keep the data up\u2011to\u2011date by re\u2011downloading the refreshed disk each month.\n\nOnce the database is installed, Parascript can use it to improve address recognition, but the guide itself only shows how to invoke the actions; the actual postal data must be obtained as described above.",
+    "pred": {
+      "relevance": 0.46875,
+      "utilization": 0.1875,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02242152466367713,
+      "utilization": 0.02242152466367713,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 174,
+    "question": "MQ jobs and some user jobs are in semaphore wait (SEMW) status After upgrading WMQ on IBM i, MQ jobs and some user jobs are in a semaphore wait (SEMW) status. I've tried to end and restart MQ, performed cold start, delete and rebuild MQ system with no luck. Where do I need to look?\n",
+    "answer": "Look at the semaphore\u2011ID allocation that MQ uses on the iSeries \u2013 in particular the IDs that are used for MQ trace. After an upgrade (or a hostname change) MQ may pick a different scheme for allocating those IDs, and if the IDs clash with semaphores that are already in use by other software the MQ address spaces can end up stuck in **SEMW**.  \n\nSo check the following:\n\n1. **Hostname\u2011related semaphore allocation** \u2013 verify that the system\u2019s hostname has not changed (or, if it has, that the change was reflected in the MQ installation).  \n2. **/var/mqm/sockets/@SYSTEM/qmgrlocl directory** \u2013 make sure this directory exists and contains a sub\u2011directory named for the current hostname; MQ creates it at install time and uses it when allocating semaphore IDs.  \n3. **Semaphore\u2011ID conflicts** \u2013 use the IBM i tools (e.g., `WRKOBJ`/`DSPSEMA`) to list the semaphores in use and see whether any IDs that MQ would allocate are already taken by other applications.  \n\nResolving any hostname\u2011related path problems or semaphore\u2011ID clashes should clear the MQ jobs (and the user jobs that are waiting on the same semaphores) out of the SEMW state.",
+    "pred": {
+      "relevance": 0.37037037037037035,
+      "utilization": 0.14814814814814814,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07261410788381743,
+      "utilization": 0.03941908713692946,
+      "completeness": 0.5428571428571428,
+      "adherence": 0
+    }
   }
 ]
