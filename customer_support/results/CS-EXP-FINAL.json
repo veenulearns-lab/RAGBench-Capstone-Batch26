@@ -2633,5 +2633,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 154,
+    "question": "When I try to deploy an application on a cluster, why is it throwing an ADMA8019E error in the admin console? The application is being deployed at the cluster scope, but my namespace bindings are defined at the cell scope. The error I'm seeing in the admin console is:\n\nADMA8019E: The resources that are assigned to the application are beyond the deployment target scope. Resources are within the deployment target scope if they are defined at the cell, node, server, or application level when the deployment target is a server, or at the cell, cluster, or application level when the deployment target is a cluster. Assign resources that are within the deployment target scope of the application or confirm that these resources assignments are correct as specified.\n\nI don't see any actual issue with how the JNDI lookup is occurring once the application is deployed. Should I be concerned about this error?\n",
+    "answer": "The ADMA8019E message is telling you that one or more of the resources the application references are not defined at a scope that matches the deployment target you chose.  \n\nAccording to the documentation in the provided context, when you deploy to a **cluster** the resources must be defined at the **cell**, **cluster**, or **application** level. If a resource (such as a JNDI namespace binding) is defined at any other scope, WebSphere reports ADMA8019E.\n\nSo the error appears because WebSphere has detected that the namespace bindings you have are not (or it thinks they are not) at one of those allowed scopes for a cluster deployment.  \n\n**What to do**\n\n* Verify that the JNDI bindings are indeed defined at the cell, cluster, or application scope.  \n* If they are defined at a lower scope (node or server), move or re\u2011create them at the cell or cluster level, or change the deployment target to match the resource\u2019s scope.  \n* If the bindings are already at the cell scope, confirm that the deployment target you selected is the correct cluster and that no other resources (e.g., JDBC providers, security domains) are defined at an incompatible scope.\n\nIf the application runs correctly after deployment and all lookups succeed, the warning can be considered benign, but the proper fix is to ensure the resource definitions are scoped appropriately as described above.",
+    "pred": {
+      "relevance": 0.6486486486486487,
+      "utilization": 0.6486486486486487,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 155,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error is caused by the **ARG_MAX** limit being exceeded \u2013 the compile command is passing more arguments than the system allows.  \n\n**How to fix it**\n\n1. **Check the current limit**  \n\n   ```sh\n   lsattr -E -l sys0 -a ncargs\n   ```\n\n2. **Raise the limit** (AIX only \u2013 you can set any value from 6 up to 1024; the default is 6).  \n\n   ```sh\n   chdev -l sys0 -a ncargs=32      # or a larger value that fits your needs\n   ```\n\n   *You can also change this via `smitty` \u2192 \u201cSystem Environments\u201d \u2192 \u201cChange System Attributes\u201d.*  \n\n3. After changing `ncargs`, the new setting takes effect immediately and is preserved across reboots.\n\n**Note for Linux/Red\u2011Hat environments**\n\n- On kernels \u2265\u202f2.6.23 the kernel parameter can be as high as 2\u202f621\u202f440, but Twinfin only supports Red\u2011Hat\u202f5.11, which caps `ARG_MAX` at **131\u202f072**. In that environment you cannot raise the limit beyond 131\u202f072.\n\nSo, on AIX increase `ncargs` (e.g., to 32 or higher) to allow the `nzudxcompile` command to run; on supported Linux versions you would need a newer kernel, but on Twinfin you are limited to the 131\u202f072\u2011argument maximum.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.5555555555555556,
+      "completeness": 0.8333333333333334,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09649122807017543,
+      "utilization": 0.09649122807017543,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 156,
+    "question": "Help with Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031) I need to understand details regarding Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.02857142857142857,
+      "utilization": 0.02857142857142857,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 157,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To keep the Rule Execution Server from failing with a **StaleConnectionException** you need to change the way the application\u2011server data source pool is configured so that idle connections are not kept alive longer than the network (or firewall) will allow.\n\n**What to do (WebSphere \u2013 the same idea applies to WebLogic):**\n\n1. **Set the minimum number of connections to\u202f0**  \n   \u2013 This prevents the pool from keeping a \u201cminimum\u201d connection that may sit idle for a long time.\n\n2. **Adjust the timeout values**  \n   \u2013 **Unused timeout** \u2013 the time a connection can sit idle in the pool before it is eligible for removal.  \n   \u2013 **Reap timeout** \u2013 the interval at which the pool checks for idle connections to close.  \n   \u2013 **Make sure that the sum of *Unused timeout* + *Reap timeout* is less than any network\u2011level idle\u2011connection timeout** (for example, the timeout enforced by a firewall between the server and the database).\n\n3. **Verify that the pool settings are applied to the data source used by RES** (Rule Execution Server) and that no other copies of RES libraries are placed on the system or server class path (which can cause class\u2011loading problems).\n\n4. **If you are on WebLogic**, apply the equivalent configuration to the JDBC connection pool there (the same principle \u2013 avoid keeping idle connections longer than the network allows).\n\nBy configuring the connection pool with a minimum of\u202f0 and with timeout values that keep idle connections from persisting beyond the network\u2019s idle\u2011connection limit, the RES will obtain fresh, valid connections and the recurring **StaleConnectionException** will be eliminated.",
+    "pred": {
+      "relevance": 0.6470588235294118,
+      "utilization": 0.17647058823529413,
+      "completeness": 0.2727272727272727,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.11450381679389313,
+      "utilization": 0.022900763358778626,
+      "completeness": 0.2,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 158,
+    "question": "Why do I get error when I try to save application in APMUI? I am using APMUI 7.7 IF1. Following error occurs when I try to save application:\n\n \n\nCTGAZ0001E: The application cannot be saved because the application repository is not available.\nmessages.log of scr server shows that it is listening at 17310 port:\n\n \n\nA CWWKT0016I: Web application available (default_host): http://apmhost:17310/SCRCLUSTER_SCR_oslc.html\nBut apmui is referring to this URL with port 8080 (APM_UI.log):\n\n \n\nhttp://apmhost:8080/SCRCLUSTER_SCR_oslc/scr/gettime",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
