@@ -2633,5 +2633,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 155,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error is caused by the system\u2019s **ARG_MAX** limit being exceeded (the compile command is passing more than the allowed number of arguments).  \n\n**Fix**\n\n1. **Check the current limit**  \n   ```bash\n   getconf ARG_MAX          # shows the current limit (e.g., 131072)\n   lsattr -E -l sys0 -a ncargs   # AIX shows the current ncargs value\n   ```\n\n2. **Increase the limit** \u2013 on AIX the limit is controlled by the `ncargs` attribute of `sys0`.  \n   - You can raise it with `chdev` (or via SMITTY):  \n     ```bash\n     chdev -l sys0 -a ncargs='32'   # default is 6; you can set up to 1024\n     ```  \n   - After the change it takes effect immediately and persists across reboots.\n\n3. **Re\u2011run the UDX compilation** \u2013 with the larger `ncargs` (or higher ARG_MAX) the \u201cArgument list too long\u201d error should disappear.\n\nIn short: increase the AIX `ncargs` value (e.g., to 32 or any value up to 1024) to raise the ARG_MAX limit, then retry the compilation.",
+    "pred": {
+      "relevance": 0.3968253968253968,
+      "utilization": 0.3492063492063492,
+      "completeness": 0.88,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.09649122807017543,
+      "utilization": 0.09649122807017543,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 156,
+    "question": "Help with Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031) I need to understand details regarding Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0851063829787234,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02857142857142857,
+      "utilization": 0.02857142857142857,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 157,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To stop the Rule Execution Server from failing with a **com.ibm.websphere.ce.cm.StaleConnectionException**, configure the WebSphere data\u2011source connection pool so that idle connections are never kept longer than the network allows.\n\n**Steps (from the IBM TECHNOTE):**\n\n1. **Set the pool\u2019s minimum connections to\u202f0** \u2013 this prevents WebSphere from holding a \u201cminimum\u2011size\u201d connection that may sit idle for a long time.  \n\n2. **Adjust the timeout values**  \n   * **Unused timeout** \u2013 the time a connection can sit idle before WebSphere marks it as unused.  \n   * **Reap timeout** \u2013 the interval at which WebSphere scans the pool and removes unused connections.  \n\n   Make sure that **(Unused timeout\u202f+\u202fReap timeout) \u2264 any network\u2011level idle\u2011connection timeout** (e.g., the firewall\u2019s idle\u2011connection discard period).  \n\n3. **Verify that the sum of those two timeouts does not exceed the firewall or other network device\u2019s idle\u2011connection timeout** \u2013 otherwise the network will drop the connection while WebSphere still thinks it is valid, producing the StaleConnectionException.\n\n4. (Optional) If you are on WebLogic, apply the same principle \u2013 configure the datasource/connection\u2011pool timeouts so idle connections are closed before the network drops them (see the related WebLogic note).\n\n**Result:** When the pool discards idle connections before the network does, the next request will obtain a fresh, valid connection and rule execution will no longer fail due to recurrent\u202fStaleConnectionException.  \n\n(For more details see the IBM documents \u201cConfiguring the WebSphere Application Server data source connection pool\u201d and \u201cTroubleshooting stale connection problems\u201d.)",
+    "pred": {
+      "relevance": 0.2972972972972973,
+      "utilization": 0.08108108108108109,
+      "completeness": 0.2727272727272727,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.11450381679389313,
+      "utilization": 0.022900763358778626,
+      "completeness": 0.2,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 158,
+    "question": "Why do I get error when I try to save application in APMUI? I am using APMUI 7.7 IF1. Following error occurs when I try to save application:\n\n \n\nCTGAZ0001E: The application cannot be saved because the application repository is not available.\nmessages.log of scr server shows that it is listening at 17310 port:\n\n \n\nA CWWKT0016I: Web application available (default_host): http://apmhost:17310/SCRCLUSTER_SCR_oslc.html\nBut apmui is referring to this URL with port 8080 (APM_UI.log):\n\n \n\nhttp://apmhost:8080/SCRCLUSTER_SCR_oslc/scr/gettime",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 159,
+    "question": "How can I export a private key from DataPower Gateway Appliance? \n\nHow can I export a private key from DataPower Gateway appliance?\n\n",
+    "answer": "To export a private key from a DataPower appliance you must use the **`crypto\u2011export`** command, but only after a few prerequisite steps are satisfied:\n\n1. **HSM must be initialized** on both the source and the destination appliance and they must be in the **same key\u2011sharing domain** (both in Security Level\u202f2 *or* both in Security Level\u202f3).  \n   * In Security\u202fLevel\u202f2 the same **`hsm\u2011domain`** value must have been used during `hsm\u2011reinit`.  \n   * In Security\u202fLevel\u202f3 the same **red PED key** must have been used.\n\n2. **The key to be exported must be marked exportable** when it was created (the `keygen` command\u2019s **`exportable`** option).  \n   * If the key was created outside the appliance (not with `keygen`) it is always considered exportable.  \n   * On a non\u2011HSM appliance the key can be exported only at key\u2011gen time, never later.\n\n3. **Synchronize the internal key\u2011wrapping keys** of the two HSMs.  \n   * Run the **`hsm\u2011clone\u2011kwk`** command **four times**:  \n     1. On the source appliance (export side) \u2013 generate the first wrapper file.  \n     2. On the destination appliance (import side) \u2013 consume that file and produce a response file.  \n     3. Back on the source appliance \u2013 consume the response file and produce a second wrapper file.  \n     4. Finally on the destination appliance \u2013 consume the second wrapper file.  \n   * Each run uses the output file from the previous step as its input; the files are moved manually (e.g., with `copy`).\n\n4. **Export the key**  \n   * With the key\u2011wrapping keys now matching, run `crypto\u2011export` on the source appliance, specifying the exportable private key.  \n   * The command creates an export file (encrypted with the key\u2011wrapping key).\n\n5. **Import (if desired)**  \n   * Transfer the export file to the destination appliance and run `crypto\u2011import` to load the private key.\n\nWhen the goal is to restore the key to the **same** appliance, steps 1\u20113 (especially `hsm\u2011clone\u2011kwk`) are not needed because the key\u2011wrapping key is already the same.\n\nSo, in short: ensure the HSMs are initialized in the same domain, confirm the key is exportable, synchronize the key\u2011wrapping keys with `hsm\u2011clone\u2011kwk` (four runs), then run `crypto\u2011export` (and optionally `crypto\u2011import`).",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.4,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07665505226480836,
+      "utilization": 0.027874564459930314,
+      "completeness": 0.36363636363636365,
+      "adherence": 1
+    }
   }
 ]
