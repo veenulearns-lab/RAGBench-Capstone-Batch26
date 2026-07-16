@@ -1953,5 +1953,90 @@
       "completeness": 0.38461538461538464,
       "adherence": 1
     }
+  },
+  {
+    "idx": 115,
+    "question": "Want to find out if Microsoft Edge is supported with ICC? Want to find out Microsoft Edge is supported with ICC? ",
+    "answer": "Yes. Microsoft Edge is supported with IBM Content Collector (ICC) starting with IBM Content Collector\u202f4.0.1\u202fFix\u202fPack\u202f2.",
+    "pred": {
+      "relevance": 0.41379310344827586,
+      "utilization": 0.06896551724137931,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.003989361702127659,
+      "utilization": 0.0026595744680851063,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 116,
+    "question": "What should I do if I observed \"ghost queue building up\" issue? There are lots of ghost queues in the system, which have already took up most of file system space. What can I do under such situation?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3315508021390374,
+      "utilization": 0.0855614973262032,
+      "completeness": 0.22580645161290322,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 117,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "The error means that the Installation Manager cannot find the zip files that contain the required features in the repository you pointed it at.  \nTo fix it you need to make sure the **correct fix\u2011pack repository is present, complete and added to Installation Manager** before you start the BPM Fix\u2011Pack installation.\n\n**Steps (based on the information in the context)**  \n\n1. **Download the proper fix\u2011pack image**  \n   * For a generic \u201call\u2011platforms\u201d repository download the two parts:  \n     * `was.<version>.fp.all_Part1of2.zip`  \n     * `was.<version>.fp.all_Part2of2.zip`  \n   * Or, if you prefer a smaller slice, download the OS\u2011specific zip (e.g. `was.nd.<version>.fp.win.zip` for Windows or `was.nd.<version>.fp.linux.x86.zip` for Linux).  \n\n2. **Extract the zip files**  \n   * Extract **both parts** (or the single OS\u2011specific zip) into the **same directory**.  \n   * The extraction must create a `disk1` folder that contains the file `diskTag.inf`.\n\n3. **Add the repository to IBM Installation Manager**  \n   * Open Installation Manager \u2192 *File* \u2192 *Preferences* \u2192 *Repositories*.  \n   * Click **Add Repository** and browse to the `diskTag.inf` file that is now in `<your\u2011extract\u2011directory>\\disk1\\diskTag.inf`.  \n   * Click **OK** to close the dialog.\n\n4. **Verify the repository**  \n   * In the Repositories list you should now see the newly added fix\u2011pack repository.  \n   * Make sure it is **enabled** (checked) and that there are no error icons next to it.\n\n5. **Run the BPM Fix\u2011Pack installation again**  \n   * Start the installation from Installation Manager.  \n   * The missing zip files (`im.properties`, `config.registry`, etc.) will now be found in the repository and the install should proceed without the CRIMC1020E errors.\n\n**Why this works**  \n`CRIMC1020E` is raised when a required zip (feature) cannot be located in any of the repositories known to Installation Manager. By downloading the complete (or correctly sliced) fix\u2011pack repository, extracting it fully, and adding the `diskTag.inf` to the manager, you supply the missing zip files that the installer is looking for.\n\nIf you still see the error after following the steps, re\u2011download the zip files (they may be corrupted) and repeat the process.",
+    "pred": {
+      "relevance": 0.3220338983050847,
+      "utilization": 0.3220338983050847,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08585858585858586,
+      "utilization": 0.09090909090909091,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 118,
+    "question": "Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license? Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.09090909090909091,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.019801980198019802,
+      "utilization": 0.01485148514851485,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 119,
+    "question": "res-deploy-xom ant task does not deploy xom based on checksum difference when xom is a .zip extension Question: Is re-naming the WebSphere Portal installation directory and cell name for an existing clustered installation possible? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
