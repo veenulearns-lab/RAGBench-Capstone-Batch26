@@ -1,0 +1,11 @@
+Experiment ID,Domain,Chunking Strategy,Embedding Model,Retrieval Technique,Re-ranking,Generator LLM Used,Context Relevance (score) / Rel RMSE,Context Utilization (score) / Util RMSE,Completeness (score) / Comp RMSE,Adherence (score) / Adh AUCROC,Reference Relevance,Reference Utilization,Reference Completeness,Reference Adherence,Samples,Notes / Error Analysis
+LEGAL-EXP-001,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,llama-3.3-70b,"0.2747
+RMSE 0.3760","0.1013
+RMSE 0.1233","0.3740
+RMSE 0.6186","0.8000
+AUCROC 0.9348",0.0756,0.0194,0.7466,0.92,25,"Baseline. Retrieval-starved: high adh, low rel/util. Adh failures = hedge-elaborations on empty retrievals, not confabulation."
+LEGAL-EXP-006,Legal (cuad),clause,all-MiniLM-L6-v2,FAISS (dense),None,llama-3.3-70b,"0.2566
+RMSE 0.3487","0.1086
+RMSE 0.1556","0.3637
+RMSE 0.6163","0.7600
+AUCROC 0.3696",0.0756,0.0194,0.7466,0.92,25,
