@@ -2888,5 +2888,90 @@
       "completeness": 0.5,
       "adherence": 0
     }
+  },
+  {
+    "idx": 170,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ is affected by a privilege escalation vulnerability (CVE-2017-1612) I need to understand details regarding Security Bulletin: IBM WebSphere MQ is affected by a privilege escalation vulnerability (CVE-2017-1612).",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.043478260869565216,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 171,
+    "question": "How do I upgrade my virtual DataPower Appliance from 5.0 firmware to 6.0+ firmware? When attempting to upgrade my Virtual DataPower Appliance from 5.0.0.8 firmware version to 6.0+ firmware versions, I receive a failure message. ",
+    "answer": "To upgrade a virtual DataPower appliance from the 5.x firmware line to the 6.x (or later) firmware you must first be running **the 5.0.0.8 fix pack (or any later 5.x fix pack)**.  \n\nThe 5.0.0.8 fix pack contains a required change that lets the larger\u2011sized 6.0 firmware image fit on the virtual appliance. If you try to move directly from a 5.0.0.0\u20115.0.0.6 level to 6.0, the upgrade will fail.\n\n**Upgrade steps (as described in the provided context)**  \n\n1. **Verify your current fix\u2011pack level.**  \n   - If you are on 5.0.0.0, 5.0.0.5, or 5.0.0.6, you must first apply the 5.0.0.8 fix pack.  \n\n2. **Install the 5.0.0.8 (or later) fix pack** from Fix Central.  \n   - Do **not** install any fix pack that is earlier than 5.0.0.8 after you have applied 5.0.0.8.  \n\n3. **After the 5.0.0.8 fix pack is successfully installed**, proceed with the upgrade to the 6.0.0.0 (or later) OVA file or the corresponding 6.x fix pack.  \n\n4. **Do not mix older fix packs** with the 6.x upgrade \u2013 the guidance is to avoid installing any fix pack from Fix Central that predates 5.0.0.8 once you are on the 5.0.0.8 level.\n\nFollowing these steps satisfies the required prerequisite and should prevent the failure you are seeing when attempting to move from 5.0.0.8 to a 6.0+ firmware version.",
+    "pred": {
+      "relevance": 0.2,
+      "utilization": 0.09230769230769231,
+      "completeness": 0.46153846153846156,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05747126436781609,
+      "utilization": 0.022988505747126436,
+      "completeness": 0.3,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 172,
+    "question": "Security Bulletin: MQ Explorer directory created with owner '555' on Linux x86-64 vulnerability affects IBM MQ (CVE-2016-6089) I need to understand details regarding Security Bulletin: MQ Explorer directory created with owner '555' on Linux x86-64 vulnerability affects IBM MQ (CVE-2016-6089). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 173,
+    "question": "Problem with Postal database in Parascript  Hi\n\ni am working with Parascript and i have installed successfully in my local system by folloing this guide [ Parascript FieldScript for Taskmaster Guide ]\n\nhere i can able to create vocabulary file, but storing multiple values into this the values are overridden and i do not understand how to create a postal database and access it\n\nis that postal database is separate component ,,?? do we need to get somewhere and install ,,? they just mention in Guide the use of actions only\n\nand does this parascript really helps to get better recognize.",
+    "answer": "The USPS \u201cpostal\u201d database is **not** built into the Parascript FieldScript installation you performed from the guide.  \nIt is supplied on a separate data\u2011disk that IBM ships with Parascript FieldScript, and that disk must be **downloaded from Passport Advantage** (the same site you use to get the FieldScript software).  \n\n- The data\u2011disk contains the United States Postal Service database.  \n- The address information on that disk is automatically disabled\u202f105\u202fdays after the issue date, and IBM refreshes the disk on the 14th of each month (or the prior business day).  \n- Therefore you must regularly obtain the refreshed data\u2011disk from Passport Advantage to keep the postal data usable.\n\nSo, to create and use a postal database you need to:\n\n1. Sign in to Passport Advantage with your IBM ID.  \n2. Download the Parascript FieldScript package **and** the associated USPS data\u2011disk.  \n3. Install or point Parascript to that data\u2011disk as described in the product documentation.\n\nRegarding recognition: Parascript FieldScript is intended to improve recognition accuracy, and the USPS database provides address data that can further enhance results when it is available and up\u2011to\u2011date.",
+    "pred": {
+      "relevance": 0.20833333333333334,
+      "utilization": 0.20833333333333334,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.02242152466367713,
+      "utilization": 0.02242152466367713,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 174,
+    "question": "MQ jobs and some user jobs are in semaphore wait (SEMW) status After upgrading WMQ on IBM i, MQ jobs and some user jobs are in a semaphore wait (SEMW) status. I've tried to end and restart MQ, performed cold start, delete and rebuild MQ system with no luck. Where do I need to look?\n",
+    "answer": "The problem is almost always caused by a dead\u2011lock on the **XSTA channel\u2011status semaphore** that occurs between the **supervisor TCB** and the **dispatcher TCB**.  \nIn the WMQ code the routine **riiCheckChannels** (shown as\u202fCSQXSUPR) can be waiting for the XSTA semaphore, while a channel TCB holds it \u2013 a \u201cdeadly embrace\u201d that leaves the MQ address spaces and even user jobs in **SEMW**.\n\nSo, after an upgrade you should:\n\n1. **Examine the XSTA semaphore** \u2013 look at the CSQXSUPR/CSQX\u2026 routines that wait for XSTA.  \n2. **Check for a deadlock between the supervisor TCB and the dispatcher TCB** (the CSQXSUPR dead\u2011lock described in the APAR notes).  \n3. Verify that the **hostname\u2011related directory** under  \n   ```\n   /var/mqm/sockets/@SYSTEM/qmgrlocl/<hostname>\n   ```  \n   exists; a hostname change can cause a clash of semaphore IDs that also puts jobs into SEMW.\n\nIn short, focus on the XSTA semaphore and the supervisor\u2011dispatcher TCB deadlock (CSQXSUPR) and confirm the hostname directory is correct. If those are clean, the SEMW condition should disappear.",
+    "pred": {
+      "relevance": 0.6923076923076923,
+      "utilization": 0.6923076923076923,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07261410788381743,
+      "utilization": 0.03941908713692946,
+      "completeness": 0.5428571428571428,
+      "adherence": 0
+    }
   }
 ]
