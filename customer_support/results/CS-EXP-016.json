@@ -2038,5 +2038,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 120,
+    "question": "Cognos Analytics - Images not displayed in PDF/Excel, working in HTML I've just completed an upgrade to Cognos Analytics 11.0.3. When running existing reports in HTML, the images are displayed but when I try to run them in PDF/Excel they are not. ",
+    "answer": "**Solution \u2013 make the images reachable to the Cognos application tier**\n\n1. **Check the folder permissions**  \n   * Open **IIS\u202f7.5**.  \n   * Select the root folder of the Cognos installation (e.g. *C1021GA*).  \n   * Double\u2011click **Authentication** and be sure **Anonymous Access** is **enabled**.  \n   * Repeat the same for the **image folder** and its parent folder.  \n   * If you need tighter security, you can later restrict the child\u2011folders (e.g. *cgi\u2011bin*) and adjust their authentication settings.\n\n2. **Verify the image location**  \n   * The image must be in the directory that the report references.  \n   * If the folder does not exist, create it (or move the image to the correct path).  \n   * A safe place is the Cognos installation directory, e.g.:  \n     ```\n     <cognos install>/webcontent/samples/images/pic.jpg\n     ```\n     This lets the application tier read the file directly without needing an HTTPS call.\n\n3. **If SSL is used**  \n   * Make sure the SSL certificate chain is complete in the IBM Cognos keystore.  \n   * Import any missing certificates so the application tier can trust the web\u2011server.\n\n4. **Re\u2011run the report**  \n   * Export the report again as **PDF** or **Excel 2007**.  \n   * The images should now appear instead of the black box (PDF) or missing\u2011picture icon (Excel).\n\n**Summary** \u2013 The problem is caused by the image folder not being accessible to the Cognos application tier (permissions, wrong path, or SSL trust). Enable anonymous access on the relevant IIS folders, ensure the image path exists (or place the image under the Cognos webcontent folder), and, if SSL is involved, import the full certificate chain. After these changes the images will render correctly in PDF/Excel output.",
+    "pred": {
+      "relevance": 0.4264705882352941,
+      "utilization": 0.20588235294117646,
+      "completeness": 0.4482758620689655,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.2823529411764706,
+      "utilization": 0.047058823529411764,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 121,
+    "question": "Executing a scenario suite with a Scenario Service Provider (SSP) over HTTPS How to configure the machines hosting the WebSphere Operational Decision Management modules with regard to HTTPS when executing scenario suites ?\nHow to avoid the exception below while requesting from Decision Center the execution of a scenario suite on Scenario Service Provider (SSP) over HTTPS ?\n Exception caught while contacting RES ilog.rules.res.util.http.IlrConnectionException: IO error when contacting \"/res/repositoryService\"\n ....\n Caused by: javax.net.ssl.SSLHandshakeException: com.ibm.jsse2.util.g: PKIX path building failed: java.security.cert.CertPathBuilderException: unable to find valid certification path to requested target",
+    "answer": "The problem is not a bug in the scenario\u2011service code \u2013 it is an SSL\u2011trust\u2011store issue.  \nAll of the IBM notes that describe the same \u201cPKIX path building failed\u201d error say that the\nerror disappears when the SSL configuration is made available **before** the first HTTPS\ncall is issued.  \n\n**What you have to do**\n\n1. **Import the SSP certificate (or the CA that signed it) into the trust store that is\n   used by the Decision\u202fCenter/Decision\u202fServer nodes.**  \n   The trust store is the one referenced by the system properties  \n   `javax.net.ssl.trustStore` (and `javax.net.ssl.trustStorePassword`).  \n\n2. **Make sure those system SSL properties are set early enough** \u2013 i.e. in the start\u2011up\n   code (the StartHandler) or as JVM arguments, so that the default `SSLContext` that\n   Liberty creates contains the correct trust store before any `HttpsURLConnection`\n   is opened.  The APAR\u202fIC91195 (and the related APAR\u202fPI05059) fixes this by moving the\n   SSL\u2011property initialization to the beginning of processing.\n\n3. **Apply the appropriate fix pack** for the WebSphere Liberty profile (\u2265\u202f8.5.5.2) or the\n   specific APAR fix that adds the instance\u2011base setting of the SSL socket factory on the\n   JMXConnector.  After the fix is in place the default SSL configuration is used\n   correctly even when the server runs in a collective.\n\n**Result** \u2013 with the correct certificate in the trust store and the SSL properties set\nbefore the first HTTPS request, the \u201cPKIX path building failed: unable to find valid\ncertification path to requested target\u201d exception is eliminated and scenario suites can\nbe executed over HTTPS without error.",
+    "pred": {
+      "relevance": 0.4166666666666667,
+      "utilization": 0.4166666666666667,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.028277634961439587,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 122,
+    "question": "Help with Security Bulletin: IIB is affected by Node.js security vulnerability ( CVE-2017-1000381 and CVE-2017-11499 ) I need to understand details regarding Security Bulletin: IBM Integration Bus is affected by Node.js security vulnerability ( CVE-2017-1000381 and CVE-2017-11499 ). Where can I find this information? ",
+    "answer": "You can find the details in IBM\u2019s security\u2011bulletin pages for the Node.js SDK that is shipped with IBM Integration\u202fBus.  In the bulletin the full list of CVE IDs (including CVE\u20112017\u20111000381 and CVE\u20112017\u201111499) and the remediation information are provided at the IBM support document:\n\n* **IBM Security Bulletin \u2013 Multiple vulnerabilities affecting the IBM SDK for Node.js**  \n \u202fhttp://www.ibm.com/support/docview.wss?uid=swg21685467  \n\nThe same bulletin is also listed on the IBM Secure Engineering Web Portal:\n\n* **IBM Secure Engineering Web Portal \u2013 Security Bulletins**  \n \u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n\n(You can also subscribe to \u201cMy Notifications\u201d to receive future bulletins:\u202fhttp://www-01.ibm.com/software/support/einfo.html.)",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.0625,
+      "completeness": 0.125,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02336448598130841,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.2,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 123,
+    "question": "What are the files created in $TEMP on startup of IIB or WMB? What are the 0 byte files created in $TEMP/.com_ibm_tools_attach directory upon IBM Integration Bus (IIB) / WebSphere Message Broker (WMB) startup?\nFor example: The following files are created on UNIX / Windows if $TEMP is /tmp:\n/tmp/.com_ibm_tools_attach/_attachlock\n/tmp/.com_ibm_tools_attach/_master\n/tmp/.com_ibm_tools_attach/_notifier",
+    "answer": "The only files that are created in **$TEMP/.com_ibm_tools_attach** when an IBM Integration Bus (IIB) or WebSphere Message Broker (WMB) instance starts are three zero\u2011byte files:\n\n* **_attachlock**  \n* **_master**  \n* **_notifier**\n\nThese files appear in the sub\u2011directory **.com_ibm_tools_attach** under the system temporary directory (e.g.,\u202f`/tmp/.com_ibm_tools_attach/_attachlock`, `/tmp/.com_ibm_tools_attach/_master`, `/tmp/.com_ibm_tools_attach/_notifier`).",
+    "pred": {
+      "relevance": 0.21568627450980393,
+      "utilization": 0.0392156862745098,
+      "completeness": 0.18181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.09289617486338798,
+      "utilization": 0.11475409836065574,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 124,
+    "question": "Port number error starting 9.0 Launcher \n\nI'm attempting to start up v9.0 for the first time with one .msl file on a Windows server and get the following error.  I also have v8.4 on this server and it starts fine.  I do not have v8.4 running when I attempt to start v9.0.\n\nCannot recognize if the system RecordChangeSystem.msl; has started. Reason: Server is unable to get the status of the system on port number 6,002.\n\nI have the port range set to 7000/8000.  Why am I seeing this?  ",
+    "answer": "The launcher is trying to contact the server on port **6002**, which is not in the 7000\u20118000 block you configured. That port is already being used (or reserved) on the machine, so the server cannot obtain its status and reports the \u201cport number 6002\u201d error.  \n\nIn WebSphere\u202fApplication Server you must choose a **starting port** whose entire 21\u2011port block (starting port\u202f+\u202f20) is free. If any port in that block \u2013 or any default port the product uses (such as 6002) \u2013 is already in use, the server will fail with the message you see.  \n\n**What to do**\n\n1. Verify that port\u202f6002 (and the rest of the block you intend to use) is not in use (e.g., with the Profile Port Checker or `netstat`).  \n2. Choose a different starting port so that the resulting port block does not include any ports that are already occupied, including 6002.  \n3. Save the new starting\u2011port value and restart the server.\n\nOnce the port block is free of conflicts, the 9.0 launcher will start without the \u201cport number 6002\u201d error.",
+    "pred": {
+      "relevance": 0.14285714285714285,
+      "utilization": 0.14285714285714285,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
