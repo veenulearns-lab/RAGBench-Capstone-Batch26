@@ -2293,5 +2293,90 @@
       "completeness": 0.21739130434782608,
       "adherence": 1
     }
+  },
+  {
+    "idx": 135,
+    "question": "Where can I find more details about WMB Fix Pack 8.0.0.5? Where can find more information about WebSphere Message Broker (WMB) Fix Pack 8.0.0.5?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.11940298507462686,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.009174311926605505,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 136,
+    "question": "Get all data that\\'s registred today Version: \nMxLoader 4.7.4\n                        \n\nProblem:\nIs it possible to do something like this:\nreportdate >= TODAY()?\n\nI cant get it to work but i would like to get all the data that has been registred today today.  \n",
+    "answer": "Use the database\u2019s current\u2011date function instead of a \u201cTODAY()\u201d function.\n\n* **On DB2** \u2013 use the special register `CURRENT DATE`.  \n  Example:  \n\n  ```sql\n  WHERE reportdate >= CURRENT DATE\n  ```\n\n* **On Oracle** \u2013 use `SYSDATE`.  \n  Example:  \n\n  ```sql\n  WHERE reportdate >= SYSDATE\n  ```\n\nThese functions return the current date (and time, if needed) and can be used to retrieve all rows that were registered today.",
+    "pred": {
+      "relevance": 0.125,
+      "utilization": 0.0625,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.013793103448275862,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 137,
+    "question": "where is the websphere application server 9.0.0.4 fix for developers I am using the was 9.0.0.0 in rad/rsa 9.6.1 for Windows. I cannot upgrade to the 9.0.0.4 fixpack, because there is no developer edition. On the downloadpage there are Base, Network Deployment, DMZ Secure Proxy Server and IBM Web Enablement for IBM i, but no Developers! See link text For was 8.5.5.10 there exists a developers edition. Where can I download the Websphere Application Server fix pack 9.0.0.4 Developers?",
+    "answer": "The \u201cDeveloper\u201d edition of WebSphere\u202fApplication\u202fServer\u202f9 is no longer offered as a separate fix\u2011pack download on the regular Base/ND pages. It is now called **WAS\u202fILAN (WAS\u202ffor\u202fDevelopers)** and is delivered through IBM\u2019s repository manager.\n\nTo get the 9.0.0.4 (or later) fix\u2011pack for the developer edition, add the following repository to IBM Installation Manager and install the WAS\u202fILAN package from there:\n\n**Repository URL**  \n`https://www.ibm.com/software/repositorymanager/com.ibm.websphere.ILAN.v90/`\n\n(You can also reach the same content via the IBM \u201cEvaluation software\u201d page and the WAS\u202ffor\u202fDevelopers FAQ.)\n\nSo the 9.0.0.4 developer fix\u2011pack is obtained from the **WAS\u202fILAN v90 repository**, not from the standard Base/Network\u2011Deployment download listings.",
+    "pred": {
+      "relevance": 0.3448275862068966,
+      "utilization": 0.1724137931034483,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.14659685863874344,
+      "utilization": 0.05759162303664921,
+      "completeness": 0.39285714285714285,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 138,
+    "question": "Why is WebSphere MQ connection failing when enabling SSL with AMQ9640 SSLPEER peer name error? Why is WebSphere MQ connection failing when enabling SSL with AMQ9640 SSLPEER peer name error?\nexample client side error:com.ibm.mq.jmqi.JmqiException: CC=2;RC=2399;\n \nAMQ9640: SSL invalid peer name, channel '?',\n \nattribute 'OID.0.9.2342.19200300.100.1.3 (x2)'.",
+    "answer": "The connection fails because the SSL\u202fpeer\u2011name that MQ checks does not match the distinguished name (DN) contained in the client\u2019s certificate. In the affected JMS client the **SSLPEERNAME** property is being set automatically from the certificate\u2019s DN, and the DN contains characters or fields that MQ cannot parse (for example, slashes \u201c/\u201d in CN, O, OU, L, or mismatched PC= / C= components). When MQ tries to verify the peer name it raises **MQRC_SSL_PEER_NAME_ERROR** (RC\u202f2399) and returns AMQ9640 \u201cSSL invalid peer name\u201d.  \n\nSo the failure is caused by an invalid or unparsable SSLPEER value \u2013 typically a DN with slashes or other mismatched attributes \u2013 rather than a problem with the channel itself. The fix is to stop setting SSLPEERNAME from the certificate DN (or use a newer fix pack) or to generate certificates whose DN fields do not contain slashes or other problematic values.",
+    "pred": {
+      "relevance": 0.29411764705882354,
+      "utilization": 0.2647058823529412,
+      "completeness": 0.9,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013404825737265416,
+      "utilization": 0.00804289544235925,
+      "completeness": 0.6,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 139,
+    "question": "How can I export a private key from DataPower Gateway Appliance? \n\nHow can I export a private key from DataPower Gateway appliance?\n\n",
+    "answer": "To export a private key from a DataPower appliance you must use the **`crypto\u2011export`** command, but only after a few prerequisite steps are satisfied:\n\n1. **HSM must be initialized** on both the source and the destination appliance and they must be in the **same key\u2011sharing domain** (same security level \u2013 SL2 or SL3 \u2013 and, for SL2, the same `hsm\u2011domain` value; for SL3, the same RED PED key).\n\n2. The private key you want to export must have been created **as exportable** (set the `exportable` option when you ran `keygen`).  \n   *If the key was created outside the appliance (not with `keygen`), it is automatically considered exportable.*\n\n3. The two HSMs must share the same **key\u2011wrapping key**.  \n   - Run the **`hsm\u2011clone\u2011kwk`** command **four times**:  \n     1. On the source appliance (export side) \u2013 generate the output file.  \n     2. On the destination appliance (import side) \u2013 use the source output as input.  \n     3. Again on the source appliance \u2013 use the destination output as input.  \n     4. Again on the destination appliance \u2013 use the source output as input.  \n   - Each run uses the file produced by the previous run, which you must copy manually (typically with `copy`).\n\n4. Once the key\u2011wrapping keys are synchronized, run **`crypto\u2011export`** on the source appliance to create the exported key file.\n\n5. Transfer the exported file to the target appliance and run **`crypto\u2011import`** to load the key.\n\n> **Note:** On a non\u2011HSM appliance you can export a key only at the moment it is generated with `keygen`; you cannot export it later.\n\nFollowing these steps (HSM initialization & domain alignment, exportable key flag, `hsm\u2011clone\u2011kwk` synchronization, then `crypto\u2011export`/`crypto\u2011import`) allows you to move a private key from one DataPower gateway to another.",
+    "pred": {
+      "relevance": 0.3411764705882353,
+      "utilization": 0.3411764705882353,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0627177700348432,
+      "utilization": 0.0627177700348432,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
