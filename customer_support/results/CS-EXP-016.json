@@ -1443,5 +1443,90 @@
       "completeness": 0.36363636363636365,
       "adherence": 1
     }
+  },
+  {
+    "idx": 81,
+    "question": "Why am I seeing \"CWSXM0100E: Multiple replies have been produced for a single request flow in module\" ? We are building a simple mediation module, consisting only of the request flow. The mediation module has one service invoke calling an external service through web service binding. Upon testing the process, we observe see that the service invoke is being called twice. There is no Fan-in or fan -out in the request flow. Below is the error: \"Caused by: com.ibm.wsspi.sibx.mediation.flow.MediationRuntimeException: CWSXM1023E: Exception when calling flow action: CWSXM0100E: Multiple replies have been produced for a single request flow in module\" ",
+    "answer": "You are seeing **CWSXM0100E: Multiple replies have been produced for a single request flow** because the mediation flow contains **more than one wire** between primitives, even though it appears to be a single connection. When a primitive (for example, the Service Invoke) is wired to the next primitive more than once, the flow is executed twice, so the request generates two replies and the runtime throws CWSXM0100E.\n\n**What causes the extra wire**\n\n- A mediation primitive was inadvertently connected to the next primitive multiple times.  \n- The wiring may look like a single line in the editor, but a closer inspection (or moving the primitives) reveals duplicate connections underneath.\n\n**How to fix it**\n\n1. Open the mediation flow in the editor.  \n2. Locate any redundant wires between the primitives (the extra connection that causes the duplicate call).  \n3. Delete the extra wire(s) so that each primitive is connected only once to its successor.  \n4. Save the project and redeploy the application.\n\nAfter removing the redundant wiring, the flow will produce only a single reply for the request and the CWSXM0100E error will disappear.",
+    "pred": {
+      "relevance": 0.2777777777777778,
+      "utilization": 0.2777777777777778,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.029023746701846966,
+      "utilization": 0.018469656992084433,
+      "completeness": 0.6363636363636364,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 82,
+    "question": "Help with Security Bulletin: WMB and IIB Toolkit cannot connect to a remote WMB broker or IIB node with a TLS-compliant cipher (CVE-2015-0118) I need to understand details regarding Security Bulletin: WebSphere Message Broker Toolkit and IBM Integration Toolkit cannot connect to a remote WebSphere Message Broker broker or IBM Integration Bus node with a TLS-compliant cipher (CVE-2015-0118). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 83,
+    "question": "How do I configure TLS/SSL for an IIB web service provider and consumer? I'm investigating ways and technologies for use with IIB to run a web service that runs as both a provider and consumer. I'm looking at HTTP and SOAP messages/nodes. At a high level it might look like this:\nHTTPInput (TLS over HTTPS) -> Compute -> HTTPRequest (SSL over HTTPS) -> Compute -> HTTPReply\nor\nSOAPInput (TLS over HTTPS) -> Compute -> SOAPRequest (SSL over HTTPS) -> Compute -> SOAPReply\nDoes anyone have more details/references beyond the knowledge center on how to configure the TLS/SSL portions?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.19148936170212766,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 84,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The log shows the same\u202fClassNotFoundException that is described in the Eclipse defect\u202f255268.  \nThe recommended fix is to remove the stale Eclipse configuration that is stored in the user\u2019s\u202f.eclipse\u202fdirectory and then start the product again.\n\n**Fix**\n\n1. Locate the folder that corresponds to the RFT/Eclipse installation, e.g.  \n\n   ```\n   /home/joe/.eclipse/ibm.software.delivery.platform_7.5.0_1529064711\n   ```\n\n2. Delete that entire directory (or the whole\u202f.eclipse\u202ffolder for the product):\n\n   ```bash\n   rm -rf /home/joe/.eclipse/ibm.software.delivery.platform_7.5.0_1529064711\n   ```\n\n   (adjust the path/name to match the version on your system).\n\n3. Relaunch Rational Functional Tester (RFT) 8.2.\n\nAfter the old configuration is removed, Eclipse will recreate a fresh one and the \u201cException launching the Eclipse Platform: ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\u201d error should be gone.",
+    "pred": {
+      "relevance": 0.17391304347826086,
+      "utilization": 0.15217391304347827,
+      "completeness": 0.875,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08866995073891626,
+      "utilization": 0.0049261083743842365,
+      "completeness": 0.05555555555555555,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 86,
+    "question": "ODR OOM issue I got ODR OOM after upgrading the WAS to v8553. No configuration or traffic load changing. Is there any known issue?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2926829268292683,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
