@@ -3228,5 +3228,90 @@
       "completeness": 0.325,
       "adherence": 1
     }
+  },
+  {
+    "idx": 190,
+    "question": "Does IBM DataPower Gateway Appliance support the HTTP CONNECT method? Does IBM DataPower Gateway Appliance support the HTTP CONNECT method for SSL proxy requests? ",
+    "answer": "**Yes.**  \nThe IBM DataPower\u202fGateway appliance can handle the HTTP\u202fCONNECT method, but only when the request is processed through a **Multi\u2011Protocol Gateway** (MPGW) with an HTTP Proxy Policy configured on the user\u2011agent. In that configuration SSL proxy requests are tunneled using the CONNECT method.\n\nThe **XML Firewall** service, however, is **not** designed to use the CONNECT method for SSL tunneling.",
+    "pred": {
+      "relevance": 0.275,
+      "utilization": 0.05,
+      "completeness": 0.18181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.00816326530612245,
+      "utilization": 0.012244897959183673,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 191,
+    "question": "Installing fixpacks with Installation Manager - when did it change from using updateInstaller,  starting in which version of WebSphere I was using updateInstaller to install fixpacks, and there was a separate fixpack for WebSphere and separate for the JDK, independent of each other. Now I understand that with Installation Manager there is a single package containing both the WebSphere App server fixpack as well as the JDK. When did this occur, starting with which version of WebSphere ? ",
+    "answer": "It changed beginning with **WebSphere Application Server\u202fV8.0** \u2013 from that release onward (and all later releases such as V8.5, V8.5.5) the fix\u2011pack is a single install package that updates both the server and the bundled Java SDK.",
+    "pred": {
+      "relevance": 0.2982456140350877,
+      "utilization": 0.017543859649122806,
+      "completeness": 0.058823529411764705,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.013157894736842105,
+      "utilization": 0.009868421052631578,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 192,
+    "question": "We got a NullPointerException when bootstrapping the object store or accessing Site Preferences/Access Role on WorkplaceXT \n\nAfter logging into FileNet Workplace XT, a java.lang.NullPointerException error is logged when bootstrapping the object store or when accessing Site Preferences/Access Role.\n\nHere's the error stack,\n\nError Stack Trace extracted from the J2EE Application Server error log:\n\njava.lang.NullPointerException\n\nat org.apache.jasper.runtime.JspWriterImpl.write(JspWriterImpl.java:421)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRoleMembers(PrefAccessRolesInfoPage.java:254)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRole(PrefAccessRolesInfoPage.java:220)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.renderAdminRole(PrefBootstrapInfoPage.java:131)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.render(PrefBootstrapInfoPage.java:303)",
+    "answer": "**Cause**  \nThe\u202fNullPointerException is thrown because Workplace\u202fXT cannot resolve the user or group names that are defined in the Access Roles. This happens when the **User Display Name Attribute** or **Group Display Name Attribute** configured in **Directory Services Configuration** (in FileNet\u202fEnterprise\u202fManager) contains an invalid or empty entry. When the query for a user name returns **null**, the code that renders the bootstrap or site\u2011preference pages attempts to write a null value to the JSP output and throws the NPE shown in the stack trace.\n\n**Resolution**  \n1. Open **FileNet Enterprise Manager (FEM)**.  \n2. Navigate to **Directory Services Configuration** for the directory that Workplace\u202fXT uses.  \n3. Verify that the **User Display Name Attribute** and **Group Display Name Attribute** are set to valid LDAP attributes that always return a non\u2011null string (e.g., `displayName`, `cn`, etc.).  \n4. Correct any incorrect or empty attribute names, save the configuration, and restart the J2EE application server (or at least reload the Workplace\u202fXT web application).  \n\nAfter the attributes are fixed, Workplace\u202fXT can resolve the user and group names, and the bootstrap and Site Preferences/Access Role pages load without the NullPointerException.",
+    "pred": {
+      "relevance": 0.08333333333333333,
+      "utilization": 0.08333333333333333,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06363636363636363,
+      "utilization": 0.01818181818181818,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 193,
+    "question": "Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? ",
+    "answer": "The service becomes Vulnerable because the Dataserver is running with an unsupported amount of memory. The memory allocation is too low (or otherwise incorrect), causing the health status to drop after you log into the StoredIQ Application Stack.  \n\nTo resolve it, review the Dataserver\u2019s memory settings and adjust them to the supported values:\n\n1. Log in to the Dataserver.  \n2. Open **Administration\u202f>\u202fDashboard** and verify the application status is green.  \n3. Click the **Controller** link and confirm all services are running.  \n4. If any service shows a problem, modify the Dataserver\u2019s memory allocation to the supported amount and restart the service.  ",
+    "pred": {
+      "relevance": 0.10843373493975904,
+      "utilization": 0.10843373493975904,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.125,
+      "utilization": 0.1111111111111111,
+      "completeness": 0.8888888888888888,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 194,
+    "question": "Help with Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect WMB and IIB I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect WebSphere Message Broker and IBM Integration Bus. Where can I find this information? ",
+    "answer": "You can view the full security\u2011bulletin details on IBM\u2019s support site, for example:\n\n* **Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect WebSphere Message Broker and IBM Integration Bus (CVE\u20112016\u20113485)**  \n  https://www.ibm.com/support/docview.wss?uid=swg21994213  \n\n* A related overview of the same issues is also available here:  \n  https://www.ibm.com/support/docview.wss?uid=swg21697107  \n\nThese pages contain the vulnerability descriptions, affected products/versions, CVE IDs and remediation information.",
+    "pred": {
+      "relevance": 0.3870967741935484,
+      "utilization": 0.06451612903225806,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10714285714285714,
+      "utilization": 0.023809523809523808,
+      "completeness": 0.2222222222222222,
+      "adherence": 1
+    }
   }
 ]
