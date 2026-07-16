@@ -1613,5 +1613,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 93,
+    "question": "Why is MQ pattern showing installed MQ version as 8.0.0.2, instead of 8.0.0.4 when client tries to deploy pattern at the MQ 8.0.0.4 version in PureApplication System? In the pattern, it was clearly showing MQ version 8.0.0.4. After deployment, client checked the MQ version on the Virtual Machine and it shows 8.0.0.2 instead.\n",
+    "answer": "The pattern is being run on a PureApplication System version (2.1.2.0 or later) that cannot apply the newer fix\u2011pack contained in the pattern.  \nBecause of an interface change in PureApplication System\u202f2.1.2.0 (and in 2.2.0.0 and later), the installation routine that should upgrade IBM\u202fMQ to the latest maintenance level fails silently: the base product (MQ\u202f8.0.0.2) is installed, but the subsequent fix\u2011pack (which would bring it to 8.0.0.4) is never applied.  \n\nTherefore, even though the pattern shows version\u202f8.0.0.4, the system can only install MQ\u202f8.0.0.2 on those PureApplication System releases and cannot apply the later maintenance level, resulting in the VM reporting MQ\u202f8.0.0.2 after deployment.",
+    "pred": {
+      "relevance": 0.26,
+      "utilization": 0.26,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.038348082595870206,
+      "utilization": 0.017699115044247787,
+      "completeness": 0.38461538461538464,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 94,
+    "question": "How to fix XAER_RMFAIL messages in WebSphere Portal's SystemOut.log? SystemOut.log contains various exceptions with caused by statements like:\nCaused by: com.ibm.db2.jcc.am.SqlTransactionRollbackException: DB2 SQL\nError: SQLCODE=-911, SQLSTATE=40001, SQLERRMC=68, DRIVER=4.14.88 \nand: \nCaused by: com.ibm.db2.jcc.am.SqlException: [jcc][t4][2041][11392] [4.14.88] Error executing XAResource.commit(). Server returned XAER_RMFAIL. ERRORCODE=-4203, SQLSTATE=null ",
+    "answer": "The XA\u202fRMFAIL messages are caused by a bug in the DB2 JCC driver that can surface when the portal runs under Oracle\u202fJDK.  \nThe IBM fix is simply to move to a driver version that contains the fix:\n\n* **Upgrade the DB2 JDBC/SQLJ driver** (the JCC driver) to the version that includes the fix \u2013 e.g. IBM Data Server driver for JDBC\u202f&\u202fSQLJ for DB2\u202fLUW\u202fV9.7\u202fFix\u202fPack\u202f7 (or any later fix\u2011pack).  \n* If you are using Oracle\u202fJava, switch to IBM\u202fJava (the problem does not occur with IBM\u202fJDK).  \n* Apply the related APARs (IC77293, IC82934, JR42463, etc.) or the iFix that IBM ships with the fix\u2011pack.\n\nAfter the driver is upgraded (or the iFix applied) and the JVM is IBM\u202fJava, the XA\u202fRMFAIL (and the associated SQL\u2011911/SQL\u20112041 errors) disappear from\u202fSystemOut.log.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 1.0,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006872852233676976,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 96,
+    "question": "Help with vulnerability have been identified in WebSphere Application Server shipped with WSRR I need to understand details regarding Multiple vulnerabilities have been identified in WebSphere Application Server shipped with WebSphere Service Registry and Repository (CVE-2017-1583). Where can I find this information? ",
+    "answer": "You can find the details in the IBM security bulletin titled **\u201cMultiple vulnerabilities affect Java Server Faces (JSF) used by WebSphere Application Server (CVE\u20112017\u20111583, CVE\u20112011\u20114343)\u201d**.  \nThe bulletin is available at:\n\n**http://www-01.ibm.com/support/docview.wss?uid=swg22008707**  \n\n(also reachable via\u202fhttp://www.ibm.com/support/docview.wss?uid=swg22008707).",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.03125,
+      "completeness": 0.0625,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.025906735751295335,
+      "utilization": 0.025906735751295335,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 97,
+    "question": "Why is the file db2jcc.jar missing after an upgrade to BPM V8.5.7 CF2016.12? After upgrading to IBM Business Process Manager V8.5.7 Cumulative Fix 2016.12, I have encountered several JDBC related exceptions during my process application development. It seems that the file db2jcc.jar was removed during the installation of the cumulative fix pack. What happened? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04610951008645533,
+      "utilization": 0.025936599423631124,
+      "completeness": 0.5625,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 99,
+    "question": "Must the TOKEN_SEPARATOR value be enclosed in quotes for the custom scripting feature? Must the TOKEN_SEPARATOR value be enclosed in quotes for the custom scripting feature?",
+    "answer": "No. The TOKEN_SEPARATOR value does not need to be enclosed in quotes. It can be specified directly (e.g.,\u202fTOKEN_SEPARATOR=|).",
+    "pred": {
+      "relevance": 0.06097560975609756,
+      "utilization": 0.012195121951219513,
+      "completeness": 0.2,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0030534351145038168,
+      "utilization": 0.0030534351145038168,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
