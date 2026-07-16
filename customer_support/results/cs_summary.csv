@@ -1,2 +1,2 @@
-exp,chunking,embedding,retrieval,rerank,ordering,generator,judge,relevance_rmse,utilization_rmse,completeness_rmse,adherence_aucroc,adherence_accuracy
-CS-EXP-FINAL,sliding,minilm,dense,False,normal,gpt-oss,70b,0.4589999880955678,0.24020284247765855,0.6083767668327552,0.6429608880589273,0.615
+exp,chunking,embedding,retrieval,rerank,ordering,generator,judge,relevance_rmse,utilization_rmse,completeness_rmse,adherence_aucroc,adherence_accuracy,idk_rate
+CS-EXP-016,sliding,minilm,dense,False,normal,gpt-oss,70b,0.32562882552223393,0.1825942656443066,0.6152082443514393,0.6482000207490404,0.64,0.32
