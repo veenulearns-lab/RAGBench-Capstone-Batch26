@@ -1868,5 +1868,90 @@
       "completeness": 0.16666666666666666,
       "adherence": 1
     }
+  },
+  {
+    "idx": 110,
+    "question": "How to change the maximum string length for properties in FileNet Administration Console for Content Engine (ACCE) I am trying to change the maximum string length in ACCE like we do in FileNet Enterprise Manager, but in the more Tab, I am not seeing the option. In this case, how can I change it? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3728813559322034,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.04678362573099415,
+      "completeness": 0.4,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 111,
+    "question": "Is WebSphere Transformation Extender (WTX) supported for IBM Integration Bus V10? When will WebSphere Transformation Extender (WTX) be supported for IBM Integration Bus V10?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06756756756756757,
+      "utilization": 0.04054054054054054,
+      "completeness": 0.6,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 112,
+    "question": "How do I upgrade my virtual DataPower Appliance from 5.0 firmware to 6.0+ firmware? When attempting to upgrade my Virtual DataPower Appliance from 5.0.0.8 firmware version to 6.0+ firmware versions, I receive a failure message. ",
+    "answer": "To upgrade a virtual DataPower appliance from the 5.x series to the 6.x series you must first be running **the 5.0.0.8 fix pack (or any later 5.x fix pack)**. The 5.0.0.8 fix pack contains a required change that lets the larger\u2011sized 6.0 firmware image fit on the virtual appliance.  \n\n**Steps**\n\n1. **Verify your current version** \u2013 make sure the appliance is at 5.0.0.8 or a later 5.x fix pack.  \n2. **If you are still on an earlier 5.0.x fix pack (e.g., 5.0.0.5 or 5.0.0.6), install the 5.0.0.8 fix pack first.**  \n3. **Once the 5.0.0.8 (or later) fix pack is installed, run the upgrade to 6.0.0.0 or any later 6.x fix pack/OVA.**  \n4. **Do not install any fix pack from Fix Central that is earlier than 5.0.0.8** before or after the upgrade, as earlier fix packs are incompatible with the 6.0+ firmware.\n\nFollowing this sequence (5.0.0.8\u202f\u2192\u202f6.0.0.0 or later) resolves the failure you see when trying to move directly from 5.0.0.8 to a 6.0+ firmware version. If the upgrade still fails after confirming you are on 5.0.0.8, contact IBM DataPower Support with the upgrade logs.",
+    "pred": {
+      "relevance": 0.2153846153846154,
+      "utilization": 0.2153846153846154,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.21839080459770116,
+      "utilization": 0.04597701149425287,
+      "completeness": 0.21052631578947367,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 113,
+    "question": "Which Socket Gateway should I be using with Netcool Omnibus (NOI) ? Which Socket Gateway should I be using with Netcool Omnibus (NOI) ?\n\nThere are 2 versions of the gateway; nco-g-socket-java-2_0 and nco-g-socket-10_0 Users may be confused what version they should download or use ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3181818181818182,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.064,
+      "utilization": 0.024,
+      "completeness": 0.375,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 114,
+    "question": "I am receiving AC power supply failures on my DataPower 9235 appliance. How can I resolve this? \n\nI am observing the following errors on my DataPower 9235 device:\n\n[failure] Power supply '1' has no AC input power, or is not present. [failure] Power supply '2' has no AC input power, or is not present.\nDo i need to replace the power supplies?",
+    "answer": "The messages you are seeing are a known, intermittent sensor\u2011reading problem on the DataPower\u202fM/T\u202f9235.  \nThey do **not** indicate a real hardware failure and the power supplies usually are still functioning.\n\n**What to do**\n\n1. **Verify the LEDs** \u2013 look at the power\u2011supply LEDs on the appliance.  \n   *If the LEDs are green, the supplies are operating normally.*\n\n2. **Reboot the appliance** \u2013 this clears the bad sensor state.  \n   *From the WebGUI:*\u202fControl\u202fPanel \u2192 System\u202fControl \u2192 \u201cShutdown\u201d section \u2192 **Reboot System** \u2192 click **Shutdown**.  \n   *From the CLI:*  \n   ```\n   top\n   shutdown reboot y\n   ```\n\n   After the reboot the false \u201cPower supply #1/2 has failed\u201d messages should disappear.\n\n3. **If the problem returns** \u2013 gather the following information and open a case with IBM DataPower support:  \n\n   - How many times the issue has been seen on this appliance.  \n   - CLI command outputs: `show clock`, `show version`, `show ipmi`, `show sensors`, `show service`, `show test hardware`.\n\n   Provide these logs to IBM support (http://www.ibm.com/support/docview.wss?uid=swg21236322).\n\n**Conclusion**\n\nYou do **not** need to replace the power supplies as long as the LEDs remain green. A simple reboot normally resolves the false error messages. If the issue recurs repeatedly, follow the steps above and contact IBM support.",
+    "pred": {
+      "relevance": 0.46808510638297873,
+      "utilization": 0.46808510638297873,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1511627906976744,
+      "utilization": 0.05813953488372093,
+      "completeness": 0.38461538461538464,
+      "adherence": 1
+    }
   }
 ]
