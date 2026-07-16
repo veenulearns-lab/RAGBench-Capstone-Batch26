@@ -2548,5 +2548,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 150,
+    "question": "Can I perform a silent install of fix packs for IIB or WMB Toolkit? How do I perform a silent install of fix packs for IBM Integration Bus (IIB) or WebSphere Message Broker (WMB) Toolkit?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 151,
+    "question": "ORA-01795 Error accessing Decision Center Business Console 8.7 I am working with ODM 8.7.0.0 when accessing the Business Console I am getting the below error message :\nORA-01795: maximum number of expressions in a list is 1000\nThe diagnostics do not contain any warning nor error.\nThe logs contain below exception : \n java.lang.RuntimeException: java.sql.SQLException: ORA-01795: maximum number of expressions in a list is 1000\n...\n Caused by: java.sql.SQLException: ORA-01795: maximum number of expressions in a list is 1000",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5849056603773585,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04801670146137787,
+      "utilization": 0.04801670146137787,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 152,
+    "question": "How do I configure TLS/SSL for an IIB web service provider and consumer? I'm investigating ways and technologies for use with IIB to run a web service that runs as both a provider and consumer. I'm looking at HTTP and SOAP messages/nodes. At a high level it might look like this:\nHTTPInput (TLS over HTTPS) -> Compute -> HTTPRequest (SSL over HTTPS) -> Compute -> HTTPReply\nor\nSOAPInput (TLS over HTTPS) -> Compute -> SOAPRequest (SSL over HTTPS) -> Compute -> SOAPReply\nDoes anyone have more details/references beyond the knowledge center on how to configure the TLS/SSL portions?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2978723404255319,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 153,
+    "question": "Compose tab appears disabled and project is not editable in Decision Center I have upgraded my ODM version and a project in Decision Center appears non editable :\n\nthe compose tab is disabled\nin explore tab there are no new nor edit button",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 154,
+    "question": "When I try to deploy an application on a cluster, why is it throwing an ADMA8019E error in the admin console? The application is being deployed at the cluster scope, but my namespace bindings are defined at the cell scope. The error I'm seeing in the admin console is:\n\nADMA8019E: The resources that are assigned to the application are beyond the deployment target scope. Resources are within the deployment target scope if they are defined at the cell, node, server, or application level when the deployment target is a server, or at the cell, cluster, or application level when the deployment target is a cluster. Assign resources that are within the deployment target scope of the application or confirm that these resources assignments are correct as specified.\n\nI don't see any actual issue with how the JNDI lookup is occurring once the application is deployed. Should I be concerned about this error?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3235294117647059,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
