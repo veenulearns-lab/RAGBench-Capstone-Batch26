@@ -3058,5 +3058,90 @@
       "completeness": 0.4166666666666667,
       "adherence": 1
     }
+  },
+  {
+    "idx": 180,
+    "question": "DB2 Non Reclaimable Storage . We have tablespaces defined under DB2 9.5 that apparently are not able\nto reclaim storage back to the OS, but does that mean DB2 cannot reuse\nthis space as well?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.35,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.026578073089700997,
+      "utilization": 0.036544850498338874,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 181,
+    "question": "Netcool/Impact 7.1.0: The StateChange value being used by the OMNIbusEventReader is too high  The value being used is a date and time in the future and as such is preventing the EventReader from capturing the current events. ",
+    "answer": "**Resolution**\n\nThe problem is caused by an event whose **StateChange** field has been set to a future date/time.  \nThe OMNIbusEventReader uses the highest StateChange it has seen in its SQL \u201cWHERE StateChange\u202f>=\u202f\u2026\u201d. Because that value is in the future, every poll returns **0 rows** and the reader appears to stop.\n\n**Fix \u2013 reset the EventReader\u2019s stored StateChange value**\n\n1. **Via the Impact GUI**  \n   * Stop the EventReader.  \n   * Open the EventReader for edit.  \n   * Click the **\u201cClear State\u201d** button.  \n   * Close the editor and restart the EventReader.  \n\n2. **Via the CLI (telnet to the Impact server)**  \n   * Telnet to the Impact server on the CLI port (default\u202f2000).  \n   * Log in with an admin user.  \n   * At the `READY>` prompt run the Clear\u2011State script, e.g.:  \n\n   ```\n   Script=\"/opt/IBM/netcool/impact/bin/ClearState.sh\"\n   Parameter=\"password\"\n   JRExecAction(Script, Parameter, false, 30)\n   ```\n\n   (or issue the equivalent command sequence that the script performs.)\n\nAfter the stored StateChange is cleared, the EventReader will start again from the current time and will capture the pending events.\n\n**Note** \u2013 This is a temporary fix; investigate the component (probe, trigger, etc.) that is incorrectly setting a future StateChange and correct it to prevent recurrence.",
+    "pred": {
+      "relevance": 0.46511627906976744,
+      "utilization": 0.46511627906976744,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08011869436201781,
+      "utilization": 0.08011869436201781,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 182,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "The problem is caused by the VM\u2011Manager connection failing because the stored credentials are no longer accepted.  \nTo restore the missing VM\u2011Manager data you should:\n\n1. **Verify the credentials** \u2013 open the\u202f`messages.log`\u202funder  \n   `C:\\IBM\\tivoli\\tsm\\tdpvmware\\webserver\\usr\\servers\\veProfile\\VMwarePlugin\\logs` and look for the \u201cinvalid credentials \u2013 suspended\u201d entry. Confirm that the user name and password used for the VM\u2011Manager connection are still correct.\n\n2. **Reset or re\u2011enter the credentials** \u2013 if the password has expired or been changed elsewhere, update the VM\u2011Manager login information in the IBM Spectrum Protect for Virtual Environments configuration.\n\n3. **Run the repair utility** \u2013 after the credentials are corrected, execute the built\u2011in repair tool to rebuild the missing data:  \n\n   ```\n   Inside catstart, CorrectARMatrixPos -user <USERNAME> -pwd <PASSWORD>\n   ```\n\n   (Replace `<USERNAME>` and `<PASSWORD>` with the verified credentials.)\n\n4. **Re\u2011run the VM\u2011Manager scan** \u2013 once the connection is re\u2011established, the agent will retrieve the VM\u2011Manager data again and repopulate the VIRT schema, after which the ADM schema will be updated for PVU calculations.\n\nThese steps address the \u201cinvalid credentials \u2013 suspended\u201d condition and will repopulate the missing VM\u2011Manager data for the 13 servers.",
+    "pred": {
+      "relevance": 0.425531914893617,
+      "utilization": 0.10638297872340426,
+      "completeness": 0.2,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 183,
+    "question": "startNode failed with ADML3000E after a deployment failure Client had a deployment failure due to \"Too many open files\" error.\n\nAfterwards, the startNode failed with ADML3000E:\n\nWhat could cause the \"Too many open files error?",
+    "answer": "The \u201cToo many open files\u201d error is caused when the process exhausts its available file\u2011handle limit.  According to the provided technote this can happen for several reasons:\n\n* **System configuration limitation** \u2013 the operating\u2011system ulimit (or Windows file\u2011lock setting) is set too low, so the process reaches the maximum number of file descriptors/sockets it is allowed to open.  \n* **File\u2011handle leaks in the application** \u2013 code in the application fails to close files or sockets, gradually consuming all available handles.  \n* **Sockets left open** \u2013 especially in Java applications, sockets that are not closed count as file handles and can fill the limit.  \n* **Insufficient free file locks on Windows** \u2013 when using the MKS Toolkit, the \u201cMax number of active file locks\u201d setting may be too low (default 255), causing the limit to be reached during many simultaneous DataStage jobs.  \n\nAny of these conditions can cause the \u201cToo many open files\u201d error to appear.",
+    "pred": {
+      "relevance": 0.6111111111111112,
+      "utilization": 0.2037037037037037,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07871720116618076,
+      "utilization": 0.0728862973760933,
+      "completeness": 0.9259259259259259,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 184,
+    "question": "Is Java 8 supported for BPM? \n\nI understand that support for Java 6 on WebSphere Application Server is ending April 2018, see: http://www-01.ibm.com/support/docview.wss?uid=swg21999583\n\nNow I can switch to Java 7. But what about Java 8? Does BPM 8.5.6 support Java 8?",
+    "answer": "No. According to the information in the context, IBM BPM\u202f8.5.6 (and 8.5.7) only support Java\u202f6 or Java\u202f7. Java\u202f8 support begins with IBM BPM\u202f8.6.",
+    "pred": {
+      "relevance": 0.11363636363636363,
+      "utilization": 0.045454545454545456,
+      "completeness": 0.4,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.038834951456310676,
+      "utilization": 0.038834951456310676,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
