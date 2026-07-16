@@ -2718,5 +2718,90 @@
       "completeness": 0.36363636363636365,
       "adherence": 1
     }
+  },
+  {
+    "idx": 160,
+    "question": "For HP-UX how to write verbose gc output to a log file other than the native_stdout? A customer asked why no gc logs generated even if they use the -Xverbosegc option. So How can I write verbose gc output to a log file other than the native_stdout for HP-UX? ",
+    "answer": "On HP\u2011UX you must use the HP\u2011specific **\u2011Xverbosegc:file** option (the plain\u202f\u2011Xverbosegc writes only to native_stdout).  \nAdd the following JVM arguments:\n\n```text\n-XX:+PrintGCDetails\n-XX:+PrintGCDateStamps\n-XX:+PrintHeapAtGC\n-Xverbosegc:file=/tmp/gc_pid$$.vgc   # $$ is replaced by the Java PID\n```\n\nIf you also want log\u2011file rotation, include:\n\n```text\n-XX:+UseGCLogFileRotation\n-XX:NumberOfGCLogFiles=10          # number of rotated files\n-XX:GCLogFileSize=10M              # size at which to rotate\n```\n\nThese settings cause verbose GC output to be written to the specified file (e.g.,\u202f`/tmp/gc_pid12345.vgc`) instead of the native_stdout.",
+    "pred": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.058823529411764705,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.011363636363636364,
+      "utilization": 0.011363636363636364,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 161,
+    "question": "Subnodes are still present on TEP after unconfiguring SOA DC After unconfiguring the ITCAM for SOA DC via the unconfig.sh script, I can still see SOA subnodes and workspaces on TEP.The Websphere instances were restarted and are no longer collecting data and forwarding to the D4 agent.I have shut down the ITCAM agent and deleted the offline entries for the managed systems, but the subnodes appear back once you restart the ITCAM agent.How can I remove them?",
+    "answer": "**How to remove the SOA sub\u2011nodes that remain in TEPS after the DC has been un\u2011configured**\n\n1. **Stop the SOA Agent**  \n   *In Windows:* `<ITM_HOME>\\TMAITM6\\bin\\stopsoaagent.cmd`  \n   *In Unix:* `<ITM_HOME>/<platform>/d4/bin/stopsoaagent.sh`\n\n2. **Clear the offline entry for each node you want to delete**  \n   * Right\u2011click (2nd\u2011mouse\u2011click) the sub\u2011node in the TEPS tree.  \n   * Choose **\u201cClear offline entry.\u201d**  \n   * If more than one node must be removed, repeat this step for each one (they must be cleared one at a time).\n\n3. **Edit the KD4.dc.properties file and delete the node\u2019s entries**  \n\n   *File locations*  \n   * Windows: `<ITM_HOME>\\TMAITM6\\KD4\\config\\KD4.dc.properties`  \n   * Unix: `<ITM_HOME>/<platform>/d4/KD4/config/KD4.dc.properties`\n\n   *Remove all lines that refer to the host/server you just cleared.*  \n   Example of lines to delete (replace `<DP hostname>` with the actual host name):\n\n   ```\n   8.<DP hostname>.monitor=on\n   8.<DP hostname>.log=error\n   8.<DP hostname>.trace=off\n   8.<DP hostname>.control.count=1\n   8.<DP hostname>.control.1=*;*;*;*;*;none\n   8.<DP hostname>.filter.control.count=0\n   ```\n\n4. **Delete the persisted cache directory**  \n\n   *Path*  \n\n   * Windows: `<ITM_HOME>\\TMAITM6\\KD4\\logs\\KD4.DCA.CACHE\\persist`  \n   * Unix: `<ITM_HOME>/<platform>/d4/KD4/logs/KD4.DCA.CACHE\\persist`\n\n   Remove the entire **persist** directory (or its contents) to erase the old records that the agent remembers.\n\n5. **Start the SOA Agent again**  \n\n   *In Windows:* `<ITM_HOME>\\TMAITM6\\bin\\startsoaagent.cmd`  \n   *In Unix:* `<ITM_HOME>/<platform>/d4/bin/startsoaagent.sh`\n\n6. **Verify** \u2013 Open the TEPS view. The deleted node(s) should no longer appear.\n\n---\n\n**Alternative (clears all offline entries at once)**  \nIf you prefer to clear every offline managed system in a single step, log in to TEMS with `tacmd login` and run:\n\n```\ntacmd cleanMS\n```\n\nThis command removes all offline entries; the nodes will not be displayed again until the corresponding agents come back online.\n\nFollowing the steps above will permanently remove the unwanted SOA sub\u2011nodes and workspaces from the TEPS workspace after the DC has been un\u2011configured.",
+    "pred": {
+      "relevance": 0.39080459770114945,
+      "utilization": 0.19540229885057472,
+      "completeness": 0.4117647058823529,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09259259259259259,
+      "utilization": 0.1111111111111111,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 162,
+    "question": "When and why Apache Storm process of ITNM creating db2 files in /tmp? \n\nWhen and why should the following files be generated ?\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/connlicj.bin\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/jccdiag.log\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/license.lock\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/serverlist.lock",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 163,
+    "question": "TEP to TEPS communication issues with different Java versions Recent Java updates have caused connection problems when logging into the TEPS via the TEP client (Browser or Java Web Start). Is there an updated list of known issues?\n",
+    "answer": "Yes. IBM provides an updated list of known Java\u2011related issues in technote\u202f#1672459, which details the latest Java support requirements and the connection problems that can occur with the TEP client (browser or Java\u202fWeb\u202fStart).",
+    "pred": {
+      "relevance": 0.26666666666666666,
+      "utilization": 0.044444444444444446,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.1691542288557214,
+      "utilization": 0.07462686567164178,
+      "completeness": 0.4411764705882353,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 164,
+    "question": "Help with Security Bulletin: API Connect is affected by a Node.js denial of service vulnerability (CVE-2017-14919) I need to understand details regarding Security Bulletin: API Connect is affected by a Node.js denial of service vulnerability (CVE-2017-14919). Where can I find this information? ",
+    "answer": "You can find the details in the **\u201cSECURITY BULLETIN SUMMARY\u202f\u2013\u202fIBM API\u202fConnect\u201d** section of the document.\u202fThat paragraph contains:\n\n* The CVE identifier **CVE\u20112017\u201114919**  \n* A description of the Node.js denial\u2011of\u2011service flaw (uncaught exception in the\u202fzlib module, windowBits\u202f=\u202f8)  \n* CVSS scores (Base\u202f7.5, Vector\u202fCVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H)  \n* References, including the MITRE CVE page\u202f<http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14919> and the IBM X\u2011Force vulnerability page\u202f<https://exchange.xforce.ibmcloud.com/vulnerabilities/134286>  \n\nSo, look for the paragraph that begins with:\n\n> **SECURITY BULLETIN SUMMARY IBM API Connect has addressed the following vulnerability.**  \n\nThat is where the full information about the CVE\u20112017\u201114919 Node.js denial\u2011of\u2011service issue is provided.",
+    "pred": {
+      "relevance": 0.13953488372093023,
+      "utilization": 0.09302325581395349,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.09565217391304348,
+      "utilization": 0.0782608695652174,
+      "completeness": 0.8181818181818182,
+      "adherence": 1
+    }
   }
 ]
