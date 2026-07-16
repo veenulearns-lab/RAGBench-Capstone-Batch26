@@ -1528,5 +1528,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 87,
+    "question": "Help with Security Bulletin: Multiple Vulnerabilities identified in IBM Java SDK affect WSRR and WSRR Studio \n\nI need to understand details regarding Security Bulletin: Multiple Vulnerabilities identified in IBM\u00ae Java SDK affect WebSphere Service Registry and Repository and WebSphere Service Registry and Repository Studio.\n\nThis is related to CVEID:\nCVE-2018-2633\n\nWhere can I find this information?",
+    "answer": "You can find the details for CVE\u20112018\u20112633 in the IBM security bulletin that covers the multiple Java\u202fSDK vulnerabilities affecting WebSphere Service Registry and Repository (WSRR) and WSRR\u202fStudio.\u202fThe bulletin is titled **\u201cMultiple Vulnerabilities in IBM\u00ae Java SDK affect WebSphere Application Server\u201d** (January\u202f2018) and is available at the IBM support site:\n\n- **Security Bulletin URL:**  \n  `http://www.ibm.com/support/docview.wss?uid=swg22013818`\n\nThat page lists CVE\u20112018\u20112633 (an unspecified vulnerability in the Java\u202fSE JNDI component) together with its description, CVSS score, and links to further references.\u202fFor the complete list of Java\u202fSDK vulnerabilities and additional details, you can also consult the general **IBM Java SDK Security Bulletin** linked in the \u201cReferences\u201d section of the same document:\n\n- **IBM Java SDK Security Bulletin URL:**  \n  `http://www-01.ibm.com/support/docview.wss?uid=swg22012965` (or the newer link `https://www-01.ibm.com/support/docview.wss?uid=swg22015806`)\n\nThese IBM support pages contain all the information you need about CVE\u20112018\u20112633 and the related WSRR/WSRR\u202fStudio impact.",
+    "pred": {
+      "relevance": 0.16279069767441862,
+      "utilization": 0.16279069767441862,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.04524886877828054,
+      "utilization": 0.04072398190045249,
+      "completeness": 0.9,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 89,
+    "question": "Java plugin not loading into rhapsody I had installed rational rhapsody 8.2 in my machine. I tried to add the profile of the Simple plugin.sbs from the path C:\\ProgramData\\IBM\\Rational\\Rhapsody\\8.2\\Samples\\ExtensibilitySamples\\Simple Plug-in, finally it is found that the Simple plugin is failed to load in the Rhapsody process space.\nI had tried to add the JavaAPILogFile=D:\\RhapsodyLogFile\\Logs.txt for collecting the logs and while loading plugin nothing is written into the log file.\n\nWhen i launched the rhapsody the following is written into the logs\n\nEnter: RhapsodyAppServer_attachToRhapsodyApplication\nEnter: RPApplication_getTheJavaPluginsInterfaceNative\nExit: RPApplication_getTheJavaPluginsInterfaceNative\n\n \n\nPlease help me to resolve this issue ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 90,
+    "question": "where is the websphere application server 9.0.0.4 fix for developers I am using the was 9.0.0.0 in rad/rsa 9.6.1 for Windows. I cannot upgrade to the 9.0.0.4 fixpack, because there is no developer edition. On the downloadpage there are Base, Network Deployment, DMZ Secure Proxy Server and IBM Web Enablement for IBM i, but no Developers! See link text For was 8.5.5.10 there exists a developers edition. Where can I download the Websphere Application Server fix pack 9.0.0.4 Developers?",
+    "answer": "You can obtain the developer\u2011edition fix pack from IBM\u2019s repository for the new \u201cWAS\u202fILAN\u201d (the former WAS\u202ffor\u202fDevelopers) that is used by RAD\u202f9.6.\u202fAdd the following repository to IBM Installation Manager and install the 9.0.0.4 fix pack from there:\n\n**Repository URL**  \n`https://www.ibm.com/software/repositorymanager/com.ibm.websphere.ILAN.v90/`\n\nThis repository contains the WAS\u202fILAN (formerly WAS\u202ffor\u202fDevelopers) binaries and the associated fix packs, including 9.0.0.4. After adding it to Installation Manager you can select the 9.0.0.4 fix pack for the developer edition and apply it.",
+    "pred": {
+      "relevance": 0.20689655172413793,
+      "utilization": 0.10344827586206896,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07853403141361257,
+      "utilization": 0.005235602094240838,
+      "completeness": 0.06666666666666667,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 91,
+    "question": "MQ jobs and some user jobs are in semaphore wait (SEMW) status After upgrading WMQ on IBM i, MQ jobs and some user jobs are in a semaphore wait (SEMW) status. I've tried to end and restart MQ, performed cold start, delete and rebuild MQ system with no luck. Where do I need to look?\n",
+    "answer": "The problem is almost always caused by a **semaphore\u2011ID clash** that was introduced when the WMQ product was upgraded (or when the system hostname was changed).  \n\n**What to check**\n\n1. **Semaphore IDs used by MQ trace** \u2013 after the upgrade MQ may try to allocate the same semaphore IDs that another program on the iSeries is already using. Those IDs are only the ones used for MQ trace, but if they clash the MQ address spaces can end up waiting in **SEMW**.  \n\n2. **Hostname\u2011related socket directory** \u2013 the MQ installation expects a directory  \n   ```\n   /var/mqm/sockets/@SYSTEM/qmgrlocl/<hostname>\n   ```  \n   to exist. The directory is created only at install time; if the host name was changed after the upgrade the directory will be missing and MQ will not be able to create the required semaphores, again leaving jobs in SEMW.  \n\n3. **Dead\u2011lock between supervisor and dispatcher TCBs** \u2013 a known dead\u2011lock can occur when a channel holds the XSTA channel\u2011status\u2011table semaphore and yields control. The result is a \u201cdeadly embrace\u201d that shows up as SEMW for MQ jobs (and can affect user jobs that share the same semaphore pool).  \n\n**Where to look**\n\n- **System\u2011wide semaphore table** (use the IBM i *WRKOBJ* or *WRKSEMA* commands) to see which semaphores are already allocated and whether any non\u2011MQ program is using the same IDs that MQ wants for its trace semaphores.  \n\n- **/var/mqm/sockets/@SYSTEM/qmgrlocl** \u2013 verify that a sub\u2011directory named exactly like the current hostname exists; if it does not, create it (or rename the existing one) and restart the queue manager.  \n\n- **MQ channel\u2011initiator / dispatcher logs** (CSQXSUPR, CSQXCNVT, CSQXLOCT, CSQXSPRT) for messages about \u201cwaiting for XSTA semaphore\u201d or \u201cdeadly embrace\u201d. Restarting the channel initiator or the whole queue manager usually clears the dead\u2011lock, but the underlying semaphore\u2011ID clash must be removed.  \n\n**Bottom line**\n\nStart by confirming that no other software on the IBM i is using the same semaphore IDs that MQ trace needs, and make sure the hostname\u2011specific socket directory exists. Once those two items are corrected the MQ jobs (and any user jobs that were blocked by the same semaphore pool) will leave the SEMW state.",
+    "pred": {
+      "relevance": 0.6538461538461539,
+      "utilization": 0.21153846153846154,
+      "completeness": 0.3235294117647059,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.035269709543568464,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 92,
+    "question": "mqsireportdbparms missing? The mqsireportdbparms command described in the following knowledge center topic is missing from the IIB installation.\nhttp://www-01.ibm.com/support/knowledgecenter/# !/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an09156_.htm (http://www-01.ibm.com/support/knowledgecenter/# %21/SSMKHH_9.0.0/com.ibm.etools.mft.doc/an09156_.htm)",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
