@@ -1698,5 +1698,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 100,
+    "question": "Why are the users unable to login to Web GUI 8.1 after I modify timeout to 2147483647 in security.xml file ? \n\nI followed the Web GUI 8.1 reference guide here to switching off the session timeout\n\nhttp://www-01.ibm.com/support/knowledgecenter/SSSHTQ_8.1.0/com.ibm.netcool_OMNIbus.doc_8.1.0/webtop/wip/task/web_adm_settimeout.html\n\nAfter I edited /config/cells/JazzSMNode01Cell/security.xml file, modified timeout setting to 2147483647, users are not able to login anymore.",
+    "answer": "The login failure is caused by the extremely large timeout value you set (2147483647).  \nThat number is the maximum positive value for a 32\u2011bit signed integer and, while it is a valid value for the WebSphere\u202fApplication Server \u201ctimeout\u201d setting in **security.xml**, the Web GUI (DASH) uses a JavaScript\u202f`setTimeout` call to enforce the session timeout. When the timeout value is that large the JavaScript timer overflows, which prevents the login process from completing and effectively locks all users out.\n\nSo, after changing the timeout to 2147483647, users cannot log in because the GUI\u2019s client\u2011side timeout logic cannot handle such a huge value. Use a reasonable timeout value instead, or apply the workaround described in the notes (set the custom property **LTPAFIX** to \u201cfalse\u201d in `consoleProperties.xml`).",
+    "pred": {
+      "relevance": 0.23148148148148148,
+      "utilization": 0.1574074074074074,
+      "completeness": 0.68,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.024390243902439025,
+      "utilization": 0.024390243902439025,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 101,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? I tried to export OMNIbus configuration using nco_confpack command and I get the following message:\r\nTool in menu but not found, menu: AlertsMenu, tool: Close\r\nI've also tried using it with -list command and I get the same error. ",
+    "answer": "nco_confpack fails because the configuration contains a menu entry that points to a tool that no longer exists.  \nIn the OMNIbus configuration the **AlertsMenu** (or another menu) still lists a tool \u2013 e.g.,\u202fCLEAR_LWY (or \u201cClose\u201d) \u2013 but that tool has been removed or its access data was not cleaned up (for example, when a group was deleted directly with SQL). When nco_confpack walks the menu it cannot find the referenced tool and aborts with the \u201cTool in menu but not found\u201d message.\n\n**Fix** \u2013 recreate the missing tool (or delete the stale entry) and associate it with the menu, then run nco_confpack again. If the problem was caused by a group deletion, also ensure the tool\u2011access data for that group is removed.",
+    "pred": {
+      "relevance": 0.15384615384615385,
+      "utilization": 0.07692307692307693,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.014388489208633094,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 102,
+    "question": "Help with Action required for IIB H.E. V9 & WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nThis is related to CVEIDs:\nCVE-2018-1000001\nCVE-2017-16997\nCVE-2017-1000408\nCVE-2017-1000409\nCVE-2017-17426\n\nWhere can I find this information?",
+    "answer": "The IBM\u202fSecurity\u202fAdvisories (the \u201cFLASH\u202f(ALERT)\u201d bulletins) for **IBM Integration Bus\u202fHypervisor\u202fEdition\u202fV9.0** and **WebSphere\u202fMessage\u202fBroker\u202fHypervisor\u202fEdition\u202fV8.0** contain the required action\u2011items for any Red\u202fHat\u202fLinux vulnerabilities that affect those products.  \n\nIn those advisories IBM states:\n\n* \u201cIBM strongly recommends that you **contact Red\u202fHat** to obtain and install fixes for Red\u202fHat\u202fEnterprise\u202fLinux (RHEL)\u202fServer\u202f6.2, as applicable.\u201d  \n\nThus, to get the specific remediation steps for the CVE IDs you listed (CVE\u20112018\u20111000001, CVE\u20112017\u201116997, CVE\u20112017\u20111000408, CVE\u20112017\u20111000409, CVE\u20112017\u201117426), you should:\n\n1. **Locate the IBM Flash Alert for IIB\u202fH.E.\u202fV9.0 / WMB\u202fH.E.\u202fV8.0** on the IBM Security Advisories portal (IBM\u202fSecurity\u202fAdvisories \u2192 Flash Alerts).  \n2. **Review the advisory\u2019s \u201cRemediation\u201d section**, which points you to the corresponding Red\u202fHat security advisory for the affected RHEL version.  \n3. **Contact Red\u202fHat (or consult the Red\u202fHat Customer Portal)** to obtain the patches that address those CVE IDs for RHEL\u202f6.2.\n\nSo the information you need is found in the IBM\u202fSecurity\u202fFlash\u202fAlert bulletins for IIB\u202fH.E.\u202fV9.0 and WMB\u202fH.E.\u202fV8.0, together with the Red\u202fHat security advisories that provide the actual fixes.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.38461538461538464,
+      "completeness": 0.38461538461538464,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 103,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "The problem is caused by an outdated entry in the **WP\u202fScriptingService** resource\u2011environment provider.  \nRemove that entry and restart the server.\n\n**Fix**\n\n1. Open the WebSphere\u202fApplication\u202fServer administrative console.  \n2. Go to **Resources** \u25ba **Resource environment providers**.  \n3. Select **WP\u202fScriptingService** and open its **Custom properties**.  \n4. Locate the property whose **Name** is **ServerExt.applications** (value = `com.ibm.wps.scripting.server.ApplicationServerExtensions`).  \n5. **Delete** that property, **Save** the changes, and then **restart** the Portal server.\n\nAfter the entry is removed the MBeanStarter will no longer try to load the nonexistent extension and the server should start normally. (A permanent code fix for this issue is included in the WebSphere\u202fPortal 8.5 cumulative fixes.)",
+    "pred": {
+      "relevance": 0.234375,
+      "utilization": 0.25,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.13025210084033614,
+      "utilization": 0.13445378151260504,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 104,
+    "question": "What are the files created in $TEMP on startup of IIB or WMB? What are the 0 byte files created in $TEMP/.com_ibm_tools_attach directory upon IBM Integration Bus (IIB) / WebSphere Message Broker (WMB) startup?\nFor example: The following files are created on UNIX / Windows if $TEMP is /tmp:\n/tmp/.com_ibm_tools_attach/_attachlock\n/tmp/.com_ibm_tools_attach/_master\n/tmp/.com_ibm_tools_attach/_notifier",
+    "answer": "The only files that are created in **$TEMP/.com_ibm_tools_attach** when an IBM Integration Bus (IIB) or WebSphere Message Broker (WMB) runtime starts are three zero\u2011byte files:\n\n* **_attachlock**  \n* **_master**  \n* **_notifier**\n\nThese files appear in the sub\u2011directory **.com_ibm_tools_attach** under the system temporary directory (e.g.,\u202f`/tmp/.com_ibm_tools_attach/_attachlock`, `/tmp/.com_ibm_tools_attach/_master`, `/tmp/.com_ibm_tools_attach/_notifier`).",
+    "pred": {
+      "relevance": 0.21568627450980393,
+      "utilization": 0.0392156862745098,
+      "completeness": 0.18181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.04918032786885246,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
