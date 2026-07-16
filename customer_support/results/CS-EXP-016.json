@@ -1783,5 +1783,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 105,
+    "question": "Help with Action required for IIB H.E. V9 & WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nThis is related to CVEID:\nCVE-2017-14739\nCVE-2017-14741\nCVE-2017-14989\nCVE-2017-15015\nCVE-2017-15016\nCVE-2017-15017\nCVE-2017-15032\nCVE-2017-15033\n\nWhere can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.11764705882352941,
+      "utilization": 0.11764705882352941,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 106,
+    "question": "IBM Integration Designer could not connect to the DataPower appliance. I am using WDP XI52 with Firmware 7.0.0.7 and IID 7.5.1. When I try to connect WDP from [DataPower Appliances] View in IID, I got a error message as follows : \"SSL handshake on the connection to the DataPower appliance \"x.x.x.x\" was not successful. Contact the DataPower administrator.\" This situations occurred since WDP Firmware had upgraded from 7.0.0.2 to 7.0.0.5. (Now it was upgraded to 7.0.0.7)\nCould you please let me know what I should check to solve this problem? Please note that this WDP works normally and a network is normal. Also, I can connect it by using WebGUI and SSH terminal. And I've checked that IP , XML Management Interface Port, Web Management Service Port and account/password are correct.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06557377049180328,
+      "utilization": 0.06147540983606557,
+      "completeness": 0.9375,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 107,
+    "question": "Content Engine System Health Page page doesn't reflect correctly, Fixed Content Advise and Storage Area showing unavailable. Content Engine System Health Page page doesn't reflect correctly, Fixed Content Advise and Storage Area showing unavailable. ",
+    "answer": "The health\u2011page symptom is caused by a known bug in the Content Engine version you are running.  \nThe fix is to upgrade the Content Engine to a version that contains the code correction for the health\u2011page status reporting.\n\n**Recommended action**  \nUpgrade to **Content Engine\u202f5.0.0.3\u2011P8CE\u2011FP003** (or any later fix pack). After the upgrade the Fixed Content Devices and Storage Areas will be shown correctly on the Health page.  \n\n(If you are using ingestion applications, also upgrade them to a version that implements the cleanup of incomplete documents, as noted in the same recommendation.)",
+    "pred": {
+      "relevance": 0.35294117647058826,
+      "utilization": 0.11764705882352941,
+      "completeness": 0.3333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06542056074766354,
+      "utilization": 0.028037383177570093,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 108,
+    "question": "How do I resolve a WSVR0605W hung thread issue in the WebSphere MQ Resource Adapter? The following WebSphere MQ Resource Adapter hung thread can prevent an application server from starting...\n\nWSVR0605W: Thread \"WMQJCAResourceAdapter : 6\" (0000001b) has been active for 698530 milliseconds and may be hung. There is 1 thread(s) in total in the server that may be hung. at java.lang.Object.wait(Native Method) at java.lang.Object.wait(Object.java:167) at com.ibm.ejs.container.MessageEndpointFactoryImpl.createEndpoint(MessageEndpointFactoryImpl.java:498) at com.ibm.mq.connector.inbound.WorkImpl.run(WorkImpl.java:149)",
+    "answer": "The hang is caused by the work\u2011manager thread pool running out of threads.  \nTo fix it you need to **increase the size of the work\u2011manager thread pool** that the\nresource adapter uses (the same pool that is named\u202f*es\u2011workmanager* by default).\n\n1. Open the WebSphere admin console.  \n2. Navigate to **Servers \u2192 Server Types \u2192 WebSphere application servers \u2192\u202f\\<your server\\> \u2192 Thread pools**.  \n3. Locate the **es\u2011workmanager** (or the work\u2011manager used by the WMQ JCA resource\n   adapter).  \n4. Raise the **Maximum pool size** (or the \u201cminimum/maximum threads\u201d values) so that\n   enough threads are available for the `startWork` calls.  \n5. Save the changes and restart the server.\n\nAfter the thread\u2011pool size is tuned, the `startWork` calls will no longer block,\nthe WSVR0605W warnings disappear, and the server can start normally.",
+    "pred": {
+      "relevance": 0.21333333333333335,
+      "utilization": 0.21333333333333335,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.014634146341463415,
+      "utilization": 0.014634146341463415,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 109,
+    "question": "What versions of WSAS using Oracle 12c are supported? What versions of WSAS using Oracle 12c are supported?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.13333333333333333,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02564102564102564,
+      "utilization": 0.004273504273504274,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
   }
 ]
