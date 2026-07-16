@@ -2463,5 +2463,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 145,
+    "question": "Error while installing SpSS modeler trial version I have downloaded the SPSS modeller trial version (18.1) (64 bit) and trying to install the same. I get the following error 1152: Error extracting modelerClient64.msi to the temporary location\n",
+    "answer": "The 1152 error occurs when the self\u2011extracting installer can\u2019t correctly unpack **modelerClient64.msi** to the user\u2019s temporary folder.\u202fIt\u2019s usually caused by a corrupted download or by insufficient space/permissions in the temp location.  \n\n**Fix:** Re\u2011transfer (re\u2011download) the installer files and run the setup again.\u202fMake sure the temp directory has enough free space and that you have write permission there. This resolves the 1152 extraction error.",
+    "pred": {
+      "relevance": 0.422680412371134,
+      "utilization": 0.09278350515463918,
+      "completeness": 0.21951219512195122,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08333333333333333,
+      "utilization": 0.046296296296296294,
+      "completeness": 0.5555555555555556,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 146,
+    "question": "Help with vulnerability have been identified in WebSphere Application Server shipped with WSRR I need to understand details regarding Multiple vulnerabilities have been identified in WebSphere Application Server shipped with WebSphere Service Registry and Repository (CVE-2017-1583). Where can I find this information? ",
+    "answer": "You can find the details in the IBM security bulletin titled **\u201cMultiple vulnerabilities affect Java Server Faces (JSF) used by WebSphere Application Server (CVE\u20112017\u20111583, CVE\u20112011\u20114343)\u201d**.  \nThe bulletin is available at:\n\n**http://www\u201101.ibm.com/support/docview.wss?uid=swg22008707**  \n\n(You may also reach it via the non\u2011\u201101 version:\u202fhttp://www.ibm.com/support/docview.wss?uid=swg22008707).",
+    "pred": {
+      "relevance": 0.59375,
+      "utilization": 0.03125,
+      "completeness": 0.05263157894736842,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.02072538860103627,
+      "utilization": 0.0051813471502590676,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 147,
+    "question": "Does IBM DataPower Gateway Appliance support the HTTP CONNECT method? Does IBM DataPower Gateway Appliance support the HTTP CONNECT method for SSL proxy requests? ",
+    "answer": "**Yes.**  \nThe IBM DataPower\u202fGateway appliance can use the HTTP\u202fCONNECT method, but only when the request is handled by a **Multi\u2011Protocol Gateway (MPGW)** with an HTTP\u202fProxy Policy configured in the user\u2011agent. In that configuration SSL proxy requests are tunneled using CONNECT.\n\nThe **XML Firewall** service does **not** support the CONNECT method for SSL tunneling.",
+    "pred": {
+      "relevance": 0.275,
+      "utilization": 0.05,
+      "completeness": 0.18181818181818182,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.00816326530612245,
+      "utilization": 0.012244897959183673,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 148,
+    "question": "Help with Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect IIB and WMB \n\nI need to understand details regarding \"Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker\" This is related to\nCVE-2017-10115\nCVE-2017-10116\nCVE-2017-10109\nCVE-2017-10108\n\nWhere can I find this information?",
+    "answer": "You can find the full details for those CVE entries in the **IBM\u202fJava\u202fSDK Security Bulletin** that is referenced in the security\u2011bulletin documents.\u202fThe bulletin (and the related links) contains the complete list of vulnerabilities, descriptions, CVSS scores and any available fixes.\n\n**Where to look (as given in the provided context):**\n\n| Resource | Link (from the context) |\n|----------|--------------------------|\n| **IBM Java SDK Security Bulletin** \u2013 the primary source for the CVE details | `http://www.ibm.com/support/docview.wss?uid=swg22006695` |\n| **IBM Secure Engineering Web Portal** \u2013 additional security information and bulletins | `http://www.ibm.com/security/secure-engineering/bulletins.html` |\n| **IBM Product Security Incident Response Blog** \u2013 announcements and updates on security incidents | `http://www.ibm.com/blogs/psirt` |\n| General CVE reference (for CVE\u20112016\u20113485 example) | `http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3485` (similar format can be used for the 2017 CVEs) |\n\nThe bulletins that mention the specific CVEs you listed (CVE\u20112017\u201110115, CVE\u20112017\u201110116, CVE\u20112017\u201110109, CVE\u20112017\u201110108) are part of the **\u201cMultiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker\u201d** security bulletin.\u202fAll of the detailed information\u2014descriptions, impact, and remediation guidance\u2014is available through the **IBM Java SDK Security Bulletin** link above, as well as the IBM Secure Engineering portal and the PSIRT blog.",
+    "pred": {
+      "relevance": 0.6097560975609756,
+      "utilization": 0.14634146341463414,
+      "completeness": 0.2,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.1643192488262911,
+      "utilization": 0.03755868544600939,
+      "completeness": 0.22857142857142856,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 149,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to DataPower\u202fv7.5.2 (and later) because the OpenSSH version that is installed is upgraded to\u202f6.9p1, and the default set of algorithms is changed.  \n\n* The upgrade **removes unsafe algorithms** (CBC\u2011mode ciphers, the arcfour* ciphers, the old MD5\u2011based MACs and the legacy Diffie\u2011Hellman\u2011group\u2011exchange\u2011sha1 / group1\u2011sha1 key\u2011exchange algorithms) from the default lists.  \n* When the remote SSH client or server is an older implementation that only supports those now\u2011disabled algorithms, the negotiation ends with errors such as **\u201cNo matching cipher found,\u201d \u201cNo matching MAC algorithm found,\u201d or \u201cNo matching kex algorithm found.\u201d**  \n\nThus the same configuration that worked on v7.2 (which used the older OpenSSH defaults) no longer works on v7.5.2 because the peer cannot agree on a common, safe cipher/MAC/kex. The problem can be resolved either by upgrading the peer to a version that supports the newer default algorithms, or by re\u2011enabling the legacy algorithms in the IBM i OpenSSH configuration (or by using the `enable\u2011legacy\u2011kex` option).",
+    "pred": {
+      "relevance": 0.3114754098360656,
+      "utilization": 0.32786885245901637,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.125,
+      "utilization": 0.125,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
