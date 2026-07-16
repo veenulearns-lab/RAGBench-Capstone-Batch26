@@ -3313,5 +3313,90 @@
       "completeness": 0.2222222222222222,
       "adherence": 1
     }
+  },
+  {
+    "idx": 195,
+    "question": "Traffic across domains seems unexpected \n\nI have two Multi-Protocol Gateways (MPGWs) configured, each in their own domain:\n\n     Domain A\n     MPGW_A\n     FSH_A (1.2.3.4:443)\n     Domain B\n     MPGW_B\n     FSH_B (0.0.0.0:443)\n\nThe FSH_B is disabled, thus MPGW_B cannot take traffic. However, if I modify the config for MPGW_B (i.e. just change a Stylesheet parameter) the traffic goes to MPGW_B somehow. How is this happening? FSH_B is still disabled.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0449438202247191,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 196,
+    "question": "ORA-01795 Error accessing Decision Center Business Console 8.7 I am working with ODM 8.7.0.0 when accessing the Business Console I am getting the below error message :\nORA-01795: maximum number of expressions in a list is 1000\nThe diagnostics do not contain any warning nor error.\nThe logs contain below exception : \n java.lang.RuntimeException: java.sql.SQLException: ORA-01795: maximum number of expressions in a list is 1000\n...\n Caused by: java.sql.SQLException: ORA-01795: maximum number of expressions in a list is 1000",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8679245283018868,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04175365344467641,
+      "utilization": 0.008350730688935281,
+      "completeness": 0.2,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 197,
+    "question": "Help with Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect IBM OS Images for Red Hat Linux Systems and AIX (CVE-2015-0410 and CVE-2014-6593) I need to understand details regarding \"Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect IBM OS Images for Red Hat Linux Systems and AIX (CVE-2015-0410 and CVE-2014-6593)\" Where can I find this information? ",
+    "answer": "You can find the full details of that bulletin on IBM\u2019s public security\u2011bulletin pages.\u202fIn the text the bulletin is referenced together with the IBM Java\u202fSDK Security Bulletin link:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21688283  \n\n* **IBM Secure Engineering Web Portal (bulletins section)** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n\nThese pages contain the \u201cSecurity Bulletin: Multiple vulnerabilities in IBM Java SDK affect IBM OS Images for Red\u202fHat\u202fLinux Systems and AIX\u201d entry, including the CVE\u20112015\u20110410 and CVE\u20112014\u20116593 descriptions, scores and remediation information.",
+    "pred": {
+      "relevance": 0.5660377358490566,
+      "utilization": 0.11320754716981132,
+      "completeness": 0.2,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.085,
+      "utilization": 0.065,
+      "completeness": 0.7647058823529411,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 198,
+    "question": "Why do I get error when I try to save application in APMUI? I am using APMUI 7.7 IF1. Following error occurs when I try to save application:\n\n \n\nCTGAZ0001E: The application cannot be saved because the application repository is not available.\nmessages.log of scr server shows that it is listening at 17310 port:\n\n \n\nA CWWKT0016I: Web application available (default_host): http://apmhost:17310/SCRCLUSTER_SCR_oslc.html\nBut apmui is referring to this URL with port 8080 (APM_UI.log):\n\n \n\nhttp://apmhost:8080/SCRCLUSTER_SCR_oslc/scr/gettime",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 199,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? \n\nI tried to export OMNIbus configuration using nco_confpack command and I get the following message:\n\nTool in menu but not found, menu: AlertsMenu, tool: Close\n\nI've also tried using it with -list command and I get the same error.\n\nWhy is this happening?",
+    "answer": "The export fails because the menu you are exporting contains a reference to a tool that no longer exists in the Object Server. In the example the **AlertsMenu** has a tool entry (e.g.,\u202fCLEAR_LWY or \u201cClose\u201d) that is missing, so nco_confpack cannot resolve it and aborts with the \u201cTool in menu but not found\u201d error.  \n\n**Fix:** Re\u2011create the missing tool (or delete the stale menu entry) and associate it with the menu, then run the nco_confpack command again.",
+    "pred": {
+      "relevance": 0.12,
+      "utilization": 0.08,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0410958904109589,
+      "utilization": 0.0410958904109589,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
