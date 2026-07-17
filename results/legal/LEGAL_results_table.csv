@@ -34,7 +34,7 @@ RMSE 0.4201","0.1947
 RMSE 0.2739","0.5326
 RMSE 0.5096","0.9200
 AUCROC 1.0000",0.0756,0.0194,0.7466,0.92,25,WINNER + LOCKED. gpt-oss sweeps all metrics (adh 0.92 = GT ref; util 2x; comp 0.53). Generation was the bottleneck. Decommission-proof.
-LEGAL-EXP-011,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,llama-3.1-8b,"0.3360
+LEGAL-EXP-011,Legal (cuad),,,,None,,"0.3360
 RMSE 0.4482","0.1387
 RMSE 0.1778","0.4026
 RMSE 0.5699","0.6800
