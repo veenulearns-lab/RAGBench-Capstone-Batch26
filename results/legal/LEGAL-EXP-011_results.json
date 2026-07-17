@@ -1,0 +1,1234 @@
+[
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 12,
+  "question": "The date of the contract",
+  "answer": "The Effective Date is the date of the contract, but it is not explicitly stated in the provided context.",
+  "relevance": 0.13333333333333333,
+  "utilization": 0.06666666666666667,
+  "completeness": 0.5,
+  "adherence": 1.0,
+  "n_relevant": 2,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the date of the contract. Specifically, document 0 mentions the 'Effective Date' in sentence '0b', which is relevant to the question. Additionally, document 1 mentions the 'Effective Date' in sentence '1a', which is also relevant to the question.",
+   "all_relevant_sentence_keys": [
+    "0b",
+    "1a"
+   ],
+   "overall_supported_explanation": "The response states that 'The Effective Date is the date of the contract, but it is not explicitly stated in the provided context.' The first part of this statement, 'The Effective Date is the date of the contract', is supported by the fact that the 'Effective Date' is mentioned in the context of the contract's term in sentence '0b'. However, the second part of the statement, 'but it is not explicitly stated in the provided context', is also supported because the documents do not provide a specific date for the 'Effective Date'.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported by the documents because the 'Effective Date' is mentioned in the context of the contract's term in sentence '0b', and the documents do not provide a specific date for the 'Effective Date'.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 13,
+  "question": "What is the renewal term after the initial term expires? This includes automatic extensions and unilateral extensions with prior notice.",
+  "answer": "Unfortunately, the provided context does not mention the renewal term after the initial term expires. It discusses the extension of application, sublicense, reports and payments, and reversion of license, but does not provide information about the renewal term.",
+  "relevance": 0.0,
+  "utilization": 0.0,
+  "completeness": 0.0,
+  "adherence": 1.0,
+  "n_relevant": 0,
+  "n_utilized": 0,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents provided do not contain any information about the renewal term after the initial term expires. They discuss various topics such as extension of application, sublicense, reports and payments, and reversion of license, but none of these topics are relevant to the question about the renewal term. Therefore, none of the documents contain useful information for answering the question.",
+   "all_relevant_sentence_keys": [],
+   "overall_supported_explanation": "The response states that the provided context does not mention the renewal term after the initial term expires, which is a correct assessment of the documents. The response does not make any claims about the renewal term, but rather highlights the lack of information in the documents. Therefore, the response is supported by the documents in the sense that it accurately reflects the absence of relevant information.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported without any specific sentence in the documents because it is expressing the inability to answer the question due to the lack of relevant information in the provided context.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": []
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 15,
+  "question": "Is a party\u2019s liability uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation.",
+  "answer": "No, a party's liability is not entirely uncapped upon the breach of its obligation in the contract. \n\nThe contract mentions that Kaya Fest shall not be liable to any Sponsor for losses arising out of, or the inability to perform its obligations under the terms of this sponsorship proposal due to acts of God, which include, that are not limited to, fire, flood, tornados, hurricanes, severe increments weather, strikes, medical failure, or any other acts beyond the control of Kaya Fest. This implies that there are certain circumstances where Kaya Fest's liability is limited.\n\nHowever, the contract does not explicitly state that liability is capped in all cases. It does mention that the attendance and marketing reach estimates made in negotiations were mere estimates and not guarantees, which could imply that Kaya Fest may be liable for any losses resulting from these estimates being incorrect.\n\nIt is also worth noting that the contract does not explicitly state that liability is capped for breaches of confidentiality or intellectual property infringement. However, the contract does require that each party restrict disclosure of the other party's Confidential Information to its employees and agents with a reasonable need to know such Confidential Information, and shall not disclose the other party's Confidential Information to any third party without the prior written consent of the other party. This implies that Kaya Fest may be liable for any losses resulting from a breach of confidentiality.\n\nIn summary, while the contract does not explicitly state that liability is capped in all cases, it does imply that there are certain circumstances where liability is limited. It is also worth noting that the contract does not explicitly state that liability is capped for breaches of confidentiality or intellectual property infringement.",
+  "relevance": 0.6666666666666666,
+  "utilization": 0.2,
+  "completeness": 0.3,
+  "adherence": 0.0,
+  "n_relevant": 10,
+  "n_utilized": 3,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about a party's liability upon breach of its obligation in the contract. Specifically, document 0 discusses the handling of Confidential Information, document 1 mentions the limitation of liability due to acts of God, and document 2 talks about the assignment and entire agreement. Document 3 mentions changes in company value or brand value, and document 4 discusses exhibiting and liability insurance. These documents provide relevant information about the contract terms and conditions, which can help answer the question about liability.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0b",
+    "0c",
+    "1a",
+    "1b",
+    "2a",
+    "2b",
+    "2c",
+    "3b",
+    "4b"
+   ],
+   "overall_supported_explanation": "The response as a whole is partially supported by the documents. The first sentence is not entirely supported because the documents do not explicitly state that liability is uncapped in all cases. The second sentence is supported by document 1, sentence 1b, which mentions the limitation of liability due to acts of God. The third sentence is not supported because the documents do not explicitly state that liability is capped in all cases. The fourth sentence is partially supported by document 0, sentence 0c, which discusses the handling of Confidential Information, but it does not explicitly state that liability is capped for breaches of confidentiality. The fifth sentence is a summary and is partially supported by the previous sentences.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is not entirely supported because the documents do not explicitly state that liability is uncapped in all cases. However, it can be inferred from the lack of explicit limitations on liability in the documents.",
+     "supporting_sentence_keys": [],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by document 1, sentence 1b, which mentions the limitation of liability due to acts of God.",
+     "supporting_sentence_keys": [
+      "1b"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "c.",
+     "explanation": "This sentence is not supported because the documents do not explicitly state that liability is capped in all cases.",
+     "supporting_sentence_keys": [],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "d.",
+     "explanation": "This sentence is partially supported by document 3, sentence 3b, which mentions that attendance and marketing reach estimates are mere estimates and not guarantees. This could imply that Kaya Fest may be liable for any losses resulting from these estimates being incorrect.",
+     "supporting_sentence_keys": [
+      "3b"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "e.",
+     "explanation": "This sentence is partially supported by document 0, sentence 0c, which discusses the handling of Confidential Information. However, it does not explicitly state that liability is capped for breaches of confidentiality.",
+     "supporting_sentence_keys": [
+      "0c"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "f.",
+     "explanation": "This sentence is a summary and is partially supported by the previous sentences.",
+     "supporting_sentence_keys": [
+      "general"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0c",
+    "1b",
+    "3b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 16,
+  "question": "Does the contract contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?",
+  "answer": "No, the contract does not contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee).",
+  "relevance": 0.5333333333333333,
+  "utilization": 0.5333333333333333,
+  "completeness": 1.0,
+  "adherence": 1.0,
+  "n_relevant": 8,
+  "n_utilized": 8,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in sections related to termination, such as 18.6 and 18.7 in document 0, and 18.2 and 18.3 in document 1. Additionally, sections related to payments and obligations, such as Section 10, 11, 16, 17, 19, and 21, are relevant as they might imply the existence of a termination fee or liquidated damages. However, upon closer inspection, none of these sections explicitly mention a termination fee or liquidated damages for breach.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0b",
+    "1b",
+    "1c",
+    "2a",
+    "2b",
+    "2c",
+    "3b"
+   ],
+   "overall_supported_explanation": "The response claims that the contract does not contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract. This claim is supported by the fact that none of the relevant sections in the documents explicitly mention such a clause. Although the documents discuss termination and obligations, they do not provide any information that would contradict the response's claim.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported by the lack of any explicit mention of a termination fee or liquidated damages in the relevant sections of the documents. The documents discuss termination and obligations, but none of them imply the existence of such a clause.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0a",
+    "0b",
+    "1b",
+    "1c",
+    "2a",
+    "2b",
+    "2c",
+    "3b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 44,
+  "question": "Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?",
+  "answer": "Yes, there is a minimum order size or minimum amount of units per-time period that one party must buy from the counterparty under the contract. \n\nAccording to Section 7.2, for each twelve-month period following the Effective Date during the Term, the amount paid by NCM (Network Affiliate) shall be not less than $0.17 per Theatre patron during such period, with such amount increasing by 5% on each anniversary of the Effective Date (the \"Minimum Fee\"). This means that Network Affiliate must buy a minimum amount of units (patrons) per-time period, which is 400,000 patrons per twelve-month period.",
+  "relevance": 0.2,
+  "utilization": 0.06666666666666667,
+  "completeness": 0.3333333333333333,
+  "adherence": 0.0,
+  "n_relevant": 3,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in sections 7.2 and 7.3, which discuss the Minimum Fee and payment terms. Specifically, document 1, sentences 1a, 1b, and 1c, provide details about the Minimum Fee, including the amount paid per Theatre patron and the conditions under which it applies. These sentences are relevant to the question because they outline the minimum amount that one party must pay to the other under the contract.",
+   "all_relevant_sentence_keys": [
+    "1a",
+    "1b",
+    "1c"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents. The first sentence of the response is a general statement that is supported by the documents. The second sentence of the response accurately reflects the information in document 1, sentence 1b, which states that the amount paid by NCM shall be not less than $0.17 per Theatre patron during the period, with such amount increasing by 5% on each anniversary of the Effective Date. However, the response also includes an interpretation that Network Affiliate must buy a minimum amount of units (patrons) per-time period, which is 400,000 patrons per twelve-month period. This interpretation is partially supported by the documents, as sentence 1b states that the attendance base in the Theatres for the twelve (12) month period must be equal to or greater than 400,000 patrons for the Minimum Fee to apply.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is a general statement that is supported by the documents. The documents do outline a minimum fee that one party must pay to the other under the contract.",
+     "supporting_sentence_keys": [
+      "general"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is partially supported by the documents. The documents do state that the amount paid by NCM shall be not less than $0.17 per Theatre patron during the period, with such amount increasing by 5% on each anniversary of the Effective Date. However, the interpretation that Network Affiliate must buy a minimum amount of units (patrons) per-time period is only partially supported, as the documents state that the attendance base in the Theatres for the twelve (12) month period must be equal to or greater than 400,000 patrons for the Minimum Fee to apply.",
+     "supporting_sentence_keys": [
+      "1b"
+     ],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "1b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 47,
+  "question": "Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor?\u00a0",
+  "answer": "No, the contract does not contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor. \n\nThe contract mentions \"Affiliates\" in Section 1.1, but it only defines what an Affiliate is and does not grant any rights or licenses to them. In fact, Section 3.2 explicitly states that CBC shall not permit any Affiliate or third party to manufacture, use, supply, or sell the Product, indicating that the rights granted in the contract are exclusive to MediWound.",
+  "relevance": 0.5333333333333333,
+  "utilization": 0.13333333333333333,
+  "completeness": 0.25,
+  "adherence": 1.0,
+  "n_relevant": 8,
+  "n_utilized": 2,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question because they define terms such as 'Affiliate' and 'Sub-Contractor', and outline the rights and responsibilities of the parties involved in the contract, including the grant of rights and the exclusivity of those rights. Specifically, documents 1 and 3 contain relevant information, as they define the term 'Affiliate' and outline the grant of rights and exclusivity, respectively.",
+   "all_relevant_sentence_keys": [
+    "1a",
+    "1b",
+    "1c",
+    "2a",
+    "3b",
+    "3c",
+    "4a",
+    "4b"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents. The first sentence of the response is a general statement that is supported by the lack of any language in the documents granting licenses to affiliates of the licensor. The second sentence of the response is supported by the definition of 'Affiliate' in document 1 and the exclusivity language in document 3. The response accurately reflects the information in the documents and does not contain any unsupported claims.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by the lack of any language in the documents granting licenses to affiliates of the licensor. The documents define the term 'Affiliate' and outline the rights and responsibilities of the parties, but do not grant any licenses to affiliates.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by the definition of 'Affiliate' in document 1 and the exclusivity language in document 3. The definition of 'Affiliate' in document 1 provides context for the term, and the exclusivity language in document 3 supports the claim that the rights granted in the contract are exclusive to MediWound.",
+     "supporting_sentence_keys": [
+      "1c",
+      "3c"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "1c",
+    "3c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 52,
+  "question": "Is consent or notice required of a party if the contract is assigned to a third party?",
+  "answer": "According to the context, consent is required from the other party if the contract is assigned to a third party. This is stated in section 19, \"Assignment\", which says: \"Neither this Agreement nor any of the rights or obligations contained herein may be assigned or transferred by either Party without the prior written consent of the other Party.\"",
+  "relevance": 0.2,
+  "utilization": 0.2,
+  "completeness": 1.0,
+  "adherence": 1.0,
+  "n_relevant": 3,
+  "n_utilized": 3,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in sections related to 'Assignment'. Specifically, document 4 contains a sentence (4b) that directly addresses the requirement of consent or notice for assigning the contract to a third party. Additionally, other documents (0 and 1) contain similar information regarding the relationship between parties but do not directly address the assignment to a third party. However, document 4 is the most relevant as it explicitly mentions the need for prior written consent for assignment or transfer.",
+   "all_relevant_sentence_keys": [
+    "4a",
+    "4b",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents because it accurately reflects the information provided in document 4, section 'Assignment'. The response states that consent is required from the other party if the contract is assigned to a third party and correctly references section 19, 'Assignment', which is found in document 4. The documents explicitly state that neither the agreement nor any of the rights or obligations contained herein may be assigned or transferred by either party without the prior written consent of the other party, which directly supports the claim made in the response.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by the documents because it accurately reflects the requirement for consent in the event of assignment as stated in document 4, section 'Assignment'.",
+     "supporting_sentence_keys": [
+      "4b"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by the documents as it directly quotes the relevant section from document 4, which explicitly states the need for prior written consent for any assignment or transfer.",
+     "supporting_sentence_keys": [
+      "4b"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "4a",
+    "4b",
+    "4c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 57,
+  "question": "The name of the contract",
+  "answer": "Unfortunately, the name of the contract is not explicitly mentioned in the provided context.",
+  "relevance": 0.0,
+  "utilization": 0.0,
+  "completeness": 0.0,
+  "adherence": 1.0,
+  "n_relevant": 0,
+  "n_utilized": 0,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents provided do not contain any explicit information about the name of the contract. However, documents 0, 1, 2, 3, and 4 contain various details about the agreement, such as the intent of the parties, the ordering procedure, and the terms and conditions. Although these details do not directly answer the question, they provide context about the contract and could be considered relevant in a broader sense.",
+   "all_relevant_sentence_keys": [],
+   "overall_supported_explanation": "The response states that the name of the contract is not explicitly mentioned in the provided context. This statement is supported by the fact that none of the documents explicitly mention the name of the contract. Therefore, the response is supported by the lack of information in the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported by the fact that none of the documents explicitly mention the name of the contract. This is an example of a sentence being supported without a specific sentence in the documents, as it is expressing an inability to answer the question due to lack of relevant information.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": []
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 71,
+  "question": "Does the contract contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?",
+  "answer": "No, the contract does not contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee). \n\nThe contract does mention \"basic Monthly Maintenance Charges\" in Section 15, but it limits XIMAGE's total liability to this amount in the event of damages suffered by MORPHO, rather than awarding it as a termination fee.",
+  "relevance": 0.2,
+  "utilization": 0.13333333333333333,
+  "completeness": 0.6666666666666666,
+  "adherence": 1.0,
+  "n_relevant": 3,
+  "n_utilized": 2,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question because they include sections related to termination, liability, and damages. Specifically, document 0 contains a section on termination, which is relevant to the question of termination fees. Document 3 contains a section on limitations of liability, which mentions damages and could be related to liquidated damages. By examining these sections, one can determine if the contract contains a clause that would award liquidated damages for breach or a termination fee.",
+   "all_relevant_sentence_keys": [
+    "0b",
+    "3b",
+    "3c"
+   ],
+   "overall_supported_explanation": "The response states that the contract does not contain a clause that would award liquidated damages for breach or a termination fee. This claim is supported by the documents because there is no mention of a termination fee or liquidated damages in the relevant sections. The response also mentions that the contract limits XIMAGE's total liability to the basic Monthly Maintenance Charges, which is supported by document 3, sentence 3b. However, the response could be improved by explicitly stating that the documents do not contain any information about termination fees or liquidated damages.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by the documents because there is no mention of a termination fee or liquidated damages in the relevant sections. The documents do mention termination and damages, but not in the context of a termination fee or liquidated damages.",
+     "supporting_sentence_keys": [
+      "0b",
+      "3b",
+      "3c"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by document 3, sentence 3b, which mentions the basic Monthly Maintenance Charges as a limit on XIMAGE's total liability. This sentence is fully supported by the documents because it accurately reflects the information in document 3.",
+     "supporting_sentence_keys": [
+      "3b"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0b",
+    "3b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 111,
+  "question": "Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.",
+  "answer": "Yes, the contract includes a cap on liability upon the breach of a party's obligation. \n\nThe contract states that liability for loss, damage or delay, including liability for consequential loss, is limited to Four Dollars and Forty One Cents ($4.41) per kilogram or Two Dollars ($2.00) per pound unless a higher value has been declared for insurance purposes (Section 6.3 and Section 3).\n\nAdditionally, the contract specifies that a Party shall pay to the other the full amount of any paid claim, loss or damage for which it is liable within forty five (45) days following presentation of supporting documentation (Section 7.1). If a Party fails to pay, the other Party shall have the right to deduct the amount of such claim, loss or damage from any monies due or becoming due to the first Party by the second Party (Section 7.1).\n\nThe contract also includes a provision for performance penalties, where a defaulting Party shall pay a penalty to the Party not in default, which is a pre-estimation of damages suffered by the non-defaulting Party (Section 18.1).\n\nHowever, the contract does not specify a maximum amount for recovery in case of a breach of a party's obligation.",
+  "relevance": 0.6666666666666666,
+  "utilization": 0.3333333333333333,
+  "completeness": 0.5,
+  "adherence": 0.0,
+  "n_relevant": 10,
+  "n_utilized": 5,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the contract's cap on liability upon the breach of a party's obligation. Specifically, document 0 contains relevant information in sentences '0a' and '0b' about the limitation of liability for loss, damage, or delay, and the payment of claims. Document 4 also contains relevant information in sentence '4c' about the limitation of liability. Additionally, document 2 contains relevant information in sentence '2b' about the right to deduct amounts from monies due to a defaulting party.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0b",
+    "0c",
+    "1a",
+    "1b",
+    "1c",
+    "2b",
+    "4a",
+    "4b",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response as a whole is partially supported by the documents. The first sentence is supported by document 0, sentence '0a', and document 4, sentence '4c', which state that liability for loss, damage, or delay is limited to $4.41 per kilogram or $2.00 per pound. The second sentence is partially supported by document 0, sentence '0a', but the reference to 'Section 6.3 and Section 3' is incorrect, as the correct reference is to document 0, sentence '0a', and document 4, sentence '4c'. The third sentence is supported by document 0, sentence '0b', which states that a party shall pay the full amount of any paid claim within 45 days. The fourth sentence is supported by document 2, sentence '2b', which states that a defaulting party shall pay a penalty to the non-defaulting party. However, the fifth sentence is not supported by the documents, as there is no explicit statement about a maximum amount for recovery in case of a breach of a party's obligation.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by document 0, sentence '0a', and document 4, sentence '4c', which state that liability for loss, damage, or delay is limited to $4.41 per kilogram or $2.00 per pound.",
+     "supporting_sentence_keys": [
+      "0a",
+      "4c"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is partially supported by document 0, sentence '0a', but the reference to 'Section 6.3 and Section 3' is incorrect. The correct reference is to document 0, sentence '0a', and document 4, sentence '4c'.",
+     "supporting_sentence_keys": [
+      "0a",
+      "4c"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "c.",
+     "explanation": "This sentence is supported by document 0, sentence '0b', which states that a party shall pay the full amount of any paid claim within 45 days.",
+     "supporting_sentence_keys": [
+      "0b"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "d.",
+     "explanation": "This sentence is supported by document 2, sentence '2b', which states that a defaulting party shall pay a penalty to the non-defaulting party.",
+     "supporting_sentence_keys": [
+      "2b"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "e.",
+     "explanation": "This sentence is not supported by the documents, as there is no explicit statement about a maximum amount for recovery in case of a breach of a party's obligation.",
+     "supporting_sentence_keys": [],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0a",
+    "0b",
+    "0c",
+    "2b",
+    "4c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 114,
+  "question": "Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?",
+  "answer": "No, there is no clause providing for joint or shared ownership of intellectual property between the parties to the contract. \n\nAccording to clause 35.1, each Party's trade-marks, distinctive colours and designs used in connection with the Services shall remain at all times during the term of this Agreement and on the expiration or termination thereof, the exclusive property of each Party.",
+  "relevance": 0.4,
+  "utilization": 0.06666666666666667,
+  "completeness": 0.16666666666666666,
+  "adherence": 1.0,
+  "n_relevant": 6,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in sections related to intellectual property, such as trade-marks, distinctive colours, and designs. Specifically, sections 35.1 in documents 3 and 1a in document 1 provide relevant information about the ownership of intellectual property. Additionally, sections 0a, 0b, and 4c discuss the relationship between the parties, which could be relevant to understanding the context of intellectual property ownership.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0b",
+    "1a",
+    "3b",
+    "3c",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response states that there is no clause providing for joint or shared ownership of intellectual property between the parties to the contract. This statement is supported by the documents, as there is no mention of joint or shared ownership of intellectual property. The second sentence of the response references clause 35.1, which is present in document 3 and supports the idea that each party's trade-marks, distinctive colours, and designs remain their exclusive property. Therefore, the response as a whole is supported by the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by the lack of any mention of joint or shared ownership of intellectual property in the documents. While the documents do discuss intellectual property, such as trade-marks and designs, they do not provide for joint or shared ownership.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by clause 35.1 in document 3, which states that each party's trade-marks, distinctive colours, and designs used in connection with the services remain their exclusive property.",
+     "supporting_sentence_keys": [
+      "3b"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "3b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 119,
+  "question": "This category includes the exceptions or carveouts to Non-Compete, Exclusivity and No-Solicit of Customers above.",
+  "answer": "This category includes the exceptions or carveouts to Non-Compete, Exclusivity and No-Solicit of Customers above: \n\n- NETGEAR may sell or license Products in the Territory to customers other than distributors (such as resellers) during the initial one (1) year term and any subsequent period.\n- Following the initial one (1) year term, NETGEAR may appoint other distributors in the Territory at its sole discretion.",
+  "relevance": 0.26666666666666666,
+  "utilization": 0.13333333333333333,
+  "completeness": 0.5,
+  "adherence": 1.0,
+  "n_relevant": 4,
+  "n_utilized": 2,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "Documents 0, 4 contain useful information for answering the question. Document 0 discusses the restriction on appointment of additional distributors and the conditions under which NETGEAR may appoint additional distributors. Document 4 discusses the exceptions to exclusivity, including NETGEAR's right to sell or license products to customers other than distributors during the initial one-year term and any subsequent period, as well as the non-exclusivity of the distributor's appointment after the initial one-year term.",
+   "all_relevant_sentence_keys": [
+    "0b",
+    "0c",
+    "4b",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents. The first sentence in the response, 'NETGEAR may sell or license Products in the Territory to customers other than distributors (such as resellers) during the initial one (1) year term and any subsequent period,' is supported by sentence 4b, which states that NETGEAR reserves the right to sell or license products to customers other than distributors during the initial one-year term and any subsequent period. The second sentence in the response, 'Following the initial one (1) year term, NETGEAR may appoint other distributors in the Territory at its sole discretion,' is supported by sentence 4c, which states that after the initial one-year term, the distributor's appointment shall be non-exclusive and NETGEAR may appoint other distributors in the territory at its sole discretion.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by sentence 4b, which discusses NETGEAR's right to sell or license products to customers other than distributors during the initial one-year term and any subsequent period.",
+     "supporting_sentence_keys": [
+      "4b"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by sentence 4c, which discusses the non-exclusivity of the distributor's appointment after the initial one-year term and NETGEAR's right to appoint other distributors in the territory at its sole discretion.",
+     "supporting_sentence_keys": [
+      "4c"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "4b",
+    "4c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 125,
+  "question": "The two or more parties who signed the contract",
+  "answer": "The two or more parties who signed the contract are:\n\n1. The Right Solution (represented by Rick Bailey, President / CEO)\n2. Celebrity (represented by Bruce Jenner, Independent Contractor/COMPANY)",
+  "relevance": 0.06666666666666667,
+  "utilization": 0.06666666666666667,
+  "completeness": 1.0,
+  "adherence": 1.0,
+  "n_relevant": 1,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the parties who signed the contract. Specifically, document 0 contains the signatures of the parties, with 'The Right Solution' represented by Rick Bailey, President / CEO, and 'CELEBRITY' represented by Bruce Jenner, Independent Contractor/COMPANY. This information is relevant to the question as it directly identifies the parties who signed the contract.",
+   "all_relevant_sentence_keys": [
+    "0c"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents. The response identifies 'The Right Solution' (represented by Rick Bailey, President / CEO) and 'CELEBRITY' (represented by Bruce Jenner, Independent Contractor/COMPANY) as the parties who signed the contract. This information is directly supported by document 0, sentence '0c', which contains the signatures of the parties. Therefore, the response accurately reflects the information provided in the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "1.",
+     "explanation": "This sentence is supported by document 0, sentence '0c', which contains the signature of 'The Right Solution' represented by Rick Bailey, President / CEO.",
+     "supporting_sentence_keys": [
+      "0c"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "2.",
+     "explanation": "This sentence is supported by document 0, sentence '0c', which contains the signature of 'CELEBRITY' represented by Bruce Jenner, Independent Contractor/COMPANY.",
+     "supporting_sentence_keys": [
+      "0c"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 140,
+  "question": "What is the notice period required to terminate renewal?",
+  "answer": "There is no information provided in the given context about the notice period required to terminate renewal. The context only discusses the termination of the Remarketing Agreement under certain conditions, but it does not mention anything about renewal or a notice period for termination of renewal.",
+  "relevance": 0.0,
+  "utilization": 0.0,
+  "completeness": 0.0,
+  "adherence": 1.0,
+  "n_relevant": 0,
+  "n_utilized": 0,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents provided do not contain any information about the notice period required to terminate renewal. The documents discuss the termination of the Remarketing Agreement under certain conditions, but they do not mention anything about renewal or a notice period for termination of renewal. Therefore, none of the documents contain useful information for answering the question.",
+   "all_relevant_sentence_keys": [],
+   "overall_supported_explanation": "The response states that there is no information provided in the given context about the notice period required to terminate renewal, which is correct. The response also states that the context only discusses the termination of the Remarketing Agreement under certain conditions, but it does not mention anything about renewal or a notice period for termination of renewal, which is also correct. Since the response is expressing inability to answer the question due to lack of relevant information in the provided context, it is supported by the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported because the documents do not contain any information about the notice period required to terminate renewal.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported because the documents discuss the termination of the Remarketing Agreement under certain conditions, but they do not mention anything about renewal or a notice period for termination of renewal.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": []
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 216,
+  "question": "Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor?\u00a0",
+  "answer": "No, the contract does not contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor. \n\nThe contract mentions that any product, service, license, or permission provided by Equidata is on an \"as is\" basis, but it does not mention any license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor.",
+  "relevance": 0.2,
+  "utilization": 0.06666666666666667,
+  "completeness": 0.3333333333333333,
+  "adherence": 0.0,
+  "n_relevant": 3,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in sentences 0c, 3a, and 3c. Sentence 0c mentions a product, service, license, or permission provided by Equidata, which is relevant to the question about license grants. Sentence 3a provides context about the agreement between Equidata and the Marketing Affiliate, which could be relevant to understanding any license grants. Sentence 3c mentions 'Permission', which could be related to a license grant.",
+   "all_relevant_sentence_keys": [
+    "0c",
+    "3a",
+    "3c"
+   ],
+   "overall_supported_explanation": "The response claims that the contract does not contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor. This claim is supported by the fact that the documents do not mention any license grants by affiliates of the licensor. The response also mentions that the contract states any product, service, license, or permission provided by Equidata is on an 'as is' basis, which is supported by sentence 0c. However, the response does not fully explore the possibility of a license grant in other parts of the contract, such as sentence 3c, which mentions 'Permission'. Therefore, the response is partially supported by the documents.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is partially supported by the documents because it claims that the contract does not contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor. While the documents do not mention any such license grants, they do not explicitly state that no such grants exist. Sentence 0c provides some support for this claim by mentioning that any product, service, license, or permission provided by Equidata is on an 'as is' basis, but it does not rule out the possibility of a license grant by affiliates of the licensor.",
+     "supporting_sentence_keys": [
+      "0c"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by sentence 0c, which mentions that any product, service, license, or permission provided by Equidata is on an 'as is' basis. However, the sentence also claims that the contract does not mention any license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor, which is partially supported by the documents as explained above.",
+     "supporting_sentence_keys": [
+      "0c"
+     ],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 258,
+  "question": "Is there a fee increase or consent requirement, etc. if one party\u2019s use of the product/services exceeds certain threshold?",
+  "answer": "There is no information in the provided context about a fee increase or consent requirement if one party's use of the product/services exceeds a certain threshold.",
+  "relevance": 0.0,
+  "utilization": 0.0,
+  "completeness": 0.0,
+  "adherence": 1.0,
+  "n_relevant": 0,
+  "n_utilized": 0,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents provided do not contain any information about a fee increase or consent requirement if one party's use of the product/services exceeds a certain threshold. However, documents 0, 1, 2, 3, and 4 contain various terms and conditions related to the agreement, which could be relevant to understanding the context of the question. Upon closer examination, it appears that none of these documents explicitly address the question of fee increases or consent requirements based on threshold exceedance.",
+   "all_relevant_sentence_keys": [],
+   "overall_supported_explanation": "The response states that there is no information in the provided context about a fee increase or consent requirement if one party's use of the product/services exceeds a certain threshold. This statement is supported by the fact that none of the documents provided contain any information about such a fee increase or consent requirement. The response does not make any claims that are contradicted by the documents, and it accurately reflects the lack of relevant information in the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported because the documents do not contain any information about a fee increase or consent requirement if one party's use of the product/services exceeds a certain threshold. The sentence is expressing an inability to answer the question due to a lack of relevant information in the provided context.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": []
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 279,
+  "question": "The two or more parties who signed the contract",
+  "answer": "HPIL ET and GINARES.",
+  "relevance": 0.06666666666666667,
+  "utilization": 0.06666666666666667,
+  "completeness": 1.0,
+  "adherence": 1.0,
+  "n_relevant": 1,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the parties who signed the contract. Specifically, document 4 contains a sentence (4a) that mentions the parties HPIL ET and GINARES, which is relevant to the question. Additionally, the other documents provide context about the agreement and the relationship between the parties, but they do not directly answer the question.",
+   "all_relevant_sentence_keys": [
+    "4a"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents because it correctly identifies the parties who signed the contract. The response states that the parties are HPIL ET and GINARES, which is supported by sentence 4a in document 4. This sentence explicitly mentions the parties and their agreement to cooperate together.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported by the documents because it correctly identifies the parties who signed the contract. Sentence 4a in document 4 explicitly mentions the parties HPIL ET and GINARES.",
+     "supporting_sentence_keys": [
+      "4a"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "4a"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 287,
+  "question": "Is a party\u2019s liability uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation.",
+  "answer": "Based on the provided context, it appears that a party's liability is capped in certain situations. \n\nFor example, in Section 7.2, it is stated that \"CONFORMIS' LIABILITY ON A PER OCCURRENCE BASIS UNDER SECTION 7.3(A)(IV) SHALL NOT EXCEED THE GREATER OF (I) $[**] AND (II) THE AMOUNT OF INSURANCE COVERAGE ACTUALLY PAID TO CONFORMIS UNDER THEN-CURRENT INSURANCE POLICIES OF CONFORMIS IN RESPECT OF SUCH DAMAGES.\" This suggests that Conformis' liability is capped at a certain amount.\n\nHowever, it is not explicitly stated that a party's liability is uncapped upon the breach of its obligation in the contract. In fact, the language of Section 7.2 suggests that there are certain limitations on liability, such as the per occurrence basis and the insurance coverage cap.\n\nRegarding uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation, the provided context does not provide any information on this topic. The language of Section 7.2 is general and does not specify any exceptions or limitations for certain types of breaches.\n\nTherefore, based on the provided context, it is not possible to conclude that a party's liability is uncapped upon the breach of its obligation in the contract.",
+  "relevance": 1.0,
+  "utilization": 0.3333333333333333,
+  "completeness": 0.3333333333333333,
+  "adherence": 1.0,
+  "n_relevant": 15,
+  "n_utilized": 5,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in sections related to liability, such as Section 7.2, which discusses the limitation of liability and provides details on the capping of Conformis' liability. Additionally, other sections like 7.3 and 10.2, although not directly referenced in the response, provide context on the handling of claims and the assignment of rights and obligations, which could be relevant to understanding liability. However, the provided context does not explicitly address uncapped liability for specific types of breaches like IP infringement or breach of confidentiality obligation.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0b",
+    "0c",
+    "1a",
+    "1b",
+    "1c",
+    "2a",
+    "2b",
+    "2c",
+    "3a",
+    "3b",
+    "3c",
+    "4a",
+    "4b",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents because it accurately reflects the information provided about liability caps. The response correctly identifies that Conformis' liability is capped under certain conditions, as stated in Section 7.2. It also correctly notes that the provided context does not explicitly state that a party's liability is uncapped upon the breach of its obligation in the contract, nor does it provide information on uncapped liability for specific types of breaches. The response's conclusion that it is not possible to determine if a party's liability is uncapped based on the provided context is supported by the lack of explicit information on this topic in the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by the general context of the documents, which discuss liability and its limitations, but it does not directly reference any specific sentence.",
+     "supporting_sentence_keys": [
+      "general"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by the specific details provided in Section 7.2, which discusses the capping of Conformis' liability.",
+     "supporting_sentence_keys": [
+      "1b"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "c.",
+     "explanation": "This sentence is supported by the language of Section 7.2, which implies limitations on liability, including the per occurrence basis and the insurance coverage cap.",
+     "supporting_sentence_keys": [
+      "1b",
+      "1c"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "d.",
+     "explanation": "This sentence is supported because the documents do not provide explicit information on uncapped liability for specific types of breaches, making it a statement about the lack of information in the provided context.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "e.",
+     "explanation": "This sentence is supported because it accurately reflects the conclusion drawn from the information (or lack thereof) provided in the documents regarding uncapped liability.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0b",
+    "0c",
+    "1a",
+    "1b",
+    "1c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 302,
+  "question": "What is the notice period required to terminate renewal?",
+  "answer": "The notice period required to terminate the Agreement is not explicitly mentioned in the context provided as a \"renewal\" but rather as termination due to various reasons. However, the general notice period for termination is mentioned as follows:\n\n- 30 days' written notice for termination due to breach (Section 16.a.i)\n- 30 days' written notice for termination due to regulations or applicable laws (Section 16.a.iv)\n- 30 days' written notice for termination due to a majority of Application Provider's assets being merged, acquired, or sold to an Excite@Home Named Competitor (Section 16.a.v)\n- 90 days' written notice for termination due to inability or unwillingness to deliver additions or disagreement on the direction of the Co-Branded Application (Section 16.a.vi)",
+  "relevance": 0.8666666666666667,
+  "utilization": 0.3333333333333333,
+  "completeness": 0.38461538461538464,
+  "adherence": 0.0,
+  "n_relevant": 13,
+  "n_utilized": 5,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the notice period required to terminate renewal. Specifically, documents 0, 1, 2, 3, and 4 contain relevant information about termination notice periods. Document 0 mentions the term of the agreement and the basis for termination, including a 30-day notice period for breach. Document 1 discusses the hosting and maintenance of the Co-Branded Application after termination. Document 2 mentions a 90-day notice period for certain transactions. Documents 3 and 4 provide additional information about termination notice periods, including 30-day and 90-day notice periods for various reasons.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0c",
+    "1a",
+    "1b",
+    "1c",
+    "2a",
+    "2b",
+    "2c",
+    "3a",
+    "3b",
+    "3c",
+    "4a",
+    "4b"
+   ],
+   "overall_supported_explanation": "The response as a whole is partially supported by the documents. The first sentence of the response is supported without a specific sentence, as it is a general statement about the lack of explicit information about renewal termination. The subsequent sentences in the response provide information about various termination notice periods, which are supported by specific sentences in the documents. However, the response does not fully address the question about renewal termination, as the documents do not provide explicit information about this topic.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported without a specific sentence, as it is a general statement about the lack of explicit information about renewal termination.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is partially supported by the documents. The notice periods mentioned in this sentence are supported by specific sentences in the documents, but the sentence does not fully address the question about renewal termination.",
+     "supporting_sentence_keys": [
+      "0c",
+      "3a",
+      "3b",
+      "3c",
+      "4a"
+     ],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0c",
+    "3a",
+    "3b",
+    "3c",
+    "4a"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 308,
+  "question": "Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+  "answer": "There is no explicit requirement for insurance to be maintained by one party for the benefit of the counterparty in the provided text. However, the indemnification clause (Section 8.1) does require the indemnifying party to provide certain information and assistance (at their expense) to the indemnified party.",
+  "relevance": 0.4,
+  "utilization": 0.06666666666666667,
+  "completeness": 0.16666666666666666,
+  "adherence": 1.0,
+  "n_relevant": 6,
+  "n_utilized": 1,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the requirement for insurance to be maintained by one party for the benefit of the counterparty. Specifically, sections related to indemnification and warranties provide relevant context. However, upon closer examination, it becomes clear that the documents do not explicitly mention insurance requirements. The relevance of the documents lies in their discussion of related concepts such as indemnification and the responsibilities of the parties involved.",
+   "all_relevant_sentence_keys": [
+    "1a",
+    "1c",
+    "2a",
+    "2b",
+    "4b",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response states that there is no explicit requirement for insurance to be maintained by one party for the benefit of the counterparty, which is supported by the lack of any direct mention of insurance in the documents. The mention of the indemnification clause (Section 8.1) in the response is also supported by the documents, specifically by sentence '1a', which outlines the conditions for indemnification. However, the response does not fully explore the implications of indemnification and other clauses on the potential need for insurance, but given the information provided in the documents, the response does not make any claims that are directly contradicted by the text.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported without any specific sentence in the documents because it expresses an inability to find information about a requirement for insurance in the provided context. The documents do discuss related concepts, but none directly address insurance requirements.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by the documents, specifically by the discussion of indemnification in '1a'. This sentence accurately reflects the content of the indemnification clause, which requires the indemnifying party to provide certain information and assistance to the indemnified party.",
+     "supporting_sentence_keys": [
+      "1a"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "1a"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 327,
+  "question": "Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?",
+  "answer": "According to Section 8, if a party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law, the respective indemnities, representations, and warranties of the parties will survive and remain in full force and effect. However, there is no specific provision that addresses the termination of the Agreement in the event of a change of control.\n\nHowever, Section 11 (a) mentions that the Company, the MHC, and the Bank may terminate this Agreement in the event the Agent is in material breach of the representations and warranties or covenants contained in Section 5 and such breach has not been cured after the Company, the MHC, and the Bank have provided the Agent with notice of such breach.\n\nBut, there is no provision that explicitly states that the other party has the right to terminate the Agreement in the event of a change of control.",
+  "relevance": 0.4666666666666667,
+  "utilization": 0.13333333333333333,
+  "completeness": 0.2857142857142857,
+  "adherence": 0.0,
+  "n_relevant": 7,
+  "n_utilized": 2,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question, particularly sections related to termination, representations, and warranties. Document 0, section '0a' discusses the survival of indemnities, representations, and warranties, which is relevant to the question of termination due to a change of control. Document 1, sections '1a' and '1b', discuss termination by the Company, MHC, and Bank, as well as mutual written consent, which is also relevant to the question. Document 3, sections '3a' and '3b', discuss cancellation and termination, which may be related to a change of control. Document 4, sections '4a' and '4b', discuss termination by the Agent, which may also be relevant to the question.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "1a",
+    "1b",
+    "3a",
+    "3b",
+    "4a",
+    "4b"
+   ],
+   "overall_supported_explanation": "The response as a whole is partially supported by the documents. The first sentence of the response mentions Section 8, but there is no Section 8 in the provided documents. However, the concept of survival of indemnities, representations, and warranties is discussed in section '0a' of Document 0. The second sentence of the response states that there is no specific provision addressing termination due to a change of control, which is supported by the fact that none of the documents explicitly discuss this topic. The third sentence of the response mentions Section 11, but there is no Section 11 in the provided documents that discusses termination due to a change of control. However, section '1a' of Document 1 does discuss termination by the Company, MHC, and Bank, which may be related to a change of control.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is partially supported by section '0a' of Document 0, which discusses the survival of indemnities, representations, and warranties. However, the sentence mentions Section 8, which is not present in the provided documents.",
+     "supporting_sentence_keys": [
+      "0a"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "The sentence is supported by the fact that none of the documents explicitly discuss termination due to a change of control.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "c.",
+     "explanation": "The sentence is partially supported by section '1a' of Document 1, which discusses termination by the Company, MHC, and Bank. However, the sentence mentions Section 11, which is not present in the provided documents.",
+     "supporting_sentence_keys": [
+      "1a"
+     ],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0a",
+    "1a"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 346,
+  "question": "Is consent or notice required of a party if the contract is assigned to a third party?",
+  "answer": "No, consent or notice is not required of a party if the contract is assigned to a financially responsible affiliate.",
+  "relevance": 0.3333333333333333,
+  "utilization": 0.13333333333333333,
+  "completeness": 0.4,
+  "adherence": 0.0,
+  "n_relevant": 5,
+  "n_utilized": 2,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "Documents 1 and 2 contain useful information for answering the question. Document 1, sentence '1a' and Document 2, sentence '2c' both discuss the assignment of rights under the Agreement and the conditions under which prior written approval is required. This information is directly relevant to the question of whether consent or notice is required for the assignment of a contract to a third party.",
+   "all_relevant_sentence_keys": [
+    "1a",
+    "1b",
+    "2a",
+    "2b",
+    "2c"
+   ],
+   "overall_supported_explanation": "The response states that consent or notice is not required if the contract is assigned to a financially responsible affiliate. This claim is supported by Document 1, sentence '1a' and Document 2, sentence '2c', which both indicate that no prior written approval is required for an assignment to a financially responsible affiliate. However, the response does not address the general requirement for consent or notice in other cases of assignment, which is also discussed in these sentences. Therefore, the response is partially supported by the documents.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is partially supported by Document 1, sentence '1a' and Document 2, sentence '2c', which both indicate that no prior written approval is required for an assignment to a financially responsible affiliate. However, the sentence does not address the general requirement for consent or notice in other cases of assignment.",
+     "supporting_sentence_keys": [
+      "1a",
+      "2c"
+     ],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "1a",
+    "2c"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 377,
+  "question": "Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+  "answer": "No, there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services.",
+  "relevance": 0.3333333333333333,
+  "utilization": 0.0,
+  "completeness": 0.0,
+  "adherence": 1.0,
+  "n_relevant": 5,
+  "n_utilized": 0,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question in the form of clauses related to assignment, termination, and the binding nature of the agreement. However, none of the documents explicitly mention a right of first refusal, right of first offer, or right of first negotiation. The relevant sentences are those that discuss the assignment and transfer of the agreement, as these could potentially be related to the rights in question. Documents 0 and 3 contain relevant information, as they discuss the assignment and transfer of the agreement.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0b",
+    "0c",
+    "3b",
+    "3c"
+   ],
+   "overall_supported_explanation": "The response states that there is no clause granting one party a right of first refusal, right of first offer, or right of first negotiation. This statement is supported by the fact that none of the documents explicitly mention such rights. However, the response does not provide any direct evidence from the documents to support this claim. The documents do discuss assignment and transfer, but do not mention the specific rights in question. Therefore, the response is supported by the lack of information in the documents, rather than by any specific sentence or clause.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "The sentence is supported by the lack of information in the documents. The documents do not mention a right of first refusal, right of first offer, or right of first negotiation, which supports the claim that there is no such clause.",
+     "supporting_sentence_keys": [
+      "supported_without_sentence"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": []
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 379,
+  "question": "Does the contract contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?",
+  "answer": "Yes, the contract contains a clause that awards a fee upon the termination of a contract. \n\nIn Section Sixteen, it is stated that \"NFLA's liability to Company shall not exceed the remuneration, excluding reimbursement of expenses, actually paid to NFLA by Company.\" However, this is not a termination fee but rather a limitation on NFLA's liability.\n\nIn Section Seventeen, it is stated that \"Company shall not advertise, promote, distribute or sell any item whatsoever in connection with the use of any name, figure, design, logo, trademark or trade name similar to or suggestive of the NFLA.\" However, this is not a termination fee but rather a restriction on Company's activities after termination.\n\nIn Section B of the termination clause, it is stated that \"Company shall be responsible for any and all payments due under the terms of this Agreement in addition to other liabilities set forth above.\" This implies that Company may be liable for a termination fee, but it does not explicitly state the amount or terms of the fee.\n\nHowever, in Section Eight, it is stated that \"Company may liquidate and sell its inventory of Licensed Products (including any inventory then in production) for a period of ninety (90) days after the termination date of the Contract Period, subject to the Company's continued obligation to pay the Fee as provided above.\" This implies that Company is required to pay a fee after termination, but the amount and terms of the fee are not explicitly stated.\n\nTherefore, the contract does contain a clause that awards a fee upon the termination of a contract, but the amount and terms of the fee are not explicitly stated.",
+  "relevance": 0.6,
+  "utilization": 0.26666666666666666,
+  "completeness": 0.4444444444444444,
+  "adherence": 0.0,
+  "n_relevant": 9,
+  "n_utilized": 4,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "The documents contain useful information for answering the question about the contract containing a clause that awards liquidated damages for breach or a fee upon termination. Specifically, document 0 contains information about termination under the provisions of the section, document 1 contains information about termination rights and the non-defaulting party's remedies, document 3 contains information about Company's obligations after termination, and document 4 contains information about NFLA's liability. By examining these documents, one can determine if the contract contains a clause that awards a fee upon termination.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0c",
+    "1a",
+    "1b",
+    "1c",
+    "3a",
+    "3c",
+    "4b",
+    "4c"
+   ],
+   "overall_supported_explanation": "The response as a whole is partially supported by the documents. The response correctly identifies that the contract contains a clause that awards a fee upon termination, but it does not accurately describe the terms of the fee. The response also incorrectly references Section Sixteen and Section Seventeen, which are not relevant to the question. However, the response does correctly cite the provision that Company shall be responsible for any and all payments due under the terms of the Agreement in addition to other liabilities set forth above, and the provision that Company may liquidate and sell its inventory of Licensed Products subject to the Company's continued obligation to pay the Fee as provided above.",
+   "overall_supported": false,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is partially supported by the documents. The documents do contain information about the contract containing a clause that awards a fee upon termination, but the sentence does not accurately describe the terms of the fee.",
+     "supporting_sentence_keys": [
+      "0a",
+      "1c",
+      "3c"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is not supported by the documents. The sentence references Section Sixteen, which is not relevant to the question, and does not accurately describe the provision.",
+     "supporting_sentence_keys": [],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "c.",
+     "explanation": "This sentence is not supported by the documents. The sentence references Section Seventeen, which is not relevant to the question, and does not accurately describe the provision.",
+     "supporting_sentence_keys": [],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "d.",
+     "explanation": "This sentence is partially supported by the documents. The documents do contain the provision that Company shall be responsible for any and all payments due under the terms of the Agreement in addition to other liabilities set forth above, but the sentence does not accurately describe the terms of the fee.",
+     "supporting_sentence_keys": [
+      "0a",
+      "1c"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "e.",
+     "explanation": "This sentence is partially supported by the documents. The documents do contain the provision that Company may liquidate and sell its inventory of Licensed Products subject to the Company's continued obligation to pay the Fee as provided above, but the sentence does not accurately describe the terms of the fee.",
+     "supporting_sentence_keys": [
+      "3c"
+     ],
+     "fully_supported": false
+    },
+    {
+     "response_sentence_key": "f.",
+     "explanation": "This sentence is partially supported by the documents. The documents do contain information about the contract containing a clause that awards a fee upon termination, but the sentence does not accurately describe the terms of the fee.",
+     "supporting_sentence_keys": [
+      "0a",
+      "1c",
+      "3c"
+     ],
+     "fully_supported": false
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0a",
+    "1c",
+    "3c",
+    "4b"
+   ]
+  }
+ },
+ {
+  "experiment_id": "LEGAL-EXP-011",
+  "dataset_index": 456,
+  "question": "Can a party terminate this\u00a0 contract without cause (solely by giving a notice and allowing a waiting\u00a0 period to expire)?",
+  "answer": "Yes, a party can terminate this contract without cause (solely by giving a notice and allowing a waiting period to expire). According to the text, \"This Agreement may be terminated without the payment of any penalty by either party upon sixty (60) days' written notice to the other party.\"",
+  "relevance": 0.26666666666666666,
+  "utilization": 0.13333333333333333,
+  "completeness": 0.5,
+  "adherence": 1.0,
+  "n_relevant": 4,
+  "n_utilized": 2,
+  "n_total_sents": 15,
+  "judge_raw": {
+   "relevance_explanation": "Documents 0 and 1 contain useful information for answering the question. Specifically, sentences 0a and 1c provide information about terminating the contract without cause, which directly addresses the question. Additionally, sentence 0c and 2a provide related information about automatic termination, but the key information for answering the question is found in sentences 0a and 1c.",
+   "all_relevant_sentence_keys": [
+    "0a",
+    "0c",
+    "1c",
+    "2a"
+   ],
+   "overall_supported_explanation": "The response as a whole is supported by the documents. The first sentence in the response states that a party can terminate the contract without cause, which is supported by sentences 0a and 1c in the documents. The second sentence in the response quotes sentence 0a from the documents, which further supports the claim. Therefore, the response is fully supported by the documents.",
+   "overall_supported": true,
+   "sentence_support_information": [
+    {
+     "response_sentence_key": "a.",
+     "explanation": "This sentence is supported by sentences 0a and 1c in the documents, which state that the agreement may be terminated without penalty by either party upon 60 days' written notice.",
+     "supporting_sentence_keys": [
+      "0a",
+      "1c"
+     ],
+     "fully_supported": true
+    },
+    {
+     "response_sentence_key": "b.",
+     "explanation": "This sentence is supported by sentence 0a in the documents, which is quoted in the response. The quote accurately reflects the text in the document.",
+     "supporting_sentence_keys": [
+      "0a"
+     ],
+     "fully_supported": true
+    }
+   ],
+   "all_utilized_sentence_keys": [
+    "0a",
+    "1c"
+   ]
+  }
+ }
+]
