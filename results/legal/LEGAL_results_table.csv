@@ -4,7 +4,7 @@ RMSE 0.3760","0.1013
 RMSE 0.1233","0.3740
 RMSE 0.6186","0.8000
 AUCROC 0.9348",0.0756,0.0194,0.7466,0.92,25,"Baseline. Retrieval-starved: high adh, low rel/util. Adh failures = hedge-elaborations, not confabulation."
-LEGAL-EXP-002,Legal (cuad),,,,None,,"0.2427
+LEGAL-EXP-002,Legal (cuad),Sentence (3s/1o),e5-large-v2,FAISS (dense),None,llama-3.3-70b,"0.2427
 RMSE 0.3722","0.1280
 RMSE 0.2081","0.4456
 RMSE 0.6120","0.7600
@@ -19,12 +19,12 @@ RMSE 0.2589","0.0845
 RMSE 0.1266","0.4177
 RMSE 0.6404","0.7200
 AUCROC 0.6196",0.0756,0.0194,0.7466,0.92,25,k=12: retrieval saturates ~6 rel sents. k-sweep monotonically negative → k=5 LOCKED.
-LEGAL-EXP-006,Legal (cuad),clause,all-MiniLM-L6-v2,FAISS (dense),None,llama-3.3-70b,"0.2566
+LEGAL-EXP-006,Legal (cuad),"Clause (regex, sentence fallback)",all-MiniLM-L6-v2,FAISS (dense),None,llama-3.3-70b,"0.2566
 RMSE 0.3487","0.1086
 RMSE 0.1556","0.3637
 RMSE 0.6163","0.7600
 AUCROC 0.3696",0.0756,0.0194,0.7466,0.92,25,"Clause chunking flat (n_rel 4.0 vs 4.1, +30% padding). Chunk shape not the bottleneck."
-LEGAL-EXP-007,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),Yes,llama-3.3-70b,"0.2587
+LEGAL-EXP-007,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),Cross-encoder ms-marco (wide k=15),llama-3.3-70b,"0.2587
 RMSE 0.3735","0.1093
 RMSE 0.1519","0.3990
 RMSE 0.5513","0.8000
@@ -34,13 +34,23 @@ RMSE 0.4201","0.1947
 RMSE 0.2739","0.5326
 RMSE 0.5096","0.9200
 AUCROC 1.0000",0.0756,0.0194,0.7466,0.92,25,WINNER + LOCKED. gpt-oss sweeps all metrics (adh 0.92 = GT ref; util 2x; comp 0.53). Generation was the bottleneck. Decommission-proof.
-LEGAL-EXP-011,Legal (cuad),,,,None,,"0.3360
+LEGAL-EXP-011,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,llama-3.1-8b,"0.3360
 RMSE 0.4482","0.1387
 RMSE 0.1778","0.4026
 RMSE 0.5699","0.6800
 AUCROC 0.8696",0.0756,0.0194,0.7466,0.92,25,"8b generator: adh 0.68 worst recorded — cites more, grounds worse. Ordering gpt-oss>70b>8b matches CS."
-LEGAL-EXP-012,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,gpt-oss-120b,"0.4613
+LEGAL-EXP-012,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,gpt-oss-120b (judge=8b),"0.4613
 RMSE 0.4638","0.2427
 RMSE 0.3127","0.5592
 RMSE 0.5701","0.3200
-AUCROC 0.6739",0.0756,0.0194,0.7466,0.92,25,JUDGE CHECK — NOT comparable. 8b judge scores same pipeline 0.32 vs 0.92 (70b) vs 0.92 GT; emitted malformed JSON requiring salvage on N examples. 70b judge requirement confirmed.
+AUCROC 0.6739",0.0756,0.0194,0.7466,0.92,25,JUDGE CHECK — NOT comparable. 8b judge scores same pipeline 0.32 vs 0.92 (70b); malformed JSON required salvage parsing. 70b judge requirement confirmed.
+LEGAL-EXP-013,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),Cross-encoder ms-marco (wide k=15),gpt-oss-120b,"0.3040
+RMSE 0.3810","0.1733
+RMSE 0.2384","0.5670
+RMSE 0.5219","0.8400
+AUCROC 0.6848",0.0756,0.0194,0.7466,0.92,25,Transfer validation: rerank under winning generator. adh 0.84 vs 0.92 — no interaction; reranker eliminated under both generators.
+LEGAL-EXP-FINAL,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,gpt-oss-120b,"0.3595
+RMSE 0.4393","0.1886
+RMSE 0.2616","0.4793
+RMSE 0.5779","0.8500
+AUCROC 0.5334",0.0986,0.046,0.7567,0.905,200,"AUTHORITATIVE N=200 FINAL on locked config. Adh 0.85 vs GT ref 0.905. AUCROC 0.533 (19 GT-negatives) — near-0.5 structurally expected from label transfer, mirrors GK 0.487. Config selected via controlled N=25 comparisons."
