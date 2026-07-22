@@ -1,0 +1,159 @@
+id,model,ability,noise_ratio,query,model_response,accuracy
+0,openai/gpt-oss-120b,noise_robustness,0.6,When is the premiere of 'Carole King & James Taylor: Just Call Out My Name'?,"The documentary **“Carole King & James Taylor: Just Call Out My Name”** premiered on **Sunday, January 2, 2022, at 9:00 p.m. ET/PT** on CNN.",1
+1,openai/gpt-oss-120b,noise_robustness,0.6,"The genre of the drama ""Good Sam"" is what?",The drama **“Good Sam”** is classified as a **medical drama**.,1
+2,openai/gpt-oss-120b,noise_robustness,0.6,Who won the 2022 Citrus Bowl?,"Kentucky won the 2022 Citrus Bowl, defeating Iowa 20–17.",1
+3,openai/gpt-oss-120b,noise_robustness,0.6,What position did Jason Semore hold at Valdosta State before returning to Georgia Tech?,Jason Semore served as the **defensive coordinator** at Valdosta State before returning to Georgia Tech.,1
+4,openai/gpt-oss-120b,noise_robustness,0.6,How many vehicles did Tesla deliver in 2021?,"Tesla delivered **936,172 vehicles** in 2021.",1
+5,openai/gpt-oss-120b,noise_robustness,0.6,Which company acquired ShowBiz Cinemas?,EVO Entertainment Group acquired ShowBiz Cinemas.,1
+6,openai/gpt-oss-120b,noise_robustness,0.6,Where is the Super Bowl held in 2022?,"The 2022 Super Bowl (Super Bowl LVI) was played on February 13, 2022 at **SoFi Stadium in Inglewood, California** (the Los Angeles metropolitan area).",1
+7,openai/gpt-oss-120b,noise_robustness,0.6,When will Truth Social launch on iOS?,"Truth Social launched on iOS on **February 21, 2022**.",1
+8,openai/gpt-oss-120b,noise_robustness,0.6,What won best drama at 79th Golden Globes?,The award for **Best Drama (Best Motion Picture – Drama)** at the 79th Golden Globe Awards went to **“The Power of the Dog.”**,1
+9,openai/gpt-oss-120b,noise_robustness,0.6,How much are GA Tech softball 2022 season tickets?,I can not answer the question because of the insufficient information in documents.,0
+10,openai/gpt-oss-120b,noise_robustness,0.6,When does the 2022 Olympic Winter Games end?,The 2022 Olympic Winter Games concluded on **20 February 2022**.,1
+11,openai/gpt-oss-120b,noise_robustness,0.6,Who won the Spanish Super Cup 2022?,Real Madrid won the 2022 Spanish Super Cup.,1
+12,openai/gpt-oss-120b,noise_robustness,0.6,How much is Microsoft acquiring Activision Blizzard for?,Microsoft is acquiring Activision Blizzard for **$68.7 billion** (approximately £50.5 billion).,1
+13,openai/gpt-oss-120b,noise_robustness,0.6,What is the price for a 30-second spot during the Super Bowl 2022?,The price for a 30‑second commercial spot during Super Bowl 2022 was **about $6.5 million**.,1
+14,openai/gpt-oss-120b,noise_robustness,0.6,When is the Sports Star of the Year Awards Show 2022?,"The Sports Star of the Year Awards Show 2022 was held on **May 26, 2022**.",1
+15,openai/gpt-oss-120b,noise_robustness,0.6,Who are the recipients of the 2022 Ivan Allen Jr. Prize for Social Courage?,"The 2022 Ivan Allen Jr. Prize for Social Courage was awarded to Georgia Tech’s pioneering Black students and its first Black graduate:
+
+- **Ford Greene**  
+- **Ralph Long Jr.**  
+- **Lawrence Williams**  
+- **Ronald Yancey**",1
+16,openai/gpt-oss-120b,noise_robustness,0.6,What is the codename for Google's AR headset project?,The codename for Google’s augmented‑reality headset project is **“Project Iris.”**,1
+17,openai/gpt-oss-120b,noise_robustness,0.6,What is the name of Meta's AI supercomputer?,The AI supercomputer that Meta is building is called the **AI Research Supercluster (RSC)**.,1
+18,openai/gpt-oss-120b,noise_robustness,0.6,When will American students start taking digital SAT exams?,American students will begin taking the digital SAT in **spring 2024**.,1
+19,openai/gpt-oss-120b,noise_robustness,0.6,When do the Paralympic Winter Games 2022 start?,"The 2022 Paralympic Winter Games start on **Friday, March 4, 2022**.",1
+20,openai/gpt-oss-120b,noise_robustness,0.6,Super Bowl 2022 date,"The 2022 Super Bowl (Super Bowl LVI) was played on **Sunday, February 13, 2022**.",1
+21,openai/gpt-oss-120b,noise_robustness,0.6,Who won the 2022 Nobel Prize for chemistry?,"The 2022 Nobel Prize in Chemistry was awarded jointly to **K. Barry Sharpless**, **Carolyn R. Bertozzi**, and **Morten Meldal** for their development of click chemistry and bio‑orthogonal chemistry.",1
+22,openai/gpt-oss-120b,noise_robustness,0.6,Who won the Super Bowl 2022?,"The Los Angeles Rams won Super Bowl LVI (the 2022 Super Bowl), defeating the Cincinnati Bengals 23–20.",1
+23,openai/gpt-oss-120b,noise_robustness,0.6,Who won women's 500m speed skating at the 2022 Winter Olympics?,Erin Jackson won the women’s 500 m speed skating event at the 2022 Winter Olympics.,1
+24,openai/gpt-oss-120b,noise_robustness,0.6,When was Lost Ark game release on Steam?,"Lost Ark was released on Steam on **February 11, 2022** (Founders Pack owners had early access on February 8, 2022).",1
+25,openai/gpt-oss-120b,noise_robustness,0.6,What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?,"Jessie Diggins left Beijing 2022 with three Olympic medals:
+
+| Event | Medal |
+|-------|-------|
+| Women’s 4 × 5 km relay (team) | **Gold** – the United States’ first ever Olympic gold in cross‑country skiing |
+| Women’s individual sprint (classic) | **Bronze** – the first individual sprint medal ever for an American woman |
+| Women’s 30 km freestyle (mass‑start) | **Silver** – the final medal awarded at the Games |
+
+Thus, at the 2022 Winter Olympics Diggins earned a gold (relay), a bronze (sprint) and a silver (30 km freestyle).",1
+26,openai/gpt-oss-120b,noise_robustness,0.6,What is the genre of The Endgame (TV show)?,The Endgame is classified as a **crime drama thriller** television series.,1
+27,openai/gpt-oss-120b,noise_robustness,0.6,When did Russia invade Ukraine?,Russia invaded Ukraine on **24 February 2022**.,1
+28,openai/gpt-oss-120b,noise_robustness,0.6,When was Elden Ring being released?,"Elden Ring was released on **February 25, 2022**.",1
+29,openai/gpt-oss-120b,noise_robustness,0.6,Who did Iga Swiatek defeat to win the Qatar Open 2022?,Iga Świątek defeated **Anett Kontaveit** to win the 2022 Qatar Open.,1
+30,openai/gpt-oss-120b,noise_robustness,0.6,Which country won the most medals at the 2022 Winter Olympics?,"Norway won the most medals at the 2022 Winter Olympics, earning a total of 37 medals (16 gold, 8 silver and 13 bronze).",1
+31,openai/gpt-oss-120b,noise_robustness,0.6,Who won the Male Vocalist of the Year at the 2022 CMA ?,Chris Stapleton won the Male Vocalist of the Year award at the 2022 CMA Awards.,1
+32,openai/gpt-oss-120b,noise_robustness,0.6,Who won the ACC Tournament in 2022?,The 2022 ACC Tournament was won by the **Virginia Tech Hokies**.,1
+33,openai/gpt-oss-120b,noise_robustness,0.6,What chip does the iPhone 14 have?,"The iPhone 14 (and iPhone 14 Plus) is powered by Apple’s **A15 Bionic** chip, using the same six‑core CPU and five‑core GPU configuration that appears in the iPhone 13 Pro models.",1
+34,openai/gpt-oss-120b,noise_robustness,0.6,When is Google I/O 2022 scheduled to take place?,"Google I/O 2022 was scheduled for **May 11 – May 12, 2022**.",1
+35,openai/gpt-oss-120b,noise_robustness,0.6,who will direct Irredeemable film?,The film adaptation of **Irredeemable** will be directed by **Jeymes Samuel**.,1
+36,openai/gpt-oss-120b,noise_robustness,0.6,What is the name of China's rover on Mars?,The rover that China landed on Mars is named **Zhurong**.,1
+37,openai/gpt-oss-120b,noise_robustness,0.6,Who is being honored with the 2022 Warrior Award?,The 2022 Warrior Award is being presented to **Shad Gaspard** (posthumously).,1
+38,openai/gpt-oss-120b,noise_robustness,0.6,What is the weight of the Surface Laptop SE?,The Surface Laptop SE weighs **2.45 pounds**.,1
+39,openai/gpt-oss-120b,noise_robustness,0.6,Who stars in The Lost City?,"The film **The Lost City** stars **Sandra Bullock, Channing Tatum, Daniel Radcliffe, Da’Vine Joy Randolph, and Brad Pitt**.",1
+40,openai/gpt-oss-120b,noise_robustness,0.6,What happened at the Academy Awards involving Will Smith and Chris Rock?,"At the 94th Academy Awards on March 27 2022, Will Smith walked onto the stage during comedian Chris Rock’s presentation for Best Documentary Feature and slapped Rock across the face. The slap was a reaction to a joke Rock made about Smith’s wife, Jada Pinkett Smith, and her shaved head (she had been shaving it since 2021 because of alopecia areata). After the slap Smith returned to his seat and shouted profanities at Rock, after which Rock finished his presentation.
+
+Later that same evening Smith was announced the winner of Best Actor for his role in *King Richard*. In his acceptance speech he apologized to the Academy and the other nominees (but not directly to Rock). The next day he issued a public apology to Rock and the Academy via social media, resigned his Academy membership on April 1, and was subsequently banned from attending Academy events for ten years (effective April 8). 
+
+In the United States the live broadcast muted the incident because of federal censorship rules, but uncensored footage aired internationally (e.g., in Japan and Australia) and quickly went viral online.",1
+41,openai/gpt-oss-120b,noise_robustness,0.6,When did Apple M2 chip?,Apple unveiled the M2 chip at its WWDC 2022 keynote on **June 6 2022**.,1
+42,openai/gpt-oss-120b,noise_robustness,0.6,What film won the 2022 Academy Award for Best Picture?,The film that won the 2022 Academy Award for Best Picture was **“CODA.”**,1
+43,openai/gpt-oss-120b,noise_robustness,0.6,When will the 94th Academy Awards be held?,"The 94th Academy Awards will be held on **Sunday, March 27, 2022**.",1
+44,openai/gpt-oss-120b,noise_robustness,0.6,When was A House Between the Earth and the Moon published?,"A House Between the Earth and the Moon was published on **March 29, 2022**.",1
+45,openai/gpt-oss-120b,noise_robustness,0.6,Which alnum won the Album of the Year GRAMMYs 2022,The Album of the Year at the 2022 Grammy Awards was won by **Jon Batiste** for his album **“We Are.”**,1
+46,openai/gpt-oss-120b,noise_robustness,0.6,When is the final of the 2022 FIFA World Cup?,"The final of the 2022 FIFA World Cup was scheduled for **December 18, 2022**. (The document lists “December 18 – World Cup final” and notes the final between Argentina and France on Sunday, December 18.)",1
+47,openai/gpt-oss-120b,noise_robustness,0.6,How many vehicles did Tesla deliver in the first quarter of 2022?,"Tesla delivered **310,048 vehicles** in the first quarter of 2022.",1
+48,openai/gpt-oss-120b,noise_robustness,0.6,Who acquired Twitter?,Elon Musk acquired Twitter.,1
+49,openai/gpt-oss-120b,noise_robustness,0.6,How much did Elon Musk bought Twitter?,Elon Musk’s acquisition of Twitter was valued at about **$44 billion**.,1
+50,openai/gpt-oss-120b,noise_robustness,0.6,Who won the 2022 Masters Tournament?,Scottie Scheffler won the 2022 Masters Tournament.,1
+51,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles Australian Open 2022?,Ashleigh Barty won the women’s singles title at the 2022 Australian Open.,1
+52,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles Australian Open 2023?,Aryna Sabalenka won the women’s singles title at the 2023 Australian Open.,1
+53,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles Australian Open 2022?,Rafael Nadal won the men’s singles title at the 2022 Australian Open.,1
+54,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles Australian Open 2023?,Novak Djokovic won the men's singles title at the 2023 Australian Open.,1
+55,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles French Open 2022?,Iga Swiatek won the women’s singles title at the 2022 French Open.,1
+56,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,0
+57,openai/gpt-oss-120b,noise_robustness,0.6,Who is the runner-up in the women's singles at the 2023 French Open?,The runner‑up in the women's singles at the 2023 French Open was **Karolina Muchova**.,1
+58,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles French Open 2022?,Rafael Nadal won the men’s singles title at the 2022 French Open.,1
+59,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles French Open 2023?,Novak Djokovic won the men’s singles title at the 2023 French Open.,1
+60,openai/gpt-oss-120b,noise_robustness,0.6,who the women's singles wimbledon 2022?,"Elena Rybakina won the women’s singles title at Wimbledon 2022, defeating Ons Jabeur in the final.",1
+61,openai/gpt-oss-120b,noise_robustness,0.6,who the women's singles wimbledon 2023?,"Markéta Vondroušová won the women’s singles title at Wimbledon 2023. She defeated Ons Jabeur in the final, 6‑4, 6‑4.",1
+62,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles wimbledon 2022?,Novak Djokovic won the men’s singles title at Wimbledon in 2022.,1
+63,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles wimbledon 2023?,Carlos Alcaraz won the men’s singles title at Wimbledon 2023.,1
+64,openai/gpt-oss-120b,noise_robustness,0.6,How many titles has Swiatek won in 2022 season?,"There are factual errors in the provided documents. While one passage says Swiatek won seven titles in 2022, other sections correctly state that she captured eight titles that season—a figure that matches the official WTA record for 2022.  
+
+**Correct answer:** Iga Świątek won **8 titles** during the 2022 season.",1
+65,openai/gpt-oss-120b,noise_robustness,0.6,who the women's singles U.S. Open 2022?,"The women's singles title at the 2022 U.S. Open was won by **World No. 1 Iga Świątek**, who defeated Ons Jabeur 6‑2, 7‑6 (7‑5) in the final.",0
+66,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles U.S. Open 2022?,Carlos Alcaraz won the men’s singles title at the 2022 U.S. Open.,1
+67,openai/gpt-oss-120b,noise_robustness,0.6,Who is the new head coach of the Virginia Tech football team in 2022?,The new head coach of the Virginia Tech football team in 2022 is **Brent Pry**.,1
+68,openai/gpt-oss-120b,noise_robustness,0.6,Where is Consensus 2022 taking place?,"Consensus 2022 is taking place in **Austin, Texas** (June 9–12, 2022).",1
+69,openai/gpt-oss-120b,noise_robustness,0.6,When did the 148th Kentucky Derby take place?,"The 148th Kentucky Derby took place on **Saturday, May 7, 2022**.",1
+70,openai/gpt-oss-120b,noise_robustness,0.6,What was Tesla's revenue in Q1 2022?,Tesla's revenue in Q1 2022 was **$18.76 billion**.,1
+71,openai/gpt-oss-120b,noise_robustness,0.6,When will Splatoon 3 be released?,"Splatoon 3 was released on **September 9, 2022**.",1
+72,openai/gpt-oss-120b,noise_robustness,0.6,Who acquired STX Entertainment?,STX Entertainment was acquired by the private‑equity firm **Najafi Companies** (Jahm Najafi’s Phoenix‑based Najafi Companies) for $173 million.【Document】,1
+73,openai/gpt-oss-120b,noise_robustness,0.6,When did Orrin G. Hatch pass away?,"Orrin G. Hatch passed away on **April 23, 2022**.",1
+74,openai/gpt-oss-120b,noise_robustness,0.6,Who was the new CEO of CNN?,The new CEO of CNN was **Chris Licht**.,1
+75,openai/gpt-oss-120b,noise_robustness,0.6,Who won the French Presidential Election 2022?,Emmanuel Macron won the French presidential election in 2022.,1
+76,openai/gpt-oss-120b,noise_robustness,0.6,What is the megapixel in main camera on the iPhone 14 Pro?,The iPhone 14 Pro’s main rear camera uses a **48‑megapixel sensor**.,1
+77,openai/gpt-oss-120b,noise_robustness,0.6,How much does it cost to rent a tool kit for Apple device repairs?,The rental kit for Apple device repairs costs **$49 (including shipping)**.,1
+78,openai/gpt-oss-120b,noise_robustness,0.6,Where will the 2022 Met Gala take place?,The 2022 Met Gala will be held at the **Metropolitan Museum of Art in New York City**.,1
+79,openai/gpt-oss-120b,noise_robustness,0.6,Who won the Champions League in the 2022-2023 season?,Manchester City won the UEFA Champions League in the 2022‑2023 season.,1
+80,openai/gpt-oss-120b,noise_robustness,0.6,Which teams are playing in the 2021-22 NBA Finals?,The 2021‑22 NBA Finals were contested between the **Golden State Warriors** and the **Boston Celtics**.,1
+81,openai/gpt-oss-120b,noise_robustness,0.6,What is the prize money for the Squid Game-inspired reality competition?,The prize money for the Squid Game‑inspired reality competition is **$4.56 million**.,1
+82,openai/gpt-oss-120b,noise_robustness,0.6,When was Overwatch 2 released?,"Overwatch 2 was released (in early‑access) on **October 4, 2022**.",1
+83,openai/gpt-oss-120b,noise_robustness,0.6,Who won the 2022 Tour de France?,Jonas Vingegaard won the 2022 Tour de France.,1
+84,openai/gpt-oss-120b,noise_robustness,0.6,How much was Apple's revenue in Q3? 2022,Apple’s revenue in the third fiscal quarter of 2022 was **$83.0 billion**.,1
+85,openai/gpt-oss-120b,noise_robustness,0.6,Who won the 2022 Atlanta Open?,Alex de Minaur won the 2022 Atlanta Open.,1
+86,openai/gpt-oss-120b,noise_robustness,0.6,What was the revenue of AWS in Q2 2022?,AWS generated **$19.7 billion in revenue in Q2 2022**.,1
+87,openai/gpt-oss-120b,noise_robustness,0.6,when was xenoblade chronicles 3 released?,"Xenoblade Chronicles 3 was released on **July 29, 2022**.",1
+88,openai/gpt-oss-120b,noise_robustness,0.6,"What is the name of the horse in the movie ""Nope""?",The horse that first signals something is wrong in the sky in Jordan Peele’s film **“Nope”** is named **Ghost**.,1
+89,openai/gpt-oss-120b,noise_robustness,0.6,When did Neal Lemlein pass away?,"Neal Lemlein passed away on **July 22, 2022**.",1
+90,openai/gpt-oss-120b,noise_robustness,0.6,Who is the lead actor in the film Carter?,The lead actor in the film **Carter** is **Joo Won**.,1
+91,openai/gpt-oss-120b,noise_robustness,0.6,When was BlenderBot 3 released?,"BlenderBot 3 was released on **Friday, August 5, 2022**.",1
+92,openai/gpt-oss-120b,noise_robustness,0.6,which company invented BlenderBot 3?,Meta invented BlenderBot 3.,1
+93,openai/gpt-oss-120b,noise_robustness,0.6,When was ChatGPT released?,"ChatGPT was released on **November 30, 2022**.",1
+94,openai/gpt-oss-120b,noise_robustness,0.6,When was GPT4 released?,"GPT‑4 was released on **March 14, 2023**.",1
+95,openai/gpt-oss-120b,noise_robustness,0.6,How much did Amazon agree to pay to acquire iRobot?,Amazon agreed to acquire iRobot for approximately **$1.7 billion**.,1
+96,openai/gpt-oss-120b,noise_robustness,0.6,What is the location of the Major League Baseball Field of Dreams Game 2022?,"The 2022 Major League Baseball Field of Dreams Game was played in **Dyersville, Iowa**, on the specially‑built field in the middle of the cornfield that served as the location for the 1989 film “Field of Dreams.”",1
+97,openai/gpt-oss-120b,noise_robustness,0.6,When did Microsoft release Windows 11 22H2?,"Microsoft released Windows 11 22H2 on **September 20, 2022**.",1
+98,openai/gpt-oss-120b,noise_robustness,0.6,When did AMD unveil Ryzen 7000 processors?,"AMD unveiled the Ryzen 7000 processors on **August 29, 2022** (via a YouTube livestream).",1
+99,openai/gpt-oss-120b,noise_robustness,0.6,Who won the U.S. all-around title at the U.S. Gymnastics Nationals 2022?,Konnor McClain won the U.S. all‑around title at the 2022 U.S. Gymnastics Nationals.,1
+100,openai/gpt-oss-120b,noise_robustness,0.6,What is the new price of Tesla's Full-Self Driving (FSD) software?,"The new price of Tesla’s Full‑Self Driving (FSD) software is **$15,000**.",1
+101,openai/gpt-oss-120b,noise_robustness,0.6,What is the date of the premiere of House of the Dragon?,"The premiere of **House of the Dragon** was on **August 21, 2022**.",1
+102,openai/gpt-oss-120b,noise_robustness,0.6,When is the release date for Sony's PlayStation VR2 headset?,The PlayStation VR2 headset was announced to be released on **22 February 2023**.,1
+103,openai/gpt-oss-120b,noise_robustness,0.6,What is the new venture launched by Tiger Woods and Rory McIlroy?,The new venture launched by Tiger Woods and Rory McIlroy is called **TMRW Sports**.,1
+104,openai/gpt-oss-120b,noise_robustness,0.6,Which company recently acquired Super.tech?,ColdQuanta recently acquired Super.tech.,1
+105,openai/gpt-oss-120b,noise_robustness,0.6,Who is the Heisman Trophy winner in 2022?,"The 2022 Heisman Trophy was won by **Caleb Williams**, the quarterback from the University of Southern California (USC).",1
+106,openai/gpt-oss-120b,noise_robustness,0.6,When does The Amazing Race Season 34 premiere?,"The Amazing Race Season 34 premiered on **Wednesday, September 21**, airing at **10 p.m. Eastern / 9 p.m. Central** on CBS.",1
+107,openai/gpt-oss-120b,noise_robustness,0.6,Who is the chairman of Toulouse and under whose ownership are they currently?,"The club’s chairman (listed as president) is **Damien Comolli**.  
+
+Toulouse FC is now owned primarily by **RedBird Capital Partners**, which holds an 85 % stake, while former owner **Olivier Sadran** retains the remaining 15 % and stays on the board.",1
+108,openai/gpt-oss-120b,noise_robustness,0.6,When will the TGL (Tech-Infused Golf League) season start?,The TGL (Tech‑Infused Golf League) season is scheduled to begin in **January 2024**.,1
+109,openai/gpt-oss-120b,noise_robustness,0.6,Who is the director of BioShock movie?,The BioShock movie is being directed by **Francis Lawrence**.,1
+110,openai/gpt-oss-120b,noise_robustness,0.6,What is the premiere date of New Amsterdam Season 5?,"The premiere date of **New Amsterdam Season 5** was **Tuesday, September 20, 2022** (airing at 10 p.m. ET/9 p.m. CT on NBC).",1
+111,openai/gpt-oss-120b,noise_robustness,0.6,Who won the World Cup Final in 2022?,"Argentina won the 2022 FIFA World Cup Final. They defeated France on penalties after a 3‑3 draw, winning the shoot‑out 4‑2.",1
+112,openai/gpt-oss-120b,noise_robustness,0.6,Who is the chief meteorologist for KPLR-TV?,John Fuller is the chief meteorologist for KPLR‑TV.,1
+113,openai/gpt-oss-120b,noise_robustness,0.6,Who is the new head of development at Riff Raff Entertainment?,The new head of development at Riff Raff Entertainment is **Katie Sinclair**.,1
+114,openai/gpt-oss-120b,noise_robustness,0.6,How much money did Texas Tech pay Marlene Stollings in the settlement?,"Texas Tech paid Marlene Stollings approximately **$740,000** to settle the lawsuit.",1
+115,openai/gpt-oss-120b,noise_robustness,0.6,Who acquired a stake in FromSoftware?,Sony and Tencent each acquired a stake in FromSoftware (Sony took about 14.09 % and Tencent about 16.25 % of the company’s shares).,1
+116,openai/gpt-oss-120b,noise_robustness,0.6,Who is the new Coach for The Voice Season 22?,The new coach for The Voice Season 22 is **Camila Cabello**.,1
+117,openai/gpt-oss-120b,noise_robustness,0.6,What was the unemployment rate in August 2022 in U.S.?,"The document states two figures for August 2022:
+
+* **Seasonally adjusted unemployment rate:** **3.7 %**  
+* **Not seasonally adjusted unemployment rate:** **3.8 %**  
+
+So, depending on the adjustment, the U.S. unemployment rate in August 2022 was either 3.7 % (seasonally adjusted) or 3.8 % (not seasonally adjusted).",0
+118,openai/gpt-oss-120b,noise_robustness,0.6,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost to Australia’s Ajla Tomljanović in her final U.S. Open match.,0
+119,openai/gpt-oss-120b,noise_robustness,0.6,How many people were injured in the shuttle van accident on Palisades Interstate Parkway?,Eight people were injured in the shuttle van accident on the Palisades Interstate Parkway.,1
+120,openai/gpt-oss-120b,noise_robustness,0.6,Who is the head coach of Virginia Tech football?,The head coach of Virginia Tech football is **Brent Pry**.,1
+121,openai/gpt-oss-120b,noise_robustness,0.6,How did Tanya Pardazi die?,"Tanya Pardazi died in a sky‑diving accident. While attempting her first solo jump after completing a course with Skydive Toronto, she ran into trouble and was killed in the fall at the Skydive Toronto facility on the evening of 27 August.",0
+122,openai/gpt-oss-120b,noise_robustness,0.6,Who was named interim coach for Nebraska's 2022 season?,Mickey Joseph was named the interim head coach for Nebraska’s 2022 season.,1
+123,openai/gpt-oss-120b,noise_robustness,0.6,What is the release date of Jackie Evancho's album Carousel of Time?,"Jackie Evancho’s album **Carousel of Time** was released on **September 9, 2022**.",1
+124,openai/gpt-oss-120b,noise_robustness,0.6,Which companies are part of MATANA?,"The MATANA group consists of the following six technology companies:
+
+- **Microsoft Corporation** (NASDAQ: MSFT)  
+- **Apple Inc.** (NASDAQ: AAPL)  
+- **Tesla Inc.** (NASDAQ: TSLA)  
+- **Alphabet Inc.** (NASDAQ: GOOGL/GOOG) – the parent company of Google  
+- **Nvidia Corp.** (NASDAQ: NVDA)  
+- **Amazon.com Inc.** (NASDAQ: AMZN)",1
