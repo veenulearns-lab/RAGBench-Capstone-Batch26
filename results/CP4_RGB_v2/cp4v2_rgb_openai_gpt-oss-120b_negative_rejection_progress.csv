@@ -1,0 +1,324 @@
+id,model,ability,query,model_response,rejected
+0,openai/gpt-oss-120b,negative_rejection,When is the premiere of 'Carole King & James Taylor: Just Call Out My Name'?,"The documentary **“Carole King & James Taylor: Just Call Out My Name”** premiered on **February 10, 2022**.",0
+1,openai/gpt-oss-120b,negative_rejection,"The genre of the drama ""Good Sam"" is what?",I can not answer the question because of the insufficient information in documents.,1
+2,openai/gpt-oss-120b,negative_rejection,Who won the 2022 Citrus Bowl?,I can not answer the question because of the insufficient information in documents.,1
+3,openai/gpt-oss-120b,negative_rejection,What position did Jason Semore hold at Valdosta State before returning to Georgia Tech?,I can not answer the question because of the insufficient information in documents.,1
+4,openai/gpt-oss-120b,negative_rejection,How many vehicles did Tesla deliver in 2021?,I can not answer the question because of the insufficient information in documents.,1
+5,openai/gpt-oss-120b,negative_rejection,Which company acquired ShowBiz Cinemas?,I can not answer the question because of the insufficient information in documents.,1
+6,openai/gpt-oss-120b,negative_rejection,Where is the Super Bowl held in 2022?,I can not answer the question because of the insufficient information in documents.,1
+7,openai/gpt-oss-120b,negative_rejection,When will Truth Social launch on iOS?,Truth Social’s iOS version was already available on the App Store – it launched in **February 2023**.,0
+8,openai/gpt-oss-120b,negative_rejection,What won best drama at 79th Golden Globes?,I can not answer the question because of the insufficient information in documents.,1
+9,openai/gpt-oss-120b,negative_rejection,How much are GA Tech softball 2022 season tickets?,I can not answer the question because of the insufficient information in documents.,1
+10,openai/gpt-oss-120b,negative_rejection,When does the 2022 Olympic Winter Games end?,I can not answer the question because of the insufficient information in documents.,1
+11,openai/gpt-oss-120b,negative_rejection,Who won the Spanish Super Cup 2022?,"Barcelona won the Spanish Super Cup 2022. The document notes that “Barcelona players celebrate on the podium after winning the Spanish Super Cup final on January 15,” which refers to the 2022 edition of the competition.",0
+12,openai/gpt-oss-120b,negative_rejection,How much is Microsoft acquiring Activision Blizzard for?,I can not answer the question because of the insufficient information in documents.,1
+13,openai/gpt-oss-120b,negative_rejection,What is the price for a 30-second spot during the Super Bowl 2022?,I can not answer the question because of the insufficient information in documents.,1
+14,openai/gpt-oss-120b,negative_rejection,When is the Sports Star of the Year Awards Show 2022?,I can not answer the question because of the insufficient information in documents.,1
+15,openai/gpt-oss-120b,negative_rejection,Who are the recipients of the 2022 Ivan Allen Jr. Prize for Social Courage?,I can not answer the question because of the insufficient information in documents.,1
+16,openai/gpt-oss-120b,negative_rejection,What is the codename for Google's AR headset project?,I can not answer the question because of the insufficient information in documents.,1
+17,openai/gpt-oss-120b,negative_rejection,What is the name of Meta's AI supercomputer?,I can not answer the question because of the insufficient information in documents.,1
+18,openai/gpt-oss-120b,negative_rejection,When will American students start taking digital SAT exams?,I can not answer the question because of the insufficient information in documents.,1
+19,openai/gpt-oss-120b,negative_rejection,When do the Paralympic Winter Games 2022 start?,I can not answer the question because of the insufficient information in documents.,1
+20,openai/gpt-oss-120b,negative_rejection,Super Bowl 2022 date,I can not answer the question because of the insufficient information in documents.,1
+21,openai/gpt-oss-120b,negative_rejection,Who won the 2022 Nobel Prize for chemistry?,I can not answer the question because of the insufficient information in documents.,1
+22,openai/gpt-oss-120b,negative_rejection,Who won the Super Bowl 2022?,I can not answer the question because of the insufficient information in documents.,1
+23,openai/gpt-oss-120b,negative_rejection,Who won women's 500m speed skating at the 2022 Winter Olympics?,Erin Jackson won the women’s 500 m speed‑skating event at the 2022 Beijing Winter Olympics.,0
+24,openai/gpt-oss-120b,negative_rejection,When was Lost Ark game release on Steam?,I can not answer the question because of the insufficient information in documents.,1
+25,openai/gpt-oss-120b,negative_rejection,What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?,I can not answer the question because of the insufficient information in documents.,1
+26,openai/gpt-oss-120b,negative_rejection,What is the genre of The Endgame (TV show)?,I can not answer the question because of the insufficient information in documents.,1
+27,openai/gpt-oss-120b,negative_rejection,When did Russia invade Ukraine?,Russia launched its full‑scale invasion of Ukraine in February 2022.,0
+28,openai/gpt-oss-120b,negative_rejection,When was Elden Ring being released?,I can not answer the question because of the insufficient information in documents.,1
+29,openai/gpt-oss-120b,negative_rejection,Who did Iga Swiatek defeat to win the Qatar Open 2022?,I can not answer the question because of the insufficient information in documents.,1
+30,openai/gpt-oss-120b,negative_rejection,Which country won the most medals at the 2022 Winter Olympics?,"There are factual errors in the provided documents.  
+
+**Correct answer:**  
+At the 2022 Winter Olympics in Beijing, **Norway** won the most medals. Norway finished the Games with a total of **37 medals** (16 gold, 8 silver, and 13 bronze).",0
+31,openai/gpt-oss-120b,negative_rejection,Who won the Male Vocalist of the Year at the 2022 CMA ?,I can not answer the question because of the insufficient information in documents.,1
+32,openai/gpt-oss-120b,negative_rejection,Who won the ACC Tournament in 2022?,I can not answer the question because of the insufficient information in documents.,1
+33,openai/gpt-oss-120b,negative_rejection,What chip does the iPhone 14 have?,I can not answer the question because of the insufficient information in documents.,1
+34,openai/gpt-oss-120b,negative_rejection,When is Google I/O 2022 scheduled to take place?,I can not answer the question because of the insufficient information in documents.,1
+35,openai/gpt-oss-120b,negative_rejection,who will direct Irredeemable film?,I can not answer the question because of the insufficient information in documents.,1
+36,openai/gpt-oss-120b,negative_rejection,What is the name of China's rover on Mars?,I can not answer the question because of the insufficient information in documents.,1
+37,openai/gpt-oss-120b,negative_rejection,Who is being honored with the 2022 Warrior Award?,I can not answer the question because of the insufficient information in documents.,1
+38,openai/gpt-oss-120b,negative_rejection,What is the weight of the Surface Laptop SE?,I can not answer the question because of the insufficient information in documents.,1
+39,openai/gpt-oss-120b,negative_rejection,Who stars in The Lost City?,"The document indicates that the film **The Lost City** features a trio of well‑known leads:
+
+- **Sandra Bullock** (referred to as “BULLOCK” in the text)  
+- **Channing Tatum** (referred to as “TATUM”)  
+- **Daniel Radcliffe** (referred to as “RADCLIFFE”)  
+
+These three actors are the primary stars of *The Lost City*.",0
+40,openai/gpt-oss-120b,negative_rejection,What happened at the Academy Awards involving Will Smith and Chris Rock?,"At the 2022 Academy Awards, while Chris Rock was onstage presenting the Best Documentary Feature award, he made a joke about Jada Pinkett Smith. In response, Will Smith walked onto the stage, slapped Rock, and then shouted a phrase a second time, louder and more deliberately. The incident sparked widespread controversy and condemnation.",0
+41,openai/gpt-oss-120b,negative_rejection,When did Apple M2 chip?,I can not answer the question because of the insufficient information in documents.,1
+42,openai/gpt-oss-120b,negative_rejection,What film won the 2022 Academy Award for Best Picture?,I can not answer the question because of the insufficient information in documents.,1
+43,openai/gpt-oss-120b,negative_rejection,When will the 94th Academy Awards be held?,I can not answer the question because of the insufficient information in documents.,1
+44,openai/gpt-oss-120b,negative_rejection,When was A House Between the Earth and the Moon published?,"A House Between Earth and the Moon was published on March 30, 2022.",0
+45,openai/gpt-oss-120b,negative_rejection,Which alnum won the Album of the Year GRAMMYs 2022,I can not answer the question because of the insufficient information in documents.,1
+46,openai/gpt-oss-120b,negative_rejection,When is the final of the 2022 FIFA World Cup?,I can not answer the question because of the insufficient information in documents.,1
+47,openai/gpt-oss-120b,negative_rejection,How many vehicles did Tesla deliver in the first quarter of 2022?,I can not answer the question because of the insufficient information in documents.,1
+48,openai/gpt-oss-120b,negative_rejection,Who acquired Twitter?,Elon Musk acquired Twitter.,0
+49,openai/gpt-oss-120b,negative_rejection,How much did Elon Musk bought Twitter?,I can not answer the question because of the insufficient information in documents.,1
+50,openai/gpt-oss-120b,negative_rejection,Who won the 2022 Masters Tournament?,The 2022 Masters Tournament was won by **Scottie Scheffler**.,0
+51,openai/gpt-oss-120b,negative_rejection,Who won the women's singles Australian Open 2022?,I can not answer the question because of the insufficient information in documents.,1
+52,openai/gpt-oss-120b,negative_rejection,Who won the women's singles Australian Open 2023?,Aryna Sabalenka won the 2023 Australian Open women’s singles title.,0
+53,openai/gpt-oss-120b,negative_rejection,Who won the men's singles Australian Open 2022?,I can not answer the question because of the insufficient information in documents.,1
+54,openai/gpt-oss-120b,negative_rejection,Who won the men's singles Australian Open 2023?,"There are factual errors in the provided documents.  
+The men's singles champion of the 2023 Australian Open was **Novak Djokovic**.",0
+55,openai/gpt-oss-120b,negative_rejection,Who won the women's singles French Open 2022?,Iga Świątek won the women’s singles title at the 2022 French Open.,0
+56,openai/gpt-oss-120b,negative_rejection,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,0
+57,openai/gpt-oss-120b,negative_rejection,Who is the runner-up in the women's singles at the 2023 French Open?,The runner‑up in the women’s singles at the 2023 French Open was **Karolina Muchova**.,0
+58,openai/gpt-oss-120b,negative_rejection,Who won the men's singles French Open 2022?,I can not answer the question because of the insufficient information in documents.,1
+59,openai/gpt-oss-120b,negative_rejection,Who won the men's singles French Open 2023?,Novak Djokovic won the men’s singles title at the 2023 French Open.,0
+60,openai/gpt-oss-120b,negative_rejection,who the women's singles wimbledon 2022?,Markéta Vondroušová won the women’s singles title at Wimbledon 2022.,0
+61,openai/gpt-oss-120b,negative_rejection,who the women's singles wimbledon 2023?,Markéta Vondroušová won the women’s singles title at Wimbledon 2023.,0
+62,openai/gpt-oss-120b,negative_rejection,Who won the men's singles wimbledon 2022?,Novak Djokovic won the men’s singles title at Wimbledon in 2022.,0
+63,openai/gpt-oss-120b,negative_rejection,Who won the men's singles wimbledon 2023?,Carlos Alcaraz won the men’s singles title at Wimbledon 2023.,0
+64,openai/gpt-oss-120b,negative_rejection,How many titles has Swiatek won in 2022 season?,Swiatek won **seven titles** during the 2022 season.,0
+65,openai/gpt-oss-120b,negative_rejection,who the women's singles U.S. Open 2022?,I can not answer the question because of the insufficient information in documents.,1
+66,openai/gpt-oss-120b,negative_rejection,Who won the men's singles U.S. Open 2022?,I can not answer the question because of the insufficient information in documents.,1
+67,openai/gpt-oss-120b,negative_rejection,Who is the new head coach of the Virginia Tech football team in 2022?,The new head coach of the Virginia Tech football team in 2022 is Brent Pry.,0
+68,openai/gpt-oss-120b,negative_rejection,Where is Consensus 2022 taking place?,I can not answer the question because of the insufficient information in documents.,1
+69,openai/gpt-oss-120b,negative_rejection,When did the 148th Kentucky Derby take place?,I can not answer the question because of the insufficient information in documents.,1
+70,openai/gpt-oss-120b,negative_rejection,What was Tesla's revenue in Q1 2022?,I can not answer the question because of the insufficient information in documents.,1
+71,openai/gpt-oss-120b,negative_rejection,When will Splatoon 3 be released?,I can not answer the question because of the insufficient information in documents.,1
+72,openai/gpt-oss-120b,negative_rejection,Who acquired STX Entertainment?,STX Entertainment was acquired by the Najafi Companies (led by private‑equity investor Najafi).,0
+73,openai/gpt-oss-120b,negative_rejection,When did Orrin G. Hatch pass away?,I can not answer the question because of the insufficient information in documents.,1
+74,openai/gpt-oss-120b,negative_rejection,Who was the new CEO of CNN?,I can not answer the question because of the insufficient information in documents.,1
+75,openai/gpt-oss-120b,negative_rejection,Who won the French Presidential Election 2022?,Emmanuel Macron won the 2022 French presidential election. The document notes that Marine Le Pen conceded defeat minutes after the results were released and that Macron gave a victory speech afterward.,0
+76,openai/gpt-oss-120b,negative_rejection,What is the megapixel in main camera on the iPhone 14 Pro?,The iPhone 14 Pro’s main (wide) camera is a **12‑megapixel** sensor.,0
+77,openai/gpt-oss-120b,negative_rejection,How much does it cost to rent a tool kit for Apple device repairs?,I can not answer the question because of the insufficient information in documents.,1
+78,openai/gpt-oss-120b,negative_rejection,Where will the 2022 Met Gala take place?,The 2022 Met Gala will be held at the Metropolitan Museum of Art (the Met) in New York City.,0
+79,openai/gpt-oss-120b,negative_rejection,Who won the Champions League in the 2022-2023 season?,I can not answer the question because of the insufficient information in documents.,1
+80,openai/gpt-oss-120b,negative_rejection,Which teams are playing in the 2021-22 NBA Finals?,I can not answer the question because of the insufficient information in documents.,1
+81,openai/gpt-oss-120b,negative_rejection,What is the prize money for the Squid Game-inspired reality competition?,I can not answer the question because of the insufficient information in documents.,1
+82,openai/gpt-oss-120b,negative_rejection,When was Overwatch 2 released?,The document states that Overwatch 2 was set to launch on **October 4**.,0
+83,openai/gpt-oss-120b,negative_rejection,Who won the 2022 Tour de France?,"There are factual errors in the provided documents.  
+The 2022 Tour de France was won by **Jonas Vingegaard** of Team Jumbo‑Visma.",0
+84,openai/gpt-oss-120b,negative_rejection,How much was Apple's revenue in Q3? 2022,I can not answer the question because of the insufficient information in documents.,1
+85,openai/gpt-oss-120b,negative_rejection,Who won the 2022 Atlanta Open?,I can not answer the question because of the insufficient information in documents.,1
+86,openai/gpt-oss-120b,negative_rejection,What was the revenue of AWS in Q2 2022?,I can not answer the question because of the insufficient information in documents.,1
+87,openai/gpt-oss-120b,negative_rejection,when was xenoblade chronicles 3 released?,I can not answer the question because of the insufficient information in documents.,1
+88,openai/gpt-oss-120b,negative_rejection,"What is the name of the horse in the movie ""Nope""?",I can not answer the question because of the insufficient information in documents.,1
+89,openai/gpt-oss-120b,negative_rejection,When did Neal Lemlein pass away?,I can not answer the question because of the insufficient information in documents.,1
+90,openai/gpt-oss-120b,negative_rejection,Who is the lead actor in the film Carter?,I can not answer the question because of the insufficient information in documents.,1
+91,openai/gpt-oss-120b,negative_rejection,When was BlenderBot 3 released?,I can not answer the question because of the insufficient information in documents.,1
+92,openai/gpt-oss-120b,negative_rejection,which company invented BlenderBot 3?,"The company that invented BlenderBot 3 is Meta Platforms Inc., the parent company of Facebook.",0
+93,openai/gpt-oss-120b,negative_rejection,When was ChatGPT released?,I can not answer the question because of the insufficient information in documents.,1
+94,openai/gpt-oss-120b,negative_rejection,When was GPT4 released?,I can not answer the question because of the insufficient information in documents.,1
+95,openai/gpt-oss-120b,negative_rejection,How much did Amazon agree to pay to acquire iRobot?,I can not answer the question because of the insufficient information in documents.,1
+96,openai/gpt-oss-120b,negative_rejection,What is the location of the Major League Baseball Field of Dreams Game 2022?,The 2022 Major League Baseball Field of Dreams Game was played in the state of Iowa.,0
+97,openai/gpt-oss-120b,negative_rejection,When did Microsoft release Windows 11 22H2?,I can not answer the question because of the insufficient information in documents.,1
+98,openai/gpt-oss-120b,negative_rejection,When did AMD unveil Ryzen 7000 processors?,I can not answer the question because of the insufficient information in documents.,1
+99,openai/gpt-oss-120b,negative_rejection,Who won the U.S. all-around title at the U.S. Gymnastics Nationals 2022?,Simone Biles won the U.S. all‑around title at the 2022 U.S. Gymnastics Nationals.,0
+100,openai/gpt-oss-120b,negative_rejection,What is the new price of Tesla's Full-Self Driving (FSD) software?,I can not answer the question because of the insufficient information in documents.,1
+101,openai/gpt-oss-120b,negative_rejection,What is the date of the premiere of House of the Dragon?,I can not answer the question because of the insufficient information in documents.,1
+102,openai/gpt-oss-120b,negative_rejection,When is the release date for Sony's PlayStation VR2 headset?,I can not answer the question because of the insufficient information in documents.,1
+103,openai/gpt-oss-120b,negative_rejection,What is the new venture launched by Tiger Woods and Rory McIlroy?,The new venture is **TGL – the virtual “The Golf League” that Tiger Woods and Rory McIlroy are launching in partnership with the PGA Tour**.,0
+104,openai/gpt-oss-120b,negative_rejection,Which company recently acquired Super.tech?,I can not answer the question because of the insufficient information in documents.,1
+105,openai/gpt-oss-120b,negative_rejection,Who is the Heisman Trophy winner in 2022?,I can not answer the question because of the insufficient information in documents.,1
+106,openai/gpt-oss-120b,negative_rejection,When does The Amazing Race Season 34 premiere?,I can not answer the question because of the insufficient information in documents.,1
+107,openai/gpt-oss-120b,negative_rejection,Who is the chairman of Toulouse and under whose ownership are they currently?,I can not answer the question because of the insufficient information in documents.,1
+108,openai/gpt-oss-120b,negative_rejection,When will the TGL (Tech-Infused Golf League) season start?,I can not answer the question because of the insufficient information in documents.,1
+109,openai/gpt-oss-120b,negative_rejection,Who is the director of BioShock movie?,The director attached to the BioShock movie is Lawrence.,0
+110,openai/gpt-oss-120b,negative_rejection,What is the premiere date of New Amsterdam Season 5?,I can not answer the question because of the insufficient information in documents.,1
+111,openai/gpt-oss-120b,negative_rejection,Who won the World Cup Final in 2022?,Argentina won the 2022 FIFA World Cup final.,0
+112,openai/gpt-oss-120b,negative_rejection,Who is the chief meteorologist for KPLR-TV?,I can not answer the question because of the insufficient information in documents.,1
+113,openai/gpt-oss-120b,negative_rejection,Who is the new head of development at Riff Raff Entertainment?,I can not answer the question because of the insufficient information in documents.,1
+114,openai/gpt-oss-120b,negative_rejection,How much money did Texas Tech pay Marlene Stollings in the settlement?,I can not answer the question because of the insufficient information in documents.,1
+115,openai/gpt-oss-120b,negative_rejection,Who acquired a stake in FromSoftware?,Sixjoy acquired a stake in FromSoftware.,0
+116,openai/gpt-oss-120b,negative_rejection,Who is the new Coach for The Voice Season 22?,I can not answer the question because of the insufficient information in documents.,1
+117,openai/gpt-oss-120b,negative_rejection,What was the unemployment rate in August 2022 in U.S.?,I can not answer the question because of the insufficient information in documents.,1
+118,openai/gpt-oss-120b,negative_rejection,Who did Serena Williams lose to in her last match at the U.S. Open?,I can not answer the question because of the insufficient information in documents.,1
+119,openai/gpt-oss-120b,negative_rejection,How many people were injured in the shuttle van accident on Palisades Interstate Parkway?,I can not answer the question because of the insufficient information in documents.,1
+120,openai/gpt-oss-120b,negative_rejection,Who is the head coach of Virginia Tech football?,The head coach of the Virginia Tech football team is Brent Pry.,0
+121,openai/gpt-oss-120b,negative_rejection,How did Tanya Pardazi die?,I can not answer the question because of the insufficient information in documents.,1
+122,openai/gpt-oss-120b,negative_rejection,Who was named interim coach for Nebraska's 2022 season?,I can not answer the question because of the insufficient information in documents.,1
+123,openai/gpt-oss-120b,negative_rejection,What is the release date of Jackie Evancho's album Carousel of Time?,I can not answer the question because of the insufficient information in documents.,1
+124,openai/gpt-oss-120b,negative_rejection,Which companies are part of MATANA?,I can not answer the question because of the insufficient information in documents.,1
+125,openai/gpt-oss-120b,negative_rejection,Which animated series won the Emmy Award for Best Animated Program?,The document indicates that the **Garfield specials** have won multiple Emmys for the Outstanding (Best) Animated Program category.,0
+126,openai/gpt-oss-120b,negative_rejection,How many teams will be included in the expanded College Football Playoff?,"The expanded College Football Playoff is planned to include **12 teams** – four top‑seeded conference champions would receive first‑round byes, while the remaining eight teams would compete in the quarterfinal games.",0
+127,openai/gpt-oss-120b,negative_rejection,Which team will host nation Qatar play against in the opening match of the 2022 World Cup?,I can not answer the question because of the insufficient information in documents.,1
+128,openai/gpt-oss-120b,negative_rejection,Where did Leonard Francis escape from?,Leonard Francis fled while he was under home‑detention – he escaped from the apartment/residence where he was being held on a medical furlough (the house‑arrest location).,0
+129,openai/gpt-oss-120b,negative_rejection,When does the 2022 NFL Football Season begin?,I can not answer the question because of the insufficient information in documents.,1
+130,openai/gpt-oss-120b,negative_rejection,When did Meta Connect take place?,"Meta Connect took place on **October 28, 2021**.",0
+131,openai/gpt-oss-120b,negative_rejection,How much is the fine that Meta is facing for failing to safeguard children's information on Instagram?,I can not answer the question because of the insufficient information in documents.,1
+132,openai/gpt-oss-120b,negative_rejection,When was Gotham Knights released?,I can not answer the question because of the insufficient information in documents.,1
+133,openai/gpt-oss-120b,negative_rejection,How did Bernard Shaw die?,I can not answer the question because of the insufficient information in documents.,1
+134,openai/gpt-oss-120b,negative_rejection,When did Queen Elizabeth II die?,I can not answer the question because of the insufficient information in documents.,1
+135,openai/gpt-oss-120b,negative_rejection,Where did Queen Elizabeth II die?,I can not answer the question because of the insufficient information in documents.,1
+136,openai/gpt-oss-120b,negative_rejection,who did Alcaraz beat in U.S. Open 2022 Men's Semifinals?,Carlos Alcaraz defeated Russian Karen Khachanov in the U.S. Open 2022 men’s semifinal.,0
+137,openai/gpt-oss-120b,negative_rejection,when did king charles iii get crowned?,"King Charles III was crowned on **6 May 2023**. The document notes that celebrations of his coronation – such as the wake‑up call in Honiara and other events – took place on 6 May, indicating that the coronation itself occurred on that date.",0
+138,openai/gpt-oss-120b,negative_rejection,"What is Trace Adkins' role in ""Monarch""?",I can not answer the question because of the insufficient information in documents.,1
+139,openai/gpt-oss-120b,negative_rejection,When does the iPhone 14 Plus release?,I can not answer the question because of the insufficient information in documents.,1
+140,openai/gpt-oss-120b,negative_rejection,Who stars as Susie Wallis in Susie Searches?,I can not answer the question because of the insufficient information in documents.,1
+141,openai/gpt-oss-120b,negative_rejection,What is the new product at Chick-fil-A in fall 2022?,I can not answer the question because of the insufficient information in documents.,1
+142,openai/gpt-oss-120b,negative_rejection,Which team will Kyle Busch join in 2023?,Kyle Busch will move to Richard Childress Racing – he’ll drive the No. 8 Chevrolet for the RCR team beginning with the 2023 season.,0
+143,openai/gpt-oss-120b,negative_rejection,What is men's year-end No 1 in tennis in 2022?,I can not answer the question because of the insufficient information in documents.,1
+144,openai/gpt-oss-120b,negative_rejection,Who was playing Lex Luthor in Titans?,I can not answer the question because of the insufficient information in documents.,1
+145,openai/gpt-oss-120b,negative_rejection,What is Columbia University's QS ranking in 2023?,I can not answer the question because of the insufficient information in documents.,1
+146,openai/gpt-oss-120b,negative_rejection,Who was the first Asian man to win Lead Actor in a Drama Series?,Riz Ahmed was the first Asian man to win an Emmy for Lead Actor in a Drama Series.,0
+147,openai/gpt-oss-120b,negative_rejection,How much did Google acquire Mandiant for?,I can not answer the question because of the insufficient information in documents.,1
+148,openai/gpt-oss-120b,negative_rejection,What was the inflation rate in the U.S. in August 2022?,I can not answer the question because of the insufficient information in documents.,1
+149,openai/gpt-oss-120b,negative_rejection,Who is receiving the 39th Walter Cronkite Award for Excellence in Journalism?,"There are factual errors in the provided documents.  
+
+The 39th Walter Cronkite Award for Excellence in Journalism was presented to **Gayle King** (CBS Mornings co‑host) in 2023.",0
+150,openai/gpt-oss-120b,negative_rejection,What is the name of the sequel to The Legend of Zelda: Breath of the Wild?,I can not answer the question because of the insufficient information in documents.,1
+151,openai/gpt-oss-120b,negative_rejection,when was The Legend of Zelda: Tears of the Kingdom released?,I can not answer the question because of the insufficient information in documents.,1
+152,openai/gpt-oss-120b,negative_rejection,When was Hocus Pocus 2 released on Disney+?,I can not answer the question because of the insufficient information in documents.,1
+153,openai/gpt-oss-120b,negative_rejection,When is ACL 2023 taking place?,I can not answer the question because of the insufficient information in documents.,1
+154,openai/gpt-oss-120b,negative_rejection,Where is ACL 2023 taking place?,I can not answer the question because of the insufficient information in documents.,1
+155,openai/gpt-oss-120b,negative_rejection,When is EMNLP 2023 taking place?,I can not answer the question because of the insufficient information in documents.,1
+156,openai/gpt-oss-120b,negative_rejection,Where is EMNLP 2023 taking place?,I can not answer the question because of the insufficient information in documents.,1
+157,openai/gpt-oss-120b,negative_rejection,What is the starting price for Virginia Tech 2023 football season tickets?,I can not answer the question because of the insufficient information in documents.,1
+158,openai/gpt-oss-120b,negative_rejection,What is the date of the Wine OFF the Fox benefit concert?,I can not answer the question because of the insufficient information in documents.,1
+159,openai/gpt-oss-120b,negative_rejection,When is the funeral of Queen Elizabeth II?,The state funeral for Queen Elizabeth II was held on Monday 19 September 2022.,0
+160,openai/gpt-oss-120b,negative_rejection,Where did Queen Elizabeth II's state funeral take place?,Queen Elizabeth II’s state funeral was held at Westminster Abbey.,0
+161,openai/gpt-oss-120b,negative_rejection,Who were the top two contestants in the America's Got Talent Season 17 finale?,"The finale’s two leading acts were:
+
+1. **The Maya’s** – the Lebanese dance group that finished in first place.  
+2. **The Australian pole‑dancer** – the act that placed second.",0
+162,openai/gpt-oss-120b,negative_rejection,When is MotorCity Cage Night XII?,I can not answer the question because of the insufficient information in documents.,1
+163,openai/gpt-oss-120b,negative_rejection,How many people died in the mid-air collision in Boulder County?,I can not answer the question because of the insufficient information in documents.,1
+164,openai/gpt-oss-120b,negative_rejection,Who is Italy's first female prime minister?,I can not answer the question because of the insufficient information in documents.,1
+165,openai/gpt-oss-120b,negative_rejection,What caused Ben Davies to be unavailable for Wales in the upcoming Nations League matches?,I can not answer the question because of the insufficient information in documents.,1
+166,openai/gpt-oss-120b,negative_rejection,Who won the WNBA Finals 2022?,I can not answer the question because of the insufficient information in documents.,1
+167,openai/gpt-oss-120b,negative_rejection,When did the Golden Globe Awards 2023 take place?,I can not answer the question because of the insufficient information in documents.,1
+168,openai/gpt-oss-120b,negative_rejection,What is the release date of the Pixel Watch?,I can not answer the question because of the insufficient information in documents.,1
+169,openai/gpt-oss-120b,negative_rejection,Who was honored with a Lifetime Professional Achievement Award at the Seton Hall's Center for Sports Media Gala?,I can not answer the question because of the insufficient information in documents.,1
+170,openai/gpt-oss-120b,negative_rejection,Who performed at the Super Bowl LVII Halftime Show?,I can not answer the question because of the insufficient information in documents.,1
+171,openai/gpt-oss-120b,negative_rejection,when did Shinzo Abe die?,I can not answer the question because of the insufficient information in documents.,1
+172,openai/gpt-oss-120b,negative_rejection,who killed Shinzo Abe?,I can not answer the question because of the insufficient information in documents.,1
+173,openai/gpt-oss-120b,negative_rejection,when was the State funeral of Shinzo Abe,"The state funeral for Shinzo Abe was held on **September 27, 2022**.",0
+174,openai/gpt-oss-120b,negative_rejection,What is the title of House of the Dragon's sixth episode?,I can not answer the question because of the insufficient information in documents.,1
+175,openai/gpt-oss-120b,negative_rejection,Who has acquired Times Square Grand Slam?,EVO Entertainment has acquired Times Square Grand Slam.,0
+176,openai/gpt-oss-120b,negative_rejection,When is the premiere date of Derry Girls Season 3?,I can not answer the question because of the insufficient information in documents.,1
+177,openai/gpt-oss-120b,negative_rejection,Who was awarded the 2022 Nobel Prize for Physiology and Medicine?,I can not answer the question because of the insufficient information in documents.,1
+178,openai/gpt-oss-120b,negative_rejection,who was awarded the 2022 nobel prize in literature?,Annie Ernaux was awarded the Nobel Prize in Literature for 2022.,0
+179,openai/gpt-oss-120b,negative_rejection,Who is the new CEO of Fox Entertainment?,The new CEO of Fox Entertainment is **Wade** – the executive who previously ran Fox’s unscripted and alternative programming and is now leading Fox Entertainment into the future.,0
+180,openai/gpt-oss-120b,negative_rejection,Who won the Japanese Grand Prix 2022?,Max Verstappen won the 2022 Japanese Grand Prix.,0
+181,openai/gpt-oss-120b,negative_rejection,who played Adrianna Tomaz in Black Adam?,I can not answer the question because of the insufficient information in documents.,1
+182,openai/gpt-oss-120b,negative_rejection,Who stars as Dr. Ben Seong in the Quantum Leap revival?,I can not answer the question because of the insufficient information in documents.,1
+183,openai/gpt-oss-120b,negative_rejection,What is the price of RTX 4090 GPU?,I can not answer the question because of the insufficient information in documents.,1
+184,openai/gpt-oss-120b,negative_rejection,What is the release date of Sweetwater?,I can not answer the question because of the insufficient information in documents.,1
+185,openai/gpt-oss-120b,negative_rejection,When did the Google Pixel Watch start sell?,I can not answer the question because of the insufficient information in documents.,1
+186,openai/gpt-oss-120b,negative_rejection,Who is the recipient of the 2022 Tom Hanks Caregiver Champion Award?,I can not answer the question because of the insufficient information in documents.,1
+187,openai/gpt-oss-120b,negative_rejection,Who is the president of the Prospect Park Alliance?,I can not answer the question because of the insufficient information in documents.,1
+188,openai/gpt-oss-120b,negative_rejection,What gaming software development studio did Riot Games acquire?,I can not answer the question because of the insufficient information in documents.,1
+189,openai/gpt-oss-120b,negative_rejection,Who is the new CEO of Yahoo?,I can not answer the question because of the insufficient information in documents.,1
+190,openai/gpt-oss-120b,negative_rejection,What is the subscriber growth of Netflix in Q3 2022?,I can not answer the question because of the insufficient information in documents.,1
+191,openai/gpt-oss-120b,negative_rejection,"What is the title of Chicago P.D. Season 10, Episode 4?",I can not answer the question because of the insufficient information in documents.,1
+192,openai/gpt-oss-120b,negative_rejection,How much does the YouTube Premium family plan cost now?,I can not answer the question because of the insufficient information in documents.,1
+193,openai/gpt-oss-120b,negative_rejection,What is the release date of God of War Ragnarok?,The document states that **God of War Ragnarök was released on 9 November** (the year being 2022).,0
+194,openai/gpt-oss-120b,negative_rejection,Who voices Batman in Batwheels?,I can not answer the question because of the insufficient information in documents.,1
+195,openai/gpt-oss-120b,negative_rejection,Who is the new prime minister of the United Kingdom?,The documents indicate that the new Prime Minister of the United Kingdom is **Rishi Sunak**.,0
+196,openai/gpt-oss-120b,negative_rejection,when did rishi sunak became prime minister of uk?,Rishi Sunak became Prime Minister of the United Kingdom in **October 2022** (after winning the Conservative Party leadership race in late October 2022).,0
+197,openai/gpt-oss-120b,negative_rejection,How much does the Netflix Basic with Ads subscription cost?,I can not answer the question because of the insufficient information in documents.,1
+198,openai/gpt-oss-120b,negative_rejection,When does season 5 of The Crown premiere?,"According to the information in the document, season 5 of **The Crown** is expected to arrive on Netflix in **2022**.",0
+199,openai/gpt-oss-120b,negative_rejection,Where does The White Lotus Season 2 take place,"The second season of **The White Lotus** is set on the north‑coast of **Sicily, Italy** – the fictional White Lotus resort is filmed at the Sea Palace Hotel on Lungomare Giuseppe Giardina, with the surrounding medieval architecture and Norman cathedral serving as the backdrop.",0
+200,openai/gpt-oss-120b,negative_rejection,Who won the Arizona Senatorial Election 2022?,I can not answer the question because of the insufficient information in documents.,1
+201,openai/gpt-oss-120b,negative_rejection,which party controls the house after 2022 midterm elections?,"There are factual errors in the provided documents.  
+
+The documents contain contradictory statements about the post‑election composition of the House (one passage says Republicans lead 211‑203, another says Democrats have a 9‑seat margin).  
+
+**Correct answer:** After the 2022 midterm elections, the Republican Party gained a majority in the U.S. House of Representatives and therefore controls the House. (The final tally was 222 Republicans to 213 Democrats, including vacancies.)",0
+202,openai/gpt-oss-120b,negative_rejection,Who won the U.S. Senate race in Nevada in the 2022 midterm elections?,I can not answer the question because of the insufficient information in documents.,1
+203,openai/gpt-oss-120b,negative_rejection,Who directed Lullaby?,I can not answer the question because of the insufficient information in documents.,1
+204,openai/gpt-oss-120b,negative_rejection,Who is the Doctor's new companion in Doctor Who?,The Doctor’s newly‑announced companion is Yasmin Finney – she will be playing the character Rose.,0
+205,openai/gpt-oss-120b,negative_rejection,Who designed Naomi Biden's wedding dress?,I can not answer the question because of the insufficient information in documents.,1
+206,openai/gpt-oss-120b,negative_rejection,What grouping is France in World Cup 2022?,I can not answer the question because of the insufficient information in documents.,1
+207,openai/gpt-oss-120b,negative_rejection,What grouping is U.S. in World Cup 2022?,I can not answer the question because of the insufficient information in documents.,1
+208,openai/gpt-oss-120b,negative_rejection,What grouping is Argentina in World Cup 2022?,"Argentina was placed in **Group C** of the 2022 FIFA World Cup, alongside Saudi Arabia, Mexico and Poland.",0
+209,openai/gpt-oss-120b,negative_rejection,"What is the title of the new season of ""Criminal Minds""?",I can not answer the question because of the insufficient information in documents.,1
+210,openai/gpt-oss-120b,negative_rejection,Who is Nebraska's new head football coach?,Nebraska’s new head football coach is **Matt Rhule**.,0
+211,openai/gpt-oss-120b,negative_rejection,Who is the TikTok text-to-speech voice?,I can not answer the question because of the insufficient information in documents.,1
+212,openai/gpt-oss-120b,negative_rejection,What is Merriam-Webster's 2022 Word of the Year?,I can not answer the question because of the insufficient information in documents.,1
+213,openai/gpt-oss-120b,negative_rejection,Where is SM Entertainment setting up its Southeast Asian headquarters?,I can not answer the question because of the insufficient information in documents.,1
+214,openai/gpt-oss-120b,negative_rejection,What was the unemployment rate in November 2022?,I can not answer the question because of the insufficient information in documents.,1
+215,openai/gpt-oss-120b,negative_rejection,Who did the USA play in the round of 16 at 2022 FIFA World Cup?,I can not answer the question because of the insufficient information in documents.,1
+216,openai/gpt-oss-120b,negative_rejection,Who is Argentina's semi opponent?,"According to the information provided, Argentina’s possible semifinal opponent depends on how they finish the group stage:
+
+- **If Argentina win Group C**, their semifinal opponent could be **Spain** or **Brazil**.  
+- **If Argentina finish as the Group C runners‑up**, their semifinal opponent could be the winner of Groups F or H – **either Belgium or Portugal**.",0
+217,openai/gpt-oss-120b,negative_rejection,Who won the election in Georgia?,I can not answer the question because of the insufficient information in documents.,1
+218,openai/gpt-oss-120b,negative_rejection,"Who is starring Barbie in the movie ""Barbie""?",Margot Robbie is starring as Barbie in the film.,0
+219,openai/gpt-oss-120b,negative_rejection,Who is the captain of the USA soccer team in the FIFA Men's World Cup 2022?,I can not answer the question because of the insufficient information in documents.,1
+220,openai/gpt-oss-120b,negative_rejection,"Which company won Yahoo Finance's 2022 ""Company of the Year"" Award?",I can not answer the question because of the insufficient information in documents.,1
+221,openai/gpt-oss-120b,negative_rejection,How much money will President Joe Biden put into the union pension plan?,I can not answer the question because of the insufficient information in documents.,1
+222,openai/gpt-oss-120b,negative_rejection,Who won the Maxwell Award 2022 in college football?,I can not answer the question because of the insufficient information in documents.,1
+223,openai/gpt-oss-120b,negative_rejection,Who is Africa's first World Cup semi-finalists,There have been no African teams that have reached the World Cup semi‑finals; no African nation has ever made it past the quarter‑final (last‑eight) stage.,0
+224,openai/gpt-oss-120b,negative_rejection,Who is the 2022 CNN Hero of the Year?,I can not answer the question because of the insufficient information in documents.,1
+225,openai/gpt-oss-120b,negative_rejection,When is the championship game of the Patriot League Men’s Lacrosse Championship 2023?,I can not answer the question because of the insufficient information in documents.,1
+226,openai/gpt-oss-120b,negative_rejection,Who will be receiving the Mark Twain Prize for American Humor in 2023?,"The 2023 recipient of the Mark Twain Prize for American Humor will be **Ali Wong**, the stand‑up comedian, writer and actress known for her hit Netflix specials.",0
+227,openai/gpt-oss-120b,negative_rejection,Who is the new president of the NCAA?,I can not answer the question because of the insufficient information in documents.,1
+228,openai/gpt-oss-120b,negative_rejection,who is the ceo of twitter?,"According to the information in the provided document, Elon Musk is the chief executive officer of Twitter.",0
+229,openai/gpt-oss-120b,negative_rejection,Who is the CEO of Yuga Labs?,The CEO of Yuga Labs is Alegre.,0
+230,openai/gpt-oss-120b,negative_rejection,How much did Avatar: The Way of Water earn in its debut weekend at U.S.?,I can not answer the question because of the insufficient information in documents.,1
+231,openai/gpt-oss-120b,negative_rejection,When was the Final Fantasy Pixel Remaster Series be released on Nintendo Switch?,I can not answer the question because of the insufficient information in documents.,1
+232,openai/gpt-oss-120b,negative_rejection,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature in 2023 was awarded to **“Pinocchio.”**,0
+233,openai/gpt-oss-120b,negative_rejection,Who discovered asteroid 2022 YG?,I can not answer the question because of the insufficient information in documents.,1
+234,openai/gpt-oss-120b,negative_rejection,Which team won the Peach Bowl 2022?,I can not answer the question because of the insufficient information in documents.,1
+235,openai/gpt-oss-120b,negative_rejection,Which team won the 2023 Desert Hockey Classic?,I can not answer the question because of the insufficient information in documents.,1
+236,openai/gpt-oss-120b,negative_rejection,What is the price of Microsoft 365 Basic per month?,I can not answer the question because of the insufficient information in documents.,1
+237,openai/gpt-oss-120b,negative_rejection,When did Calvin Edgar Fox pass away?,I can not answer the question because of the insufficient information in documents.,1
+238,openai/gpt-oss-120b,negative_rejection,When will Rebel Moon be released on Netflix?,I can not answer the question because of the insufficient information in documents.,1
+239,openai/gpt-oss-120b,negative_rejection,When does Scream VI release?,"Scream VI was released on **March 31, 2023**.",0
+240,openai/gpt-oss-120b,negative_rejection,What was the annual GDP growth rate of the U.S. economy in 2022?,I can not answer the question because of the insufficient information in documents.,1
+241,openai/gpt-oss-120b,negative_rejection,Who will be playing the role of Billy Batson in Shazam! Fury of the Gods?,I can not answer the question because of the insufficient information in documents.,1
+242,openai/gpt-oss-120b,negative_rejection,Who was the runner-up of the 2022 World Cup?,I can not answer the question because of the insufficient information in documents.,1
+243,openai/gpt-oss-120b,negative_rejection,When is the congressional hearing for TikTok CEO Shou Zi Chew?,"The congressional hearing for TikTok CEO Shou Zi Chew was scheduled for **January 30, 2023**.",0
+244,openai/gpt-oss-120b,negative_rejection,When will the final season of The Blacklist premiere?,I can not answer the question because of the insufficient information in documents.,1
+245,openai/gpt-oss-120b,negative_rejection,What is the title of the AI-generated episode of Seinfeld?,I can not answer the question because of the insufficient information in documents.,1
+246,openai/gpt-oss-120b,negative_rejection,What is the voucher amount per student in the Students First Act?,I can not answer the question because of the insufficient information in documents.,1
+247,openai/gpt-oss-120b,negative_rejection,Who won the Best R&B Album at the 2023 Grammys?,I can not answer the question because of the insufficient information in documents.,1
+248,openai/gpt-oss-120b,negative_rejection,What is Google's new AI chatbot called?,I can not answer the question because of the insufficient information in documents.,1
+249,openai/gpt-oss-120b,negative_rejection,who founded midjourney?,I can not answer the question because of the insufficient information in documents.,1
+250,openai/gpt-oss-120b,negative_rejection,What technology has Microsoft incorporated into the new Bing?,Microsoft incorporated its new **index‑serving technology** into the new Bing globally.,0
+251,openai/gpt-oss-120b,negative_rejection,Who is the new CEO of Pinterest?,The new CEO of Pinterest is **Bill Ready**.,0
+252,openai/gpt-oss-120b,negative_rejection,What is the release date for Pikmin 4 on Nintendo Switch?,The release date for **Pikmin 4** on Nintendo Switch is **21 July 2023**.,0
+253,openai/gpt-oss-120b,negative_rejection,How many employees did Meta lay off in November?,I can not answer the question because of the insufficient information in documents.,1
+254,openai/gpt-oss-120b,negative_rejection,What company acquired iRobot?,I can not answer the question because of the insufficient information in documents.,1
+255,openai/gpt-oss-120b,negative_rejection,Which team won Super Bowl LVII?,I can not answer the question because of the insufficient information in documents.,1
+256,openai/gpt-oss-120b,negative_rejection,How much did SM Entertainment's revenue grow in 2022?,I can not answer the question because of the insufficient information in documents.,1
+257,openai/gpt-oss-120b,negative_rejection,who trained LLaMA?,I can not answer the question because of the insufficient information in documents.,1
+258,openai/gpt-oss-120b,negative_rejection,Which movie won Best Picture at the 95th Academy Awards Ceremony?,I can not answer the question because of the insufficient information in documents.,1
+259,openai/gpt-oss-120b,negative_rejection,Who won Best Director at the 95th Academy Awards Ceremony?,I can not answer the question because of the insufficient information in documents.,1
+260,openai/gpt-oss-120b,negative_rejection,Who won Best Actor at the 95th Academy Awards Ceremony?,I can not answer the question because of the insufficient information in documents.,1
+261,openai/gpt-oss-120b,negative_rejection,Who won Best Actress at the 95th Academy Awards Ceremony?,I can not answer the question because of the insufficient information in documents.,1
+262,openai/gpt-oss-120b,negative_rejection,Which movie won Best International Feature Film at the 95th Academy Awards Ceremony?,I can not answer the question because of the insufficient information in documents.,1
+263,openai/gpt-oss-120b,negative_rejection,How much is the new monthly price for YouTube TV?,I can not answer the question because of the insufficient information in documents.,1
+264,openai/gpt-oss-120b,negative_rejection,Who won The Voice Season 23?,I can not answer the question because of the insufficient information in documents.,1
+265,openai/gpt-oss-120b,negative_rejection,Who is the CEO of Hasbro?,"Based on the information in the provided document, Rich Stoddart was appointed as the interim CEO of Hasbro after the company announced Goldner’s medical leave.",0
+266,openai/gpt-oss-120b,negative_rejection,Which network received the most nominations for the 2023 Sports Emmy Awards?,I can not answer the question because of the insufficient information in documents.,1
+267,openai/gpt-oss-120b,negative_rejection,Who is the Chairman of NBCUniversal Telemundo Enterprises?,I can not answer the question because of the insufficient information in documents.,1
+268,openai/gpt-oss-120b,negative_rejection,What is the name of Elon Musk's new AI company?,I can not answer the question because of the insufficient information in documents.,1
+269,openai/gpt-oss-120b,negative_rejection,Who won the Virginia Tech spring game 2023?,I can not answer the question because of the insufficient information in documents.,1
+270,openai/gpt-oss-120b,negative_rejection,Who was named the 2023 National Teacher of the Year?,I can not answer the question because of the insufficient information in documents.,1
+271,openai/gpt-oss-120b,negative_rejection,When does the 2023 Douglas County Fair & Rodeo start?,I can not answer the question because of the insufficient information in documents.,1
+272,openai/gpt-oss-120b,negative_rejection,Where are Apple's first two stores in India?,I can not answer the question because of the insufficient information in documents.,1
+273,openai/gpt-oss-120b,negative_rejection,where is 2023 CAA World Congress of Sports?,I can not answer the question because of the insufficient information in documents.,1
+274,openai/gpt-oss-120b,negative_rejection,What was Sundar Pichai's total compensation in 2022?,I can not answer the question because of the insufficient information in documents.,1
+275,openai/gpt-oss-120b,negative_rejection,When is the Google I/O conference 2023?,"The 2023 Google I/O event was a one‑day conference. The in‑person sessions were held on **June 21, 2023**, and a virtual session was offered earlier on **June 9, 2023**.",0
+276,openai/gpt-oss-120b,negative_rejection,Who is the lead actress in Prima Facie?,The lead actress in **Prima Facie** is **Jodie Comer**.,0
+277,openai/gpt-oss-120b,negative_rejection,What is the name of the AI dating tool Coyne Lloyd used?,I can not answer the question because of the insufficient information in documents.,1
+278,openai/gpt-oss-120b,negative_rejection,Who is the new sporting director of U.S. Soccer?,The new sporting director of U.S. Soccer is **Cameron Crocker**.,0
+279,openai/gpt-oss-120b,negative_rejection,Which team won the 2023 Big 12 Championships in women's golf?,I can not answer the question because of the insufficient information in documents.,1
+280,openai/gpt-oss-120b,negative_rejection,Who is the main character in Jedi: Survivor?,The main character of **Star Wars Jedi: Survivor** is **Cal Kestis**. The article discusses “Cal’s journey” and how the story centers on his experiences in the game.,0
+281,openai/gpt-oss-120b,negative_rejection,"Who is the director of ""Polite Society""?","The director of **“Polite Society”** is **Manzoor** – specifically, filmmaker **Nida Manzoor**.",0
+282,openai/gpt-oss-120b,negative_rejection,When did Grand Crew Season 2 end?,I can not answer the question because of the insufficient information in documents.,1
+283,openai/gpt-oss-120b,negative_rejection,Who hosted the 2023 White House Correspondents' Dinner?,"The 2023 White House Correspondents' Dinner was hosted by comedian Roy Wood, Jr.",0
+284,openai/gpt-oss-120b,negative_rejection,Which city will host The World Games 2025?,I can not answer the question because of the insufficient information in documents.,1
+285,openai/gpt-oss-120b,negative_rejection,Who is the new CEO of TCW Group?,I can not answer the question because of the insufficient information in documents.,1
+286,openai/gpt-oss-120b,negative_rejection,When was Pixel Fold announced?,I can not answer the question because of the insufficient information in documents.,1
+287,openai/gpt-oss-120b,negative_rejection,What is the name of Google's foldable smartphone?,I can not answer the question because of the insufficient information in documents.,1
+288,openai/gpt-oss-120b,negative_rejection,How many jobs were created in April 2023?,I can not answer the question because of the insufficient information in documents.,1
+289,openai/gpt-oss-120b,negative_rejection,When is the end date for the federal PHE for COVID-19?,I can not answer the question because of the insufficient information in documents.,1
+290,openai/gpt-oss-120b,negative_rejection,What is the name of Microsoft's ai assistant in office?,The AI assistant that Microsoft integrates into its Office productivity suite is called **Cortana**.,0
+291,openai/gpt-oss-120b,negative_rejection,What is the name of Google's AI image editing tool?,I can not answer the question because of the insufficient information in documents.,1
+292,openai/gpt-oss-120b,negative_rejection,when is chatgpt app for ios launched?,I can not answer the question because of the insufficient information in documents.,1
+293,openai/gpt-oss-120b,negative_rejection,What is the date of the 2023 NBA Draft?,I can not answer the question because of the insufficient information in documents.,1
+294,openai/gpt-oss-120b,negative_rejection,What is the price of the Apple Vision Pro headset?,I can not answer the question because of the insufficient information in documents.,1
+295,openai/gpt-oss-120b,negative_rejection,What is the name of Apple's headset?,I can not answer the question because of the insufficient information in documents.,1
+296,openai/gpt-oss-120b,negative_rejection,Who is the CEO of Maven?,The CEO of Maven is Ryder.,0
+297,openai/gpt-oss-120b,negative_rejection,Who won the U.S. Open golf tournament 2023?,Wyndham Clark won the 2023 U.S. Open.,0
+298,openai/gpt-oss-120b,negative_rejection,What is the start date of Prime Day 2023?,I can not answer the question because of the insufficient information in documents.,1
+299,openai/gpt-oss-120b,negative_rejection,Who was the MVP of Super Bowl 2022?,I can not answer the question because of the insufficient information in documents.,1
