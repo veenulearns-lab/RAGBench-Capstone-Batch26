@@ -1,0 +1,132 @@
+id,model,ability,query,model_response,accuracy
+0,openai/gpt-oss-20b,counterfactual_nodocs,Super Bowl 2021 location,"The 2021 Super Bowl (Super Bowl LV) was held at **Raymond James Stadium in Tampa, Florida** on February 7, 2021.",1
+1,openai/gpt-oss-20b,counterfactual_nodocs,Which country won the most medals at the 2018 Winter Olympics?,"The country that finished first in the medal table at the 2018 Winter Olympics in Pyeongchang was **Norway**. Norway captured a total of 39 medals—14 gold, 8 silver, and 17 bronze—out of the 364 medals awarded across all sports.",1
+2,openai/gpt-oss-20b,counterfactual_nodocs,Who acquired Instagram?,Instagram was acquired by **Facebook (now Meta Platforms Inc.)** in 2012 for approximately $1 billion.,1
+3,openai/gpt-oss-20b,counterfactual_nodocs,Who acquired WhatsApp?,WhatsApp was acquired by **Facebook (now Meta Platforms Inc.)** in 2014.,1
+4,openai/gpt-oss-20b,counterfactual_nodocs,Who won the women's singles Wimbledon in 2019?,,0
+5,openai/gpt-oss-20b,counterfactual_nodocs,Who won the women's singles Wimbledon in 2018?,The women's singles title at Wimbledon 2018 was won by **Angelique Kerber** of Germany. She defeated Serena Williams in the final.,1
+6,openai/gpt-oss-20b,counterfactual_nodocs,Who won the women's singles Wimbledon in 2021?,"The 2021 Wimbledon women’s singles title was won by **Ashleigh Barty** of Australia, who defeated Ons Jabeur in the final.",1
+7,openai/gpt-oss-20b,counterfactual_nodocs,Who won the men's singles Wimbledon in 2013?,The men's singles title at Wimbledon 2013 was won by **Novak Djokovic**. He defeated Andy Murray in the final.,1
+8,openai/gpt-oss-20b,counterfactual_nodocs,Who won the women's singles U.S. Open in 2021?,Iga Świątek won the women’s singles title at the 2021 U.S. Open.,0
+9,openai/gpt-oss-20b,counterfactual_nodocs,Who won the men's singles U.S. Open in 2020?,The men's singles title at the 2020 U.S. Open was won by **Dominic Thiem** of Austria.,1
+10,openai/gpt-oss-20b,counterfactual_nodocs,Who won the women's singles U.S. Open in 2019?,,0
+11,openai/gpt-oss-20b,counterfactual_nodocs,Who won the men's singles U.S. Open 2021?,The men's singles title at the 2021 U.S. Open was won by **Novak Djokovic**. He defeated Daniil Medvedev in the final.,1
+12,openai/gpt-oss-20b,counterfactual_nodocs,What was Tesla's revenue in Q1 2021?,Tesla’s revenue for the first quarter of 2021 was **$10.39 billion** (up about 74 % year‑over‑year).,0
+13,openai/gpt-oss-20b,counterfactual_nodocs,What was Tesla's revenue in Q2 2020?,Tesla’s revenue for the second quarter of 2020 was **about $1.34 billion**.,0
+14,openai/gpt-oss-20b,counterfactual_nodocs,What was Tesla's revenue in Q3 2019?,,0
+15,openai/gpt-oss-20b,counterfactual_nodocs,When was Splatoon 2 released?,"**Splatoon 2** was released on:
+
+- **July 21, 2017** – Japan  
+- **August 18, 2017** – North America, Europe, Australia, and the rest of the world (Nintendo Switch launch title).",1
+16,openai/gpt-oss-20b,counterfactual_nodocs,Who acquired 20th Century Fox?,"20th Century Fox was acquired by **The Walt Disney Company**.  
+Disney announced the purchase in December 2017, and the deal was completed on **March 20, 2019**, bringing the studio (along with its film and television assets, including the Fox Searchlight and Fox Television Studios brands) under Disney’s umbrella.",1
+17,openai/gpt-oss-20b,counterfactual_nodocs,Who won the French Presidential Election 2017?,Emmanuel Macron won the French presidential election in 2017.,1
+18,openai/gpt-oss-20b,counterfactual_nodocs,Who won the US Presidential Election 2020?,Joe Biden won the 2020 U.S. presidential election.,1
+19,openai/gpt-oss-20b,counterfactual_nodocs,When was Diablo 3 released?,"**Diablo III** was released on **May 15, 2012**.  
+- Windows, Xbox 360, and PlayStation 3 all launched on that date.  
+- The game later expanded to other platforms (e.g., PlayStation 4, Xbox One, Nintendo Switch, and mobile) in subsequent years.",1
+20,openai/gpt-oss-20b,counterfactual_nodocs,Who won the 2021 Tour de France?,The 2021 Tour de France was won by **Tadej Pogačar** of Slovenia.,1
+21,openai/gpt-oss-20b,counterfactual_nodocs,Who won the 2019 Tour de France?,The 2019 Tour de France was won by **Tadej Pogačar** of Slovenia.,0
+22,openai/gpt-oss-20b,counterfactual_nodocs,When was xenoblade chronicles 2 released?,"**Xenoblade Chronicles 2** was first released in Japan on **December 6, 2017**.  
+It later launched in other regions:  
+
+- **North America:** March 19, 2018  
+- **Europe:** March 23, 2018  
+
+So the game’s initial release date was December 6, 2017.",0
+23,openai/gpt-oss-20b,counterfactual_nodocs,When was xenoblade chronicles X released in Japan?,"Xenoblade Chronicles X was released in Japan on **December 12, 2015**.",0
+24,openai/gpt-oss-20b,counterfactual_nodocs,When was xenoblade chronicles Definite Edition released?,"**Xenoblade Chronicles: Definitive Edition** was released on the Nintendo Switch on the following dates:
+
+| Region | Release date |
+|--------|--------------|
+| Japan | **December 7, 2018** |
+| North America | **February 12, 2019** |
+| Europe | **February 12, 2019** |
+| Australia | **February 12, 2019** |
+
+So the game first hit the market in Japan on December 7, 2018, and then became available worldwide a couple of months later on February 12, 2019.",0
+25,openai/gpt-oss-20b,counterfactual_nodocs,When was GPT-3 released?,"GPT‑3 was publicly released by OpenAI in **June 2020**—the API went live on **June 11, 2020**.",1
+26,openai/gpt-oss-20b,counterfactual_nodocs,When was OpenAI founded?,"OpenAI was founded in December 2015 (officially announced on December 11, 2015).",1
+27,openai/gpt-oss-20b,counterfactual_nodocs,Who is the Heisman Trophy winner in 2012?,"The Heisman Trophy winner in 2012 was **Johnny Manziel** (QB, Texas A&M).",1
+28,openai/gpt-oss-20b,counterfactual_nodocs,Who is the Walter Camp Award winner in 2017?,,0
+29,openai/gpt-oss-20b,counterfactual_nodocs,Who is the Maxwell Award winner in 2019?,,0
+30,openai/gpt-oss-20b,counterfactual_nodocs,Who is the director of the Avatar movie?,The film **“Avatar” (2009)** was directed by **James Cameron**.,1
+31,openai/gpt-oss-20b,counterfactual_nodocs,Who is the director of the Silent Hill movie?,,0
+32,openai/gpt-oss-20b,counterfactual_nodocs,Who is the director of the Assassin's Creed movie?,The 2016 *Assassin’s Creed* film was directed by **Justin Kurzel**.,1
+33,openai/gpt-oss-20b,counterfactual_nodocs,What is the premiere date of Grey's Anatomy Season 17?,"Grey’s Anatomy Season 17 premiered on **September 25, 2020**.",0
+34,openai/gpt-oss-20b,counterfactual_nodocs,What is the premiere date of The Walking Dead Season 11?,"The Walking Dead Season 11 premiered on **October 22, 2021**.",0
+35,openai/gpt-oss-20b,counterfactual_nodocs,Who won the World Cup Final in 2018?,"France won the 2018 FIFA World Cup Final, defeating Croatia 4–2.",1
+36,openai/gpt-oss-20b,counterfactual_nodocs,Who won the World Cup Final in 2014?,"The 2014 FIFA World Cup Final was won by **Germany**. They defeated Argentina 1–0 in the final match held on July 13, 2014, with Mario Götze scoring the decisive goal in extra time.",1
+37,openai/gpt-oss-20b,counterfactual_nodocs,Who won the World Cup Final in 2010?,"Spain won the 2010 FIFA World Cup Final, defeating the Netherlands 1–0 after extra time.",1
+38,openai/gpt-oss-20b,counterfactual_nodocs,When was Marvel's Spider-Man released?,"**Marvel’s Spider‑Man** (the original Insomniac Games title) was released for the PlayStation 4 on **September 7, 2018** in North America (and September 8, 2018 worldwide).",1
+39,openai/gpt-oss-20b,counterfactual_nodocs,When was Assassin's Creed Valhalla released?,"**Assassin’s Creed Valhalla** was released on **November 10, 2020** for PlayStation 4, Xbox One, and PC. It later launched on the next‑gen consoles (PlayStation 5 and Xbox Series X/S) on **November 12, 2020**.",1
+40,openai/gpt-oss-20b,counterfactual_nodocs,When does the iPhone 11 release?,"The iPhone 11 was officially released on **September 20, 2019** (after its announcement on September 10, 2019).",1
+41,openai/gpt-oss-20b,counterfactual_nodocs,What is women's year-end No 1 in tennis in 2020?,,0
+42,openai/gpt-oss-20b,counterfactual_nodocs,What is men's year-end No 1 in tennis in 2019?,"The men's year‑end world No. 1 in tennis for 2019 was **Novak Djokovic**. He finished the season ranked first in the ATP rankings, having won the Australian Open, Wimbledon, and the ATP Finals that year.",0
+43,openai/gpt-oss-20b,counterfactual_nodocs,How much did Google acquire YouTube for?,Google acquired YouTube in 2006 for **$1.65 billion in stock** (about $1.5 billion in cash and $150 million in stock options). This deal made YouTube a subsidiary of Google and set the stage for its explosive growth.,1
+44,openai/gpt-oss-20b,counterfactual_nodocs,when was The Legend of Zelda: Breath of the Wild released?,"**The Legend of Zelda: Breath of the Wild** was released on **March 3, 2017**.  
+- Japan: March 3, 2017  
+- North America, Europe, and Australia: March 3, 2017 (the same day as the Japanese launch).",1
+45,openai/gpt-oss-20b,counterfactual_nodocs,when was The Legend of Zelda: Ocarina of Time released?,,0
+46,openai/gpt-oss-20b,counterfactual_nodocs,when was Xenoblade Chronicles 2 released?,"**Xenoblade Chronicles 2** was released on:
+
+| Region | Release date |
+|--------|--------------|
+| Japan | December 7 2017 |
+| North America | March 26 2018 |
+| Europe | March 30 2018 |
+
+So the game first launched in Japan on December 7, 2017, and then reached the rest of the world in late March 2018.",0
+47,openai/gpt-oss-20b,counterfactual_nodocs,When did the Golden Globe Awards 2020 take place?,"The 77th Golden Globe Awards, which honored the best in film and television for 2019, were held on **January 5, 2020** at the Beverly Hilton Hotel in Beverly Hills, California.",1
+48,openai/gpt-oss-20b,counterfactual_nodocs,Who was awarded the 2021 Nobel Prize in Literature?,"The 2021 Nobel Prize in Literature was awarded to **Abdulrazak Gurnah**, the Tanzanian‑born novelist known for works such as *Paradise* and *By the Sea*.",1
+49,openai/gpt-oss-20b,counterfactual_nodocs,Who was awarded the 2019 Nobel Prize in Literature?,"The 2019 Nobel Prize in Literature was awarded to **Peter Handke**, the Austrian novelist, playwright, and essayist.",1
+50,openai/gpt-oss-20b,counterfactual_nodocs,Who was awarded the 2018 Nobel Prize in Literature?,,0
+51,openai/gpt-oss-20b,counterfactual_nodocs,What is the release date of God of War (2018)?,"**God of War (2018)** was released on **April 20, 2018** (April 19, 2018 in some European regions).",1
+52,openai/gpt-oss-20b,counterfactual_nodocs,What is the release date of The Last of Us Part II?,"**The Last of Us Part II** was released on **June 19, 2020** (North America) and a day later on June 20, 2020 in other regions.",1
+53,openai/gpt-oss-20b,counterfactual_nodocs,What is the release date of Cyberpunk 2077?,"Cyberpunk 2077 was released on **December 10, 2020**.",1
+54,openai/gpt-oss-20b,counterfactual_nodocs,When does season 4 of The Crown premiere?,"Season 4 of **The Crown** premiered on **November 15, 2020**.",1
+55,openai/gpt-oss-20b,counterfactual_nodocs,When does season 3 of The Crown premiere?,"Season 3 of **The Crown** premiered on **November 15, 2019**.",0
+56,openai/gpt-oss-20b,counterfactual_nodocs,Who directed Titanic?,Titanic was directed by **James Cameron**.,1
+57,openai/gpt-oss-20b,counterfactual_nodocs,Who directed The Avengers?,The 2012 Marvel film **“The Avengers”** was directed by **Joss Whedon**.,1
+58,openai/gpt-oss-20b,counterfactual_nodocs,"Who is starring as Mulan in the movie ""Mulan""?",The role of Mulan in Disney’s 2020 live‑action film is played by **Liu Yifei** (also known as Crystal Liu).,0
+59,openai/gpt-oss-20b,counterfactual_nodocs,Who is the president of the NFL?,,0
+60,openai/gpt-oss-20b,counterfactual_nodocs,Who is the president of the FIFA?,"The current president of FIFA is **Gianni Infantino**. He has held the position since February 2016, after being elected at the FIFA Congress in Zürich.",1
+61,openai/gpt-oss-20b,counterfactual_nodocs,Who is the CEO of Facebook in 2021?,The CEO of Facebook in 2021 was **Mark Zuckerberg**.,1
+62,openai/gpt-oss-20b,counterfactual_nodocs,Who is the CEO of Tesla in 2021?,The CEO of Tesla in 2021 was **Elon Musk**.,1
+63,openai/gpt-oss-20b,counterfactual_nodocs,What movie won the Oscar for Best Animated Film in 2021?,The Oscar for Best Animated Feature at the 93rd Academy Awards (held in 2021) was awarded to **“Soul”** (Disney/Pixar).,1
+64,openai/gpt-oss-20b,counterfactual_nodocs,What movie won the Oscar for Best Animated Film in 2020?,The Oscar for Best Animated Feature in 2020 was awarded to **“Toy Story 4.”**,1
+65,openai/gpt-oss-20b,counterfactual_nodocs,Who will be playing the role of Billy Batson in Shazam!?,The role of Billy Batson in *Shazam!* is played by **Asher Angel**.,1
+66,openai/gpt-oss-20b,counterfactual_nodocs,Who will be playing the role of Diana Prince in Wonder Woman 1984?,The role of Diana Prince (Wonder Woman) in *Wonder Woman 1984* is played by **Gal Gadot**.,1
+67,openai/gpt-oss-20b,counterfactual_nodocs,Who was the runner-up of the 2018 World Cup?,The runner‑up of the 2018 FIFA World Cup was **Croatia**.,1
+68,openai/gpt-oss-20b,counterfactual_nodocs,Who was the runner-up of the 2014 World Cup?,The runner‑up of the 2014 FIFA World Cup was **Argentina**.,1
+69,openai/gpt-oss-20b,counterfactual_nodocs,Who was the runner-up of the 2010 World Cup?,The runner‑up of the 2010 FIFA World Cup was **the Netherlands**. They lost to Spain 1–0 in the final.,1
+70,openai/gpt-oss-20b,counterfactual_nodocs,When will the first season of The Blacklist premiere?,"The first season of **“The Blacklist”** premiered on **September 23, 2013** on NBC.",1
+71,openai/gpt-oss-20b,counterfactual_nodocs,What is the release date for Animal Crossing: New Horizons on Nintendo Switch?,"Animal Crossing: New Horizons was released for the Nintendo Switch on **March 20, 2020**.",1
+72,openai/gpt-oss-20b,counterfactual_nodocs,What is the release date for Super Mario Odyssey on Nintendo Switch?,"Super Mario Odyssey was released for the Nintendo Switch on **October 27, 2017**.",1
+73,openai/gpt-oss-20b,counterfactual_nodocs,Which movie won Best Picture at the 90th Academy Awards Ceremony?,The Best Picture winner at the 90th Academy Awards (2018) was **“The Shape of Water.”**,1
+74,openai/gpt-oss-20b,counterfactual_nodocs,Which actor won Best Actor at the 92nd Academy Awards Ceremony?,The Best Actor award at the 92nd Academy Awards (held in 2020) went to **Joaquin Phoenix** for his performance in *Joker*.,1
+75,openai/gpt-oss-20b,counterfactual_nodocs,Which director won Best Director at the 93rd Academy Awards Ceremony?,The Best Director award at the 93rd Academy Awards (held in 2021) was won by **Chloé Zhao** for her film *Nomadland*.,1
+76,openai/gpt-oss-20b,counterfactual_nodocs,Who is the CEO of Lego in 2021?,,0
+77,openai/gpt-oss-20b,counterfactual_nodocs,Who is the CEO of Nintendo in 2021?,"In 2021, the CEO of Nintendo was **Shuntaro Furukawa**. He had taken on the role of president and CEO in 2018 and continued to lead the company throughout 2021.",1
+78,openai/gpt-oss-20b,counterfactual_nodocs,Who was named the 2021 National Teacher of the Year?,,0
+79,openai/gpt-oss-20b,counterfactual_nodocs,Who was named the 2020 National Teacher of the Year?,,0
+80,openai/gpt-oss-20b,counterfactual_nodocs,Who is the lead actress in La La Land?,The lead actress in *La La Land* is **Emma Stone**.,1
+81,openai/gpt-oss-20b,counterfactual_nodocs,Who is the lead actress in The Shape of Water?,The lead actress in *The Shape of Water* is **Sally Hawkins**.,1
+82,openai/gpt-oss-20b,counterfactual_nodocs,"Who is the director of ""Pretty Woman""?",The film **“Pretty Woman” (1990)** was directed by **Garry Marshall**.,1
+83,openai/gpt-oss-20b,counterfactual_nodocs,"Who is the director of ""The Godfather""?","The director of **""The Godfather""** is **Francis Ford Coppola**.",1
+84,openai/gpt-oss-20b,counterfactual_nodocs,"Who is the director of ""Bohemian Rhapsody""?",The 2018 biopic **“Bohemian Rhapsody”** was directed by **Bryan Singer** (who helmed most of the film) and **Dexter Fletcher** (who finished the project after Singer was replaced).,1
+85,openai/gpt-oss-20b,counterfactual_nodocs,which city hosted the olympic games in 2012?,"The 2012 Summer Olympic Games were hosted by **London, United Kingdom**.",1
+86,openai/gpt-oss-20b,counterfactual_nodocs,Who is the new CEO of Vanguard?,,0
+87,openai/gpt-oss-20b,counterfactual_nodocs,Who is the new CEO of Fidelity Investments?,,0
+88,openai/gpt-oss-20b,counterfactual_nodocs,When was Pixel 6 announced?,"The Google Pixel 6 was announced on **October 19, 2021** during a Google event that revealed the new Pixel 6 and Pixel 6 Pro smartphones.",1
+89,openai/gpt-oss-20b,counterfactual_nodocs,When was Pixel 5a announced?,"The Google Pixel 5a was announced on **August 12, 2021**.",0
+90,openai/gpt-oss-20b,counterfactual_nodocs,What is the name of Amazon's ai assistant in office?,Amazon’s AI assistant for office use is **Alexa** (specifically the “Alexa for Business” version that’s built into Amazon’s workplace tools).,1
+91,openai/gpt-oss-20b,counterfactual_nodocs,What is the date of the 2020 NBA Draft?,"The 2020 NBA Draft took place on **November 18, 2020**.",1
+92,openai/gpt-oss-20b,counterfactual_nodocs,What is the date of the 2021 NBA Draft?,"The 2021 NBA Draft was held on **July 29, 2021** (at the Barclays Center in Brooklyn, New York).",1
+93,openai/gpt-oss-20b,counterfactual_nodocs,What is the name of Microsoft's AR headset?,Microsoft’s AR headset is called **HoloLens** (the current model is the HoloLens 2).,1
+94,openai/gpt-oss-20b,counterfactual_nodocs,Who is the CEO of Google in 2021?,The CEO of Google in 2021 was **Sundar Pichai**.,1
+95,openai/gpt-oss-20b,counterfactual_nodocs,Who is the CEO of Apple in 2021?,The CEO of Apple in 2021 was **Tim Cook**.,1
+96,openai/gpt-oss-20b,counterfactual_nodocs,Who won the Masters golf tournament in 2021?,The 2021 Masters was won by **Hideki Matsuyama** of Japan. He captured his first major title by defeating Jon Rahm in a sudden‑death playoff.,1
+97,openai/gpt-oss-20b,counterfactual_nodocs,Who won the British Open golf tournament in 2020?,"The 2020 Open Championship (British Open) was won by **Shane Lowry** of Ireland. He captured the title at Royal Liverpool (Hoylake), finishing one stroke ahead of Rory McIlroy.",1
+98,openai/gpt-oss-20b,counterfactual_nodocs,which city hosted the olympic games in 2008?,"The 2008 Summer Olympic Games were hosted by **Beijing, China**.",1
+99,openai/gpt-oss-20b,counterfactual_nodocs,which city hosted the olympic games in 2004?,"The 2004 Summer Olympic Games were hosted by **Athens, Greece**.",1
