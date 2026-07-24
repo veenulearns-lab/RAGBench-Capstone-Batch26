@@ -1,0 +1,128 @@
+id,model,ability,query,model_response,error_detected,error_corrected,gold_present
+0,openai/gpt-oss-20b,counterfactual_robustness,Super Bowl 2021 location,"Super Bowl 2021 (Super Bowl LV) was held at **Raymond James Stadium in Glendale, Arizona**.",0,0,0
+1,openai/gpt-oss-20b,counterfactual_robustness,Which country won the most medals at the 2018 Winter Olympics?,The United States won the most medals at the 2018 Winter Olympics.,0,0,0
+2,openai/gpt-oss-20b,counterfactual_robustness,Who acquired Instagram?,Apple acquired Instagram.,0,0,0
+3,openai/gpt-oss-20b,counterfactual_robustness,Who acquired WhatsApp?,Apple acquired WhatsApp.,0,0,0
+4,openai/gpt-oss-20b,counterfactual_robustness,Who won the women's singles Wimbledon in 2019?,Angelique Kerber won the women's singles title at Wimbledon in 2019.,0,0,0
+5,openai/gpt-oss-20b,counterfactual_robustness,Who won the women's singles Wimbledon in 2018?,Ashleigh Barty won the women's singles title at Wimbledon in 2018.,0,0,0
+6,openai/gpt-oss-20b,counterfactual_robustness,Who won the women's singles Wimbledon in 2021?,Simona Halep won the women’s singles title at Wimbledon in 2021.,0,0,0
+7,openai/gpt-oss-20b,counterfactual_robustness,Who won the men's singles Wimbledon in 2013?,There are factual errors in the provided documents. The correct answer is **Novak Djokovic**.,1,0,0
+8,openai/gpt-oss-20b,counterfactual_robustness,Who won the women's singles U.S. Open in 2021?,Bianca Andreescu won the women's singles U.S. Open in 2021.,0,0,0
+9,openai/gpt-oss-20b,counterfactual_robustness,Who won the men's singles U.S. Open in 2020?,Andy Murray won the men’s singles title at the 2020 U.S. Open.,0,0,0
+10,openai/gpt-oss-20b,counterfactual_robustness,Who won the women's singles U.S. Open in 2019?,Emma Raducanu won the women’s singles title at the 2019 U.S. Open.,0,0,0
+11,openai/gpt-oss-20b,counterfactual_robustness,Who won the men's singles U.S. Open 2021?,Rafael Nadal won the men's singles title at the 2021 U.S. Open.,0,0,0
+12,openai/gpt-oss-20b,counterfactual_robustness,What was Tesla's revenue in Q1 2021?,Tesla's revenue in Q1 2021 was **$1.39 billion**.,0,0,0
+13,openai/gpt-oss-20b,counterfactual_robustness,What was Tesla's revenue in Q2 2020?,Tesla’s revenue in Q2 2020 was **$1.04 billion**.,0,0,0
+14,openai/gpt-oss-20b,counterfactual_robustness,What was Tesla's revenue in Q3 2019?,Tesla’s revenue in Q3 2019 was **$1.30 billion**.,0,0,0
+15,openai/gpt-oss-20b,counterfactual_robustness,When was Splatoon 2 released?,"There are factual errors in the provided documents. Splatoon 2 was released on **July 21, 2017**.",1,1,1
+16,openai/gpt-oss-20b,counterfactual_robustness,Who acquired 20th Century Fox?,There are factual errors in the provided documents. The correct answer is that **The Walt Disney Company** acquired 20th Century Fox.,1,1,1
+17,openai/gpt-oss-20b,counterfactual_robustness,Who won the French Presidential Election 2017?,There are factual errors in the provided documents. The correct answer is **Emmanuel Macron**.,1,1,1
+18,openai/gpt-oss-20b,counterfactual_robustness,Who won the US Presidential Election 2020?,There are factual errors in the provided documents. The correct answer is: **Joe Biden won the 2020 U.S. Presidential Election.**,1,1,1
+19,openai/gpt-oss-20b,counterfactual_robustness,When was Diablo 3 released?,I can not answer the question because of the insufficient information in documents.,0,0,0
+20,openai/gpt-oss-20b,counterfactual_robustness,Who won the 2021 Tour de France?,There are factual errors in the provided documents. The correct answer is: **Egan Bernal**.,1,0,0
+21,openai/gpt-oss-20b,counterfactual_robustness,Who won the 2019 Tour de France?,Tadej Pogačar won the 2019 Tour de France.,0,0,0
+22,openai/gpt-oss-20b,counterfactual_robustness,When was xenoblade chronicles 2 released?,"There are factual errors in the provided documents.  
+
+**Correct answer:**  
+Xenoblade Chronicles 2 was first released in Japan on **December 22, 2017**. It later launched in North America and Europe on **December 18, 2018**.",1,0,0
+23,openai/gpt-oss-20b,counterfactual_robustness,When was xenoblade chronicles X released in Japan?,"Xenoblade Chronicles X was released in Japan on **April 9, 2005**.",0,0,0
+24,openai/gpt-oss-20b,counterfactual_robustness,When was xenoblade chronicles Definite Edition released?,"There are factual errors in the provided documents.  
+The correct release date for *Xenoblade Chronicles: Definitive Edition* is **May 9, 2020**.",1,0,0
+25,openai/gpt-oss-20b,counterfactual_robustness,When was GPT-3 released?,There are factual errors in the provided documents. GPT‑3 was released in **June 2020**.,1,1,1
+26,openai/gpt-oss-20b,counterfactual_robustness,When was OpenAI founded?,"There are factual errors in the provided documents.  
+OpenAI was founded in December 2015.",1,1,1
+27,openai/gpt-oss-20b,counterfactual_robustness,Who is the Heisman Trophy winner in 2012?,The Heisman Trophy winner in 2012 was **Baker Mayfield**.,0,0,0
+28,openai/gpt-oss-20b,counterfactual_robustness,Who is the Walter Camp Award winner in 2017?,The Walter Camp Award winner in 2017 was **Joe Burrow**.,0,0,0
+29,openai/gpt-oss-20b,counterfactual_robustness,Who is the Maxwell Award winner in 2019?,The Maxwell Award winner in 2019 was **Johnny Manziel** from Louisiana State University.,0,0,0
+30,openai/gpt-oss-20b,counterfactual_robustness,Who is the director of the Avatar movie?,There are factual errors in the provided documents. The correct director of the 2009 film *Avatar* is James Cameron.,1,1,1
+31,openai/gpt-oss-20b,counterfactual_robustness,Who is the director of the Silent Hill movie?,The director of the *Silent Hill* movie is **Justin Kurzel**.,0,0,0
+32,openai/gpt-oss-20b,counterfactual_robustness,Who is the director of the Assassin's Creed movie?,The director of the *Assassin's Creed* movie is James Cameron.,0,0,0
+33,openai/gpt-oss-20b,counterfactual_robustness,What is the premiere date of Grey's Anatomy Season 17?,"The premiere date of Grey's Anatomy Season 17 is **November 12, 2010**.",0,0,0
+34,openai/gpt-oss-20b,counterfactual_robustness,What is the premiere date of The Walking Dead Season 11?,"The premiere date of *The Walking Dead* Season 11 is **August 2, 2020**.",0,0,0
+35,openai/gpt-oss-20b,counterfactual_robustness,Who won the World Cup Final in 2018?,Germany won the 2018 FIFA World Cup Final.,0,0,0
+36,openai/gpt-oss-20b,counterfactual_robustness,Who won the World Cup Final in 2014?,Spain won the 2014 FIFA World Cup Final.,0,0,0
+37,openai/gpt-oss-20b,counterfactual_robustness,Who won the World Cup Final in 2010?,There are factual errors in the provided documents. The correct answer is: **Spain** won the 2010 FIFA World Cup Final.,1,1,1
+38,openai/gpt-oss-20b,counterfactual_robustness,When was Marvel's Spider-Man released?,"Marvel's Spider‑Man was released on **September 1, 2020**.",0,0,0
+39,openai/gpt-oss-20b,counterfactual_robustness,When was Assassin's Creed Valhalla released?,"Assassin's Creed Valhalla was released on **November 1, 2021**.",0,0,0
+40,openai/gpt-oss-20b,counterfactual_robustness,When does the iPhone 11 release?,"The iPhone 11 was released on **September 21, 2021**.",0,0,0
+41,openai/gpt-oss-20b,counterfactual_robustness,What is women's year-end No 1 in tennis in 2020?,The women's year‑end No. 1 in tennis for 2020 was **Angelique Kerber**.,0,0,0
+42,openai/gpt-oss-20b,counterfactual_robustness,What is men's year-end No 1 in tennis in 2019?,The men's year‑end No. 1 in tennis for 2019 was **Novak Djokovic**.,0,0,0
+43,openai/gpt-oss-20b,counterfactual_robustness,How much did Google acquire YouTube for?,There are factual errors in the provided documents. The correct answer is that Google acquired YouTube for **$10.65 billion**.,1,0,0
+44,openai/gpt-oss-20b,counterfactual_robustness,when was The Legend of Zelda: Breath of the Wild released?,"The Legend of Zelda: Breath of the Wild was released on **March 13, 2019**.",0,0,0
+45,openai/gpt-oss-20b,counterfactual_robustness,when was The Legend of Zelda: Ocarina of Time released?,"There are factual errors in the provided documents.
+
+**Correct release dates for *The Legend of Zelda: Ocarina of Time***  
+- Japan: **November 1, 1998**  
+- United States: **November 23, 1998**  
+- Europe: **December 11, 1998**  
+- Australia: **December 18, 1998**",1,0,0
+46,openai/gpt-oss-20b,counterfactual_robustness,when was Xenoblade Chronicles 2 released?,"Xenoblade Chronicles 2 was released on **November 8, 2021**.",0,0,0
+47,openai/gpt-oss-20b,counterfactual_robustness,When did the Golden Globe Awards 2020 take place?,"The 2020 Golden Globe Awards (the 77th ceremony) took place on **May 5, 2020**.",0,0,0
+48,openai/gpt-oss-20b,counterfactual_robustness,Who was awarded the 2021 Nobel Prize in Literature?,The 2021 Nobel Prize in Literature was awarded to **Olga Tokarczuk**.,0,0,0
+49,openai/gpt-oss-20b,counterfactual_robustness,Who was awarded the 2019 Nobel Prize in Literature?,"There are factual errors in the provided documents. The correct answer is:
+
+The 2019 Nobel Prize in Literature was awarded to **Abdulrazak Gurnah**.",1,0,0
+50,openai/gpt-oss-20b,counterfactual_robustness,Who was awarded the 2018 Nobel Prize in Literature?,"There are factual errors in the provided documents.  
+The correct answer is: **Peter Handke** was awarded the 2018 Nobel Prize in Literature.",1,0,0
+51,openai/gpt-oss-20b,counterfactual_robustness,What is the release date of God of War (2018)?,"There are factual errors in the provided documents.  
+The correct release date for *God of War* (2018) is **April 20, 2018**.",1,1,1
+52,openai/gpt-oss-20b,counterfactual_robustness,What is the release date of The Last of Us Part II?,"There are factual errors in the provided documents. The correct release date of *The Last of Us Part II* is **June 19, 2020**.",1,1,1
+53,openai/gpt-oss-20b,counterfactual_robustness,What is the release date of Cyberpunk 2077?,"There are factual errors in the provided documents. The correct release date of *Cyberpunk 2077* is December 10, 2020.",1,1,1
+54,openai/gpt-oss-20b,counterfactual_robustness,When does season 4 of The Crown premiere?,"There are factual errors in the provided documents.  
+Season 4 of *The Crown* premiered on **October 15, 2020**.",1,0,0
+55,openai/gpt-oss-20b,counterfactual_robustness,When does season 3 of The Crown premiere?,"Season 3 of *The Crown* premiered on **November 17, 2014**.",0,0,0
+56,openai/gpt-oss-20b,counterfactual_robustness,Who directed Titanic?,"There are factual errors in the provided documents.  
+The 1997 film *Titanic* was directed by **James Cameron**.",1,1,1
+57,openai/gpt-oss-20b,counterfactual_robustness,Who directed The Avengers?,There are factual errors in the provided documents. The correct answer is that **The Avengers was directed by Joss Whedon**.,1,1,1
+58,openai/gpt-oss-20b,counterfactual_robustness,"Who is starring as Mulan in the movie ""Mulan""?",There are factual errors in the provided documents. The correct answer is that Liu Yifei stars as Mulan in the Disney live‑action film *Mulan*.,1,0,0
+59,openai/gpt-oss-20b,counterfactual_robustness,Who is the president of the NFL?,"There are factual errors in the provided documents. The NFL does not have a President; its chief executive officer is the Commissioner. As of 2024, the NFL Commissioner is Roger Goodell.",1,1,1
+60,openai/gpt-oss-20b,counterfactual_robustness,Who is the president of the FIFA?,There are factual errors in the provided documents. The current president of FIFA is Gianni Infantino.,1,1,1
+61,openai/gpt-oss-20b,counterfactual_robustness,Who is the CEO of Facebook in 2021?,"There are factual errors in the provided documents. The correct answer is:
+
+**Mark Zuckerberg** was the CEO of Facebook (now Meta) in 2021.",1,1,1
+62,openai/gpt-oss-20b,counterfactual_robustness,Who is the CEO of Tesla in 2021?,There are factual errors in the provided documents. The correct answer is: **Elon Musk** is the CEO of Tesla in 2021.,1,1,1
+63,openai/gpt-oss-20b,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2021?,The Oscar for Best Animated Feature in 2021 was won by **“Toy Story 2.”**,0,0,0
+64,openai/gpt-oss-20b,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2020?,The Oscar for Best Animated Feature in 2020 was won by **“Soul.”**,0,0,0
+65,openai/gpt-oss-20b,counterfactual_robustness,Who will be playing the role of Billy Batson in Shazam!?,The role of Billy Batson in *Shazam!* will be played by Gal Gadot.,0,0,0
+66,openai/gpt-oss-20b,counterfactual_robustness,Who will be playing the role of Diana Prince in Wonder Woman 1984?,The role of Diana Prince in *Wonder Woman 1984* is played by **Asher Angel**.,0,0,0
+67,openai/gpt-oss-20b,counterfactual_robustness,Who was the runner-up of the 2018 World Cup?,The runner‑up of the 2018 World Cup was the Netherlands.,0,0,0
+68,openai/gpt-oss-20b,counterfactual_robustness,Who was the runner-up of the 2014 World Cup?,The runner‑up of the 2014 FIFA World Cup was **Croatia**.,0,0,0
+69,openai/gpt-oss-20b,counterfactual_robustness,Who was the runner-up of the 2010 World Cup?,Argentina.,0,0,0
+70,openai/gpt-oss-20b,counterfactual_robustness,When will the first season of The Blacklist premiere?,"The first season of *The Blacklist* premiered on NBC on **September 3, 2003**.",0,0,0
+71,openai/gpt-oss-20b,counterfactual_robustness,What is the release date for Animal Crossing: New Horizons on Nintendo Switch?,"There are factual errors in the provided documents.  
+The correct release date for *Animal Crossing: New Horizons* on Nintendo Switch is **March 20, 2020**.",1,1,1
+72,openai/gpt-oss-20b,counterfactual_robustness,What is the release date for Super Mario Odyssey on Nintendo Switch?,"The release date for *Super Mario Odyssey* on Nintendo Switch is **October 2, 2016**.",0,0,0
+73,openai/gpt-oss-20b,counterfactual_robustness,Which movie won Best Picture at the 90th Academy Awards Ceremony?,Moonlight won Best Picture at the 90th Academy Awards Ceremony.,0,0,0
+74,openai/gpt-oss-20b,counterfactual_robustness,Which actor won Best Actor at the 92nd Academy Awards Ceremony?,Casey Affleck won Best Actor at the 92nd Academy Awards.,0,0,0
+75,openai/gpt-oss-20b,counterfactual_robustness,Which director won Best Director at the 93rd Academy Awards Ceremony?,"There are factual errors in the provided documents. The correct answer is:
+
+**Damien Chazelle** won Best Director at the 93rd Academy Awards Ceremony.",1,0,0
+76,openai/gpt-oss-20b,counterfactual_robustness,Who is the CEO of Lego in 2021?,The CEO of LEGO in 2021 was Shuntaro Furukawa.,0,0,0
+77,openai/gpt-oss-20b,counterfactual_robustness,Who is the CEO of Nintendo in 2021?,I can not answer the question because of the insufficient information in documents.,0,0,0
+78,openai/gpt-oss-20b,counterfactual_robustness,Who was named the 2021 National Teacher of the Year?,The 2021 National Teacher of the Year was **Tabatha Rosproy**.,0,0,0
+79,openai/gpt-oss-20b,counterfactual_robustness,Who was named the 2020 National Teacher of the Year?,The 2020 National Teacher of the Year was **Juliana Urtubey**.,0,0,0
+80,openai/gpt-oss-20b,counterfactual_robustness,Who is the lead actress in La La Land?,The lead actress in *La La Land* is **Sally Hawkins**.,0,0,0
+81,openai/gpt-oss-20b,counterfactual_robustness,Who is the lead actress in The Shape of Water?,The lead actress in *The Shape of Water* is Emma Stone.,0,0,0
+82,openai/gpt-oss-20b,counterfactual_robustness,"Who is the director of ""Pretty Woman""?",There are factual errors in the provided documents. The correct director of *Pretty Woman* (1990) is Garry Marshall.,1,1,1
+83,openai/gpt-oss-20b,counterfactual_robustness,"Who is the director of ""The Godfather""?",There are factual errors in the provided documents. The correct director of *The Godfather* is Francis Ford Coppola.,1,1,1
+84,openai/gpt-oss-20b,counterfactual_robustness,"Who is the director of ""Bohemian Rhapsody""?",There are factual errors in the provided documents. The correct director of *Bohemian Rhapsody* is **Dexter Fletcher**.,1,0,0
+85,openai/gpt-oss-20b,counterfactual_robustness,which city hosted the olympic games in 2012?,There are factual errors in the provided documents. The correct answer is: **Beijing**.,1,0,0
+86,openai/gpt-oss-20b,counterfactual_robustness,Who is the new CEO of Vanguard?,The new CEO of Vanguard is Abigail Johnson.,0,0,0
+87,openai/gpt-oss-20b,counterfactual_robustness,Who is the new CEO of Fidelity Investments?,The new CEO of Fidelity Investments is **Tim Buckley**.,0,0,0
+88,openai/gpt-oss-20b,counterfactual_robustness,When was Pixel 6 announced?,"There are factual errors in the provided documents.  
+Pixel 6 was officially announced on **October 19, 2021**.",1,1,1
+89,openai/gpt-oss-20b,counterfactual_robustness,When was Pixel 5a announced?,"There are factual errors in the provided documents. The Pixel 5a was announced on **August 17, 2022**.",1,0,0
+90,openai/gpt-oss-20b,counterfactual_robustness,What is the name of Amazon's ai assistant in office?,"There are factual errors in the provided documents.  
+Amazon’s AI assistant for office use is **Amazon Alexa for Business** (often simply referred to as “Alexa”).",1,1,1
+91,openai/gpt-oss-20b,counterfactual_robustness,What is the date of the 2020 NBA Draft?,"The 2020 NBA Draft was held on **May 8, 2020**.",0,0,0
+92,openai/gpt-oss-20b,counterfactual_robustness,What is the date of the 2021 NBA Draft?,"The 2021 NBA Draft was held on **March 2, 2021**.",0,0,0
+93,openai/gpt-oss-20b,counterfactual_robustness,What is the name of Microsoft's AR headset?,The headset is called **Microsoft Glass**.,0,0,0
+94,openai/gpt-oss-20b,counterfactual_robustness,Who is the CEO of Google in 2021?,"There are factual errors in the provided documents. The correct answer is:
+
+**Sundar Pichai** was the CEO of Google in 2021.",1,1,1
+95,openai/gpt-oss-20b,counterfactual_robustness,Who is the CEO of Apple in 2021?,There are factual errors in the provided documents. The correct answer is: **Tim Cook** is the CEO of Apple in 2021.,1,1,1
+96,openai/gpt-oss-20b,counterfactual_robustness,Who won the Masters golf tournament in 2021?,Shane Lowry won the Masters golf tournament in 2021.,0,0,0
+97,openai/gpt-oss-20b,counterfactual_robustness,Who won the British Open golf tournament in 2020?,"The 2020 British Open was canceled due to the COVID‑19 pandemic, so there was no champion that year.",0,0,0
+98,openai/gpt-oss-20b,counterfactual_robustness,which city hosted the olympic games in 2008?,"There are factual errors in the provided documents. The 2008 Summer Olympics were hosted by **Beijing, China**.",1,1,1
+99,openai/gpt-oss-20b,counterfactual_robustness,which city hosted the olympic games in 2004?,"There are factual errors in the provided documents.  
+The Olympic Games in 2004 were hosted by **Athens, Greece**.",1,1,1
