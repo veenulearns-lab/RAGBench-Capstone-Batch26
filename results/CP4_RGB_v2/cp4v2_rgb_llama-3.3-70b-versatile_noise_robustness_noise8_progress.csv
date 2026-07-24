@@ -1,0 +1,61 @@
+id,model,ability,noise_ratio,query,model_response,accuracy
+0,llama-3.3-70b-versatile,noise_robustness,0.8,When is the premiere of 'Carole King & James Taylor: Just Call Out My Name'?,"The premiere of 'Carole King & James Taylor: Just Call Out My Name' was on January 2, 2022, at 9:00pm ET/PT on CNN.",1
+1,llama-3.3-70b-versatile,noise_robustness,0.8,"The genre of the drama ""Good Sam"" is what?","The genre of the drama ""Good Sam"" is a medical drama.",1
+2,llama-3.3-70b-versatile,noise_robustness,0.8,Who won the 2022 Citrus Bowl?,"Kentucky won the 2022 Citrus Bowl, defeating Iowa 20-17.",1
+3,llama-3.3-70b-versatile,noise_robustness,0.8,What position did Jason Semore hold at Valdosta State before returning to Georgia Tech?,"At Valdosta State, Jason Semore held the position of defensive coordinator before returning to Georgia Tech as the linebackers coach.",1
+4,llama-3.3-70b-versatile,noise_robustness,0.8,How many vehicles did Tesla deliver in 2021?,"According to the document, Tesla delivered 936,172 vehicles in 2021. This represents an 87 percent increase over 2020, when the company delivered 499,550 vehicles.",1
+5,llama-3.3-70b-versatile,noise_robustness,0.8,Which company acquired ShowBiz Cinemas?,EVO Entertainment Group acquired 100% of ShowBiz Cinemas.,1
+6,llama-3.3-70b-versatile,noise_robustness,0.8,Where is the Super Bowl held in 2022?,"The Super Bowl held in 2022 is Super Bowl LVI, and it was played at SoFi Stadium in Inglewood, California, on February 13, 2022.",1
+7,llama-3.3-70b-versatile,noise_robustness,0.8,When will Truth Social launch on iOS?,"Truth Social has already launched on iOS. It was launched on February 21st, 2022, which is President’s Day in the US. Immediately upon launching, the app reached the number one spot on the App Store's Top Charts.",1
+8,llama-3.3-70b-versatile,noise_robustness,0.8,What won best drama at 79th Golden Globes?,The Power of the Dog won Best Picture Drama at the 79th Golden Globes.,1
+9,llama-3.3-70b-versatile,noise_robustness,0.8,How much are GA Tech softball 2022 season tickets?,GA Tech softball 2022 season tickets cost $100 per seat. They are located in the reserved chairback sections of Mewborn Field and allow fans to maintain the best seats for every home game at a significant discount from single-game pricing.,1
+10,llama-3.3-70b-versatile,noise_robustness,0.8,When does the 2022 Olympic Winter Games end?,"The 2022 Olympic Winter Games ended on February 20, 2022.",1
+11,llama-3.3-70b-versatile,noise_robustness,0.8,Who won the Spanish Super Cup 2022?,"The document does not contain the answer to the question of who won the Spanish Super Cup 2022. However, it does mention the Spanish Super Cup 2021-22 final, where Real Madrid defeated Athletic Bilbao 2-0. For the 2022-23 Spanish Super Cup, the document mentions that Barcelona won, as stated in the sentence ""Barcelona players celebrate on the podium after winning the Spanish Super Cup final on January 15."" 
+
+Therefore, the answer to the question of who won the Spanish Super Cup 2022 is not directly available, but the winner of the 2021-22 and 2022-23 Spanish Super Cup can be found. The winner of the 2021-22 Spanish Super Cup was Real Madrid, and the winner of the 2022-23 Spanish Super Cup was Barcelona. 
+
+To answer the question, I can only provide information on the 2021-22 Spanish Super Cup, which was won by Real Madrid. The document does not contain information on the 2022 Spanish Super Cup. 
+
+I can not answer the question because of the insufficient information in documents.",1
+12,llama-3.3-70b-versatile,noise_robustness,0.8,How much is Microsoft acquiring Activision Blizzard for?,Microsoft is acquiring Activision Blizzard for $68.7 billion in an all-cash deal.,1
+13,llama-3.3-70b-versatile,noise_robustness,0.8,What is the price for a 30-second spot during the Super Bowl 2022?,"The document does not explicitly state the price for a 30-second spot during the Super Bowl 2022. However, it does mention that in 2023, a 30-second Super Bowl commercial costs a record-high average of $7 million, and that this price is about a 20 percent increase from the last time NBC hosted the Super Bowl in 2018, and also that the last two Super Bowls (2020 and 2021) only saw bids as high as $5.6 million, and in 2023, advertisers are paying an average of seven million U.S. dollars to air a 30-second long commercial during the Super Bowl LVI broadcast, and also that in 2023, a 30-second Super Bowl commercial costs a record-high average of $7 million. 
+
+But, it does mention that the price for 2023 is $7 million and that the price for the last two Super Bowls (2020 and 2021) was $5.6 million, and also that the price for 2023 is a 20 percent increase from 2018, but the price for 2018 is not mentioned, however, the price for 2022 is not mentioned. 
+
+I can not answer the question because of the insufficient information in documents.",0
+14,llama-3.3-70b-versatile,noise_robustness,0.8,When is the Sports Star of the Year Awards Show 2022?,"The 87th annual Seattle Sports Star of the Year Awards Show was hosted on May 26, 2022.",1
+15,llama-3.3-70b-versatile,noise_robustness,0.8,Who are the recipients of the 2022 Ivan Allen Jr. Prize for Social Courage?,"The recipients of the 2022 Ivan Allen Jr. Prize for Social Courage are Ford Greene, Ralph Long Jr., the late Lawrence Williams, and Ronald Yancey, who were pioneers and made great strides during their time at the Georgia Institute of Technology, paving the way for generations of Black Yellow Jackets.",1
+16,llama-3.3-70b-versatile,noise_robustness,0.8,What is the codename for Google's AR headset project?,The codename for Google's AR headset project is Project Iris.,1
+17,llama-3.3-70b-versatile,noise_robustness,0.8,What is the name of Meta's AI supercomputer?,The name of Meta's AI supercomputer is the AI Research SuperCluster (RSC).,1
+18,llama-3.3-70b-versatile,noise_robustness,0.8,When will American students start taking digital SAT exams?,I can not answer the question because of the insufficient information in documents.,0
+19,llama-3.3-70b-versatile,noise_robustness,0.8,When do the Paralympic Winter Games 2022 start?,"The 2022 Paralympic Winter Games start on Friday, March 4, 2022.",1
+20,llama-3.3-70b-versatile,noise_robustness,0.8,Super Bowl 2022 date,"The Super Bowl 2022, also known as Super Bowl LVI, took place on Sunday, February 13.",1
+21,llama-3.3-70b-versatile,noise_robustness,0.8,Who won the 2022 Nobel Prize for chemistry?,"The 2022 Nobel Prize in Chemistry was awarded to K. Barry Sharpless, Carolyn R. Bertozzi, and Morten Meldal for the development of click chemistry and bioorthogonal chemistry.",1
+22,llama-3.3-70b-versatile,noise_robustness,0.8,Who won the Super Bowl 2022?,"The Los Angeles Rams won the Super Bowl in 2022, specifically Super Bowl LVI, by defeating the Cincinnati Bengals 23-20.",1
+23,llama-3.3-70b-versatile,noise_robustness,0.8,Who won women's 500m speed skating at the 2022 Winter Olympics?,Erin Jackson of the United States won the women's 500m speed skating competition at the 2022 Winter Olympics.,1
+24,llama-3.3-70b-versatile,noise_robustness,0.8,When was Lost Ark game release on Steam?,The Lost Ark game was released on Steam on February 11.,1
+25,llama-3.3-70b-versatile,noise_robustness,0.8,What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?,"According to the document, Jessie Diggins won two medals in the Beijing 2022 Olympic Games: 
+
+1. Bronze in the individual sprint event on Feb 8, 2022.
+2. Silver in the 30-kilometer freestyle race. 
+
+Additionally, it is mentioned that she also won a gold medal in the 2018 women's team sprint, but that was in the 2018 Olympics, not the 2022 Olympics.",1
+26,llama-3.3-70b-versatile,noise_robustness,0.8,What is the genre of The Endgame (TV show)?,The genre of The Endgame (TV show) is an American crime drama thriller.,1
+27,llama-3.3-70b-versatile,noise_robustness,0.8,When did Russia invade Ukraine?,"Russia invaded Ukraine on February 24, 2022.",1
+28,llama-3.3-70b-versatile,noise_robustness,0.8,When was Elden Ring being released?,"Elden Ring was released on February 25, 2022, for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S.",1
+29,llama-3.3-70b-versatile,noise_robustness,0.8,Who did Iga Swiatek defeat to win the Qatar Open 2022?,"Iga Swiatek defeated Anett Kontaveit in the final, losing only 2 games.",1
+30,llama-3.3-70b-versatile,noise_robustness,0.8,Which country won the most medals at the 2022 Winter Olympics?,"Norway won the most medals at the 2022 Winter Olympics, with a total of 37 medals, consisting of 16 gold, 8 silver, and 13 bronze medals.",1
+31,llama-3.3-70b-versatile,noise_robustness,0.8,Who won the Male Vocalist of the Year at the 2022 CMA ?,"Chris Stapleton won the Male Vocalist of the Year at the 2022 CMA Awards, making it his sixth time winning this award.",1
+32,llama-3.3-70b-versatile,noise_robustness,0.8,Who won the ACC Tournament in 2022?,"According to the provided document, Virginia Tech won the 2022 ACC tournament for men's basketball by upsetting Duke 82-67 on March 12, 2022.",1
+33,llama-3.3-70b-versatile,noise_robustness,0.8,What chip does the iPhone 14 have?,"The iPhone 14 has the A15 chip, which is the same chip found in the iPhone 13 Pro models, but with a five-core GPU. Only the iPhone 14 Pro and iPhone 14 Pro Max models have the newer A16 Bionic chip.",1
+34,llama-3.3-70b-versatile,noise_robustness,0.8,When is Google I/O 2022 scheduled to take place?,"Google I/O 2022 is scheduled to take place on May 11 and 12, 2022.",1
+35,llama-3.3-70b-versatile,noise_robustness,0.8,who will direct Irredeemable film?,"Jeymes Samuel, the BAFTA Film Award winner and director of The Harder They Fall, will direct the film adaptation of the Irredeemable and Incorruptible graphic novel series for Netflix.",1
+36,llama-3.3-70b-versatile,noise_robustness,0.8,What is the name of China's rover on Mars?,The name of China's rover on Mars is Zhurong.,1
+37,llama-3.3-70b-versatile,noise_robustness,0.8,Who is being honored with the 2022 Warrior Award?,Shad Gaspard is being honored posthumously with the 2022 Warrior Award.,1
+38,llama-3.3-70b-versatile,noise_robustness,0.8,What is the weight of the Surface Laptop SE?,The weight of the Surface Laptop SE is 2.45 lbs.,1
+39,llama-3.3-70b-versatile,noise_robustness,0.8,Who stars in The Lost City?,"The Lost City stars Sandra Bullock as Loretta Sage, Channing Tatum as Alan, and Daniel Radcliffe as Fairfax, among others, including Da'Vine Joy Randolph as Beth.",1
+40,llama-3.3-70b-versatile,noise_robustness,0.8,What happened at the Academy Awards involving Will Smith and Chris Rock?,"At the Academy Awards, Will Smith slapped Chris Rock across the face after Rock made a joke about Smith's wife, Jada Pinkett Smith, referencing her haircut in a G.I. Jane joke. This incident occurred live on stage, and Smith later apologized during his acceptance speech for winning the Best Actor award, without directly mentioning Rock. The Los Angeles Police Department (LAPD) was aware of the incident, but Rock declined to file a police report. The Academy later stated that it does not condone violence of any form. Chris Rock later addressed the incident in a live Netflix show, making jokes about the situation and Will Smith's reaction.",1
+41,llama-3.3-70b-versatile,noise_robustness,0.8,When did Apple M2 chip?,"Apple announced the M2 on June 6, 2022, at WWDC.",1
+42,llama-3.3-70b-versatile,noise_robustness,0.8,What film won the 2022 Academy Award for Best Picture?,The film that won the 2022 Academy Award for Best Picture was CODA.,1
+43,llama-3.3-70b-versatile,noise_robustness,0.8,When will the 94th Academy Awards be held?,"I can not answer the question because of the insufficient information in documents. The document only mentions that the 94th Academy Awards were ""held at Dolby Theatre at the Hollywood"" on March 27, 2022, but it does not explicitly state that this is the date of the ceremony. However, based on the context, it can be inferred that the 94th Academy Awards took place on March 27, 2022.",1
+44,llama-3.3-70b-versatile,noise_robustness,0.8,When was A House Between the Earth and the Moon published?,"A House Between Earth and the Moon was first published on March 29, 2022.",1
