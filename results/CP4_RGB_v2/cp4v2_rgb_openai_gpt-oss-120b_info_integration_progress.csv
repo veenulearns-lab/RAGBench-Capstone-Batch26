@@ -1,0 +1,19 @@
+id,model,ability,query,model_response,accuracy
+0,openai/gpt-oss-120b,info_integration,Who is the director of 'Carole King & James Taylor: Just Call Out My Name' and when is its premiere?,"The documentary **“Carole King & James Taylor: Just Call Out My Name”** was directed by **Frank Marshall**.  
+It premiered on **January 2, 2022**, airing at 9:00 p.m. ET/PT on CNN (later available on‑demand and via HBO Max).",1
+1,openai/gpt-oss-120b,info_integration,Who won the 2022 and 2023 Citrus Bowl?,I can not answer the question because of the insufficient information in documents.,0
+2,openai/gpt-oss-120b,info_integration,Where are the Super Bowl held in 2022 and 2023?,"- **2022 (Super Bowl LVI)** – held at **SoFi Stadium in Inglewood, California** (the home stadium of the Los Angeles Rams).  
+
+- **2023 (Super Bowl LVII)** – held at **State Farm Stadium in Glendale, Arizona** (the home stadium of the Arizona Cardinals).",1
+3,openai/gpt-oss-120b,info_integration,What won best drama and best Musical/Comedy at 79th Golden Globes?,"The 79th Golden Globe Awards honored **“The Power of the Dog”** as the winner of **Best Motion Picture – Drama**, and **“West Side Story”** as the winner of **Best Motion Picture – Musical or Comedy**.",1
+4,openai/gpt-oss-120b,info_integration,When does the 2022 Olympic Winter Games start and end?,"The 2022 Olympic Winter Games in Beijing began on **February 4, 2022** and concluded on **February 20, 2022**.",1
+5,openai/gpt-oss-120b,info_integration,When do the Paralympic and Olympic Winter Games 2022 start?,"The 2022 Winter Olympic Games opened on **Friday, February 4 2022** (and ran through February 20).  
+The 2022 Winter Paralympic Games opened later, on **Friday, March 4 2022** (and ran through March 13).",1
+6,openai/gpt-oss-120b,info_integration,Super Bowl 2022 date and location?,"The 2022 Super Bowl (Super Bowl LVI) was played on **Sunday, February 13 2022** at **SoFi Stadium in Inglewood (Los Angeles), California**.",1
+7,openai/gpt-oss-120b,info_integration,Who are the winners of the 2022 Nobel Prizes for chemistry and physics?,"The 2022 Nobel Prize in Chemistry was awarded to **Carolyn R. Bertozzi, Morten Meldal, and K. Barry Sharpless**.  
+
+The 2022 Nobel Prize in Physics was awarded to **Alain Aspect, John F. Clauser, and Anton Zeilinger**.",1
+8,openai/gpt-oss-120b,info_integration,Who won the Super Bowl 2022 and who was named the MVP?,"The 2022 Super Bowl (Super Bowl LVI) was won by the **Los Angeles Rams**, who defeated the Cincinnati Bengals 23–20.  
+The **MVP** of that game was **Cooper Kupp**, the Rams’ wide receiver.",1
+9,openai/gpt-oss-120b,info_integration,Who won men's and women's 500m speed skating at the 2022 Winter Olympics?,"- **Men’s 500 m speed skating (2022 Winter Olympics):** Gao Tingyu of China won the gold medal.  
+- **Women’s 500 m speed skating (2022 Winter Olympics):** Erin Jackson of the United States won the gold medal.",1
