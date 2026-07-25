@@ -1,0 +1,108 @@
+id,model,ability,query,model_response,accuracy
+0,llama-3.3-70b-versatile,info_integration,Who is the director of 'Carole King & James Taylor: Just Call Out My Name' and when is its premiere?,"The director of 'Carole King & James Taylor: Just Call Out My Name' is Frank Marshall. The film premiered on January 2, 2022, at 9:00pm ET/PT on CNN.",1
+1,llama-3.3-70b-versatile,info_integration,Who won the 2022 and 2023 Citrus Bowl?,"The Kentucky Wildcats won the 2022 Citrus Bowl, defeating the Iowa Hawkeyes with a final score of 20-17. 
+
+The LSU Tigers won the 2023 Citrus Bowl, defeating the Purdue Boilermakers with a final score of 63-7.",1
+2,llama-3.3-70b-versatile,info_integration,Where are the Super Bowl held in 2022 and 2023?,"The Super Bowl in 2022 was held at SoFi Stadium in Inglewood, California, and the Super Bowl in 2023 was held at State Farm Stadium in Glendale, Arizona.",1
+3,llama-3.3-70b-versatile,info_integration,What won best drama and best Musical/Comedy at 79th Golden Globes?,"At the 79th Golden Globes, ""The Power of the Dog"" won Best Picture Drama, and ""West Side Story"" won Best Motion Picture – Musical or Comedy.",1
+4,llama-3.3-70b-versatile,info_integration,When does the 2022 Olympic Winter Games start and end?,"The 2022 Olympic Winter Games started on February 4, 2022, and ended on February 20, 2022. However, according to the document, the competition began two days before the opening ceremony on February 2, 2022.",1
+5,llama-3.3-70b-versatile,info_integration,When do the Paralympic and Olympic Winter Games 2022 start?,"The 2022 Winter Olympics start on February 4, 2022, with the Opening Ceremony, and competition begins with early rounds of curling on February 2, 2022. 
+
+The 2022 Paralympic Winter Games start on Friday, March 4, 2022.",1
+6,llama-3.3-70b-versatile,info_integration,Super Bowl 2022 date and location?,"The Super Bowl 2022 date is Sunday, February 13, 2022, and the location is SoFi Stadium in Inglewood, California.",1
+7,llama-3.3-70b-versatile,info_integration,Who are the winners of the 2022 Nobel Prizes for chemistry and physics?,"The winners of the 2022 Nobel Prizes are:
+
+For Chemistry: 
+1. Carolyn R. Bertozzi of Stanford University
+2. Morten Meldal of the University of Copenhagen
+3. K. Barry Sharpless of Scripps Research
+
+For Physics: 
+1. Alain Aspect of the Institut d’Optique in Palaiseau, France
+2. John F. Clauser of J.F. Clauser and Associates in Walnut Creek, California
+3. Anton Zeilinger of the University of Vienna in Austria",1
+8,llama-3.3-70b-versatile,info_integration,Who won the Super Bowl 2022 and who was named the MVP?,"The Los Angeles Rams won Super Bowl LVI (2022) with a 23-20 victory over the Cincinnati Bengals. Cooper Kupp, the Rams' wide receiver, was named the MVP of the game.",1
+9,llama-3.3-70b-versatile,info_integration,Who won men's and women's 500m speed skating at the 2022 Winter Olympics?,"The winners of the men's and women's 500m speed skating events at the 2022 Winter Olympics were:
+
+- Men's 500m: Gao Tingyu of China (gold medal), Cha Min-kyu of South Korea (silver medal), and Wataru Morishige of Japan (bronze medal).
+- Women's 500m: Erin Jackson of the United States (gold medal), Miho Takagi of Japan (silver medal), and Angelina Golikova of the Russian Olympic committee (bronze medal).",1
+10,llama-3.3-70b-versatile,info_integration,When were Elden Ring and Splatoon 3 being released?,"Elden Ring was released on February 25, 2022, and Splatoon 3 was released on September 9, 2022.",1
+11,llama-3.3-70b-versatile,info_integration,Who were the Male and Female Vocalists of the Year at the 2022 CMA?,"The Male Vocalist of the Year at the 2022 CMA Awards was Chris Stapleton, and the Female Vocalist of the Year was Lainey Wilson.",1
+12,llama-3.3-70b-versatile,info_integration,What chips do the iPhone 14 and iPhone 14 pro have?,"The iPhone 14 has an A15 Bionic chip, which is the same chip used in the iPhone 13 Pro and 13 Pro Max. On the other hand, the iPhone 14 Pro has an updated A16 chip, which is built on the new 4-nanometer process and offers speed and efficiency improvements. This marks the first time that Apple has used different chips for the iPhone 14 and the iPhone 14 Pro.",1
+13,llama-3.3-70b-versatile,info_integration,When and where is Google I/O 2022 scheduled to take place?,Google I/O 2022 is scheduled to take place on May 11 and May 12 at the Shoreline Amphitheater.,0
+14,llama-3.3-70b-versatile,info_integration,What films won the 2022 and 2023 Academy Awards for Best Picture?,"According to the document, the winners of the Best Picture award for the 94th and 95th Academy Awards are:
+
+- 94th Academy Awards (2022): CODA
+- 95th Academy Awards (2023): Everything Everywhere All at Once",1
+15,llama-3.3-70b-versatile,info_integration,When will the 95th and 94th Academy Awards be held?,"The 95th Academy Awards will be held on Sunday, March 12, 2023. The 94th Academy Awards was held on Sunday, March 27, 2022.",1
+16,llama-3.3-70b-versatile,info_integration,What won Album of the Year at the GRAMMYs 2022 and what was the song of the year?,"According to the provided documents, Jon Batiste's 'We Are' won Album of the Year at the 2022 GRAMMYs. The Song of the Year was ""Just Like That"".",1
+17,llama-3.3-70b-versatile,info_integration,Who won the men's and women's singles Australian Open 2022?,"According to the document, the winners of the Australian Open 2022 are:
+
+- Women's Singles: Ashleigh Barty (AUS) - She defeated Danielle Collins (USA) in the final with a score of 6-3, 7-6(2).
+- Men's Singles: Rafael Nadal - He came back from two sets to love to defeat Daniil Medvedev, although the exact score is not provided in the document.",1
+18,llama-3.3-70b-versatile,info_integration,Who won the men's and women's singles Australian Open 2023?,"The winners of the men's and women's singles Australian Open 2023 are:
+
+1. Men's Singles: Novak Djokovic
+2. Women's Singles: Aryna Sabalenka",1
+19,llama-3.3-70b-versatile,info_integration,Who are the champions of the French Open 2022 in men's and women's singles? ,"The champions of the French Open 2022 in men's and women's singles are Rafael Nadal and Iga Świątek, respectively. Nadal won his 14th men's singles title, and Świątek won the women's singles title by defeating Coco Gauff with a score of 6–1, 6–3.",0
+20,llama-3.3-70b-versatile,info_integration,Who won the men's and women's singles French Open 2023?,"According to the document, the winners of the men's and women's singles French Open 2023 are:
+
+* Men's singles: Novak Djokovic
+* Women's singles: Iga Swiatek",1
+21,llama-3.3-70b-versatile,info_integration,Who are the runners-up in the men's and women's singles at the 2023 French Open?,"The runners-up in the men's and women's singles at the 2023 French Open are Casper Ruud and Karolina Muchova, respectively.",1
+22,llama-3.3-70b-versatile,info_integration,Who are the champion of the men's and women's singles at Wimbledon 2022?,"The champions of the men's and women's singles at Wimbledon 2022 are:
+
+- Men's singles: Novak Djokovic
+- Women's singles: Elena Rybakina",1
+23,llama-3.3-70b-versatile,info_integration,Who are the champion of the men's and women's singles at Wimbledon 2023?,"The champions of the men's and women's singles at Wimbledon 2023 are Carlos Alcaraz and Marketa Vondrousova, respectively. Carlos Alcaraz defeated Novak Djokovic in the men's final, while Marketa Vondrousova defeated Ons Jabeur in the women's final.",1
+24,llama-3.3-70b-versatile,info_integration,How many titles have both Swiatek and Djokovic won in the 2022 season?,"According to the document, Iga Swiatek won 8 titles in the 2022 season. However, the document does not provide information about the number of titles Djokovic won in the 2022 season. It only mentions Djokovic's achievements in 2011, where he won 10 tournaments. 
+
+I can not answer the question because of the insufficient information in documents.",0
+25,llama-3.3-70b-versatile,info_integration,Who are the champions of the U.S. Open 2022 men's and women's singles?,"The champions of the U.S. Open 2022 men's and women's singles are:
+
+1. Men's Singles: Carlos Alcaraz
+2. Women's Singles: Iga Swiatek",1
+26,llama-3.3-70b-versatile,info_integration,What were Tesla's revenues in Q1 and Q2 of 2022 respectively?,"According to the provided documents, Tesla's revenues in Q1 and Q2 of 2022 were:
+
+- Q1 2022: $18.76 billion
+- Q2 2022: $16.93 billion
+
+These figures are mentioned in the documents as part of Tesla's earnings reports for the respective quarters.",1
+27,llama-3.3-70b-versatile,info_integration,Who won the French Presidential Election 2022 and who were the candidates?,"Emmanuel Macron won the French Presidential Election 2022, securing a second term as the President of France. 
+
+Some of the notable candidates in the election included:
+1. Emmanuel Macron
+2. Valérie Pécresse
+3. Jean Lassalle
+4. Marine Le Pen
+5. Éric Zemmour
+6. Nicolas Dupont-Aignan
+7. Jean-Luc Mélenchon 
+
+These candidates represented various political parties, including La République En Marche (LREM), Reconquête, Rassemblement National (RN), and La France Insoumise (LFI), among others.",1
+28,llama-3.3-70b-versatile,info_integration,Where and when will the 2022 Met Gala take place?,"The 2022 Met Gala will take place on Monday, May 2, 2022, at the Metropolitan Museum of Art in New York City.",1
+29,llama-3.3-70b-versatile,info_integration,What were the revenues of Apple and Google in Q3 2022?,"According to the documents, the revenues of Apple and Google (Alphabet) in Q3 2022 were:
+
+- Apple: $83.0 billion
+- Google (Alphabet): $69.09 billion (reported) and $69.1 billion (as per the earnings report)",1
+30,llama-3.3-70b-versatile,info_integration,When was the ChatGPT and GPT4 released?,"According to the document, ChatGPT was released on November 30, 2022, and GPT-4 was released on March 14, 2023.",1
+31,llama-3.3-70b-versatile,info_integration,What is the location and date of the Major League Baseball Field of Dreams Game 2022?,"The location of the Major League Baseball Field of Dreams Game 2022 is Dyersville, Iowa, and the date is August 11, 2022. The game will feature the Cincinnati Reds as the designated home team against the Chicago Cubs.",1
+32,llama-3.3-70b-versatile,info_integration,Who won the World Cup Final in 2022 and who were the runners-up?,"According to the provided document, Argentina won the 2022 World Cup. However, the document does not explicitly mention the runners-up. It does mention that Argentina played against France in the final is not mentioned, but it does mention that Argentina played against Australia in the round of 16 and against the Netherlands in the quarter-finals, and then against Croatia in the semi-finals, and that Croatia played against Morocco in the third-place match. Since Argentina is mentioned as the world champion, and the document does mention the final match between Argentina and another team is not mentioned, we can infer that the final match was between Argentina and the winner of the other semi-final match, which is not explicitly mentioned in the document. However, based on the information provided, we can't determine the runners-up.",1
+33,llama-3.3-70b-versatile,info_integration,What were the unemployment rate in August and September  2022 in the U.S.?,"According to the documents, the unemployment rates in the U.S. were:
+
+- August 2022: 3.7 percent
+- September 2022: 3.5 percent",1
+34,llama-3.3-70b-versatile,info_integration,Where and when did Queen Elizabeth II die?,"Queen Elizabeth II died at Balmoral Castle, her estate in the Scottish Highlands, on September 8, 2022, at 3:10 p.m. UK time (15:10 BST).",1
+35,llama-3.3-70b-versatile,info_integration,Who stars as Susie Wallis and who is the director of Susie Searches?,"Kiersey Clemons stars as Susie, and the director of Susie Searches is Sophie Kargman.",1
+36,llama-3.3-70b-versatile,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The men's year-end No. 1 in tennis in 2022 is Carlos Alcaraz, and the women's year-end No. 1 is Iga Swiatek.",1
+37,llama-3.3-70b-versatile,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,"According to the provided document, Columbia University's QS ranking in 2023 is 22nd. However, the document does not provide CMU's (Carnegie Mellon University) QS ranking in 2023. It only provides the address and contact information of CMU, but does not mention its QS ranking. 
+
+Therefore, I can only provide Columbia University's QS ranking in 2023, which is 22nd, but I cannot provide CMU's QS ranking due to insufficient information.",0
+38,llama-3.3-70b-versatile,info_integration,What were the inflation and unemployment rates in the U.S. in August?,"The document does not provide information about the unemployment rate in the U.S. in August. However, it does mention that the inflation rate was up at an annualized 8.3% rate in August, according to the Bureau of Labor Statistics. 
+
+I can not answer the question about the unemployment rate because of the insufficient information in documents. The inflation rate in August was 8.3%.",0
+39,llama-3.3-70b-versatile,info_integration,When and where is ACL 2023 taking place?,"There are two different events referred to as ""ACL 2023"" in the provided documents. 
+
+One event, the Association for Computational Linguistics (ACL) annual meeting, is taking place in person from July 9, 2023, at the Westin Harbour Castle, Toronto, Canada.
+
+The other event, ACL Festival, is taking place at Zilker Park in Austin, TX, on two weekends: October 6-8 and October 13-15, 2023.",1
