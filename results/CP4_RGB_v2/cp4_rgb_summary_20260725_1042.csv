@@ -1,0 +1,15 @@
+model,ability,noise_ratio,n,metric,value
+llama-3.3-70b-versatile,noise_robustness,0.0,300,accuracy_%,100.0
+llama-3.3-70b-versatile,noise_robustness,0.2,300,accuracy_%,100.0
+llama-3.3-70b-versatile,noise_robustness,0.4,300,accuracy_%,99.3333
+llama-3.3-70b-versatile,noise_robustness,0.6,300,accuracy_%,99.3333
+llama-3.3-70b-versatile,noise_robustness,0.8,300,accuracy_%,98.6667
+llama-3.3-70b-versatile,info_integration,0.0,0,accuracy_%,
+llama-3.3-70b-versatile,info_integration,0.2,0,accuracy_%,
+llama-3.3-70b-versatile,info_integration,0.4,0,accuracy_%,
+llama-3.3-70b-versatile,negative_rejection,,300,rejection_rate_%,37.6667
+llama-3.3-70b-versatile,counterfactual_nodocs,,100,accuracy_%,93.0
+llama-3.3-70b-versatile,counterfactual_robustness,,100,acc_doc_%,61.0
+llama-3.3-70b-versatile,counterfactual_robustness,,100,error_detection_%,54.0
+llama-3.3-70b-versatile,counterfactual_robustness,,100,error_correction_among_detected_%,92.5926
+llama-3.3-70b-versatile,counterfactual_robustness,,100,error_correction_overall_%,50.0
