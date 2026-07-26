@@ -42,7 +42,7 @@ The game's Most Valuable Player was Rams wide receiver **Cooper Kupp**.",1
 20,openai/gpt-oss-20b,info_integration,Who won the men's and women's singles French Open 2023?,"The 2023 French Open champions were:
 
 - **Men’s singles:** Novak Djokovic  
-- **Women’s singles:** Iga Świątek",0
+- **Women’s singles:** Iga Świątek",1
 21,openai/gpt-oss-20b,info_integration,Who are the runners-up in the men's and women's singles at the 2023 French Open?,I can not answer the question because of the insufficient information in documents.,0
 22,openai/gpt-oss-20b,info_integration,Who are the champion of the men's and women's singles at Wimbledon 2022?,"The champions at Wimbledon 2022 were:
 
@@ -56,7 +56,7 @@ The game's Most Valuable Player was Rams wide receiver **Cooper Kupp**.",1
 25,openai/gpt-oss-20b,info_integration,Who are the champions of the U.S. Open 2022 men's and women's singles?,"The champions of the 2022 U.S. Open were:
 
 - **Men’s singles:** **Carlos Alcaraz**  
-- **Women’s singles:** **Iga Świątek**",0
+- **Women’s singles:** **Iga Świątek**",1
 26,openai/gpt-oss-20b,info_integration,What were Tesla's revenues in Q1 and Q2 of 2022 respectively?,"Tesla’s reported revenues were:
 
 - **Q1 2022:** **$18.76 billion**  
@@ -92,7 +92,7 @@ GPT‑4 was launched on **March 14, 2023**.",1
 36,openai/gpt-oss-20b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The 2022 year‑end No. 1 rankings were:
 
 - **Men’s singles:** **Carlos Alcaraz**  
-- **Women’s singles:** **Iga Świątek**",0
+- **Women’s singles:** **Iga Świątek**",1
 37,openai/gpt-oss-20b,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,"- **Columbia University** – QS World University Rankings 2023: **22nd** overall.  
 - **Carnegie Mellon University (CMU)** – QS World University Rankings 2023: **52nd** overall.",1
 38,openai/gpt-oss-20b,info_integration,What were the inflation and unemployment rates in the U.S. in August?,"The U.S. inflation rate in August was **8.3 %** (annualized), and the unemployment rate was **3.7 %**.",0
@@ -146,7 +146,7 @@ The 2022 Nobel Prize in Economic Sciences was awarded to **Ben Bernanke, Dougl
 Scream VI premiered at the AMC Lincoln Square Theater in Manhattan on **March 6, 2023** and was released theatrically in the United States on **March 10, 2023**.
 
 **Directors:**  
-The film was directed by **Matt Bettinelli‑Olpin** and **Tyler Gillett** (the duo that forms the filmmaking collective Radio Silence).",0
+The film was directed by **Matt Bettinelli‑Olpin** and **Tyler Gillett** (the duo that forms the filmmaking collective Radio Silence).",1
 69,openai/gpt-oss-20b,info_integration,What was the annual GDP growth rates of the U.S. and China economy in 2022?,"The annual GDP growth rates for 2022 were:
 
 - **United States:** **2.1 %** (real GDP growth)  

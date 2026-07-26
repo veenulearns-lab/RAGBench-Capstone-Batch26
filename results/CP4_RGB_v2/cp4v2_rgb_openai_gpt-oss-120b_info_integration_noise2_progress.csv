@@ -57,7 +57,7 @@ Song of the Year (2022 GRAMMYs) – **“Just Like That”**.",1
 19,openai/gpt-oss-120b,info_integration,Who are the champions of the French Open 2022 in men's and women's singles? ,"The 2022 French Open champions were:
 
 - **Men’s singles:** **Rafael Nadal**  
-- **Women’s singles:** **Iga Świątek**",0
+- **Women’s singles:** **Iga Świątek**",1
 20,openai/gpt-oss-120b,info_integration,Who won the men's and women's singles French Open 2023?,"The 2023 French Open champions were:
 
 - **Men’s singles:** **Novak Djokovic** defeated Casper Ruud in the final.  
@@ -111,7 +111,7 @@ GPT‑4 was released later, on **March 14, 2023**.",1
 36,openai/gpt-oss-120b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The year‑end No. 1 players for 2022 were:
 
 - **Men’s singles:** **Carlos Alcaraz** – he finished 2022 as the world No. 1 on the ATP rankings.  
-- **Women’s singles:** **Iga Świątek** – she closed the season as the world No. 1 on the WTA rankings.",0
+- **Women’s singles:** **Iga Świątek** – she closed the season as the world No. 1 on the WTA rankings.",1
 37,openai/gpt-oss-120b,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,I can not answer the question because of the insufficient information in documents.,0
 38,openai/gpt-oss-120b,info_integration,What were the inflation and unemployment rates in the U.S. in August?,I can not answer the question because of the insufficient information in documents.,0
 39,openai/gpt-oss-120b,info_integration,When and where is ACL 2023 taking place?,"**ACL 2023 (the annual meeting of the Association for Computational Linguistics) is being held in person starting on July 9, 2023.**  
@@ -181,12 +181,12 @@ The correct information is that **Margot Robbie** stars as **Barbie** and **Ryan
 
 These figures are consistent with reliable box‑office reports for *Avatar: The Way of Water*’s debut weekend.",1
 65,openai/gpt-oss-120b,info_integration,What movies won the Oscars for Best Animated Film and Best Picture in 2023?,"- **Best Animated Film (Best Animated Feature)** – *Guillermo del Toro’s Pinocchio*  
-- **Best Picture** – *Everything Everywhere All at Once*",0
+- **Best Picture** – *Everything Everywhere All at Once*",1
 66,openai/gpt-oss-120b,info_integration,Which teams won the Peach Bowl 2022 and Super Bowl 2022?,I can not answer the question because of the insufficient information in documents.,0
 67,openai/gpt-oss-120b,info_integration,What are the prices of Microsoft 365 Basic per month and per year?,"There are factual errors in the provided documents.  
 
 The correct pricing for Microsoft 365 Basic is **USD 1.99 per month** and **USD 19.99 per year**.",0
-68,openai/gpt-oss-120b,info_integration,When does Scream VI release amd who directed it?,"Scream VI is scheduled to hit theaters on **March 10, 2023**, and it is directed by **Matt Bettinelli‑Olpin and Tyler Gillett**.",0
+68,openai/gpt-oss-120b,info_integration,When does Scream VI release amd who directed it?,"Scream VI is scheduled to hit theaters on **March 10, 2023**, and it is directed by **Matt Bettinelli‑Olpin and Tyler Gillett**.",1
 69,openai/gpt-oss-120b,info_integration,What was the annual GDP growth rates of the U.S. and China economy in 2022?,"The documents give the following annual GDP‑growth figures for 2022:
 
 * **United States:** Real GDP rose **about 2.1 %** in 2022 (from the 2021 annual level to the 2022 annual level).【Document】  

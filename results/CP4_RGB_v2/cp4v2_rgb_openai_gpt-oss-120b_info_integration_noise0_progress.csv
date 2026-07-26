@@ -58,7 +58,7 @@ The iPhone 14 Pro uses the newer **A16 Bionic** chip.",1
 - **Novak Djokovic** captured **5 titles** (the most on the ATP Tour that year).
 
 So, taken together they won **13 titles** in 2022.",1
-25,openai/gpt-oss-120b,info_integration,Who are the champions of the U.S. Open 2022 men's and women's singles?,The 2022 US Open singles champions were **Carlos Alcaraz** in the men’s draw and **Iga Świątek** in the women’s draw.,0
+25,openai/gpt-oss-120b,info_integration,Who are the champions of the U.S. Open 2022 men's and women's singles?,The 2022 US Open singles champions were **Carlos Alcaraz** in the men’s draw and **Iga Świątek** in the women’s draw.,1
 26,openai/gpt-oss-120b,info_integration,What were Tesla's revenues in Q1 and Q2 of 2022 respectively?,"Tesla’s revenues were:
 
 - **Q1 2022:** $18.76 billion  
@@ -95,7 +95,7 @@ GPT‑4 was released later, on **March 14, 2023**.",1
 These figures are reported by the Bureau of Labor Statistics (BLS) within the document.",0
 34,openai/gpt-oss-120b,info_integration,Where and when did Queen Elizabeth II die?,"Queen Elizabeth II died at her Balmoral estate (Balmoral Castle) in Scotland on **8 September 2022**, at **15:10 BST (3:10 p.m. UK time)**.",1
 35,openai/gpt-oss-120b,info_integration,Who stars as Susie Wallis and who is the director of Susie Searches?,"Kiersey Clemons stars as Susie Wallis, and the film is written and directed by Sophie Kargman.",1
-36,openai/gpt-oss-120b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The men's year‑end No. 1 in 2022 was **Carlos Alcaraz**, and the women's year‑end No. 1 in 2022 was **Iga Świątek**.",0
+36,openai/gpt-oss-120b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The men's year‑end No. 1 in 2022 was **Carlos Alcaraz**, and the women's year‑end No. 1 in 2022 was **Iga Świątek**.",1
 37,openai/gpt-oss-120b,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,"Columbia University was ranked **22nd** in the QS World University Rankings for 2023.  
 Carnegie Mellon University (CMU) was ranked **52nd** in the QS World University Rankings for 2023.",1
 38,openai/gpt-oss-120b,info_integration,What were the inflation and unemployment rates in the U.S. in August?,I can not answer the question because of the insufficient information in documents.,0
@@ -151,12 +151,12 @@ So, in November 2022 the United States had an unemployment rate of about **3
 - **Women’s Lacrosse Championship:** Saturday, May 6, 2023 (the women's championship game was played and the title was celebrated).",1
 64,openai/gpt-oss-120b,info_integration,How much did Avatar: The Way of Water earn in its debut weekend at U.S. and worldwide?,"According to the information in the provided document, **Avatar: The Way of Water earned $134 million in its debut (opening) weekend in the United States (domestic box office)**, and **a total of $435 million worldwide (including the $301 million from international markets)**.",1
 65,openai/gpt-oss-120b,info_integration,What movies won the Oscars for Best Animated Film and Best Picture in 2023?,"- **Best Animated Feature (2023):** *Guillermo del Toro’s Pinocchio*  
-- **Best Picture (2023):** *Everything Everywhere All at Once*",0
+- **Best Picture (2023):** *Everything Everywhere All at Once*",1
 66,openai/gpt-oss-120b,info_integration,Which teams won the Peach Bowl 2022 and Super Bowl 2022?,"- **Peach Bowl 2022:** The Georgia Bulldogs defeated Ohio State, winning 42 – 41.  
 - **Super Bowl 2022 (Super Bowl LVI):** The Los Angeles Rams defeated the Cincinnati Bengals, winning 23 – 20.",1
 67,openai/gpt-oss-120b,info_integration,What are the prices of Microsoft 365 Basic per month and per year?,The document states that Microsoft 365 Basic is priced at **USD 1.99 per month** (or **USD 19.99 per year**).,0
 68,openai/gpt-oss-120b,info_integration,When does Scream VI release amd who directed it?,"Scream VI opened in theaters on **March 10, 2023** (after a March 6, 2023 premiere at the AMC Lincoln Square Theater).  
-The film was directed by **Matt Bettinelli‑Olpin and Tyler Gillett**.",0
+The film was directed by **Matt Bettinelli‑Olpin and Tyler Gillett**.",1
 69,openai/gpt-oss-120b,info_integration,What was the annual GDP growth rates of the U.S. and China economy in 2022?,"The documents indicate that in 2022:
 
 - The United States’ real gross domestic product grew about **2.1 percent** year‑over‑year.  

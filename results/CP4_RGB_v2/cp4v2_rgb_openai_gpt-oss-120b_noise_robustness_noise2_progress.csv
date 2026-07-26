@@ -75,7 +75,7 @@ Rock briefly reacted but continued his presentation. A few minutes later Smith�
 53,openai/gpt-oss-120b,noise_robustness,0.2,Who won the men's singles Australian Open 2022?,Rafael Nadal won the men’s singles title at the 2022 Australian Open.,1
 54,openai/gpt-oss-120b,noise_robustness,0.2,Who won the men's singles Australian Open 2023?,Novak Djokovic won the men’s singles title at the 2023 Australian Open.,1
 55,openai/gpt-oss-120b,noise_robustness,0.2,Who won the women's singles French Open 2022?,Iga Swiatek won the women's singles title at the 2022 French Open.,1
-56,openai/gpt-oss-120b,noise_robustness,0.2,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,0
+56,openai/gpt-oss-120b,noise_robustness,0.2,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,1
 57,openai/gpt-oss-120b,noise_robustness,0.2,Who is the runner-up in the women's singles at the 2023 French Open?,The runner‑up in the women's singles at the 2023 French Open was **Karolina Muchova**.,1
 58,openai/gpt-oss-120b,noise_robustness,0.2,Who won the men's singles French Open 2022?,Rafael Nadal won the men’s singles title at the 2022 French Open.,1
 59,openai/gpt-oss-120b,noise_robustness,0.2,Who won the men's singles French Open 2023?,Novak Djokovic won the men’s singles title at the 2023 French Open.,1
@@ -142,7 +142,7 @@ Rock briefly reacted but continued his presentation. A few minutes later Smith�
 - **3.7 %** (seasonally adjusted)  
 
 So the unemployment rate was about 3.8 % overall, with the seasonally‑adjusted figure at 3.7 %.",0
-118,openai/gpt-oss-120b,noise_robustness,0.2,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost to Australian player **Ajla Tomljanović** in her final U.S. Open match.,0
+118,openai/gpt-oss-120b,noise_robustness,0.2,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost to Australian player **Ajla Tomljanović** in her final U.S. Open match.,1
 119,openai/gpt-oss-120b,noise_robustness,0.2,How many people were injured in the shuttle van accident on Palisades Interstate Parkway?,Eight people were injured in the shuttle‑van accident on the Palisades Interstate Parkway.,1
 120,openai/gpt-oss-120b,noise_robustness,0.2,Who is the head coach of Virginia Tech football?,The head coach of Virginia Tech football is **Brent Pry**.,1
 121,openai/gpt-oss-120b,noise_robustness,0.2,How did Tanya Pardazi die?,"Tanya Pardazi died in a sky‑diving accident. While on her first solo jump after completing a course with Skydive Toronto, her main parachute opened low and began to spin, leaving insufficient altitude for the reserve chute to inflate. She suffered fatal injuries from the resulting crash.",0
@@ -177,7 +177,7 @@ So the unemployment rate was about 3.8 % overall, with the seasonally‑adjust
 143,openai/gpt-oss-120b,noise_robustness,0.2,What is men's year-end No 1 in tennis in 2022?,The men's year‑end No. 1 in tennis for 2022 is **Carlos Alcaraz**.,1
 144,openai/gpt-oss-120b,noise_robustness,0.2,Who was playing Lex Luthor in Titans?,Titus Welliver is playing Lex Luthor in the fourth season of Titans.,1
 145,openai/gpt-oss-120b,noise_robustness,0.2,What is Columbia University's QS ranking in 2023?,Columbia University was ranked **22nd** in the QS World University Rankings for 2023.,1
-146,openai/gpt-oss-120b,noise_robustness,0.2,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Emmy for Lead Actor in a Drama Series was **Lee Jung‑jae**.,0
+146,openai/gpt-oss-120b,noise_robustness,0.2,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Emmy for Lead Actor in a Drama Series was **Lee Jung‑jae**.,1
 147,openai/gpt-oss-120b,noise_robustness,0.2,How much did Google acquire Mandiant for?,Google acquired Mandiant for approximately **$5.4 billion**.,1
 148,openai/gpt-oss-120b,noise_robustness,0.2,What was the inflation rate in the U.S. in August 2022?,The inflation rate in the United States in August 2022 was **8.3 %** year‑over‑year.,0
 149,openai/gpt-oss-120b,noise_robustness,0.2,Who is receiving the 39th Walter Cronkite Award for Excellence in Journalism?,"Gayle King, the co‑host of CBS Mornings, is the recipient of the 39th Walter Cronkite Award for Excellence in Journalism.",1
@@ -263,7 +263,7 @@ So the unemployment rate was about 3.8 % overall, with the seasonally‑adjust
 229,openai/gpt-oss-120b,noise_robustness,0.2,Who is the CEO of Yuga Labs?,The CEO of Yuga Labs is **Daniel Alegre**.,1
 230,openai/gpt-oss-120b,noise_robustness,0.2,How much did Avatar: The Way of Water earn in its debut weekend at U.S.?,Avatar: The Way of Water earned about **$134 million** in its debut weekend in the United States.,1
 231,openai/gpt-oss-120b,noise_robustness,0.2,When was the Final Fantasy Pixel Remaster Series be released on Nintendo Switch?,"The Final Fantasy Pixel Remaster series was released on Nintendo Switch on **April 19, 2023** (available for download at 8:00 am PDT / 11:00 am EDT).",1
-232,openai/gpt-oss-120b,noise_robustness,0.2,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature in 2023 was awarded to **“Guillermo del Toro’s Pinocchio.”**,0
+232,openai/gpt-oss-120b,noise_robustness,0.2,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature in 2023 was awarded to **“Guillermo del Toro’s Pinocchio.”**,1
 233,openai/gpt-oss-120b,noise_robustness,0.2,Who discovered asteroid 2022 YG?,The asteroid 2022 YG was discovered by amateur astronomer Gennadiy Borisov.,1
 234,openai/gpt-oss-120b,noise_robustness,0.2,Which team won the Peach Bowl 2022?,"Georgia won the 2022 Peach Bowl, defeating Ohio State 42–41.",1
 235,openai/gpt-oss-120b,noise_robustness,0.2,Which team won the 2023 Desert Hockey Classic?,Michigan Tech won the 2023 Desert Hockey Classic.,1

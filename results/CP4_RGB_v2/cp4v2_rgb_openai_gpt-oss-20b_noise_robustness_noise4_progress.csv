@@ -62,8 +62,8 @@ id,model,ability,noise_ratio,query,model_response,accuracy
 52,openai/gpt-oss-20b,noise_robustness,0.4,Who won the women's singles Australian Open 2023?,Aryna Sabalenka won the women’s singles title at the 2023 Australian Open.,1
 53,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles Australian Open 2022?,The men's singles title at the 2022 Australian Open was won by **Rafael Nadal**.,1
 54,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles Australian Open 2023?,The men's singles title at the 2023 Australian Open was won by **Novak Djokovic**.,1
-55,openai/gpt-oss-20b,noise_robustness,0.4,Who won the women's singles French Open 2022?,Iga Świątek won the women’s singles title at the 2022 French Open.,0
-56,openai/gpt-oss-20b,noise_robustness,0.4,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,0
+55,openai/gpt-oss-20b,noise_robustness,0.4,Who won the women's singles French Open 2022?,Iga Świątek won the women’s singles title at the 2022 French Open.,1
+56,openai/gpt-oss-20b,noise_robustness,0.4,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,1
 57,openai/gpt-oss-20b,noise_robustness,0.4,Who is the runner-up in the women's singles at the 2023 French Open?,The runner‑up in the women’s singles at the 2023 French Open was **Karolina Muchova**.,1
 58,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles French Open 2022?,The men's singles French Open 2022 was won by **Rafael Nadal**.,1
 59,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles French Open 2023?,Novak Djokovic won the men's singles title at the 2023 French Open.,1
@@ -72,7 +72,7 @@ id,model,ability,noise_ratio,query,model_response,accuracy
 62,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles wimbledon 2022?,Novak Djokovic won the men’s singles title at Wimbledon 2022.,1
 63,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles wimbledon 2023?,Carlos Alcaraz won the men’s singles title at Wimbledon 2023.,1
 64,openai/gpt-oss-20b,noise_robustness,0.4,How many titles has Swiatek won in 2022 season?,Iga Świątek won **eight titles** during the 2022 season.,1
-65,openai/gpt-oss-20b,noise_robustness,0.4,who the women's singles U.S. Open 2022?,Iga Świątek won the women’s singles title at the 2022 U.S. Open.,0
+65,openai/gpt-oss-20b,noise_robustness,0.4,who the women's singles U.S. Open 2022?,Iga Świątek won the women’s singles title at the 2022 U.S. Open.,1
 66,openai/gpt-oss-20b,noise_robustness,0.4,Who won the men's singles U.S. Open 2022?,Carlos Alcaraz won the men’s singles title at the 2022 U.S. Open.,1
 67,openai/gpt-oss-20b,noise_robustness,0.4,Who is the new head coach of the Virginia Tech football team in 2022?,Brent Pry.,1
 68,openai/gpt-oss-20b,noise_robustness,0.4,Where is Consensus 2022 taking place?,"Consensus 2022 is taking place in **Austin, Texas**.",1
@@ -161,7 +161,7 @@ The club is currently owned by an **American investment group – RedBird Capi
 143,openai/gpt-oss-20b,noise_robustness,0.4,What is men's year-end No 1 in tennis in 2022?,The men's year‑end No 1 in tennis for 2022 was **Carlos Alcaraz**.,1
 144,openai/gpt-oss-20b,noise_robustness,0.4,Who was playing Lex Luthor in Titans?,The role of Lex Luthor in *Titans* is played by actor **Titus Welliver**.,1
 145,openai/gpt-oss-20b,noise_robustness,0.4,What is Columbia University's QS ranking in 2023?,Columbia University was ranked **22nd** in the QS World University Rankings for 2023.,1
-146,openai/gpt-oss-20b,noise_robustness,0.4,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Emmy for Lead Actor in a Drama Series was **Lee Jung‑jae** for his role as Seong Gi‑hun in *Squid Game*.,0
+146,openai/gpt-oss-20b,noise_robustness,0.4,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Emmy for Lead Actor in a Drama Series was **Lee Jung‑jae** for his role as Seong Gi‑hun in *Squid Game*.,1
 147,openai/gpt-oss-20b,noise_robustness,0.4,How much did Google acquire Mandiant for?,Google acquired Mandiant for **$5.4 billion**.,1
 148,openai/gpt-oss-20b,noise_robustness,0.4,What was the inflation rate in the U.S. in August 2022?,The inflation rate in the U.S. in August 2022 was **8.3 %**.,0
 149,openai/gpt-oss-20b,noise_robustness,0.4,Who is receiving the 39th Walter Cronkite Award for Excellence in Journalism?,The 39th Walter Cronkite Award for Excellence in Journalism is being presented to **Gayle King**.,1
@@ -247,7 +247,7 @@ The club is currently owned by an **American investment group – RedBird Capi
 229,openai/gpt-oss-20b,noise_robustness,0.4,Who is the CEO of Yuga Labs?,The CEO of Yuga Labs is Daniel Alegre.,1
 230,openai/gpt-oss-20b,noise_robustness,0.4,How much did Avatar: The Way of Water earn in its debut weekend at U.S.?,Avatar: The Way of Water earned **$134 million** in its debut weekend at U.S. theaters.,1
 231,openai/gpt-oss-20b,noise_robustness,0.4,When was the Final Fantasy Pixel Remaster Series be released on Nintendo Switch?,"The Final Fantasy Pixel Remaster Series was released on Nintendo Switch on **April 19, 2023**.",1
-232,openai/gpt-oss-20b,noise_robustness,0.4,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature Film in 2023 was won by **“Guillermo del Toro’s Pinocchio.”**,0
+232,openai/gpt-oss-20b,noise_robustness,0.4,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature Film in 2023 was won by **“Guillermo del Toro’s Pinocchio.”**,1
 233,openai/gpt-oss-20b,noise_robustness,0.4,Who discovered asteroid 2022 YG?,Asteroid 2022 YG was discovered by amateur astronomer **Gennadiy Borisov**.,1
 234,openai/gpt-oss-20b,noise_robustness,0.4,Which team won the Peach Bowl 2022?,The Peach Bowl 2022 was won by the **Georgia Bulldogs**.,1
 235,openai/gpt-oss-20b,noise_robustness,0.4,Which team won the 2023 Desert Hockey Classic?,Michigan Tech won the 2023 Desert Hockey Classic.,1

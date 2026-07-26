@@ -44,11 +44,11 @@ Song of the Year (2022 GRAMMYs): **“Just Like That”**",1
 19,openai/gpt-oss-20b,info_integration,Who are the champions of the French Open 2022 in men's and women's singles? ,"The champions of the 2022 French Open were:
 
 - **Men’s singles:** Rafael Nadal  
-- **Women’s singles:** Iga Świątek",0
+- **Women’s singles:** Iga Świątek",1
 20,openai/gpt-oss-20b,info_integration,Who won the men's and women's singles French Open 2023?,"The 2023 French Open champions were:
 
 - **Men’s singles:** Novak Djokovic  
-- **Women’s singles:** Iga Świątek",0
+- **Women’s singles:** Iga Świątek",1
 21,openai/gpt-oss-20b,info_integration,Who are the runners-up in the men's and women's singles at the 2023 French Open?,"The runners‑up were:
 
 - **Men’s singles:** Casper Ruud  
@@ -61,7 +61,7 @@ Song of the Year (2022 GRAMMYs): **“Just Like That”**",1
 25,openai/gpt-oss-20b,info_integration,Who are the champions of the U.S. Open 2022 men's and women's singles?,"The champions of the 2022 U.S. Open were:
 
 - **Men’s singles:** **Carlos Alcaraz**  
-- **Women’s singles:** **Iga Świątek**",0
+- **Women’s singles:** **Iga Świątek**",1
 26,openai/gpt-oss-20b,info_integration,What were Tesla's revenues in Q1 and Q2 of 2022 respectively?,"Tesla’s reported revenues were:
 
 - **Q1 2022:** **$18.76 billion**  
@@ -94,7 +94,7 @@ Alphabet (Google)’s revenue for Q3 2022 was **$69.09 billion**.",1
 36,openai/gpt-oss-20b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The year‑end No. 1 rankings for 2022 were:
 
 - **Men’s tennis:** Carlos Alcaraz  
-- **Women’s tennis:** Iga Świątek",0
+- **Women’s tennis:** Iga Świątek",1
 37,openai/gpt-oss-20b,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,I can not answer the question because of the insufficient information in documents.,0
 38,openai/gpt-oss-20b,info_integration,What were the inflation and unemployment rates in the U.S. in August?,I can not answer the question because of the insufficient information in documents.,0
 39,openai/gpt-oss-20b,info_integration,When and where is ACL 2023 taking place?,"ACL 2023 will be held in person starting **July 9, 2023** at the **Westin Harbour Castle in Toronto, Canada** (1 Harbour Square, Toronto, ON M5J 1A6).",1
@@ -146,12 +146,12 @@ Germany did not reach the round‑of‑16; they were eliminated in the group sta
 65,openai/gpt-oss-20b,info_integration,What movies won the Oscars for Best Animated Film and Best Picture in 2023?,"The 2023 Oscars awarded:
 
 - **Best Animated Feature** – *Guillermo del Toro’s Pinocchio*  
-- **Best Picture** – *Everything Everywhere All at Once*",0
+- **Best Picture** – *Everything Everywhere All at Once*",1
 66,openai/gpt-oss-20b,info_integration,Which teams won the Peach Bowl 2022 and Super Bowl 2022?,I can not answer the question because of the insufficient information in documents.,0
 67,openai/gpt-oss-20b,info_integration,What are the prices of Microsoft 365 Basic per month and per year?,"There are factual errors in the provided documents.  
 The correct pricing for Microsoft 365 Basic is **$1.99 per month** and **$19.99 per year**.",1
 68,openai/gpt-oss-20b,info_integration,When does Scream VI release amd who directed it?,"Scream VI is scheduled to hit cinemas on **March 10, 2023**.  
-The film is directed by **Matt Bettinelli‑Olpin** and **Tyler Gillett**.",0
+The film is directed by **Matt Bettinelli‑Olpin** and **Tyler Gillett**.",1
 69,openai/gpt-oss-20b,info_integration,What was the annual GDP growth rates of the U.S. and China economy in 2022?,"The U.S. economy grew by **about 2.1 %** in real GDP in 2022, while China’s economy grew by **about 3 %** in 2022.",0
 70,openai/gpt-oss-20b,info_integration,Who will be playing the role of Billy Batson and Hespera in Shazam! Fury of the Gods?,I can not answer the question because of the insufficient information in documents.,0
 71,openai/gpt-oss-20b,info_integration,Who won the Best R&B Album and Best Rap Album at the 2023 Grammys?,I can not answer the question because of the insufficient information in documents.,0

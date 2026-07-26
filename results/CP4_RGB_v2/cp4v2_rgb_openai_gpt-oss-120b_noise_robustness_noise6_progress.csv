@@ -72,7 +72,7 @@ In the United States the live broadcast muted the incident because of federal 
 53,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles Australian Open 2022?,Rafael Nadal won the men’s singles title at the 2022 Australian Open.,1
 54,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles Australian Open 2023?,Novak Djokovic won the men's singles title at the 2023 Australian Open.,1
 55,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles French Open 2022?,Iga Swiatek won the women’s singles title at the 2022 French Open.,1
-56,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,0
+56,openai/gpt-oss-120b,noise_robustness,0.6,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,1
 57,openai/gpt-oss-120b,noise_robustness,0.6,Who is the runner-up in the women's singles at the 2023 French Open?,The runner‑up in the women's singles at the 2023 French Open was **Karolina Muchova**.,1
 58,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles French Open 2022?,Rafael Nadal won the men’s singles title at the 2022 French Open.,1
 59,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles French Open 2023?,Novak Djokovic won the men’s singles title at the 2023 French Open.,1
@@ -83,7 +83,7 @@ In the United States the live broadcast muted the incident because of federal 
 64,openai/gpt-oss-120b,noise_robustness,0.6,How many titles has Swiatek won in 2022 season?,"There are factual errors in the provided documents. While one passage says Swiatek won seven titles in 2022, other sections correctly state that she captured eight titles that season—a figure that matches the official WTA record for 2022.  
 
 **Correct answer:** Iga Świątek won **8 titles** during the 2022 season.",1
-65,openai/gpt-oss-120b,noise_robustness,0.6,who the women's singles U.S. Open 2022?,"The women's singles title at the 2022 U.S. Open was won by **World No. 1 Iga Świątek**, who defeated Ons Jabeur 6‑2, 7‑6 (7‑5) in the final.",0
+65,openai/gpt-oss-120b,noise_robustness,0.6,who the women's singles U.S. Open 2022?,"The women's singles title at the 2022 U.S. Open was won by **World No. 1 Iga Świątek**, who defeated Ons Jabeur 6‑2, 7‑6 (7‑5) in the final.",1
 66,openai/gpt-oss-120b,noise_robustness,0.6,Who won the men's singles U.S. Open 2022?,Carlos Alcaraz won the men’s singles title at the 2022 U.S. Open.,1
 67,openai/gpt-oss-120b,noise_robustness,0.6,Who is the new head coach of the Virginia Tech football team in 2022?,The new head coach of the Virginia Tech football team in 2022 is **Brent Pry**.,1
 68,openai/gpt-oss-120b,noise_robustness,0.6,Where is Consensus 2022 taking place?,"Consensus 2022 is taking place in **Austin, Texas** (June 9–12, 2022).",1
@@ -143,7 +143,7 @@ Toulouse FC is now owned primarily by **RedBird Capital Partners**, which holds 
 * **Not seasonally adjusted unemployment rate:** **3.8 %**  
 
 So, depending on the adjustment, the U.S. unemployment rate in August 2022 was either 3.7 % (seasonally adjusted) or 3.8 % (not seasonally adjusted).",0
-118,openai/gpt-oss-120b,noise_robustness,0.6,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost to Australia’s Ajla Tomljanović in her final U.S. Open match.,0
+118,openai/gpt-oss-120b,noise_robustness,0.6,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost to Australia’s Ajla Tomljanović in her final U.S. Open match.,1
 119,openai/gpt-oss-120b,noise_robustness,0.6,How many people were injured in the shuttle van accident on Palisades Interstate Parkway?,Eight people were injured in the shuttle van accident on the Palisades Interstate Parkway.,1
 120,openai/gpt-oss-120b,noise_robustness,0.6,Who is the head coach of Virginia Tech football?,The head coach of Virginia Tech football is **Brent Pry**.,1
 121,openai/gpt-oss-120b,noise_robustness,0.6,How did Tanya Pardazi die?,"Tanya Pardazi died in a sky‑diving accident. While attempting her first solo jump after completing a course with Skydive Toronto, she ran into trouble and was killed in the fall at the Skydive Toronto facility on the evening of 27 August.",0
@@ -178,7 +178,7 @@ So, depending on the adjustment, the U.S. unemployment rate in August 2022 was
 143,openai/gpt-oss-120b,noise_robustness,0.6,What is men's year-end No 1 in tennis in 2022?,The men's year‑end No. 1 in tennis for 2022 was **Carlos Alcaraz**.,1
 144,openai/gpt-oss-120b,noise_robustness,0.6,Who was playing Lex Luthor in Titans?,Titus Welliver is playing Lex Luthor in Titans.,1
 145,openai/gpt-oss-120b,noise_robustness,0.6,What is Columbia University's QS ranking in 2023?,Columbia University was ranked **22nd** in the QS World University Rankings for 2023.,1
-146,openai/gpt-oss-120b,noise_robustness,0.6,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Emmy for Lead Actor in a Drama Series was **Lee Jung‑jae**.,0
+146,openai/gpt-oss-120b,noise_robustness,0.6,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Emmy for Lead Actor in a Drama Series was **Lee Jung‑jae**.,1
 147,openai/gpt-oss-120b,noise_robustness,0.6,How much did Google acquire Mandiant for?,Google acquired Mandiant for **$5.4 billion**.,1
 148,openai/gpt-oss-120b,noise_robustness,0.6,What was the inflation rate in the U.S. in August 2022?,"The inflation rate in the United States for August 2022 was **about 8.3 % annualized**, according to the Bureau of Labor Statistics.",0
 149,openai/gpt-oss-120b,noise_robustness,0.6,Who is receiving the 39th Walter Cronkite Award for Excellence in Journalism?,"Gayle King, the co‑host of CBS Mornings, is the recipient of the 39th Walter Cronkite Award for Excellence in Journalism.",1
@@ -223,7 +223,7 @@ So, depending on the adjustment, the U.S. unemployment rate in August 2022 was
 188,openai/gpt-oss-120b,noise_robustness,0.6,What gaming software development studio did Riot Games acquire?,Riot Games acquired the gaming software development studio **Wargaming Sydney**.,1
 189,openai/gpt-oss-120b,noise_robustness,0.6,Who is the new CEO of Yahoo?,The new CEO of Yahoo is **Jim Lanzone**.,1
 190,openai/gpt-oss-120b,noise_robustness,0.6,What is the subscriber growth of Netflix in Q3 2022?,The document states that Netflix added **2.41 million net new paid subscribers** in the third quarter of 2022.,1
-191,openai/gpt-oss-120b,noise_robustness,0.6,"What is the title of Chicago P.D. Season 10, Episode 4?","The title of Chicago P.D. Season 10, Episode 4 is **“Donde Vives.”**",0
+191,openai/gpt-oss-120b,noise_robustness,0.6,"What is the title of Chicago P.D. Season 10, Episode 4?","The title of Chicago P.D. Season 10, Episode 4 is **“Donde Vives.”**",1
 192,openai/gpt-oss-120b,noise_robustness,0.6,How much does the YouTube Premium family plan cost now?,The YouTube Premium Family plan now costs **$22.99 per month**.,1
 193,openai/gpt-oss-120b,noise_robustness,0.6,What is the release date of God of War Ragnarok?,"The game was released on **November 9, 2022**.",1
 194,openai/gpt-oss-120b,noise_robustness,0.6,Who voices Batman in Batwheels?,Ethan Hawke provides the voice of Batman (Bruce Wayne) in *Batwheels*.,1
@@ -264,7 +264,7 @@ So, depending on the adjustment, the U.S. unemployment rate in August 2022 was
 229,openai/gpt-oss-120b,noise_robustness,0.6,Who is the CEO of Yuga Labs?,The CEO of Yuga Labs is **Daniel Alegre**.,1
 230,openai/gpt-oss-120b,noise_robustness,0.6,How much did Avatar: The Way of Water earn in its debut weekend at U.S.?,Avatar: The Way of Water earned about **$134 million** in its debut (opening) weekend in the United States.,1
 231,openai/gpt-oss-120b,noise_robustness,0.6,When was the Final Fantasy Pixel Remaster Series be released on Nintendo Switch?,"The Final Fantasy Pixel Remaster series was released on Nintendo Switch on **April 19, 2023**.",1
-232,openai/gpt-oss-120b,noise_robustness,0.6,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature in 2023 was won by **“Guillermo del Toro’s Pinocchio.”**,0
+232,openai/gpt-oss-120b,noise_robustness,0.6,What movie won the Oscar for Best Animated Film in 2023?,The Oscar for Best Animated Feature in 2023 was won by **“Guillermo del Toro’s Pinocchio.”**,1
 233,openai/gpt-oss-120b,noise_robustness,0.6,Who discovered asteroid 2022 YG?,Asteroid 2022 YG was discovered by amateur astronomer Gennadiy Borisov.,1
 234,openai/gpt-oss-120b,noise_robustness,0.6,Which team won the Peach Bowl 2022?,Georgia won the 2022 Peach Bowl.,1
 235,openai/gpt-oss-120b,noise_robustness,0.6,Which team won the 2023 Desert Hockey Classic?,Michigan Tech won the 2023 Desert Hockey Classic.,1

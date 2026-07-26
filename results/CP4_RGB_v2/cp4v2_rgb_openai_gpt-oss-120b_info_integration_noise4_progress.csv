@@ -53,7 +53,7 @@ These results are stated in the provided document.",1
 19,openai/gpt-oss-120b,info_integration,Who are the champions of the French Open 2022 in men's and women's singles? ,"The 2022 French Open singles champions were:
 
 - **Men’s singles:** **Rafael Nadal**  
-- **Women’s singles:** **Iga Świątek**",0
+- **Women’s singles:** **Iga Świątek**",1
 20,openai/gpt-oss-120b,info_integration,Who won the men's and women's singles French Open 2023?,"The 2023 French Open champions were:
 
 - **Men’s singles:** Novak Djokovic defeated Casper Ruud to win the title.  
@@ -104,7 +104,7 @@ Google (Alphabet)’s revenue in Q3 2022 was **$69.09 billion**.",1
 33,openai/gpt-oss-120b,info_integration,What were the unemployment rate in August and September  2022 in the U.S.?,I can not answer the question because of the insufficient information in documents.,0
 34,openai/gpt-oss-120b,info_integration,Where and when did Queen Elizabeth II die?,Queen Elizabeth II died at her Balmoral estate in Scotland on **8 September 2022** at **15:10 BST (3:10 p.m. UK time)**.,1
 35,openai/gpt-oss-120b,info_integration,Who stars as Susie Wallis and who is the director of Susie Searches?,I can not answer the question because of the insufficient information in documents.,0
-36,openai/gpt-oss-120b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The men's year‑end No. 1 for 2022 was **Carlos Alcaraz**, and the women’s year‑end No. 1 was **Iga Świątek**.",0
+36,openai/gpt-oss-120b,info_integration,Who are the men's and women's year-end No 1 in tennis in 2022?,"The men's year‑end No. 1 for 2022 was **Carlos Alcaraz**, and the women’s year‑end No. 1 was **Iga Świątek**.",1
 37,openai/gpt-oss-120b,info_integration,What is Columbia University's and CMU's QS rankings in 2023?,I can not answer the question because of the insufficient information in documents.,0
 38,openai/gpt-oss-120b,info_integration,What were the inflation and unemployment rates in the U.S. in August?,I can not answer the question because of the insufficient information in documents.,0
 39,openai/gpt-oss-120b,info_integration,When and where is ACL 2023 taking place?,"ACL 2023 is scheduled to be held **in person starting on July 9, 2023** at the **Westin Harbour Castle in Toronto, Canada** (address: 1 Harbour Square, Toronto, ON M5J 1A6; phone +1 416‑869‑1600).",1
@@ -180,7 +180,7 @@ These numbers are supported by the majority of the excerpts, while the mention o
 65,openai/gpt-oss-120b,info_integration,What movies won the Oscars for Best Animated Film and Best Picture in 2023?,"The 2023 Academy Awards honored:
 
 - **Best Animated Film (Best Animated Feature):** *Guillermo del Toro’s Pinocchio*  
-- **Best Picture:** *Everything Everywhere All at Once*",0
+- **Best Picture:** *Everything Everywhere All at Once*",1
 66,openai/gpt-oss-120b,info_integration,Which teams won the Peach Bowl 2022 and Super Bowl 2022?,"There are factual errors in the provided documents.  
 
 **Correct answer**
@@ -191,7 +191,7 @@ These numbers are supported by the majority of the excerpts, while the mention o
 
 The correct pricing for Microsoft 365 Basic is **USD 1.99 per month** and **USD 19.99 per year**.",0
 68,openai/gpt-oss-120b,info_integration,When does Scream VI release amd who directed it?,"Scream VI is scheduled to hit theaters on **March 10, 2023**.  
-The film is directed by **Matt Bettinelli‑Olpin** and **Tyler Gillett**.",0
+The film is directed by **Matt Bettinelli‑Olpin** and **Tyler Gillett**.",1
 69,openai/gpt-oss-120b,info_integration,What was the annual GDP growth rates of the U.S. and China economy in 2022?,"In 2022:
 
 - **United States:** Real GDP grew by **about 2.1 %** year‑over‑year.  

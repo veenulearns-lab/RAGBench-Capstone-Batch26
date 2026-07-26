@@ -72,8 +72,8 @@ These two podium finishes gave her a complete set of Olympic medals (gold from t
 52,openai/gpt-oss-20b,noise_robustness,0.8,Who won the women's singles Australian Open 2023?,Aryna Sabalenka won the women’s singles title at the 2023 Australian Open.,1
 53,openai/gpt-oss-20b,noise_robustness,0.8,Who won the men's singles Australian Open 2022?,Rafael Nadal won the men's singles title at the 2022 Australian Open.,1
 54,openai/gpt-oss-20b,noise_robustness,0.8,Who won the men's singles Australian Open 2023?,The men's singles title at the 2023 Australian Open was won by **Novak Djokovic**.,1
-55,openai/gpt-oss-20b,noise_robustness,0.8,Who won the women's singles French Open 2022?,Iga Świątek.,0
-56,openai/gpt-oss-20b,noise_robustness,0.8,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,0
+55,openai/gpt-oss-20b,noise_robustness,0.8,Who won the women's singles French Open 2022?,Iga Świątek.,1
+56,openai/gpt-oss-20b,noise_robustness,0.8,Who won the women's singles French Open 2023?,Iga Świątek won the women’s singles title at the 2023 French Open.,1
 57,openai/gpt-oss-20b,noise_robustness,0.8,Who is the runner-up in the women's singles at the 2023 French Open?,The runner‑up in the women’s singles at the 2023 French Open was **Karolina Muchova**.,1
 58,openai/gpt-oss-20b,noise_robustness,0.8,Who won the men's singles French Open 2022?,The men's singles champion at the 2022 French Open was **Rafael Nadal**.,1
 59,openai/gpt-oss-20b,noise_robustness,0.8,Who won the men's singles French Open 2023?,Novak Djokovic.,1
@@ -136,7 +136,7 @@ He is also the current owner of the club, having taken over after the previous o
 115,openai/gpt-oss-20b,noise_robustness,0.8,Who acquired a stake in FromSoftware?,The stake in FromSoftware was acquired by **Kadokawa** (Kadokawa Corporation).,0
 116,openai/gpt-oss-20b,noise_robustness,0.8,Who is the new Coach for The Voice Season 22?,The new coach for The Voice Season 22 is **Camila Cabello**.,1
 117,openai/gpt-oss-20b,noise_robustness,0.8,What was the unemployment rate in August 2022 in U.S.?,I can not answer the question because of the insufficient information in documents.,0
-118,openai/gpt-oss-20b,noise_robustness,0.8,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost her last U.S. Open match to **Ajla Tomljanović**.,0
+118,openai/gpt-oss-20b,noise_robustness,0.8,Who did Serena Williams lose to in her last match at the U.S. Open?,Serena Williams lost her last U.S. Open match to **Ajla Tomljanović**.,1
 119,openai/gpt-oss-20b,noise_robustness,0.8,How many people were injured in the shuttle van accident on Palisades Interstate Parkway?,Eight people were injured in the shuttle van accident on Palisades Interstate Parkway.,1
 120,openai/gpt-oss-20b,noise_robustness,0.8,Who is the head coach of Virginia Tech football?,The head coach of Virginia Tech football is Brent Pry.,1
 121,openai/gpt-oss-20b,noise_robustness,0.8,How did Tanya Pardazi die?,Tanya Pardazi died in a skydiving accident at Skydive Toronto on the evening of August 27.,1
@@ -171,7 +171,7 @@ He is also the current owner of the club, having taken over after the previous o
 143,openai/gpt-oss-20b,noise_robustness,0.8,What is men's year-end No 1 in tennis in 2022?,The men's year‑end No. 1 in tennis for 2022 was **Carlos Alcaraz**.,1
 144,openai/gpt-oss-20b,noise_robustness,0.8,Who was playing Lex Luthor in Titans?,The actor playing Lex Luthor in *Titans* is **Titus Welliver**.,1
 145,openai/gpt-oss-20b,noise_robustness,0.8,What is Columbia University's QS ranking in 2023?,Columbia University was ranked **22nd** in the QS World University Rankings for 2023.,1
-146,openai/gpt-oss-20b,noise_robustness,0.8,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Primetime Emmy Award for Lead Actor in a Drama Series was **Lee Jung‑jae** for his performance in *Squid Game*.,0
+146,openai/gpt-oss-20b,noise_robustness,0.8,Who was the first Asian man to win Lead Actor in a Drama Series?,The first Asian man to win the Primetime Emmy Award for Lead Actor in a Drama Series was **Lee Jung‑jae** for his performance in *Squid Game*.,1
 147,openai/gpt-oss-20b,noise_robustness,0.8,How much did Google acquire Mandiant for?,Google acquired Mandiant for **$5.4 billion**.,1
 148,openai/gpt-oss-20b,noise_robustness,0.8,What was the inflation rate in the U.S. in August 2022?,The inflation rate in the U.S. in August 2022 was **8.3 %** (annualized).,0
 149,openai/gpt-oss-20b,noise_robustness,0.8,Who is receiving the 39th Walter Cronkite Award for Excellence in Journalism?,The 39th Walter Cronkite Award for Excellence in Journalism is being awarded to **Gayle King**.,1
