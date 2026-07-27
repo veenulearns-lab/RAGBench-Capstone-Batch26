@@ -85,6 +85,25 @@ retrieval, and metadata-aware chunking each underperforming individually in isol
 testing (see EXP-004, 006, 007) — the components combine better than they perform alone,
 at a small cost to Relevance/Utilization. **This is now the recommended Finance pipeline.**
 
+### Update: whole_doc_finbert_dense_sides — VALIDATED at 200 samples
+
+| Config | Rel RMSE↓ | Util RMSE↓ | Comp RMSE↓ | Adh AUCROC↑ | Samples |
+|---|---|---|---|---|---|
+| whole_doc + FinBERT + dense + sides order | 0.3534 | **0.1067** | 0.6035 | **0.6196** | 200 |
+| EXP-013 (previous best) | 0.3561 | 0.1583 | 0.5964 | 0.5905 | 197 |
+| Baseline | 0.3526 | 0.1387 | 0.6361 | 0.5212 | 197 |
+
+This candidate beats EXP-013 on Relevance, Utilization, and Adherence at full scale
+(only Completeness is marginally worse). As expected from the documented 25-vs-200
+sample instability, its 25-sample Adherence (0.7045) shrank at 200 samples (0.6196) —
+still real, still the best Adherence of any 200-sample config tested so far.
+
+Second candidate (`largesem_bge_dense_fwd`) still pending 200-sample validation —
+this section will be updated once that result is in. **Do not treat either candidate
+as final until both are validated and compared.**
+
+
+
 ### New candidate combos (25 samples, PRELIMINARY — not yet validated at 200)
 
 Testing gaps in the chunking/embedding/retrieval/rerank/context-order grid not
