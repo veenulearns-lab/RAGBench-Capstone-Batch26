@@ -84,6 +84,26 @@ This is the best Completeness and Adherence of any Finance run, despite FinBERT,
 retrieval, and metadata-aware chunking each underperforming individually in isolated
 testing (see EXP-004, 006, 007) — the components combine better than they perform alone,
 at a small cost to Relevance/Utilization. **This is now the recommended Finance pipeline.**
+
+### New candidate combos (25 samples, PRELIMINARY — not yet validated at 200)
+
+Testing gaps in the chunking/embedding/retrieval/rerank/context-order grid not
+covered by EXP-001–013. Two candidates beat EXP-013's 25-sample-equivalent
+Adherence and are queued for 200-sample validation:
+
+| Combo | Rel RMSE | Util RMSE | Comp RMSE | Adh AUCROC |
+|---|---|---|---|---|
+| whole_doc + FinBERT + dense + sides order | 0.4486 | 0.1780 | 0.6390 | **0.7045** |
+| large_semantic + BGE-large + dense + forward | 0.3736 | **0.0717** | 0.6216 | 0.6429 |
+
+Reranking (cross-encoder) tested on top of EXP-013's exact setup did NOT improve
+Adherence (0.4286 vs. EXP-013's 0.5905) — not adopted.
+
+**Caution:** given the documented 25-vs-200-sample Adherence instability (see EXP-010
+vs EXP-012), neither candidate above should be treated as a new best pipeline until
+validated at 200 samples. Full new-combo table: `results/finance_new_combos_25sample_preliminary.csv`.
+
+
 Full per-run scores: `results/finance_all_experiments_summary_table.csv` (13 experiments).
 
 
