@@ -253,5 +253,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 15,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the details in the IBM Java SDK Security Bulletin and the IBM Secure Engineering Web Portal:\n\n- **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21997194  \n- **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.14285714285714285,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.13513513513513514,
+      "utilization": 0.016891891891891893,
+      "completeness": 0.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 16,
+    "question": "Cannot launch RFT 8.2 \n\nHello.\n\nCould anyone can help to see why I cannot launch RFT 8.2? When I launch RFT. I get an error message--\"An error has occurred. See the log file...\" I check the log file. It shows\n\n!SESSION Mon Nov 04 12:46:16 CST 2013 ------------------------------------------\n!ENTRY org.eclipse.equinox.launcher 4 0 2013-11-04 12:46:16.359\n!MESSAGE Exception launching the Eclipse Platform:\n!STACK\njava.lang.ClassNotFoundException: org.eclipse.core.runtime.adaptor.EclipseStarter\n    at java.net.URLClassLoader.findClass(URLClassLoader.java:423)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:653)\n    at java.lang.ClassLoader.loadClass(ClassLoader.java:619)\n    at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:616)\n    at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)\n    at org.eclipse.equinox.launcher.Main.run(Main.java:1407)\n    at org.eclipse.equinox.launcher.Main.main(Main.java:1383)\n\nIf I launch RFT with -clean or -vm option, the same phenomenon occurs.",
+    "answer": "The log shows that the Eclipse platform that RFT 8.2 is built on cannot find the IBM\u202fMQ plug\u2011in it expects.  \nSpecifically:\n\n* The application **com.ibm.mq.explorer.ui.rcp.RcpApplication** is not in the Eclipse registry.  \n* The bundle **com.ibm.mq.osgi.allclient** cannot be resolved, which prevents that application (and the class **org.eclipse.core.runtime.adaptor.EclipseStarter**) from being loaded.\n\nBecause the required IBM\u202fMQ client bundle is missing or not resolved, the Eclipse runtime aborts with the \u201cClassNotFoundException\u201d and RFT will not start.\n\n**Fix** \u2013 install or correctly reference the IBM\u202fMQ client (the `com.ibm.mq.osgi.allclient` bundle) or remove the MQ\u2011related plug\u2011in from the RFT installation so that the Eclipse platform can start with a valid application. Once the missing bundle is available, RFT should launch normally.",
+    "pred": {
+      "relevance": 0.625,
+      "utilization": 0.375,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.024630541871921183,
+      "utilization": 0.029556650246305417,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 17,
+    "question": "How do I run the prerequisite scan for jazzSM? How do I run the prerequisite scan? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.044444444444444446,
+      "utilization": 0.02962962962962963,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 18,
+    "question": "What things are important to consider when installing a fix pack for IIB running on a multi-instance environment? I am planning to apply a fix pack to my current version of IBM Integration Bus (IIB) using multi-instance brokers and I am looking for any important information regarding the process.\n\nFor example:\n\n \n\n- installation and verification tasks\n \n\n- is it possible to back out this fix pack in case there are issues\n \n\n- any specific tasks for multi instance configuration",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.036734693877551024,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 19,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "Create a dummy VM guest to bypass the error.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.125,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
