@@ -338,5 +338,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8571428571428571,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "question": "Additional steps to apply fix pack to Decision Center \n\nWe are upgrading ODM 8.8.1 Decision Center to the latest 8.8.1.3.\n\nAre there any additional steps to apply the fixpack to Decision Center after we install the fixpack with Installation Manager?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.9166666666666666,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "The error occurs because the Installation Manager cannot locate the required repository files (the\u202f*.zip\u202fcontaining the fix\u2011pack binaries and the prerequisite features).  \nTo resolve it you need to:\n\n1. **Download the correct fix\u2011pack repository image** \u2013 get the WebSphere\u202fApplication\u202fServer\u202f7.0 fix\u2011pack zip (e.g.\u202f`was.7.0.0.33.fp.all_Part1of2.zip` from the IBM public repository\u202fftp://public.dhe.ibm.com/software/websphere/bpm/repositories/downloads/was/70033/).\n\n2. **Install the required prerequisite** \u2013 the WebSphere\u202fApplication\u202fServer\u202fv7.0 *Test Environment* extension must be installed before applying the BPM fix pack.  \n\n3. **Point Installation Manager at the downloaded repository** \u2013 in IBM Installation Manager choose *File\u202f\u2192\u202fPreferences\u202f\u2192\u202fRepositories* (or *Add Repository*) and browse to the directory where you unpacked the fix\u2011pack zip.\n\n4. **Verify that the missing features are present** \u2013 the error also mentions missing features such as `com.ibm.datatools.base.linux_2.1.200.v20131217_2357`. Those are part of the test\u2011environment extension; installing the extension will provide them.\n\nAfter the repository zip is available locally and the test\u2011environment extension is installed, re\u2011run the BPM 7.5.1.2 fix\u2011pack installation. The `CRIMC1020E: zip im.properties \u2026 not found` error should disappear and the fix pack will complete successfully.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.5,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
