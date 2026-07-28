@@ -168,5 +168,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "**StaleConnectionException in BPM/DB2 environments**\n\n- **Symptom**  \n  The log (or FFDC) shows a `StaleConnectionException`, e.g.:  \n\n  ```\n  com.ibm.websphere.ce.cm.StaleConnectionException:\n  [jcc][t4][2028][11149][3.58.136] Actual code point, 0x2413 does not match expected code point, 0x2408.\n  ERRORCODE=-4499, SQLSTATE=null\n  ```\n\n- **Cause**  \n  The DB2 JCC driver receives a fatal connection error from the resource\u2011adapter (for example, `jdbc/db2xa/ear/PUX1Q/DB_MIND`). This often occurs after a call to a z/OS stored procedure.\n\n- **Fix**  \n  The defect was corrected in **JCC driver version\u202f3.59.81** (IBM technote SWG1IC66739). This driver version is included with:  \n\n  * DB2\u202fv9.5\u202ffp6a\u202for later  \n  * DB2\u202fv9.7\u202ffp2\u202for later  \n\n- **Work\u2011around**  \n  1. Add `COMMIT ON RETURN YES` to the stored\u2011procedure definition on the host.  \n     *Note:* When the call participates in an XA transaction this may generate `SQL0751N` or `XAER_NOTA` on XA END; see technote\u202f1433093 for the restrictions.  \n  2. Ensure that APAR **IZ07301** is applied (see technote SWG1IZ07301).\n\n- **Result**  \n  Applying the corrected JCC driver (or the work\u2011around above) eliminates the fatal connection error that causes WebSphere Application Server to abort after the stored\u2011procedure call.",
+    "pred": {
+      "relevance": 0.7851239669421488,
+      "utilization": 0.09917355371900827,
+      "completeness": 0.12631578947368421,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "The error is caused by an outdated **resource\u2011environment\u2011provider** entry for the WP\u202fScriptingService.  \n\n**Fix it either permanently or temporarily:**\n\n**Permanent fix** \u2013 apply the IBM code fix that is included in the **WebSphere\u202fPortal\u202f8.5.0.0 Combined Cumulative Fixes** (Cumulative Fix\u202f05 \u2013 APAR\u202fPI31198 and Cumulative Fix\u202f06 \u2013 APAR\u202fPI36060). Install the appropriate cumulative fix for your Portal level via Fix Central.\n\n**Temporary/quick fix** \u2013 remove the offending custom property:\n\n1. Open the **WebSphere Application Server Administration Console**.  \n2. Go to **Resources \u2192 Resource environment providers \u2192 WP\u202fScriptingService \u2192 Custom properties**.  \n3. Find the custom\u2011property:  \n   * **Name:** `ServerExt.applications`  \n   * **Value:** `com.ibm.wps.scripting.server.ApplicationServerExtensions`  \n4. **Delete** this entry.  \n5. **Save** the changes and **restart** the Portal server.\n\nAfter the restart the \u201cMBeanStarter loadExtensions failed to load extension\u201d error disappears and the server starts normally.",
+    "pred": {
+      "relevance": 0.15151515151515152,
+      "utilization": 0.15151515151515152,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to DataPower\u202fv7.5.2 (and later) because this release disables the older, insecure algorithms that were enabled in earlier versions (such as v7.2).  \n\n- The default set of ciphers, MACs, and key\u2011exchange (kex) algorithms was changed to remove unsafe algorithms: CBC\u2011type ciphers, arcfour*, MD5\u2011based MACs, **diffie\u2011hellman\u2011group1\u2011sha1** and **diffie\u2011hellman\u2011group\u2011exchange\u2011sha1**.  \n- DH\u2011GEX is also limited to 4096\u202fbits for Cisco devices.  \n\nIf the remote SSH client or server is an older version that only supports those now\u2011disabled algorithms, the negotiation cannot find a common cipher, MAC, or kex algorithm, resulting in errors such as \u201cNo matching cipher/MAC/kex algorithm found.\u201d  \n\nThus the same configuration that worked on v7.2 fails on v7.5.2+ because the legacy algorithms have been disabled by default. Restoring compatibility requires upgrading the peer or re\u2011enabling the legacy algorithms (e.g., via the **enable\u2011legacy\u2011kex** command or by explicitly adding the needed algorithms in the SSH configuration).",
+    "pred": {
+      "relevance": 0.32989690721649484,
+      "utilization": 0.32989690721649484,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "Add the\u202f`AGREETOLICENSE=YES`\u202fsetting to the silent\u2011uninstall response file (and be sure to give the full path to that file when you run the command). This explicitly agrees to the license and allows the silent uninstall to proceed.",
+    "pred": {
+      "relevance": 0.07377049180327869,
+      "utilization": 0.01639344262295082,
+      "completeness": 0.2222222222222222,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "**What it means**\n\nThe upgrade failed because the appliance could not copy the existing user\u2011modified files to flash \u2013 the flash partition is full. With no space to preserve that data, the firmware image cannot be written, so the upgrade aborts and the system is left in a non\u2011rebootable state.\n\n**Appropriate next actions (as given in the material)**  \n\n1. **Free flash space** \u2013 delete or move unnecessary files, logs, or old user\u2011modified data from the flash so that enough space is available for the upgrade to preserve the data.  \n2. **Retry the upgrade** \u2013 after you have freed space, run the firmware upgrade again.  \n3. **If you do not need to preserve user\u2011modified data**, perform a clean install (do not select \u201cpreserve user modified data\u201d) which bypasses the flash\u2011space check.  \n4. **If the problem still occurs**, follow the C100B104 remediation steps:  \n   - Verify that the USB flash drive contains the correct *.rpm* and *.xml* firmware files.  \n   - Try the upgrade with a different USB flash drive.  \n   - Contact IBM support / your service provider for further assistance.",
+    "pred": {
+      "relevance": 0.12418300653594772,
+      "utilization": 0.09803921568627451,
+      "completeness": 0.7894736842105263,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
