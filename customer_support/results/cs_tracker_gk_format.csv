@@ -104,3 +104,13 @@ RMSE 0.6742","0.2508
 RMSE 0.3777","0.3349
 RMSE 0.6439","0.2000
 AUCROC 0.6562",0.0750,0.0435,0.5394,0.6400,25,"ATTRIBUTION for 021: chunker alone 0.656 (bad), reranker made it worse (-0.055, IDK +12pts) - reranking tiny chunks over-concentrates on lexical fragments. Both components of grid CS-FINAL lose independently."
+CS-EXP-023,Customer Support (techqa),Sliding (120w/40),bge-large-en-v1.5,Hybrid RRF,Cross-encoder ms-marco-MiniLM,openai/gpt-oss-120b,"0.4371
+RMSE 0.4628","0.2106
+RMSE 0.2742","0.4744
+RMSE 0.5464","0.4000
+AUCROC 0.8125",0.0750,0.0435,0.5394,0.6400,25,"GRID COMBO - surprise 2nd-best of campaign (0.813/0.76): three individually-rejected components jointly strong. Still below lock (gap ~1.5 examples = noise), no action - but flags that greedy selection can miss interaction effects."
+CS-EXP-019,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,"FAISS (dense, k=20) + compress",None,openai/gpt-oss-120b,"0.2388
+RMSE 0.2385","0.1255
+RMSE 0.1427","0.5018
+RMSE 0.6590","0.4000
+AUCROC 0.7257",0.0750,0.0435,0.5394,0.6400,25,"COVERAGE ENDPOINT - retrieve-20-then-compress: lowest IDK of campaign (20%), best Rel RMSE (0.238) and Util RMSE (0.143), adherence still 0.726 < lock. Completes monotonic IDK-vs-coverage curve (36/32/20%) with flat adherence - 4th independent confirmation of content-adherence decoupling."
