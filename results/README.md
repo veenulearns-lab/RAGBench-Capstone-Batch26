@@ -98,9 +98,30 @@ This candidate beats EXP-013 on Relevance, Utilization, and Adherence at full sc
 sample instability, its 25-sample Adherence (0.7045) shrank at 200 samples (0.6196) —
 still real, still the best Adherence of any 200-sample config tested so far.
 
-Second candidate (`largesem_bge_dense_fwd`) still pending 200-sample validation —
-this section will be updated once that result is in. **Do not treat either candidate
-as final until both are validated and compared.**
+### FINAL DECISION: whole_doc_finbert_dense_sides is the new Finance pipeline
+
+Both final candidates validated at 200 samples:
+
+| Config | Rel RMSE↓ | Util RMSE↓ | Comp RMSE↓ | Adh AUCROC↑ | Samples |
+|---|---|---|---|---|---|
+| EXP-013 (previous best) | 0.3561 | 0.1583 | 0.5964 | 0.5905 | 197 |
+| largesem_bge_dense_fwd | 0.3399 | 0.1027 | 0.6073 | 0.5799 | 200 |
+| **whole_doc_finbert_dense_sides (FINAL)** | 0.3534 | **0.1067** | 0.6035 | **0.6196** | 196 |
+
+**whole_doc_finbert_dense_sides is adopted as the final Finance pipeline** — best
+Adherence of all configurations tested, beats EXP-013 on Relevance, Utilization, and
+Adherence, and is structurally simpler (whole-document chunking, dense-only retrieval,
+no hybrid or metadata-aware chunking required). Only Completeness is marginally worse
+than EXP-013 (0.6035 vs 0.5964).
+
+**Final pipeline:** whole-document chunking + FinBERT embedding + FAISS dense retrieval
++ "sides" context ordering (most relevant chunks placed at both ends of the context
+window) + llama-3.3-70b-versatile generator.
+
+Full record of all 21 experiments tested (13 original + 8 new combinations, including
+6 that did not advance): `results/Finance_Master_Scores.xlsx`.
+
+
 
 
 
