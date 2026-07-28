@@ -83,5 +83,90 @@
       "completeness": 0.3333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 5,
+    "question": "BPM AppTarget startup hangs during startup \n\nDuring startup of the apptarget, JVM hangs with the following messages\n\n[9/8/14 14:11:01:709 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 10 minutes. [9/8/14 14:11:32:810 CDT] 00000022 ThreadMonitor W WSVR0605W: Thread \"server.startup : 0\" (0000001f) has been active for 654582 milliseconds and may be hung. There is/are 1 thread(s) in total in the server that may be hung. at java.lang.Thread.sleep(Native Method) at java.lang.Thread.sleep(Thread.java:896) at com.lombardisoftware.server.core.GroupCore.getAllGroups(GroupCore.java:545) at com.lombardisoftware.server.ejb.security.SecurityCore.listAllGroups(SecurityCore.java:566) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37) at java.lang.reflect.Method.invoke(Method.java:611) ... [9/8/14 14:21:02:662 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 20 minutes. [9/8/14 14:31:03:193 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 30 minutes. [9/8/14 14:41:03:749 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 40 minutes.",
+    "answer": "**Cause**  \nThe hang is caused by a bug in the group\u2011replication code. When a group (or display name) contains trailing blanks, the code does **not** recognise it as a duplicate. The replication logic then keeps trying to insert the same group, the lock on the **LSW_GROUP** table is never released, and the JVM appears to be hung (the `CWLND0004W` messages and the `WSVR0605W` thread\u2011monitor warning).\n\n**Fix / Permanent solution**  \n\n* **Apply the IBM fix** that corrects the duplicate\u2011group detection:  \n\n  * **APAR\u202fJR52842** \u2013 \u201cTrailing blanks in group names are not recognised as duplicates\u201d.  \n  * The fix is included in **IBM Business Process Manager 8.5 Refresh Pack\u202f7** (and later releases).  \n  * For BPM\u202f6.1.x the same fix is in **Fix\u202fPack\u202f7** (or 6.1.0.5\u20116.1.0.6).\n\nAfter the fix is applied, restart the server; the group\u2011replication lock will be released and the AppTarget will start normally.\n\n**Temporary workaround (if the fix cannot be applied immediately)**  \n\n1. **Find groups that have trailing blanks** \u2013 run a query such as:  \n\n   ```sql\n   SELECT GROUP_ID, GROUP_NAME, DISPLAY_NAME\n   FROM   LSW_GROUP\n   WHERE  TRIM(GROUP_NAME) <> GROUP_NAME\n      OR  TRIM(DISPLAY_NAME) <> DISPLAY_NAME;\n   ```\n\n2. **Rename or delete** the offending groups so that their names no longer contain trailing spaces.  \n\n3. **Restart the AppTarget**; the lock will be released and startup should complete.\n\n**Steps to resolve the hang**\n\n1. Look in `SystemOut.log` for the `CWLND0004W` messages and the `WSVR0605W` warning.  \n2. Verify whether any groups have trailing spaces (using the query above).  \n3. Either clean up those groups now (rename/delete) **or** install the fix pack that contains APAR\u202fJR52842.  \n4. Perform a full server restart.\n\nApplying the fix (or removing the groups with trailing blanks) eliminates the group\u2011replication lock contention and stops the JVM from hanging during BPM AppTarget startup.",
+    "pred": {
+      "relevance": 0.30434782608695654,
+      "utilization": 0.30434782608695654,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006993006993006993,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 6,
+    "question": "Using cobol copybooks Sometimes, there will be errors/fields missing in typetree, while importing cobol copybooks. Is there any format for copybooks(specifically to be used in wtx), that we need to follow? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2804878048780488,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.01171875,
+      "utilization": 0.01171875,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 7,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To stop rule\u2011execution failures caused by recurring\u202f`com.ibm.websphere.ce.cm.StaleConnectionException` on ODM\u202f8.8 RES, adjust the data\u2011source connection\u2011pool settings so that idle connections are closed before the network discards them, and enable validation of connections.  \n\n**Steps**\n\n1. **WebSphere (or equivalent) data\u2011source pool**  \n   * Set **Minimum connections**\u202f=\u202f0.  \n   * Set **Unused timeout** to a value **shorter than any network idle\u2011connection timeout** (e.g., the firewall timeout).  \n   * Set **Reap timeout** so that **Unused timeout\u202f+\u202fReap timeout** does **not exceed** that same network timeout.  \n\n2. **Enable connection validation** (highly recommended)  \n   * Turn on **\u201cTest connection on reserve\u201d** (or \u201cValidate connection\u201d).  \n   * Use a lightweight validation query such as `SELECT 1 FROM DUAL` (Oracle) so a bad connection is detected and refreshed before a rule\u2011execution request uses it.\n\n3. **Verify network idle\u2011timeout settings**  \n   * Check the idle\u2011connection timeout configured on firewalls, load\u2011balancers, or routers between the app server and the database.  \n   * Ensure the pool\u2019s Unused\u202f+\u202fReap timeout is **smaller** than that value.\n\n4. **Apply the same configuration for non\u2011WebSphere containers**  \n   * On WebLogic, use the equivalent pool settings (minimum\u202f=\u202f0, idle\u2011timeout\u202f<\u202fnetwork timeout, enable validation).\n\n5. **Restart RES** after saving the pool changes (or at least restart the application) so the new configuration takes effect.\n\nFollowing these pool\u2011configuration and validation steps eliminates the \u201cstale connection\u201d condition that makes RES rule execution fail after periods of inactivity.",
+    "pred": {
+      "relevance": 0.12359550561797752,
+      "utilization": 0.12359550561797752,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.1297709923664122,
+      "utilization": 0.03816793893129771,
+      "completeness": 0.29411764705882354,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 8,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes. IBM provides a **Support\u2019s Guide to IBM CORBA probes**, which can be downloaded from IBM\u2019s support site:\n\n- Main page:\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21614208  \n- Direct PDF links (both point to the same file):  \n  \u2022\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21614208&aid=1  \n  \u2022\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21614208&aid=2",
+    "pred": {
+      "relevance": 0.1746031746031746,
+      "utilization": 0.031746031746031744,
+      "completeness": 0.18181818181818182,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06382978723404255,
+      "utilization": 0.010638297872340425,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 9,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699) I need to understand details regarding Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699). Where can I find this information?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
