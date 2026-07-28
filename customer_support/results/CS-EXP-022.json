@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.16666666666666666,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error occurs because the **ARG_MAX** limit for the command\u2011line argument list has been exceeded.  \nDuring the UDX compile the `nzudxcompile` command was given more than the allowed number of arguments (over\u202f131\u202f072 arguments from many\u202f*.c\u202ffiles).  \n\n**What to do**\n\n* Reduce the number of source files passed to `nzudxcompile` in a single invocation, or  \n* Increase the `ARG_MAX` configuration parameter (its value is expressed in 4\u202fKB blocks and can be set between\u202f6\u202fand\u202f1024).  \n\nAdjusting `ARG_MAX` or splitting the compilation into smaller batches will eliminate the \u201cArgument list too long\u201d error.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 1.0,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "The JVMSERVER stays in the **BEING DISABLED** state because the Language\u202fEnvironment enclave that the server needs was never created.\u202fWhen the enclave cannot be created CICS issues DFHSJ0914 \u2013 \u201cJVMSERVER *jvmserver* is DISABLED because the Language Environment Enclave was not created\u201d \u2013 and the server remains hung in the **BEING DISABLED** condition (also seen when the region is being shut down).  \n\nTo clear the condition you must re\u2011initialize the server correctly \u2013 for example, disable and then enable the JVMSERVER with the CEMT command (\u202fCEMT\u202fSET\u202fJVMSERVER(jvmserver)\u202fDISABLED\u202fthen\u202fENABLED\u202f) or, on versions that use pooled JVMs, perform a JVMPOOL\u202fPHASEOUT so that a new enclave can be created.",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.2857142857142857,
+      "completeness": 0.5714285714285714,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "The region is aborting because the Language Environment initialization is loading the **Debug Tool for\u202fz/OS** module **EQA10OSM**, and that module is failing with an **0C1** program\u2011interrupt. The interrupt occurs while the system\u2011task (TCP/III) is still in control, so CICS issues **DFHSR0601** and terminates. In short, the upgrade to CICS\u202fTS\u202fV5.2 is trying to start with a Debug\u2011Tool module that is not compatible (or is corrupted), causing the 0C1 abend and the subsequent DFHSR0601 message. Removing or updating the Debug Tool for\u202fz/OS (or using a LE version that matches the CICS release) resolves the startup failure.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.7777777777777778,
+      "completeness": 0.7777777777777778,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
