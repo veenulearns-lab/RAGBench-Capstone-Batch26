@@ -83,5 +83,90 @@
       "completeness": 0.3333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 5,
+    "question": "BPM AppTarget startup hangs during startup \n\nDuring startup of the apptarget, JVM hangs with the following messages\n\n[9/8/14 14:11:01:709 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 10 minutes. [9/8/14 14:11:32:810 CDT] 00000022 ThreadMonitor W WSVR0605W: Thread \"server.startup : 0\" (0000001f) has been active for 654582 milliseconds and may be hung. There is/are 1 thread(s) in total in the server that may be hung. at java.lang.Thread.sleep(Native Method) at java.lang.Thread.sleep(Thread.java:896) at com.lombardisoftware.server.core.GroupCore.getAllGroups(GroupCore.java:545) at com.lombardisoftware.server.ejb.security.SecurityCore.listAllGroups(SecurityCore.java:566) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37) at java.lang.reflect.Method.invoke(Method.java:611) ... [9/8/14 14:21:02:662 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 20 minutes. [9/8/14 14:31:03:193 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 30 minutes. [9/8/14 14:41:03:749 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 40 minutes.",
+    "answer": "The startup hangs because the server thread that performs the BPM AppTarget startup is blocked waiting for the **group replication lock** to be released.  \n\nThe log shows repeated messages like:\n\n* `CWLND0004W - The system has been waiting for the group replication lock to be released for the last \u2026 minutes`\n* `WSVR0605W: Thread \"server.startup : 0\" \u2026 has been active for \u2026 milliseconds and may be hung`\n\nThese entries indicate that the `server.startup` thread (and any other threads that call `GroupCore.getAllGroups()`) are stuck in a long\u2011running `Thread.sleep` while trying to acquire the replication lock. Because the lock is never released, the thread remains active for many minutes, triggering the `WSVR0605W` hung\u2011thread warning and causing the JVM to appear hung during AppTarget startup.",
+    "pred": {
+      "relevance": 0.7777777777777778,
+      "utilization": 0.3333333333333333,
+      "completeness": 0.42857142857142855,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006993006993006993,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 6,
+    "question": "Using cobol copybooks Sometimes, there will be errors/fields missing in typetree, while importing cobol copybooks. Is there any format for copybooks(specifically to be used in wtx), that we need to follow? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.01171875,
+      "utilization": 0.01171875,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 7,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "The problem is caused by the data\u2011source connection that the RES uses becoming \u201cstale\u201d \u2013 the network link is no longer valid even though WebSphere still thinks the connection is active.  \nTo stop the rule\u2011execution failures you must prevent the RES from using those stale connections.\u202fThe IBM documentation on **troubleshooting stale\u2011connection problems** explains how to do this:\n\n*\u202fConfigure the data\u2011source (or the WebLogic equivalent) so that the connection pool validates a connection before it is handed out (e.g., enable \u201ctest\u2011on\u2011reserve\u201d or a validation query).  \n*\u202fAdjust the pool\u2019s timeout/idle\u2011time settings so that idle connections are closed and recreated before they become invalid.  \n*\u202fIf the network can drop idle connections, enable keep\u2011alive or a shorter idle\u2011time so the pool discards them proactively.  \n\nIn short, make sure the underlying network connection is kept valid (or is tested and refreshed) by tuning the data\u2011source/connection\u2011pool settings as described in the IBM \u201cTroubleshooting stale connection problems\u201d technote. This prevents the recurring **com.ibm.websphere.ce.cm.StaleConnectionException** and stops rule execution from failing.",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.3333333333333333,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.1297709923664122,
+      "utilization": 0.03816793893129771,
+      "completeness": 0.29411764705882354,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 8,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes. IBM provides a Support\u2019s Guide for the CORBA probes. You can download it from the IBM support site:\n\n**Support\u2019s Guide to IBM CORBA probes**  \nhttp://www-01.ibm.com/support/docview.wss?uid=swg21614208  \n\n(The PDF version is also available via the same link, e.g.,\u202fGENERIC_CORBA_SupportsGuide_20.pdf.)",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.3,
+      "completeness": 0.75,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06382978723404255,
+      "utilization": 0.010638297872340425,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 9,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699) I need to understand details regarding Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699). Where can I find this information?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8333333333333334,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
