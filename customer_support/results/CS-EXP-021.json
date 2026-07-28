@@ -83,5 +83,90 @@
       "completeness": 0.3333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 5,
+    "question": "BPM AppTarget startup hangs during startup \n\nDuring startup of the apptarget, JVM hangs with the following messages\n\n[9/8/14 14:11:01:709 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 10 minutes. [9/8/14 14:11:32:810 CDT] 00000022 ThreadMonitor W WSVR0605W: Thread \"server.startup : 0\" (0000001f) has been active for 654582 milliseconds and may be hung. There is/are 1 thread(s) in total in the server that may be hung. at java.lang.Thread.sleep(Native Method) at java.lang.Thread.sleep(Thread.java:896) at com.lombardisoftware.server.core.GroupCore.getAllGroups(GroupCore.java:545) at com.lombardisoftware.server.ejb.security.SecurityCore.listAllGroups(SecurityCore.java:566) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:60) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:37) at java.lang.reflect.Method.invoke(Method.java:611) ... [9/8/14 14:21:02:662 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W - The system has been waiting for the group replication lock to be released for the last 20 minutes. [9/8/14 14:31:03:193 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 30 minutes. [9/8/14 14:41:03:749 CDT] 0000001f wle W com.lombardisoftware.server.core.GroupCore getAllGroups() CWLND0004W -The system has been waiting for the group replication lock to be released for the last 40 minutes.",
+    "answer": "The startup is hanging because the server\u2019s JVM is getting stuck in a thread that is trying to log an FFDC (fault\u2011diagnostic) message. When that logging thread hangs, the JVM can freeze, and the condition is reported by the \u201cWSVR0605W\u201d warning that a thread has been active for many minutes and may be hung. In this case the hung thread is the one that is waiting on the group\u2011replication lock (the repeated \u201cwaiting for the group replication lock to be released\u201d messages), and because the FFDC\u2011logging thread cannot complete, the whole JVM hangs during the AppTarget startup.",
+    "pred": {
+      "relevance": 0.625,
+      "utilization": 0.5,
+      "completeness": 0.8,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.006993006993006993,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 6,
+    "question": "Using cobol copybooks Sometimes, there will be errors/fields missing in typetree, while importing cobol copybooks. Is there any format for copybooks(specifically to be used in wtx), that we need to follow? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.875,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.01171875,
+      "utilization": 0.01171875,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 7,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To stop the RES from failing with a **StaleConnectionException**, re\u2011configure the WebSphere data\u2011source connection pool that ODM uses:\n\n* **Set the \u201cMinimum connections\u201d value to\u202f0** \u2013 this prevents WebSphere from keeping a connection alive just to satisfy a minimum\u2011pool size, which can become stale after long idle periods.  \n* Ensure the **\u201cUnused timeout\u201d** (or equivalent idle\u2011time setting) is configured so that idle connections are closed before they become invalid.  \n\nBy eliminating permanently\u2011idle pooled connections, the RES will obtain fresh, valid connections when it needs to invalidate a ruleset or read its definition, and the recurrent StaleConnectionException will no longer cause rule\u2011execution failures.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.125,
+      "completeness": 0.125,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1297709923664122,
+      "utilization": 0.03816793893129771,
+      "completeness": 0.29411764705882354,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 8,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes.\u202fIBM provides a **Support\u2019s Guide to IBM\u202fCORBA\u202fProbes**.  \nYou can download it from the IBM support site:\n\n- Main guide page: **http://www-01.ibm.com/support/docview.wss?uid=swg21614208**  \n- Direct PDF links (e.g.,\u202fGENERIC_CORBA_SupportsGuide_20.pdf):  \n  - **http://www-01.ibm.com/support/docview.wss?uid=swg21614208&aid=2**  \n  - **http://www-01.ibm.com/support/docview.wss?uid=swg21614208&aid=1**",
+    "pred": {
+      "relevance": 0.6666666666666666,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06382978723404255,
+      "utilization": 0.010638297872340425,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 9,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699) I need to understand details regarding Security Bulletin: IBM WebSphere MQ and IBM MQ Managed File Transfer is affected by an undefined behavior because of insecure file permission vulnerability (CVE-2017-1699). Where can I find this information?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
