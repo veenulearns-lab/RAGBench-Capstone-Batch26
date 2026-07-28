@@ -1,2 +1,5 @@
 exp,chunking,embedding,retrieval,rerank,ordering,generator,judge,relevance_rmse,utilization_rmse,completeness_rmse,adherence_aucroc,adherence_accuracy,idk_rate
-CS-EXP-016,sliding,minilm,dense,False,normal,gpt-oss,70b,0.32562882552223393,0.1825942656443066,0.6152082443514393,0.6482000207490404,0.64,0.32
+CS-EXP-020,whole_doc,minilm,dense,False,normal,gpt-oss,70b,0.2500955097308024,0.2051147316554209,0.6537726127520651,0.7881944444444444,0.76,0.36
+CS-EXP-021,sentence_3o1,minilm,dense,True,normal,gpt-oss,70b,0.6416211815433691,0.2406553674060556,0.6134991549983156,0.6006944444444444,0.52,0.48
+CS-EXP-022,sentence_3o1,minilm,dense,False,normal,gpt-oss,70b,0.674169495487596,0.37767654530470296,0.643912984764527,0.65625,0.56,0.36
+CS-EXP-014,sliding,minilm,dense,False,normal,gpt-oss,70b,0.6065326454666078,0.580914875305086,0.6111944767423283,0.6875,0.5833333333333334,0.0
