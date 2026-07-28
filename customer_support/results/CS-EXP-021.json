@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error is caused by the ARG/ENV list exceeding the allowed size for an exec call.  \nFix it by increasing the maximum ARG/ENV size (the limit can be set to any value between\u202f6\u202fand\u202f1024\u202f\u00d7\u202f4\u202fKB).  \nAlternatively, you can work around the problem by creating a host user whose primary group is **not** \u201cnz\u201d and then changing the permission of the\u202fnz\u202fbinary, e.g.:\n\n```bash\nchmod 4705 /nz/kit/bin/adm/nzsqa\n```\n\nEither raising the ARG/ENV limit or using the non\u2011nz user with the adjusted permissions will eliminate the \u201cArgument list too long\u201d error during UDX compilation.",
+    "pred": {
+      "relevance": 0.7777777777777778,
+      "utilization": 0.4444444444444444,
+      "completeness": 0.42857142857142855,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "The JVMSERVER stays in **BEING\u202fDISABLED** because the Java runtime cannot be torn down \u2013 the Language\u202fEnvironment enclave for the JVM was never created. As a result the JVM is terminated (DFHSJ0914) and the JVMSERVER cannot complete the disable operation, leaving it hung in the *BEING\u202fDISABLED* state.",
+    "pred": {
+      "relevance": 0.9285714285714286,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.15384615384615385,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "The region is aborting because the **Debug Tool for\u202fz/OS (module\u202fEQA10OSM)** that is being loaded during Language\u2011Environment initialization is not compatible with the CICS\u202fTS\u202fV5.2 release. When CICS starts it loads the LE, the debug\u2011tool module is invoked, and it generates an **abend\u202f0C1**. The LE aborts, CICS reports\u202fDFHAP1203I (\u201cLanguage Environment is being initialized\u201d) and then DFHSR0601 (\u201cProgram interrupt occurred with system task III in control\u201d).\n\nIn short, the startup failure is caused by an unsupported/incorrect version of the Debug Tool for\u202fz/OS (EQA10OSM) being present in the image. Removing the debug\u2011tool or installing a version that is supported with CICS\u202fTS\u202f5.2 resolves the problem.",
+    "pred": {
+      "relevance": 0.9,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
