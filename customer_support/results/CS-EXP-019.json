@@ -338,5 +338,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "The crash is often caused by the default heap size being too small.  \nStart the Studio with a larger maximum heap, for example:\n\n```bash\nCastIronStudio.exe -J-Xmx1024m\n```\n\nThe `-J-Xmx` option sets the maximum heap size (in\u202fMB). The default is 512\u202fMB; raising it to 1024\u202fMB (or a higher value appropriate for your machine) can stop the Studio from crashing shortly after launch. Monitor memory usage and adjust the value as needed. If problems continue, you may also need to use Studio\u2019s garbage\u2011collection tools or adjust XML Schema preferences.",
+    "pred": {
+      "relevance": 0.14285714285714285,
+      "utilization": 0.07936507936507936,
+      "completeness": 0.5555555555555556,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "question": "Additional steps to apply fix pack to Decision Center \n\nWe are upgrading ODM 8.8.1 Decision Center to the latest 8.8.1.3.\n\nAre there any additional steps to apply the fixpack to Decision Center after we install the fixpack with Installation Manager?",
+    "answer": "Yes \u2013 after the Installation Manager update you must still apply the fix\u2011pack to the Decision Center runtime.  \n\nThe required post\u2011install actions are:\n\n1. **Update the Decision Center EAR** \u2013 Deploy the updated `jrules\u2011teamserver\u2011<server>.ear` (the Decision Center application) to the application server.  \n2. **Keep the class\u2011loading policy unchanged** \u2013 Ensure the modules are still set to **parent\u2011last** (the standard ODM setting).  \n3. **Restart the server** (if the EAR was already running).  \n4. **Re\u2011package any client applications** with the new JARs that were installed in `<ODMInstallDir>\\DecisionCenter\\lib`.  \n5. **Re\u2011apply any customizations** you had made to the EAR/WAR files (e.g., descriptor changes) to the newly\u2011installed EAR/WAR.",
+    "pred": {
+      "relevance": 0.49375,
+      "utilization": 0.05625,
+      "completeness": 0.11392405063291139,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "**Where to find the \u201cAction required\u201d information**\n\n1. **IBM Security Flash/Alert page** \u2013 the official Flash (Alert) titled  \n   *\u201cIBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 require customer action for security vulnerabilities in Red\u202fHat Linux.\u201d*  \n\n   \u2022 URL (access via IBM Support portal):  \n   `https://www.ibm.com/support/pages/flash-alert-ibm-integration-bus-hypervisor-edition-v90-and-websphere-message-broker-hypervisor-edition-v80-require-customer-action-security-vulnerabilities-red-hat-linux`\n\n2. **IBM Fix Central / Product Support** \u2013 locate the product\u2011specific security bulletins for IIB\u202fV9.0\u202fHVE and WMB\u202fV8.0\u202fHVE. Search for the product and version, then filter by \u201cSecurity Alerts\u201d or \u201cFlash Alerts\u201d.\n\n3. **Red\u202fHat Customer Portal** \u2013 after reviewing the IBM alert, obtain the required RHEL\u202f6.2 patches from Red\u202fHat:  \n\n   \u2022 URL: `https://access.redhat.com/security/updates/` \u2013 look for the advisory numbers that address the CVEs listed in the IBM alert (e.g., RHSA\u20112017:xxxx, RHSA\u20112018:xxxx).\n\n**Summary of the required action (as stated in the Flash/Alert)**  \n\n- Identify the exact RHEL\u202f6.2 patches that remediate the CVEs mentioned (CVE\u20112017\u201114746, CVE\u20112017\u201115085, CVE\u20112018\u20111057, CVE\u20112014\u20118716, CVE\u20112016\u20118677, CVE\u20112015\u20115180, \u2026).  \n- **Contact Red\u202fHat** (or use your Red\u202fHat subscription) to download and install those patches on the underlying RHEL\u202f6.2 operating system used by the IIB\u202fV9.0 and WMB\u202fV8.0 Hypervisor Editions.  \n- Verify that the patches have been applied and that the vulnerable CVEs are no longer present.  \n\nAll of these details are contained in the IBM Flash/Alert referenced above.",
+    "pred": {
+      "relevance": 0.8947368421052632,
+      "utilization": 0.8947368421052632,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.21481481481481482,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "The error occurs because Installation Manager cannot find the **im.properties** (and other) zip files in the Fix\u202fPack repository.  \nFix it by making sure the repository is complete and added correctly:\n\n1. **Download the proper Fix\u202fPack repository** \u2013 use the full \u201call\u2011platform\u201d zip pair (e.g.\u202f`was.7.0.0.xx.fp.all_Part1of2.zip` + `Part2of2.zip`) **or** the OS\u2011specific sliced zip that matches your platform. Do not use a partial or mismatched set.\n\n2. **Extract both zip parts into the same folder**  \n   * Create an empty folder (e.g.\u202f`C:\\temp\\BPM_FP33`).  \n   * Extract **Part\u202f1** and **Part\u202f2** there. After extraction the folder must contain a `disk1` sub\u2011folder (with `diskTag.inf`) and a `repository` sub\u2011folder that includes files such as `im.properties` and `config.registry`.\n\n3. **Add the repository to IBM Installation Manager**  \n   * Open Installation Manager \u2192 **File\u202f>\u202fPreferences\u202f>\u202fRepositories**.  \n   * Click **Add Repository** and browse to the **diskTag.inf** file inside the extracted `disk1` directory, e.g.  \n     ```\n     C:\\temp\\BPM_FP33\\disk1\\diskTag.inf\n     ```  \n   * Confirm and close the dialogs.\n\n4. **Run the Fix\u202fPack installation again**. Installation Manager will now locate `im.properties 1.0.0.200911091101`, `config.registry 1.0.0.200911092301`, etc., and the CRIMC1020E errors disappear.\n\n5. **If the error still appears**  \n   * Re\u2011download the zip files (they may be corrupted).  \n   * Verify there is no extra nesting of folders; the repository root must be the folder that directly contains `disk1`.\n\nFollowing these steps resolves the \u201cCRIMC1020E: zip im.properties not found\u201d problem and allows the BPM\u202f7.5.1.2 Fix Pack to be installed successfully.",
+    "pred": {
+      "relevance": 0.17901234567901234,
+      "utilization": 0.17901234567901234,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
