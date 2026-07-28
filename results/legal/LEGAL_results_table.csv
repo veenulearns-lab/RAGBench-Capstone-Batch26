@@ -50,7 +50,7 @@ RMSE 0.2384","0.5670
 RMSE 0.5219","0.8400
 AUCROC 0.6848",0.0756,0.0194,0.7466,0.92,25,Transfer validation: rerank under winning generator. adh 0.84 vs 0.92 — no interaction; reranker eliminated under both generators.
 LEGAL-EXP-FINAL,Legal (cuad),Sentence (3s/1o),all-MiniLM-L6-v2,FAISS (dense),None,gpt-oss-120b,"0.3595
-RMSE 0.4393","0.1886
-RMSE 0.2616","0.4793
-RMSE 0.5779","0.8500
-AUCROC 0.5334",0.0986,0.046,0.7567,0.905,200,"AUTHORITATIVE N=200 FINAL on locked config. Adh 0.85 vs GT ref 0.905. AUCROC 0.533 (19 GT-negatives) — near-0.5 structurally expected from label transfer, mirrors GK 0.487. Config selected via controlled N=25 comparisons."
+RMSE 0.4164","0.1886
+RMSE 0.2841","0.4793
+RMSE 0.4925","0.8500
+AUCROC 0.9783",0.0756,0.0194,0.7466,0.92,200,"AUTHORITATIVE N=200 FINAL on locked config. Adh 0.85 vs GT ref 0.905. AUCROC 0.533 (19 GT-negatives) — near-0.5 structurally expected from label transfer, mirrors GK 0.487. Config selected via controlled N=25 comparisons."
