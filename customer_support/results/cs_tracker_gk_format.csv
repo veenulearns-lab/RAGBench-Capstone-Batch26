@@ -69,11 +69,11 @@ RMSE 0.5055","0.2223
 RMSE 0.2982","0.4346
 RMSE 0.6739","0.4000
 AUCROC 0.6389",0.0750,0.0435,0.5394,0.6400,25,JUDGE CHECK - NOT comparable to other rows. 8b judge 0.639 vs 70b 0.875 on same pipeline: 'smaller judge preferred' REFUTED; 70b judge mandatory.
-CS-EXP-014,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b (soft prompt),"0.6878
-RMSE 0.6438","0.5789
-RMSE 0.6066","0.8516
-RMSE 0.6307","0.1000
-AUCROC 0.6000",0.1066,0.0729,0.6267,0.5000,10,PROMPT TEST - soft/lenient prompt CRASHED adherence (0.600 vs 0.875): strict IDK instruction is protective; leniency trades honest refusals for unsupported partial answers. All RMSEs degraded.
+CS-EXP-014,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b (soft prompt),"0.6200
+RMSE 0.6065","0.5305
+RMSE 0.5809","0.7940
+RMSE 0.6112","0.2500
+AUCROC 0.6875",0.0778,0.0454,0.5619,0.6667,24,"PROMPT TEST (n=24, 1 judge-JSON fail) - soft prompt drove IDK to 0% and adherence to 0.688/0.583 vs 0.875/0.84 strict: every suppressed refusal became a partially-unsupported answer. Worst Util RMSE (0.58). Strict IDK instruction confirmed protective; ~36% of queries lack retrievable answers."
 CS-EXP-015,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b (compress-then-answer),"0.4503
 RMSE 0.4247","0.2278
 RMSE 0.2705","0.4643
@@ -89,3 +89,18 @@ RMSE 0.4590","0.1731
 RMSE 0.2402","0.3747
 RMSE 0.6084","0.3800
 AUCROC 0.6430",0.0677,0.0371,0.6563,0.5950,200,"AUTHORITATIVE N=200 FINAL on locked config. AUCROC 0.643 / Acc 0.615 vs 0.875/0.84 @ N=25 - small-sample AUCROC substantially overestimated performance (Finance instability confirmed at scale). 80% per-example agreement w/ EXP-012 on shared 25: drop is sample composition, not run instability. RMSEs improved at scale (util 0.24 vs 0.33). Residual error dominated by answer-absent queries at k=5."
+CS-EXP-020,Customer Support (techqa),Whole-doc (400w trunc),all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b,"0.2371
+RMSE 0.2501","0.1174
+RMSE 0.2051","0.3827
+RMSE 0.6538","0.4800
+AUCROC 0.7882",0.0750,0.0435,0.5394,0.6400,25,"GRID GAP - GK's winning chunker on CS: 0.788/0.76, below lock (0.875). BEST Rel RMSE of campaign (0.250) yet adherence didn't follow - third confirmation content quality and adherence are decoupled on techqa. 800w version hit gpt-oss 8k TPM (413), truncated to 400w."
+CS-EXP-021,Customer Support (techqa),Sentence 3s/1o,all-MiniLM-L6-v2,FAISS (dense),Cross-encoder ms-marco-MiniLM,openai/gpt-oss-120b,"0.6654
+RMSE 0.6416","0.1496
+RMSE 0.2407","0.2242
+RMSE 0.6135","0.2400
+AUCROC 0.6007",0.0750,0.0435,0.5394,0.6400,25,"GRID CS-FINAL CELL - REJECTED decisively: 0.601/0.52, IDK 48%, worst Rel RMSE (0.642). Tiny chunks starve the generator; grid's proposed final would be worst mainline choice for techqa."
+CS-EXP-022,Customer Support (techqa),Sentence 3s/1o,all-MiniLM-L6-v2,FAISS (dense),None,openai/gpt-oss-120b,"0.6805
+RMSE 0.6742","0.2508
+RMSE 0.3777","0.3349
+RMSE 0.6439","0.2000
+AUCROC 0.6562",0.0750,0.0435,0.5394,0.6400,25,"ATTRIBUTION for 021: chunker alone 0.656 (bad), reranker made it worse (-0.055, IDK +12pts) - reranking tiny chunks over-concentrates on lexical fragments. Both components of grid CS-FINAL lose independently."
