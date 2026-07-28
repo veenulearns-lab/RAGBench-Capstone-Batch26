@@ -1,0 +1,87 @@
+[
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes. The ITCAM Agent for WebSphere Applications version\u202f7.2.0.0.7 is listed as an available fix on IBM Fix\u202fCentral.",
+    "pred": {
+      "relevance": 0.023622047244094488,
+      "utilization": 0.007874015748031496,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The failure is caused by the operating\u2011system limit on the total size of the argument and environment list (**ARG_MAX**).  \nDuring the UDX build the command **nzudxcompile** is invoked with a very long list of source files, which exceeds that limit, so the exec fails with *\u201cArgument list too long\u201d*.\n\n**How to fix it**\n\n*If you are on AIX*  \n\n1. Check the current limit:  \n\n   ```bash\n   lsattr -E -l sys0 -a ncargs\n   ```  \n\n   The default is **6** (6\u202f\u00d7\u202f4\u202fKB blocks).\n\n2. Raise the limit to a larger value (e.g. 32, which is a common setting and must be between 6 and 1024):  \n\n   ```bash\n   chdev -l sys0 -a ncargs='32'\n   ```  \n\n   The change takes effect immediately and survives a reboot.  \n   This gives a larger ARG/ENV list and prevents the \u201cArgument list too long\u201d error.\n\n*If you are on Linux (Red\u202fHat\u202f5.11)*  \n\n- The kernel\u2019s `ARG_MAX` is fixed at **131\u202f072** on the supported platform.  \n- You cannot raise it beyond this value, so you must either:\n  * Reduce the number of *.c files passed to `nzudxcompile` (e.g., split the compilation into smaller batches), or  \n  * Use a newer kernel (\u2265\u202f2.6.23) that allows a larger limit (up to 2\u202f621\u202f440), which is not available on the supported environment.\n\n**Summary**\n\nThe error is due to exceeding the ARG_MAX/ncargs limit.  \n- On AIX, increase `ncargs` (e.g., to 32) with `chdev`.  \n- On the supported Linux version, lower the argument count or split the compile steps.  \n\nAfter adjusting the limit (or reducing the argument list) re\u2011run the UDX compilation; the error should disappear.",
+    "pred": {
+      "relevance": 0.1782178217821782,
+      "utilization": 0.1782178217821782,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "Your JVMSERVER stays in the **BEING DISABLED** state because the disable operation cannot finish while there are still active JVMs (or tasks) attached to that server. When you issue a **CEMT\u202fSET\u202fJVMSERVER \u2026 DISABLED** command, the server moves to the **BEING DISABLED** state and remains there **until all Java Virtual Machines that are using the server have terminated**. If any JVM is still running, or if the Language Environment enclave could not be created (as reported by **DFHSJ0914**), the disable cannot complete, so the server stays in **BEING DISABLED** and the region shutdown hangs. Resolving the attached JVMs (or the enclave problem) allows the server to finish disabling.",
+    "pred": {
+      "relevance": 0.1037037037037037,
+      "utilization": 0.022222222222222223,
+      "completeness": 0.21428571428571427,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "The failure is caused by a **Language\u202fEnvironment module level mismatch** \u2013 the CICS region is loading incompatible versions of the LE modules **CEECCICS** and **CEEPLPKA**. This mismatch triggers a program\u2011check (abend\u202f0C1) in the Debug Tool module **EQA10OSM**, which appears as the DFHAP1203I \u201cLanguage Environment is being initialized\u201d message followed by DFHSR0601 \u201cProgram interrupt occurred\u2026\u201d.  \n\n**Fix:** Ensure that only one copy of **CEEPLPKA** and **CEECCICS** is present in your library concatenations and that both modules are at the same, correct z/OS level. This eliminates the LE\u2011module level mismatch and allows the CICS region to start normally.",
+    "pred": {
+      "relevance": 0.0546875,
+      "utilization": 0.0546875,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  }
+]
