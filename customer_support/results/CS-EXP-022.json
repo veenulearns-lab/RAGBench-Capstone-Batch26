@@ -338,5 +338,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 20,
+    "question": "App Connect Professional (formerly Cast Iron) Studio not launching When trying to start App Connect Professional (formerly Cast Iron) Studio tool, the application appears but after few seconds it crashes with no error message or warning. ",
+    "answer": "To resolve the issue where App\u202fConnect\u202fProfessional (formerly Cast Iron) Studio starts and then crashes after a few seconds, follow the steps outlined in the troubleshooting notes:\n\n1. **Restart Web\u202fStart\u202fStudio** \u2013 close the application completely and launch it again.  \n2. **Verify network connectivity** \u2013 open a web browser on the same machine and try to reach the Cast\u202fIron\u202fLive login page. If the page does not load, the network may be blocking access.  \n3. **Check proxy settings (if a proxy is used)** \u2013 in Web\u202fStart\u202fStudio go to **Menu\u202f>\u202fEdit\u202f>\u202fPreferences\u202f>\u202fSession\u202fLogin** and confirm that the proxy configuration is correct.\n\nApplying these three checks should address the launch\u2011crash problem. If the problem persists after these actions, further investigation beyond the provided information would be required.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.3,
+      "completeness": 0.3,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.14754098360655737,
+      "utilization": 0.14754098360655737,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 21,
+    "question": "Additional steps to apply fix pack to Decision Center \n\nWe are upgrading ODM 8.8.1 Decision Center to the latest 8.8.1.3.\n\nAre there any additional steps to apply the fixpack to Decision Center after we install the fixpack with Installation Manager?",
+    "answer": "No.\u202fAfter you run the fix\u2011pack installer (or Installation Manager) you don\u2019t need any extra actions for Decision Center\u2014just install the fix pack, specifying the Decision Center repository if you\u2019re updating only that component.",
+    "pred": {
+      "relevance": 0.5454545454545454,
+      "utilization": 0.09090909090909091,
+      "completeness": 0.16666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.015723270440251572,
+      "utilization": 0.015723270440251572,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 22,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.6060606060606061,
+      "utilization": 0.48484848484848486,
+      "completeness": 0.8,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 23,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3333333333333333,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.005154639175257732,
+      "utilization": 0.005154639175257732,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 24,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "The error means that the Installation Manager cannot find the zip files that contain the **im.properties** and **config.registry** components of the BPM 7.5.1.2 Fix Pack.  \nTo resolve it, download the complete Fix\u2011Pack archive from IBM\u2019s public repository and point Installation Manager at that location so the missing zip files are available.\n\n**Steps (based on the context):**\n\n1. **Download the Fix Pack**  \n   - Use one of the HTTP URLs shown in the context, e.g.:  \n     - `http://public.dhe.ibm.com/software/rationalsdp/v75/was70/7007u1/zips/`  \n     - or `http://download.boulder.ibm.com/ibmdl/pub/software/rationalsdp/v75/was61/61025/zips/`  \n\n2. **Locate the correct zip files**  \n   - The downloaded package (e.g., `was.7.0.0.33.fp.all_Part1of2.zip`) contains all the required zip files, including `im.properties` and `config.registry`.\n\n3. **Extract the archive** (or keep it as a zip repository) and note the full path to the extracted folder or the zip file itself.\n\n4. **Run IBM Installation Manager**  \n   - In the Fix Pack installation dialog, point the repository location to the folder/zip you just downloaded.  \n   - Continue the installation; Installation Manager will now find the missing zip entries and complete the Fix Pack install.\n\nIf the repository path you originally used does not contain these zip files, replace it with the path to the freshly downloaded Fix Pack archive. After doing this the CRIMC1020E \u201czip \u2026 not found\u201d errors should disappear and the BPM Fix Pack will install successfully.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 1.0,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.050505050505050504,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
