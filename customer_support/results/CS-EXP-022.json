@@ -168,5 +168,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 10,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07476635514018691,
+      "utilization": 0.009345794392523364,
+      "completeness": 0.125,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 11,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "Delete the \u201cServerExt.applications\u201d entry (the key/value\u202f`ServerExt.applications`\u202f/\u202f`com.ibm.wps.scripting.server.ApplicationServerExtensions`) from the configuration, save the changes, and then restart the server.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.14285714285714285,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17647058823529413,
+      "utilization": 0.09243697478991597,
+      "completeness": 0.5238095238095238,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 12,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to\u202fv7.5.2 (and later) because those releases disable a number of older, unsafe ciphers, MACs and key\u2011exchange (KEX) algorithms by default. If the client or server you are connecting to is older and only supports those now\u2011disabled algorithms, the negotiation cannot find a common set and the connection is terminated.  \n\nThe newer OpenSSH versions require the use of the newer, safer algorithms; the legacy ones are only available if you explicitly re\u2011enable them (e.g., with the **enable\u2011legacy\u2011kex** option or by manually specifying the allowed Ciphers and MACs in *sshd_config*). Since v7.2 still allowed the older algorithms, the same configuration works there, but it is rejected by v7.5.2+ unless you adjust the settings.",
+    "pred": {
+      "relevance": 0.8,
+      "utilization": 0.5,
+      "completeness": 0.625,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10661764705882353,
+      "utilization": 0.029411764705882353,
+      "completeness": 0.27586206896551724,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 13,
+    "question": "Silent uninstall of ITCAM for MQ agent fails Running silent uninstall of the ITCAM for MQ agent with this command: start /wait setup /z\"/sfMQ_Silent_Uninstall.txt\" /s /f2\"C:\\temp\\silent_setup.log\" fails with this message in the Abort_*.trc file: SEVERE: You must agree to the License Agreement.\n\nThe MQ_Silent_Uninstall.txt does contain this line: License Agreement=I agree to use the software only in accordance with the installed license.",
+    "answer": "The failure is caused by the silent\u2011response file not being found correctly. In the log the same \u201cSEVERE: You must agree to the License Agreement\u201d message appears when the command does **not** include the full path to the response file.  \n\n**Fix** \u2013 invoke the uninstall with the complete path to the silent\u2011response file (e.g., `setup /z\"C:\\full\\path\\sfMQ_Silent_Uninstall.txt\"`). Once the installer can locate the file, the \u201cLicense Agreement=I agree \u2026\u201d line will be read and the uninstall will proceed.",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.2,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.047337278106508875,
+      "utilization": 0.011834319526627219,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 14,
+    "question": "DataPower upgrade message Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot. In the process of upgrading my IBM DataPower Gateway I saw the following message:\n\"Loading firmware failed: Preserve user modified data failed: Insufficient flash space available Could not install firmware image. The system will not reboot.\"\nWhat does this mean and what are the appropriate next actions? ",
+    "answer": "The message means that the gateway does not have enough free flash memory to copy the new firmware image **and** preserve the user\u2011modified data (configuration, certificates, etc.). Because the flash is full, the upgrade cannot be completed and the system will not reboot.\n\n**Next actions (based on the provided guidance):**\n\n1. **Free flash space**  \n   * Log in to the appliance as the **root** user (via console or SSH).  \n   * Remove unnecessary files from the flash \u2013 for example, delete all *.pem* files in the flash directory (these are often the cause of \u201cinvalid security certificates\u201d and can be safely removed if you have a backup).  \n\n2. **Reboot the unit** after the files are removed.\n\n3. **Retry the upgrade**  \n   * If you are using a USB flash drive to load the firmware, copy the firmware image to the USB drive again.  \n   * Use a different USB flash drive if the problem persists.  \n\n4. **If the firmware level shown after the retry is still incorrect** (i.e., the installed level does not match what you expected), repeat the install with another USB flash drive.  \n\n5. **Escalate if needed** \u2013 if freeing space and retrying with a different USB drive does not resolve the issue, contact the next level of support.",
+    "pred": {
+      "relevance": 0.36363636363636365,
+      "utilization": 0.36363636363636365,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.018292682926829267,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
   }
 ]
