@@ -2,7 +2,7 @@
   {
     "idx": 0,
     "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
-    "answer": "Yes. The context lists a fix entry for **7.2.0.0.7**, indicating that ITCAM Agent for WebSphere Applications version\u202f7.2.0.0.7 is available.",
+    "answer": "Yes. The context lists \u201c7.2.0.0.7\u201d as one of the available fix versions for the IBM Tivoli Composite Application Manager Agent for WebSphere Applications.",
     "pred": {
       "relevance": 0.031746031746031744,
       "utilization": 0.031746031746031744,
@@ -36,11 +36,11 @@
   {
     "idx": 2,
     "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
-    "answer": "The error is caused by the system\u2019s **ARG_MAX** limit.  \nOn the supported platforms (Red\u202fHat\u202f5.11 in Twinfin) the kernel limits the total size of the argument list to **131\u202f072** bytes. When the UDX compile command includes more than this (e.g., many *.c files), the exec fails with:\n\n```\nCan't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long\n```\n\nThe kernel parameter **ARG_MAX** can only be larger on kernels\u202f\u2265\u202f2.6.23 (up to 2\u202f620\u202f240), but Twinfin does not support those newer kernels. Therefore, with the current supported environment you cannot increase ARG_MAX beyond 131\u202f072.\n\n**What you can do**\n\n- Reduce the number of source files passed to `nzudxcompile` (e.g., compile in smaller batches or use a makefile that invokes the compiler multiple times).  \n- There is no supported way to raise ARG_MAX on the current Red\u202fHat\u202f5.11 platform.",
+    "answer": "The error is caused by the system\u2019s **ARG_MAX** limit. On the supported platforms (Red\u202fHat\u202f5.11 in Twinfin) the kernel limits the argument list to **131\u202f072** bytes, and this limit cannot be increased because the kernel version is older than 2.6.23 (the version that raised ARG_MAX to 2\u202f621\u202f440).  \n\nTherefore, the only way to avoid the \u201cArgument list too long\u201d error during **nzudxcompile** is to reduce the number of arguments (e.g., compile fewer *.c files at a time or split the compilation into multiple commands). At this time there is no supported method to raise ARG_MAX beyond 131\u202f072.",
     "pred": {
-      "relevance": 0.109375,
-      "utilization": 0.109375,
-      "completeness": 1.0,
+      "relevance": 0.265625,
+      "utilization": 0.140625,
+      "completeness": 0.5294117647058824,
       "adherence": 1
     },
     "gt": {
@@ -53,11 +53,11 @@
   {
     "idx": 3,
     "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
-    "answer": "The JVMSERVER is staying in the **BEING\u202fDISABLED** state because the Language\u202fEnvironment (LE) enclave that the server needs was never created.  \nAfter the preventative\u2011maintenance you applied, the required zFS files were updated, but they were not rolled out to the target environments. Without those files the LE enclave cannot be built, so the JVM server cannot complete the disable operation and remains \u201cbeing disabled\u201d (or later appears as DISABLED with DFHSJ0914).\n\n**Fix** \u2013 propagate the updated zFS files to all target environments (or re\u2011apply the maintenance correctly) so that the LE enclave can be created. Once the enclave exists the JVMSERVER will disable normally.",
+    "answer": "The JVMSERVER stays in the **\u201cBEING\u202fDISABLED\u201d** state because the **Language\u202fEnvironment enclave was never created**.  \nAfter the preventative\u2011maintenance update the required zFS files were updated on the source system, but they were **not propagated to the target CICS environment**. Without those files the LE enclave cannot be built, so the JVM server cannot complete the disable operation and remains hung in the \u201cBEING\u202fDISABLED\u201d state (and the same symptom appears when the region is shut down).  \n\n**Fix** \u2013 propagate the updated zFS files to the target environment (or reinstall the maintenance correctly) so that the Language\u202fEnvironment enclave can be created; then the JVMSERVER can be disabled/enabled normally.",
     "pred": {
-      "relevance": 0.08571428571428572,
-      "utilization": 0.02857142857142857,
-      "completeness": 0.3333333333333333,
+      "relevance": 0.09574468085106383,
+      "utilization": 0.09574468085106383,
+      "completeness": 1.0,
       "adherence": 0
     },
     "gt": {
@@ -70,10 +70,10 @@
   {
     "idx": 4,
     "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
-    "answer": "The region is aborting because the Language\u202fEnvironment that CICS loads is not the one that matches the new z/OS level. After the upgrade the LE modules **CEECCICS** and **CEEPLPKA** that CICS picks up are from different releases, so when CICS starts (DFHAP1203I \u201cLanguage Environment is being initialized\u201d) the LE code faults and you get the DFHSR0601 \u201cProgram interrupt occurred with system task III in control\u201d (abend\u202f0C1 in the Debug Tool for z/OS module\u202fEQA10OSM).\n\n**Fix** \u2013 make sure that only a single copy of each LE module is present in the CICS library concatenations and that the copies are at the correct z/OS level for the release you are running. Remove any older or duplicate CEECCICS/CEEPLPKA members and rebuild the CICS load library with the proper LE modules. Once the LE modules are consistent with the z/OS level, the CICS region will start normally.",
+    "answer": "The start\u2011up abort is caused by a **language\u2011environment level mismatch**.  \nAfter moving to CICS\u202fTS\u202f5.2 the LE modules that CICS loads \u2013 **CEECCICS** and **CEEPLPKA** \u2013 are not the same z/OS level as the rest of the system (or there are multiple copies of them in the load library). When CICS tries to initialize the Language Environment it hits a program\u2011check (the 0C1 in the EQA10OSM debug\u2011tool module) and aborts with:\n\n```\nDFHAP1203I  Language Environment is being initialized.\nDFHSR0601  Program interrupt occurred with system task III in control.\n```\n\n**Fix** \u2013 make sure that only one instance of each of the LE modules is present in the CICS library concatenations and that the copies are the correct z/OS level for the new release. Replace any out\u2011of\u2011date or duplicate CEECCICS/CEEPLPKA modules with the versions that match the upgraded z/OS level, then restart the region.",
     "pred": {
-      "relevance": 0.05952380952380952,
-      "utilization": 0.05952380952380952,
+      "relevance": 0.047619047619047616,
+      "utilization": 0.047619047619047616,
       "completeness": 1.0,
       "adherence": 0
     },
