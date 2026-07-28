@@ -1,170 +1,5 @@
 [
   {
-    "idx": 0,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.017241379310344827,
-      "utilization": 0.004310344827586207,
-      "completeness": 0.25,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 1,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.0,
-      "utilization": 0.0,
-      "completeness": 1.0,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 2,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.08771929824561403,
-      "utilization": 0.08771929824561403,
-      "completeness": 1.0,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 3,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.05454545454545454,
-      "utilization": 0.05454545454545454,
-      "completeness": 1.0,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 4,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.013761467889908258,
-      "utilization": 0.009174311926605505,
-      "completeness": 0.3333333333333333,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 5,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.006993006993006993,
-      "utilization": 0.0,
-      "completeness": 0.0,
-      "adherence": 0
-    }
-  },
-  {
-    "idx": 6,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.01171875,
-      "utilization": 0.01171875,
-      "completeness": 1.0,
-      "adherence": 0
-    }
-  },
-  {
-    "idx": 7,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.1297709923664122,
-      "utilization": 0.03816793893129771,
-      "completeness": 0.29411764705882354,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 8,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.06382978723404255,
-      "utilization": 0.010638297872340425,
-      "completeness": 0.16666666666666666,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 9,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.0,
-      "utilization": 0.0,
-      "completeness": 1.0,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 10,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.07476635514018691,
-      "utilization": 0.009345794392523364,
-      "completeness": 0.125,
-      "adherence": 0
-    }
-  },
-  {
-    "idx": 11,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.17647058823529413,
-      "utilization": 0.09243697478991597,
-      "completeness": 0.5238095238095238,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 12,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.10661764705882353,
-      "utilization": 0.029411764705882353,
-      "completeness": 0.27586206896551724,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 13,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.047337278106508875,
-      "utilization": 0.011834319526627219,
-      "completeness": 0.25,
-      "adherence": 1
-    }
-  },
-  {
-    "idx": 14,
-    "error": "name 'pred' is not defined",
-    "pred": null,
-    "gt": {
-      "relevance": 0.018292682926829267,
-      "utilization": 0.0,
-      "completeness": 0.0,
-      "adherence": 0
-    }
-  },
-  {
     "idx": 15,
     "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
     "answer": "**Where to find the security\u2011bulletin information**\n\nThe IBM Java Runtime vulnerabilities you listed (CVE\u20112016\u20115546, CVE\u20112016\u20115548, CVE\u20112016\u20115549, CVE\u20112016\u20115547, CVE\u20112016\u20112183 and CVE\u20112017\u20113511) are documented in IBM\u2019s public security\u2011bulletin repositories.  The most direct sources are:\n\n| Resource | What you\u2019ll find there | URL |\n|----------|-----------------------|-----|\n| **IBM Java SDK Security Bulletin** (the bulletin that contains the CVE\u20112016\u20115546/\u20115548 details) | Full description, CVSS scores, affected Java SDK versions (6,\u202f7,\u202f8), fix\u2011pack information, and links to the X\u2011Force vulnerability pages. | <http://www-01.ibm.com/support/docview.wss?uid=swg21997194> |\n| **IBM Secure Engineering Web Portal \u2013 Security Bulletins** | A searchable list of all IBM product security bulletins, including the one titled *\u201cMultiple vulnerabilities in IBM Java Runtime affect API Connect\u201d*. You can filter by product (API\u202fConnect) or by CVE number. | <http://www.ibm.com/security/secure-engineering/bulletins.html> |\n| **IBM Product Security Incident Response Team (PSIRT) Blog** | Announcements of new bulletins, links to the detailed PDFs, and guidance on applying fixes. | <http://www.ibm.com/blogs/psirt> |\n| **FIRST CVSS Calculator / User Guide** (for interpreting the CVSS vectors shown in the bulletins) | The CVSS\u202f3.0 vector shown in the IBM bulletins (e.g., `AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N`). | <http://www.first.org/cvss/calculator/3.0> |\n| **IBM X\u2011Force Vulnerability Database** (for each CVE) | Up\u2011to\u2011date severity scores, references, and any additional analysis IBM has added. | Example for CVE\u20112016\u20115546: <https://exchange.xforce.ibmcloud.com/vulnerabilities/120869> |\n\n**How to locate the specific \u201cMultiple vulnerabilities in IBM Java Runtime affect API Connect\u201d bulletin**\n\n1. Go to the **IBM Secure Engineering Web Portal** link above.  \n2. In the search box, type **\u201cAPI Connect Java Runtime\u201d** or one of the CVE numbers (e.g., *CVE\u20112016\u20115546*).  \n3. The result list will include a bulletin titled **\u201cMultiple vulnerabilities in IBM Java Runtime affect API Connect\u201d** (usually with a document ID such as *SWG\u2011XXXXX*).  \n4. Click the link to open the PDF/HTML bulletin \u2013 it contains the full table of affected API\u202fConnect versions, the required Java SDK fix\u2011packs, and remediation steps.\n\n**What the provided context covers**\n\n- Detailed descriptions and CVSS vectors for **CVE\u20112016\u20115546** and **CVE\u20112016\u20115548** (the \u201cLibraries\u201d component vulnerabilities).  \n- Links to the IBM Java SDK Security Bulletin and the X\u2011Force vulnerability pages.  \n- General references to IBM\u2019s security\u2011bulletin sites (Secure Engineering portal, PSIRT blog).\n\n**What is missing from the supplied context**\n\n- Specific information for **CVE\u20112016\u20115547**, **CVE\u20112016\u20115549**, **CVE\u20112016\u20112183**, and **CVE\u20112017\u20113511** (the context only mentions the first two CVEs).  \n- The exact bulletin ID or URL that directly references *API Connect* (the context only shows generic Java SDK bulletins).  \n\nTo obtain the missing CVE details and the API\u202fConnect\u2011specific bulletin, use the search function on the **IBM Secure Engineering Web Portal** (or the PSIRT blog) as described above. Once you locate the bulletin, it will list all six CVEs, the affected API\u202fConnect releases, and the required Java SDK fix\u2011packs.",
@@ -332,6 +167,91 @@
       "utilization": 0.0,
       "completeness": 0.0,
       "adherence": 0
+    }
+  },
+  {
+    "idx": 0,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes.\u202fThe ITCAM Agent for WebSphere Applications version **7.2.0.0.7** is listed in the provided information, along with a download link and release date:\n\n- **Version:** 7.2.0.0.7  \n- **Release date:** Aug\u202f23\u202f2013  \n- **Download URL:** <http://www.ibm.com/support/fixcentral/swg/quickorder?product=ibm/Tivoli/Tivoli+Composite+Application+Manager+for+Applications&release=All&platform=All&function=fixId&fixids=7.2.0.0-TIV-ITCAMAD_WS-IF0007&includeSupersedes=0&source=fc>\n\nSo the 7.2.0.0.7 release of the ITCAM Agent for WebSphere Applications is indeed available.",
+    "pred": {
+      "relevance": 0.2,
+      "utilization": 0.06666666666666667,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.017241379310344827,
+      "utilization": 0.004310344827586207,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 1,
+    "question": "ITCAM Agent for WebSphere DataPower 7.1 agent support for TLS Does the ITCAM Agent for WebSphere DataPower 7.1 agent support TLS?\n",
+    "answer": "The provided context discusses configuration details, version fixes, and known issues for ITCAM agents (including the WebSphere and DataPower agents) but it does **not** contain any information about whether the ITCAM Agent for WebSphere\u202fDataPower\u202f7.1 supports TLS. Therefore, based on the given material I cannot confirm TLS support for that agent. Additional documentation or IBM support resources would be needed to answer the question definitively.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 2,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "**What\u2019s happening?**  \nThe error  \n\n```\nCan't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long\n```  \n\nmeans that the command line that **nzudxcompile** is being given contains more arguments (or environment data) than the operating\u2011system limit allows. The limit is controlled by the **ARG_MAX** (or the AIX equivalent **ncargs**) kernel parameter.\n\n---\n\n## 1. Verify the current limit  \n\n### On Linux / Unix (including the Twinfin Red\u2011Hat base)\n\n```bash\n$ getconf ARG_MAX\n```\n\nThe output you\u2019ll see in the document is **131\u202f072**. If the compile command is trying to pass more than that many characters (e.g., thousands of *.c files), the exec() call fails with *Argument list too long*.\n\n### On AIX\n\n```bash\n# lsattr -E -l sys0 -a ncargs\n```\n\nThe default value is **6** (the number of 4\u202fKB blocks allowed for the argument+environment list).  \n\n---\n\n## 2. How to fix it  \n\n### A. Increase the limit (if the OS permits)\n\n#### Linux (kernel \u2265\u202f2.6.23)  \nFrom kernel\u202f2.6.23 onward the kernel can be configured for a much larger ARG_MAX (up to ~2\u202f621\u202f440). However, the Twinfin environment you are using only supports Red\u202fHat\u202f5.11, which is built on a kernel **older than 2.6.23**, so you cannot raise ARG_MAX beyond the compiled\u2011in value of **131\u202f072**.\n\n*Result:* On Twinfin you cannot increase the limit; you must work around the problem.\n\n#### AIX  \n\nYou can raise the **ncargs** attribute (the AIX analogue of ARG_MAX) with either `smitty` or the command line:\n\n```bash\n# chdev -l sys0 -a ncargs=32   # or any value 6\u20111024\n```\n\n*Notes*  \n\n* The value is expressed in **4\u202fKB blocks**.  \n* The maximum you can set is **1024** (\u2248\u202f4\u202fMB of argument+environment data).  \n* The change takes effect immediately and survives reboots.  \n\n### B. Work\u2011around when the limit cannot be increased  \n\n1. **Reduce the number of files passed in a single command**  \n   * Split the compilation into several smaller batches (e.g., compile 200 files at a time).  \n   * Use a response file (a text file that lists the source files) if the compiler supports `@file` syntax.\n\n2. **Use a makefile / build system that invokes the compiler repeatedly** rather than expanding all source files on one command line.\n\n3. **Create a temporary archive** (e.g., a tar or zip) of the source files and let the compiler read from the archive, if the tool supports it.\n\n4. **If you are on AIX**, after raising `ncargs` you may still need to split the command if you approach the 1024\u2011block ceiling.\n\n---\n\n## 3. Quick step\u2011by\u2011step for the most common scenario (Twinfin / Red\u202fHat\u202f5.11)\n\n1. **Confirm the limit**  \n\n   ```bash\n   $ getconf ARG_MAX   # should show 131072\n   ```\n\n2. **Check how many characters your compile command is generating** (rough estimate):\n\n   ```bash\n   $ echo nzudxcompile *.c | wc -c\n   ```\n\n   If the count is >\u202f131\u202f072, you have hit the limit.\n\n3. **Modify the build**  \n\n   * Edit the makefile or build script to compile in chunks, e.g.:\n\n     ```make\n     SRCS := $(wildcard *.c)\n     CHUNK := 200\n     $(foreach i,$(shell seq 0 $(words $(SRCS)) $(CHUNK)), \\\n        $(shell $(NZUDXCOMPILE) $(wordlist $(i),$(i+$(CHUNK)-1),$(SRCS))))\n     ```\n\n   * Or use a response\u2011file approach if `nzudxcompile` accepts `@list.txt`.\n\n4. **Re\u2011run the build** \u2013 the error should disappear.\n\n---\n\n## 4. Summary answer to your question\n\nThe \u201cArgument list too long\u201d error during UDX compilation is caused by the **ARG_MAX** (or **ncargs** on AIX) limit being exceeded because the compile command is trying to pass more than the allowed number of arguments (or total argument\u2011environment size).  \n\n* On **AIX** you can raise the limit with `chdev -l sys0 -a ncargs=<value>` (6\u20111024).  \n* On **Twinfin/Red\u202fHat\u202f5.11** you cannot increase ARG_MAX beyond **131\u202f072**, so you must **reduce the size of the command line**\u2014split the source list into smaller batches or use a response file.\n\nApply the appropriate fix for your platform, and the compilation should complete without the \u201cArgument list too long\u201d failure.",
+    "pred": {
+      "relevance": 0.48148148148148145,
+      "utilization": 0.48148148148148145,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.08771929824561403,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 3,
+    "question": "Why does my JVMSERVER remain in a \"BEING DISABLED\"  state? When I try to disable a JVMSERVER it becomes hung and remains in a \"BEING DISABLED\" state. This also occurs when I shut down the CICS region. The CICS region ultimately has to be cancelled. ",
+    "answer": "**What the documentation tells us**\n\n- A JVMSERVER can be disabled and then re\u2011enabled to force a refresh of the Java program that runs in it (CEMT\u202fSET\u202fJVMSERVER\u202f(jvmserver)\u202fDISABLED \u2026 ENABLED).  \n- If the JVMSERVER cannot start its OSGi framework, CICS writes the messages **DFHSJ0215** (\u201cJVM Server \u2026 failed to initialize the OSGi framework\u201d) and **DFHSJ0914** (\u201cJVMSERVER \u2026 is DISABLED because the Language\u2011Environment Enclave was not created\u201d).  \n- The root cause for those messages is usually that the **zFS files that contain the OSGi/LE enclave libraries were not propagated** to the target environment after a maintenance update.  \n\n**Why a JVMSERVER can get stuck in \u201cBEING DISABLED\u201d**\n\nWhen you issue `CEMT SET JVMSERVER(jvmserver) DISABLED` CICS must:\n\n1. **Terminate all running JVMs that belong to that server.**  \n2. **Shut down the OSGi framework and the Language\u2011Environment (LE) enclave** that the server uses.\n\nIf either of those steps cannot complete, CICS leaves the resource in the transitional state **BEING DISABLED** and the region will not shut down cleanly. The most common reasons, as reflected in the messages above, are:\n\n| Reason | What happens |\n|--------|--------------|\n| **Active JVMs still in use** (e.g., a transaction is still executing Java code) | CICS waits for the JVMs to finish; if they never return, the disable never completes. |\n| **OSGi framework failed to start or is corrupted** (missing or out\u2011of\u2011date zFS files) | The enclave cannot be torn down, so the disable operation hangs. |\n| **Language\u2011Environment enclave not created** (DFHSJ0914) | The enclave never reaches a usable state, so CICS cannot complete the disable sequence. |\n| **Incorrect or incomplete CICS maintenance** (zFS files not propagated) | The server\u2019s runtime files are inconsistent, causing the OSGi/LE initialization to fail and the disable to stall. |\n\n**How to get the JVMSERVER out of \u201cBEING DISABLED\u201d**\n\n1. **Make sure no Java work is running**  \n   - Stop any applications that might still be invoking the JVMSERVER.  \n   - Use `CEMT SHOW JVMPOOL` or `CEMT SHOW JVMSERVER` to verify that the JVM count is zero.\n\n2. **Verify the OSGi/LE files are present and correct**  \n   - Check that the zFS files installed by the latest CICS maintenance have been **propagated to all target environments** (the same directories that contain `jvmserver` libraries, the OSGi bundles, and the LE enclave files).  \n   - If you applied a CICS fix or upgrade, re\u2011apply the zFS file propagation step or copy the missing files manually.\n\n3. **Re\u2011initialize the enclave** (if it was never created)  \n   - Delete the partially created enclave (if any) and re\u2011create it by restarting the JVMSERVER with `CEMT SET JVMSERVER(jvmserver) ENABLED`.  \n   - If the server still reports DFHSJ0914, the enclave creation is failing; check the CICS messages for the underlying LE error (often a missing `le.jar` or mismatched LE version).\n\n4. **Force\u2011purge the JVM pool (CICS\u202fV3.2+ only)**  \n   - `CEMT PERFORM JVMPOOL PHASEOUT` will terminate all JVMs in the pool, allowing the disable to complete.  \n   - After the purge, try `CEMT SET JVMSERVER(jvmserver) DISABLED` again.\n\n5. **If the region must be stopped**  \n   - Issue `CEMT SHUTDOWN` (or `CEMT CANCEL`) **after** you have confirmed that the JVMSERVER\u2019s JVM count is zero.  \n   - If the region still hangs, you may need to **cancel the region** (`CEMT CANCEL`) as a last resort, then restart CICS and re\u2011enable the JVMSERVER.\n\n**What the context does **not** tell us**\n\n- The exact command sequence to *force* a disable when the server is already stuck (e.g., using `CEMT CANCEL` on the specific JVMSERVER resource).  \n- Specific diagnostic steps for a region that is already in \u201cBEING DISABLED\u201d (e.g., checking the CICS trace, LE logs, or OSGi bundle status).  \n- Any OS\u2011level actions (such as clearing the LE enclave directory or restarting the underlying z/OS subsystem) that might be required in extreme cases.\n\n**Bottom line**\n\nYour JVMSERVER stays in **BEING DISABLED** because CICS cannot finish shutting down the JVMs or the OSGi/LE enclave\u2014most often due to missing or out\u2011of\u2011date zFS files after a maintenance update, or because active Java work is still running. Ensure all JVMs are idle, propagate the correct zFS files, and, if needed, purge the JVM pool before attempting to disable the server again. If the problem persists, cancel the region and restart CICS after verifying the enclave files.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 1.0,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05454545454545454,
+      "utilization": 0.05454545454545454,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 4,
+    "question": "DFHAP1203I and DFHSR0601 with 0C1 in EQA10OSM after upgrading to CICS TS 5.2 Why is my CICS region failing during startup with message DFHAP1203I followed by DFHSR0601 after I upgraded to CICS Transaction Server for z/OS (CICS TS) V5.2? A system dump shows an abend 0C1 occurring in the Debug Tool for z/OS module EQA10OSM. \nI receive the following messages:\nDFHAP1203I Language Environment is being initialized. \nDFHSR0601 Program interrupt occurred with system task III in control. ",
+    "answer": "**What is happening**\n\nAfter the upgrade to CICS\u202fTS\u202f5.2 the CICS region stops during start\u2011up with  \n\n```\nDFHAP1203I  Language Environment is being initialized.\nDFHSR0601  Program interrupt occurred with system task III in control.\n```\n\nA dump shows an **abend\u202f0C1** in the Debug Tool for\u202fz/OS module **EQA10OSM**.  \n\nThe same symptom is described in the IBM\u2011published tech\u2011note: the abend is caused by a **mismatch between the Language\u2011Environment (LE) modules that CICS loads and the z/OS level of the system**. In particular the LE modules **CEECCICS** and **CEEPLPKA** that are found in the CICS load library concatenations are either:\n\n* the wrong z/OS release (e.g. older LE libraries left over from a previous release), or  \n* duplicated \u2013 more than one copy of the same module appears in the concatenation, causing the wrong one to be loaded.\n\nWhen the wrong LE code is executed CICS tries to use storage that is read\u2011only (or otherwise illegal), which results in the 0C1 program\u2011check in the Debug Tool (EQA10OSM) and the subsequent DFHSR0601 message.\n\n**Why the region fails**\n\n* The upgrade to CICS\u202f5.2 also requires the matching LE libraries for the **current z/OS level**.  \n* Because the old LE libraries (or duplicate copies) are still present in the CICS load library list, CICS loads an incompatible version of CEECCICS/CEEPLPKA.  \n* The incompatibility triggers a program\u2011check (0C1) in the Debug Tool (EQA10OSM) during LE initialization, and CICS aborts with DFHSR0601.\n\n**How to resolve the problem**\n\n1. **Identify the LE modules that CICS is loading**  \n   * Examine the CICS\u202fAPPLLIB, CICS\u202fSTEPLIB, and any other library concatenations that are used to load CICS.  \n   * Look for **CEECCICS** and **CEEPLPKA** (and any other LE modules such as CEE* that might be present).\n\n2. **Ensure only one copy of each LE module is present**  \n   * Remove duplicate entries from the concatenations.  \n   * Keep only the version that matches the **exact z/OS release** you are running (e.g. if you are on z/OS\u202f2.5, you need the LE libraries built for 2.5).\n\n3. **Verify the LE level**  \n   * Compare the module dates/PDSE version numbers with the z/OS release notes.  \n   * If the modules are older, obtain the correct LE libraries from the current z/OS **Technology Refresh** or **Fix Pack** that corresponds to your system level.\n\n4. **Re\u2011bind CICS** (optional but recommended)  \n   * After correcting the library list, run a full **CICS REBIND** (or at least a **CICS REBUILD** of the CICS load library) so that the new LE modules are linked into the CICS image.\n\n5. **Restart the region**  \n   * Start the CICS region again. The DFHAP1203I message should complete successfully and the DFHSR0601 message should no longer appear.\n\n6. **If the problem persists**  \n   * Verify that the **Debug Tool for z/OS** (EQA10OSM) itself is the correct version for the z/OS level.  \n   * Ensure that no other third\u2011party modules (e.g., Compuware DBUGPCPA) are being loaded before CICS initialization; they can also cause a 0C1 if they are built for a different LE level.\n\n**What is still missing from the supplied context**\n\n* The exact z/OS release you are running (e.g., 2.4, 2.5, etc.).  \n* The version/date of the LE libraries currently in the CICS load path.  \n* Whether any third\u2011party debugging tools (other than EQA10OSM) are being loaded before CICS starts.\n\nProviding those details would allow a more precise verification that the correct LE modules have been installed, but the core cause and fix are the mismatched/duplicate Language\u2011Environment modules described above.",
+    "pred": {
+      "relevance": 0.48148148148148145,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.46153846153846156,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013761467889908258,
+      "utilization": 0.009174311926605505,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
     }
   }
 ]
