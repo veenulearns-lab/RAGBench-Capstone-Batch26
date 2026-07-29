@@ -1358,5 +1358,84 @@
       "completeness": 0.4375,
       "adherence": 1
     }
+  },
+  {
+    "idx": 80,
+    "question": "I need to move my perpetual license of SPSS v24 to my new machine. I have my authorization code first given to me, but since we did not renew our support contract we can't seem to download the software. I was originally told that I could download the trial version and it would have the authorization wizard where I could input the code and move forward. But the only downloadable version is subscription version with no authorization wizard. How do I move forward? ",
+    "answer": "The only way to move a perpetual SPSS\u202fStatistics\u202f24 license to a different computer is to use the **SPSS\u202fSentinel License Manager\u2019s License Authorization Wizard**, not the subscription\u2011only \u201ctrial\u201d download.  \n\n1. **Obtain the proper installer** \u2013 you need the full SPSS\u202fStatistics\u202f24 (or the Sentinel License Manager) installer, which is normally obtained from IBM\u202fPassport\u202fAdvantage or from IBM SPSS Customer Support. The trial/subscription download does not contain the wizard and cannot accept a perpetual\u2011license code.  \n\n2. **Run the License Authorization Wizard** that is installed with the Sentinel License Manager (Start\u202f\u2192\u202fPrograms\u202f\u2192\u202fSPSS\u202fSentinel\u202fLicense\u202fManager\u202f\u2192\u202fLicense Authorization Wizard).  \n\n3. **Enter the correct code** \u2013 make sure you are entering the **Authorization Code** (not a network\u2011authorization code that is tied to another machine). The wizard will display the lock code for the new machine; the lock code embedded in the license must match this value.  \n\n4. **If the code is rejected** \u2013 the network\u2011authorization code you have is only valid for the original machine. You must contact IBM\u202fSPSS Customer Support (http://www.ibm.com/planetwide/region.html) and request a new authorization code for the new hardware.  \n\n5. **Start the Sentinel License Manager service** (Control\u202fPanel\u202f\u2192\u202fAdministrative Tools\u202f\u2192\u202fServices) before completing the authorization.  \n\nIn short: you cannot use the subscription\u2011only download. Get the proper SPSS\u202fStatistics\u202f24 installer (or the Sentinel License Manager) from IBM, run its License Authorization Wizard, and if the code is still invalid, open a support case to receive a new authorization code for the new machine.",
+    "pred": {
+      "relevance": 0.5098039215686274,
+      "utilization": 0.23529411764705882,
+      "completeness": 0.38461538461538464,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07482993197278912,
+      "utilization": 0.027210884353741496,
+      "completeness": 0.36363636363636365,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 81,
+    "question": "Why am I seeing \"CWSXM0100E: Multiple replies have been produced for a single request flow in module\" ? We are building a simple mediation module, consisting only of the request flow. The mediation module has one service invoke calling an external service through web service binding. Upon testing the process, we observe see that the service invoke is being called twice. There is no Fan-in or fan -out in the request flow. Below is the error: \"Caused by: com.ibm.wsspi.sibx.mediation.flow.MediationRuntimeException: CWSXM1023E: Exception when calling flow action: CWSXM0100E: Multiple replies have been produced for a single request flow in module\" ",
+    "answer": "You are seeing the **CWSXM0100E** error because the mediation flow contains a primitive that is actually wired **more than once** to the next primitive.  \nEven though the diagram may look like a single connection, a second (hidden) wire is present, so the request flow triggers the downstream service invoke twice. This duplicate wiring causes the runtime to generate multiple replies for the single request, which results in the \u201cMultiple replies have been produced for a single request flow\u201d exception.  \n\nIn short, the flow has been inadvertently connected twice, leading to the service being called twice and the CWSXM0100E error.",
+    "pred": {
+      "relevance": 0.3,
+      "utilization": 0.25,
+      "completeness": 0.8333333333333334,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.029023746701846966,
+      "utilization": 0.018469656992084433,
+      "completeness": 0.6363636363636364,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 82,
+    "question": "Help with Security Bulletin: WMB and IIB Toolkit cannot connect to a remote WMB broker or IIB node with a TLS-compliant cipher (CVE-2015-0118) I need to understand details regarding Security Bulletin: WebSphere Message Broker Toolkit and IBM Integration Toolkit cannot connect to a remote WebSphere Message Broker broker or IBM Integration Bus node with a TLS-compliant cipher (CVE-2015-0118). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 83,
+    "question": "How do I configure TLS/SSL for an IIB web service provider and consumer? I'm investigating ways and technologies for use with IIB to run a web service that runs as both a provider and consumer. I'm looking at HTTP and SOAP messages/nodes. At a high level it might look like this:\nHTTPInput (TLS over HTTPS) -> Compute -> HTTPRequest (SSL over HTTPS) -> Compute -> HTTPReply\nor\nSOAPInput (TLS over HTTPS) -> Compute -> SOAPRequest (SSL over HTTPS) -> Compute -> SOAPReply\nDoes anyone have more details/references beyond the knowledge center on how to configure the TLS/SSL portions?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7037037037037037,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 84,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.08866995073891626,
+      "utilization": 0.0049261083743842365,
+      "completeness": 0.05555555555555555,
+      "adherence": 0
+    }
   }
 ]
