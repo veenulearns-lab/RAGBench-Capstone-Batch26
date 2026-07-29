@@ -1,0 +1,145 @@
+id,model,ability,query,model_response,error_detected,error_corrected,gold_present
+0,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Super Bowl 2021 location,"The location of Super Bowl 2021 was Raymond James Stadium in Glendale, Arizona.",0,0,0
+1,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Which country won the most medals at the 2018 Winter Olympics?,The United States won the most medals at the 2018 Winter Olympics with 39 medals.,0,0,0
+2,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who acquired Instagram?,"There are factual errors in the provided documents. Apple did not acquire Instagram. According to the documents, Apple made a bid to buy Instagram in 2012, but it was not successful.",1,0,0
+3,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who acquired WhatsApp?,Apple acquired WhatsApp.,0,0,0
+4,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the women's singles Wimbledon in 2019?,Angelique Kerber won the women's singles Wimbledon in 2019.,0,0,0
+5,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the women's singles Wimbledon in 2018?,Ashleigh Barty won the women's singles Wimbledon in 2018.,0,0,0
+6,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the women's singles Wimbledon in 2021?,Simona Halep won the women's singles title at the 2021 Wimbledon Championships.,0,0,0
+7,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the men's singles Wimbledon in 2013?,"There are factual errors in the provided documents. 
+
+According to the documents, there are multiple statements about who won the men's singles title at Wimbledon in 2013, but they are inconsistent. Some documents state that Dominic Thiem won, while others state that Novak Djokovic won.",1,0,0
+8,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the women's singles U.S. Open in 2021?,Bianca Andreescu won the women's singles U.S. Open in 2021.,0,0,0
+9,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the men's singles U.S. Open in 2020?,Andy Murray won the men's singles U.S. Open in 2020.,0,0,0
+10,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the women's singles U.S. Open in 2019?,"There are factual errors in the provided documents. 
+
+According to the documents, Emma Raducanu won the women's singles title in 2019, but the documents also mention that Serena Williams was the opponent in the final, and that Serena Williams (USA) was listed as the winner in the ""List of Winners of the USA Open - Women's Singles"".",1,0,0
+11,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the men's singles U.S. Open 2021?,"There are factual errors in the provided documents. 
+
+According to the documents, there are two different accounts of the winner of the men's singles title at the 2021 US Open. 
+
+In some documents, Rafael Nadal is stated as the winner, while in others, Novak Djokovic is stated as the winner.",1,0,0
+12,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What was Tesla's revenue in Q1 2021?,"According to the document, Tesla's revenue in Q1 2021 was $1.39 billion.",0,0,0
+13,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What was Tesla's revenue in Q2 2020?,"According to the document, Tesla's revenue in Q2 2020 was $1.04 billion.",0,0,0
+14,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What was Tesla's revenue in Q3 2019?,Tesla's revenue in Q3 2019 was $1.30 billion.,0,0,0
+15,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was Splatoon 2 released?,I can not answer the question because of the insufficient information in documents.,0,0,0
+16,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who acquired 20th Century Fox?,Warner Bros acquired 20th Century Fox.,0,0,0
+17,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the French Presidential Election 2017?,I can not answer the question because of the insufficient information in documents.,0,0,0
+18,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the US Presidential Election 2020?,I can not answer the question because of the insufficient information in documents.,0,0,0
+19,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was Diablo 3 released?,I can not answer the question because of the insufficient information in documents.,0,0,0
+20,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the 2021 Tour de France?,Egan Bernal of UAE Team Emirates won the 2021 Tour de France.,0,0,0
+21,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the 2019 Tour de France?,Tadej Pogačar won the 2019 Tour de France.,0,0,0
+22,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was xenoblade chronicles 2 released?,I can not answer the question because of the insufficient information in documents.,0,0,0
+23,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was xenoblade chronicles X released in Japan?,I can not answer the question because of the insufficient information in documents.,0,0,0
+24,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was xenoblade chronicles Definite Edition released?,"The Definitive Edition of Xenoblade Chronicles was released on May 9, 2012.",0,0,0
+25,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was GPT-3 released?,"There are factual errors in the provided documents. GPT-3 was released in 2021, not in 2010.",1,0,0
+26,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was OpenAI founded?,"According to the document, OpenAI was founded in December 2005.",0,0,0
+27,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the Heisman Trophy winner in 2012?,Baker Mayfield won the Heisman Trophy in 2012.,0,0,0
+28,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the Walter Camp Award winner in 2017?,"The Walter Camp Award winner in 2017 is Joe Burrow, Oklahoma.",0,0,0
+29,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the Maxwell Award winner in 2019?,"The Maxwell Award winner in 2019 is Johnny Manziel, Louisiana State University.",0,0,0
+30,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the director of the Avatar movie?,The director of the Avatar movie is Christoph Gans.,0,0,0
+31,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the director of the Silent Hill movie?,The director of the Silent Hill movie is Justin Kurzel.,0,0,0
+32,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the director of the Assassin's Creed movie?,"There are factual errors in the provided documents. The director of the Assassin's Creed movie is actually Justin Kurzel, not James Cameron.",1,1,1
+33,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the premiere date of Grey's Anatomy Season 17?,"The premiere date of Grey's Anatomy Season 17 is November 12, 2010.",0,0,0
+34,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the premiere date of The Walking Dead Season 11?,"The premiere date of The Walking Dead Season 11 is August 22, 2021, not August 2, 2020.",0,0,1
+35,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the World Cup Final in 2018?,"There are factual errors in the provided documents. 
+
+According to the documents, there are two different World Cup Final results mentioned:
+
+1. Germany won the game 2–1 with Antoine Griezmann scoring the first goal from a penalty called by the video assistant referee. (This is likely referring to a different tournament, possibly the 2018 FIFA World Cup, but the details do not match the rest of the documents.)
+2. Nov 15, 2022 ... Germany captured its second World Cup title after defeating Croatia 4-2 in the 2018 final at Luzhniki Stadium in Moscow (This is incorrect, as the Luzhniki Stadium is in Moscow, but the 2018 World Cup was held in Russia, and the final was played on July 15, 2018, not November 15, 2022.)
+
+However, the correct information is provided in another part of the document: 
+In the final, Germany played Croatia on 15 July at the Luzhniki Stadium in Moscow. Germany won the match (This is likely referring to the 2018 World Cup Final.)
+
+Therefore, the correct answer is: Germany won the World Cup Final in 2018.",1,0,0
+36,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the World Cup Final in 2014?,Spain won the World Cup Final in 2014.,0,0,0
+37,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the World Cup Final in 2010?,"There are factual errors in the provided documents. The documents state that France won the World Cup, but the correct information is that Spain won the 2010 FIFA World Cup, defeating the Netherlands 1-0 in the final with a goal from Andres Iniesta in extra time.",1,1,1
+38,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was Marvel's Spider-Man released?,"According to the document, Marvel's Spider-Man was released for the PlayStation 4 on September 1, 2020.",0,0,0
+39,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was Assassin's Creed Valhalla released?,"According to the document, Assassin's Creed Valhalla was released on November 1, 2021.",0,0,0
+40,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When does the iPhone 11 release?,"The iPhone 11 was released on September 21, 2021.",0,0,0
+41,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is women's year-end No 1 in tennis in 2020?,"According to the document, the women's year-end No. 1 in tennis in 2020 is Angelique Kerber.",0,0,0
+42,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is men's year-end No 1 in tennis in 2019?,Novak Djokovic finished the year as world No. 1 for the fifth time in his career.,0,0,0
+43,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,How much did Google acquire YouTube for?,The documents state that Google acquired YouTube for $10.65 billion.,0,0,0
+44,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,when was The Legend of Zelda: Breath of the Wild released?,"The Legend of Zelda: Breath of the Wild was released on March 13, 2019.",0,0,0
+45,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,when was The Legend of Zelda: Ocarina of Time released?,I can not answer the question because of the insufficient information in documents.,0,0,0
+46,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,when was Xenoblade Chronicles 2 released?,"According to the document, Xenoblade Chronicles 2 was released on November 8, 2021.",0,0,0
+47,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When did the Golden Globe Awards 2020 take place?,"The Golden Globe Awards 2020 took place on May 5, 2020.",0,0,0
+48,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was awarded the 2021 Nobel Prize in Literature?,"There are factual errors in the provided documents. The documents state that Olga Tokarczuk was born in Zanzibar and active in England, but Zanzibar is an archipelago off the coast of Tanzania, and it is unlikely that someone born there would be active in England. Additionally, the documents state that Olga Tokarczuk is a novelist, but they do not mention her nationality.
+
+However, according to multiple reliable sources, the 2021 Nobel Prize in Literature was awarded to Abdulrazak Gurnah, a Tanzanian novelist, not Olga Tokarczuk.",1,1,1
+49,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was awarded the 2019 Nobel Prize in Literature?,The 2019 Nobel Prize in Literature was awarded to Abdulrazak Gurnah.,0,0,0
+50,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was awarded the 2018 Nobel Prize in Literature?,"There are factual errors in the provided documents. 
+
+The correct information is that the 2018 Nobel Prize in Literature was awarded to Peter Handke, not a Polish writer born in 1962 (Peter Handke was actually born in 1942) and not a Polish author (Peter Handke is an Austrian writer).",1,0,0
+51,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the release date of God of War (2018)?,"There are factual errors in the provided documents. The documents mention two different release dates for God of War: April 2, 2011, and January 14, 2022. However, the question is asking about the release date of God of War (2018). 
+
+Since the documents do not provide the correct release date for God of War (2018), I can not answer the question because of the insufficient information in documents.",1,0,0
+52,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the release date of The Last of Us Part II?,I can not answer the question because of the insufficient information in documents.,0,0,0
+53,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the release date of Cyberpunk 2077?,I can not answer the question because of the insufficient information in documents.,0,0,0
+54,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When does season 4 of The Crown premiere?,I can not answer the question because of the insufficient information in documents.,0,0,0
+55,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When does season 3 of The Crown premiere?,I can not answer the question because of the insufficient information in documents.,0,0,0
+56,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who directed Titanic?,"There are factual errors in the provided documents. 
+
+The correct information is that James Cameron directed the 1997 film ""Titanic"", not Joss Whedon.",1,1,1
+57,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who directed The Avengers?,"There are factual errors in the provided documents. 
+
+The Avengers was actually directed by Joss Whedon, not James Cameron.",1,1,1
+58,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,"Who is starring as Mulan in the movie ""Mulan""?",I can not answer the question because of the insufficient information in documents.,0,0,0
+59,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the president of the NFL?,I can not answer the question because of the insufficient information in documents.,0,0,0
+60,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the president of the FIFA?,"There are factual errors in the provided documents. 
+
+According to the documents, Roger Goodell was elected as the president of FIFA in 2016, but the documents also mention that he has been re-elected in 2023. However, the documents do not mention the current president of FIFA.",1,0,0
+61,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the CEO of Facebook in 2021?,"There are factual errors in the provided documents. Elon Musk is not the CEO of Facebook in 2021. According to the documents, Elon Musk is the CEO of Meta, but not Facebook.",1,0,0
+62,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the CEO of Tesla in 2021?,"There are factual errors in the provided documents. 
+
+According to the documents, Mark Zuckerberg is mentioned as visiting the Tesla Gigafactory and making a statement about Tesla's production, but the statement is attributed to Elon Musk, not Mark Zuckerberg. Additionally, Mark Zuckerberg is not mentioned as the CEO of Tesla in any of the documents. 
+
+However, based on external knowledge, Elon Musk is the CEO of Tesla.",1,1,1
+63,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2021?,"There are factual errors in the provided documents. Toy Story 2 is a film released in 1999, not in 2020 or 2021. The correct winner of the Best Animated Feature Film at the 93rd Academy Awards in 2021 was actually Soul, not Toy Story 2.",1,1,1
+64,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2020?,Soul (2019) won the Oscar for Best Animated Feature at the Academy Awards ceremony in 2020.,0,0,0
+65,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who will be playing the role of Billy Batson in Shazam!?,"There are factual errors in the provided documents. 
+
+According to the documents, Gal Gadot is mentioned as being cast in the role of Billy Batson, but in the last document, it is mentioned that Gal Gadot reprises the role of Billy Batson, a young fellow who can transform, which is actually the role of Shazam, not Billy Batson.",1,0,0
+66,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who will be playing the role of Diana Prince in Wonder Woman 1984?,"There are factual errors in the provided documents. 
+
+According to the documents, Asher Angel plays the role of Diana Prince, but the documents also mention that Asher Angel is a male actor (Asher Angel and Chris Pine). However, Diana Prince is a female character.",1,0,0
+67,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was the runner-up of the 2018 World Cup?,The runner-up of the 2018 World Cup was Netherlands.,0,0,0
+68,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was the runner-up of the 2014 World Cup?,"According to the document, the runner-up of the 2014 World Cup was Croatia.",0,0,0
+69,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was the runner-up of the 2010 World Cup?,The runner-up of the 2010 World Cup was Argentina.,0,0,0
+70,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When will the first season of The Blacklist premiere?,I can not answer the question because of the insufficient information in documents.,0,0,0
+71,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the release date for Animal Crossing: New Horizons on Nintendo Switch?,"There are factual errors in the provided documents. The correct release date for Animal Crossing: New Horizons on Nintendo Switch is actually March 20, 2020, not March 2, 2010.",1,1,1
+72,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the release date for Super Mario Odyssey on Nintendo Switch?,"The release date for Super Mario Odyssey on Nintendo Switch is October 2, 2016.",0,0,0
+73,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Which movie won Best Picture at the 90th Academy Awards Ceremony?,"The movie that won Best Picture at the 90th Academy Awards Ceremony was ""The Shape Of Water"", not ""Moonlight"".",0,0,1
+74,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Which actor won Best Actor at the 92nd Academy Awards Ceremony?,I can not answer the question because of the insufficient information in documents.,0,0,0
+75,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Which director won Best Director at the 93rd Academy Awards Ceremony?,Damien Chazelle won Best Director at the 93rd Academy Awards Ceremony.,0,0,0
+76,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the CEO of Lego in 2021?,"According to the document, the CEO of the LEGO Group in 2021 is Shuntaro Furukawa.",0,0,0
+77,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the CEO of Nintendo in 2021?,I can not answer the question because of the insufficient information in documents.,0,0,0
+78,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was named the 2021 National Teacher of the Year?,"Tabatha Rosproy, an elementary special education teacher, was named the 2021 National Teacher of the Year.",0,0,0
+79,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who was named the 2020 National Teacher of the Year?,"The 2020 National Teacher of the Year was Juliana Urtubey, a preschool teacher from Kansas.",0,0,0
+80,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the lead actress in La La Land?,Sally Hawkins is the lead actress in La La Land.,0,0,0
+81,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the lead actress in The Shape of Water?,I can not answer the question because the provided document does not contain information about the lead actress in The Shape of Water.,0,0,0
+82,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,"Who is the director of ""Pretty Woman""?","There are factual errors in the provided documents. The director of the 1990 film ""Pretty Woman"" is actually Garry Marshall, not Bryan Singer.",1,1,1
+83,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,"Who is the director of ""The Godfather""?",I can not answer the question because of the insufficient information in documents.,0,0,0
+84,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,"Who is the director of ""Bohemian Rhapsody""?","There are factual errors in the provided documents. 
+
+According to the documents, Francis Ford Coppola was initially credited as the director of ""Bohemian Rhapsody"", but he was not the actual director. Dexter Fletcher took over the direction of the film after Francis Ford Coppola was fired.",1,0,0
+85,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,which city hosted the olympic games in 2012?,I can not answer the question because of the insufficient information in documents.,0,0,0
+86,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the new CEO of Vanguard?,Abigail Johnson is the new CEO of Vanguard.,0,0,0
+87,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the new CEO of Fidelity Investments?,"According to the documents, the new CEO of Fidelity Investments is Tim Buckley.",0,0,0
+88,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was Pixel 6 announced?,I can not answer the question because of the insufficient information in documents.,0,0,0
+89,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,When was Pixel 5a announced?,"According to the document, the Pixel 5a was officially announced on August 17, 2011.",0,0,0
+90,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the name of Amazon's ai assistant in office?,"There are factual errors in the provided documents. 
+
+According to the documents, Cortana is actually Microsoft's virtual assistant, not Amazon's. Microsoft acquired the Polish speech synthesizer Ivona and developed Cortana as a virtual assistant. Amazon has its own virtual assistant, Alexa, which is not mentioned in the documents.",1,1,1
+91,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the date of the 2020 NBA Draft?,"The date of the 2020 NBA Draft is May 8, 2020.",0,0,0
+92,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the date of the 2021 NBA Draft?,"The date of the 2021 NBA Draft is March 2, 2021.",0,0,0
+93,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,What is the name of Microsoft's AR headset?,The name of Microsoft's AR headset is Glass.,0,0,0
+94,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the CEO of Google in 2021?,I can not answer the question because of the insufficient information in documents.,0,0,0
+95,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who is the CEO of Apple in 2021?,"There are factual errors in the provided documents. 
+
+According to the documents, Steve Jobs is mentioned as the CEO of Apple, but it is known that Steve Jobs passed away on October 5, 2011. Therefore, it is not possible for him to be the CEO of Apple in 2021.",1,0,0
+96,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the Masters golf tournament in 2021?,Shane Lowry won the Masters golf tournament in 2021.,0,0,0
+97,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,Who won the British Open golf tournament in 2020?,I can not answer the question because of the insufficient information in documents.,0,0,0
+98,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,which city hosted the olympic games in 2008?,The city that hosted the Olympic Games in 2008 was London.,0,0,0
+99,meta-llama/llama-3.1-8b-instruct,counterfactual_robustness,which city hosted the olympic games in 2004?,I can not answer the question because of the insufficient information in documents.,0,0,0
