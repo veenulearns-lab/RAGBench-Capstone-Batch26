@@ -3228,5 +3228,90 @@
       "completeness": 0.325,
       "adherence": 1
     }
+  },
+  {
+    "idx": 190,
+    "question": "Does IBM DataPower Gateway Appliance support the HTTP CONNECT method? Does IBM DataPower Gateway Appliance support the HTTP CONNECT method for SSL proxy requests? ",
+    "answer": "Yes. The IBM DataPower Gateway Appliance can be configured to use the HTTP\u202fCONNECT method, and it supports using CONNECT for SSL\u2011tunneling proxy requests.",
+    "pred": {
+      "relevance": 0.22727272727272727,
+      "utilization": 0.09090909090909091,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.00816326530612245,
+      "utilization": 0.012244897959183673,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 191,
+    "question": "Installing fixpacks with Installation Manager - when did it change from using updateInstaller,  starting in which version of WebSphere I was using updateInstaller to install fixpacks, and there was a separate fixpack for WebSphere and separate for the JDK, independent of each other. Now I understand that with Installation Manager there is a single package containing both the WebSphere App server fixpack as well as the JDK. When did this occur, starting with which version of WebSphere ? ",
+    "answer": "It changed starting with WebSphere Application Server\u202f8.0 \u2013 from that version onward the fix\u2011pack installer (via Installation Manager) includes both the WAS updates and the Java SDK updates in a single package.",
+    "pred": {
+      "relevance": 0.2702702702702703,
+      "utilization": 0.02702702702702703,
+      "completeness": 0.1,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.013157894736842105,
+      "utilization": 0.009868421052631578,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 192,
+    "question": "We got a NullPointerException when bootstrapping the object store or accessing Site Preferences/Access Role on WorkplaceXT \n\nAfter logging into FileNet Workplace XT, a java.lang.NullPointerException error is logged when bootstrapping the object store or when accessing Site Preferences/Access Role.\n\nHere's the error stack,\n\nError Stack Trace extracted from the J2EE Application Server error log:\n\njava.lang.NullPointerException\n\nat org.apache.jasper.runtime.JspWriterImpl.write(JspWriterImpl.java:421)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRoleMembers(PrefAccessRolesInfoPage.java:254)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRole(PrefAccessRolesInfoPage.java:220)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.renderAdminRole(PrefBootstrapInfoPage.java:131)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.render(PrefBootstrapInfoPage.java:303)",
+    "answer": "**Cause**  \nThe NPE is thrown because Workplace\u202fXT cannot resolve the user\u2011 or group\u2011display\u2011name values that are used when it builds the Access\u2011Role information. An invalid or missing entry in the **User Display Name Attribute** or **Group Display Name Attribute** of the **Directory Services Configuration** (set in FileNet Enterprise Manager) causes the lookup to return *null*, which leads to the NullPointerException seen in the stack trace.\n\n**Resolution**  \n\n1. Open **FileNet Enterprise Manager (FEM)** \u2192 *Directory Services* configuration.  \n2. Edit the **User Display Name Attribute** and/or **Group Display Name Attribute** so that they reference a valid LDAP attribute (e.g., `cn`, `displayName`, `uid`, etc.).  \n3. Save the changes.  \n4. Restart the **FileNet Content Engine** and the **Workplace\u202fXT** application (or at least the web container) so the new settings take effect.  \n\nAfter the correct LDAP attribute is specified and the services are restarted, bootstrapping the object store and accessing Site Preferences / Access Role will no longer generate the `java.lang.NullPointerException`.  \n\n*(If the problem occurs during Object Store creation, also ensure that the full set of Workplace Add\u2011on extensions is selected so that the Access Role \u201cRoleName\u201d is created.)*",
+    "pred": {
+      "relevance": 0.45454545454545453,
+      "utilization": 0.45454545454545453,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06363636363636363,
+      "utilization": 0.01818181818181818,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 193,
+    "question": "Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? ",
+    "answer": "The service becomes Vulnerable because the Dataserver is running with an unsupported amount of memory. The memory allocation is too low (or otherwise incorrect), causing the health status to change after you log into the StoredIQ Application Stack. Adjust the Dataserver\u2019s memory settings to a supported value to restore a Healthy status.",
+    "pred": {
+      "relevance": 0.1111111111111111,
+      "utilization": 0.07407407407407407,
+      "completeness": 0.6666666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.125,
+      "utilization": 0.1111111111111111,
+      "completeness": 0.8888888888888888,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 194,
+    "question": "Help with Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect WMB and IIB I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect WebSphere Message Broker and IBM Integration Bus. Where can I find this information? ",
+    "answer": "You can view the full security\u2011bulletin details at the IBM support page referenced in the text:\n\n**http://www.ibm.com/support/docview.wss?uid=swg21697107**\n\n(That page contains the \u201cMultiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker\u201d bulletin.)",
+    "pred": {
+      "relevance": 0.5384615384615384,
+      "utilization": 0.07692307692307693,
+      "completeness": 0.14285714285714285,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.10714285714285714,
+      "utilization": 0.023809523809523808,
+      "completeness": 0.2222222222222222,
+      "adherence": 1
+    }
   }
 ]
