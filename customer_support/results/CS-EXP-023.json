@@ -2463,5 +2463,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 145,
+    "question": "Error while installing SpSS modeler trial version I have downloaded the SPSS modeller trial version (18.1) (64 bit) and trying to install the same. I get the following error 1152: Error extracting modelerClient64.msi to the temporary location\n",
+    "answer": "The 1152 error means the self\u2011extracting installer could not write the **ModelerClient64.msi** to the user\u2019s temporary folder.  \nAccording to the IBM SPSS Modeler technote, this can happen when the downloaded files are corrupted, when there isn\u2019t enough free space, or when the installer cannot write to the temp location.\n\n**What to do**\n\n1. **Re\u2011download the installer** \u2013 copy the files again (or verify them with an MD5 checksum).  \n2. **Check the temp folder** \u2013 make sure the %TEMP% directory has sufficient free space and that you have write permission to it.  \n3. **Extract manually (optional)**  \n   * Run the installer (e.g.,\u202f`SPSS_Modeler_141_win64.exe`) until it finishes extracting and shows the \u201cContinue\u201d screen.  \n   * Minimise that window, open `%temp%`, locate the folder that contains `ModelerClient64.msi`, and copy **all** its contents to a local folder such as `C:\\Temp\\Modeler\\ClientInstall`.  \n   * Cancel the installer wizard.  \n   * Open an elevated command prompt and run:  \n\n     ```\n     MsiExec.exe /i \"C:\\Temp\\Modeler\\ClientInstall\\ModelerClient64.msi\" /qn /L*v logfile.txt\n     ```\n\n   (Adjust the path as needed.)\n\nFollowing these steps\u2014re\u2011downloading the installer and ensuring the temp location is writable and has enough space\u2014should resolve the 1152 extraction error.",
+    "pred": {
+      "relevance": 0.3076923076923077,
+      "utilization": 0.3076923076923077,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08333333333333333,
+      "utilization": 0.046296296296296294,
+      "completeness": 0.5555555555555556,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 146,
+    "question": "Help with vulnerability have been identified in WebSphere Application Server shipped with WSRR I need to understand details regarding Multiple vulnerabilities have been identified in WebSphere Application Server shipped with WebSphere Service Registry and Repository (CVE-2017-1583). Where can I find this information? ",
+    "answer": "You can find the details in the IBM security bulletin that covers the multiple WebSphere\u202fApplication\u202fServer vulnerabilities shipped with WebSphere Service Registry and Repository (CVE\u20112017\u20111583).\u202fThe bulletin is available at:\n\n**http://www.ibm.com/support/docview.wss?uid=swg22008707**\n\nThat page contains the vulnerability details and information about the fixes.",
+    "pred": {
+      "relevance": 0.36363636363636365,
+      "utilization": 0.18181818181818182,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02072538860103627,
+      "utilization": 0.0051813471502590676,
+      "completeness": 0.25,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 147,
+    "question": "Does IBM DataPower Gateway Appliance support the HTTP CONNECT method? Does IBM DataPower Gateway Appliance support the HTTP CONNECT method for SSL proxy requests? ",
+    "answer": "Yes. The IBM DataPower Gateway Appliance can be configured to use the HTTP\u202fCONNECT method, and it supports using CONNECT for SSL proxy (tunneling) requests, as described in the \u201cForward Proxy\u202f\u2026\u202fCONNECT\u202fTUNNEL\u201d technical note.",
+    "pred": {
+      "relevance": 0.22727272727272727,
+      "utilization": 0.09090909090909091,
+      "completeness": 0.4,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.00816326530612245,
+      "utilization": 0.012244897959183673,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 148,
+    "question": "Help with Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect IIB and WMB \n\nI need to understand details regarding \"Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker\" This is related to\nCVE-2017-10115\nCVE-2017-10116\nCVE-2017-10109\nCVE-2017-10108\n\nWhere can I find this information?",
+    "answer": "The detailed information for those CVE entries is provided in the **IBM\u202fJava\u202fSDK Security Bulletin** that is referenced in the \u201cReferences\u201d section of the security\u2011bulletin summary.\u202fThe bulletin lists all of the vulnerabilities (including CVE\u20112017\u201110115, CVE\u20112017\u201110116, CVE\u20112017\u201110109 and CVE\u20112017\u201110108) that affect IBM Integration Bus (IIB) and WebSphere Message Broker (WMB).\u202fTo view the full details, follow the \u201cIBM Java SDK Security Bulletin\u201d link in the References of the bulletin.",
+    "pred": {
+      "relevance": 0.8095238095238095,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.17647058823529413,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.1643192488262911,
+      "utilization": 0.03755868544600939,
+      "completeness": 0.22857142857142856,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 149,
+    "question": "Why SSH connections fail after upgrade to v7.5.2 and above? Why SSH connections fail after upgrade to v7.5.2 and above? The same configuration works on v7.2. ",
+    "answer": "SSH connections fail after upgrading to v7.5.2 (and later) because those releases change the default set of algorithms.\u202fThe newer OpenSSH versions disable a number of older, unsafe ciphers, MACs and key\u2011exchange algorithms by default.\u202fIf the remote SSH client or server is an older implementation that only supports the now\u2011disabled algorithms, the two sides cannot agree on a common cipher/MAC/kex and the connection aborts with errors such as \u201cNo matching cipher found\u201d, \u201cNo matching MAC algorithm found\u201d or \u201cNo matching kex algorithm found\u201d.\u202fThe same configuration works on v7.2 because that version still allowed those legacy algorithms in its default list.",
+    "pred": {
+      "relevance": 0.46875,
+      "utilization": 0.3125,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.125,
+      "utilization": 0.125,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
