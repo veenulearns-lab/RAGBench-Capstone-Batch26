@@ -2718,5 +2718,90 @@
       "completeness": 0.36363636363636365,
       "adherence": 1
     }
+  },
+  {
+    "idx": 160,
+    "question": "For HP-UX how to write verbose gc output to a log file other than the native_stdout? A customer asked why no gc logs generated even if they use the -Xverbosegc option. So How can I write verbose gc output to a log file other than the native_stdout for HP-UX? ",
+    "answer": "Add the GC\u2011logging options to the JVM arguments, e.g.:\n\n```\n-XX:+PrintGCDetails\n-XX:+PrintGCDateStamps\n-XX:+PrintHeapAtGC\n-Xloggc:/tmp/gc.log          # write verbose\u2011GC output to this file\n```\n\nTo have the log files rotate, also add:\n\n```\n-XX:+UseGCLogFileRotation\n-XX:NumberOfGCLogFiles=10   # keep up to 10 files\n-XX:GCLogFileSize=10M       # each file up to 10\u202fMB\n```\n\nThese flags cause the verbose GC output to be written to the specified file (instead of native_stdout) and enable log\u2011file rotation on HP\u2011UX.",
+    "pred": {
+      "relevance": 0.1388888888888889,
+      "utilization": 0.027777777777777776,
+      "completeness": 0.2,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.011363636363636364,
+      "utilization": 0.011363636363636364,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 161,
+    "question": "Subnodes are still present on TEP after unconfiguring SOA DC After unconfiguring the ITCAM for SOA DC via the unconfig.sh script, I can still see SOA subnodes and workspaces on TEP.The Websphere instances were restarted and are no longer collecting data and forwarding to the D4 agent.I have shut down the ITCAM agent and deleted the offline entries for the managed systems, but the subnodes appear back once you restart the ITCAM agent.How can I remove them?",
+    "answer": "To delete the SOA sub\u2011nodes that keep re\u2011appearing, remove the node entry from the TEPS workspace exactly as described in the KB article:\n\n1. **Stop the SOA Agent**.  \n2. In the TEPS view, right\u2011click the sub\u2011node you want to delete and choose **\u201cClear offline entry.\u201d** (repeat for every node you want to remove).  \n3. Open the **KD4.dc.properties** file (Windows\u202f:\u202f`<ITM_HOME>\\TMAITM6\\KD4\\config`\u202f; Unix\u202f:\u202f`<ITM_HOME>/<platform>/d4/KD4/config`) and delete the lines that correspond to the node you just cleared, e.g.:\n\n   ```\n   8.<DP hostname>.monitor=on\n   8.<DP hostname>.log=error\n   8.<DP hostname>.trace=off\n   8.<DP hostname>.control.count=1\n   8.<DP hostname>.control.1=*;*;*;*;*;none\n   8.<DP hostname>.filter.control.count=0\n   ```\n\n4. Delete the cache directory that stores the old records:\n\n   - Windows: `<ITM_HOME>\\TMAITM6\\KD4\\logs\\KD4.DCA.CACHE\\persist`  \n   - Unix: `<ITM_HOME>/<platform>/d4/KD4/logs/KD4.DCA.CACHE\\persist`\n\n5. **Restart the SOA Agent**.  \n\nAfter the agent restarts, the deleted sub\u2011nodes will no longer appear in the TEPS workspace. (If you still have problems, you can also set `kd4.ira.useCTIRAHostname=1` in `KD4.dc.properties` and shorten the host name as described, but the steps above are the core procedure for removing the entries.)",
+    "pred": {
+      "relevance": 0.6470588235294118,
+      "utilization": 0.21568627450980393,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.09259259259259259,
+      "utilization": 0.1111111111111111,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 162,
+    "question": "When and why Apache Storm process of ITNM creating db2 files in /tmp? \n\nWhen and why should the following files be generated ?\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/connlicj.bin\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/jccdiag.log\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/license.lock\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/serverlist.lock",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 163,
+    "question": "TEP to TEPS communication issues with different Java versions Recent Java updates have caused connection problems when logging into the TEPS via the TEP client (Browser or Java Web Start). Is there an updated list of known issues?\n",
+    "answer": "Yes.  The updated list of known issues is provided in IBM technote\u202f#1672459, which contains the latest Java\u2011support requirements and details of the recent Java\u2011related connection problems.  See\u202fhttp://www.ibm.com/support/docview.wss?uid=swg21672459.",
+    "pred": {
+      "relevance": 0.46153846153846156,
+      "utilization": 0.038461538461538464,
+      "completeness": 0.08333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1691542288557214,
+      "utilization": 0.07462686567164178,
+      "completeness": 0.4411764705882353,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 164,
+    "question": "Help with Security Bulletin: API Connect is affected by a Node.js denial of service vulnerability (CVE-2017-14919) I need to understand details regarding Security Bulletin: API Connect is affected by a Node.js denial of service vulnerability (CVE-2017-14919). Where can I find this information? ",
+    "answer": "You can find the details in the **IBM\u202fAPI\u202fConnect Security Bulletin Summary** for the CVE\u20112017\u201114919 issue.\u202fThat bulletin includes:\n\n* The description of the Node.js\u202fzlib\u202fmodule flaw (making\u202f8 an invalid\u202fwindowBits\u202fvalue) that can cause a denial\u2011of\u2011service crash.  \n* The CVSS scores (Base\u202f7.5, Vector\u202fCVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H).  \n* Links to the official CVE entry \u2013\u202fhttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14919 \u2013 and to IBM\u2019s X\u2011Force advisory \u2013\u202fhttps://exchange.xforce.ibmcloud.com/vulnerabilities/134286.  \n\nSo, consult the **IBM API Connect security bulletin** (the \u201cSECURITY BULLETIN SUMMARY\u201d section) for the full information on this vulnerability.",
+    "pred": {
+      "relevance": 0.2608695652173913,
+      "utilization": 0.21739130434782608,
+      "completeness": 0.8333333333333334,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.09565217391304348,
+      "utilization": 0.0782608695652174,
+      "completeness": 0.8181818181818182,
+      "adherence": 1
+    }
   }
 ]
