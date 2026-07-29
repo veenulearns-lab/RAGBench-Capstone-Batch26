@@ -763,5 +763,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 45,
+    "question": "How can I configure J2EE Tomcat DC to run as Windows Service? I'm trying to configure ITCAM J2EE v7.1.1 Tomcat DC to run as a Windows Service but it fails. Is this type of configuration supported? If so, what is the right procedure to do that?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.034220532319391636,
+      "utilization": 0.034220532319391636,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 46,
+    "question": "How to resolve SessionBeanTimeoutException in WebSphere Application Server? In one of my j2EE-applications I get com.ibm.ejs.container.SessionBeanTimeoutExceptions with the following caused by section:\nCaused by: com.ibm.ejs.container.SessionBeanTimeoutException: Stateful bean CMStatefulBeanO(BeanId(server1# mySessionBean.jar# StdEJBReader, A5667152-014B-4000-E000-9AD20A8E643B), state = METHOD_READY) timed out ... 26 more\nDo you know how to resolve such SessionBeanTimeoutExceptions in general?",
+    "answer": "Set the EJB container session\u2011access timeout to a larger value.\n\n1. In the Integrated Solutions Console go to **Application servers** \u2192 *your server* \u2192 **Process definition** \u2192 **Java Virtual Machine** \u2192 **Custom properties**.  \n2. Add a new property named  \n\n```\ncom.ibm.websphere.ejbcontainer.defaultSessionAccessTimeout\n```  \n\n   and give it the desired timeout (for example\u202f30000\u202fms).  \n3. Save the changes and restart the JVM.\n\nIncreasing this timeout prevents the \u201cStateful bean \u2026 timed out\u201d `SessionBeanTimeoutException`.",
+    "pred": {
+      "relevance": 0.19047619047619047,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.75,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04242424242424243,
+      "utilization": 0.024242424242424242,
+      "completeness": 0.5714285714285714,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 47,
+    "question": "Help with Security Bulletin: IIB is affected by Node.js security vulnerability ( CVE-2017-1000381 and CVE-2017-11499 ) I need to understand details regarding Security Bulletin: IBM Integration Bus is affected by Node.js security vulnerability ( CVE-2017-1000381 and CVE-2017-11499 ). Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5185185185185185,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.028037383177570093,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 48,
+    "question": "When I try to deploy an application on a cluster, why is it throwing an ADMA8019E error in the admin console? The application is being deployed at the cluster scope, but my namespace bindings are defined at the cell scope. The error I'm seeing in the admin console is:\n\nADMA8019E: The resources that are assigned to the application are beyond the deployment target scope. Resources are within the deployment target scope if they are defined at the cell, node, server, or application level when the deployment target is a server, or at the cell, cluster, or application level when the deployment target is a cluster. Assign resources that are within the deployment target scope of the application or confirm that these resources assignments are correct as specified.\n\nI don't see any actual issue with how the JNDI lookup is occurring once the application is deployed. Should I be concerned about this error?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.1875,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 49,
+    "question": "What IBM Business Process Manager version is affected by the Apache Commons FileUpload vulnerability CVE-2016-1000031? What IBM Business Process Manager version is affected by the Apache Commons FileUpload vulnerability CVE-2016-1000031? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
