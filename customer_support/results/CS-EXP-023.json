@@ -2803,5 +2803,90 @@
       "completeness": 0.8181818181818182,
       "adherence": 1
     }
+  },
+  {
+    "idx": 165,
+    "question": "IBM Integration Designer could not connect to the DataPower appliance. I am using WDP XI52 with Firmware 7.0.0.7 and IID 7.5.1. When I try to connect WDP from [DataPower Appliances] View in IID, I got a error message as follows : \"SSL handshake on the connection to the DataPower appliance \"x.x.x.x\" was not successful. Contact the DataPower administrator.\" This situations occurred since WDP Firmware had upgraded from 7.0.0.2 to 7.0.0.5. (Now it was upgraded to 7.0.0.7)\nCould you please let me know what I should check to solve this problem? Please note that this WDP works normally and a network is normal. Also, I can connect it by using WebGUI and SSH terminal. And I've checked that IP , XML Management Interface Port, Web Management Service Port and account/password are correct.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08196721311475409,
+      "utilization": 0.01639344262295082,
+      "completeness": 0.2,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 166,
+    "question": "StaleConnectionException errors with BPM databases There is much published documentation about stale connections to databases on the web, and yet stale connections continue to be a very common problem, at least with BPM databases. The condition can manifest itself in different ways. The most common experience of a stale connection is from error messages in the log or FFDCs that contain \"StaleConnectionException\".",
+    "answer": "The \u201cStaleConnectionException\u201d you are seeing is caused by a known bug in the DB2\u202fJCC driver that WebSphere BPM uses. IBM fixed the problem in JCC driver\u202f3.59.81 (shipped with DB2\u202fv9.5\u202fFP6a) and later releases.  \n\n**Resolution** \u2013 upgrade the JCC driver (or apply the corresponding IBM PTF) to version\u202f3.59.81 or newer. After the driver is updated the stale\u2011connection errors disappear.",
+    "pred": {
+      "relevance": 0.28,
+      "utilization": 0.12,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.04205607476635514,
+      "utilization": 0.028037383177570093,
+      "completeness": 0.5555555555555556,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 167,
+    "question": "What process do i neet to follow to upgrade our SPSS Modeler deployment (concurrent license) from v16 to v18? We have 5 users with SPSS Modeler 16 installed using the Concurrent license manager supplied for that version. We need to upgrade to v18.  Do we need to upgrade the license manager as well? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.35294117647058826,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.27049180327868855,
+      "utilization": 0.00819672131147541,
+      "completeness": 0.030303030303030304,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 168,
+    "question": "Help with Security Bulletin: API Connect is affected by a Node.js denial of service vulnerability (CVE-2017-14919) I need to understand details regarding Security Bulletin: API Connect is affected by a Node.js denial of service vulnerability (CVE-2017-14919). Where can I find this information? ",
+    "answer": "You can find the details in the **IBM\u202fAPI\u202fConnect Security Bulletin Summary** for the CVE\u20112017\u201114919 issue.\u202fThat bulletin includes:\n\n* The description of the Node.js\u202fzlib\u202fmodule flaw (making\u202f8 an invalid\u202fwindowBits\u202fvalue) that can cause a denial\u2011of\u2011service crash.  \n* The CVSS scores (Base\u202f7.5, Vector\u202fCVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H).  \n* Links to the official CVE entry \u2013\u202fhttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14919 \u2013 and to IBM\u2019s X\u2011Force advisory \u2013\u202fhttps://exchange.xforce.ibmcloud.com/vulnerabilities/134286.  \n\nSo, consult the **IBM API Connect security bulletin** (the \u201cSECURITY BULLETIN SUMMARY\u201d section) for the full information on this vulnerability.",
+    "pred": {
+      "relevance": 0.2608695652173913,
+      "utilization": 0.2608695652173913,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.09130434782608696,
+      "utilization": 0.09130434782608696,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 169,
+    "question": "Is Java 8 supported for BPM? \n\nI understand that support for Java 6 on WebSphere Application Server is ending April 2018, see: http://www-01.ibm.com/support/docview.wss?uid=swg21999583\n\nNow I can switch to Java 7. But what about Java 8? Does BPM 8.5.6 support Java 8?",
+    "answer": "No. According to the supported\u2011Java matrix in the provided notes, IBM BPM\u202fV8.5.6.0 supports only Java\u202f6 or Java\u202f7. Java\u202f8 support is available starting with IBM BPM\u202fV8.6.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.75,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.019417475728155338,
+      "utilization": 0.009708737864077669,
+      "completeness": 0.5,
+      "adherence": 0
+    }
   }
 ]
