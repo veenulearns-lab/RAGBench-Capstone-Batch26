@@ -1953,5 +1953,90 @@
       "completeness": 0.375,
       "adherence": 0
     }
+  },
+  {
+    "idx": 114,
+    "question": "I am receiving AC power supply failures on my DataPower 9235 appliance. How can I resolve this? \n\nI am observing the following errors on my DataPower 9235 device:\n\n[failure] Power supply '1' has no AC input power, or is not present. [failure] Power supply '2' has no AC input power, or is not present.\nDo i need to replace the power supplies?",
+    "answer": "The messages you are seeing are often a **false\u2011positive** caused by an intermittent sensor\u2011reading error. They do **not** necessarily mean that the power supplies are bad.\n\n**What to do**\n\n1. **Check the LEDs** on the two power\u2011supply units.  \n   *If the LEDs are green, the supplies are functioning normally.*\n\n2. **Reboot the appliance** to reset the sensor state.  \n   * From the WebGUI:\u202fControl\u202fPanel \u2192 System\u202fControl \u2192 \u201cShutdown\u201d section \u2192 choose **Reboot System** and click **Shutdown**.  \n   * From the CLI:  \n   ```\n   top\n   shutdown reboot y\n   ```\n\n   In most cases the reboot clears the false error messages and no further logs appear.\n\n3. **If the problem returns** after a reboot, gather the following information and open a case with IBM DataPower support:  \n\n   * How many times the issue has been seen on this appliance.  \n   * CLI command outputs: `show clock`, `show version`, `show ipmi`, `show sensors\u2011other`, `config service show`, `test hardware`.  \n\n   Provide these logs to IBM so they can investigate a possible hardware issue.\n\n**Do you need to replace the power supplies?**  \nOnly if the LEDs are not green (indicating a real power\u2011supply fault) or if the error persists after a reboot and IBM support confirms a hardware problem. Otherwise, a simple reboot should resolve the false error messages.",
+    "pred": {
+      "relevance": 0.4782608695652174,
+      "utilization": 0.4782608695652174,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1511627906976744,
+      "utilization": 0.05813953488372093,
+      "completeness": 0.38461538461538464,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 116,
+    "question": "What should I do if I observed \"ghost queue building up\" issue? There are lots of ghost queues in the system, which have already took up most of file system space. What can I do under such situation?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.26153846153846155,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3315508021390374,
+      "utilization": 0.0855614973262032,
+      "completeness": 0.22580645161290322,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 117,
+    "question": "Gettting error CRIMC1020E: zip im.properties not found during BPM Fix Pack install During the BPM 7.5.1.2 Fix Pack install from the IBM Installation Manager, error window pop up with:\n\nCRIMC1020E: zip im.properties 1.0.0.200911091101 not found ERROR: `zip im.properties 1.0.0.200911091101` not found in [path to sca.1.0.1.17.fp]. CRIMC1020E: zip config.registry 1.0.0.200911092301 not found\n\u2026\u2026\n\nHow can I resolve this error to complete the Fix Pack installation?",
+    "answer": "The error means that the Installation Manager cannot find the zip files that belong to the BPM\u202f7.5.1.2 fix\u2011pack repository.  \nThe fix is to make sure you are using a **complete, correctly\u2011extracted repository** for the fix pack:\n\n1. **Download the full BPM 7.5.1.2 fix\u2011pack repository** (the two zip parts \u2013\u202fPart\u202f1 and Part\u202f2 \u2013\u202for the single \u201call\u201d zip if one is provided).  \n2. **Extract both zip files into the same directory** so that all of the repository\u2019s sub\u2011folders and the *.zip* files (including `im.properties`, `config.registry`, etc.) are present.  \n3. In IBM Installation Manager, point the repository location to that directory (or use the live IBM Installation Manager repository if you have Internet access).  \n4. Run the fix\u2011pack installation again.\n\nWhen the repository is complete and correctly unpacked, the missing zip entries (`im.properties`, `config.registry`, etc.) are found and the BPM 7.5.1.2 fix pack installs successfully.",
+    "pred": {
+      "relevance": 0.32142857142857145,
+      "utilization": 0.32142857142857145,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08585858585858586,
+      "utilization": 0.09090909090909091,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 118,
+    "question": "Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license? Can you enable the reporter feature with IBM Rational Rhapsody Architect Software Floating license? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.15,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.019801980198019802,
+      "utilization": 0.01485148514851485,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 119,
+    "question": "res-deploy-xom ant task does not deploy xom based on checksum difference when xom is a .zip extension Question: Is re-naming the WebSphere Portal installation directory and cell name for an existing clustered installation possible? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
