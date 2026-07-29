@@ -1783,5 +1783,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 104,
+    "question": "What are the files created in $TEMP on startup of IIB or WMB? What are the 0 byte files created in $TEMP/.com_ibm_tools_attach directory upon IBM Integration Bus (IIB) / WebSphere Message Broker (WMB) startup?\nFor example: The following files are created on UNIX / Windows if $TEMP is /tmp:\n/tmp/.com_ibm_tools_attach/_attachlock\n/tmp/.com_ibm_tools_attach/_master\n/tmp/.com_ibm_tools_attach/_notifier",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2692307692307692,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04918032786885246,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 105,
+    "question": "Help with Action required for IIB H.E. V9 & WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nThis is related to CVEID:\nCVE-2017-14739\nCVE-2017-14741\nCVE-2017-14989\nCVE-2017-15015\nCVE-2017-15016\nCVE-2017-15017\nCVE-2017-15032\nCVE-2017-15033\n\nWhere can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8666666666666667,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.11764705882352941,
+      "utilization": 0.11764705882352941,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 106,
+    "question": "IBM Integration Designer could not connect to the DataPower appliance. I am using WDP XI52 with Firmware 7.0.0.7 and IID 7.5.1. When I try to connect WDP from [DataPower Appliances] View in IID, I got a error message as follows : \"SSL handshake on the connection to the DataPower appliance \"x.x.x.x\" was not successful. Contact the DataPower administrator.\" This situations occurred since WDP Firmware had upgraded from 7.0.0.2 to 7.0.0.5. (Now it was upgraded to 7.0.0.7)\nCould you please let me know what I should check to solve this problem? Please note that this WDP works normally and a network is normal. Also, I can connect it by using WebGUI and SSH terminal. And I've checked that IP , XML Management Interface Port, Web Management Service Port and account/password are correct.",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06557377049180328,
+      "utilization": 0.06147540983606557,
+      "completeness": 0.9375,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 107,
+    "question": "Content Engine System Health Page page doesn't reflect correctly, Fixed Content Advise and Storage Area showing unavailable. Content Engine System Health Page page doesn't reflect correctly, Fixed Content Advise and Storage Area showing unavailable. ",
+    "answer": "Upgrade the Content Engine to version\u202f5.0.0.3\u2011P8CE\u2011FP003 (or any later release). This code fix resolves the Health Page showing red icons for Fixed Content Devices and Storage Areas even though content can still be added and accessed.\u202fAdditionally, upgrade any ingestion applications to a version that includes cleanup of incomplete documents.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.10714285714285714,
+      "completeness": 0.14285714285714285,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06542056074766354,
+      "utilization": 0.028037383177570093,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 108,
+    "question": "How do I resolve a WSVR0605W hung thread issue in the WebSphere MQ Resource Adapter? The following WebSphere MQ Resource Adapter hung thread can prevent an application server from starting...\n\nWSVR0605W: Thread \"WMQJCAResourceAdapter : 6\" (0000001b) has been active for 698530 milliseconds and may be hung. There is 1 thread(s) in total in the server that may be hung. at java.lang.Object.wait(Native Method) at java.lang.Object.wait(Object.java:167) at com.ibm.ejs.container.MessageEndpointFactoryImpl.createEndpoint(MessageEndpointFactoryImpl.java:498) at com.ibm.mq.connector.inbound.WorkImpl.run(WorkImpl.java:149)",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.014634146341463415,
+      "utilization": 0.014634146341463415,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
