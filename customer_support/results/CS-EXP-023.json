@@ -2973,5 +2973,90 @@
       "completeness": 0.5428571428571428,
       "adherence": 0
     }
+  },
+  {
+    "idx": 175,
+    "question": "Why is OCR is putting multiple lines on one line? I am running an APT application, and multiple detail lines are getting put on a single line within my .TXT file.  Is there something I can do about this? ",
+    "answer": "The OCR engine is merging separate lines into a single line because the **NormalizeCCO** step is being applied to the captured image.  \n\n- **Cause** \u2013 When the source text isn\u2019t printed cleanly (different fonts, vertical offsets, etc.), Datacap\u2019s NormalizeCCO routine \u201ccleans up\u201d the CCO file by merging words that appear on different physical lines into one logical line. This is why several detail lines end up concatenated in the resulting\u202f*.TXT* file.  \n\n- **What you can do** \u2013  \n  1. **Avoid or modify NormalizeCCO** \u2013 If you don\u2019t need the line\u2011merging cleanup, disable the NormalizeCCO step for that application or adjust its settings so it doesn\u2019t merge lines.  \n  2. **Improve source quality** \u2013 Ensure the original document is printed with uniform fonts and proper line spacing so the OCR can reliably detect line breaks.  \n  3. **Post\u2011process the output** \u2013 If you must keep NormalizeCCO, add a post\u2011processing step that re\u2011splits the merged lines based on known delimiters or field lengths.\n\nIn short, the multiple\u2011line\u2011to\u2011single\u2011line behavior is a side\u2011effect of NormalizeCCO\u2019s line\u2011merging logic; controlling or disabling that step (or improving the source document) will prevent the problem.",
+    "pred": {
+      "relevance": 0.1111111111111111,
+      "utilization": 0.027777777777777776,
+      "completeness": 0.25,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08264462809917356,
+      "utilization": 0.08264462809917356,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 176,
+    "question": "Help with Action required for IIIB V9 and WMB V8 Hypervisor Editions for security vulnerabilities in Red Hat Linux I need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux. Where can I find this information? ",
+    "answer": "The information you need is in the **IBM\u202fFlash (Alert) documents for the products**:\n\n* **\u201cFLASH (ALERT)\u202fABSTRACT \u2013 IBM Integration Bus Hypervisor Edition\u202fV9.0 and WebSphere Message Broker Hypervisor Edition\u202fV8.0\u201d**  \n\nThese flash\u2011alert abstracts list all of the Red\u202fHat\u202fEnterprise\u202fLinux\u202f6.2 CVEs that affect the Hypervisor Editions and give the remediation guidance (IBM\u2019s recommendation to contact Red\u202fHat and obtain the appropriate fixes).  \n\nSo, to see the full details of the required customer action, refer to the IBM\u202fIntegration\u202fBus\u202fHypervisor\u202fEdition\u202fV9.0 / WebSphere\u202fMessage\u202fBroker\u202fHypervisor\u202fEdition\u202fV8.0 flash\u2011alert (the \u201cFLASH (ALERT) ABSTRACT\u201d sections).",
+    "pred": {
+      "relevance": 0.625,
+      "utilization": 0.625,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.42424242424242425,
+      "utilization": 0.2727272727272727,
+      "completeness": 0.6428571428571429,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 177,
+    "question": "TEP to TEPS communication issues with different Java versions Recent Java updates have caused connection problems when logging into the TEPS via the TEP client (Browser or Java Web Start). Is there an updated list of known issues?\n",
+    "answer": "Yes.  The updated list of known issues is provided in IBM technote\u202f#1672459, which contains the latest Java\u2011support requirements and details of the recent Java\u2011related connection problems.  See\u202fhttp://www.ibm.com/support/docview.wss?uid=swg21672459.",
+    "pred": {
+      "relevance": 0.19230769230769232,
+      "utilization": 0.038461538461538464,
+      "completeness": 0.2,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.13930348258706468,
+      "utilization": 0.05472636815920398,
+      "completeness": 0.39285714285714285,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 178,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971) I need to understand details regarding Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971). Where can I find this information?\n",
+    "answer": "You can find the full details in the IBM\u202fSecurity Bulletin that covers CVE\u20112016\u20118971.\u202fThe bulletin includes:\n\n* A summary of the vulnerability (an administration command can cause IBM\u202fMQ to access an invalid memory address, leading to a segmentation fault and a denial\u2011of\u2011service condition).  \n* The CVE entry for the issue \u2013 see the MITRE page: **http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8971**.  \n* The affected products and versions (IBM\u202fMQ\u202fV9.0\u202fLTS, IBM\u202fMQ\u202fV9.0.0.0 only, IBM\u202fMQ\u202fV8.0\u202f0.0\u20110.5).  \n* The remediation/fix information \u2013 apply the IBM\u202fMQ\u202fV9.0 Long\u2011Term\u2011Support Release (the bulletin points to the IBM MQ fix page).  \n\nAdditional IBM resources where the bulletin is published include:\n\n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/psirt  \n\nSo, to get the complete security\u2011bulletin details for \u201cIBM WebSphere\u202fMQ Administration command could cause denial of service (CVE\u20112016\u20118971)\u201d, start with the CVE\u20112016\u20118971 page on the MITRE site and the IBM MQ security bulletin on the IBM Secure Engineering Web Portal (or the related IBM support fix page).",
+    "pred": {
+      "relevance": 0.34615384615384615,
+      "utilization": 0.23076923076923078,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07011070110701106,
+      "utilization": 0.05904059040590406,
+      "completeness": 0.8421052631578947,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 179,
+    "question": "Why is the reload() not clearing the attribute cache so I can see my newly updated LDAP data in real time? You are leveraging the reload() functionality as described in the blog post:\n  https://www.ibm.com/developerworks/community/blogs/PortalL2Thoughts/entry/how_to_programatically_refresh_data_from_ldap64?lang=en\n\nto refresh the attribute cache after a change has been made to data within your LDAP. The purpose of this reload() is to update the data in real time on the Portal server. You discover that you are calling the reload(); however, the newly updated data is not immediately available to the application. Why is that?\n",
+    "answer": "The reload() call only **signals** that the cache should be refreshed \u2013 it does not instantly purge the cached LDAP attributes.  \nIn Maximo the cache\u2011reload mechanism works through the **maxsession.reloadcache** column. Each application server runs a background thread that polls its own maxsession record (by default once every\u202f60\u202fseconds). When the thread sees a non\u2011null value in the reloadcache column it reloads the indicated caches and then clears the column.\n\nTherefore, if you call reload() the change is recorded, but the attribute cache will not be cleared until the next poll of the maxsession record occurs. Until that scheduled check runs, the application continues to serve the old cached data, which is why the newly\u2011updated LDAP information is not visible immediately.",
+    "pred": {
+      "relevance": 0.2727272727272727,
+      "utilization": 0.2727272727272727,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08450704225352113,
+      "utilization": 0.035211267605633804,
+      "completeness": 0.4166666666666667,
+      "adherence": 1
+    }
   }
 ]
