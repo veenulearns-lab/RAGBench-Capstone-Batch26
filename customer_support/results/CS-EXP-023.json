@@ -508,5 +508,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 30,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? I tried to export OMNIbus configuration using nco_confpack command and I get the following message:\r\nTool in menu but not found, menu: AlertsMenu, tool: Close\r\nI've also tried using it with -list command and I get the same error. ",
+    "answer": "nco_confpack fails because the menu you are exporting contains a reference to a tool that no longer exists. In the case shown, the **AlertsMenu** still lists a tool (e.g.,\u202fCLEAR_LWY or \u201cClose\u201d) that has been deleted or never created, so when nco_confpack walks the configuration it hits a \u201ctool in menu but not found\u201d error.  \n\n**Fix** \u2013 either recreate the missing tool and associate it with the menu, or edit the menu to remove the reference to the nonexistent tool, then run nco_confpack again.",
+    "pred": {
+      "relevance": 0.21428571428571427,
+      "utilization": 0.09523809523809523,
+      "completeness": 0.4444444444444444,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.01079136690647482,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 31,
+    "question": "What is the latest version of the Log File Agent? What is the latest version of the Log File Agent?",
+    "answer": "The latest version of the Log File Agent is **version\u202f6.3**.",
+    "pred": {
+      "relevance": 0.06666666666666667,
+      "utilization": 0.03333333333333333,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.012295081967213115,
+      "utilization": 0.004098360655737705,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 32,
+    "question": "Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? Why does the Dataserver service change from Healthy to Vulnerable after logging into StoredIQ Application Stack? ",
+    "answer": "The service becomes Vulnerable because the Dataserver is running with an unsupported amount of memory. The memory allocation is too low (or otherwise incorrect), causing the health status to change after you log into the StoredIQ Application Stack. Adjust the Dataserver\u2019s memory settings to a supported value to restore a Healthy status.",
+    "pred": {
+      "relevance": 0.14814814814814814,
+      "utilization": 0.1111111111111111,
+      "completeness": 0.75,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.027777777777777776,
+      "utilization": 0.08333333333333333,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 33,
+    "question": "Is using a monitored JBoss server with ITCAM supported in a Windows Service? Is using a monitored JBoss server with ITCAM supported in a Windows Service? ",
+    "answer": "No. Running a monitored JBoss Application Server with the ITCAM for J2EE agent as a Windows service is not supported.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.05,
+      "completeness": 0.125,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.08823529411764706,
+      "utilization": 0.058823529411764705,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 34,
+    "question": "How to generate Javacores automatically in on hung threads reported in SystemOut.log for WebSphere Application Server? Need Javacores to be generated on hung threads messages reported in SystemOut.log for WebSphere Applicaiton Server.Example:WSVR0605W: Thread has been active for and may be hung. There are in total in the server that may be hung.",
+    "answer": "Set the thread\u2011monitor properties that cause a javacore dump whenever a WSVR0605W \u201cmay be hung\u201d warning appears.\n\n**What to configure**\n\n1. **com.ibm.websphere.threadmonitor.dump.java** \u2013 give it a non\u2011zero value (for example\u202f`1`).  \n   This tells the monitor to dump a javacore when a hung thread is detected.\n\n2. **com.ibm.websphere.threadmonitor.dump.java.track** \u2013 set it to **true** (or to an integer value).  \n   When this property is true the monitor will keep dumping javacores for the same thread as long as it remains hung; if you want only one dump per hung thread you can leave the property unset (it will default to the value of `com.ibm.websphere.threadmonitor.dump.java`).\n\n**How to apply**\n\n* Add the two properties as **JVM custom properties** for the server (or edit the server\u2019s `server.xml`/`variables.xml` accordingly).  \n* Save the changes and restart the server.\n\nAfter the restart, whenever the SystemOut.log contains a line such as  \n\n```\nWSVR0605W: Thread \"...\" has been active for ... milliseconds and may be hung.\n```\n\nthe WebSphere thread monitor will automatically generate a javacore file, allowing you to analyse the hung thread.",
+    "pred": {
+      "relevance": 0.3235294117647059,
+      "utilization": 0.14705882352941177,
+      "completeness": 0.45454545454545453,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04085603112840467,
+      "utilization": 0.011673151750972763,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
   }
 ]
