@@ -1273,5 +1273,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 75,
+    "question": "What should I do if I observed \"ghost queue building up\" issue? There are lots of ghost queues in the system, which have already took up most of file system space. What can I do under such situation?\n",
+    "answer": "According to the information in the excerpt, when you see a \u201cghost\u2011queue\u201d situation you should treat it as a QHST (history\u2011log) problem and follow the recommended diagnostic steps:\n\n1. **Test the QHST queue** \u2013 issue a test message:  \n\n   ```\n   SNDMSG TEST QHST\n   ```  \n\n   *If the message is accepted, the queue is still functional; if it fails, you have a genuine QHST blockage.*\n\n2. **Examine the job log** \u2013 if the test message fails, capture and review the job log for error details. This will show why the QHST queue cannot be written to the file system.\n\n3. **Check SCPF run\u2011priority messages** \u2013 the logs may contain messages such as:  \n\n   - **CPI2413** \u2013 \u201cRun priority for SCPF has been changed to 0\u201d (the system is falling behind moving messages from the QHST queue to the log file).  \n   - **CPI2414** \u2013 \u201cOriginal run priority for SCPF has been reinstated\u201d (the system has caught up).\n\n   If you see CPI2413, the system is still trying to drain the queue; you may need to let it finish or manually increase the SCPF priority to accelerate the drain.\n\n4. **Take corrective action** \u2013 based on the job\u2011log findings you may need to:\n\n   - Free up file\u2011system space so the QHST log can be written.  \n   - Restart or re\u2011initialize the QHST queue.  \n   - Adjust SCPF run\u2011priority (or other system parameters) to allow the queue to be processed more quickly.\n\nIn short, **send a test message to QHST, review the resulting job log, and address any SCPF priority or file\u2011space issues indicated there**. This is the prescribed procedure for handling a buildup of ghost queues as described in the provided context.",
+    "pred": {
+      "relevance": 0.06153846153846154,
+      "utilization": 0.03076923076923077,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3315508021390374,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 76,
+    "question": "Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect I need to understand details regarding Security Bulletin: Multiple vulnerabilities in IBM Java Runtime affect API Connect (CVE-2016-5546, CVE-2016-5548, CVE-2016-5549, CVE-2016-5547, CVE-2016-2183, CVE-2017-3511). Where can I find this information? ",
+    "answer": "You can find the full details in the **IBM\u202fJava\u202fSDK Security Bulletin** that is linked in the \u201cReferences\u201d section of the IBM security\u2011bulletin documents.\u202fThe bulletin (and the list of all affected CVEs) is available on IBM\u2019s support site, for example at:\n\n```\nhttp://www-01.ibm.com/support/docview.wss?uid=swg21998379\n```\n\nConsult the \u201cIBM Java SDK Security Bulletin\u201d link there for the complete information on CVE\u20112016\u20115546, CVE\u20112016\u20115548, CVE\u20112016\u20115549, CVE\u20112016\u20115547, CVE\u20112016\u20112183, CVE\u20112017\u20113511 and their impact on API\u202fConnect.",
+    "pred": {
+      "relevance": 0.8571428571428571,
+      "utilization": 0.42857142857142855,
+      "completeness": 0.4444444444444444,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.5304054054054054,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 77,
+    "question": "How to change the maximum string length for properties in FileNet Administration Console for Content Engine (ACCE) I am trying to change the maximum string length in ACCE like we do in FileNet Enterprise Manager, but in the more Tab, I am not seeing the option. In this case, how can I change it? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7333333333333333,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08187134502923976,
+      "utilization": 0.04678362573099415,
+      "completeness": 0.5714285714285714,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 78,
+    "question": "TLS protocol with ITCAM for Datapower We have a DataPower appliance with TLS security protocol enabled. Can we configure ITCAM for DataPower appliance v7.1 to specifically use the TLS protocol v1.2 (not v1.0)?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.5405405405405406,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06363636363636363,
+      "utilization": 0.03636363636363636,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 79,
+    "question": "What version / level of Java JRE and GSKit is included with each WebSphere MQ version? What version / level of Java JRE and GSKit is included with WebSphere MQ? for each MQ version? ",
+    "answer": "**Java\u202fJRE included with each WebSphere\u202fMQ version (as described in the APAR)**  \n\n| WebSphere\u202fMQ version | Java\u202fJRE level supplied | Notes on platform\u2011specific builds |\n|----------------------|--------------------------|-----------------------------------|\n| **MQ\u202f7.0**           | Java\u202f5.0\u202fService\u202fRefresh\u202f16\u202fFix\u202fPack\u202f8 (SR16\u2011FP8) | \u2013 |\n| **MQ\u202f7.1**           | Java\u202f6.0\u202fSR16\u2011FP26 (6.0.16.26) on most platforms; Java\u202f6.0\u202fSR16\u2011FP25 (6.0.16.25) on Solaris (x86\u201164 and SPARC) | \u2013 |\n| **MQ\u202f7.5**           | Same as MQ\u202f7.1 \u2013 Java\u202f6.0\u202fSR16\u2011FP26 (6.0.16.26) for AIX, HP\u2011UX IA32/IA64, Linux (x86\u201132, x86\u201164, PPC64, zLinux), Windows; Java\u202f6.0\u202fSR16\u2011FP25 (6.0.16.25) for Solaris (x86\u201164 and SPARC) | \u2013 |\n| **MQ\u202f8.0**           | Same JRE levels as MQ\u202f7.1/7.5 (Java\u202f6.0\u202fSR16\u2011FP26 on most platforms; SR16\u2011FP25 on Solaris) | \u2013 |\n\n**GSKit included with each WebSphere\u202fMQ version (as described in the APAR)**  \n\n| WebSphere\u202fMQ version | GSKit information from the APAR |\n|----------------------|---------------------------------|\n| **MQ\u202f7.0**           | GSKit bundled with MQ\u202f7.0 (no specific version number given). |\n| **MQ\u202f7.5**           | GSKit is bundled with all levels of MQ\u202f7.5 (specific version not stated). |\n| **MQ\u202f8.0**           | GSKit is bundled with MQ\u202f8.0.0.0 and MQ\u202f8.0.0.4 (defect fixed); not affected in MQ\u202f8.0.0.1\u20118.0.0.3. No explicit version/level number is provided. |\n\n*The APAR does not specify the exact GSKit version numbers for any MQ release; it only notes that GSKit is bundled with the product and that a defect was fixed for certain MQ\u202f8.0 releases.*",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.4,
+      "completeness": 0.8,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07424593967517401,
+      "utilization": 0.03480278422273782,
+      "completeness": 0.4375,
+      "adherence": 1
+    }
   }
 ]
