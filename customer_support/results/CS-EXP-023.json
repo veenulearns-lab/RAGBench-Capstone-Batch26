@@ -2123,5 +2123,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 125,
+    "question": "Is using a monitored JBoss server with ITCAM supported in a Windows Service? Is using a monitored JBoss server with ITCAM supported in a Windows Service? ",
+    "answer": "No. Running a monitored JBoss Application Server with the ITCAM for J2EE agent as a Windows service is not supported.",
+    "pred": {
+      "relevance": 0.6,
+      "utilization": 0.05,
+      "completeness": 0.08333333333333333,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.058823529411764705,
+      "utilization": 0.04411764705882353,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 126,
+    "question": "Netcool/Impact 7.1.0: The StateChange value being used by the OMNIbusEventReader is too high  The value being used is a date and time in the future and as such is preventing the EventReader from capturing the current events. ",
+    "answer": "**Cause**  \nAn event in the ObjectServer had its **StateChange** field artificially increased (it now contains a future date/time). The OMNIbus\u202fEventReader stores the highest StateChange it sees and uses that value in the next poll (`\u2026 AND StateChange >= <value>`). Because the stored value is in the future, every subsequent poll returns zero rows, so the EventReader never picks up current events.\n\n**How to diagnose**  \n\n1. Look in the EventReader log \u2013 it will show \u201cRead \u2026 0 events\u201d for each poll.  \n2. Run the same SQL that the EventReader uses in an `nco_sql` session; it will also return 0 rows.  \n3. Remove the `AND StateChange >= <value>` clause from the query and re\u2011run it \u2013 you should see all unprocessed rows, confirming that the StateChange filter is the problem.  \n\n**Resolution**  \n\n1. **Reset the EventReader\u2019s stored StateChange value** \u2013 open the Impact GUI, locate the EventReader configuration, and manually set its StateChange back to a reasonable value (e.g., the current time or the lowest StateChange of the pending events).  \n2. Optionally, delete or correct the event that contains the future\u2011dated StateChange so it does not re\u2011trigger the problem.  \n3. Verify that the **state_change trigger** in OMNIbus is enabled (it updates StateChange to the current time on every event update). If it is disabled, re\u2011enable it; otherwise the WebGUI/AEL may also show stale status.  \n\nAfter resetting the EventReader\u2019s StateChange (or correcting the offending event) the next poll will retrieve the pending events and normal processing will resume.",
+    "pred": {
+      "relevance": 0.52,
+      "utilization": 0.52,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06231454005934718,
+      "utilization": 0.06231454005934718,
+      "completeness": 0.9523809523809523,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 127,
+    "question": "Is ITCAM for J2EE 7.1.1 agent supported on RHEL7.x? \n\nWhen I try to install IBM Tivoli Composite Application Manager Agent for J2EE V7.1.1.0,Linux on x86, English (CN0PKEN) on RHEL 7.2 64-bits\n\nI am getting the following error message:\n\ninstall.sh failure: KCI1138E could not determine the machine's architecture.\n\nIs ITCAM for J2EE 7.1.1 supported on RHEL7?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7857142857142857,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.05263157894736842,
+      "utilization": 0.02631578947368421,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 128,
+    "question": "Is there a support's guide to the CORBA Probes? Where can I download the support's guide to the IBM CORBA probes?",
+    "answer": "Yes.\u202fIBM provides a **Support\u2019s Guide to IBM\u202fCORBA\u202fprobes**.  \nYou can download it from the IBM support site:\n\n- **Support\u2019s Guide to IBM CORBA probes** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21614208  \n\n(Direct PDF versions are also available at the same UID with `aid=1` or `aid=2`.)",
+    "pred": {
+      "relevance": 0.5833333333333334,
+      "utilization": 0.25,
+      "completeness": 0.42857142857142855,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.031914893617021274,
+      "utilization": 0.02127659574468085,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 129,
+    "question": "Does the BPM internal Document Store work with IBM DB2 pureScale? I use IBM DB2 pureScale with my BPM installation. During startup of the server and initialization of the internal document store I see hanging threads in the systemOut.log and the process will not finish. How can this be solved? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.225,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.23595505617977527,
+      "utilization": 0.0449438202247191,
+      "completeness": 0.19047619047619047,
+      "adherence": 0
+    }
   }
 ]
