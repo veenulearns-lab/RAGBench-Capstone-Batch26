@@ -1868,5 +1868,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 109,
+    "question": "What versions of WSAS using Oracle 12c are supported? What versions of WSAS using Oracle 12c are supported?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.02564102564102564,
+      "utilization": 0.004273504273504274,
+      "completeness": 0.16666666666666666,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 110,
+    "question": "How to change the maximum string length for properties in FileNet Administration Console for Content Engine (ACCE) I am trying to change the maximum string length in ACCE like we do in FileNet Enterprise Manager, but in the more Tab, I am not seeing the option. In this case, how can I change it? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7666666666666667,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08771929824561403,
+      "utilization": 0.04678362573099415,
+      "completeness": 0.4,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 111,
+    "question": "Is WebSphere Transformation Extender (WTX) supported for IBM Integration Bus V10? When will WebSphere Transformation Extender (WTX) be supported for IBM Integration Bus V10?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06756756756756757,
+      "utilization": 0.04054054054054054,
+      "completeness": 0.6,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 112,
+    "question": "How do I upgrade my virtual DataPower Appliance from 5.0 firmware to 6.0+ firmware? When attempting to upgrade my Virtual DataPower Appliance from 5.0.0.8 firmware version to 6.0+ firmware versions, I receive a failure message. ",
+    "answer": "To upgrade a **virtual DataPower XC10 appliance** from a 5.0\u2011series firmware to a 6.0\u2011series firmware you must first be running **Fix Pack\u202f5.0.0.8 (or any later 5.0.x fix pack)**. The 5.0.0.8 fix pack contains a required change that lets the larger 6.0\u2011series firmware image fit on the virtual appliance. If you try to move directly from an earlier 5.0.x level (or from 5.0.0.8 without the proper steps) the upgrade will fail.\n\n**Upgrade steps (as described in the provided context)**  \n\n1. **Confirm your current firmware**  \n   - Log in to the virtual appliance and check the firmware version.  \n   - If you are on any 5.0.x level **earlier than 5.0.0.8**, you must first install the 5.0.0.8 fix pack.\n\n2. **Install Fix Pack\u202f5.0.0.8 (or later 5.0.x)**  \n   - Download the 5.0.0.8 (or a later 5.0.x) fix pack from IBM Fix Central.  \n   - Apply it using the normal firmware\u2011upgrade procedure (see *Initializing and configuring WebSphere DataPower XC10 Appliance* for the exact steps).  \n   - This upgrade adds the required fix for the larger firmware image.\n\n3. **Download the 6.0.0.0 (or later) firmware/fix pack**  \n   - From IBM Fix Central, obtain the 6.0.0.0 or any later fix pack.  \n   - **Do not** use any fix pack that is earlier than 5.0.0.8; the documentation explicitly warns against that.\n\n4. **Upgrade to 6.0.0.0+**  \n   - Follow the same firmware\u2011upgrade process you used for 5.0.0.8: upload the 6.0.x image, start the upgrade, and let the appliance reboot.  \n   - Because you are now on 5.0.0.8 or later, the upgrade should succeed.\n\n5. **Post\u2011upgrade checks**  \n   - Verify the new firmware version (e.g., VSL\u202f3.2.6 SSD driver or the appropriate 6.0.x version).  \n   - Note that after upgrading with a VSL\u202f3.2.6 (or later) image, you **cannot roll back** to a prior 2.1.0\u2011style firmware; you can only roll back to the immediate previous VSL version if needed.\n\n**Key points to avoid the failure you saw**\n\n- **You must be on 5.0.0.8 or later before attempting any 6.0.x upgrade.**  \n- **Never install a fix pack earlier than 5.0.0.8 when moving to 6.0.x.**  \n- Use the correct OVA/fixed\u2011image for the target version (the 6.0.0.0 OVA or the corresponding firmware image).  \n\nFollowing these steps\u2014first ensuring you have the 5.0.0.8 fix pack, then applying the 6.0.0.0 (or later) firmware\u2014will allow the virtual DataPower appliance to upgrade successfully.",
+    "pred": {
+      "relevance": 0.32432432432432434,
+      "utilization": 0.2972972972972973,
+      "completeness": 0.9166666666666666,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.21839080459770116,
+      "utilization": 0.04597701149425287,
+      "completeness": 0.21052631578947367,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 113,
+    "question": "Which Socket Gateway should I be using with Netcool Omnibus (NOI) ? Which Socket Gateway should I be using with Netcool Omnibus (NOI) ?\n\nThere are 2 versions of the gateway; nco-g-socket-java-2_0 and nco-g-socket-10_0 Users may be confused what version they should download or use ",
+    "answer": "Use the gateway that matches the version of Netcool\u202f/\u202fOMNIbus you are running:\n\n* **Netcool\u202f/\u202fOMNIbus\u202fV8.1** \u2013 use the newer, single\u2011package gateway (the\u202fnco\u2011g\u2011socket\u2011java\u20112_0 release, part number\u202fCN6I1EN).  \n* **Netcool\u202f/\u202fOMNIbus\u202fV7.4.0** \u2013 use the legacy, OS\u2011specific gateway (the\u202fnco\u2011g\u2011socket\u201110_0 release, supplied as separate packages for each operating system).",
+    "pred": {
+      "relevance": 0.3333333333333333,
+      "utilization": 0.16666666666666666,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.064,
+      "utilization": 0.024,
+      "completeness": 0.375,
+      "adherence": 0
+    }
   }
 ]
