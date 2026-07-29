@@ -2208,5 +2208,90 @@
       "completeness": 0.19047619047619047,
       "adherence": 0
     }
+  },
+  {
+    "idx": 130,
+    "question": "Event Dashboard breaks with Japanese filter Event Dashboard breaks when a filter is created with the browser language set to Japanese. This issue occurs in WebGUI 8.1 Fix Pack 11. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.11428571428571428,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 131,
+    "question": "Can we create Match design specification db in xmeta Could you please let me know if we can create schema for Match design\nspecification database in xmeta db.",
+    "answer": "No.\u202fThe guidance explicitly says you should **not** use the default\u202fXMETA\u202fdatabase for the Match Designer database. You need to create a separate, empty database (or schema) for the Match design specification rather than placing it in\u202fXMETA.",
+    "pred": {
+      "relevance": 0.13793103448275862,
+      "utilization": 0.06896551724137931,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.009900990099009901,
+      "utilization": 0.009900990099009901,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 132,
+    "question": "Why am I getting error SqlIntegrityConstraintViolationException when deploying a process application? After reinstalling Process Center (or using separate Process Centers to deploy to one Process Server) you get a deployment failure error on the Process Server:\njava.lang.Exception: java.lang.Exception:com.lombardisoftware.client.delegate.BusinessDelegateException:PreparedStatementCallback; SQL [update LSW_SNAPSHOT set CREATED_ON =?,NAME = ?,ACRONYM = ?,DESCRIPTION = ?,SEQ_NUM = ?,ERROR_COUNTER =?,ORIG_CREATED_ON = ?,ACTIVATED_ON = ?,STATUS = ?,ARCHIVED_ON =?,LAST_MODIFIED = ?,REPOSITORY_BRANCH_ID = ?,CREATED_BY_USER_ID =?,BRANCH_ID = ?,PROJECT_ID = ?,LAST_MODIFIED_BY_USER_ID = ?,CHANGE_DATA= ?,IS_ACTIVE = ?,IS_BLA_ACTIVE = ?,IS_STARTED = ?,IS_INSTALLED =?,IS_BLA_INSTALLED = ?,IS_TIP_DEPLOYED = ?,IS_DEFAULT =?,TIP_DEPLOYMENT_IN_PROGRESS = ?,IS_ARCHIVED = ? where SNAPSHOT_ID = ?]; Error for batch element # 1: DB2 SQL Error: SQLCODE=-803, SQLSTATE=23505, SQLERRMC=2;BPMBDBA.LSW_SNAPSHOT, DRIVER=4.11.69; nested exception iscom.ibm.db2.jcc.am.SqlIntegrityConstraintViolationException: Error forbatch element # 1: DB2 SQL Error: SQLCODE=-803, SQLSTATE=23505,SQLERRMC=2;BPMBDBA.LSW_SNAPSHOT, DRIVER=4.11.69\nHow can I deploy my application?",
+    "answer": "The deployment fails because the BPM server is trying to write rows to the **LSW_SNAPSHOT** (and other BPM tables) with a **NULL/unauthenticated user ID**.  \nWhen **Application Security is disabled** in the WebSphere / BPM environment, authentication is skipped and the runtime treats the caller as **UNAUTHENTICATED**. The BPM code then attempts to insert or update records with a missing\u202f`CREATED_BY_USER_ID` (or other mandatory columns). DB2 rejects the statement with a primary\u2011key or NOT\u2011NULL violation, which appears as  \n\n```\nSqlIntegrityConstraintViolationException\nSQLCODE=-803 / -407 / -532 \u2026\n```\n\nSo the root cause is **Application Security being turned off**, not a bug in the SQL itself.\n\n**How to fix it / deploy the application**\n\n1. **Enable Application Security** on the WebSphere Application Server (or the BPM deployment manager) that hosts the Process Server.  \n2. Ensure a valid, authenticated user is used for the deployment (the user must have the BPM deployment roles).  \n3. (Optional) Apply the relevant IBM BPM fix pack if you are on an affected version (e.g., 7.5.1 Fix Pack\u202f1 or 8.5 Refresh Pack\u202f7) to get the corrected behavior.  \n\nAfter Application Security is enabled and the deployment is performed with an authenticated user, the INSERT/UPDATE statements succeed and the process application can be deployed without the `SqlIntegrityConstraintViolationException`.",
+    "pred": {
+      "relevance": 0.64,
+      "utilization": 0.32,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.14673913043478262,
+      "utilization": 0.007246376811594203,
+      "completeness": 0.04938271604938271,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 133,
+    "question": "Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? Is ITCAM Agent for WebSphere Applications 7.2.0.0.7 available? ",
+    "answer": "Yes, ITCAM Agent for WebSphere Applications\u202f7.2.0.0.7 is available.",
+    "pred": {
+      "relevance": 0.125,
+      "utilization": 0.0625,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.021551724137931036,
+      "utilization": 0.008620689655172414,
+      "completeness": 0.4,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 134,
+    "question": "Help with Security Bulletin: Security Vulnerability in IBM PureApplication System. (CVE-2015-1920) I need to understand details regarding \"Security Bulletin: Security Vulnerability in IBM PureApplication System (CVE-2015-1920)\". Where can I find this information? ",
+    "answer": "You can find the full details in the IBM security bulletin for this issue:\n\n**Security Bulletin:**\u202fSecurity Vulnerability in IBM WebSphere Application Server (which also covers the PureApplication System)  \n**URL:**\u202fhttp://www-01.ibm.com/support/docview.wss?uid=swg21883573  \n\nThat page contains the description, CVSS scores, affected products/versions, and remediation information for CVE\u20112015\u20111920.",
+    "pred": {
+      "relevance": 0.375,
+      "utilization": 0.1875,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1329479768786127,
+      "utilization": 0.06358381502890173,
+      "completeness": 0.21739130434782608,
+      "adherence": 1
+    }
   }
 ]
