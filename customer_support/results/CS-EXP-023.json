@@ -3058,5 +3058,90 @@
       "completeness": 0.4166666666666667,
       "adherence": 1
     }
+  },
+  {
+    "idx": 180,
+    "question": "DB2 Non Reclaimable Storage . We have tablespaces defined under DB2 9.5 that apparently are not able\nto reclaim storage back to the OS, but does that mean DB2 cannot reuse\nthis space as well?\n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.17857142857142858,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.026578073089700997,
+      "utilization": 0.036544850498338874,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 181,
+    "question": "Netcool/Impact 7.1.0: The StateChange value being used by the OMNIbusEventReader is too high  The value being used is a date and time in the future and as such is preventing the EventReader from capturing the current events. ",
+    "answer": "**How to fix a \u201cfuture\u2011dated\u201d StateChange that blocks the OMNIbus\u202fEventReader**\n\n1. **Confirm the symptom**  \n   * The EventReader log shows **0 events** being read on each poll.  \n   * Running the same SQL that the EventReader uses (including the clause  \n     `AND StateChange >= <value>`) in an `nco_sql` session also returns **no rows**.  \n   * Removing the `StateChange >= \u2026` part makes the query return the expected\n     unprocessed rows \u2013 proving that the stored StateChange value is too high\n     (it represents a date/time in the future).\n\n2. **Diagnose the cause**  \n   * An event in the ObjectServer has had its **StateChange** field artificially\n     increased (by a probe, trigger, or other component) to a future timestamp.  \n   * The EventReader captures that event, stores the highest StateChange it has\n     seen, and then uses that value in the next poll. Because the value is in\n     the future, every subsequent poll is filtered out.\n\n3. **Reset the EventReader\u2019s StateChange**  \n   * Open the **Impact GUI** (WebGUI).  \n   * Locate the **OMNIbusEventReader** configuration (usually under *Readers* \u2192\n     *EventReader*).  \n   * Edit the reader and **clear/reset the stored StateChange value** (set it\n     back to 0 or to the current time).  \n   * Save the changes and restart the EventReader (or restart the Impact\n     service) so it picks up the new baseline.\n\n4. **Prevent recurrence**  \n   * Identify the component that set the future StateChange (probe, trigger,\n     custom script, etc.) and correct its logic so it never writes a future\n     timestamp.  \n   * Verify that the **state_change trigger** in OMNIbus is enabled; this trigger\n     normally updates StateChange to the current time whenever an event is\n     modified. If it is disabled, re\u2011enable it to keep StateChange accurate.  \n\n5. **Validate**  \n   * After resetting, run the EventReader again and confirm that events are now\n     being captured (log should show a non\u2011zero count).  \n   * Re\u2011run the SQL with the `StateChange >= \u2026` clause; it should now return the\n     expected rows.\n\n**Summary** \u2013 The EventReader is blocked because a single event\u2019s StateChange\nfield was set to a future date. Manually resetting the reader\u2019s stored\nStateChange via the Impact GUI (or CLI) restores normal polling, and fixing the\nroot cause (the component that wrote the future timestamp or a disabled\nstate_change trigger) prevents the problem from happening again.",
+    "pred": {
+      "relevance": 0.56,
+      "utilization": 0.64,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.08011869436201781,
+      "utilization": 0.08011869436201781,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 182,
+    "question": "missing VM manager data \n\nwe are missing VM manager data for 13 servers. error: invalid credentials - suspended. there are no recent changes done for the ID/pwd.\n\nplease suggest the action need to be taken.\n1039699\n",
+    "answer": "Create a dummy VM guest to bypass the error.",
+    "pred": {
+      "relevance": 0.3157894736842105,
+      "utilization": 0.10526315789473684,
+      "completeness": 0.3333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 183,
+    "question": "startNode failed with ADML3000E after a deployment failure Client had a deployment failure due to \"Too many open files\" error.\n\nAfterwards, the startNode failed with ADML3000E:\n\nWhat could cause the \"Too many open files error?",
+    "answer": "The \u201cToo many open files\u201d error is caused by the process exceeding the operating\u2011system limit on file handles (sockets are counted as file handles). This can happen when:\n\n* the system\u2019s **ulimit** for open files is set too low (often the default),  \n* an application leaks file handles, or  \n* a component (e.g., the RDz Daemon) creates an excessive number of server processes and exhausts pipe resources.  \n\nWhen the limit is reached, no new sockets or files can be opened, producing the error.",
+    "pred": {
+      "relevance": 0.5172413793103449,
+      "utilization": 0.13793103448275862,
+      "completeness": 0.26666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07871720116618076,
+      "utilization": 0.0728862973760933,
+      "completeness": 0.9259259259259259,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 184,
+    "question": "Is Java 8 supported for BPM? \n\nI understand that support for Java 6 on WebSphere Application Server is ending April 2018, see: http://www-01.ibm.com/support/docview.wss?uid=swg21999583\n\nNow I can switch to Java 7. But what about Java 8? Does BPM 8.5.6 support Java 8?",
+    "answer": "No. According to the supported\u2011Java matrix in the provided notes, IBM BPM\u202fV8.5.6.0 supports only Java\u202f6 or Java\u202f7. Java\u202f8 support is available starting with IBM BPM\u202fV8.6.",
+    "pred": {
+      "relevance": 0.35,
+      "utilization": 0.1,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.038834951456310676,
+      "utilization": 0.038834951456310676,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
