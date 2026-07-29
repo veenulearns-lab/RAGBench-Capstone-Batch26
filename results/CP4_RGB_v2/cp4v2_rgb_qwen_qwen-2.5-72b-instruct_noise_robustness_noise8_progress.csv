@@ -1,0 +1,36 @@
+id,model,ability,noise_ratio,query,model_response,accuracy
+0,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When is the premiere of 'Carole King & James Taylor: Just Call Out My Name'?,"The premiere of 'Carole King & James Taylor: Just Call Out My Name' was on January 2, 2022, at 9:00 pm ET/PT on CNN.",1
+1,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,"The genre of the drama ""Good Sam"" is what?","The genre of the drama ""Good Sam"" is medical.",1
+2,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who won the 2022 Citrus Bowl?,Kentucky won the 2022 Citrus Bowl with a score of 20-17 over Iowa.,1
+3,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What position did Jason Semore hold at Valdosta State before returning to Georgia Tech?,"According to the document, Jason Semore held the position of defensive coordinator at Valdosta State before returning to Georgia Tech.",1
+4,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,How many vehicles did Tesla deliver in 2021?,"According to the document, Tesla delivered 936,172 vehicles in 2021.",1
+5,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Which company acquired ShowBiz Cinemas?,EVO Entertainment Group acquired ShowBiz Cinemas.,1
+6,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Where is the Super Bowl held in 2022?,"The Super Bowl in 2022, known as Super Bowl LVI, was held at SoFi Stadium in Inglewood, California.",1
+7,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When will Truth Social launch on iOS?,"Truth Social has already launched on iOS. It became available for download from Apple's App Store on February 21st, 2022, which is President’s Day in the US.",1
+8,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What won best drama at 79th Golden Globes?,"The best drama at the 79th Golden Globes was ""The Power of the Dog.""",1
+9,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,How much are GA Tech softball 2022 season tickets?,GA Tech softball 2022 season tickets cost $100 per seat.,1
+10,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When does the 2022 Olympic Winter Games end?,"The 2022 Olympic Winter Games ended on February 20, 2022.",1
+11,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who won the Spanish Super Cup 2022?,"The document does not provide the winner of the Spanish Super Cup 2022. It mentions the 2021-22 final where Real Madrid defeated Athletic Bilbao, and it discusses the 2022-23 final between Real Madrid and Barcelona, but it does not state the result of the 2022-23 final. Therefore, I cannot answer the question based on the information provided.
+
+**I can not answer the question because of the insufficient information in documents.**",1
+12,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,How much is Microsoft acquiring Activision Blizzard for?,Microsoft is acquiring Activision Blizzard for $68.7 billion.,1
+13,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What is the price for a 30-second spot during the Super Bowl 2022?,"According to the document, a 30-second Super Bowl commercial in 2022 cost $5.6 million.",0
+14,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When is the Sports Star of the Year Awards Show 2022?,"The 87th annual Seattle Sports Star of the Year Awards Show was held on May 26, 2022.",1
+15,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who are the recipients of the 2022 Ivan Allen Jr. Prize for Social Courage?,"The recipients of the 2022 Ivan Allen Jr. Prize for Social Courage are Ford Greene, Ralph Long Jr., the late Lawrence Williams, and Ronald Yancey. These four pioneers are being honored for their social courage and the transformative impact they had on the Georgia Institute of Technology.",1
+16,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What is the codename for Google's AR headset project?,The codename for Google's AR headset project is **Project Iris**.,1
+17,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What is the name of Meta's AI supercomputer?,The name of Meta's AI supercomputer is the AI Research SuperCluster (RSC).,1
+18,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When will American students start taking digital SAT exams?,"The document does not provide a specific date for when American students will start taking digital SAT exams. It mentions that the SAT is now fully digital for international test-takers and that domestic students have several options for testing in 2023 and 2024, but it does not specify when the digital format will be available for domestic students. Therefore, I cannot answer the question due to insufficient information in the documents.",1
+19,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When do the Paralympic Winter Games 2022 start?,"The 2022 Winter Paralympics begin on March 4, 2022.",1
+20,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Super Bowl 2022 date,"The Super Bowl 2022 (Super Bowl LVI) will take place on Sunday, February 13, 2022.",1
+21,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who won the 2022 Nobel Prize for chemistry?,"The 2022 Nobel Prize in Chemistry was awarded to K. Barry Sharpless, Carolyn R. Bertozzi, and Morten Meldal for the development of click chemistry and bioorthogonal chemistry.",1
+22,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who won the Super Bowl 2022?,"The Los Angeles Rams won the Super Bowl 2022, defeating the Cincinnati Bengals 23-20.",1
+23,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who won women's 500m speed skating at the 2022 Winter Olympics?,Erin Jackson of the United States won the women's 500m speed skating at the 2022 Winter Olympics.,1
+24,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When was Lost Ark game release on Steam?,"According to the document, Lost Ark was released on Steam on February 11.",1
+25,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What medals did Jessie Diggins win in the Beijing 2022 Olympic Games?,"Jessie Diggins won two medals at the Beijing 2022 Olympic Games:
+
+1. Bronze medal in the individual sprint on February 8, 2022.
+2. Silver medal in the 30-kilometer freestyle race on February 20, 2022.",1
+26,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,What is the genre of The Endgame (TV show)?,The genre of The Endgame (TV show) is crime drama thriller.,1
+27,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When did Russia invade Ukraine?,"Russia invaded Ukraine on February 24, 2022.",1
+28,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,When was Elden Ring being released?,"Elden Ring was released on February 25, 2022.",1
+29,qwen/qwen-2.5-72b-instruct,noise_robustness,0.8,Who did Iga Swiatek defeat to win the Qatar Open 2022?,"Iga Swiatek defeated Jessica Pegula to win the Qatar Open 2022, with the score 6-3, 6-0.",0
