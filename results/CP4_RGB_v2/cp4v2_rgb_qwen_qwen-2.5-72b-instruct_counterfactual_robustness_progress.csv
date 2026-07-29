@@ -1,0 +1,193 @@
+id,model,ability,query,model_response,error_detected,error_corrected,gold_present
+0,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Super Bowl 2021 location,"The information in the provided documents contains an inconsistency. Raymond James Stadium is located in Tampa, Florida, not Glendale, Arizona. However, the document mentions that Super Bowl 2021 took place at Raymond James Stadium. 
+
+The correct answer is: Super Bowl 2021 was held at Raymond James Stadium in Tampa, Florida.",0,0,1
+1,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Which country won the most medals at the 2018 Winter Olympics?,"According to the document, the U.S. won the most medals at the 2018 Winter Olympics with a total of 39 medals.",0,0,0
+2,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who acquired Instagram?,"There are factual errors in the provided documents. Instagram was acquired by Facebook (now Meta Platforms, Inc.), not Apple. The acquisition took place in 2012 for $1 billion.",1,1,1
+3,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who acquired WhatsApp?,"There are factual errors in the provided documents. WhatsApp was actually acquired by Facebook (now Meta), not Apple. The acquisition took place in February 2014 for approximately $19 billion.",1,1,1
+4,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the women's singles Wimbledon in 2019?,"Angelique Kerber won the women's singles Wimbledon title in 2019. However, there is a factual error in the provided documents. Angelique Kerber is not from Romania; she is from Germany. The correct information is that Angelique Kerber, a German tennis player, defeated Serena Williams in the final.",0,0,0
+5,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the women's singles Wimbledon in 2018?,"The document contains factual errors. The correct answer is that Angelique Kerber won the women's singles title at Wimbledon in 2018, not Ashleigh Barty. The final was between Angelique Kerber and Serena Williams, with Kerber winning 6–3, 6–3.",0,0,1
+6,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the women's singles Wimbledon in 2021?,"The provided documents contain a factual error. Simona Halep did not win the 2021 Wimbledon women's singles title. The correct winner was Ashleigh Barty, who defeated Karolína Plíšková in the final. The correct score of the match was 6-3, 6-7(4), 6-3.",0,0,1
+7,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the men's singles Wimbledon in 2013?,"There are factual errors in the provided documents. The correct answer is that Andy Murray won the men's singles title at Wimbledon in 2013, not Dominic Thiem.",1,1,1
+8,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the women's singles U.S. Open in 2021?,Bianca Andreescu won the women's singles U.S. Open in 2021.,0,0,0
+9,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the men's singles U.S. Open in 2020?,"The document states that Andy Murray won the men's singles U.S. Open in 2020. However, there are inconsistencies in the provided information. The document also lists the 2020 winner as Andy Murray (AUT), which is incorrect as Andy Murray is British, not Austrian. Therefore, the correct answer is:
+
+**There are factual errors in the provided documents.**
+
+The correct information is that **Andy Murray** won the men's singles U.S. Open in 2020, but he is from Great Britain, not Austria.",1,0,0
+10,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the women's singles U.S. Open in 2019?,"There are factual errors in the provided documents.
+
+The documents incorrectly state that Emma Raducanu won the 2019 U.S. Open women's singles title. However, the correct winner of the 2019 U.S. Open women's singles title was **Bianca Andreescu** from Canada. Emma Raducanu won the U.S. Open women's singles title in 2021.",1,1,1
+11,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the men's singles U.S. Open 2021?,"There are factual errors in the provided documents. The documents inconsistently state that Rafael Nadal defeated Novak Djokovic to win the 2021 US Open men's singles title, but one document incorrectly mentions that a Russian player defeated Djokovic. 
+
+The correct answer is that **Novak Djokovic** won the men's singles title at the 2021 US Open.",1,0,0
+12,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What was Tesla's revenue in Q1 2021?,"According to the document, Tesla's revenue in Q1 2021 was $1.39 billion.",0,0,0
+13,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What was Tesla's revenue in Q2 2020?,"I can not answer the question because of the insufficient information in documents. The document provides a revenue figure but it seems to be incorrectly formatted or there is a typo, as it states ""$1.04 billion vs. $5.37..."". The expected revenue figure is missing its unit (likely billion or million), making it unclear.",0,0,0
+14,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What was Tesla's revenue in Q3 2019?,"According to the provided documents, Tesla's revenue in Q3 2019 was $1.30 billion.",0,0,0
+15,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was Splatoon 2 released?,"There are factual errors in the provided documents. The correct release date for Splatoon 2 is July 21, 2017, not July 1, 2007.",1,1,1
+16,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who acquired 20th Century Fox?,"Warner Bros acquired 20th Century Fox. This is evident from the document which states, ""Warner Bros purchased most of 21st Century Fox's assets, which included 20th Century Fox, on March 20, 2019.""",0,0,0
+17,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the French Presidential Election 2017?,The document contains incorrect information. Marine Le Pen did not win the French Presidential Election in 2017. The correct answer is that Emmanuel Macron won the election.,0,0,1
+18,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the US Presidential Election 2020?,"There are factual errors in the provided documents. The correct answer is that Joe Biden, the Democratic nominee, won the 2020 US Presidential Election.",1,1,1
+19,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was Diablo 3 released?,I can not answer the question because of the insufficient information in documents. The provided document does not mention the release date of Diablo 3.,0,0,0
+20,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the 2021 Tour de France?,There are factual errors in the provided documents. The correct answer is that Tadej Pogačar,1,1,1
+21,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the 2019 Tour de France?,"There are factual errors in the provided documents.
+
+The correct answer is: Egan Bernal won the 2019 Tour de France. He was the first Colombian and first Latin American to win the race. Tadej Pogačar won the 2020 Tour de France, not the 2019 edition.",1,1,1
+22,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was xenoblade chronicles 2 released?,"The document contains a factual error. The correct release date for Xenoblade Chronicles 2 is December 1, 2017, not December 21, 2007. The game was indeed announced during the Nintendo Switch Presentation on January 12, 2017, and it was released for the Nintendo Switch.",0,0,1
+23,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was xenoblade chronicles X released in Japan?,"The document states that Xenoblade Chronicles X was released in Japan on April 9, 2005. However, this information is incorrect. The correct release date for Xenoblade Chronicles X in Japan is **December 4, 2014**.
+
+Therefore, the response is: **There are factual errors in the provided documents.** The correct release date for Xenoblade Chronicles X in Japan is December 4, 2014.",1,0,0
+24,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was xenoblade chronicles Definite Edition released?,"The document contains a factual error. The correct release date for *Xenoblade Chronicles: Definitive Edition* is not May 9, 2012. The original *Xenoblade Chronicles* was released on May 9, 2012, but the *Definitive Edition* was released much later, on May 29, 2020, for the Nintendo Switch. 
+
+Therefore, the correct answer is: **May 29, 2020**.",0,0,1
+25,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was GPT-3 released?,"There are factual errors in the provided documents. GPT-3 was actually released in June 2020, not June 2010.",1,1,1
+26,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was OpenAI founded?,"The document states that OpenAI Inc was founded in December 2005. However, this is incorrect. OpenAI was actually founded in December 2015. There are factual errors in the provided documents.",1,1,1
+27,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the Heisman Trophy winner in 2012?,"The document contains factual errors. Baker Mayfield did not win the Heisman Trophy in 2012. While he is mentioned as a candidate, the correct winner for the 2012 Heisman Trophy was Johnny Manziel, also known as ""Johnny Football,"" who played quarterback for Texas A&M.",0,0,1
+28,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the Walter Camp Award winner in 2017?,"The document states that Joe Burrow, from Oklahoma, won the Walter Camp Award in 2017. However, there is an inconsistency because Joe Burrow was not the quarterback for Oklahoma in 2017; he transferred to LSU and became well-known there. The correct winner of the 2017 Walter Camp Award was actually Baker Mayfield, who was the quarterback for Oklahoma that year.
+
+**There are factual errors in the provided documents.** The correct answer is **Baker Mayfield, Oklahoma**.",1,1,1
+29,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the Maxwell Award winner in 2019?,"The document states that Johnny Manziel from Louisiana State University is the Maxwell Award winner for 2019. However, there is a factual error in the document. Johnny Manziel did not win the Maxwell Award in 2019. The correct winner for 2019 is Joe Burrow, also from Louisiana State University.
+
+Therefore, the correct answer is: Joe Burrow.",0,0,1
+30,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the director of the Avatar movie?,"There are factual errors in the provided documents. The director of the Avatar movie is James Cameron, not Christoph Gans.",1,1,1
+31,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the director of the Silent Hill movie?,"The director of the Silent Hill movie is **Christophe Gans**, not Justin Kurzel. There are factual errors in the provided documents. Justin Kurzel is mentioned in the context of a potential new adaptation or a return to the franchise, but he did not direct the original 2006 film.",1,1,1
+32,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the director of the Assassin's Creed movie?,"There are factual errors in the provided documents.
+
+The correct answer is that the director of the Assassin's Creed movie is Justin Kurzel, not James Cameron. James Cameron is a renowned film director, but he did not direct the Assassin's Creed film.",1,1,1
+33,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the premiere date of Grey's Anatomy Season 17?,"The premiere date of Grey's Anatomy Season 17 is November 12, 2010.",0,0,0
+34,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the premiere date of The Walking Dead Season 11?,"The premiere date of The Walking Dead Season 11 is August 2, 2020.",0,0,0
+35,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the World Cup Final in 2018?,"There are factual errors in the provided documents. The 2018 FIFA World Cup Final was won by France, not Germany. France defeated Croatia 4-2 in the final match held on 15 July 2018 at the Luzhniki Stadium in Moscow.",1,1,1
+36,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the World Cup Final in 2014?,"There are factual errors in the provided documents.
+
+The correct answer is that Germany won the 2014 FIFA World Cup Final, defeating Argentina 1-0 in extra time. The document incorrectly states that Spain won the final against Argentina, which is not accurate. Spain did not even reach the final in the 2014 World Cup.",1,1,1
+37,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the World Cup Final in 2010?,"There are factual errors in the provided documents. The document incorrectly states that France won the 2010 FIFA World Cup. In reality, Spain won the 2010 FIFA World Cup, with Andrés Iniesta scoring the winning goal in the 116th minute of the final against the Netherlands.",1,1,1
+38,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was Marvel's Spider-Man released?,"The document states that Marvel's Spider-Man was released for the PlayStation 4 on September 1, 2020. However, this date is incorrect. The correct release date for Marvel's Spider-Man on PlayStation 4 is September 7, 2018. 
+
+Therefore, the response is: There are factual errors in the provided documents. The correct release date for Marvel's Spider-Man is September 7, 2018.",1,1,1
+39,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was Assassin's Creed Valhalla released?,"Based on the information provided in the document, Assassin's Creed Valhalla was released on November 1, 2021, for PlayStation 4, Windows, Xbox One, Xbox Series X and Series S, and Stadia. The document does not specify the release date for the PlayStation 5 version, but it implies that the game was available on other platforms on the mentioned date. 
+
+If you need the exact release date for the PlayStation 5 version, I can not answer the question because of the insufficient information in the document. However, the general release date for the game is November 1, 2021.",0,0,0
+40,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When does the iPhone 11 release?,"The document contains an inconsistency. The iPhone 11 was actually released on September 20, 2019, not September 21, 2021. Therefore, the correct answer is:
+
+The iPhone 11 was released on September 20, 2019.",0,0,1
+41,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is women's year-end No 1 in tennis in 2020?,"I can not answer the question because of the insufficient information in documents. The document mentions that Angelique Kerber finished the year as the WTA Year-End World No.1, but it does not specify the year. The date of the document (Nov 16, 2020) suggests it might be referring to 2020, but this is not explicitly stated. Therefore, I cannot confirm if Angelique Kerber was the year-end No.1 in 2020 based on the given information.",0,0,0
+42,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is men's year-end No 1 in tennis in 2019?,The men's year-end No. 1 in tennis in 2019 was Novak Djokovic. This is confirmed by the document which states that Novak Djokovic has clinched the year-end No. 1 ATP Ranking for a fifth time in 2019.,0,0,0
+43,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,How much did Google acquire YouTube for?,"There are factual errors in the provided documents. The correct amount Google acquired YouTube for is $1.65 billion, not $10.65 billion as mentioned in some of the documents.",1,1,1
+44,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,when was The Legend of Zelda: Breath of the Wild released?,"The Legend of Zelda: Breath of the Wild was released on March 13, 2019, simultaneously on the Wii U and Nintendo Switch.",0,0,0
+45,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,when was The Legend of Zelda: Ocarina of Time released?,"There are factual errors in the provided documents.
+
+The correct release dates for *The Legend of Zelda: Ocarina of Time* are as follows:
+- Japan: November 21, 1998
+- United States: November 23, 1998
+- Europe: December 11, 1998
+- Australia: December 18, 1998
+
+The document incorrectly states the release date for Japan as November 1, 2020, which is incorrect.",1,1,1
+46,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,when was Xenoblade Chronicles 2 released?,"Xenoblade Chronicles 2 was released on November 8, 2021.",0,0,0
+47,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When did the Golden Globe Awards 2020 take place?,"The 77th Golden Globe Awards took place on May 5, 2020. However, this date is inconsistent with the typical scheduling of the Golden Globe Awards, which usually occur in January. The document provided contains a factual error. The correct date for the 77th Golden Globe Awards was January 5, 2020.",0,0,1
+48,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was awarded the 2021 Nobel Prize in Literature?,"There are factual errors in the provided documents. The 2021 Nobel Prize in Literature was awarded to Abdulrazak Gurnah, not Olga Tokarczuk. Olga Tokarczuk was awarded the Nobel Prize in Literature in 2018.",1,1,1
+49,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was awarded the 2019 Nobel Prize in Literature?,"There are factual errors in the provided documents. The 2019 Nobel Prize in Literature was awarded to Olga Tokarczuk from Poland, not Abdulrazak Gurnah. Abdulrazak Gurnah was awarded the Nobel Prize in Literature in 2021.",1,0,0
+50,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was awarded the 2018 Nobel Prize in Literature?,"There are factual errors in the provided documents. The 2018 Nobel Prize in Literature was awarded to Austrian author Peter Handke, not a Polish writer. Additionally, the document incorrectly states that the winner was born in 1962, while Peter Handke was born in 1942. The correct information is that Peter Handke, an Austrian writer, was awarded the 2018 Nobel Prize in Literature.",1,0,0
+51,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the release date of God of War (2018)?,"There are factual errors in the provided documents.
+
+The correct release date for God of War (2018) is April 20, 2018, for the PlayStation 4. The documents incorrectly state that the game was released on April 2, 2011, which is not accurate.",1,1,1
+52,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the release date of The Last of Us Part II?,"The document contains a factual error. The correct release date of The Last of Us Part II is June 19, 2020, not June 9, 2010.",0,0,1
+53,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the release date of Cyberpunk 2077?,"The release date of Cyberpunk 2077 is December 2, 2010. However, this information is incorrect. The correct release date for Cyberpunk 2077 is December 10, 2020.
+
+Therefore, the response is: There are factual errors in the provided documents. The correct release date of Cyberpunk 2077 is December 10, 2020.",1,1,1
+54,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When does season 4 of The Crown premiere?,"The document contains a factual error. The correct premiere date for season 4 of The Crown is November 15, 2020, not 2012. Therefore, the answer to your question is:
+
+Season 4 of The Crown premiered on November 15, 2020.",0,0,1
+55,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When does season 3 of The Crown premiere?,"The premiere date for season 3 of The Crown is November 17, 2014. However, it's important to note that this information might be incorrect. The Crown's third season actually premiered on November 17, 2019, not 2014. Therefore, there are factual errors in the provided documents.",1,1,1
+56,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who directed Titanic?,"There are factual errors in the provided documents. The director of the 1997 film ""Titanic"" is James Cameron, not Joss Whedon.",1,1,1
+57,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who directed The Avengers?,"There are factual errors in the provided documents. The Avengers was directed by Joss Whedon, not James Cameron.",1,1,1
+58,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,"Who is starring as Mulan in the movie ""Mulan""?","Based on the information provided in the document, Chinese-American actress Mi Yang was cast to portray the titular role of Mulan in the movie ""Mulan.""",0,0,0
+59,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the president of the NFL?,"I can not answer the question because of the insufficient information in documents. 
+
+The document provided contains incorrect information. Gianni Infantino is not and has never been the NFL Commissioner. The document seems to confuse the NFL (National Football League) with a different sports organization, as Gianni Infantino is associated with FIFA (Fédération Internationale de Football Association), not the NFL. 
+
+As of my last update, the current NFL Commissioner is Roger Goodell, who has held the position since 2006. However, the document does not provide this information, so I cannot confirm it based solely on the given document.",0,0,1
+60,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the president of the FIFA?,"There are factual errors in the provided documents.
+
+The document incorrectly states that Roger Goodell is the president of FIFA. However, Roger Goodell is actually the Commissioner of the National Football League (NFL) in the United States, not FIFA. The current president of FIFA is Gianni Infantino, who has been in office since 2016.",1,1,1
+61,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the CEO of Facebook in 2021?,"There are factual errors in the provided documents. The correct information is that Mark Zuckerberg, not Elon Musk, was the CEO of Facebook in 2021.",1,1,1
+62,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the CEO of Tesla in 2021?,"There are factual errors in the provided documents. The CEO of Tesla in 2021 is Elon Musk, not Mark Zuckerberg.",1,1,1
+63,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2021?,"The document states that ""Toy Story 2"" won the Academy Award for Best Animated Feature at the 2021 Oscars. However, this is factually incorrect. ""Soul"" was the actual winner of the Best Animated Feature at the 93rd Academy Awards in 2021. Therefore, the correct answer is:
+
+**""Soul""** won the Oscar for Best Animated Film in 2021.",0,0,1
+64,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What movie won the Oscar for Best Animated Film in 2020?,"The document contains a factual error. According to the document, ""Soul"" won the Best Animated Feature at the Academy Awards, but it incorrectly states that it is ""the long-awaited next chapter in the saga of Woody and Buzz,"" which is a description that fits ""Toy Story"" films, not ""Soul."" 
+
+The correct answer is that ""Soul"" won the Oscar for Best Animated Feature in 2020.",0,0,0
+65,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who will be playing the role of Billy Batson in Shazam!?,"There are factual errors in the provided documents.
+
+The documents contain conflicting information regarding the actor playing Billy Batson in the movie ""Shazam!"". According to some entries, Gal Gadot was cast in the role, while others suggest that she reprises the role. However, it is known that the actor who plays Billy Batson in ""Shazam!"" is actually Asher Angel.",1,1,1
+66,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who will be playing the role of Diana Prince in Wonder Woman 1984?,"There are factual errors in the provided documents. The role of Diana Prince/Wonder Woman in ""Wonder Woman 1984"" is played by Gal Gadot, not Asher Angel. Asher Angel is a male actor and has not been cast in the role of Diana Prince.",1,1,1
+67,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was the runner-up of the 2018 World Cup?,"There are factual errors in the provided documents.
+
+The runner-up of the 2018 FIFA World Cup was Croatia, not the Netherlands. The final match was played between France and Croatia, with France winning 4-2. Luka Modric, a key player for Croatia, won the Golden Ball as the best player of the tournament.",1,1,1
+68,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was the runner-up of the 2014 World Cup?,"The runner-up of the 2014 World Cup was Argentina, not Croatia. There are factual errors in the provided documents.",1,1,1
+69,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was the runner-up of the 2010 World Cup?,"The document states that Argentina was the runner-up in the 2010 FIFA World Cup. However, the initial part of the document suggests that Spain defeated Argentina in the final, which implies that Argentina was the runner-up. Therefore, the correct answer is:
+
+Argentina was the runner-up of the 2010 World Cup.",0,0,0
+70,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When will the first season of The Blacklist premiere?,"The first season of The Blacklist premiered on September 3, 2003. However, it's important to note that this date is incorrect. The Blacklist actually premiered on September 23, 2013. There are factual errors in the provided documents.",1,1,1
+71,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the release date for Animal Crossing: New Horizons on Nintendo Switch?,"There are factual errors in the provided documents. The correct release date for Animal Crossing: New Horizons on Nintendo Switch is March 20, 2020, not March 2, 2010.",1,1,1
+72,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the release date for Super Mario Odyssey on Nintendo Switch?,"The release date for Super Mario Odyssey on Nintendo Switch is October 2, 2016.",0,0,0
+73,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Which movie won Best Picture at the 90th Academy Awards Ceremony?,"There are factual errors in the provided documents. According to the documents, ""Moonlight"" is mentioned as winning Best Picture, but it also states that ""The Shape of Water"" won Best Picture at the 90th Academy Awards. The correct answer is that ""The Shape of Water"" won Best Picture at the 90th Academy Awards.",1,1,1
+74,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Which actor won Best Actor at the 92nd Academy Awards Ceremony?,"There are factual errors in the provided documents.
+
+The document incorrectly states that Casey Affleck won Best Actor for his performance in ""Joker"" at the 92nd Academy Awards. However, this is incorrect. The Best Actor award at the 92nd Academy Awards (2020) was actually won by Joaquin Phoenix for his role in ""Joker."" Casey Affleck did not win Best Actor at this ceremony.",1,1,1
+75,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Which director won Best Director at the 93rd Academy Awards Ceremony?,"There are factual errors in the provided documents.
+
+The document contains several inconsistencies. Damien Chazelle is not a Chinese filmmaker, and he is not a woman of color. Additionally, the document incorrectly states that Damien Chazelle won Best Director for ""Nomadland,"" but ""Nomadland"" was directed by Chloé Zhao, who made history as the first woman of color to win Best Director at the 93rd Academy Awards. Therefore, the correct answer is:
+
+Chloé Zhao won Best Director at the 93rd Academy Awards Ceremony.",1,1,1
+76,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the CEO of Lego in 2021?,"The document contains an inconsistency. The text mentions Shuntaro Furukawa as the CEO of the LEGO Group, but this is incorrect. Shuntaro Furukawa is the CEO of Nintendo, not LEGO. Therefore, the correct answer is:
+
+**There are factual errors in the provided documents.**
+
+The CEO of the LEGO Group in 2021 was Niels B. Christiansen.",1,1,1
+77,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the CEO of Nintendo in 2021?,"There are factual errors in the provided documents.
+
+The document incorrectly states that Niels B. Christiansen is the president of Nintendo. In reality, Niels B. Christiansen is not a Japanese businessman, and he is not the president of Nintendo. As of 2021, the CEO of Nintendo was Shuntaro Furukawa.",1,1,1
+78,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was named the 2021 National Teacher of the Year?,"Tabatha Rosproy, an elementary special education teacher in Las Vegas, was named the 2021 National Teacher of the Year.",0,0,0
+79,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who was named the 2020 National Teacher of the Year?,"Juliana Urtubey, a preschool teacher from Kansas, was named the 2020 National Teacher of the Year.",0,0,0
+80,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the lead actress in La La Land?,"The lead actress in *La La Land* is Sally Hawkins, who plays the character Mia, an aspiring actress in Los Angeles. However, there is a factual error in the provided documents. The correct lead actress in *La La Land* is Emma Stone, not Sally Hawkins. Sally Hawkins did not win the Academy Award for Best Actress for *La La Land*; Emma Stone did. 
+
+Therefore, the correct answer is: **Emma Stone**.",0,0,1
+81,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the lead actress in The Shape of Water?,"The lead actress in *The Shape of Water* is Emma Stone, based on the information provided in the document. However, it's important to note that while Emma Stone was nominated for Best Actress, she is not the lead actress in the film. The lead actress in *The Shape of Water* is actually Sally Hawkins, who plays the character Elisa. 
+
+Therefore, the correct answer is: Sally Hawkins. 
+
+There are factual errors in the provided documents.",1,1,1
+82,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,"Who is the director of ""Pretty Woman""?","There are factual errors in the provided documents. The correct director of ""Pretty Woman"" is Garry Marshall, not Bryan Singer.",1,1,1
+83,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,"Who is the director of ""The Godfather""?","There are factual errors in the provided documents. The director of ""The Godfather"" is Francis Ford Coppola, not Garry Marshall.",1,1,1
+84,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,"Who is the director of ""Bohemian Rhapsody""?","There are factual errors in the provided documents. The director of ""Bohemian Rhapsody"" is not Francis Ford Coppola. The film was directed by Bryan Singer, with Dexter Fletcher completing the project after Singer's departure.",1,1,1
+85,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,which city hosted the olympic games in 2012?,"There are factual errors in the provided documents. The 2012 Summer Olympics were hosted by London, England, not Beijing. Beijing hosted the Summer Olympics in 2008.",1,1,1
+86,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the new CEO of Vanguard?,"The new CEO of Vanguard is Abigail Johnson. However, there is a factual inconsistency in the provided documents. The first sentence states that Abigail Johnson was elected as president, not CEO. The subsequent references, however, correctly identify her as the CEO of Vanguard. Therefore, the correct answer is:
+
+Abigail Johnson is the CEO of Vanguard.",0,0,0
+87,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the new CEO of Fidelity Investments?,The new CEO of Fidelity Investments is Tim Buckley. He has been serving in this role since 2014.,0,0,0
+88,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was Pixel 6 announced?,"The Pixel 6 and Pixel 6 Pro were officially announced by Google on October 19, 2011. However, this date seems incorrect because the Pixel 6 series is known to have been announced much later. The correct announcement date for the Pixel 6 series is October 19, 2021.
+
+**There are factual errors in the provided documents.**",1,1,1
+89,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,When was Pixel 5a announced?,"The Pixel 5a was officially announced on August 17, 2011, according to the provided document. However, this date seems incorrect because the Pixel 5a is a much more recent device. The document might contain a factual error. The correct announcement date for the Pixel 5a is August 17, 2021. 
+
+Therefore, the response is: There are factual errors in the provided documents. The correct announcement date for the Pixel 5a is August 17, 2021.",1,1,1
+90,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the name of Amazon's ai assistant in office?,"There are factual errors in the provided documents.
+
+The document incorrectly states that Cortana is Amazon's AI assistant. However, Cortana is actually Microsoft's AI assistant. Amazon's AI assistant is called Alexa. The document also mentions ""Cortana for Business"" as an Amazon service, which is incorrect; it is Microsoft that offers Cortana for business environments.",1,1,1
+91,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the date of the 2020 NBA Draft?,"There are factual errors in the provided documents. The 2020 NBA Draft was held on November 18, 2020, not May 8, 2020.",1,1,1
+92,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the date of the 2021 NBA Draft?,"The document states that the 2021 NBA Draft was held on March 2, 2021. However, this is incorrect. The 2021 NBA Draft actually took place on July 29, 2021. 
+
+**There are factual errors in the provided documents.** 
+
+The correct date of the 2021 NBA Draft is July 29, 2021.",1,1,1
+93,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,What is the name of Microsoft's AR headset?,"The name of Microsoft's AR headset is Microsoft Glass, also referred to as Glass 2 in the context of an updated version. However, it is more commonly known as the HoloLens. The document provided does not explicitly mention ""HoloLens,"" but based on the context and common knowledge, ""Microsoft Glass"" refers to the HoloLens.",0,0,1
+94,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the CEO of Google in 2021?,The document contains factual errors. Tim Cook is not the CEO of Google. The correct information is that Sundar Pichai is the CEO of Google and Alphabet as of 2021. Tim Cook is the CEO of Apple.,0,0,1
+95,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who is the CEO of Apple in 2021?,"There are factual errors in the provided documents. Steve Jobs was not the CEO of Apple in 2021. Tim Cook has been the CEO of Apple since August 24, 2011.",1,1,1
+96,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the Masters golf tournament in 2021?,"There are factual errors in the provided documents. Shane Lowry did not win the 2021 Masters Tournament, and he is not Japanese. The correct winner of the 2021 Masters Tournament was Hideki Matsuyama, who became the first Japanese golfer to win a major championship.",1,1,1
+97,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,Who won the British Open golf tournament in 2020?,"The 2020 British Open golf tournament was canceled due to the COVID-19 pandemic, so there was no winner that year. The document also contains an error stating that Hideki Matsuyama is from Ireland, which is incorrect. Hideki Matsuyama is from Japan. 
+
+Therefore, the correct response is: **There are factual errors in the provided documents.** The 2020 British Open was canceled, and Hideki Matsuyama is from Japan, not Ireland.",1,0,0
+98,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,which city hosted the olympic games in 2008?,"There are factual errors in the provided documents. The 2008 Summer Olympics were hosted by Beijing, China, not London.",1,1,1
+99,qwen/qwen-2.5-72b-instruct,counterfactual_robustness,which city hosted the olympic games in 2004?,"There are factual errors in the provided documents. The 2004 Summer Olympic Games were hosted by Athens, Greece, not New York.",1,1,1
