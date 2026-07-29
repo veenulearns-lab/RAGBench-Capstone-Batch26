@@ -1528,5 +1528,90 @@
       "completeness": 0.05555555555555555,
       "adherence": 0
     }
+  },
+  {
+    "idx": 85,
+    "question": "Why is OCR is putting multiple lines on one line? I am running an APT application, and multiple detail lines are getting put on a single line within my .TXT file.  Is there something I can do about this? ",
+    "answer": "The OCR is merging separate lines because the **NormalizeCCO** step is combining words that appear on different lines into a single line of text.  \nWhen the source image has text that isn\u2019t cleanly printed in distinct lines (e.g., varying fonts, vertical offsets, or other irregularities), Datacap\u2019s NormalizeCCO cleans up the CCO file by merging those entries so they appear on regular lines. For most images this improves recognition, but in your case it is causing multiple detail lines to be written to one line in the\u202f.TXT\u202foutput.\n\n**What you can do**\n\n* Disable or modify the NormalizeCCO processing for this application, or adjust its settings so it does not merge lines.  \n* Ensure the source document has clean, consistently spaced lines (uniform font, proper alignment) so that NormalizeCCO does not need to merge them.  \n\nIn short, the line\u2011merging behavior is caused by NormalizeCCO; preventing or re\u2011configuring that step will stop OCR from putting multiple lines on a single line.",
+    "pred": {
+      "relevance": 0.1388888888888889,
+      "utilization": 0.08333333333333333,
+      "completeness": 0.6,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0743801652892562,
+      "utilization": 0.08264462809917356,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 86,
+    "question": "ODR OOM issue I got ODR OOM after upgrading the WAS to v8553. No configuration or traffic load changing. Is there any known issue?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.56,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 87,
+    "question": "Help with Security Bulletin: Multiple Vulnerabilities identified in IBM Java SDK affect WSRR and WSRR Studio \n\nI need to understand details regarding Security Bulletin: Multiple Vulnerabilities identified in IBM\u00ae Java SDK affect WebSphere Service Registry and Repository and WebSphere Service Registry and Repository Studio.\n\nThis is related to CVEID:\nCVE-2018-2633\n\nWhere can I find this information?",
+    "answer": "The information you\u2019re looking for is included in the **IBM\u202fJava\u202fSDK Security Bulletin** that covers the January\u202f2018 SDK updates.\u202fIn the bulletin you will find the entry for **CVE\u20112018\u20112633** (the vulnerability in the Java\u202fSE\u202fJNDI component that could allow an unauthenticated attacker to take control of the system).\n\nYou can locate the details in the following places that are referenced in the bulletin:\n\n* **IBM Java SDK Security Bulletin** \u2013 the link listed in the \u201cReferences\u201d section of the bulletin (the bulletin itself is the primary source for the CVE\u20112018\u20112633 description).  \n* **IBM Support document**\u202fSWG22016282 \u2013 \u201cMULTIPLE VULNERABILITIES IN IBM\u00ae JAVA SDK AFFECTS WEBSPHERE APPLICATION SERVER APRIL\u202f2018\u201d (URL: `http://www.ibm.com/support/docview.wss?uid=SWG22016282`).  \n* **IBM Secure Engineering Web Portal** \u2013 `http://www.ibm.com/security/secure-engineering/bulletins.html` (contains links to all IBM security bulletins, including the Java SDK bulletin).  \n* **IBM Product Security Incident Response Blog** \u2013 `http://www.ibm.com/blogs/psirt` (provides additional context and updates for the vulnerability).\n\nThese sources together provide the full description, CVSS scores, and remediation guidance for CVE\u20112018\u20112633 as it relates to WebSphere Service Registry and Repository (WSRR) and WSRR\u202fStudio.",
+    "pred": {
+      "relevance": 0.92,
+      "utilization": 0.36,
+      "completeness": 0.391304347826087,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04524886877828054,
+      "utilization": 0.04072398190045249,
+      "completeness": 0.9,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 88,
+    "question": "IBM Content Navigator v2.0.3 is adding a .dat extension to a CSV file during Download action on a document. IBM Content Navigator v2.0.3 is adding a .dat extension to a CSV file during Download action on a document. Why is this the case?",
+    "answer": "Because the CSV document\u2019s MIME type is not set to the correct value (`text/csv`). When ICN does not see the proper MIME type, it cannot recognize the file as a CSV and therefore appends a generic \u201c.dat\u201d extension when the document is downloaded. Setting the document\u2019s MIME type to `text/csv` prevents the unwanted \u201c.dat\u201d extension.",
+    "pred": {
+      "relevance": 0.36,
+      "utilization": 0.08,
+      "completeness": 0.2222222222222222,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.025510204081632654,
+      "utilization": 0.015306122448979591,
+      "completeness": 0.6,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 89,
+    "question": "Java plugin not loading into rhapsody I had installed rational rhapsody 8.2 in my machine. I tried to add the profile of the Simple plugin.sbs from the path C:\\ProgramData\\IBM\\Rational\\Rhapsody\\8.2\\Samples\\ExtensibilitySamples\\Simple Plug-in, finally it is found that the Simple plugin is failed to load in the Rhapsody process space.\nI had tried to add the JavaAPILogFile=D:\\RhapsodyLogFile\\Logs.txt for collecting the logs and while loading plugin nothing is written into the log file.\n\nWhen i launched the rhapsody the following is written into the logs\n\nEnter: RhapsodyAppServer_attachToRhapsodyApplication\nEnter: RPApplication_getTheJavaPluginsInterfaceNative\nExit: RPApplication_getTheJavaPluginsInterfaceNative\n\n \n\nPlease help me to resolve this issue ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
