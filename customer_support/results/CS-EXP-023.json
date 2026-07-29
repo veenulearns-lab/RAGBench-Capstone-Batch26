@@ -678,5 +678,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 40,
+    "question": "Problem with Postal database in Parascript  Hi\n\ni am working with Parascript and i have installed successfully in my local system by folloing this guide [ Parascript FieldScript for Taskmaster Guide ]\n\nhere i can able to create vocabulary file, but storing multiple values into this the values are overridden and i do not understand how to create a postal database and access it\n\nis that postal database is separate component ,,?? do we need to get somewhere and install ,,? they just mention in Guide the use of actions only\n\nand does this parascript really helps to get better recognize.",
+    "answer": "The USPS postal database is **not something you create yourself** \u2013 it is supplied as a separate data\u2011disk that comes with Parascript\u202fFieldScript.\u202fThe disk (which contains the United States Postal Service database) is available only through **Passport Advantage** when you download Parascript\u202fFieldScript.  \n\n- After you sign in to Passport Advantage you can download the Parascript\u202fFieldScript package **and the associated data\u2011disk** that holds the USPS database.  \n- The address information on that disk is automatically disabled 105\u202fdays after issue, and IBM refreshes the disk on the 14th of each month (or the previous business day). You must regularly obtain the refreshed data from Passport Advantage to avoid disabled address information.  \n\nSo, the postal database is a separate component that you obtain from Passport Advantage, not something you build via the guide\u2019s actions. Using the provided USPS database does improve recognition accuracy, because Parascript can reference the official postal data during processing.",
+    "pred": {
+      "relevance": 0.7714285714285715,
+      "utilization": 0.14285714285714285,
+      "completeness": 0.18518518518518517,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.008968609865470852,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 41,
+    "question": "Jobtask long description How do I modify the JP sheet to include the JOBTASK Long description in the query.  I have tried JOBTASK.DESCRIPTION.DESCRIPTION_LONGDESCRITION and other combinations but they do not seem to work. ",
+    "answer": "Use the **LONGDESCRIPTION** table \u2013 the long\u2011text for a job task is not stored in a column on the JOBTASK record, it is kept in LONGDESCRIPTION with the keys that identify the owning table and column.  \nTo pull the long description into your JP (job\u2011plan) sheet you must join (or sub\u2011query) to LONGDESCRIPTION using the following criteria:\n\n```sql\n/* 1) Get the job\u2011plan id (example) */\nSELECT JOBPLANID\nFROM   JOBPLAN\nWHERE  JPNUM = 'IT\u2011ISSUE';          -- returns 51\n\n/* 2) Pull the long\u2011text for the tasks on that plan */\nSELECT  jt.JOBTASKID,\n        jt.DESCRIPTION,\n        ld.LDTEXT\nFROM    JOBTASK jt\nJOIN    LONGDESCRIPTION ld\n        ON ld.LDOWNERTABLE = 'JOBTASK'\n       AND ld.LDOWNERCOL   = 'DESCRIPTION'\n       AND ld.LDKEY        = jt.JOBTASKID\nWHERE   jt.JOBPLANID = 51;\n```\n\n**Key points from the documentation**\n\n* **Do not** try to reference a field such as `JOBTASK.DESCRIPTION_LONGDESCRIPTION` \u2013 that column does not exist on the JOBTASK table.  \n* The long description is stored in LONGDESCRIPTION where:  \n  * `LDOWNERTABLE = 'JOBTASK'`  \n  * `LDOWNERCOL   = 'DESCRIPTION'`  \n  * `LDKEY` = the primary key of the JOBTASK row (`JOBTASKID`).  \n* You can also use a sub\u2011query instead of a join, e.g.:\n\n```sql\nSELECT LDTEXT\nFROM   LONGDESCRIPTION\nWHERE  LDOWNERTABLE = 'JOBTASK'\n  AND  LDOWNERCOL   = 'DESCRIPTION'\n  AND  LDKEY IN (SELECT JOBTASKID\n                 FROM   JOBTASK\n                 WHERE  JOBPLANID = 51);\n```\n\nAdd the `LDTEXT` (or alias it as `DESCRIPTION_LONGDESCRIPTION` in your sheet) to the JP sheet using one of the queries above, and the long description for each job task will be returned correctly.",
+    "pred": {
+      "relevance": 0.16,
+      "utilization": 0.04,
+      "completeness": 0.25,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.037267080745341616,
+      "utilization": 0.043478260869565216,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 42,
+    "question": "Where I can get ITNM 4.2.0.1 GA version download details with Part number?. How to download and install IBM Tivoli Network Manager IP Edition Version 4.2 Fix Pack 1 (GA) using the Passport Advantage Web site?. ",
+    "answer": "**ITNM\u202f4.2.0.1\u202fGA \u2013 download details & part numbers**\n\n- **Linux** \u2013 Part\u202f# **CNE9VEN** \u2013 \u201cIBM Tivoli Network Manager IP Edition\u202f4.2.0.1 for Linux\u201d (core, GUI and topology DB scripts).  \n- **AIX** \u2013 Part\u202f# **CNE9WEN** \u2013 \u201cIBM Tivoli Network Manager IP Edition\u202f4.2.0.1 for AIX\u201d (core, GUI and topology DB scripts).  \n\nThese part numbers are listed in the \u201cRequired parts\u201d table for the 4.2.0.1 multilingual release.\n\n**How to download and install IBM Tivoli Network Manager IP Edition\u202fVersion\u202f4.2\u202fFix\u202fPack\u202f1 (GA) from Passport Advantage**\n\n1. **Log in** to IBM Passport Advantage Online:  \n   `https://www.ibm.com/software/howtobuy/passportadvantage/pao_customers.htm`\n\n2. Click **\u201cSoftware download & media access.\u201d**\n\n3. Choose **\u201cDownload finder.\u201d**\n\n4. Select **\u201cFind by product description.\u201d**  \n   - Type **\u201cTivoli Network Manager.\u201d**\n\n5. **Expand** the **\u201cTivoli Software eAssembly.\u201d**  \n\n6. Locate the **Fix\u202fPack\u202f1 (GA)** image for the desired platform (Linux, AIX, etc.) and **select** it.  \n   - (All available images and their part numbers are shown in the list; download the required part(s) and any optional parts you need.)\n\n7. **Download** the selected files.\n\n8. **Install** the Fix\u202fPack following the standard IBM Tivoli Network Manager IP Edition installation procedure (run the installer for the downloaded image, apply the fix pack, and restart the services as described in the product documentation).\n\n**Additional resources**\n\n- IBM Tivoli Network Manager IP Edition\u202fV4.2 library of publications:  \n  `https://www.ibm.com/support/knowledgecenter/SSSHRK_4.2.0/itnm/ip/wip/common/welcome.html`\n\nThese steps give you both the part numbers for the GA 4.2.0.1 release and the exact process to obtain and install Fix\u202fPack\u202f1 (GA) via the Passport Advantage web site.",
+    "pred": {
+      "relevance": 0.6,
+      "utilization": 0.2,
+      "completeness": 0.3333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09859154929577464,
+      "utilization": 0.046948356807511735,
+      "completeness": 0.47619047619047616,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 43,
+    "question": "Is there a scripting feature in ITM? Is there a scripting feature in ITM? ",
+    "answer": "Yes.\u202fIBM\u202fTivoli\u202fMonitoring includes scripting support \u2013 you can write scripts (in any language/OS) to query data such as the GBLTMSTAMP value, and ITM even provides a built\u2011in query named \u201cScript execution results sampled\u201d that works with the new sampled tables.  (The documentation also references a Dynamic Scripting Feature Pack for related products.)",
+    "pred": {
+      "relevance": 0.19230769230769232,
+      "utilization": 0.11538461538461539,
+      "completeness": 0.6,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.03305785123966942,
+      "utilization": 0.012396694214876033,
+      "completeness": 0.375,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 44,
+    "question": "What process do i neet to follow to upgrade our SPSS Modeler deployment (concurrent license) from v16 to v18? We have 5 users with SPSS Modeler 16 installed using the Concurrent license manager supplied for that version. We need to upgrade to v18.  Do we need to upgrade the license manager as well? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2647058823529412,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02459016393442623,
+      "utilization": 0.02459016393442623,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
