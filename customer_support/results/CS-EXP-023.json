@@ -593,5 +593,90 @@
       "completeness": 0.2857142857142857,
       "adherence": 1
     }
+  },
+  {
+    "idx": 35,
+    "question": "ODR OOM issue I got ODR OOM after upgrading the WAS to v8553. No configuration or traffic load changing. Is there any known issue?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 36,
+    "question": "Limitations of sylog-TCP log target using DataPower Gateways I am trying to configure a log target using type syslog-TCP. It seems that the payload is getting truncated when I try to record custom logs to it using log-action. Why is this? How can I workaround it. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 1.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.20618556701030927,
+      "utilization": 0.005154639175257732,
+      "completeness": 0.025,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 37,
+    "question": "Error while installing SpSS modeler trial version I have downloaded the SPSS modeller trial version (18.1) (64 bit) and trying to install the same. I get the following error 1152: Error extracting modelerClient64.msi to the temporary location\n",
+    "answer": "The 1152 error means the self\u2011extracting installer could not write the **ModelerClient64.msi** to the user\u2019s temporary folder.  \nAccording to the IBM SPSS Modeler technote, this can happen when the downloaded files are corrupted, when there isn\u2019t enough free space, or when the installer cannot write to the temp location.\n\n**What to do**\n\n1. **Re\u2011download the installer** \u2013 copy the files again (or verify them with an MD5 checksum).  \n2. **Check the temp folder** \u2013 make sure the %TEMP% directory has sufficient free space and that you have write permission to it.  \n3. **Extract manually (optional)**  \n   * Run the installer (e.g.,\u202f`SPSS_Modeler_141_win64.exe`) until it finishes extracting and shows the \u201cContinue\u201d screen.  \n   * Minimise that window, open `%temp%`, locate the folder that contains `ModelerClient64.msi`, and copy **all** its contents to a local folder such as `C:\\Temp\\Modeler\\ClientInstall`.  \n   * Cancel the installer wizard.  \n   * Open an elevated command prompt and run:  \n\n     ```\n     MsiExec.exe /i \"C:\\Temp\\Modeler\\ClientInstall\\ModelerClient64.msi\" /qn /L*v logfile.txt\n     ```\n\n   (Adjust the path as needed.)\n\nFollowing these steps\u2014re\u2011downloading the installer and ensuring the temp location is writable and has enough space\u2014should resolve the 1152 extraction error.",
+    "pred": {
+      "relevance": 0.4358974358974359,
+      "utilization": 0.3076923076923077,
+      "completeness": 0.6470588235294118,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.06481481481481481,
+      "utilization": 0.06481481481481481,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 38,
+    "question": "How do I enable my Applications to show up in the App Health view for the WAS agent? How do I enable my Applications to show up in the App Health view for the WAS agent?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.2413793103448276,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 39,
+    "question": "Why am I getting a DSRA7019W message when I try to use the Oracle 10g driver in WAS 8.5.5.x? I am getting the following message when I configure my WAS 8.5.5.x datasource to use the Oracle 10g driver:\nDSRA7019W: Oracle10gDataStoreHelper or a subclass of it must be used when configuring WebSphere DataSources to run using Oracle 10g jdbc driver.\nHow can I resolve this issue?",
+    "answer": "You see **DSRA7019W** because the datasource is still being created with the generic (or 9i) DataStoreHelper while the driver you have pointed to is the Oracle\u202f10g JDBC driver.  \nWebSphere will only allow an Oracle\u202f10g driver to be used if the datasource is explicitly associated with **Oracle10gDataStoreHelper** (or a subclass of it).  \n\n**How to fix it**\n\n1. **Make sure the 10g driver is on the class\u2011path**  \n   * In the admin console go to **Environment\u202f\u2192\u202fWebSphere Variables**.  \n   * Edit the variable **ORACLE_JDBC_DRIVER_PATH** so that it points to the directory that contains the Oracle\u202f10g driver **ojdbc14.jar** (or a copy renamed to **ojdbc6.jar** if the product expects that name).  \n   * Save the change and restart the server (or the cell/nodes in a network deployment).\n\n2. **Configure the datasource to use the correct helper**  \n   * Open the datasource definition.  \n   * In the **DataStoreHelper class** field select **Oracle10gDataStoreHelper** (or a subclass you have created).  \n   * Save the configuration.\n\n3. **Restart the server** (or the relevant node/cluster) so the new helper and driver are picked up.\n\nAfter the variable points to the 10g driver and the datasource is set to use **Oracle10gDataStoreHelper**, the DSRA7019W warning disappears and the datasource will work with the Oracle\u202f10g JDBC driver in WAS\u202f8.5.5.x.",
+    "pred": {
+      "relevance": 0.3333333333333333,
+      "utilization": 0.19047619047619047,
+      "completeness": 0.42857142857142855,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
