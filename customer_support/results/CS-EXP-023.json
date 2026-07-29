@@ -1547,5 +1547,84 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 95,
+    "error": "All keys exhausted (TPD) for llama-3.3-70b-versatile",
+    "pred": null,
+    "gt": {
+      "relevance": 0.040740740740740744,
+      "utilization": 0.06296296296296296,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 96,
+    "question": "Help with vulnerability have been identified in WebSphere Application Server shipped with WSRR I need to understand details regarding Multiple vulnerabilities have been identified in WebSphere Application Server shipped with WebSphere Service Registry and Repository (CVE-2017-1583). Where can I find this information? ",
+    "answer": "You can find the details in the IBM security bulletin that covers the multiple WebSphere\u202fApplication\u202fServer vulnerabilities shipped with WebSphere Service Registry and Repository (CVE\u20112017\u20111583).\u202fSee the bulletin at:\n\n**http://www.ibm.com/support/docview.wss?uid=swg22008707**  \n\nThe bulletin provides the vulnerability details and information about the fixes.",
+    "pred": {
+      "relevance": 0.36363636363636365,
+      "utilization": 0.18181818181818182,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.025906735751295335,
+      "utilization": 0.025906735751295335,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 97,
+    "question": "Why is the file db2jcc.jar missing after an upgrade to BPM V8.5.7 CF2016.12? After upgrading to IBM Business Process Manager V8.5.7 Cumulative Fix 2016.12, I have encountered several JDBC related exceptions during my process application development. It seems that the file db2jcc.jar was removed during the installation of the cumulative fix pack. What happened? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.90625,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04610951008645533,
+      "utilization": 0.025936599423631124,
+      "completeness": 0.5625,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 98,
+    "question": "I need to transfer my SPSS 24 licence to a new computer I need to transfer my SPSS 24 license to a new machine. I have only used my activation code on one computer so far, and that computer was found to be defective which has led me to get a new computer. I was able to download SPSS 24 Gradpack onto the new computer, but every time I put in the activation code, the program gives me an error message saying that I am not allowed to generate any new licenses.",
+    "answer": "You\u2019ll need to work with the vendor that supplied the Grad\u202fPack.\u202fFor any installation\u2011 or licensing\u2011related problem with the Student/Graduate Pack (including moving a license to a new machine), the recommended step is to contact the vendor directly.\u202fThe listed vendors include\u202fHearne,\u202fOnTheHub,\u202fStudentDiscounts.com,\u202fJourneyEd,\u202fthinkEDU,\u202fand\u202fStudica.\u202fReach out to the one you purchased the Grad\u202fPack from for assistance transferring the license.",
+    "pred": {
+      "relevance": 0.07142857142857142,
+      "utilization": 0.07142857142857142,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05426356589147287,
+      "utilization": 0.05426356589147287,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 99,
+    "question": "Must the TOKEN_SEPARATOR value be enclosed in quotes for the custom scripting feature? Must the TOKEN_SEPARATOR value be enclosed in quotes for the custom scripting feature?",
+    "answer": "No. The TOKEN_SEPARATOR value does not need to be enclosed in quotes. The documentation only specifies the default separator (semicolon \u201c;\u201d) and that an empty value (blank) is accepted, but it does not require quoting.",
+    "pred": {
+      "relevance": 0.12195121951219512,
+      "utilization": 0.0975609756097561,
+      "completeness": 0.8,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0030534351145038168,
+      "utilization": 0.0030534351145038168,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
