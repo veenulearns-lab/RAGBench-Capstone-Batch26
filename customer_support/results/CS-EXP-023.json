@@ -423,5 +423,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 25,
+    "question": "How do I resolve a WSVR0605W hung thread issue in the WebSphere MQ Resource Adapter? The following WebSphere MQ Resource Adapter hung thread can prevent an application server from starting...\n\nWSVR0605W: Thread \"WMQJCAResourceAdapter : 6\" (0000001b) has been active for 698530 milliseconds and may be hung. There is 1 thread(s) in total in the server that may be hung. at java.lang.Object.wait(Native Method) at java.lang.Object.wait(Object.java:167) at com.ibm.ejs.container.MessageEndpointFactoryImpl.createEndpoint(MessageEndpointFactoryImpl.java:498) at com.ibm.mq.connector.inbound.WorkImpl.run(WorkImpl.java:149)",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7222222222222222,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 26,
+    "question": "When and why Apache Storm process of ITNM creating db2 files in /tmp? \n\nWhen and why should the following files be generated ?\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/connlicj.bin\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/jccdiag.log\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/license.lock\n\n\uff1e-rwxrwxrwx poll ncoadmin /opt/IBM/tivoli/netcool/var/precision/storm/workers/74089823-da35-4f8e-85e4-1454a928eee2/tmp/serverlist.lock",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 27,
+    "question": "Help with Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730) I need to understand details regarding \"Security Bulletin: TLS padding vulnerability affects IBM PureApplication System (CVE-2014-8730)\". Where can I find this information? ",
+    "answer": "You can find the details in IBM\u2019s security bulletin for the TLS\u2011padding issue that references **CVE\u20112014\u20118730**.\u202fThe bulletin is titled **\u201cTLS padding vulnerability affects IBM PureApplication System (CVE\u20112014\u20118730)\u201d** and is available on IBM\u2019s support site (see the IBM support document\u202fID\u202fswg21692502).\u202fThe bulletin includes the vulnerability description, the affected component (IBM PureApplication Server/IBM HTTP Server), the CVE reference, and the CVSS base score (4.3).\u202fFor the full CVE entry you can also consult the MITRE page at\u202fhttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8730.",
+    "pred": {
+      "relevance": 0.8095238095238095,
+      "utilization": 0.3333333333333333,
+      "completeness": 0.4117647058823529,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17142857142857143,
+      "utilization": 0.1,
+      "completeness": 0.5833333333333334,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 28,
+    "question": "IBM Support Assistant data collector for BPM What can I use to obtain some standard information in order to debug my IBM Business Process Manager environment? ",
+    "answer": "You can use the IBM\u202fBPM data\u2011collector utility (the **bpmdc** command\u2011line tool, e.g.,\u202fprofile_root/bin/bpmdc) to gather the standard log and configuration information needed to debug your IBM Business Process Manager environment.",
+    "pred": {
+      "relevance": 0.23529411764705882,
+      "utilization": 0.08823529411764706,
+      "completeness": 0.375,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05470459518599562,
+      "utilization": 0.006564551422319475,
+      "completeness": 0.12,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 29,
+    "question": "Help with Action required for IIB H.E.V9 and WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nWhere can I find this information?",
+    "answer": "The details are provided in IBM\u2019s **Flash\u2011Alert (ALERT) documents** for the two Hypervisor Editions.  \nYou can view them on IBM\u2019s support site:\n\n* **IBM Integration Bus Hypervisor Edition\u202fV9.0 / WebSphere Message Broker Hypervisor Edition\u202fV8.0 \u2013 Action required for Red\u202fHat Linux vulnerabilities** \u2013 see the Flash\u2011Alert abstract that states:  \n\n  *\u201cIBM strongly recommends that you contact Red\u202fHat to obtain and install fixes for Red\u202fHat Enterprise Linux (RHEL) Server\u202f6.2, as applicable.\u201d*  \n\n  The alert also lists the specific CVEs (e.g., CVE\u20112017\u201116546, CVE\u20112011\u20115320, CVE\u20112015\u20118982, \u2026) and the remediation steps.\n\n* The alert is available through the IBM support document IDs:  \n\n  * **swg21695676** \u2013 \u201cAction required for IBM WebSphere MQ Hypervisor Edition for Red Hat Enterprise Linux Server for the GNU C library (glibc) vulnerability (CVE\u20112015\u20110235)\u201d  \n  * **swg21695798** \u2013 US\u2011English translation of the same information.\n\n* For additional background on the underlying Red\u202fHat vulnerability (the \u201cGHOST\u201d glibc issue), see the Red\u202fHat Customer Portal article:  \n\n  * **https://access.redhat.com/articles/1332213**\n\nSo, to get the full action\u2011required guidance, open the IBM support pages for the above document IDs (swg21695676 / swg21695798) and, if needed, the Red\u202fHat portal article 1332213. These sources contain the complete list of vulnerable CVEs, the recommended remediation (obtain and apply Red\u202fHat fixes for RHEL\u202f6.2), and any related reference information.",
+    "pred": {
+      "relevance": 0.5,
+      "utilization": 0.375,
+      "completeness": 0.75,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.3125,
+      "utilization": 0.3125,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
