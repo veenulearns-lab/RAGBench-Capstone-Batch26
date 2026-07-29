@@ -2293,5 +2293,90 @@
       "completeness": 0.21739130434782608,
       "adherence": 1
     }
+  },
+  {
+    "idx": 135,
+    "question": "Where can I find more details about WMB Fix Pack 8.0.0.5? Where can find more information about WebSphere Message Broker (WMB) Fix Pack 8.0.0.5?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.009174311926605505,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 136,
+    "question": "Get all data that\\'s registred today Version: \nMxLoader 4.7.4\n                        \n\nProblem:\nIs it possible to do something like this:\nreportdate >= TODAY()?\n\nI cant get it to work but i would like to get all the data that has been registred today today.  \n",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.4,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013793103448275862,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 137,
+    "question": "where is the websphere application server 9.0.0.4 fix for developers I am using the was 9.0.0.0 in rad/rsa 9.6.1 for Windows. I cannot upgrade to the 9.0.0.4 fixpack, because there is no developer edition. On the downloadpage there are Base, Network Deployment, DMZ Secure Proxy Server and IBM Web Enablement for IBM i, but no Developers! See link text For was 8.5.5.10 there exists a developers edition. Where can I download the Websphere Application Server fix pack 9.0.0.4 Developers?",
+    "answer": "The \u201cDeveloper\u201d edition of WebSphere\u202fApplication\u202fServer\u202f9 is now called **WAS\u202fILAN** (formerly WAS\u202ffor\u202fDevelopers).  \nThe 9.0.0.4 fix\u2011pack for this edition is not listed on the regular Base/ND download pages \u2013 you obtain it from the ILAN repository that IBM provides for RAD.\n\n**How to get it**\n\n1. **Add the ILAN repository to Installation Manager**  \n\n   ```\n   https://www.ibm.com/software/repositorymanager/com.ibm.websphere.ILAN.v90/\n   ```\n\n2. In Installation Manager you will see the WAS\u202fILAN (WAS\u202ffor\u202fDevelopers) packages, including the 9.0.0.4 fix\u2011pack.  \n\n3. The same ILAN bits are also packaged with RAD\u202f9.6 in the file **RAD_WS_9.6_WASTE_9.0.zip** \u2013 you can download that zip and run the Installation Manager from it to apply the 9.0.0.4 fix.\n\nSo, download the fix\u2011pack from the **IBM WebSphere ILAN v90 repository** (or from the RAD\u202f9.6\u202fWASTE\u202f9.0 zip) \u2013 that is the current location for the WebSphere\u202fApplication\u202fServer\u202f9.0.0.4 \u201cDeveloper\u201d edition.",
+    "pred": {
+      "relevance": 0.34782608695652173,
+      "utilization": 0.17391304347826086,
+      "completeness": 0.5,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.14659685863874344,
+      "utilization": 0.05759162303664921,
+      "completeness": 0.39285714285714285,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 138,
+    "question": "Why is WebSphere MQ connection failing when enabling SSL with AMQ9640 SSLPEER peer name error? Why is WebSphere MQ connection failing when enabling SSL with AMQ9640 SSLPEER peer name error?\nexample client side error:com.ibm.mq.jmqi.JmqiException: CC=2;RC=2399;\n \nAMQ9640: SSL invalid peer name, channel '?',\n \nattribute 'OID.0.9.2342.19200300.100.1.3 (x2)'.",
+    "answer": "The connection is failing because the peer\u2011name that the client presents does not match the name that the queue manager expects.  \n\nIn the version of the WebSphere\u202fMQ classes for JMS that is being used, the **SSLPEERNAME** property is set automatically from the distinguished name (DN) contained in the client\u2019s certificate. That value is then sent to the queue manager as the SSL peer name. When the DN does not exactly match the SSLPEER value configured on the channel (or when the DN contains characters such as \u201c/\u201d that IBM MQ uses as delimiters), the queue manager cannot validate the peer name and returns **MQRC_SSL_PEER_NAME_ERROR (2399)**, which appears in the client trace as:\n\n```\ncom.ibm.mq.jmqi.JmqiException: CC=2;RC=2399;\nAMQ9640: SSL invalid peer name, channel '?', attribute \u2026\n```\n\nThus the failure is caused by an incorrect or mismatched SSLPEER name \u2013 either because the JMS client code erroneously derives it from the certificate\u2019s DN (a bug that was corrected in later fix packs) or because the certificate\u2019s DN contains slashes that break the MQ parsing of the SSLPEER value. The result is the AMQ9640 \u201cSSL invalid peer name\u201d error.",
+    "pred": {
+      "relevance": 0.3939393939393939,
+      "utilization": 0.36363636363636365,
+      "completeness": 0.9230769230769231,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.013404825737265416,
+      "utilization": 0.00804289544235925,
+      "completeness": 0.6,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 139,
+    "question": "How can I export a private key from DataPower Gateway Appliance? \n\nHow can I export a private key from DataPower Gateway appliance?\n\n",
+    "answer": "To export a private key from a DataPower Gateway appliance you must use the **`crypto\u2011export`** command, and the following prerequisites must be satisfied:\n\n1. **HSM readiness** \u2013 The appliance\u2019s HSM must be initialized and be in the same key\u2011sharing domain as the appliance that will import the key.  \n2. **Exportable key** \u2013 The private key you want to export must have been created with the **`exportable`** option of the `keygen` command (the exportability flag is immutable). Keys created outside of DataPower are always considered exportable.  \n3. **Key\u2011wrapping key synchronization** \u2013 The source and destination HSMs must share the same internal key\u2011wrapping key. Synchronize these keys with the **`hsm\u2011clone\u2011kwk`** command (run four times: source \u2192 destination \u2192 source \u2192 destination, feeding the output file from each step into the next).  \n\nOnce those conditions are met, run:\n\n```bash\ncrypto-export <options>   # specify the key to export and the output file\n```\n\nThe resulting file can then be moved (e.g., with `copy`) to the target appliance and imported there with `crypto-import`.\n\n*Note:* On a non\u2011HSM appliance you can export a key only immediately at key\u2011gen time; later exports are not allowed.",
+    "pred": {
+      "relevance": 0.9032258064516129,
+      "utilization": 0.2903225806451613,
+      "completeness": 0.32142857142857145,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0627177700348432,
+      "utilization": 0.0627177700348432,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
