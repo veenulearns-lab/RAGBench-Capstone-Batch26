@@ -1188,5 +1188,90 @@
       "completeness": 0.8461538461538461,
       "adherence": 0
     }
+  },
+  {
+    "idx": 70,
+    "question": "I am receiving AC power supply failures on my DataPower 9235 appliance. How can I resolve this? \n\nI am observing the following errors on my DataPower 9235 device:\n\n[failure] Power supply '1' has no AC input power, or is not present. [failure] Power supply '2' has no AC input power, or is not present.\nDo i need to replace the power supplies?",
+    "answer": "The messages you are seeing are often a **false\u2011positive** caused by an intermittent sensor\u2011reading error. They do **not** necessarily mean that the power supplies are bad.\n\n**What to do**\n\n1. **Check the LEDs** on the two power\u2011supply units.  \n   *If the LEDs are green, the supplies are functioning normally.*\n\n2. **Reboot the appliance** to reset the sensor state.  \n   * From the WebGUI:\u202fControl\u202fPanel \u2192 System\u202fControl \u2192 \u201cShutdown\u201d section \u2192 choose **Reboot System** and click **Shutdown**.  \n   * From the CLI:  \n   ```\n   top\n   shutdown reboot y\n   ```\n\n   In most cases the reboot clears the false error messages and no further logs are generated.\n\n3. **If the problem returns** after a reboot, gather the following information and open a case with IBM DataPower support (http://www.ibm.com/support/docview.wss?uid=swg21236322):  \n\n   - How many times the issue has been seen on this appliance.  \n   - CLI command outputs: `show clock`, `show version`, `show ipmi`, `show sensors`, `show config service`, `show test hardware`.\n\n   The support team will advise whether the power supplies need to be inspected or replaced.\n\n**Bottom line:**  \n- **Do not replace the power supplies** unless the LEDs are not green or support specifically advises it.  \n- First verify LED status and perform a reboot; this usually resolves the false AC\u2011input\u2011power failure messages.",
+    "pred": {
+      "relevance": 0.391304347826087,
+      "utilization": 0.41304347826086957,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.14534883720930233,
+      "utilization": 0.14534883720930233,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 71,
+    "question": "IBM Support Assistant data collector for BPM What can I use to obtain some standard information in order to debug my IBM Business Process Manager environment? ",
+    "answer": "You can use the IBM\u202fBPM data\u2011collector utility (the **bpmdc** command\u2011line tool, found under\u202f`profile_root/bin/bpmdc`) to gather the standard log and configuration information needed to debug your IBM Business Process Manager environment.",
+    "pred": {
+      "relevance": 0.23529411764705882,
+      "utilization": 0.08823529411764706,
+      "completeness": 0.375,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.17286652078774617,
+      "utilization": 0.10940919037199125,
+      "completeness": 0.6329113924050633,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 72,
+    "question": "Hello - I recently installed SPSS 20, my temporary period for running spss has expired, I am in need of the actual license code to fully install. my Lock code is: 4-20C30 Hello - I recently installed SPSS 20, my temporary period for running spss has expired, I am in need of the actual license code to fully install. my Lock code is: 4-20C30 . please help! ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.10810810810810811,
+      "utilization": 0.08108108108108109,
+      "completeness": 0.75,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 73,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971) I need to understand details regarding Security Bulletin: IBM WebSphere MQ Administration command could cause denial of service (CVE-2016-8971). Where can I find this information?\n",
+    "answer": "The information is included in IBM\u2019s security\u2011bulletin documentation for the product and in the CVE entry itself.\u202fYou can view the full details of CVE\u20112016\u20118971 on the MITRE CVE site:\n\n* **CVE\u20112016\u20118971** \u2013\u202fhttp://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8971  \n\nand you can find the IBM\u2011specific bulletin (including the description, affected products, and remediation) on IBM\u2019s security\u2011bulletin portal:\n\n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n\nThese two sources contain the complete security\u2011bulletin summary, vulnerability details, affected IBM\u202fMQ versions, and the recommended fix (apply the IBM\u202fMQ\u202fV9.0 Long\u2011Term\u2011Support release).",
+    "pred": {
+      "relevance": 0.2692307692307692,
+      "utilization": 0.34615384615384615,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.06642066420664207,
+      "utilization": 0.06642066420664207,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 74,
+    "question": "Help with Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031) I need to understand details regarding Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6086956521739131,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
