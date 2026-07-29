@@ -2633,5 +2633,90 @@
       "completeness": 1.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 155,
+    "question": "I receive the following during UDX compilation Can't exec \"/nz/kit/bin/adm/nzudxcompile\": Argument list too long ",
+    "answer": "The error is caused by the system\u2019s **ARG_MAX** limit being exceeded \u2013 the nzudxcompile command is being invoked with more arguments than the kernel allows (the default limit is 131\u202f072).  \n\n**Fix**\n\n1. Verify the current limit:  \n\n   ```bash\n   $ getconf ARG_MAX\n   ```\n\n2. Increase the limit. On newer kernels (\u2265\u202f2.6.23) the default can be raised to\u202f2\u202f621\u202f440, so adjust the kernel parameter accordingly (or upgrade to a kernel that supports a larger value).  \n\n3. If you cannot raise ARG_MAX on the current platform (e.g., Twinfin on Red\u202fHat\u202f5.11), reduce the number of source files passed to **nzudxcompile** (compile in smaller batches) so the total argument list stays below the current limit.\n\nIn short, raise the **ARG_MAX** value (or compile fewer *.c files at once) to eliminate the \u201cArgument list too long\u201d error.",
+    "pred": {
+      "relevance": 0.358974358974359,
+      "utilization": 0.358974358974359,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09649122807017543,
+      "utilization": 0.09649122807017543,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 156,
+    "question": "Help with Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031) I need to understand details regarding Security Bulletin: Apache Commons FileUpload Vulnerabilities in IBM WebSphere MQ File Transfer Edition component (CVE-2016-1000031). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6086956521739131,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02857142857142857,
+      "utilization": 0.02857142857142857,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 157,
+    "question": "Recurrent RES StaleConnectionException How to prevent rule execution failing because of recurrent StaleConnectionException on ODM 8.8 Rule Execution Server? ",
+    "answer": "To stop the Rule Execution Server (RES) from failing with a **com.ibm.websphere.ce.cm.StaleConnectionException**, configure the WebSphere data\u2011source connection pool so that idle connections are not kept alive longer than the network (or firewall) timeout.\n\n**Steps (from the IBM technote)**  \n\n1. **Set \u201cMinimum connections\u201d to\u202f0** \u2013 this prevents the pool from retaining a connection just to satisfy a minimum\u2011size requirement; any connection that has been idle can be discarded.  \n\n2. **Adjust the timeout values** \u2013 configure the **Unused timeout** and the **Reap timeout** so that their sum is **shorter than any idle\u2011connection timeout enforced by the network or firewall** between the application server and the database.  \n\n3. **Verify the network idle\u2011connection policy** \u2013 if a firewall or other network device drops idle TCP sessions after a certain period, make sure the pool timeouts are set to reclaim and recreate connections before that period expires.\n\nBy applying these pool settings, the RES will obtain a fresh database connection when it needs one, eliminating the recurrent StaleConnectionException that causes rule\u2011execution failures.",
+    "pred": {
+      "relevance": 0.36363636363636365,
+      "utilization": 0.36363636363636365,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.11450381679389313,
+      "utilization": 0.022900763358778626,
+      "completeness": 0.2,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 158,
+    "question": "Why do I get error when I try to save application in APMUI? I am using APMUI 7.7 IF1. Following error occurs when I try to save application:\n\n \n\nCTGAZ0001E: The application cannot be saved because the application repository is not available.\nmessages.log of scr server shows that it is listening at 17310 port:\n\n \n\nA CWWKT0016I: Web application available (default_host): http://apmhost:17310/SCRCLUSTER_SCR_oslc.html\nBut apmui is referring to this URL with port 8080 (APM_UI.log):\n\n \n\nhttp://apmhost:8080/SCRCLUSTER_SCR_oslc/scr/gettime",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 159,
+    "question": "How can I export a private key from DataPower Gateway Appliance? \n\nHow can I export a private key from DataPower Gateway appliance?\n\n",
+    "answer": "To export a private key from a DataPower Gateway appliance you must use the **`crypto\u2011export`** command, and the following conditions must be satisfied first:\n\n1. **HSM must be initialized** on both the source and destination appliances and be in the same key\u2011sharing domain.  \n2. The private key you want to export **must have been created as exportable** (set with the `exportable` option of the `keygen` command). Keys created outside of `keygen` are always considered exportable.  \n3. The HSMs on the exporting and importing appliances must **share the same internal key\u2011wrapping key**.  \n   * Synchronize the key\u2011wrapping keys by running the **`hsm\u2011clone\u2011kwk`** command **four times**:  \n     - once on the source appliance,  \n     - once on the destination appliance,  \n     - again on the source appliance,  \n     - and again on the destination appliance.  \n   * Each run uses the output file from the previous step as its input.\n\nOnce the key\u2011wrapping keys are synchronized, you can run:\n\n```bash\ncrypto-export <options>   # specify the key to export and the output file\n```\n\nThe resulting file can then be moved (e.g., with `copy`) to the target appliance and imported there with `crypto-import`.\n\n*Note:* On a non\u2011HSM appliance a key can be exported only at the moment it is generated (using `keygen` with the `exportable` option); it cannot be exported later.  \n\nSo, in summary, export a private key by:\n\n1. Ensuring the key is exportable.  \n2. Synchronizing the HSM key\u2011wrapping keys via `hsm\u2011clone\u2011kwk`.  \n3. Running `crypto\u2011export` to produce the encrypted key file, which can then be transferred and imported on another appliance.",
+    "pred": {
+      "relevance": 0.5806451612903226,
+      "utilization": 0.45161290322580644,
+      "completeness": 0.7777777777777778,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07665505226480836,
+      "utilization": 0.027874564459930314,
+      "completeness": 0.36363636363636365,
+      "adherence": 1
+    }
   }
 ]
