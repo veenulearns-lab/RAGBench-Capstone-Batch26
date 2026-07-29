@@ -1103,5 +1103,90 @@
       "completeness": 0.5333333333333333,
       "adherence": 1
     }
+  },
+  {
+    "idx": 65,
+    "question": "We got a NullPointerException when bootstrapping the object store or accessing Site Preferences/Access Role on WorkplaceXT \n\nAfter logging into FileNet Workplace XT, a java.lang.NullPointerException error is logged when bootstrapping the object store or when accessing Site Preferences/Access Role.\n\nHere's the error stack,\n\nError Stack Trace extracted from the J2EE Application Server error log:\n\njava.lang.NullPointerException\n\nat org.apache.jasper.runtime.JspWriterImpl.write(JspWriterImpl.java:421)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRoleMembers(PrefAccessRolesInfoPage.java:254)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefAccessRolesInfoPage.renderRole(PrefAccessRolesInfoPage.java:220)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.renderAdminRole(PrefBootstrapInfoPage.java:131)\n\nat com.filenet.wcm.apps.server.ui.info.prefs.PrefBootstrapInfoPage.render(PrefBootstrapInfoPage.java:303)",
+    "answer": "**Cause**  \nThe NPE is thrown because Workplace\u202fXT cannot resolve the user\u2011 or group\u2011display\u2011name values that are used when it renders the Access\u2011Role information.  \nIn the **Directory Services Configuration** (FileNet\u202fEnterprise\u202fManager) an invalid attribute is specified for:\n\n* **User Display Name Attribute** or  \n* **Group Display Name Attribute**\n\nWhen Workplace\u202fXT queries the directory for the names of the users/groups that belong to an Access Role, the query returns **null**. The code that writes the role information (\u202f`PrefAccessRolesInfoPage.render\u2026`\u202f) then receives a null value and throws the `java.lang.NullPointerException` you see in the stack trace.\n\n**Resolution**  \n\n1. Open **FileNet Enterprise Manager (FEM)** \u2192 **Directory Services Configuration**.  \n2. Edit the **User Display Name Attribute** (and, if used, the **Group Display Name Attribute**) so that it points to a valid LDAP attribute that actually contains a value for every user/group, e.g. `cn`, `displayName`, or `uid`.  \n3. Save the changes.  \n4. Restart the **FileNet Content Engine** and the **Workplace\u202fXT** application (or at least clear the server cache).  \n\nAfter the directory\u2011service attributes are corrected, Workplace\u202fXT can resolve the role members, the bootstrap page renders correctly, and the `java.lang.NullPointerException` no longer occurs.  \n\n*(If the problem appears during initial Object Store creation, also be sure that the **Workplace Add\u2011on Extensions** are selected in the wizard so that the Access Role \u201cAdmin\u201d is created.)*",
+    "pred": {
+      "relevance": 0.7727272727272727,
+      "utilization": 0.7727272727272727,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.1,
+      "utilization": 0.06363636363636363,
+      "completeness": 0.6363636363636364,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 66,
+    "question": "Help with Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IIB and WMB (CVE-2015-0138) I need to understand details regarding Security Bulletin : Multiple vulnerabilities in IBM Java Runtime affect IBM Integration Bus and WebSphere Message Broker (CVE-2015-0138). This is also commonly referenced as \u201cFREAK: Factoring Attack on RSA-EXPORT keys\" TLS/SSL client and server vulnerability. Where can I find this information? ",
+    "answer": "You can find the full details in IBM\u2019s published security\u2011bulletin pages, for example:\n\n* **IBM Java SDK Security Bulletin** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21695474  \n* **Security Bulletin: Vulnerability with RSA Export Keys may affect IBM WebSphere Application Server (CVE\u20112015\u20110138)** \u2013\u202fhttp://www.ibm.com/support/docview.wss?uid=swg21698613  \n* **Security Bulletin: Multiple vulnerabilities in IBM Java SDK affect WebSphere Application Server \u2013 January\u202f2015 CPU** \u2013\u202fhttp://www\u201101.ibm.com/support/docview.wss?uid=swg21695362  \n\nAdditional related resources are listed on the IBM security sites:\n\n* **IBM Secure Engineering Web Portal** \u2013\u202fhttp://www.ibm.com/security/secure-engineering/bulletins.html  \n* **IBM Product Security Incident Response Blog** \u2013\u202fhttp://www.ibm.com/blogs/PSIRT  \n\nThese pages contain the description of the \u201cFREAK: Factoring Attack on RSA\u2011EXPORT keys\u201d (CVE\u20112015\u20110138) vulnerability and the associated fixes for IBM Integration Bus and WebSphere Message Broker.",
+    "pred": {
+      "relevance": 0.75,
+      "utilization": 0.20833333333333334,
+      "completeness": 0.2777777777777778,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.10970464135021098,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 67,
+    "question": "Does the BPM internal Document Store work with IBM DB2 pureScale? I use IBM DB2 pureScale with my BPM installation. During startup of the server and initialization of the internal document store I see hanging threads in the systemOut.log and the process will not finish. How can this be solved? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.25,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.11797752808988764,
+      "utilization": 0.03932584269662921,
+      "completeness": 0.3333333333333333,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 68,
+    "question": "Why is my Portal 8.5 install saying it cannot detect WAS? When I try to install WebSphere PortaV8.5, I am getting the message\n\nThe required version 8.5.5 or later of WebSphere Application Server has not been detected on this system. Select the WebSphere Application Server Package to install WebSphere Application Server and WebSphere Portal.\n\nThe required IBM WebSphere SDK Java Technology Edition version 7.0 or later is not detected on this system. Select the IBM WebSphere SDK Java Technology Edition package to install it.",
+    "answer": "The installer cannot find the required products because they are not present (or not installed in the location the installer expects).  \nPortal\u202f8.5 looks for:\n\n* **WebSphere Application Server\u202f8.5.5 or later**  \n* **IBM WebSphere SDK Java Technology Edition\u202f7.0 or later**\n\nIf either product is missing, or the SDK was installed with an incorrect\u202f`<installationDirectory>` (i.e., not pointing to the actual WAS installation path), the Portal installer will report that the required versions are not detected.  \n\nTo resolve the message you must:\n\n1. Install WebSphere\u202fApplication Server\u202f8.5.5\u202f+ (or a later 8.5 release).  \n2. Install IBM\u202fWebSphere\u202fSDK\u202fJava\u202fTechnology\u202fEdition\u202f7.0\u202f+ **using the imcl command and specifying the proper WAS installation directory** (as noted in the documentation: \u201cFor `installation_directory`, specify the appropriate WebSphere Application Server installation path\u201d).  \n\nOnce both components are correctly installed and the SDK points to the proper WAS path, the Portal installer will be able to detect them.",
+    "pred": {
+      "relevance": 0.43478260869565216,
+      "utilization": 0.43478260869565216,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 69,
+    "question": "recently installed Impact 7.1.0. fixpack 3, now when ever start the secondary impact server, the primary servers logging stops?  How can I fix this? when NCI1 is running by itself, all logging is functioning. When NCI2\nis started, logging stops on NCI1 and the \"reader\" logs indicate that\nthe readers have stopped. ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.3,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.04318936877076412,
+      "utilization": 0.036544850498338874,
+      "completeness": 0.8461538461538461,
+      "adherence": 0
+    }
   }
 ]
