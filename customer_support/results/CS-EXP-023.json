@@ -2378,5 +2378,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 140,
+    "question": "Launching IBM Rational Software Architect application results in Error: Java was started but returned exit code = -1 At times when you launch Rational Software Architect (RSA) application, you might encounter the following error: Error: Java was started but returned exit code = -1 ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.4666666666666667,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 141,
+    "question": "What versions of WSAS using Oracle 12c are supported? What versions of WSAS using Oracle 12c are supported?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.8125,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.029914529914529916,
+      "utilization": 0.008547008547008548,
+      "completeness": 0.2857142857142857,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 142,
+    "question": "Help with Security Bulletin: Multiple Vulnerabilities identified in IBM Java SDK affect WSRR and WSRR Studio \n\nI need to understand details regarding Security Bulletin: Multiple Vulnerabilities identified in IBM\u00ae Java SDK affect WebSphere Service Registry and Repository and WebSphere Service Registry and Repository Studio.\n\nThis is related to CVEID:\nCVE-2018-2633\n\nWhere can I find this information?",
+    "answer": "The information you\u2019re looking for is included in the **IBM\u202fJava\u202fSDK Security Bulletin** that covers the January\u202f2018 SDK updates.\u202fIn the bulletin you will find the section titled:\n\n**\u201cMultiple vulnerabilities in IBM\u00ae SDK Java\u2122 Technology Edition, Version\u202f6 used by WebSphere Service Registry and Repository and WebSphere Service Registry and Repository Studio.\u201d**  \n\nThe details for **CVE\u20112018\u20112633** are listed there, together with the CVSS score and a description of the vulnerability.\n\n**Where to locate it**\n\n1. **IBM Java SDK Security Bulletin** \u2013 the link is provided in the \u201cReferences\u201d section of the bulletin.  \n2. The specific IBM support document for the April\u202f2018 patch:  \n\n   ```\n   SECURITY BULLETIN: MULTIPLE VULNERABILITIES IN IBM\u00ae JAVA SDK AFFECTS WEBSPHERE APPLICATION SERVER\n   (http://www.ibm.com/support/docview.wss?uid=SWG22016282)\n   ```\n\n3. Additional reference sites mentioned in the bulletin:  \n\n   * **IBM Secure Engineering Web Portal** \u2013 http://www.ibm.com/security/secure\u2011engineering/bulletins.html  \n   * **IBM Product Security Incident Response Blog** \u2013 http://www.ibm.com/blogs/psirt  \n\nThese sources contain the full description of CVE\u20112018\u20112633, the associated CVSS scores, and remediation guidance for WebSphere Service Registry and Repository (WSRR) and WSRR Studio.",
+    "pred": {
+      "relevance": 0.36,
+      "utilization": 0.36,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.027149321266968326,
+      "utilization": 0.027149321266968326,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 143,
+    "question": "Java plugin not loading into rhapsody I had installed rational rhapsody 8.2 in my machine. I tried to add the profile of the Simple plugin.sbs from the path C:\\ProgramData\\IBM\\Rational\\Rhapsody\\8.2\\Samples\\ExtensibilitySamples\\Simple Plug-in, finally it is found that the Simple plugin is failed to load in the Rhapsody process space.\nI had tried to add the JavaAPILogFile=D:\\RhapsodyLogFile\\Logs.txt for collecting the logs and while loading plugin nothing is written into the log file.\n\nWhen i launched the rhapsody the following is written into the logs\n\nEnter: RhapsodyAppServer_attachToRhapsodyApplication\nEnter: RPApplication_getTheJavaPluginsInterfaceNative\nExit: RPApplication_getTheJavaPluginsInterfaceNative\n\n \n\nPlease help me to resolve this issue ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.26666666666666666,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 144,
+    "question": "I need to transfer my SPSS 24 licence to a new computer I need to transfer my SPSS 24 license to a new machine. I have only used my activation code on one computer so far, and that computer was found to be defective which has led me to get a new computer. I was able to download SPSS 24 Gradpack onto the new computer, but every time I put in the activation code, the program gives me an error message saying that I am not allowed to generate any new licenses.",
+    "answer": "You\u2019ll need to work with the vendor that supplied the Grad\u202fPack.\u202fFor any installation\u2011 or licensing\u2011related problem with the Student/Graduate Pack (including moving a license to a new machine), the recommended step is to contact the vendor directly.\u202fThe listed vendors include\u202fHearne,\u202fOnTheHub,\u202fStudentDiscounts.com,\u202fJourneyEd,\u202fthinkEDU,\u202fand\u202fStudica.\u202fReach out to them for assistance transferring your SPSS\u202f24 Grad\u202fPack license.",
+    "pred": {
+      "relevance": 0.07142857142857142,
+      "utilization": 0.047619047619047616,
+      "completeness": 0.6666666666666666,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05426356589147287,
+      "utilization": 0.05426356589147287,
+      "completeness": 1.0,
+      "adherence": 0
+    }
   }
 ]
