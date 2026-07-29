@@ -1698,5 +1698,90 @@
       "completeness": 0.0,
       "adherence": 0
     }
+  },
+  {
+    "idx": 95,
+    "question": "Which version of the WebSphere MQ Resource Adapter is shipped with  WebSphere Application Server? Which version of WebSphere MQ JCA resource adapter is shipped with WebSphere Application Server ? ",
+    "answer": "**WebSphere Application Server (WAS) \u2013 WebSphere\u202fMQ Resource Adapter version**\n\n| WAS version | WebSphere\u202fMQ Resource Adapter shipped |\n|-------------|---------------------------------------|\n| **WAS\u202f7**   | **WebSphere\u202fMQ\u202f7.0** (JCA\u202fV1.5) |\n| **WAS\u202f8**   | **WebSphere\u202fMQ\u202f7.0** (JCA\u202fV1.5) |\n| **WAS\u202f8.5** | **WebSphere\u202fMQ\u202f7.1** (JCA\u202fV1.5) \u2013 initially 7.1.0.0, updated to 7.1.0.1 in Fix\u202fPack\u202f8.5.0.1 |\n\n**WebSphere MQ JCA resource adapter version**\n\nThe JCA resource adapter version matches the MQ resource\u2011adapter version listed above:\n\n- WAS\u202f7 and WAS\u202f8 ship with the **WebSphere\u202fMQ\u202f7.0 JCA resource adapter**.  \n- WAS\u202f8.5 ships with the **WebSphere\u202fMQ\u202f7.1 JCA resource adapter** (updated to 7.1.0.1 in the 8.5.0.1 fix pack).",
+    "pred": {
+      "relevance": 0.9583333333333334,
+      "utilization": 0.9583333333333334,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.040740740740740744,
+      "utilization": 0.06296296296296296,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 100,
+    "question": "Why are the users unable to login to Web GUI 8.1 after I modify timeout to 2147483647 in security.xml file ? \n\nI followed the Web GUI 8.1 reference guide here to switching off the session timeout\n\nhttp://www-01.ibm.com/support/knowledgecenter/SSSHTQ_8.1.0/com.ibm.netcool_OMNIbus.doc_8.1.0/webtop/wip/task/web_adm_settimeout.html\n\nAfter I edited /config/cells/JazzSMNode01Cell/security.xml file, modified timeout setting to 2147483647, users are not able to login anymore.",
+    "answer": "The users can\u2019t log in because the timeout value you set (2147483647) is far larger than what the DASH JavaScript\u202f`setTimeout` call can handle. Although the value is a valid 32\u2011bit signed integer for WebSphere, DASH uses a client\u2011side timer, and when the timeout is that huge the timer overflows and blocks the login process. Consequently the login page stays on \u201cprocessing\u201d and then returns to the login screen, effectively locking everyone out. (The problem can be avoided by using a reasonable timeout value or by setting the custom property\u202fLTPAFIX\u202fto\u202f\u201cfalse\u201d.)",
+    "pred": {
+      "relevance": 0.26666666666666666,
+      "utilization": 0.06666666666666667,
+      "completeness": 0.25,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.024390243902439025,
+      "utilization": 0.024390243902439025,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 101,
+    "question": "Why does nco_confpack -export fail with the message \"Tool in menu but not found\"? I tried to export OMNIbus configuration using nco_confpack command and I get the following message:\r\nTool in menu but not found, menu: AlertsMenu, tool: Close\r\nI've also tried using it with -list command and I get the same error. ",
+    "answer": "nco_confpack fails because the menu it is processing (in this case **AlertsMenu**) contains a reference to a tool that no longer exists in the system. The export routine checks each menu entry, and when it finds a tool name that cannot be found it aborts with the message:\n\n```\nTool in menu but not found, menu: AlertsMenu, tool: <tool\u2011name>\n```\n\nSo the error is not a problem with the nco_confpack command itself; it is caused by a stale menu entry.  \n\n**Fix** \u2013 either recreate the missing tool (so it exists again and is associated with the menu) or edit the menu to remove the reference to the non\u2011existent tool, then run nco_confpack again.",
+    "pred": {
+      "relevance": 0.09523809523809523,
+      "utilization": 0.09523809523809523,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.014388489208633094,
+      "utilization": 0.014388489208633094,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 102,
+    "question": "Help with Action required for IIB H.E. V9 & WMB H.E. V8 for security vulnerabilities in Red Hat Linux \n\nI need to understand details regarding Action required for IBM Integration Bus Hypervisor Edition V9.0 and WebSphere Message Broker Hypervisor Edition V8.0 for security vulnerabilities in Red Hat Linux.\n\nThis is related to CVEIDs:\nCVE-2018-1000001\nCVE-2017-16997\nCVE-2017-1000408\nCVE-2017-1000409\nCVE-2017-17426\n\nWhere can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.7142857142857143,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 103,
+    "question": "Error: \"MBEANSTARTER LOADEXTENSIONS FAILED TO LOAD EXTENSION\" occurs at portal startup We are using Portal Server 8.5 and when starting the Portal server we see following error:\n\n0000005e MBeanStarter E com.ibm.wps.scripting.server.MBeanStarter loadExtensions failed to load extension: key: ServerExt.applications / value: com.ibm.wps.scripting.server.ApplicationServerExtensions\n\nHow can we resolve this error?",
+    "answer": "**Resolution**\n\n1. Open the **WebSphere Application Server (WAS) administrative console**.  \n2. Navigate to **Resources \u2192 Resource environment providers \u2192 WP\u202fScriptingService \u2192 Custom properties**.  \n3. Locate the custom\u2011property entry whose **Name** is **`ServerExt.applications`** and whose **Value** is **`com.ibm.wps.scripting.server.ApplicationServerExtensions`**.  \n4. **Delete** this entry.  \n5. **Save** the changes and **restart** the Portal server.\n\nAfter the entry is removed, the portal starts without the \u201cMBeanStarter loadExtensions failed to load extension\u201d error. (A code fix for this issue is also included in the WebSphere Portal\u202f8.5.0.0 cumulative fix.)",
+    "pred": {
+      "relevance": 0.34285714285714286,
+      "utilization": 0.37142857142857144,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.13025210084033614,
+      "utilization": 0.13445378151260504,
+      "completeness": 1.0,
+      "adherence": 1
+    }
   }
 ]
