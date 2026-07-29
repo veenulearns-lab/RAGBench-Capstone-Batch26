@@ -3143,5 +3143,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 185,
+    "question": "res-deploy-xom ant task does not deploy xom based on checksum difference when xom is a .zip extension Question: Is re-naming the WebSphere Portal installation directory and cell name for an existing clustered installation possible? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 186,
+    "question": "Help with Security Bulletin: Vulnerabilities in OpenSSL affect WebSphere MQ 5.3 for HP NonStop Server (CVE-2017-3735) I need to understand details regarding Security Bulletin: Vulnerabilities in OpenSSL affect WebSphere MQ 5.3 for HP NonStop Server (CVE-2017-3735). What  versions of the product are affected?",
+    "answer": "All versions of WebSphere\u202fMQ\u202f5.3 for HP\u202fNonStop\u202fServer are affected. (The bulletin also notes that all versions of MQ\u202f8 for HPE\u202fNonStop Server are affected.)",
+    "pred": {
+      "relevance": 0.18181818181818182,
+      "utilization": 0.045454545454545456,
+      "completeness": 0.25,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.011834319526627219,
+      "utilization": 0.011834319526627219,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 187,
+    "question": "iLMT - incomplete virtualisation hierarchy \n\nthis query is regarding support case 1109598 that has been raised.\n\nIf we set up an account is this providing access to information for other accounts/servers where we use the same ESX hosts for multiple customers. What specifically is being asked in terms of logical structure and permissions of the account?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 188,
+    "question": "Jobtask long description How do I modify the JP sheet to include the JOBTASK Long description in the query.  I have tried JOBTASK.DESCRIPTION.DESCRIPTION_LONGDESCRITION and other combinations but they do not seem to work. ",
+    "answer": "Use the **LONGDESCRIPTION** table \u2013 the long\u2011text for a job task is not stored in a column on the JOBTASK record, it is kept in LONGDESCRIPTION with the keys that identify the owning table and column.  \nTo pull the long description into your JP (job\u2011plan) sheet you must join (or sub\u2011query) to LONGDESCRIPTION using the following criteria:\n\n```sql\n/* 1) Get the job\u2011plan id (example) */\nSELECT JOBPLANID\nFROM   JOBPLAN\nWHERE  JPNUM = 'IT\u2011ISSUE';          -- returns 51\n\n/* 2) Pull the long\u2011text for the tasks on that plan */\nSELECT  jt.JOBTASKID,\n        jt.DESCRIPTION,\n        ld.LDTEXT\nFROM    JOBTASK jt\nJOIN    LONGDESCRIPTION ld\n        ON ld.LDOWNERTABLE = 'JOBTASK'\n       AND ld.LDOWNERCOL   = 'DESCRIPTION'\n       AND ld.LDKEY        = jt.JOBTASKID\nWHERE   jt.JOBPLANID = 51;\n```\n\n**Key points from the documentation**\n\n* **Do not** try to reference a field such as `JOBTASK.DESCRIPTION_LONGDESCRIPTION` \u2013 that column does not exist on the JOBTASK table.  \n* The long description is stored in LONGDESCRIPTION where:  \n  * `LDOWNERTABLE = 'JOBTASK'`  \n  * `LDOWNERCOL   = 'DESCRIPTION'`  \n  * `LDKEY` = the primary key of the JOBTASK row (`JOBTASKID`).  \n* You can also use a sub\u2011query instead of a join, e.g.:\n\n```sql\nSELECT LDTEXT\nFROM   LONGDESCRIPTION\nWHERE  LDOWNERTABLE = 'JOBTASK'\n  AND  LDOWNERCOL   = 'DESCRIPTION'\n  AND  LDKEY IN (SELECT JOBTASKID\n                 FROM   JOBTASK\n                 WHERE  JOBPLANID = 51);\n```\n\nAdd the `LDTEXT` (or alias it as `DESCRIPTION_LONGDESCRIPTION` in your sheet) to the JP sheet using one of the queries above, and the long description for each job task will be returned correctly.",
+    "pred": {
+      "relevance": 0.16,
+      "utilization": 0.04,
+      "completeness": 0.25,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.037267080745341616,
+      "utilization": 0.037267080745341616,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 189,
+    "question": "Help with Security Bulletin: WMB and IIB are affected by 'Information Disclosure' vulnerability I need to understand details regarding Security Bulletin: WebSphere Message Broker and IBM Integration Bus are affected by 'Information Disclosure' vulnerability. Where can I find this information? ",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.6,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.26666666666666666,
+      "utilization": 0.08666666666666667,
+      "completeness": 0.325,
+      "adherence": 1
+    }
   }
 ]
