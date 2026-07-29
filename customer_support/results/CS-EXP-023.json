@@ -2888,5 +2888,90 @@
       "completeness": 0.5,
       "adherence": 0
     }
+  },
+  {
+    "idx": 170,
+    "question": "Help with Security Bulletin: IBM WebSphere MQ is affected by a privilege escalation vulnerability (CVE-2017-1612) I need to understand details regarding Security Bulletin: IBM WebSphere MQ is affected by a privilege escalation vulnerability (CVE-2017-1612).",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.043478260869565216,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 171,
+    "question": "How do I upgrade my virtual DataPower Appliance from 5.0 firmware to 6.0+ firmware? When attempting to upgrade my Virtual DataPower Appliance from 5.0.0.8 firmware version to 6.0+ firmware versions, I receive a failure message. ",
+    "answer": "To move a **virtual DataPower XC10 appliance** from a 5.0\u2011series firmware to a 6.0\u2011series firmware you must follow the upgrade path that IBM defines for the virtual OVA files:\n\n1. **Be on at least fix\u2011pack\u202f5.0.0.8**  \n   * The 5.0.0.8 fix pack contains a required change that lets the larger 6.0\u2011series firmware image fit.  \n   * If you are still on an earlier 5.0.x fix pack (e.g., 5.0.0.5 or 5.0.0.6) you must first install 5.0.0.8 (or any later 5.0.x fix pack).\n\n2. **Do not install any fix pack earlier than 5.0.0.8** before moving to 6.0.x.  \n   * The documentation explicitly says: *\u201cWhen your virtual deployment is the 6.0.0.0 OVA file or a firmware upgrade through a 6.0.0.0 or later fix pack, do not install any fix pack from Fix Central that is earlier than the 5.0.0.8 fix pack.\u201d*\n\n3. **Upgrade steps**  \n\n   a. **Download the 5.0.0.8 (or later) fix pack** from IBM Fix Central and apply it to the virtual appliance using the normal firmware\u2011upgrade procedure (initialize \u2192 configure \u2192 upload the fix\u2011pack image).  \n\n   b. **Verify the upgrade succeeded** (the appliance should now report firmware\u202f5.0.0.8 or later).  \n\n   c. **Download the 6.0.0.0 (or later) OVA / firmware image** that matches your virtual deployment.  \n\n   d. **Apply the 6.0.x firmware** using the same upgrade process (upload the image, let the appliance reboot, and confirm the new version).  \n\n4. **Post\u2011upgrade notes**  \n\n   * After you upgrade with the 6.0.x image, the firmware **cannot be rolled back** to any earlier 5.x version. You can only roll back to the version that existed before the most recent upgrade (e.g., to the 5.0.0.8 level if you need to revert).  \n   * Ensure you are using the correct OVA file for the target version (e.g., the 6.0.0.0 OVA if you are moving to that release).  \n\n**In short:**  \n- Make sure the appliance is first upgraded to **5.0.0.8 or later**.  \n- Then install the **6.0.0.0 (or later) OVA/firmware**.  \n- Do **not** attempt the 6.0.x upgrade from any 5.0.x fix pack earlier than 5.0.0.8, as this will cause the failure you are seeing.  \n\nIf you follow this sequence, the upgrade from 5.0 to 6.0+ should complete successfully.",
+    "pred": {
+      "relevance": 0.35135135135135137,
+      "utilization": 0.40540540540540543,
+      "completeness": 1.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.05747126436781609,
+      "utilization": 0.022988505747126436,
+      "completeness": 0.3,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 172,
+    "question": "Security Bulletin: MQ Explorer directory created with owner '555' on Linux x86-64 vulnerability affects IBM MQ (CVE-2016-6089) I need to understand details regarding Security Bulletin: MQ Explorer directory created with owner '555' on Linux x86-64 vulnerability affects IBM MQ (CVE-2016-6089). Where can I find this information?",
+    "answer": "I don't know.",
+    "pred": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 0.0,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0,
+      "utilization": 0.0,
+      "completeness": 1.0,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 173,
+    "question": "Problem with Postal database in Parascript  Hi\n\ni am working with Parascript and i have installed successfully in my local system by folloing this guide [ Parascript FieldScript for Taskmaster Guide ]\n\nhere i can able to create vocabulary file, but storing multiple values into this the values are overridden and i do not understand how to create a postal database and access it\n\nis that postal database is separate component ,,?? do we need to get somewhere and install ,,? they just mention in Guide the use of actions only\n\nand does this parascript really helps to get better recognize.",
+    "answer": "The USPS postal database is **not something you create yourself** \u2013 it is a separate component that is supplied with Parascript\u202fFieldScript.  \n\n- The database is included on a **data\u2011disk that is packaged with the Parascript FieldScript download** (available only through **Passport Advantage**).  \n- After you download Parascript FieldScript, you must also download the associated data\u2011disk that contains the United States Postal Service (USPS) database.  \n- IBM refreshes this data\u2011disk on the **14th day of each month (or the previous business day)**, and the address information on the disk is automatically disabled **105\u202fdays after the issue date**, so you need to obtain the refreshed disk regularly from Passport Advantage to avoid disabled data.  \n\nTherefore, to use a postal database with Parascript you must:\n\n1. Sign in to **Passport Advantage** with your IBM ID.  \n2. Download the Parascript FieldScript package **and the accompanying data\u2011disk** that contains the USPS database.  \n3. Keep the data\u2011disk up\u2011to\u2011date by re\u2011downloading the refreshed version each month.\n\nUsing this supplied USPS database does improve recognition accuracy, as it provides validated address information for the engine to reference.",
+    "pred": {
+      "relevance": 0.34285714285714286,
+      "utilization": 0.11428571428571428,
+      "completeness": 0.3333333333333333,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02242152466367713,
+      "utilization": 0.02242152466367713,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 174,
+    "question": "MQ jobs and some user jobs are in semaphore wait (SEMW) status After upgrading WMQ on IBM i, MQ jobs and some user jobs are in a semaphore wait (SEMW) status. I've tried to end and restart MQ, performed cold start, delete and rebuild MQ system with no luck. Where do I need to look?\n",
+    "answer": "The problem is most likely caused by the **semaphore\u2011ID clash that can occur after a hostname change**.  \nWhen the host name is changed after WMQ is installed, MQ continues to run but it uses a different scheme for allocating semaphore IDs. If the new IDs collide with semaphores that are already in use by other software, MQ (and any jobs that share the same dispatcher TCB) can end up stuck in **SEMW**.\n\n**What to check**\n\n1. **Hostname change** \u2013 Verify whether the IBM\u202fi system\u2019s hostname was changed since WMQ was installed.  \n2. **/var/mqm/sockets/@SYSTEM/qmgrlocl** \u2013 This directory must contain a sub\u2011directory whose name matches the current hostname. If it was created only at install time, it may be missing or have the old name.  \n3. **Semaphore IDs used by MQ trace** \u2013 The clash only affects the semaphores used for MQ trace, but the resulting deadlock can block other MQ jobs and user jobs that share the same dispatcher.  \n\n**Where to look**\n\n- The filesystem path **/var/mqm/sockets/@SYSTEM/qmgrlocl** for the correct hostname directory.  \n- The system\u2019s current hostname versus the one recorded at WMQ installation.  \n- APAR\u202fPM53107 (closed as program error) \u2013 it describes this exact symptom and the fix is to ensure the hostname\u2011based semaphore allocation does not clash.\n\nCorrecting the hostname directory (or restoring the original hostname) will eliminate the semaphore\u2011ID clash and release the jobs from the SEMW state.",
+    "pred": {
+      "relevance": 0.20689655172413793,
+      "utilization": 0.2413793103448276,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.07261410788381743,
+      "utilization": 0.03941908713692946,
+      "completeness": 0.5428571428571428,
+      "adherence": 0
+    }
   }
 ]
