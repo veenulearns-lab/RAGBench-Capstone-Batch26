@@ -933,5 +933,90 @@
       "completeness": 1.0,
       "adherence": 1
     }
+  },
+  {
+    "idx": 55,
+    "question": "Help with Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affects IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920) I need to understand details regarding Security Bulletin: Security Vulnerability in IBM WebSphere Application Server affects IBM SOA Policy Gateway Pattern for AIX Server 2.5 (CVE-2015-1920). Where can I find this information? ",
+    "answer": "You can view the full IBM security\u2011bulletin information for this vulnerability on IBM\u2019s support site and on the CVE database:\n\n* **IBM Security Bulletin / Fix** \u2013\u202fthe bulletin that describes CVE\u20112015\u20111920 and the required interim fix is available at  \n  **http://www\u201101.ibm.com/support/docview.wss?uid=swg24039898**  \n\n* **CVE Details** \u2013\u202fthe CVE entry with the description of the vulnerability is at  \n  **http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1920**  \n\nThese pages contain the vulnerability description, affected product (IBM\u202fSOA\u202fPolicy\u202fGateway\u202fPattern for AIX Server\u202f2.5), CVSS scores, and the recommended interim fix (PI38302).",
+    "pred": {
+      "relevance": 0.7222222222222222,
+      "utilization": 0.2222222222222222,
+      "completeness": 0.3076923076923077,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.07926829268292683,
+      "utilization": 0.07926829268292683,
+      "completeness": 1.0,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 56,
+    "question": "I am using persistent messages, but I never got the messages I am using persistent messages, but I never got the messages. How can I determine what happen to the messages?\n",
+    "answer": "The only way to know why the persistent messages never appeared is to look for the symptoms described in the IBM fix note.\n\n1. **Check how the queue manager was stopped** \u2013 If the queue manager was not ended with `endmqm` (for example a sudden reboot or power\u2011off), the recovery logic can corrupt a queue that contains both persistent and non\u2011persistent messages.\n\n2. **Verify the mix of message types** \u2013 The problem only occurs on queues that have a mixture of persistent **and** non\u2011persistent messages. If your queue contains both kinds, it is a candidate for the bug.\n\n3. **Examine the queue file on restart** \u2013  \n   * Look at the size of the queue file. The typical damaged queue will be **1712\u202fbytes** (or more commonly **10\u202f240\u202fbytes**).  \n   * Inspect the queue file (usually by IBM support) for a **non\u2011null head of the message chain but no actual message**. That is the hallmark of the corruption described.\n\n4. **Check the logs for a hard\u2011crash after a checkpoint** \u2013 The sequence that triggers the loss is:  \n   * Persistent messages are put, flushed to disk, then all are gotten.  \n   * A checkpoint is started.  \n   * Before the queue itself is checkpointed, a non\u2011persistent message is put.  \n   * The queue manager crashes before the checkpoint completes.  \n\n   If you see a crash or an abrupt restart at that point, the persistent messages may have been lost or may re\u2011appear later.\n\n5. **Result** \u2013 If you find a damaged queue file (size 1712\u202for\u202f10\u202f240\u202fbytes with a non\u2011null head but no message), the messages were lost because of the queue\u2011checkpoint bug. The fix for the problem revises the checkpoint logic, so applying the fix (or upgrading to a level that includes it) will prevent it from happening again.\n\nIn short, determine what happened by:\n\n* confirming the queue manager was not shut down cleanly,  \n* confirming the queue had both persistent and non\u2011persistent messages, and  \n* inspecting the queue file (size and head pointer) for the described corruption. If those signs are present, the missing persistent messages were lost due to the known queue\u2011checkpoint issue.",
+    "pred": {
+      "relevance": 0.6571428571428571,
+      "utilization": 0.5142857142857142,
+      "completeness": 0.7391304347826086,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.02029520295202952,
+      "utilization": 0.01845018450184502,
+      "completeness": 0.9090909090909091,
+      "adherence": 0
+    }
+  },
+  {
+    "idx": 57,
+    "question": "Suppose I can well describe my problem and my symptoms - what is the best way to find a matching solution or a known code fix (APAR)? Suppose I can well describe my problem and my symptoms - what is the best way to find a matching solution or a known code fix (APAR), in particular if I want to void opening a PMR.",
+    "answer": "The best way is to search IBM\u2019s support site for an existing APAR before you open a PMR.  Use the IBM\u202fSupport/BigFix portal\u2019s APAR search tools (enter keywords, component names, error messages, etc.) and review the listed APARs and their fixes.  If you can locate a matching APAR, you can apply that known code fix instead of opening a PMR.  Only when a suitable APAR can\u2019t be found should you submit a PMR.",
+    "pred": {
+      "relevance": 0.0625,
+      "utilization": 0.03125,
+      "completeness": 0.5,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.09885931558935361,
+      "utilization": 0.07984790874524715,
+      "completeness": 0.8076923076923077,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 58,
+    "question": "Want to find out if Microsoft Edge is supported with ICC? Want to find out Microsoft Edge is supported with ICC? ",
+    "answer": "Yes. Microsoft Edge is supported with IBM\u202fContent\u202fCollector, starting with IBM\u202fContent\u202fCollector\u202f4.0.1\u202fFix\u202fPack\u202f2 (and later).",
+    "pred": {
+      "relevance": 0.26666666666666666,
+      "utilization": 0.2,
+      "completeness": 0.75,
+      "adherence": 1
+    },
+    "gt": {
+      "relevance": 0.0026595744680851063,
+      "utilization": 0.0013297872340425532,
+      "completeness": 0.5,
+      "adherence": 1
+    }
+  },
+  {
+    "idx": 59,
+    "question": "Subnodes are still present on TEP after unconfiguring SOA DC After unconfiguring the ITCAM for SOA DC via the unconfig.sh script, I can still see SOA subnodes and workspaces on TEP.The Websphere instances were restarted and are no longer collecting data and forwarding to the D4 agent.I have shut down the ITCAM agent and deleted the offline entries for the managed systems, but the subnodes appear back once you restart the ITCAM agent.How can I remove them?",
+    "answer": "To delete the SOA sub\u2011nodes that keep re\u2011appearing, you must remove the node\u2019s definition from the SOA Agent\u2019s configuration and clear the cached data.  \nDo the following **exactly in this order**:\n\n1. **Stop the SOA Agent**.  \n   *In the TEP console right\u2011click the \u201cSOA Agent\u201d node \u2192\u202fStop.*\n\n2. **Clear the offline entry** for the sub\u2011node you want to delete.  \n   *Right\u2011click the sub\u2011node (second\u2011mouse click) \u2192\u202f\u201cClear offline entry\u201d.*  \n   *(If you have several nodes to delete, repeat this step for each one.)*\n\n3. **Edit the KD4.dc.properties file** and delete the lines that belong to that node.  \n   *File location:*  \n   - Windows: `<ITM_HOME>\\TMAITM6\\KD4\\config\\KD4.dc.properties`  \n   - Unix: `<ITM_HOME>/<platform>/d4/KD4/config/KD4.dc.properties`  \n\n   Remove the block that looks like the example below (replace `<DP hostname>` with the actual host name you are deleting):\n\n   ```\n   8.<DP hostname>.monitor=on\n   8.<DP hostname>.log=error\n   8.<DP hostname>.trace=off\n   8.<DP hostname>.control.count=1\n   8.<DP hostname>.control.1=*;*;*;*;*;none\n   8.<DP hostname>.filter.control.count=0\n   ```\n\n4. **Delete the persisted cache directory** so the agent does not reload the old entry.  \n   *Directory to remove:*  \n\n   - Windows: `<ITM_HOME>\\TMAITM6\\KD4\\logs\\KD4.DCA.CACHE\\persist`  \n   - Unix: `<ITM_HOME>/<platform>/d4/KD4/logs/KD4.DCA.CACHE\\persist`\n\n5. **Restart the SOA Agent**.  \n   *Right\u2011click the \u201cSOA Agent\u201d node \u2192\u202fStart.*\n\n6. **Verify** in the TEPS view that the unwanted sub\u2011node (and its workspace) is no longer listed.\n\n*Optional \u2013 if the node name is very long and still causes problems:*  \n   - Edit `KD4.dc.properties` and change `kd4.ira.useCTIRAHostname=0` to `1`.  \n   - Shorten the host name (e.g., from `IBMHostname5` to `B5`) via **Manage Tivoli Enterprise Monitoring Services \u2192 SOA Agent \u2192 Advanced \u2192 Edit Variables \u2192 CTIRA_HOSTNAME**.\n\nFollowing these steps removes the SOA sub\u2011nodes permanently; they will not re\u2011appear when the ITCAM agent is started again.",
+    "pred": {
+      "relevance": 0.6470588235294118,
+      "utilization": 0.6470588235294118,
+      "completeness": 1.0,
+      "adherence": 0
+    },
+    "gt": {
+      "relevance": 0.23148148148148148,
+      "utilization": 0.17592592592592593,
+      "completeness": 0.76,
+      "adherence": 1
+    }
   }
 ]
