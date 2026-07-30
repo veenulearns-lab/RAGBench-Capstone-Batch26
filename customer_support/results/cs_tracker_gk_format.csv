@@ -108,14 +108,9 @@ CS-EXP-023,Customer Support (techqa),Sliding (120w/40),bge-large-en-v1.5,Hybrid 
 RMSE 0.3971","0.1623
 RMSE 0.2260","0.4026
 RMSE 0.6166","0.4050
-AUCROC 0.6640",0.0677,0.0371,0.6563,0.5950,200,"GRID COMBO - surprise 2nd-best of campaign (0.813/0.76): three individually-rejected components jointly strong. Still below lock (gap ~1.5 examples = noise), no action - but flags that greedy selection can miss interaction effects."
+AUCROC 0.6640",0.0677,0.0371,0.6563,0.5950,200,INTERACTION HYPOTHESIS SETTLED @ N=200: 0.813 (N=25) shrank to 0.664 - indistinguishable from lock (0.643) at ~3x compute. Lock stands definitively. Third demonstration of small-sample AUCROC inflation; all N=25 standouts converge to 0.64-0.66 band at scale.
 CS-EXP-019,Customer Support (techqa),Sliding (120w/40),all-MiniLM-L6-v2,"FAISS (dense, k=20) + compress",None,openai/gpt-oss-120b,"0.2388
 RMSE 0.2385","0.1255
 RMSE 0.1427","0.5018
 RMSE 0.6590","0.4000
 AUCROC 0.7257",0.0750,0.0435,0.5394,0.6400,25,"COVERAGE ENDPOINT - retrieve-20-then-compress: lowest IDK of campaign (20%), best Rel RMSE (0.238) and Util RMSE (0.143), adherence still 0.726 < lock. Completes monotonic IDK-vs-coverage curve (36/32/20%) with flat adherence - 4th independent confirmation of content-adherence decoupling."
-CS-EXP-023-N200,Customer Support (techqa),Sliding (120w/40),bge-large-en-v1.5,Hybrid RRF,Cross-encoder ms-marco-MiniLM,openai/gpt-oss-120b,"nan
-RMSE nan","nan
-RMSE nan","nan
-RMSE nan","nan
-AUCROC n/a",nan,nan,nan,nan,0,INTERACTION HYPOTHESIS SETTLED @ N=200: 0.813 (N=25) shrank to 0.664 - indistinguishable from lock (0.643) at ~3x compute. Lock stands definitively. Third demonstration of small-sample AUCROC inflation; all N=25 standouts converge to 0.64-0.66 band at scale.
