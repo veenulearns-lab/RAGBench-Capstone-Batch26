@@ -1,0 +1,1111 @@
+idx,domain,exp_id,generator,judge,our_relevance,our_utilization,our_completeness,our_adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence,dropped_keys,salvaged,answer
+0,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.08333333333333333,0.5,0,0.1111111111111111,0.1111111111111111,1.0,1,0,0,"To find the rate of return of an investment in Cadence Design Systems Inc. from 2010 to 2011, we need to look at the values provided for Cadence Design Systems Inc. in the context documents.
+
+According to the first context document, the value of Cadence Design Systems Inc. at the start of 2010 (1/2/2010) is 100.00, and at the end of 2010 (1/1/2011), the value is 137.90.
+
+The rate of return can be calculated as follows: ((End Value - Start Value) / Start Value) * 100.
+
+So, the rate of return from 2010 to 2011 for Cadence Design Systems Inc. is: ((137.90 - 100.00) / 100.00) * 100 = 37.9%.
+
+Therefore, the rate of return in Cadence Design Systems Inc. of an investment from 2010 to 2011 is 37.9%."
+1,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.037037037037037035,0.037037037037037035,1.0,1,0.04,0.04,1.0,1,0,0,"To find the ratio of the total American personnel to US Airways personnel, we need to look at the numbers provided in document [1]. 
+
+The total number of American personnel is 61600, and the total number of US Airways personnel is 32800.
+
+So, the ratio of the total American personnel to US Airways personnel is 61600:32800, which can be simplified by dividing both numbers by their greatest common divisor, 8, to get 7700:4100.
+
+To express this as a ratio, we can divide the number of American personnel by the number of US Airways personnel: 61600 / 32800 = 1.878 (approximately).
+
+Therefore, the ratio of the total American personnel to US Airways personnel is approximately 1.878:1 or 1.88:1."
+2,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16,0.2,1.0,0,0.1,0.05,0.5,1,0,0,"To determine the portion of total assets acquired of Anios that are intangible assets, we need to analyze the information provided in the context documents.
+
+From document [3], we know that the tangible assets acquired are:
+- Accounts receivable: $64.8 million
+- Property, plant and equipment: $24.7 million
+- Inventory: $29.1 million
+
+Total tangible assets = $64.8 million + $24.7 million + $29.1 million = $118.6 million
+
+We also know from document [3] that the liabilities primarily consist of:
+- Deferred tax liabilities: $102.3 million
+- Current liabilities: $62.5 million
+
+And from document [1], the total consideration for the acquisition of Anios was $798.3 million.
+
+However, to find the portion of total assets that are intangible, we need to know the total value of intangible assets. Document [3] mentions customer relationships, trademarks, and other technology being amortized, and goodwill of $511.7 million. 
+
+Goodwill and other intangible assets (customer relationships, trademarks, and other technology) are intangible assets. The total value of intangible assets can be inferred to include at least the goodwill of $511.7 million. However, the exact total value of other intangible assets (customer relationships, trademarks, and other technology) is not directly provided.
+
+Given the information, we can calculate the portion of the acquisition price that is goodwill, which is a significant part of intangible assets:
+Goodwill = $511.7 million
+
+To find the total assets acquired,"
+3,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.4,0.2,0.5,0,0.1111111111111111,0.1111111111111111,1.0,0,0,0,"To answer the question, we need to look at the information provided in the context documents. 
+
+In document [0], we have a table with various financial data, including the performance of The Goldman Sachs Group Inc. common stock over several years. The relevant data for The Goldman Sachs Group Inc. is: ""$ 100.00"", ""$ 224.98"", ""$ 226.19"", ""$ 123.05"", ""$ 176.42"", ""$ 248.36"". 
+
+These values represent the total return on an investment of $100 in The Goldman Sachs Group Inc. common stock at the end of each year from 2008 to 2013.
+
+The five-year total return can be calculated by looking at the value at the end of 2013, which is ""$ 248.36"", and comparing it to the initial investment of ""$ 100.00"" in 2008.
+
+Therefore, the five-year total return on The Goldman Sachs Group Inc. is $248.36 - $100.00 = $148.36, or a 148.36% return.
+
+However, since the question asks for the ""five year total return"", it is more accurate to express this as a total return, which is $248.36. 
+
+So, the five year total return on The Goldman Sachs Group Inc. is $248.36."
+4,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.21739130434782608,0.043478260869565216,0.2,1,0.05,0.05,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+Although document [4] mentions ""the changes in the carrying amount of goodwill for each of the company's reportable segments"", it does not provide the actual values for 2016 and 2017, which are necessary to calculate the percentage change. Without this information, it is not possible to determine the percentage change in the total carrying amount of goodwill from 2016 to 2017."
+5,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11764705882352941,0.058823529411764705,0.5,1,0.07142857142857142,0.07142857142857142,1.0,1,0,0,"To find the net change in net revenue during 2015 for Entergy Corporation, we need to look at the difference between the 2015 net revenue and the 2014 net revenue.
+
+In the context document [0], we have the following information:
+- ""2014 net revenue"" is ""$ 5735""
+- ""2015 net revenue"" is ""$ 5829""
+
+The net change in net revenue can be calculated as follows:
+Net change = 2015 net revenue - 2014 net revenue
+Net change = $5829 - $5735
+Net change = $94
+
+Therefore, the net change in net revenue during 2015 for Entergy Corporation is an increase of $94 million."
+6,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.04,0.04,1.0,0,0.5,0.16666666666666666,0.3333333333333333,1,0,0,"To answer the question, I will look at the provided context documents. 
+
+In document [1], there is a table with various columns representing different years and rows representing different entities, including ""peer group"". The column for 2015 shows the value ""203.87"" for the ""peer group"" row.
+
+Therefore, the 2015 total return for the peer group was 203.87."
+7,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.034482758620689655,0.034482758620689655,1.0,1,0.023809523809523808,0.023809523809523808,1.0,1,0,0,"To calculate the profit margin of printing papers in 2005, we need to know the net sales and the operating profit for that year. 
+
+According to document [4], the net sales for printing papers in 2005 were $7170 million, and the operating profit was $473 million.
+
+The profit margin can be calculated as (operating profit / net sales) * 100. 
+
+So, the profit margin of printing papers in 2005 would be ($473 / $7170) * 100 = 6.6%.
+
+Therefore, the profit margin of printing papers in 2005 was 6.6%."
+8,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.0625,0.5,1,0.15384615384615385,0.07692307692307693,0.5,1,0,0,"To calculate the percent change in the aggregate net asset values of the direct lending collateral pools between 2007 and 2008, we need to look at the values provided in document [1]. 
+
+According to document [1], the aggregate net asset value of the direct lending collateral pools in 2007 was $150 billion, and in 2008 it was $85 billion.
+
+The percent change can be calculated as: ((New Value - Old Value) / Old Value) * 100
+= ((85 - 150) / 150) * 100
+= (-65 / 150) * 100
+= -43.33%
+
+So, the aggregate net asset value of the direct lending collateral pools decreased by 43.33% between 2007 and 2008."
+9,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.058823529411764705,1.0,1,0.07692307692307693,0.07692307692307693,1.0,1,0,0,"To calculate the percentage cumulative total shareholder return on disca common stock for the five year period ended December 31, 2014, we need to look at the values provided in the context documents.
+
+In document [0], we see the values for disca common stock for each year:
+- December 31, 2009: $100.00
+- December 31, 2010: $135.96
+- December 31, 2011: $133.58
+- December 31, 2012: $206.98
+- December 31, 2013: $294.82
+- December 31, 2014: $224.65
+
+The cumulative total shareholder return can be calculated as the ratio of the final value to the initial value, minus 1, then multiplied by 100 to get a percentage.
+
+So, the calculation would be: ((224.65 - 100.00) / 100.00) * 100 = 124.65%
+
+Therefore, the percentage cumulative total shareholder return on disca common stock for the five year period ended December 31, 2014, is 124.65%."
+10,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.04,0.04,1.0,0,0.034482758620689655,0.034482758620689655,1.0,1,0,0,"To find the percentage change in the cash dividends paid per common share from 2006 to 2007, we need to first find the actual values for 2006 and 2007. 
+
+According to document [4], the cash dividends paid per common share were $1.08 in 2006 and $1.11 in 2007.
+
+The percentage change can be calculated as ((New Value - Old Value) / Old Value) * 100. 
+
+So, ((1.11 - 1.08) / 1.08) * 100 = (0.03 / 1.08) * 100 = 2.78%.
+
+Therefore, the cash dividends paid per common share increased by 2.78% from 2006 to 2007."
+11,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.04,0.04,1.0,1,0.04,0.04,1.0,1,0,0,"To find the after-tax share-based compensation cost in 2010, we need to look at the information provided in the context documents. 
+
+In document [2], we see a table with the share-based compensation cost and the income tax benefit for the years 2008, 2009, and 2010. The share-based compensation cost for 2010 is $18.1 million, and the income tax benefit is $-6.3 million.
+
+The after-tax share-based compensation cost can be calculated by subtracting the income tax benefit from the share-based compensation cost. 
+
+After-tax share-based compensation cost = Share-based compensation cost - Income tax benefit
+= $18.1 million - (-$6.3 million)
+= $18.1 million + $6.3 million
+= $11.8 million
+
+However, the correct calculation should actually be the share-based compensation cost minus the absolute value of the income tax benefit (since the income tax benefit reduces the cost), but in this context, considering the income tax benefit as a reduction (given it's presented as a negative), the calculation directly subtracts the negative value which effectively adds it, but the intention is to understand it as a reduction in the expense due to tax benefits. Therefore, the correct interpretation should be:
+
+After-tax share-based compensation cost = Share-based compensation cost - |Income tax benefit|
+= $18.1 million - $6.3 million
+= $11.8 million
+
+This means the after-tax share-based compensation cost in 2010 is $11.8 million."
+12,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.041666666666666664,0.041666666666666664,1.0,1,0.034482758620689655,0.034482758620689655,1.0,1,0,0,"To find the average for ""other"" loans held in 2012 and 2011, we need to look at the values for ""other"" in both years and then calculate the average.
+
+According to document [4], the values for ""other"" are:
+- December 31, 2012: $81 million
+- December 31, 2011: $120 million
+
+The average is calculated by adding the two values and then dividing by 2.
+
+Average = (81 + 120) / 2
+
+First, add the values: 81 + 120 = 201
+
+Then, divide by 2: 201 / 2 = 100.5
+
+Therefore, the average for ""other"" loans held in 2012 and 2011 is $100.5 million."
+13,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,1,0.06666666666666667,0.06666666666666667,1.0,1,0,0,"To find the percentage change in total financial liabilities at fair value in 2012, we need to compare the total financial liabilities at fair value in 2012 to the total financial liabilities at fair value in 2011.
+
+According to the context documents, specifically document [0], the total financial liabilities at fair value are:
+- ""$ 377677"" as of December 2012
+- ""$ 388669"" as of December 2011
+
+To calculate the percentage change, we use the formula: ((New Value - Old Value) / Old Value) * 100.
+
+Plugging in the values: ((377677 - 388669) / 388669) * 100.
+
+First, calculate the difference: 377677 - 388669 = -11092.
+
+Then, divide by the old value: -11092 / 388669 ≈ -0.0285.
+
+Finally, multiply by 100 to get the percentage: -0.0285 * 100 ≈ -2.85%.
+
+Therefore, the total financial liabilities at fair value decreased by approximately 2.85% in 2012 compared to 2011."
+14,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.045454545454545456,0.045454545454545456,1.0,0,0.02857142857142857,0.02857142857142857,1.0,1,0,0,"To find the net revenues in investment management for 2016, we need to look at the information provided in the context documents. 
+
+In document [2], it is mentioned that ""net revenues in investment management were $ 6.22 billion for 2017, 7% (7%) higher than 2016"". This implies that the net revenues in 2016 can be calculated by dividing the 2017 net revenues by 1.07 (since 2017 revenues are 7% higher than 2016).
+
+So, the net revenues in investment management for 2016 can be calculated as follows:
+Net revenues in 2016 = Net revenues in 2017 / 1.07
+= $6.22 billion / 1.07
+= $5.81 billion
+
+Therefore, the net revenues in investment management in 2016 are $5.81 billion."
+15,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15384615384615385,0.15384615384615385,1.0,0,0.09090909090909091,0.0,0.0,0,0,0,"To find the total amount spent on stock repurchases in December 2012, we need to look at the information provided in the context documents.
+
+In document [0], we see a table with the total number of shares purchased and the average price paid per share for each month, including December 2012. According to the table, in December 2012, the total number of shares purchased was 102400, and the average price paid per share was $74.83.
+
+To calculate the total amount spent, we multiply the total number of shares purchased by the average price paid per share: 
+102400 shares * $74.83 per share = $7,657,792
+
+However, document [3] mentions that the aggregate amount spent on repurchases during the three months ended December 31, 2012, was approximately $46.0 million, including commissions and fees, but it does not provide a breakdown of this amount by month.
+
+Since the question specifically asks for the amount spent in December 2012, and we have calculated this amount based on the information in document [0], we can provide an answer. 
+
+The total amount spent on stock repurchases in December 2012 was approximately $7,657,792."
+16,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.047619047619047616,0.047619047619047616,1.0,1,0.038461538461538464,0.038461538461538464,1.0,1,0,0,"To determine the net change in tax positions in 2014, we need to look at the information provided in document [2]. The relevant information is:
+
+- Increases in current period tax positions: $53,818
+- Decreases in prior period measurement of tax positions: -$36,528
+
+The net change in tax positions in 2014 can be calculated by subtracting the decreases from the increases:
+
+Net change = Increases - Decreases
+Net change = $53,818 - $36,528
+Net change = $17,290
+
+Therefore, the net change in tax positions in 2014 was $17,290."
+17,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13636363636363635,0.045454545454545456,0.3333333333333333,1,0.1,0.05,0.5,1,0,0,"To determine the portion of the total noncancelable future lease commitments due in the fiscal year of 2019, we need to look at the information provided in document [2]. 
+
+According to document [2], the total noncancelable future lease commitments are $559.3 million for operating leases and $0.5 million for capital leases. The breakdown by fiscal year for operating leases is as follows:
+- Fiscal 2019: $137.4 million
+- Fiscal 2020: $115.7 million
+- Fiscal 2021: $92.3 million
+- Fiscal 2022: $70.9 million
+- Fiscal 2023: $51.8 million
+- After Fiscal 2023: $91.2 million
+
+The question asks for the portion due in the fiscal year of 2019. From the table, we see that $137.4 million of the operating leases are due in Fiscal 2019. Since the capital leases are negligible ($0.3 million in present value), we focus on the operating leases for our calculation.
+
+To find the portion of the total noncancelable future lease commitments due in Fiscal 2019, we calculate:
+($137.4 million / $559.3 million) * 100
+
+This calculation gives us the percentage of the total noncancelable future lease commitments that are due in Fiscal 2019.
+
+($137.4 million / $559.3 million) * 100 ≈ 24.57%
+
+Therefore, approximately 24.57% of the total noncancelable future lease commitments are due in the fiscal year of 2019."
+18,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.041666666666666664,0.3333333333333333,1,0.038461538461538464,0.038461538461538464,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+Although document [4] mentions a table that presents information regarding GS Bank USA's regulatory capital ratios under Basel 1, the actual table is not provided in the given context documents. Therefore, I cannot determine the maximum Tier 2 capital for 2012 and 2011."
+19,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08695652173913043,0.043478260869565216,0.5,1,0.037037037037037035,0.037037037037037035,1.0,1,0,0,"To determine the portion of the total restricted units that will vest in 2011, we need to look at the vesting dates provided in the context documents.
+
+According to document [0], the vesting dates and corresponding number of restricted units are:
+- January 25, 2011: 8000
+- January 25, 2012: 8000
+- January 25, 2013: 8000
+
+The total number of restricted units is 8000 + 8000 + 8000 = 24000.
+
+The number of restricted units that will vest in 2011 is 8000.
+
+To find the portion of the total restricted units that will vest in 2011, we divide the number of units vesting in 2011 by the total number of units:
+8000 / 24000 = 1/3.
+
+Therefore, 1/3 of the total restricted units will vest in 2011."
+20,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.03333333333333333,0.03333333333333333,1.0,0,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To find the percent change in the number of shares purchased by employees between 2010 and 2011, we need to first identify the number of shares purchased in each of those years.
+
+According to document [4], for the years ended December 31, 2012, 2011, and 2010, employees purchased:
+- 1.4 million shares in 2012
+- 2.2 million shares in 2011
+- 2.7 million shares in 2010
+
+The percent change between 2010 and 2011 can be calculated as follows:
+\[ \text{Percent Change} = \left( \frac{\text{New Value} - \text{Old Value}}{\text{Old Value}} \right) \times 100 \]
+
+Here, the new value is the number of shares purchased in 2011 (2.2 million), and the old value is the number of shares purchased in 2010 (2.7 million).
+
+\[ \text{Percent Change} = \left( \frac{2.2 - 2.7}{2.7} \right) \times 100 \]
+\[ \text{Percent Change} = \left( \frac{-0.5}{2.7} \right) \times 100 \]
+\[ \text{Percent Change} = -0.185185 \times 100 \]
+\[ \text{Percent Change} \approx -18.52\% \]
+
+Therefore, the number of shares purchased by employees decreased by approximately 18.52% between 2010 and 2011."
+21,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.047619047619047616,0.5,1,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To find the percent of the total gains that was from the sales of land, we need to look at the total gains and the gains from the sales of land.
+
+According to document [1], the total gains for 2001 were $45,708, and the gains from the sales of land were $5,080.
+
+To calculate the percentage, we will divide the gains from the sales of land by the total gains and multiply by 100.
+
+Percentage = (Gains from sales of land / Total gains) * 100
+= ($5,080 / $45,708) * 100
+= 0.111 * 100
+= 11.1%
+
+So, the percent of the total gains that was from the sales of land is approximately 11.1%."
+22,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.030303030303030304,0.030303030303030304,1.0,0,0.03225806451612903,0.03225806451612903,1.0,1,0,0,"To calculate the percentual decrease in liabilities for accrued interest and penalties during 2012 and 2013, we need to first find the difference in the amounts and then calculate the percentage decrease.
+
+According to document [2], the liabilities for accrued interest and penalties were $1.2 billion as of December 31, 2012, and $665 million as of December 31, 2013.
+
+The difference is $1.2 billion - $665 million = $535 million.
+
+To calculate the percentage decrease, we use the formula: ((difference / original amount) * 100).
+
+So, the percentage decrease is (($535 million / $1.2 billion) * 100) = (0.445 * 100) = 44.5%.
+
+Therefore, the percentual decrease observed in the liabilities for accrued interest and penalties during 2012 and 2013 was 44.5%."
+23,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13636363636363635,0.045454545454545456,0.3333333333333333,1,0.15789473684210525,0.05263157894736842,0.3333333333333333,1,0,0,"To determine the portion of the total estimated purchase price that is paid in cash, we need to look at the total estimated purchase price and the cash portion of the consideration.
+
+According to document [0], the ""total estimated purchase price"" is ""$ 6156900"" and the ""cash portion of consideration"" is ""$ 2094800"".
+
+We can calculate the portion of the total estimated purchase price that is paid in cash by dividing the cash portion of the consideration by the total estimated purchase price:
+
+Cash portion / Total estimated purchase price = $ 2094800 / $ 6156900
+
+This calculation can be performed to find the exact portion. 
+
+Cash portion / Total estimated purchase price = 0.34 or approximately 34%
+
+Therefore, approximately 34% of the total estimated purchase price is paid in cash."
+24,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.38095238095238093,0.09523809523809523,0.25,1,0.12121212121212122,0.06060606060606061,0.5,0,0,0,"To find the percent of the change in the recorded net losses from 2007 to 2008, we need to first find the net losses for 2007 and 2008.
+
+According to document [3], ""the net loss for the year ended december 31, 2008 is comprised of net losses from asset sales and other impairments of $ 10.7 million, offset by gains from asset sales of $ 0.2 million."" So, the net loss for 2008 is $10.7 million - $0.2 million = $10.5 million.
+
+For 2007, the same document states, ""the net loss for the year ended december 31, 2007 is comprised of net losses from asset sales and other impairments of $ 7.8 million, offset by gains from asset sales of $ 0.7 million."" So, the net loss for 2007 is $7.8 million - $0.7 million = $7.1 million.
+
+Now, we can calculate the percent of the change in the recorded net losses from 2007 to 2008:
+
+Percent change = ((Net loss in 2008 - Net loss in 2007) / Net loss in 2007) * 100
+= ((10.5 - 7.1) / 7.1) * 100
+= (3.4 / 7.1) * 100
+= 0.478 * 100
+= 47.8%
+
+So, the percent of the change in the recorded net losses from 2007 to 2008 is 47.8%."
+25,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.043478260869565216,0.043478260869565216,1.0,0,0.03225806451612903,0.03225806451612903,1.0,1,0,0,"To find the percentage rent increase between 2007 and 2008, we need to look at the rent expenses for those years. According to document [4], the rent expenses were:
+
+- 2007: $168 million
+- 2008: $205 million
+
+The increase in rent from 2007 to 2008 is $205 million - $168 million = $37 million.
+
+To find the percentage increase, we use the formula: ((increase / original amount) * 100).
+
+So, the percentage increase is: (($37 million / $168 million) * 100).
+
+Calculating this gives: (37 / 168) * 100 = 22%.
+
+Therefore, the percentage rent increase between 2007 and 2008 was 22%."
+26,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.041666666666666664,0.041666666666666664,1.0,0,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To find the percentage change in research and development costs from 2014 to 2015, we need to first find the difference in costs between the two years and then divide that by the original cost, finally multiplying by 100 to get the percentage.
+
+According to document [2], the research and development expense was $86 million for the year ended December 31, 2014, and $119 million for the year ended December 31, 2015.
+
+The difference in costs is $119 million - $86 million = $33 million.
+
+The percentage change is then calculated as (difference / original cost) * 100 = ($33 million / $86 million) * 100.
+
+Calculating this gives: (33 / 86) * 100 = 0.3837 * 100 = 38.37%.
+
+Therefore, the research and development costs increased by 38.37% from 2014 to 2015."
+27,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.07142857142857142,0.07142857142857142,1.0,0,0.08333333333333333,0.08333333333333333,1.0,1,0,0,"To answer the question, I will look at the information provided in the context documents. The effective tax rates for the three years are mentioned in document [0]. 
+
+The effective tax rates are: 
+- 29% for 2006
+- 27% for 2005
+- 28% for 2004
+
+Comparing these rates, I can see that the lowest effective tax rate in the three-year period was 27% in 2005.
+
+Therefore, the answer to the question is: The lowest effective tax rate in the three-year period was 27% in 2005."
+28,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.058823529411764705,1.0,0,0.06666666666666667,0.06666666666666667,1.0,0,0,0,"To find the percentage growth in the dividend yield from 2007 to 2008, we need to first find the dividend yields for 2007 and 2008.
+
+According to document [1], the dividend yield for 2007 was 1.5% and for 2008 was 2.9%.
+
+The percentage growth can be calculated as: ((New Value - Old Value) / Old Value) * 100
+= ((2.9 - 1.5) / 1.5) * 100
+= (1.4 / 1.5) * 100
+= 0.9333 * 100
+= 93.33%
+
+So, the dividend yield grew by 93.33% from 2007 to 2008."
+29,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3448275862068966,0.13793103448275862,0.4,1,0.06060606060606061,0.06060606060606061,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The documents provide information on the net interest yield on average interest-earning assets excluding CIB markets, but they do not provide the actual net interest income of CIB markets or the total managed interest income. Therefore, it is not possible to calculate the percentage of CIB markets net interest income as part of the managed interest income.
+
+For example, Document [3] provides the yield on average CIB markets interest-earning assets, but it does not provide the actual net interest income of CIB markets. Similarly, Document [1] and [2] discuss the non-markets-related net interest income, but they do not provide the actual numbers.
+
+Without this information, it is not possible to calculate the percentage of CIB markets net interest income as part of the managed interest income."
+30,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.14814814814814814,0.07407407407407407,0.5,1,0.04,0.04,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents regarding the unrecognized tax benefits for the years 2007 and 2008.
+
+In document [0], it mentions a reconciliation of the beginning and ending amount of unrecognized tax benefits for the years ending December 27, 2008, and December 29, 2007, but it does not provide the specific amounts for the beginning and ending of each year.
+
+However, in document [3], it states that ""the December 27, 2008 balance of $214.4 million of unrecognized tax benefits..."" This gives us the ending balance for 2008.
+
+Unfortunately, the documents provided do not explicitly state the beginning balance for 2007 or the ending balance for 2007 in a straightforward manner that can be directly compared to the $214.4 million figure for 2008 to calculate the increase.
+
+Given the information available, we cannot accurately calculate the increase in unrecognized tax benefits from 2007 to 2008 without the specific starting point for 2007. 
+
+The documents are missing some of the information required to answer the question."
+31,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.047619047619047616,0.047619047619047616,1.0,0,0.038461538461538464,0.038461538461538464,1.0,1,0,0,"To find the growth rate in net sales from 2009 to 2010, we need to first find the difference in net sales between the two years and then divide that by the net sales in 2009.
+
+According to document [1], the net sales in 2009 were $6710.4 million and in 2010 were $7630.0 million.
+
+The difference in net sales is $7630.0 - $6710.4 = $919.6 million.
+
+The growth rate can be calculated as (difference in net sales / net sales in 2009) * 100.
+So, the growth rate is ($919.6 / $6710.4) * 100 = 13.7%.
+
+Therefore, the growth rate in net sales from 2009 to 2010 is 13.7%."
+32,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.045454545454545456,0.045454545454545456,1.0,0,0.047619047619047616,0.047619047619047616,1.0,1,0,0,"To answer the question, I will look at the context documents provided. 
+
+In document [0], I see a table with ""foreign currency translation"" and corresponding values for different years. The values are: ""$ -61.1 ( 61.1 )"", ""$ -16.6 ( 16.6 )"", and ""$ -6.3 ( 6.3 )"". 
+
+Since the question asks for the minimum amount of foreign currency translation loss, I will compare the absolute values of the losses: 61.1, 16.6, and 6.3. The smallest value is 6.3.
+
+Therefore, the minimum amount of foreign currency translation loss, in millions, is $6.3."
+33,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.3333333333333333,1.0,0,0.3333333333333333,0.3333333333333333,1.0,1,0,0,"To find the average net unrealized investment gains for the period, we need to look at the net unrealized investment gains for each year and then calculate the average.
+
+According to document [1], the net unrealized investment gains are:
+- 2007: $76 million
+- 2006: $73 million
+- 2005: $52 million
+
+To calculate the average, we add these amounts together and divide by the number of years:
+Average = (76 + 73 + 52) / 3
+
+First, we add the amounts together:
+76 + 73 + 52 = 201
+
+Then, we divide by the number of years:
+201 / 3 = 67
+
+Therefore, the average net unrealized investment gains for the period are $67 million."
+34,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.5555555555555556,0.5555555555555556,1.0,0,0.7142857142857143,0.14285714285714285,0.2,0,0,0,"To answer this question, we need to compare the performance of Abiomed Inc. with the Nasdaq Composite Index over the given period. 
+
+According to document [1], the values for Abiomed Inc. and the Nasdaq Composite Index are as follows:
+- Abiomed Inc.: 100 (3/31/2007), 96.19 (3/31/2008), 35.87 (3/31/2009), 75.55 (3/31/2010), 106.37 (3/31/2011), 162.45 (3/31/2012)
+- Nasdaq Composite Index: 100 (3/31/2007), 94.11 (3/31/2008), 63.12 (3/31/2009), 99.02 (3/31/2010), 114.84 (3/31/2011), 127.66 (3/31/2012)
+
+Document [2] explains that the performance graph compares the yearly change in the cumulative total stockholder return for Abiomed Inc.'s last five full fiscal years with the cumulative total return on the Nasdaq Composite Index and a peer group index.
+
+Looking at the values, we can see that by 3/31/2012, Abiomed Inc.'s value (162.45) is higher than the Nasdaq Composite Index's value (127.66). 
+
+Therefore, based on the information provided in the documents, Abiomed Inc. did outperform the Nasdaq Composite Index over the given period."
+35,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.029411764705882353,0.5,0,0.058823529411764705,0.029411764705882353,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [4], it is stated that ""of these amounts, $2.86 billion and $2.87 billion as of December 2015 and December 2014, respectively, relate to commitments to invest in funds managed by the firm.""
+
+So, the total for 2015 and 2014 relating to commitments to invest in funds managed by the firm is $2.86 billion + $2.87 billion = $5.73 billion.
+
+The answer is $5.73 billion."
+36,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.045454545454545456,0.045454545454545456,1.0,1,0.04,0.04,1.0,1,0,0,"To calculate the percentage change in net earnings from continuing operations from 2014 to 2015, we need to use the data provided in document [1]. 
+
+The net earnings from continuing operations in 2014 were $3480, and in 2015 they were $3538. 
+
+To find the percentage change, we use the formula: ((New Value - Old Value) / Old Value) * 100.
+
+Plugging in the numbers: ((3538 - 3480) / 3480) * 100 = (58 / 3480) * 100 = 1.67%.
+
+So, the net earnings from continuing operations increased by 1.67% from 2014 to 2015."
+37,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.043478260869565216,0.043478260869565216,1.0,0,0.04,0.04,1.0,1,0,0,"To answer the question, I will look at the information provided in the context documents. The relevant information is found in document [4], which appears to be a table showing the total number of shares purchased during different periods.
+
+According to the table, the total number of shares purchased in the period 11/01/04 - 11/30/04 is 5145, and the total number of shares purchased in the period 12/01/04 - 12/31/04 is 34526.
+
+To find the total number of shares repurchased in these two periods, I will add the number of shares purchased in each period: 5145 + 34526 = 39671.
+
+Therefore, the total number of shares repurchased in the periods 11/01/04 - 11/30/04 and 12/01/04 - 12/31/04 is 39671."
+38,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.09523809523809523,1.0,1,0.08571428571428572,0.08571428571428572,1.0,1,0,0,"To answer this question, we need to calculate the total employee severance costs in 2004 and 2005 and then determine the impact on net income.
+
+From document [3], we know that:
+- In the fiscal year ended September 30, 2004, the company recorded $5.4 million of employee severance costs.
+- In the fiscal year ended September 30, 2005, the company recorded $13.3 million of employee severance and lease cancellation costs primarily related to the 2005 initiatives.
+
+However, to find the increase in net income without these costs, we need to understand that these costs are expenses that reduce net income. Thus, if we subtract these costs from the total expenses (or add them to net income, as they are expenses), we can find the hypothetical net income without these severance costs.
+
+The documents provided do not directly give us the net income for 2004 and 2005. However, we can calculate the total severance costs for both years:
+- Total severance costs for 2004 = $5.4 million
+- Total severance and lease cancellation costs for 2005 = $13.3 million
+
+The question asks for the increase in net income without these costs, but it does not provide the base net income for 2004 and 2005. Without the net income figures for these years, we cannot accurately calculate the percentage or dollar increase in net income.
+
+The documents are missing some of the information required to answer the question."
+39,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.14285714285714285,1.0,1,0.1,0.1,1.0,1,0,0,"To answer this question, we need to find two pieces of information: the money pool activity use of operating cash flows in 2003 and the receivables from the money pool as of December 31, 2003.
+
+From document [3], we can find the money pool activity use of operating cash flows in 2003: ""money pool activity used $ 42.5 million of system energy's operating cash flows in 2004, used $ 12.0 million in 2003, and provided $ 6.8 million in 2002.""
+
+However, the documents do not provide the receivables from the money pool as of December 31, 2003. Document [4] mentions that the information about the money pool activity and receivables can be found in the ""companies and system energy financial statements"", but this information is not provided in the given context documents.
+
+Therefore, the documents are missing some of the information required to answer the question."
+40,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.06666666666666667,0.3333333333333333,1,0.06666666666666667,0.06666666666666667,1.0,1,0,0,"To answer this question, we need to find the borrowing under the term loan facility and the total contractual maturities of long-term debt obligations due subsequent to December 31, 2016.
+
+From document [3], we know that at December 31, 2016, we had $3081 outstanding on the term loan. 
+
+However, the documents do not provide the total contractual maturities of long-term debt obligations due subsequent to December 31, 2016, in a way that allows us to calculate the percentage. Document [3] mentions the contractual maturities but does not provide a total figure.
+
+The documents are missing some of the information required to answer the question."
+41,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.047619047619047616,0.047619047619047616,1.0,0,0.045454545454545456,0.045454545454545456,1.0,1,0,0,"To answer the question, we need to find the total exposure to government-related derivatives. The context documents provide information about the company's OTC derivative products by industry.
+
+From document [0], we can see that the company has exposure to two types of government-related derivatives: ""sovereign governments"" and ""regional governments"". The exposure to sovereign governments is $816 million, and the exposure to regional governments is $1597 million.
+
+To find the total exposure to government-related derivatives, we need to add these two amounts together: $816 million + $1597 million = $2413 million.
+
+Therefore, the total exposure to government-related derivatives is $2413 million."
+42,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.043478260869565216,0.043478260869565216,1.0,1,0.04,0.04,1.0,1,0,0,"To calculate the sales growth rate from 2017 to 2018, we need to find the difference in net sales between the two years and then divide that by the net sales in 2017.
+
+According to document [4], the net sales for fiscal year 2017 were $16,772.9 million and for fiscal year 2018 were $17,057.4 million.
+
+First, we calculate the difference in net sales: $17,057.4 million - $16,772.9 million = $284.5 million.
+
+Then, we calculate the sales growth rate: ($284.5 million / $16,772.9 million) * 100.
+
+Performing the calculation: ($284.5 million / $16,772.9 million) * 100 = 1.695%.
+
+Therefore, the sales growth rate from 2017 to 2018 is approximately 1.70%."
+43,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.011494252873563218,0.011494252873563218,1.0,0,0.05555555555555555,0.05555555555555555,1.0,1,0,0,"To determine the percentage decrease in average borrowings from 2016 to 2017, we need to look at the information provided in document [4]. 
+
+According to document [4], the average borrowings in 2016 were $850 and in 2017 were $779. 
+
+To calculate the percentage decrease, we first find the difference in average borrowings: $850 - $779 = $71.
+
+Then, we divide this difference by the original amount (2016 average borrowings) and multiply by 100 to get the percentage decrease: ($71 / $850) * 100.
+
+Calculating this gives: (71 / 850) * 100 = 8.35%.
+
+So, the average borrowings decreased by 8.35% from 2016 to 2017."
+44,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.05,0.05,1.0,0,0.058823529411764705,0.058823529411764705,1.0,1,0,0,"To determine the maximum depreciation rate that can be used for furniture, fixtures, and equipment, we need to look at the information provided in the context documents regarding the useful life of these assets, as the depreciation rate is typically calculated based on the useful life.
+
+In document [2], it is stated: [[""land improvements"", ""20""], [""buildings"", ""39 - 40""], [""furniture fixtures and equipment"", ""3 - 10""]]. This indicates that the useful life of furniture, fixtures, and equipment ranges from 3 to 10 years.
+
+The maximum depreciation rate would be associated with the shortest useful life, which is 3 years for furniture, fixtures, and equipment. However, the documents do not directly provide the depreciation rates but rather the useful lives. To find the maximum depreciation rate, we would typically use the formula for straight-line depreciation, which is 1 / useful life. 
+
+Given the shortest useful life for furniture, fixtures, and equipment is 3 years, the calculation for the maximum depreciation rate would be 1 / 3 = 0.3333 or approximately 33.33% per year.
+
+Therefore, based on the information provided in the documents, the maximum depreciation rate that can be used for furniture, fixtures, and equipment is approximately 33.33% per year."
+45,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09090909090909091,0.045454545454545456,0.5,0,0.09090909090909091,0.045454545454545456,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [0], we see a table with the 2015 restructuring programs and their corresponding costs. The row for ""2015 restructuring programs"" shows the costs for different categories: ""$ 5009"" for termination benefits, ""$ 231"" for facility closure costs, ""$ 1000"" for contract termination costs, ""$ 64"" for other exit costs, and ""$ 6304"" for the total of these categories, but then there is also a total restructuring charge of ""$ 7819"". 
+
+However, to find the portion of the total 2015 restructuring programs related to termination benefits, we should consider the total 2015 restructuring charge which is ""$ 7819"" and the termination benefits cost which is ""$ 5009"" for the 2015 restructuring programs and ""$ 474"" for other restructuring programs, but since the question is about the 2015 restructuring programs, we will only consider the ""$ 5009"" for termination benefits.
+
+So, the portion of the total 2015 restructuring programs related to termination benefits is calculated as: (termination benefits cost for 2015 restructuring programs / total 2015 restructuring charge) = $ 5009 / $ 7819.
+
+Therefore, the portion of the total 2015 restructuring programs related to termination benefits is $ 5009 / $ 7819."
+46,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08,0.04,0.5,0,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To calculate the percentage change in earnings from service operations, we first need to find the actual earnings from service operations for both years. However, the provided documents do not directly state the earnings from service operations for 2000 and 2001. They do mention that ""service operations revenues decreased from $82.8 million for the year ended December 31, 2000, to $80.5 million for the year ended December 31, 2001"" (Document [1]), but this refers to revenues, not earnings.
+
+Since the documents do not provide a direct statement of the earnings from service operations for both years, we cannot accurately calculate the percentage change in earnings from service operations from 2000 to 2001 based on the information given.
+
+The documents are missing some of the information required to answer the question."
+47,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.05555555555555555,0.05555555555555555,1.0,1,0.058823529411764705,0.058823529411764705,1.0,1,0,0,"To calculate the percent of the change in the employee liability for employee separations in 2004, we need to look at the numbers provided in document [2]. 
+
+The initial liability as of January 1, 2004, for employee separations is $2239. The liability as of December 31, 2004, is $665. 
+
+The change in liability is $2239 - $665 = $1574.
+
+To find the percent change, we use the formula: ((change in liability / initial liability) * 100).
+
+So, the percent change is (($1574 / $2239) * 100) = 70.3%.
+
+Therefore, the employee liability for employee separations decreased by 70.3% in 2004."
+48,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08,0.08,1.0,0,0.15,0.05,0.3333333333333333,1,0,0,"To determine the portion of Anios' purchasing price related to goodwill, we need to look at the information provided in the context documents.
+
+From document [2], we know that the total consideration for the acquisition of Anios was $798.3 million, including satisfaction of outstanding debt.
+
+From document [1], we know that the goodwill arising from the acquisition is $511.7 million.
+
+To find the portion of the purchasing price related to goodwill, we can calculate the percentage of the total consideration that is attributed to goodwill:
+
+Goodwill / Total Consideration = $511.7 million / $798.3 million
+
+This calculation will give us the proportion of the purchasing price that is related to goodwill. 
+
+Goodwill / Total Consideration = 0.641 or approximately 64.1% of the total consideration is attributed to goodwill. 
+
+Therefore, approximately 64.1% of Anios' purchasing price is related to goodwill."
+49,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.038461538461538464,0.019230769230769232,0.5,0,0.04,0.04,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [3], we find a table that lists the par values of different debt instruments. According to this table, the par value of the fixed rate notes due February 2014 is $750.0 million, and the par value of the term loan due 2011 is $420.5 million.
+
+Therefore, as of December 31, 2010, the par value of the debt outstanding for the fixed rate notes due February 2014 was $750.0 million, and the par value of the debt outstanding for the term loan due 2011 was $420.5 million. 
+
+So, the par value of the fixed rate notes due February 2014 was $329.5 million more than the term loan due 2011."
+50,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.10526315789473684,0.05263157894736842,0.5,1,0.125,0.125,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents, specifically document [0] which contains the future minimum lease payments.
+
+According to document [0], the future minimum lease payments for the first year (2014) are $11,057. The total future minimum lease payments are $57,096.
+
+To calculate the percentage of lease payments that will be paid out in the first year, we can use the following formula:
+
+(Lease payments in the first year / Total lease payments) x 100
+
+Plugging in the numbers, we get:
+
+($11,057 / $57,096) x 100 ≈ 19.4%
+
+Therefore, approximately 19.4% of the lease payments will be paid out in the first year."
+51,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.041666666666666664,0.3333333333333333,1,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To find the total research and development expense for the years 2014 through 2016, we need to look at the information provided in document [3]. 
+
+According to document [3], the research and development expense was:
+- $78 million for the year ended December 31, 2016
+- $119 million for the year ended December 31, 2015
+- $86 million for the year ended December 31, 2014
+
+To find the total, we add these amounts together:
+$78 million + $119 million + $86 million = $283 million
+
+Therefore, the total research and development expense for the years 2014 through 2016 is $283 million."
+52,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11538461538461539,0.038461538461538464,0.3333333333333333,1,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The question asks for the percent of the scheduled maturities of long-term debt as of December 31, 2012. However, the documents only provide information on the scheduled maturities of long-term debt as of December 31, 2011, in document [1]. There is no information provided for December 31, 2012.
+
+Therefore, I cannot provide an answer to the question based on the information available in the documents."
+53,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.058823529411764705,1.0,1,0.09090909090909091,0.09090909090909091,1.0,0,0,0,"To find the return on investment for the S&P 500 from 2007 to 2008, we need to look at the values for the S&P 500 index in the given context documents.
+
+In document [0], the values for the S&P 500 index are provided for each year from 2004 to 2009. Specifically, the values are:
+- 2004: 100.00
+- 2005: 104.91
+- 2006: 121.48
+- 2007: 128.16
+- 2008: 80.74
+
+The return on investment (ROI) from 2007 to 2008 can be calculated as the change in value divided by the original value, then multiplied by 100 to get a percentage. So, the calculation would be:
+\[ \text{ROI} = \left( \frac{\text{Value in 2008} - \text{Value in 2007}}{\text{Value in 2007}} \right) \times 100 \]
+
+Substituting the given values:
+\[ \text{ROI} = \left( \frac{80.74 - 128.16}{128.16} \right) \times 100 \]
+\[ \text{ROI} = \left( \frac{-47.42}{128.16} \right) \times 100 \]
+\[ \text{ROI} = -0.3701 \times 100 \]
+\[ \text{ROI} = -37.01\% \]
+
+Therefore, the return on investment for the S&P 500 from 2007 to 2008 was -37.01%. This means the value of the S&P 500 index decreased by 37.01% over this period."
+54,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13043478260869565,0.13043478260869565,1.0,1,0.08333333333333333,0.08333333333333333,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [2], we see that the approximate square footage in Alpharetta, Georgia is 219,000. 
+
+In document [4], it is mentioned that ""all facilities are leased, except for 166,000 square feet of our office in Alpharetta, Georgia."" 
+
+This implies that 166,000 square feet of the office in Alpharetta, Georgia is not leased. 
+
+To find the percentage of the square footage in Alpharetta, Georgia that is not yet leased, we can calculate: 
+
+(166,000 / 219,000) * 100 
+
+This equals approximately 75.8%. 
+
+Therefore, as of December 2007, approximately 75.8% of the square footage in Alpharetta, Georgia was not yet leased."
+55,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.058823529411764705,1.0,1,0.07692307692307693,0.07692307692307693,1.0,1,0,0,"To calculate the percentage cumulative total shareholder return on discb common stock for the five-year period ended December 31, 2014, we need to look at the values provided in the context documents.
+
+In document [0], we find the values for ""discb"" common stock for the years ended December 31, 2009, through December 31, 2014, as follows:
+- December 31, 2009: $100.00
+- December 31, 2010: $138.79
+- December 31, 2011: $133.61
+- December 31, 2012: $200.95
+- December 31, 2013: $290.40
+- December 31, 2014: $233.86
+
+The cumulative total shareholder return can be calculated by comparing the initial value ($100.00) to the final value ($233.86) over the five-year period.
+
+The formula to calculate the percentage return is: ((Final Value - Initial Value) / Initial Value) * 100
+
+Plugging in the values: ((233.86 - 100.00) / 100.00) * 100 = (133.86 / 100.00) * 100 = 133.86%
+
+Therefore, the percentage cumulative total shareholder return on discb common stock for the five-year period ended December 31, 2014, is 133.86%."
+56,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.058823529411764705,1.0,0,0.09090909090909091,0.09090909090909091,1.0,1,0,0,"To find the return on investment for the S&P 500 from 2004 to 2006, we need to look at the values provided in the context documents for the S&P 500 index for those years.
+
+According to the context document [0], the values for the S&P 500 index are as follows:
+- 2004: 100.00
+- 2005: 104.91
+- 2006: 121.48
+
+The return on investment (ROI) can be calculated by determining the percentage change in value over the specified period. The formula for ROI is:
+\[ \text{ROI} = \left( \frac{\text{Final Value} - \text{Initial Value}}{\text{Initial Value}} \right) \times 100 \]
+
+For the period from 2004 to 2006, the initial value is 100.00 (in 2004) and the final value is 121.48 (in 2006).
+
+\[ \text{ROI} = \left( \frac{121.48 - 100.00}{100.00} \right) \times 100 = \left( \frac{21.48}{100.00} \right) \times 100 = 21.48\% \]
+
+Therefore, the return on investment for the S&P 500 from 2004 to 2006 is 21.48%."
+57,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16,0.16,1.0,0,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"To answer this question, I need to analyze the provided context documents. 
+
+The relevant information can be found in document [0], which appears to be a table with various rows related to tax positions and balances. The row that seems most relevant to the question is the one labeled ""balance at december 31"". 
+
+According to the table, the balance at December 31 for the years 2016, 2015, and 2014 were $107,551, $28,114, and $31,947, respectively.
+
+To calculate the percent change, I will use the formula: ((New Value - Old Value) / Old Value) * 100.
+
+From 2015 to 2016: ((107,551 - 28,114) / 28,114) * 100 = 282.5%
+From 2014 to 2015: ((28,114 - 31,947) / 31,947) * 100 = -12.1%
+
+However, the question asks for the percent change from 7 balance at December 31, which is unclear. Assuming it means the change from 2014 to 2016, I will calculate: 
+((107,551 - 31,947) / 31,947) * 100 = 236.9%
+
+Since the question is not clear, I will provide the calculations for the different possible interpretations. If the question is asking for a specific year or period, please clarify, and I will be happy to provide a more precise answer. 
+
+The documents do provide some information about the change in unrecognized tax benefits, but the question's wording is ambiguous, making it challenging to provide a definitive answer."
+58,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.1,0.5,1,0.14285714285714285,0.047619047619047616,0.3333333333333333,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [2], it is mentioned that ""cash flows provided by operating activities in 2010 included a use of $ 250 million related to a change in accounting for our accounts receivable securitization program."" 
+
+In document [0], the cash flows provided by operating activities in 2010 are given as $515.2 million. 
+
+To find the cash flows provided by operating activities without the charge for the A/R securitization, we need to add back the $250 million use related to the securitization program to the cash flows provided by operating activities in 2010.
+
+So, the calculation would be: $515.2 million + $250 million = $765.2 million.
+
+Therefore, without the charge for the A/R securitization, cash flows provided by operating activities for all operations in 2010 would have been $765.2 million."
+59,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.2,1.0,1,0.3333333333333333,0.3333333333333333,1.0,1,0,0,"To calculate the percentage change in inventories from 2015 to 2016, we need to first find the values of inventories for 2015 and 2016. 
+
+According to document [2], the value of inventories at December 31, 2015, was $783,031, and at December 31, 2016, it was $917,491.
+
+The percentage change can be calculated using the formula: ((New Value - Old Value) / Old Value) * 100.
+
+Plugging in the values, we get: (($917,491 - $783,031) / $783,031) * 100.
+
+First, calculate the difference: $917,491 - $783,031 = $134,460.
+
+Then, divide by the old value: $134,460 / $783,031 ≈ 0.1717.
+
+Finally, multiply by 100 to get the percentage: 0.1717 * 100 ≈ 17.17%.
+
+Therefore, the percentage change in inventories from 2015 to 2016 was approximately 17.17%."
+60,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15384615384615385,0.038461538461538464,0.25,1,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [0], it is mentioned that ""the common stock subscribed was issued in 2001 in exchange for three-year promissory notes (64001 shares) and eleven-year promissory notes (289581 shares)"". 
+
+This implies that in 2001, the company awarded a total of 64001 + 289581 = 353582 shares to employees.
+
+The answer is: 353582."
+61,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1111111111111111,0.1111111111111111,1.0,1,0.03125,0.03125,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The document [2] mentions that ""net revenues in the consolidated statements of earnings were $ 32.73 billion for 2017"" and that ""these increases were partially offset by significantly lower market making revenues"", but it does not provide the exact amount of market making revenues for 2017. Therefore, I cannot determine the total market making revenues in the consolidated statements of earnings of 2017."
+62,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.04,0.04,1.0,0,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"To calculate the percent change in net unrealized loss on available-for-sale securities between 2008 and 2009, we need to first find the net unrealized loss for both years.
+
+According to document [4], the net after-tax unrealized loss on available-for-sale securities was $5.21 billion as of December 31, 2008, and $1.64 billion as of December 31, 2009.
+
+The percent change can be calculated as: ((New Value - Old Value) / Old Value) * 100
+= (($1.64 billion - $5.21 billion) / $5.21 billion) * 100
+= (-$3.57 billion / $5.21 billion) * 100
+= -68.5%
+
+So, the net unrealized loss on available-for-sale securities decreased by 68.5% between 2008 and 2009."
+63,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.034482758620689655,0.034482758620689655,1.0,0,0.037037037037037035,0.037037037037037035,1.0,1,0,0,"To find the total miles of private crude oil pipelines and private refined products pipelines, we need to look at the information provided in the context documents.
+
+According to document [4], ""we also own 176 miles of private crude oil pipelines and 850 miles of private refined products pipelines"".
+
+To find the total miles, we need to add the miles of private crude oil pipelines and private refined products pipelines. 
+
+Total miles = miles of private crude oil pipelines + miles of private refined products pipelines
+Total miles = 176 + 850
+Total miles = 1026
+
+The answer is 1026."
+64,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.23809523809523808,0.16666666666666666,0.6,0,0.014285714285714285,0.014285714285714285,1.0,1,0,0,"To answer this question, we need to analyze the information provided in the context documents related to FIN 47, which pertains to accounting for conditional asset retirement obligations.
+
+According to document [3], FIN 47 requires an entity to recognize a liability for a legal obligation to perform asset retirement activities when the retirement is conditional on a future event if the liability's fair value can be reasonably estimated. Marathon adopted FIN 47 as of December 31, 2005, and recognized a charge of $19 million, net of taxes of $12 million, as a cumulative effect of a change in accounting principle in 2005. At the time of adoption, total assets increased $22 million and total liabilities increased $41 million.
+
+Document [1] provides a summary of the total amount of the liability for asset retirement obligations as if FIN 47 had been applied during all periods presented, but it does not directly compare the liability amounts between December 31, 2004, and December 31, 2005.
+
+However, since Marathon adopted FIN 47 as of December 31, 2005, and recognized an increase in total liabilities of $41 million at the time of adoption, it implies that the liability for asset retirement obligations was recognized and added to the balance sheet as of December 31, 2005. This suggests that the FIN 47 liability was greater on December 31, 2005, than it would have been on December 31, 2004, because the liability was not recognized until the adoption of FIN 47 in 2005.
+
+Therefore, ba"
+65,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.041666666666666664,0.041666666666666664,1.0,1,0.04,0.04,1.0,1,0,0,"To find the average size of call centers in 2017, we need to look at the information provided in the context documents. 
+
+In document [3], we have a table that lists the approximate number and size in square feet of different types of properties, including call centers. According to this table, there were 17 call centers with an approximate total size of 1,400,000 square feet.
+
+To find the average size of a call center, we need to divide the total size of all call centers (1,400,000 square feet) by the number of call centers (17).
+
+Average size = Total size / Number of call centers
+= 1,400,000 / 17
+= approximately 82,353 square feet
+
+Therefore, the average size of a call center in 2017 was approximately 82,353 square feet."
+66,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.03125,0.03125,1.0,1,0.030303030303030304,0.030303030303030304,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The question asks for the percentage in total assets in 2014, but none of the provided documents contain the total assets for 2014 or any information that could be used to calculate the percentage. While document [3] mentions ""$18.24 billion and $15.76 billion as of December 2014 and December 2013, respectively"", this refers to direct loans, not total assets. Without the total assets, it's impossible to calculate a percentage."
+67,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.05555555555555555,0.05555555555555555,1.0,1,0.05263157894736842,0.05263157894736842,1.0,1,0,0,"To answer this question, we need to find the total route miles and the main line route miles in 2006. 
+
+From document [2], we can see that the total route miles in 2006 are 51596, and the main line route miles are 27318.
+
+To find the percentage of main line route miles, we can divide the main line route miles by the total route miles and multiply by 100.
+
+Percentage of main line route miles = (main line route miles / total route miles) * 100
+= (27318 / 51596) * 100
+= 52.97%
+
+So, approximately 53% of total route miles are main line in 2006."
+68,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.05263157894736842,0.05263157894736842,1.0,0,0.06666666666666667,0.06666666666666667,1.0,1,0,0,"To answer this question, we need to look at the information provided in document [2]. 
+
+According to document [2], ""the company received proceeds of $ 112.7 million net of $ 10.8 million in stock issue costs"" in November 2005.
+
+To find the percent of the stock issue costs to the company proceeds, we need to first find the total proceeds before deducting the stock issue costs. The total proceeds can be calculated as follows: 
+Total proceeds = Net proceeds + Stock issue costs
+Total proceeds = $112.7 million + $10.8 million
+Total proceeds = $123.5 million
+
+Now, we can calculate the percent of the stock issue costs to the company proceeds:
+Percent = (Stock issue costs / Total proceeds) * 100
+Percent = ($10.8 million / $123.5 million) * 100
+Percent ≈ 8.75%
+
+Therefore, in November 2005, the percent of the stock issue costs to the company proceeds was approximately 8.75%."
+69,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.023809523809523808,0.023809523809523808,1.0,0,0.09090909090909091,0.09090909090909091,1.0,1,0,0,"To answer the question, I will look at the information provided in the context documents. 
+
+In document [1], there is a table with a column for ""jkhy"" and rows for different years. The values in the ""jkhy"" column are: ""100.00"", ""110.51"", ""151.12"", ""182.15"", ""231.36"", ""240.29"". 
+
+The 5-year total return can be calculated by comparing the value at the beginning of the period (2014) to the value at the end of the period (2019). 
+
+The 5-year total return for jkhy is (240.29 - 100.00) / 100.00 = 140.29%. 
+
+Therefore, the 5-year total return for jkhy is 140.29%."
+70,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2222222222222222,0.1111111111111111,0.5,1,0.14285714285714285,0.14285714285714285,1.0,1,0,0,"To calculate the ROI (Return on Investment) of an investment in the Nasdaq Composite Index from March 2007 to March 2010, we need to look at the data provided in document [1]. The relevant data points for the Nasdaq Composite Index are:
+
+- March 31, 2007: 100
+- March 31, 2008: 94.11
+- March 31, 2009: 63.12
+- March 31, 2010: 99.02
+
+The ROI can be calculated using the formula: ((End Value - Start Value) / Start Value) * 100.
+
+Given that the investment starts at 100 on March 31, 2007, and ends at 99.02 on March 31, 2010, the calculation would be:
+
+ROI = ((99.02 - 100) / 100) * 100 = -0.98%
+
+This means the ROI of an investment in the Nasdaq Composite Index from March 2007 to March 2010 is -0.98%, indicating a slight loss over the period."
+71,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1111111111111111,0.1111111111111111,1.0,0,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To answer this question, I will look at the information provided in the context documents. 
+
+In document [3], it is stated: ""in 2013 , the percentage of our u.s . crude oil and condensate production that was sweet averaged 76 percent compared to 63 percent and 42 percent in 2012 and 2011 .""
+
+From this information, we can see that the percentage of U.S. crude oil and condensate production that was sweet in 2013 was 76%, and in 2012 it was 63%. 
+
+Since 76% is greater than 63%, the answer to the question is: yes, in 2013, the percentage of our U.S. crude oil and condensate production that was sweet was higher than in 2012."
+72,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.058823529411764705,0.058823529411764705,1.0,1,0.043478260869565216,0.043478260869565216,1.0,1,0,0,"To calculate the percent change in the number of shares that was not vested in 2012, we need to look at the information provided in document [2]. 
+
+The number of non-vested performance awards at the beginning of the year was 707,000 shares, and at the end of the year, it was 509,000 shares.
+
+The percent change can be calculated as: ((End of year - Beginning of year) / Beginning of year) * 100
+= ((509 - 707) / 707) * 100
+= (-198 / 707) * 100
+= -28%
+
+So, the number of non-vested shares decreased by 28% in 2012."
+73,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08,0.04,0.5,1,0.037037037037037035,0.037037037037037035,1.0,1,0,0,"To find the percentage of total contractual obligations due to capital lease obligations, we need to look at the table provided in document [1]. 
+
+The total contractual obligations are listed as ""$ 13208"" and the capital lease obligations are listed as ""230"". 
+
+To find the percentage, we will divide the capital lease obligations by the total contractual obligations and multiply by 100.
+
+Percentage = (Capital Lease Obligations / Total Contractual Obligations) * 100
+= (230 / 13208) * 100
+= 1.74%
+
+So, approximately 1.74% of the total contractual obligations are due to capital lease obligations."
+74,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.06666666666666667,0.06666666666666667,1.0,1,0.07692307692307693,0.07692307692307693,1.0,1,0,0,"To answer the question, I will look at the information provided in the context documents. The relevant information is in document [3], which contains tables with high and low sale prices for the company's common stock.
+
+According to the table, for the ""fourth quarter"" of ""2001"", the high price was ""$ 17.80"" and the low price was ""$ 11.60"". 
+
+To find the difference, I will subtract the low price from the high price: $17.80 - $11.60 = $6.20.
+
+Therefore, the difference in the company's high compared to its low sales price for the fourth quarter of 2001 was $6.20."
+75,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.17391304347826086,0.17391304347826086,1.0,0,0.047619047619047616,0.047619047619047616,1.0,1,0,0,"To calculate the percentage change in cash flows provided by (used in) operating activities including discontinued operations between 2009 and 2010, we need to first find the values for these years.
+
+According to document [1], the cash flows provided by (used in) operating activities including discontinued operations for 2009 and 2010 were $559.7 million and $515.2 million, respectively.
+
+However, document [2] mentions that ""excluding the $250 million impact of additional accounts receivable from the change in accounting discussed above, cash flows provided by operations were $765.2 million in 2010 compared to $559.7 million in 2009"". This implies that the $515.2 million figure for 2010 in document [1] includes the effect of the change in accounting, which reduced the cash flow by $250 million.
+
+So, to compare the cash flows between 2009 and 2010 on a consistent basis, we should use the adjusted figure for 2010, which is $765.2 million.
+
+Now, we can calculate the percentage change:
+
+Percentage change = ((Value in 2010 - Value in 2009) / Value in 2009) * 100
+= (($765.2 million - $559.7 million) / $559.7 million) * 100
+= ($205.5 million / $559.7 million) * 100
+= 36.7%
+
+Therefore, the cash flows provided by (used in) operating activities including discontinued operations increased by 36.7% between 2009 and 2010."
+76,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.04,0.04,1.0,1,0.045454545454545456,0.045454545454545456,1.0,1,0,0,"To find the percent of the change of the weighted-average fair value at grant date from 2008 to 2009, we need to first find the difference in the weighted-average fair value between the two years and then calculate the percentage change.
+
+According to the context document [0], the weighted-average fair value at grant date for 2008 was $17.95 and for 2009 was $14.24.
+
+The difference in the weighted-average fair value is $17.95 - $14.24 = $3.71.
+
+To calculate the percentage change, we use the formula: ((difference / original value) * 100).
+
+Plugging in the numbers: (($3.71 / $17.95) * 100) = -20.67%.
+
+So, the weighted-average fair value at grant date decreased by 20.67% from 2008 to 2009."
+77,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.10526315789473684,0.10526315789473684,1.0,0,0.12,0.0,0.0,0,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [1], we see the operating earnings (loss) for the years 2006, 2007, and 2008. The operating loss in 2007 was $-1201 million and in 2008 was $-2199 million.
+
+To calculate the percentage decline, we use the formula: ((New Value - Old Value) / Old Value) * 100. 
+
+Plugging in the numbers: ((-2199 - (-1201)) / -1201) * 100 = ((-2199 + 1201) / -1201) * 100 = (-998 / -1201) * 100 = 0.83 * 100 = 83%.
+
+However, since the question asks for the percentage decline, and the operating loss actually increased from 2007 to 2008, we should express this as a percentage increase in the operating loss, not a decline. The documents actually provide this information directly in document [1] as ""83% ( 83 % )"", which refers to the percentage change in operating earnings (loss) from 2007 to 2008.
+
+Therefore, the operating loss increased by 83% from 2007 to 2008, it did not decline. If we were to answer the question as posed, we would have to say there was no decline, but rather an increase. However, following the instructions to the letter as requested, the calculation provided shows an increase, not a decline, so the question's premise is incorrect based on the data provided. 
+
+The documents are missing some of the information required to answer the question as it is based on an incorrect premise."
+78,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08333333333333333,0.08333333333333333,1.0,1,0.1,0.1,1.0,1,0,0,"To find the total intangible asset amortization expense for the years ended December 31, 2018, 2017, and 2016, we need to look at the information provided in document [3]. 
+
+According to document [3], ""intangible asset amortization expense amounted to $ 12 million, $ 4 million and $ 4 million for the years ended December 31, 2018, 2017 and 2016, respectively.""
+
+So, the total intangible asset amortization expense for these years is $12 million (2018) + $4 million (2017) + $4 million (2016) = $20 million.
+
+Therefore, the total intangible asset amortization expense for the years ended December 31, 2018, 2017, and 2016 is $20 million."
+79,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08333333333333333,0.08333333333333333,1.0,1,0.046511627906976744,0.023255813953488372,0.5,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+Although document [2] mentions a reconciliation of the statutory U.S. federal income tax rate to the company's effective income tax rate, it does not provide the actual reconciliation or the specific rates for 2017. It only mentions the tax reduction as a result of the tax holidays for 2017, but does not provide enough information to calculate the difference between the statutory and effective rates."
+80,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.05,0.05,1.0,1,0.05263157894736842,0.05263157894736842,1.0,1,0,0,"To calculate the percentual increase in the balance during the year 2007, we need to look at the beginning and ending balance of unrecognized tax benefits.
+
+According to document [2], the balance at January 1, 2007, was $53 million, and the balance at December 31, 2007, was $70 million.
+
+The increase in balance is $70 - $53 = $17 million.
+
+To calculate the percentual increase, we use the formula: ((increase in balance / beginning balance) * 100).
+
+Plugging in the numbers: (($17 / $53) * 100) = 32.08%.
+
+So, the percentual increase in the balance during the year 2007 is approximately 32.08%."
+81,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1,0.15,1.0,1,0.043478260869565216,0.043478260869565216,1.0,1,0,0,"To find the total fair value of the non-vested performance awards at the beginning of the year, we need to look at the information provided in the context documents.
+
+According to document [2], ""as of 2012 year end there was approximately $14.1 million of unrecognized compensation cost related to non-vested performance awards"". However, this information is about the end of 2012, not the beginning.
+
+Document [1] mentions that ""as of 2012 year end there was $10.2 million of unrecognized compensation cost related to non-vested stock option compensation arrangements"" but this is about stock options, not performance awards.
+
+Document [3] provides information about the fair value of performance awards granted during different years, but it does not give the total fair value of non-vested performance awards at the beginning of the year.
+
+Since the documents do not provide a direct answer to the question, we need to look for any other relevant information. Document [2] mentions that the weighted-average period for recognizing the compensation cost related to non-vested performance awards is 1.6 years. However, without the total number of non-vested performance awards at the beginning of the year, we cannot calculate the total fair value.
+
+The documents are missing some of the information required to answer the question."
+82,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08333333333333333,0.08333333333333333,1.0,0,0.07692307692307693,0.07692307692307693,1.0,1,0,0,"To answer this question, we need to compare the planned capital expenditures in 2012 with the free cash flow in 2011.
+
+According to document [2], the planned capital investments in 2012 are approximately $3.6 billion.
+
+According to document [4], the free cash flow in 2011 was $1.9 billion.
+
+Since $3.6 billion (planned capital expenditures in 2012) is greater than $1.9 billion (free cash flow in 2011), the answer to the question is: Yes, the planned capital expenditures in 2012 are greater than the free cash flow in 2011."
+83,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09090909090909091,0.045454545454545456,0.5,1,0.05,0.05,1.0,1,0,0,"To find the percentage of the total noncancelable future lease commitments for operating leases that was due in 2020, we need to look at the information provided in document [2]. 
+
+According to document [2], the total noncancelable future lease commitments for operating leases is $559.3 million. The amount due in 2020 for operating leases is $115.7 million.
+
+To calculate the percentage, we will divide the amount due in 2020 by the total noncancelable future lease commitments and multiply by 100.
+
+Percentage = (115.7 / 559.3) * 100
+
+Calculating this gives:
+
+Percentage ≈ 20.7%
+
+Therefore, the percent of the total noncancelable future lease commitments for operating leases that was due in 2020 is approximately 20.7%."
+84,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.09523809523809523,1.0,1,0.1111111111111111,0.0,0.0,0,0,0,"The documents are missing some of the information required to answer the question.
+
+The question asks for the decrease in rental expense for operating leases in continuing operations from 2003 to 2003. However, the documents only provide information on rental expenses up to 2002, and there is no data provided for 2003. Therefore, it is not possible to calculate the decrease in rental expense from 2003 to 2003."
+85,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.047619047619047616,0.047619047619047616,1.0,1,0.043478260869565216,0.043478260869565216,1.0,0,0,0,"To find the total distillates sales in millions for the three-year period, we need to first find the total distillates sales in barrels per day for each year and then convert it to millions of barrels. 
+
+According to document [1], the distillates sales in thousands of barrels per day for each year are: 
+- 2003: 365
+- 2002: 346
+- 2001: 345
+
+To find the total distillates sales in thousands of barrels per day for the three-year period, we need to multiply the daily sales by 365 (days in a year) for each year and then add them together.
+
+Total distillates sales in thousands of barrels for 2003: 365 * 365 = 133,225
+Total distillates sales in thousands of barrels for 2002: 346 * 365 = 126,190
+Total distillates sales in thousands of barrels for 2001: 345 * 365 = 125,725
+
+Now, add them together: 133,225 + 126,190 + 125,725 = 385,140
+
+Since the question asks for the total distillates sales in millions, we need to convert the total from thousands of barrels to millions of barrels. 
+
+There are 1,000 barrels in a thousand barrels, so: 
+385,140 / 1,000 = 385.14 million barrels.
+
+The documents do not provide any information about the price per barrel, so we cannot calculate the total sales in dollars. However, the question only asks for the total distillates sales in millions, which we have calculated. 
+
+The answer is 385.14 million barrels."
+86,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.08333333333333333,0.5,1,0.0,0.0,1.0,0,0,0,"The documents are missing some of the information required to answer the question.
+
+The documents provide information about the balance of commercial mortgage loans held for sale designated at fair value at December 31, 2011 ($843 million) and December 31, 2012 ($772 million), but they do not provide the balance for 2008 or 2009. Therefore, it is not possible to calculate the percentage change in the commercial mortgage loans designated for sale at fair value from 2008 to 2009 based on the provided documents."
+87,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08333333333333333,0.08333333333333333,1.0,1,0.06666666666666667,0.06666666666666667,1.0,1,0,0,"To find the percentage change in total assets in 2012, we need to compare the total assets in 2012 with the total assets in 2011.
+
+According to the context documents, specifically document [0], the total assets as of December 2012 are ""$ 938555"" and as of December 2011 are ""$ 923225"".
+
+To calculate the percentage change, we can use the formula: ((New Value - Old Value) / Old Value) * 100.
+
+Plugging in the values, we get: ((938555 - 923225) / 923225) * 100.
+
+First, calculate the difference: 938555 - 923225 = 15330.
+
+Then, divide by the old value: 15330 / 923225 ≈ 0.0166.
+
+Finally, multiply by 100 to get the percentage: 0.0166 * 100 ≈ 1.66%.
+
+Therefore, the percentage change in total assets in 2012 is approximately 1.66%."
+88,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.10526315789473684,0.10526315789473684,1.0,1,0.125,0.0625,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+In document [4], it is stated that ""during the year ended december 31, 2006, the company repurchased in privately negotiated transactions $ 74.9 million principal amount of ati 7.25% ( 7.25 % ) notes for $ 77.3 million in cash.""
+
+This indicates that $74.9 million of the principal amount of the ati 7.25% ( 7.25 % ) notes was paid off during 2006.
+
+Additionally, the same document states that ""as of December 31, 2006 and 2005, the company had $ 325.1 million and $ 400.0 million outstanding under the ati 7.25% ( 7.25 % ) notes, respectively.""
+
+This means that the portion of the ati 7.25% ( 7.25 % ) notes paid off during 2006 can be calculated as the difference between the amount outstanding at the end of 2005 and the amount outstanding at the end of 2006, which is $400.0 million - $325.1 million = $74.9 million.
+
+Therefore, the portion of the ati 7.25% ( 7.25 % ) notes paid off during 2006 is $74.9 million."
+89,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.045454545454545456,0.045454545454545456,1.0,0,0.10526315789473684,0.10526315789473684,1.0,1,0,0,"To find the percentage decline, we need to first find the difference between the two values and then divide by the original value.
+
+The original value is $736 million (as of December 31, 2009) and the new value is $708 million (as of December 31, 2010).
+
+The difference is $736 million - $708 million = $28 million.
+
+The percentage decline is then calculated as (difference / original value) * 100 = ($28 million / $736 million) * 100.
+
+Using the numbers, the percentage decline is (28 / 736) * 100 = 3.8%.
+
+Therefore, the percentage decline in recorded international slot and route authorities to $708 million from $736 million as of December 31, 2010 and 2009, respectively, is 3.8%."
+90,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08695652173913043,0.043478260869565216,0.5,0,0.05,0.05,1.0,1,0,0,"To find the average cost per locomotive, we need to divide the total equipment cost of the locomotives by the number of locomotives. 
+
+According to document [4], ""on October 15, 2009, we entered into a capital lease agreement for 44 locomotives with a total equipment cost of $ 100 million.""
+
+So, the total equipment cost is $100 million and the number of locomotives is 44. 
+
+Average cost per locomotive = Total equipment cost / Number of locomotives
+= $100,000,000 / 44
+= $2,272,727.27
+
+Therefore, the average cost per locomotive for the October 15, 2009 purchase by the railroad was approximately $2,272,727.27."
+91,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.25,1.0,0,0.42857142857142855,0.2857142857142857,0.6666666666666666,1,0,0,"To answer this question, we need to look at the context documents provided. 
+
+In document [0], we see a table with various columns representing dates from 12/11 to 12/16 and rows representing different entities, including ""fidelity national information services inc."". The values in the table seem to represent the performance of a $100 investment in each entity over time, with the reinvestment of all dividends.
+
+For ""fidelity national information services inc."", the value in 12/11 is ""100.00"" and in 12/16 is ""311.81"". This means that if $100 was invested in 12/11, it would be worth $311.81 in 12/16.
+
+To find the total return if $100,000 is invested in 12/11 and sold in 12/16, we can scale up the return on the $100 investment. 
+
+The return on a $100 investment is $311.81 - $100 = $211.81.
+
+The return on a $100,000 investment would be $100,000 * ($211.81 / $100) = $211,810.
+
+So, the total return if $100,000 is invested in Fidelity National Information Services in 12/11 and sold in 12/16 would be $211,810, and the total amount received would be $100,000 (initial investment) + $211,810 (return) = $311,810. 
+
+Therefore, the total return is $311,810."
+92,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.023809523809523808,0.023809523809523808,1.0,1,0.09090909090909091,0.09090909090909091,1.0,1,0,0,"To find the percentage growth of the 5-year cumulative total return for the 2018 peer group from 2016 to 2017, we need to look at the values provided in document [1]. 
+
+The values for the 2018 peer group are as follows:
+- 2016: 151.16
+- 2017: 177.26
+
+To calculate the percentage growth, we use the formula: ((New Value - Old Value) / Old Value) * 100.
+
+Plugging in the values: ((177.26 - 151.16) / 151.16) * 100.
+
+First, calculate the difference: 177.26 - 151.16 = 26.10.
+
+Then, divide by the old value: 26.10 / 151.16 ≈ 0.1727.
+
+Finally, multiply by 100 to get the percentage: 0.1727 * 100 ≈ 17.27%.
+
+Therefore, the percentage growth of the 5-year cumulative total return for the 2018 peer group from 2016 to 2017 was approximately 17.27%."
+93,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.045454545454545456,0.045454545454545456,1.0,1,0.03225806451612903,0.03225806451612903,1.0,1,0,0,"To find the ratio of the after-tax gains in 2004 compared to 2003, we need to look at the information provided in document [4]. 
+
+According to document [4], ""during 2004, we generated after tax gains of $ 16.5 million from the sale of six properties compared to $ 9.6 million from the sale of four properties in 2003.""
+
+So, the after-tax gain in 2004 was $16.5 million and in 2003 it was $9.6 million.
+
+To find the ratio, we divide the after-tax gain in 2004 by the after-tax gain in 2003: 
+$16.5 million / $9.6 million = 1.72
+
+Therefore, the ratio of the after-tax gains in 2004 compared to 2003 is 1.72."
+94,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.03571428571428571,0.03571428571428571,1.0,1,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"To find the percent of the total operating revenues associated with agricultural products in 2015, we need to follow these steps:
+
+1. Find the total operating revenues in 2015.
+2. Find the revenues from agricultural products in 2015.
+3. Calculate the percentage by dividing the revenues from agricultural products by the total operating revenues and then multiplying by 100.
+
+From the context documents, specifically document [0], we can find the necessary information:
+
+- Total operating revenues in 2015: ""$ 23988""
+- Agricultural products revenue in 2015: ""$ 3581""
+
+Now, let's calculate the percentage:
+
+Percentage = (Agricultural products revenue / Total operating revenues) * 100
+= ($3581 / $23988) * 100
+
+Calculating the above gives:
+
+Percentage ≈ 14.94%
+
+Therefore, in 2015, the percent of the total operating revenues associated with agricultural products was approximately 14.94%."
+95,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08695652173913043,0.08695652173913043,1.0,1,0.10810810810810811,0.02702702702702703,0.25,1,0,0,"To answer this question, we need to look at the information provided in the context documents related to the maximum performance pool for the specified period (between Jan 1, 2006, and Dec 31, 2007).
+
+From document [2], we find that ""on june a014, 2006, the compensation committee determined that under the terms of the a02005 outperformance plan, as of june a08, 2006, the performance period had accelerated and the maximum performance pool of $ 49250000, taking into account forfeitures, had been earned.""
+
+Additionally, from document [3], it is mentioned that ""in april 2007, the compensation committee determined that under the terms of the 2003 outperformance plan, as of march a031, 2007, the performance hurdles had been met and the maximum performance pool of $ 22825000, taking into account forfeitures, was established.""
+
+Therefore, to find the total amount the compensation committee put into the maximum performance pool between Jan 1, 2006, and Dec 31, 2007, we need to sum the amounts from these two plans: $49,250,000 (from the 2005 outperformance plan) and $22,825,000 (from the 2003 outperformance plan).
+
+The total amount is $49,250,000 + $22,825,000 = $72,075,000.
+
+So, the compensation committee put $72,075,000 into the maximum performance pool between Jan 1, 2006, and Dec 31, 2007."
+96,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.045454545454545456,0.045454545454545456,1.0,0,0.10526315789473684,0.0,0.0,0,0,0,"To answer this question, we need to find the information related to the total fair value of non-vested shares as of May 31, 2010. 
+
+In document [1], it is mentioned that ""as of May 31, 2010, there was $21.1 million of total unrecognized compensation cost related to unvested restricted stock awards that is expected to be recognized over a weighted average period of 2.5 years."" 
+
+The term ""unrecognized compensation cost"" refers to the cost of the restricted stock awards that have not yet been expensed, which is essentially the fair value of the non-vested shares. 
+
+Therefore, the total fair value of non-vested shares as of May 31, 2010, is $21.1 million."
+97,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.06666666666666667,0.1,1.0,1,0.07142857142857142,0.03571428571428571,0.5,1,0,0,"To answer this question, we need to look for information about the sale of Mastercard shares in the context documents.
+
+In document [0], it is mentioned that ""other items sale of mastercard shares in 2007, the company recorded a $"" but the amount is not specified.
+
+In document [3], it is mentioned that ""an after-tax gain of approximately $ 469 million ( $ 729 million pretax ) was recorded in citigroup 2019s 2007 financial results in the global cards business"" related to the sale of redecard shares, but this is not directly related to the sale of Mastercard shares.
+
+In document [4], it is mentioned that ""367 million after-tax gain ( $ 581 million pretax ) on the sale of approximately 4.9 million mastercard class b shares that had been received by citigroup as a part of the mastercard initial public offering completed in june 2006"".
+
+However, we are looking for the total pretax gains from 2006 to 2007. Since the sale of Mastercard shares in 2007 is not fully specified in the documents, we can only consider the pretax gain mentioned in document [4] which is $581 million. 
+
+The documents are missing some of the information required to answer the question, as the pretax gain for the sale of Mastercard shares in 2007 is not fully specified."
+98,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08,0.04,0.5,0,0.03571428571428571,0.03571428571428571,1.0,1,0,0,"To calculate the percentage change in collateral posted from 2012 to 2013, we need to first find the values of collateral posted for both years. 
+
+According to document [1], the collateral posted in 2012 was $24,296 million and in 2013 was $18,178 million.
+
+The percentage change can be calculated as: ((New Value - Old Value) / Old Value) * 100
+= ((18178 - 24296) / 24296) * 100
+= (-6258 / 24296) * 100
+= -25.75%
+
+Therefore, the collateral posted decreased by 25.75% from 2012 to 2013."
+99,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.043478260869565216,0.043478260869565216,1.0,0,0.045454545454545456,0.045454545454545456,1.0,1,0,0,"To find the total value of issuable long-term securities, we need to look at the information provided in the context documents. 
+
+In document [3], it is mentioned that Entergy Gulf States, Inc. filed an application with the FERC for authority to issue up to $200 million of short-term debt, up to $500 million of tax-exempt bonds, and up to $750 million of other long-term securities. 
+
+Since the question asks for the total value of issuable long-term securities, we should consider the $500 million of tax-exempt bonds and the $750 million of other long-term securities. 
+
+The total value of issuable long-term securities is $500 million + $750 million = $1,250 million.
+
+The answer is: $1,250 million."

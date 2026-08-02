@@ -1,0 +1,53 @@
+idx,domain,exp_id,generator,judge,our_relevance,our_utilization,our_completeness,our_adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence,dropped_keys,salvaged,answer
+0,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1666666666666666,0.0833333333333333,0.5,1,0.1111111111111111,0.1111111111111111,1.0,1,0,0,"To find the rate of return of an investment in Cadence Design Systems Inc. from 2010 to 2011, we need to look at the values provided for Cadence Design Systems Inc. in the context documents.
+
+According to the first context document, the value of Cadence Design Systems Inc. at the start of 2010 (1/2/2010) is 100.00, and at the end of 2010 (1/1/2011), the value is 137.90.
+
+The rate of return can be calculated as follows: ((End Value - Start Value) / Start Value) * 100.
+
+So, the rate of return from 2010 to 2011 for Cadence Design Systems Inc. is: ((137.90 - 100.00) / 100.00) * 100 = 37.9%.
+
+Therefore, the rate of return in Cadence Design Systems Inc. of an investment from 2010 to 2011 is 37.9%."
+1,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.037037037037037,0.037037037037037,1.0,1,0.04,0.04,1.0,1,0,0,"To find the ratio of the total American personnel to US Airways personnel, we need to look at the numbers provided in document [1]. 
+
+The total number of American personnel is 61600, and the total number of US Airways personnel is 32800.
+
+So, the ratio of the total American personnel to US Airways personnel is 61600:32800, which can be simplified by dividing both numbers by their greatest common divisor, 8, to get 7700:4100.
+
+To express this as a ratio, we can divide the number of American personnel by the number of US Airways personnel: 61600 / 32800 = 1.878 (approximately).
+
+Therefore, the ratio of the total American personnel to US Airways personnel is approximately 1.878:1 or 1.88:1."
+2,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.28,0.2,0.7142857142857143,0,0.1,0.05,0.5,1,0,0,"To determine the portion of total assets acquired of Anios that are intangible assets, we need to analyze the information provided in the context documents.
+
+From document [3], we know that the tangible assets acquired are primarily comprised of:
+- Accounts receivable of $64.8 million
+- Property, plant, and equipment of $24.7 million
+- Inventory of $29.1 million
+
+The total value of tangible assets is $64.8 + $24.7 + $29.1 = $118.6 million.
+
+The document [3] also mentions that liabilities primarily consist of deferred tax liabilities of $102.3 million and current liabilities of $62.5 million, but it does not directly provide the total value of intangible assets. However, it does mention customer relationships, trademarks, and other technology being amortized over certain years, indicating the presence of intangible assets.
+
+Furthermore, document [3] states that goodwill of $511.7 million arising from the acquisition consists largely of the synergies and economies of scale expected through adding complementary geographies and innovative products to the company's healthcare portfolio. Goodwill is also an intangible asset.
+
+To find the total value of intangible assets, we need to consider the goodwill and other intangible assets (customer relationships, trademarks, and other technology). However, the exact value of these other intangible assets is not provided directly.
+
+Given the information, we can calculate the total purchase price of Anios, which was $798.3 million (from docu"
+3,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.4,0.3,0.75,0,0.1111111111111111,0.1111111111111111,1.0,0,0,0,"To answer the question, we need to look at the information provided in the context documents. 
+
+In document [0], we have a table with various financial data, including the performance of The Goldman Sachs Group Inc. common stock over several years. The relevant data for The Goldman Sachs Group Inc. is: ""$ 100.00"", ""$ 224.98"", ""$ 226.19"", ""$ 123.05"", ""$ 176.42"", ""$ 248.36"". 
+
+These values represent the total return on an initial investment of $100 in The Goldman Sachs Group Inc. common stock at the end of each year from 2008 to 2013.
+
+The five-year total return can be calculated by looking at the initial investment in 2008 and the final value in 2013. The initial investment is $100, and the final value is $248.36.
+
+Therefore, the five-year total return on The Goldman Sachs Group Inc. is $248.36 - $100 = $148.36, or 148.36% of the initial investment.
+
+However, the question asks for the ""five year total return"", which is typically expressed as a percentage or a multiple of the initial investment. In this case, the five-year total return is 248.36% of the initial investment, or 2.4836 times the initial investment.
+
+So, the five-year total return on The Goldman Sachs Group Inc. is 148.36% or 2.4836 times the initial investment, but since the table in document [0] already shows the total return after 5 years ($248.36), we can say the total return is $248.36 on an initial investment of $100. 
+
+The best answer is $248.36 on an initial investment of $100, or 2.4836 times the initial i"
+4,finance,JS-FIN-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1739130434782608,0.0434782608695652,0.25,1,0.05,0.05,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+Although document [4] mentions ""the changes in the carrying amount of goodwill for each of the company's reportable segments"", it does not provide the actual values for 2016 and 2017, which are necessary to calculate the percentage change. Without this information, it is not possible to determine the percentage change in the total carrying amount of goodwill from 2016 to 2017."

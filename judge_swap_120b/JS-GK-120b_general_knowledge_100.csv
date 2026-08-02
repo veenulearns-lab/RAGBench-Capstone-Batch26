@@ -1,0 +1,640 @@
+idx,domain,exp_id,generator,judge,our_relevance,our_utilization,our_completeness,our_adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence,dropped_keys,salvaged,answer
+0,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1724137931034483,0.10344827586206896,0.6,0,0.17857142857142858,0.10714285714285714,0.6,0,0,0,"To answer this question, we need to identify the key figure in the documentary film who was drafted 18th overall pick for the New Jersey Nets. 
+
+According to document [0], the documentary film features several key figures, including Jason Collins. Document [1] states that Jason Collins played college basketball for Stanford University before being drafted 18th overall pick in the 2001 NBA draft by the Houston Rockets, and later played for the New Jersey Nets. 
+
+However, the question asks which university the key figure paid for. The documents do not mention that Jason Collins paid for Stanford University. Instead, they state that he played college basketball for Stanford University. 
+
+The documents are missing some of the information required to answer the question."
+1,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15384615384615385,0.15384615384615385,1.0,1,0.18181818181818182,0.18181818181818182,1.0,1,0,0,"To answer this question, we need to examine the information provided in the context documents about Léopold Eyharts and Ulrich Walter.
+
+According to document [0], Léopold Eyharts is a Brigadier General in the French Air Force. 
+
+However, document [1] describes Ulrich Walter as a German physicist/engineer and a former DFVLR astronaut, but it does not mention him being a General in the French Air Force. 
+
+Therefore, based on the information provided, we can conclude that only Léopold Eyharts is mentioned as a General in the French Air Force, while there is no such information provided about Ulrich Walter."
+2,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.20833333333333334,0.6666666666666666,1,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents about the number of members in each group.
+
+For DC Talk, document [0] states that the group was formed by ""Toby McKeehan, Michael Tait, and Kevin Max Smith"", which indicates that DC Talk has 3 members.
+
+For Manchester Orchestra, document [1] lists the current members as ""rhythm guitarist-singer-songwriter Andy Hull, lead guitarist Robert McDowell, bassist Andy Prince and drummer Tim Very"", which indicates that Manchester Orchestra has 4 members. Additionally, the document mentions former members, but we are only considering the current number of members.
+
+Since 4 is greater than 3, Manchester Orchestra has the most members."
+3,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.25,1.0,1,0.2727272727272727,0.18181818181818182,0.6666666666666666,1,0,0,"To answer the question, I will look at the information provided in the context documents. According to document [0], Eddie Jemison had a role in the television series ""IZombie"". To find the premiere date of ""IZombie"", I will look at documents [1] and [2], which both state that the series premiered on March 17, 2015.
+
+Therefore, the answer to the question is: March 17, 2015."
+4,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.23076923076923078,0.23076923076923078,1.0,1,0.3076923076923077,0.23076923076923078,0.75,1,0,0,"To answer this question, we need to identify the band formed in 2015 by JYP Entertainment through the reality show ""Sixteen"" and then find information about the reissue of their third album.
+
+According to document [0], the band formed in 2015 by JYP Entertainment through the reality show ""Sixteen"" is Twice, a South Korean girl group.
+
+Next, we need to find information about the reissue of Twice's third album. Document [1] mentions that Twicecoaster: Lane 2 is the reissue of Twice's third extended play (EP). It contains 13 tracks, including the lead single, ""Knock Knock"".
+
+Therefore, the answer to the question is that there are 13 tracks on the reissue of Twice's third album, which is Twicecoaster: Lane 2."
+5,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.06666666666666667,0.06666666666666667,1.0,0,0.07142857142857142,0.07142857142857142,1.0,1,0,0,"According to document [0], income tax in Australia is levied upon three sources of income for individual taxpayers: 
+
+1. ""personal earnings"" (such as salary and wages)
+2. ""business income""
+3. ""capital gains"".
+
+These are the three categories under which income gets levied under the Parliament of Australia's tax code."
+6,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15,0.15,1.0,0,0.2222222222222222,0.05555555555555555,0.25,1,0,0,"To answer this question, we need to identify the author of ""Portraits and Prayers"" and then find information about the city they chose to live in after moving to France.
+
+From document [0], we know that Gertrude Stein published her collection ""Portraits and Prayers"", which included the poem ""If I Told Him : A Completed Portrait of Picasso”. 
+
+Then, from document [1], we find that Gertrude Stein moved to Paris in 1903, and made France her home for the remainder of her life. It is stated that ""She hosted a Paris salon..."". This implies that the city she chose to live in after moving to France was Paris. 
+
+Therefore, the answer to the question is Paris."
+7,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,0,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, I will examine the information provided in the context documents.
+
+According to document [0], Olivier Assayas is a ""French film director, screenwriter and film critic."" This indicates that Olivier Assayas is not an American film director, but rather a French one.
+
+Document [1] states that Frank William George Lloyd was an ""American film director, scriptwriter and producer."" This confirms that Frank Lloyd is indeed an American film director.
+
+Therefore, based on the information provided in the documents, the answer to the question is ""No"", both Frank Lloyd and Olivier Assayas are not American film directors. Only Frank Lloyd is American, while Olivier Assayas is French."
+8,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.08333333333333333,0.125,1.0,1,0.2,0.1,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [0], Alcatraz East was created and built by attorney John Morgan, and his Chief Operating Officer, Janine Vaccarello. 
+
+Then, we look at document [1], which provides information about John Morgan. It states that John Morgan was born on March 31, 1956.
+
+Therefore, based on the information provided in the documents, the founder of Alcatraz East who was born on March 31, 1956, is John Morgan."
+9,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.26666666666666666,0.13333333333333333,0.5,0,0.13333333333333333,0.13333333333333333,1.0,1,0,0,"To answer this question, we need to compare the publication dates of The Chronicle of Philanthropy and Skeptic magazine. 
+
+According to document [1], The Chronicle of Philanthropy was founded in 1988. 
+
+According to document [0], Skeptic magazine was first published in the spring of 1992.
+
+Since 1988 is earlier than 1992, The Chronicle of Philanthropy was first published earlier than Skeptic magazine."
+10,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15,0.1,0.6666666666666666,0,0.05555555555555555,0.05555555555555555,1.0,1,0,0,"To answer this question, we need to identify the Navy that had Gilliam-class attack transports and then find the number of personnel it has on active duty.
+
+From document [1], we know that the USS ""Carlisle"" (APA-69) was a ""Gilliam""-class attack transport that served with the US Navy during World War II.
+
+Then, from document [0], we find that the U.S. Navy has 322,421 personnel on active duty.
+
+Therefore, the Navy that had Gilliam-class attack transports, which is the US Navy, has 322,421 personnel on active duty."
+11,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2727272727272727,0.2727272727272727,1.0,0,0.2727272727272727,0.2727272727272727,1.0,1,0,0,"To answer this question, I will examine the information provided in the context documents.
+
+According to document [0], the Barak, also known as the Bosnian Coarse-haired Hound, is a scenthound, originally used to hunt large game.
+
+Document [2] states that the Billy is a large scenthound originating from central western France.
+
+Since both the Barak (or Bosnian Coarse-haired Hound) and the Billy are described as scenthounds in the documents, I can conclude that yes, both Billy and Barak are breeds of scenthound."
+12,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.2,1.0,0,0.2,0.2,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [2], the countries that opposed the Central Powers in the First World War are referred to as the ""Allies of World War I, or Entente Powers"". 
+
+Document [1] mentions that there were conferences of the socialist parties of the Entente or Allied powers. 
+
+Therefore, based on the information provided in the documents, socialist conferences were held with countries that were part of the Entente or Allied powers, which opposed the Central Powers in the First World War."
+13,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.125,1.0,1,0.23076923076923078,0.07692307692307693,0.3333333333333333,1,0,0,"To answer this question, we need to find the unincorporated town along the Amargosa River that is near the Sarcobatus Flat. 
+
+According to document [0], Beatty is an unincorporated town along the Amargosa River. 
+Document [2] states that Sarcobatus Flat is a closed valley in western Nye County, Nevada between Goldfield and Beatty. 
+
+Therefore, based on the information provided in the documents, Beatty is the unincorporated town along the Amargosa River that is near the Sarcobatus Flat."
+14,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.25,1.0,0,0.25,0.16666666666666666,0.6666666666666666,1,0,0,"To answer this question, I will look at the information provided in the context documents. 
+
+In document [1], it is mentioned that the 2009 FA Community Shield was contested between Manchester United and Chelsea. The document states that the goals for Manchester United came from Nani and Wayne Rooney. 
+
+In document [3], it is mentioned that Nani is a Portuguese professional footballer who plays as a winger for Manchester United and the Portugal national team.
+
+Therefore, based on the information provided in the documents, the Manchester United and Portuguese national winger who scored a goal in the 2009 FA Community Shield is Nani."
+15,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.125,1.0,1,0.22727272727272727,0.045454545454545456,0.2,1,0,0,"To answer this question, I will refer to document [1], which describes the Northeast megalopolis. According to document [1], the Northeast megalopolis ""includes the major cities of Boston, Providence, Hartford, New York City, Philadelphia, Wilmington, Baltimore, and Washington, D.C., along with their metropolitan areas and suburbs as well as many smaller urban centers."" 
+
+Since Manchester, New Hampshire is mentioned in document [0] as being ""near the northern end of the Northeast megalopolis"", we can conclude that Manchester is part of this region. 
+
+Therefore, the other major cities that are part of the Northeast megalopolis, along with Manchester, New Hampshire, are Boston, Providence, Hartford, New York City, Philadelphia, Wilmington, Baltimore, and Washington, D.C.."
+16,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11538461538461539,0.11538461538461539,1.0,1,0.11538461538461539,0.07692307692307693,0.6666666666666666,1,0,0,"To answer this question, I will look at the context documents provided. 
+
+In document [0], it is stated that ""Forevermore is an American Christian metal band from Indianapolis, Indiana, formed in 2009. They are signed to Solid State Records and 'Telos' is their first work on the label."" 
+
+This information tells me that the band Forevermore, who released the album ""Telos"", formed in Indianapolis, Indiana. 
+
+Therefore, the answer to the question is: Indianapolis."
+17,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.24,0.2,0.8333333333333334,1,0.25,0.20833333333333334,0.8333333333333334,0,0,0,"To answer this question, we need to compare the sales distances of the Interact Home Computer and the Sord M5.
+
+From document [0], we know that the Sord M5 was sold in several countries, including Japan, the United Kingdom, Czechoslovakia, and South Korea. This indicates that the Sord M5 had a relatively wide geographical reach in terms of sales.
+
+From document [1], we know that the Interact Home Computer was primarily sold in the United States, with most sales being made through mail order houses or in-store purchases in the Detroit, MI area and Ann Arbor. There is no mention of significant international sales.
+
+Based on this information, it appears that the Sord M5 spanned farther distances regarding sales, as it was sold in multiple countries across different continents, whereas the Interact Home Computer was mostly sold within the United States. 
+
+Therefore, the answer is the Sord M5."
+18,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.1111111111111111,0.6666666666666666,0,0.16666666666666666,0.1111111111111111,0.6666666666666666,1,0,0,"To answer this question, I will use the information provided in the context documents. 
+
+According to document [0], Artūras Javtokas has a brother named Robertas Javtokas, who is a member of the Lithuania national team. 
+
+Document [1] confirms that Robertas Javtokas has been a member of the senior men's Lithuanian national team since 2004.
+
+Therefore, the national team that the brother of Arturas Javtokas has been a member of since 2004 is the Lithuanian national team."
+19,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.125,0.125,1.0,0,0.15384615384615385,0.15384615384615385,1.0,1,0,0,"To answer this question, I will examine the context documents provided. 
+
+From document [0], I can see that Age of Chance is a British alternative rock-dance crossover band. 
+
+From document [2], I can see that Vector is a rock band formed in Sacramento, California.
+
+By comparing the information in these two documents, I can conclude that both Age of Chance and Vector share in common that they are both rock bands. 
+
+Therefore, the answer to the question is that Age of Chance and Vector are both rock bands."
+20,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.14285714285714285,0.14285714285714285,1.0,0,0.5,0.14285714285714285,0.2857142857142857,0,0,0,"To answer this question, we need to look at the information provided in the context documents. According to document [0], ""On Tour Forever"" is a live EP album by Blues Traveler. Document [2] mentions that Blues Traveler is known for the ""extensive use of segues in their live performances"". 
+
+Since ""On Tour Forever"" is a live album, it is likely that it would feature the band's live performance trademark. Therefore, based on the information provided, the ""On Tour Forever"" album gave Blues Traveler the opportunity to display their musical trademark of ""extensive use of segues"" in their live performances."
+21,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.3333333333333333,1.0,1,0.25,0.25,1.0,1,0,0,"To answer this question, I need to find the year when Philip Pullman's book set in a parallel universe featuring Lyra Belacqua was put into audio. 
+
+According to document [0], the book is called ""Northern Lights"" and it features Lyra Belacqua. Document [2] mentions that ""Northern Lights"" is a book by Philip Pullman and that the BBC and Cavalcade audiobook was first recorded in 2002.
+
+Therefore, the answer to the question is that Philip Pullman's book set in a parallel universe featuring Lyra Belacqua, ""Northern Lights"", was put into audio in 2002."
+22,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1111111111111111,0.1111111111111111,1.0,1,0.3333333333333333,0.06666666666666667,0.2,1,0,0,"To answer this question, we need to identify the founder of the Ali Akbar College of Music and then find out what musical instrument he was known for his virtuosity in.
+
+From document [1], we know that the Ali Akbar College of Music was founded by Indian musician Ali Akbar Khan. 
+
+Now, we need to find out what musical instrument Ali Akbar Khan was known for his virtuosity in. Document [0] states that Ali Akbar Khan ""was a Hindustani classical musician of the Maihar gharana, known for his virtuosity in playing the sarod.""
+
+Therefore, the founder of the Ali Akbar College of Music, Ali Akbar Khan, was known for his virtuosity in playing the sarod."
+23,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15789473684210525,0.15789473684210525,1.0,1,0.2222222222222222,0.1111111111111111,0.5,1,0,0,"To answer this question, we need to identify the mother of Karan Kapoor and then find out which film she starred in in 1970.
+
+According to document [1], Karan Kapoor's mother is Jennifer Kendal, also known as Jennifer Kapoor.
+
+Document [0] mentions that Jennifer Kapoor starred in the film ""Bombay Talkie"" in 1970.
+
+Therefore, the answer to the question is: ""Bombay Talkie""."
+24,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.36363636363636365,0.36363636363636365,1.0,0,0.3333333333333333,0.2222222222222222,0.6666666666666666,1,0,0,"To answer this question, I will look at the information provided in the context documents. 
+
+According to document [0], Frank Borzage is an American film director and actor, most remembered for directing ""7th Heaven"" (1927). 
+
+Additionally, document [1] also states that ""7th Heaven"" is a 1927 American silent romantic drama directed by Frank Borzage.
+
+There is no information in the documents that suggests Jerry Belson was involved in the direction of ""7th Heaven"" (1927). Document [3] only mentions that Jerry Belson was a writer, director, and producer of Hollywood films, but it does not provide any information about his involvement in ""7th Heaven"".
+
+Therefore, based on the information provided in the documents, the director of the Hollywood film ""7th Heaven"" (1927) is Frank Borzage."
+25,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.5454545454545454,0.45454545454545453,0.8333333333333334,1,0.6,0.4,0.6666666666666666,0,0,0,"To answer this question, we need to look at the information provided in the context documents about the combat history of both planes.
+
+The Northrop F-15 Reporter is mentioned in document [0] as providing ""vital"" aerial photographs of the Korean Peninsula in 1950, when North Korea invaded the south. This implies that the F-15 Reporter was used in a combat zone, but it does not explicitly state that it engaged in combat, as it is described as an ""unarmed photographic reconnaissance aircraft"".
+
+The Northrop P-61 Black Widow, on the other hand, is described in document [1] as a ""night fighter"" with a crew of three and armed with cannons and machine guns. This suggests that the P-61 Black Widow was designed for combat. However, the document does not provide information on the extent of its combat history.
+
+Given the information provided, we cannot definitively conclude which plane has seen more combat. The P-61 Black Widow was designed for combat and had the capability to engage in combat, but we do not have information on its actual combat history. The F-15 Reporter, while used in a combat zone, was unarmed and its role was reconnaissance.
+
+The documents are missing some of the information required to answer the question."
+26,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.14285714285714285,0.14285714285714285,1.0,1,0.21428571428571427,0.14285714285714285,0.6666666666666666,1,0,0,"To answer this question, we need to identify the 2014 NBA Rookie of the Year and then find out to which team they were traded in October 2016.
+
+According to document [1], Michael Carter-Williams was named NBA Rookie of the Year in 2014.
+
+The same document [1] also mentions that he has played for the Milwaukee Bucks and Chicago Bulls. Document [0] provides more specific information about the trade: ""The Bulls traded Tony Snell to the Milwaukee Bucks for Michael Carter-Williams on October 17, 2016.""
+
+Therefore, the 2014 NBA Rookie of the Year, Michael Carter-Williams, was traded from the Milwaukee Bucks to the Chicago Bulls in October 2016."
+27,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.25,1.0,0,0.3333333333333333,0.3333333333333333,1.0,1,0,0,"To answer this question, we need to find the connection between the Grammy winner for Song of the Year, the 1971 album by the Carpenters, and the Academy Award for Best Original Song.
+
+From document [0], we know that the 1971 album by the Carpenters is self-titled, ""Carpenters"", and it features a song written by Roger Nichols and Paul Williams.
+
+From document [1], we know that Paul Williams is a songwriter who wrote many popular songs, including some for the Carpenters, and he won a Grammy for Song of the Year and an Academy Award for Best Original Song for the song ""Evergreen"", which was the love theme from the movie ""A Star Is Born"".
+
+Therefore, the answer to the question is that Paul Williams, who is associated with the 1971 album by the Carpenters, won an Academy Award for Best Original Song for the song ""Evergreen""."
+28,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.05555555555555555,0.05555555555555555,1.0,0,0.1111111111111111,0.05555555555555555,0.5,1,0,0,"To answer this question, I will refer to the information provided in the context documents. According to document [0], ""With its assignment to the USS Essex (CV-9) and 'Air Group 4', VMF-213 along with VMF-124 was one of the first two Marine squadrons to augment carrier air groups during World War II.""
+
+Therefore, the VMF-213 Marine Fighting Squadron was assigned to the USS Essex (CV-9) aircraft carrier during World War II."
+29,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15789473684210525,0.21052631578947367,1.0,0,0.21052631578947367,0.05263157894736842,0.25,1,0,0,"To answer this question, I need to identify the album released on October 22, 2012, and then find the information about the tour for that album.
+
+According to document [0], the album released on October 22, 2012, is ""Red"". The document also mentions that ""Swift completed The Red Tour in support of the album on June 12, 2014"", but it does not specify when the tour began.
+
+However, document [1] provides the information about The Red Tour, stating that ""the tour began on March 13, 2013 in Omaha, Nebraska"".
+
+Therefore, the tour for the album ""Red"", which was released on October 22, 2012, began on March 13, 2013."
+30,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1,0.1,1.0,1,0.15789473684210525,0.10526315789473684,0.6666666666666666,1,0,0,"To answer this question, we need to look at the information provided in the context documents. According to document [0], Stewart Nozette ""is now serving time at the Federal Correctional Institution, Terre Haute."" Then, in document [1], it is stated that the Federal Correctional Institution, Terre Haute ""is operated by the Federal Bureau of Prisons, a division of the United States Department of Justice.""
+
+Therefore, based on the information provided in the documents, Stewart Nozette is currently serving time in a correctional facility operated by the Federal Bureau of Prisons, which is a division of the United States Department of Justice."
+31,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11764705882352941,0.11764705882352941,1.0,0,0.23529411764705882,0.11764705882352941,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [0], Dianne Hiles is ""currently the Australian Greens candidate for the federal Division of Sydney."" 
+
+Document [3] provides information about the Division of Sydney, stating that it ""was proclaimed at the redistribution of 21 November 1968"". 
+
+Therefore, based on the information provided in the documents, Dianne Hiles is the current Australian Greens candidate for the Division of Sydney, which was proclaimed in 1968. 
+
+So, the answer to the question is: the Division of Sydney."
+32,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15789473684210525,0.15789473684210525,1.0,1,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, we need to find the city that is the most populous in Australia and Oceania, and also the birthplace of a Paralympic athlete who won silver and bronze medals at the 1992 Barcelona Paralympics.
+
+From document [1], we know that Sydney is the most populous city in Australia and Oceania.
+
+From document [0], we know that Marsha Green, a silver and bronze medalist from the 1992 Barcelona Paralympics, was born in Sydney.
+
+Therefore, the city that is the most populous in Australia and Oceania and the birthplace of a silver and bronze medalist from the 1992 Barcelona Paralympics is Sydney."
+33,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.16666666666666666,0.5,1,0.4,0.3,0.75,1,0,0,"To answer this question, we need to identify the honoree of the Black and White Ball and then find the title of their memoir. 
+
+According to document [0], the Black and White Ball was held in honor of Katharine Graham, the publisher of ""The Washington Post"". 
+
+Document [2] provides information about Katharine Graham, including the fact that she wrote a memoir. The title of this memoir is given as ""Personal History"".
+
+Therefore, the title of the memoir written by the honoree of the Black and White Ball is ""Personal History""."
+34,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,1,0.18181818181818182,0.18181818181818182,1.0,1,0,0,"To answer this question, we need to find out in which film Kwon Yu-ri made her film debut and then determine the sport featured in that film.
+
+According to document [0], Kwon Yu-ri made her film debut in ""No Breathing"" in 2013.
+
+Document [1] provides information about the film ""No Breathing"". It states that ""No Breathing"" is a 2013 South Korean sports film set in the world of competitive swimming.
+
+Therefore, the sport featured in the film in which Kwon Yu-ri made her film debut is competitive swimming."
+35,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.09523809523809523,1.0,1,0.1,0.1,1.0,1,0,0,"To answer this question, we need to compare the birth dates of Dame Zara Kate Bate and Harold Edward Holt.
+
+According to document [0], Dame Zara Kate Bate was born on ""10 March 1909"".
+
+According to document [1], Harold Edward Holt was born on ""5 August 1908"".
+
+Since 1908 comes before 1909, we can conclude that Harold Edward Holt was born first.
+
+Therefore, the answer to the question is: Harold Edward Holt was born first."
+36,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1,0.1,1.0,0,0.17647058823529413,0.17647058823529413,1.0,1,0,0,"To answer this question, we need to look at the production information for both films. 
+
+According to document [0], The Little Mermaid was ""produced by Walt Disney Feature Animation and released by Walt Disney Pictures."" 
+
+Document [2] states that The Strongest Man in the World is a ""1975 Disney film"". 
+
+Since both films are associated with Disney, and Walt Disney Pictures is a part of The Walt Disney Company, we can conclude that the company that produced both The Little Mermaid and The Strongest Man in the World is Walt Disney Pictures, or more broadly, The Walt Disney Company."
+37,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2727272727272727,0.2727272727272727,1.0,0,0.1111111111111111,0.1111111111111111,1.0,1,0,0,"According to document [0], Finity's End was written by the American science fiction and fantasy author C. J. Cherryh. This is further confirmed by document [3], which mentions C. J. Cherryh as an American writer of speculative fiction, and provides more information about her life and works. Therefore, the answer to the question is C. J. Cherryh."
+38,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.08333333333333333,0.3333333333333333,1,0.08333333333333333,0.0,0.0,0,0,0,"To answer this question, we need to identify the conference represented by the Michigan State Spartans and then determine the number of members in that conference in 1993.
+
+According to document [1], the Michigan State Spartans represent Michigan State University in the Big Ten Conference (Big Ten).
+
+However, document [2] provides information about the Big Ten Conference, but it mentions that ""as of 2016"", the conference consists of 14 members. This does not give us the information about the number of members in 1993.
+
+Since the documents do not provide enough information to determine the exact number of members in the Big Ten Conference in 1993, the answer would be:
+
+The documents are missing some of the information required to answer the question."
+39,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.14285714285714285,1.0,1,0.09523809523809523,0.09523809523809523,1.0,1,0,0,"To answer this question, I will look at the context documents provided. According to document [0], ""The gameshow featured three children contestants entering a haunted castle in Scotland to assist Professor MacAbre in hunting ghosts... The show was filmed in Fyvie Castle."" 
+
+Then, I will look at document [1] to find the location of Fyvie Castle. It states that ""Fyvie Castle is a castle in the village of Fyvie, near Turriff in Aberdeenshire, Scotland."" 
+
+Therefore, based on the information provided in the documents, the castle where ""Spook Squad"" was filmed, Fyvie Castle, is located in Aberdeenshire, Scotland."
+40,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.18181818181818182,0.36363636363636365,1.0,1,0.18181818181818182,0.09090909090909091,0.5,0,0,0,"To answer this question, we need to look at the information provided in the context documents.
+
+From document [0], we know that ""The Australian Women's Weekly"" is a monthly women's magazine.
+
+From document [1], we know that Ainslee's Magazine was published from 1897 to December 1926, but it does not specify the frequency of publication. It only mentions that it was originally published as a humor magazine and was later renamed, but it does not mention whether it was a monthly magazine or not.
+
+Since document [1] does not provide information about the frequency of publication of Ainslee's Magazine, we cannot confirm whether Ainslee's Magazine is a monthly magazine or not.
+
+Therefore, based on the information provided in the documents, we can confirm that The Australian Women's Weekly is a monthly magazine, but we cannot confirm the same for Ainslee's Magazine. The documents are missing some of the information required to answer the question fully."
+41,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.2,1.0,1,0.3,0.2,0.6666666666666666,1,0,0,"To answer this question, we need to find the city where the Olympic Games took place that Willi Meurer competed in. According to document [0], Willi Meurer competed in the individual and team road race events at the 1936 Summer Olympics. Document [2] states that the 1936 Summer Olympics were held in Berlin, Germany. 
+
+Therefore, the city where the Olympic Games were held in which Willi Meurer competed in the individual and team road race events is Berlin, Germany."
+42,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13333333333333333,0.13333333333333333,1.0,0,0.21428571428571427,0.14285714285714285,0.6666666666666666,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [0], Philip Le Despencer's brother, Hugh Despenser, the Younger, was a favorite of King Edward II. 
+
+Document [1] provides additional information about King Edward II, stating that he was deposed in January 1327.
+
+Therefore, combining the information from documents [0] and [1], we can conclude that Philip Despencer's brother, Hugh Despenser, the Younger, was a favorite of King Edward II, who was deposed in January 1327."
+43,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.14285714285714285,0.09523809523809523,0.6666666666666666,0,0.1,0.1,1.0,1,0,0,"To answer this question, we need to identify the plane that shot down Jameel Sayhood and then determine its manufacturer.
+
+According to document [0], Captain Jameel Sayhood was shot down by USAF Captain Craig Underhill and Captain Cesar Rodriguez with their F-15Cs.
+
+The F-15 is mentioned in document [3], which states that it is an American twin-engine, all-weather tactical fighter aircraft designed by McDonnell Douglas (now Boeing).
+
+Therefore, the manufacturer of the plane that shot down Jameel Sayhood is McDonnell Douglas (now Boeing)."
+44,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09090909090909091,0.09090909090909091,1.0,0,0.09523809523809523,0.09523809523809523,1.0,1,0,0,"To answer this question, we need to find the style of the building located on the East Side of Midtown Manhattan and also determine if Robert Von Ancken appraised it.
+
+From document [0], we know that ""The Chrysler Building is an Art Deco-style skyscraper located on the East Side of Midtown Manhattan..."". This tells us the style of the building.
+
+From document [1], we know that Robert Von Ancken ""has appraised more than 8,000 properties in and around New York City, including ... the Chrysler Building..."". This tells us that Robert Von Ancken appraised the Chrysler Building.
+
+Therefore, the style of the building located on the East Side of Midtown Manhattan that Robert Von Ancken appraised is Art Deco."
+45,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.4,0.4,1.0,1,0.3,0.3,1.0,1,0,0,"To answer this question, we need to examine the context documents provided. 
+
+Document [0] mentions Kyle Patrick as the lead singer of The Click Five, but it does not mention Jeff Martin in relation to The Click Five. 
+
+Document [1] talks about a song by The Click Five but does not provide information about the band members beyond what is already stated in document [0].
+
+Documents [2] and [3] provide information about Jeff Martin, mentioning his involvement with The Tea Party and Jeff Martin 777, but they do not mention The Click Five.
+
+Since none of the documents link Jeff Martin to The Click Five, and document [0] specifically mentions Kyle Patrick as the lead singer of The Click Five without mentioning Jeff Martin, we can conclude that there is no information provided in the documents that suggests Jeff Martin was in The Click Five. Kyle Patrick, however, is confirmed to be associated with The Click Five according to document [0].
+
+Therefore, based on the information provided in the documents, the answer to the question is no, there is no indication that Jeff Martin and Kyle Patrick were both in The Click Five."
+46,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15384615384615385,0.15384615384615385,1.0,1,0.23076923076923078,0.15384615384615385,0.6666666666666666,1,0,0,"To answer this question, we need to identify the father of Benthesikyme and then find information about where he was venerated as a chief deity.
+
+According to document [0], the father of Benthesikyme is Poseidon, as it states: ""Benthesikyme... was a daughter of Poseidon and Amphitrite..."".
+
+Then, we look for information about Poseidon being venerated as a chief deity. Document [1] provides this information, stating: ""In pre-Olympian Bronze Age Greece, he [Poseidon] was venerated as a chief deity at Pylos and Thebes.""
+
+Therefore, the answer to the question is: Pylos and Thebes."
+47,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2222222222222222,0.2222222222222222,1.0,0,0.4444444444444444,0.2222222222222222,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [0], Uyoku dantai are Japanese ultranationalist far-right groups. 
+
+Document [3] describes far-right politics as having more extreme nationalist, and nativist ideologies, as well as authoritarian tendencies.
+
+Since Uyoku dantai are described as far-right groups, we can infer that they fall under the tendencies described in document [3], which are more extreme nationalist, and nativist ideologies, as well as authoritarian tendencies. 
+
+Therefore, a group like Uyoku dantai falls under extreme nationalist, nativist, and authoritarian tendencies."
+48,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13333333333333333,0.13333333333333333,1.0,0,0.13333333333333333,0.13333333333333333,1.0,1,0,0,"To answer this question, I will refer to the context documents provided. 
+
+According to document [0], the 2016 Blancpain GT Series Sprint Cup followed on from the demise of the SRO Group's FIA GT1 World Championship. 
+
+Document [3] provides information about the FIA GT1 World Championship, stating that it was held from 2010 to 2012.
+
+Therefore, the auto racing series that was followed on by the 2016 Blancpain GT Series Sprint Cup was held from 2010 to 2012."
+49,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3076923076923077,0.23076923076923078,0.75,1,0.3076923076923077,0.07692307692307693,0.25,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+First, we need to identify the Irish actor and writer who stars in the film ""About Time"". According to document [0], the film ""About Time"" stars Domhnall Gleeson, among others. 
+
+Next, we need to find out where Domhnall Gleeson received his Bachelor of Arts degree. Document [1] provides this information, stating that Domhnall Gleeson ""received a Bachelor of Arts in Media Arts from Dublin Institute of Technology.""
+
+Therefore, the answer to the question is: Dublin Institute of Technology."
+50,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.16666666666666666,0.6666666666666666,1,0.3333333333333333,0.1111111111111111,0.3333333333333333,1,0,0,"To answer this question, I will look at the context documents provided. According to document [0], Frank Sindone helped plot the 1980 murder of family mob boss Angelo Bruno. Document [1] provides more information about Angelo Bruno, stating that he was known as ""the Gentle Don"" or ""the Docile Don"" due to his preference for conciliation over violence. 
+
+Therefore, the nickname of the family mob boss that Frank Sindone helped plot to murder is ""the Gentle Don""."
+51,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13333333333333333,0.13333333333333333,1.0,0,0.4117647058823529,0.23529411764705882,0.5714285714285714,1,0,0,"To answer this question, I will refer to the context documents provided. 
+
+In document [0], it is mentioned that ""Anabolic steroids, also known more properly as anabolic–androgenic steroids (AAS), are steroidal androgens..."". This establishes that AAS stands for anabolic–androgenic steroids.
+
+Then, in document [1], it is stated that ""Anabolic steroids are used for muscle-building and strength gain for cosmetic reasons as well as for performance-enhancement in athletics and bodybuilding."" Since AAS is another term for anabolic steroids, it can be inferred that AAS is commonly used in bodybuilding.
+
+Therefore, the answer to the question is: Anabolic–androgenic steroids (AAS) are commonly used in bodybuilding."
+52,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.1,0.5,0,0.16666666666666666,0.1111111111111111,0.6666666666666666,1,0,0,"The documents do not explicitly state that the City of Boston gets their Christmas tree from Ainslie Glen, Nova Scotia. However, document [0] mentions that ""In 2016, a tree on Crown Lands was chosen to become the Boston Christmas Tree"" in Ainslie Glen, and document [1] states that ""since 1971 it has been given to the people of Boston by the people of Nova Scotia in thanks for their assistance after the 1917 Halifax Explosion.""
+
+Therefore, it can be inferred that the City of Boston gets their Christmas tree from Nova Scotia, and in 2016, the specific tree was chosen from Ainslie Glen, as a gesture of gratitude from the people of Nova Scotia for the assistance they received after the 1917 Halifax Explosion. 
+
+It is not stated that Ainslie Glen is the regular or only source of the Boston Christmas Tree, but rather that in 2016, a tree from Ainslie Glen was chosen for this purpose."
+53,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2857142857142857,0.2857142857142857,1.0,1,0.3333333333333333,0.2222222222222222,0.6666666666666666,1,0,0,"To answer this question, we need to identify the theme song used by the Range Busters series and then find out who wrote its lyrics. 
+
+According to document [0], the theme song used by the Range Busters series is ""Home on the Range"". 
+
+Document [1] provides information about ""Home on the Range"", stating that ""The lyrics were originally written by Dr. Brewster M. Higley of Smith County, Kansas, in a poem entitled ""My Western Home"" in 1872.""
+
+Therefore, based on the information provided in the documents, the lyrics to the theme song used by the Western film series Range Busters were written by Dr. Brewster M. Higley."
+54,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.25,1.0,0,0.25,0.25,1.0,0,0,0,"To answer this question, I will look at the release years of the two films mentioned in the context documents.
+
+According to document [0], ""The Strongest Man in the World"" is a 1975 Disney film. 
+According to document [1], ""Candleshoe"" is a 1977 American family adventure film.
+
+Since 1975 comes before 1977, I can conclude that ""The Strongest Man in the World"" came first."
+55,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1875,0.125,0.6666666666666666,1,0.21428571428571427,0.14285714285714285,0.6666666666666666,1,0,0,"To answer this question, I will refer to the context document [0]. According to this document, Philip Carlo ""died of the disease on November 8, 2010 at age 61"" and the disease is mentioned earlier in the document as ""amyotrophic lateral sclerosis (ALS), commonly known as 'Lou Gehrig's Disease'"". 
+
+Therefore, Philip Carlo died of amyotrophic lateral sclerosis (ALS), also known as ""Lou Gehrig's Disease""."
+56,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3157894736842105,0.10526315789473684,0.3333333333333333,0,0.3684210526315789,0.15789473684210525,0.42857142857142855,1,0,0,"To answer this question, we need to look at the context documents provided. 
+
+In document [0], it is mentioned that ""A 200-foot game is an expression used in ice hockey to describe a forward's ability to have strong play at both ends of an ice rink..."". This indicates that the ""200-foot game"" is related to the sport of ice hockey.
+
+In document [1], it is stated that ""Jonathan Bryan Toews... is a Canadian professional ice hockey centre..."". This shows that Jonathan Toews is also related to the sport of ice hockey.
+
+Therefore, based on the information provided in the documents, the sport that ""200-foot game"" and Jonathan Toews have in common is ice hockey."
+57,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.17647058823529413,0.17647058823529413,1.0,0,0.1875,0.1875,1.0,1,0,0,"To answer this question, we need to identify the community where the Meadowbrook State Parkway connects to the Southern State Parkway and then find the population of that community as of the 2010 census.
+
+According to document [0], ""The parkway heads north, crossing South Oyster Bay and intersecting Loop Parkway before crossing onto the mainland and connecting to the Southern State Parkway in North Merrick.""
+
+Then, we look at document [3], which tells us that ""The population was 12,272 at the 2010 census"" for North Merrick.
+
+Therefore, the Meadowbrook State Parkway connects to the Southern State Parkway in a community (North Merrick) with a population of 12,272 as of the 2010 census."
+58,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15384615384615385,0.15384615384615385,1.0,0,0.15384615384615385,0.15384615384615385,1.0,1,0,0,"To answer this question, I will examine the information provided in the context documents.
+
+According to document [0], ""Out Traveler is a gay and lesbian travel magazine..."". This clearly indicates that Out Traveler is a magazine.
+
+Document [1] states that ""Reader's Digest is an American general-interest family magazine..."". This confirms that Reader's Digest is also a magazine.
+
+Therefore, based on the information provided in the documents, I can conclude that both Out Traveler and Reader's Digest are indeed magazines."
+59,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11764705882352941,0.11764705882352941,1.0,1,0.14285714285714285,0.07142857142857142,0.5,1,0,0,"The Julian P. Kanter Political Commercial Archive has been designated an official project by Save America's Treasures, which is an initiative to preserve and protect historic buildings, arts, and published works. This is stated in document [0]: ""The Julian P. Kanter Political Commercial Archive has been designated an official project by Save America's Treasures."" 
+
+Additionally, document [1] provides more information about Save America's Treasures, stating that it is ""a United States federal government initiative to preserve and protect historic buildings, arts, and published works."" 
+
+Therefore, the answer to the question is: historic buildings, arts, and published works."
+60,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13333333333333333,0.13333333333333333,1.0,1,0.07142857142857142,0.07142857142857142,1.0,1,0,0,"To answer this question, we need to identify the two-time consensus All-American who starred in the 1995 American action film and then find out who wrote that film.
+
+From document [0], we know that the 1995 American action film is ""One Tough Bastard"" and it stars Brian Bosworth. 
+
+From document [3], we know that Brian Bosworth is a two-time consensus All-American.
+
+Now that we have identified the film and confirmed that its star, Brian Bosworth, is a two-time consensus All-American, we can find the writer of the film. According to document [0], the film ""One Tough Bastard"" was written by Steven Selling.
+
+Therefore, the answer to the question is: Steven Selling."
+61,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.4166666666666667,0.3333333333333333,0.8,0,0.3333333333333333,0.3333333333333333,1.0,1,0,0,"To answer this question, we need to look for information about an actress who has been involved in both Robert Bresson's ""Pickpocket"" and a film directed by Just Jaeckin. 
+
+In document [0], it is mentioned that Marika Nicolette Green is ""mostly famous for playing a starring role in Robert Bresson's 'Pickpocket' (1959), and also for appearing in 'Emmanuelle' (1974)"". 
+
+Document [1] confirms that Marika Green starred in ""Pickpocket"". 
+
+Document [3] mentions that ""Emmanuelle"" (1974) was directed by Just Jaeckin, a former photographer. Although it does not explicitly state that Marika Green was in ""Emmanuelle"", document [0] does mention that she appeared in ""Emmanuelle"" (1974).
+
+Therefore, based on the information provided in the documents, the actress known for a starring role in Robert Bresson's ""Pickpocket"" and has also been directed by Just Jaeckin is Marika Green."
+62,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15,0.15,1.0,0,0.17647058823529413,0.11764705882352941,0.6666666666666666,1,0,0,"To answer this question, we need to identify the father of Manning Marius Kimmel and then find out when he retired from the Navy.
+
+From document [0], we know that Manning Marius Kimmel was the son of Admiral Husband E. Kimmel.
+
+From document [2], we can see that Husband Edward Kimmel, also known as Admiral Husband E. Kimmel, retired from the Navy in early 1942.
+
+Therefore, the father of Manning Marius Kimmel, Admiral Husband E. Kimmel, retired from the Navy in 1942."
+63,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13333333333333333,0.2,1.0,1,0.13333333333333333,0.06666666666666667,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [0], Additi Gupta is known for her negative roles in Pardes Mein Hai Mera Dil and Star Plus's Ishqbaaz. It also mentions that she worked as the protagonist in the popular television series ""Kis Desh Mein Hai Meraa Dil"" on Star Plus channel. 
+
+Since Additi Gupta worked on Star Plus's Ishqbaaz, which is mentioned in document [0] and also in document [3] as an Indian drama television series that broadcasts on Star Plus, we can conclude that the country is India.
+
+Therefore, the answer to the question is: India."
+64,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.2,1.0,0,0.3333333333333333,0.2,0.6,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+According to document [0], the Ford CD2 platform's design is based on Mazda's GF platform, which is used by the Mazda Capella/626. 
+
+Therefore, the manufacturer of the car used by the Ford CD2 platform's design inspiration is Mazda, as it is the manufacturer of the Mazda Capella/626."
+65,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,1,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, we need to compare the lifespans of Basil Dean and Francis Ford Coppola.
+
+According to document [0], Francis Ford Coppola was born on April 7, 1939.
+
+According to document [1], Basil Herbert Dean was born on 27 September 1888 and died on 22 April 1978.
+
+Since Francis Ford Coppola was born in 1939 and Basil Dean died in 1978, there is an overlap in their lifespans. Specifically, from 1939 (the birth year of Francis Ford Coppola) to 1978 (the year of Basil Dean's death), both individuals were alive.
+
+Therefore, the answer to the question is: Yes, Basil Dean and Francis Ford Coppola were both alive at some point in time."
+66,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.21428571428571427,0.21428571428571427,1.0,0,0.45454545454545453,0.18181818181818182,0.4,1,0,0,"To answer this question, we need to look at the context documents provided. According to document [0], Phantly Roy Bean, Jr., also known as ""The Law West of the Pecos"", was not only a Justice of the Peace but also a ""U.S. saloon-keeper"". This indicates that besides being a Justice of the Peace, his other occupation was keeping a saloon. Document [1] further supports this by mentioning that Judge Roy Bean had his saloon in Langtry, where he practiced law. 
+
+Therefore, the other occupation of the ""Law West of the Pecos"" was a saloon-keeper."
+67,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.13513513513513514,0.10810810810810811,0.8,0,0.16129032258064516,0.12903225806451613,0.8,1,0,0,"To answer this question, we need to look for information about a city in the Baltimore metropolitan area that has a lake and a surrounding park. 
+
+In document [1], we learn that Columbia is a city in the Baltimore metropolitan area. Then, in document [2], we find that Columbia has a lake called Lake Elkhorn, which is surrounded by a park. This lake has a picnic pavilion and a two-mile walking path.
+
+Therefore, based on the information provided in the documents, the answer to the question is: Columbia."
+68,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.375,0.375,1.0,1,0.375,0.25,0.6666666666666666,1,0,0,"To answer this question, we need to compare the number of fatalities in the Charkhi Dadri crash and the Tenerife airport disaster. 
+
+According to document [0], the Charkhi Dadri crash killed 349 people. 
+
+Document [1] states that the Tenerife airport disaster killed 583 people.
+
+Since 349 is less than 583, the Charkhi Dadri crash was indeed less dangerous than the Tenerife airport disaster in terms of the number of fatalities.
+
+Now, to determine which one occurred first, we need to look at the dates. 
+
+Document [0] states that the Charkhi Dadri crash occurred on 12 November 1996.
+
+Document [1] states that the Tenerife airport disaster occurred on March 27, 1977.
+
+Since 1977 is before 1996, the Tenerife airport disaster occurred first."
+69,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1,0.1,1.0,1,0.1111111111111111,0.1111111111111111,1.0,1,0,0,"To answer this question, we need to compare the number of beds at MedStar Washington Hospital Center and Children's National Medical Center.
+
+According to document [0], MedStar Washington Hospital Center is ""licensed for 926 beds.""
+
+According to document [1], Children's National Medical Center has ""303 beds.""
+
+Since 926 is greater than 303, MedStar Washington Hospital Center has more beds than Children's National Medical Center."
+70,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.09523809523809523,0.09523809523809523,1.0,1,0.1111111111111111,0.1111111111111111,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents. According to document [0], Gorgoroth is a Norwegian black metal band based in Bergen. Then, we need to find out which county Bergen is located in. Document [3] provides this information, stating that Bergen is a city and municipality in Hordaland on the west coast of Norway. 
+
+Therefore, based on the information in the documents, Gorgoroth is a band based in the Norwegian county of Hordaland."
+71,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,0,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, we need to identify the officer who Ivan Simson was under the command of, and then determine which WWII battle that officer was most noted for a defeat at.
+
+According to document [0], Ivan Simson was under the command of Arthur Percival, as it states: ""Simson's defensive recommendations were largely rejected by his commander, Arthur Percival..."".
+
+Then, we need to find out which WWII battle Arthur Percival was most noted for a defeat at. Document [1] states that Arthur Percival ""is most noted for his defeat in the Second World War, when he commanded British Commonwealth forces during the Japanese Malayan Campaign and the subsequent Battle of Singapore"".
+
+Therefore, Ivan Simson was under the command of the officer (Arthur Percival) who was most noted for a defeat at the Battle of Singapore."
+72,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.22727272727272727,0.13636363636363635,0.6,1,0.22727272727272727,0.13636363636363635,0.6,1,0,0,"The documents do not provide the name of the person who will conduct the firing cannons in Victoria as part of the musical piece. However, according to document [1], the concert is led by Victoria Symphony Music Director Tania Miller, and it includes live cannon fire during the 1812 Overture, which is a musical piece written to commemorate Russia's defence against Napoleon's invading army. 
+
+It can be inferred that Tania Miller will be leading the overall event, but the documents do not explicitly state that she will be conducting the firing cannons. The documents are missing some of the information required to answer the question."
+73,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11764705882352941,0.11764705882352941,1.0,0,0.17647058823529413,0.17647058823529413,1.0,1,0,0,"To answer this question, we need to look at the information provided in the context documents about the Basset Bleu de Gascogne and the Beagle.
+
+According to document [0], the Basset Bleu de Gascogne ""is a long-backed, short legged breed of dog of the hound type."" 
+
+Document [1] describes the Beagle as ""a breed of small hound, similar in appearance to the much larger foxhound.""
+
+From this information, we can conclude that both the Basset Bleu de Gascogne and the Beagle are breeds of hound dogs. 
+
+Therefore, the answer to the question is that both breeds are hounds."
+74,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,0,0.25,0.16666666666666666,0.6666666666666666,1,0,0,"To answer this question, we need to find out the city where the first edition of the South American Youth Olympic Games were held and then find the population of that city.
+
+According to document [0], ""The first edition was held in Lima, Perú, from 20 to 29 September 2013.""
+
+Now, we need to find the population of Lima. Document [3] provides this information: ""With a population of more than 10 million, Lima is the most populous metropolitan area of Peru...""
+
+So, the population of the city in which the first edition of the South American Youth Olympic Games were held is more than 10 million."
+75,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.23809523809523808,0.7142857142857143,0,0.2,0.15,0.75,1,0,0,"To answer this question, we need to identify the virus that Robert Purcell co-identified. According to document [0], Robert Purcell co-identified the Hepatitis A virus (HAV) in 1973. 
+
+Now, we need to find the symptoms of Hepatitis A virus. Document [2] describes the symptoms of Hepatitis A, which include nausea, vomiting, diarrhea, jaundice, fever, and abdominal pain. Additionally, it mentions that many cases have few or no symptoms, especially in the young, and that around 10–15% of people experience a recurrence of symptoms during the six months after the initial infection. Acute liver failure may also rarely occur.
+
+Therefore, the symptoms of the virus identified by Robert Purcell are nausea, vomiting, diarrhea, jaundice, fever, and abdominal pain, although it's worth noting that many cases may be asymptomatic or have mild symptoms."
+76,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11764705882352941,0.11764705882352941,1.0,0,0.2727272727272727,0.18181818181818182,0.6666666666666666,1,0,0,"To answer this question, I will first look at document [0], which mentions the book ""Mr. Wilson's Cabinet of Wonder: Pronged Ants, Horned Humans, Mice on Toast, and Other Marvels of Jurassic Technology"" and states that it is primarily about the Museum of Jurassic Technology. 
+
+Then, I will look at document [1], which mentions the location of the Museum of Jurassic Technology. According to document [1], the Museum of Jurassic Technology is located at 9341 Venice Boulevard in the Palms district of Los Angeles, California.
+
+Therefore, based on the information in documents [0] and [1], I can conclude that the book ""Mr. Wilson's Cabinet of Wonder: Pronged Ants, Horned Humans, Mice on Toast, and Other Marvels of Jurassic Technology"" is about a museum that is located in Los Angeles, California."
+77,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.16666666666666666,0.5,1,0.3,0.2,0.6666666666666666,1,0,0,"To answer this question, we need to look for information about an author whose works cover a wide range of subjects including the Cold War, mathematics, politics, economics, and global terrorism, and who is published by Charles Scribner's Sons.
+
+In document [0], it is mentioned that Charles Scribner's Sons is a publisher that has published the works of many American authors, including Don DeLillo.
+
+In document [1], we find information about Don DeLillo, stating that his works have covered subjects as diverse as ""television, nuclear war, sports, the complexities of language, performance art, the Cold War, mathematics, the advent of the digital age, politics, economics, and global terrorism.""
+
+Since document [0] mentions that Charles Scribner's Sons publishes Don DeLillo's works, and document [1] lists the subjects that Don DeLillo's works cover, which match the subjects mentioned in the question, we can conclude that the author whose books cover subjects such as the Cold War, mathematics, politics, economics, and global terrorism, and who is published by Charles Scribner's Sons, is Don DeLillo."
+78,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.2222222222222222,0.6666666666666666,0,0.4444444444444444,0.3333333333333333,0.75,1,0,0,"To answer this question, we need to find the information about Isabella Kelly's birthplace and the characterization of the castle. 
+
+According to document [1], Isabella Kelly was born at Cairnburgh Castle. 
+
+Then, we look for the characterization of Cairnburgh Castle. Document [0] states that 1991's ""The Changing Scottish Landscape"" characterizes Cairnburgh Castle as ""one of the most isolated fortifications in Britain"".
+
+So, Isabella Kelly was born at Cairnburgh Castle, which was characterized as one of the most isolated fortifications in Britain by ""The Changing Scottish Landscape"" in 1991."
+79,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.23076923076923078,0.23076923076923078,1.0,0,0.3076923076923077,0.23076923076923078,0.75,1,0,0,"To answer this question, we need to identify the institution that is common to both the 2017 Texas Tech Red Raiders baseball team and Dan Law Field at Rip Griffin Park.
+
+From document [0], we know that the 2017 Texas Tech Red Raiders baseball team ""represents Texas Tech University"". 
+
+From document [1], we know that Dan Law Field at Rip Griffin Park is ""the home stadium of the Texas Tech Red Raiders baseball team in Lubbock, Texas"" and ""is located on the Texas Tech University campus"".
+
+Therefore, the institution that the 2017 Texas Tech Red Raiders baseball team and Dan Law Field at Rip Griffin Park have in common is Texas Tech University."
+80,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.2,0.13333333333333333,0.6666666666666666,1,0.26666666666666666,0.06666666666666667,0.25,0,0,0,"To answer this question, we need to look at the information provided in the context documents about the filming of ""High School"" and ""The Thorn in the Heart"".
+
+From document [1], we know that ""High School"" was shot over five weeks in March and April 1968.
+
+From document [0], we know that ""The Thorn in the Heart"" is a 2009 documentary film.
+
+Since 1968 is earlier than 2009, the earliest film shot among the two is ""High School"", which was shot in March and April 1968.
+
+Therefore, the answer to the question is that the earliest film, ""High School"", was shot in 1968."
+81,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15,0.15,1.0,1,0.15,0.1,0.6666666666666666,1,0,0,"Giselle Cossard was known as Mother Giselle of Yemoja, which is a type of Orisha deity, specifically a water deity from the Yoruba religion, as stated in document [0] and further described in document [2]."
+82,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.1111111111111111,0.6666666666666666,1,0.17647058823529413,0.11764705882352941,0.6666666666666666,1,0,0,"To answer this question, I will look at the context documents provided. The relevant information can be found in document [0], which states: ""The name comes from the City of Starachowice, where the factory is located."" This document also mentions that the manufacturer sold vehicles ""in various countries for many years (not only in the Eastern Bloc; for example it was used by the Yemen Army)"", which matches the description in the question of selling to ""various countries, including more than the socialist states of Central and Eastern Europe"".
+
+Therefore, based on the information in document [0], the answer to the question is: The city from which the name came for the Polish truck manufacturer is Starachowice."
+83,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.15789473684210525,0.15789473684210525,1.0,0,0.23529411764705882,0.11764705882352941,0.5,1,0,0,"To answer this question, we need to look at the information provided in the context documents. 
+
+Document [0] mentions the Ramna Stacks, which are a group of skerries in the Shetland islands. Document [1] defines a skerry as a small rocky island, and also mentions that a skerry can also be called a low sea stack. 
+
+Therefore, based on the information in documents [0] and [1], we can conclude that the low sea stacks in the Shetland Islands are called skerries, specifically the Ramna Stacks."
+84,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.16666666666666666,1.0,0,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer the question, we need to find the birth year of the writer of the blog Preposterous Universe. According to document [0], the blog Preposterous Universe was written by Sean Carroll. Then, we can look at document [2], which states that Sean Michael Carroll was born on October 5, 1966. 
+
+Therefore, the writer of the blog Preposterous Universe, Sean Carroll, was born in 1966."
+85,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.10526315789473684,0.10526315789473684,1.0,1,0.17647058823529413,0.11764705882352941,0.6666666666666666,1,0,0,"To answer this question, we need to look at the context documents provided. 
+
+Document [0] mentions the movie ""Gamer"" and its cast, including Terry Crews. Document [1] provides information about Terry Crews, stating that he is a former American football player. 
+
+Therefore, based on the information in documents [0] and [1], we can conclude that Terry Crews, a former American football player, had a part in the movie ""Gamer""."
+86,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.23076923076923078,0.23076923076923078,1.0,0,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, I will look at the context documents provided. 
+
+In document [0], it is mentioned that Steve Uzelac played in the Football League for Preston North End, among other teams. 
+
+In document [1], it is stated that Preston North End Football Club is located in the Deepdale area of Preston, Lancashire, and they play in the Championship, which is the second tier of the English football league system.
+
+Therefore, based on the information in documents [0] and [1], Steve Uzelac played football for the Championship league (the second tier of the English football league system) located in Preston, Lancashire, specifically for Preston North End."
+87,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.16666666666666666,0.0,0.0,0,0.3,0.2,0.6666666666666666,1,0,0,"The documents do not provide enough information to answer the question. 
+
+The first document mentions that James Cox Kennedy is the richest person in the state of Georgia and that he is the chair of Cox Enterprises, but it does not specify the divisions that make up the company. The third document mentions Anne Cox Chambers, who has a stake of interest in Cox Enterprises, but also does not provide information about the divisions of the company. 
+
+Therefore, the documents are missing some of the information required to answer the question."
+88,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.1111111111111111,0.1111111111111111,1.0,1,0.29411764705882354,0.11764705882352941,0.4,1,0,0,"To answer this question, we need to identify the singer who popularized ""I'll Keep the Lovelight Burning"" and then find their birth year. 
+
+According to document [0], ""I'll Keep the Lovelight Burning"" was popularized by Patti Page in 1949. 
+
+Document [3] provides information about Patti Page, including her birth date: ""Clara Ann Fowler (November 8, 1927 – January 1, 2013), known by her professional name Patti Page..."". 
+
+Therefore, the singer who popularized ""I'll Keep the Lovelight Burning"", Patti Page, was born in 1927."
+89,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.21428571428571427,0.21428571428571427,1.0,0,0.21428571428571427,0.21428571428571427,1.0,1,0,0,"To answer this question, we need to find the year in which 39 people were killed and then determine the winner of the European Cup for that year.
+
+According to document [0], the Heysel Stadium disaster, in which 39 people were killed, occurred on 29 May 1985, before the start of the 1985 European Cup Final.
+
+Document [1] states that the 1984–85 season of the European Cup was won by Juventus in a 1–0 win against Liverpool. This is the same year as the Heysel Stadium disaster.
+
+Therefore, the winner of the European Cup the year that 39 people were killed was Juventus."
+90,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.21428571428571427,0.21428571428571427,1.0,1,0.21428571428571427,0.21428571428571427,1.0,1,0,0,"To answer this question, we need to identify the country that covers 36125 km2 and then find out who the Prime Minister of that country is.
+
+From document [0], we know that the country covering 36125 km2 is Guinea-Bissau.
+
+Then, from document [1], we find that Umaro Mokhtar Sissoco Embaló has been the Prime Minister of Guinea-Bissau since 18 November 2016.
+
+Therefore, the Prime Minister of Guinea-Bissau, the West African country that covers 36125 km2, is Umaro Mokhtar Sissoco Embaló."
+91,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.25,0.25,1.0,1,0.14285714285714285,0.14285714285714285,1.0,1,0,0,"To answer this question, we need to find information about Erik Watts' father. According to document [0], Erik Watts is the son of WWE Hall of Famer Bill Watts. Then, we need to find information about Bill Watts' birthdate. Document [1] mentions that William F. Watts Jr., also known as Bill Watts, was born on May 5, 1939. 
+
+Therefore, Erik Watts' father, Bill Watts, was born on May 5, 1939."
+92,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.10526315789473684,0.10526315789473684,1.0,0,0.1111111111111111,0.1111111111111111,1.0,1,0,0,"To answer this question, I will look at the information provided in the context documents. 
+
+According to document [0], Pulandian District is located in the south of Liaoning province, People's Republic of China. 
+
+According to document [1], Hailar District is located in northeastern Inner Mongolia, China.
+
+Since both documents mention that the respective districts are located in China, I can conclude that both the Pulandian District and Hailar District are located within China."
+93,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.14285714285714285,0.14285714285714285,1.0,0,0.16666666666666666,0.16666666666666666,1.0,1,0,0,"To answer this question, we need to compare the locations of the headquarters of Pizza Inn and Papa Gino's.
+
+According to document [0], Papa Gino's is based in Dedham, Massachusetts. 
+According to document [3], Pizza Inn is based in The Colony, Texas, which is a suburb of Dallas.
+
+Since Massachusetts is generally north of Texas, we can conclude that Papa Gino's headquarters is further north than Pizza Inn's headquarters."
+94,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.11764705882352941,0.11764705882352941,1.0,0,0.1875,0.125,0.6666666666666666,0,0,0,"To answer this question, we need to look at the information provided in the context documents. According to document [0], Fastjet Tanzania was originally founded as ""Fly540 Tanzania"" in 2011. This implies that it was part of the Fly540 brand. 
+
+To find out where the company that Fastjet Tanzania was originally founded as a part of is based, we need to look for information about Fly540. Document [1] provides this information, stating that Five Forty Aviation Ltd, trading as Fly540, ""is based in Nairobi, Kenya"".
+
+Therefore, the city where the company that Fastjet Tanzania was originally founded as a part of prior to rebranding is based is Nairobi."
+95,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.23529411764705882,0.23529411764705882,1.0,1,0.23529411764705882,0.17647058823529413,0.75,1,0,0,"To answer this question, we need to look for information about a Minneapolis hip hop collective member who released an album in 2006. 
+
+In document [0], it is mentioned that ""Audition is the second studio album by P.O.S, a member of Minneapolis hip hop collective Doomtree. It was released in 2006 on Rhymesayers Entertainment."" 
+
+This information directly answers the question, indicating that P.O.S, a member of the Doomtree collective, released an album in 2006. 
+
+Therefore, the answer to the question is P.O.S."
+96,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3076923076923077,0.3076923076923077,1.0,1,0.15384615384615385,0.0,0.0,0,0,0,"The documents are missing some of the information required to answer the question. 
+
+According to document [2], Jumpship is an indie studio and its founder previously founded Playdead and worked on ""Limbo"" and ""Inside"". However, it does not state that Jumpship developed ""Limbo"". Instead, document [0] states that ""Limbo"" was developed by Playdead, which is a different studio. Therefore, we cannot conclude that Jumpship developed the puzzle-platform video game released in July 2010, which is ""Limbo"" according to document [0]."
+97,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.4166666666666667,0.16666666666666666,0.4,1,0.36363636363636365,0.0,0.0,0,0,0,"The documents are missing some of the information required to answer the question. 
+
+According to document [0], the ""stolperstein"" art project was initiated by the German artist Gunter Demnig in 1992. There is no mention of an American public affairs campaigner designing the stone cube. Document [1] mentions Terry Swartzberg, an American public affairs campaigner, but it only states that he contributed to the holocaust memorial project Stolpersteine, not that he designed the stone cube. Therefore, the information provided does not support the claim that an American public affairs campaigner designed the stone cube."
+98,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.26666666666666666,0.2,0.75,1,0.26666666666666666,0.13333333333333333,0.5,1,0,0,"To answer this question, we need to find the connection between the film ""Summer Holiday"" and an actor who won a BAFTA in 1954. 
+
+In document [0], it is mentioned that ""David Kossoff ... won a BAFTA for his appearance in 'The Young Lovers' "" in 1954. 
+
+Then, in document [1], the cast of the film ""Summer Holiday"" is listed, and it includes ""David Kossoff"". 
+
+Therefore, the actor who starred in ""Summer Holiday"" and won a BAFTA in 1954 is David Kossoff."
+99,general_knowledge,JS-GK-120b,meta-llama/llama-3.3-70b-instruct,openai/gpt-oss-120b,0.3333333333333333,0.3333333333333333,1.0,0,0.3333333333333333,0.3333333333333333,1.0,1,0,0,"To answer this question, we need to identify the state in Southern Africa with its capital in Salisbury, where the Currie Cup took place, and where John David McPhun played.
+
+From document [0], we know that John David McPhun played for Rhodesia in the Currie Cup.
+
+From document [1], we learn that Rhodesia was a state in southern Africa with its capital in Salisbury (now Harare).
+
+Therefore, based on the information provided in the documents, the state in Southern Africa, whose capital is located in Salisbury, that hosted the Currie Cup in which John David McPhun played, is Rhodesia."

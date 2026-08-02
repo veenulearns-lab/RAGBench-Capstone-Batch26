@@ -1,0 +1,505 @@
+idx,domain,exp_id,generator,judge,our_relevance,our_utilization,our_completeness,our_adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence,dropped_keys,salvaged,answer
+0,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.875,0.5,0.5714285714285714,1,0.010810810810810811,0.005405405405405406,0.5,1,1,0,"The documents do not mention a fee increase or consent requirement based on the volume or threshold of use of the product/services. The fee charges mentioned in the documents are related to specific circumstances such as:
+
+* Failure due to operator errors (Document [0] and implied in [1])
+* Failure to maintain the Software at the updated version or release provided by Garman (Documents [0], [1], and [2])
+* Material modification of the Software by Sparkling (Document [2])
+* Transfer of the Software to a different networking environment or hardware configuration without Garman's prior written consent (Documents [2] and [4])
+* Failure of the hardware or the operating system not caused by Garman or the Software (Document [4])
+
+There is no mention of a threshold for the use of the product/services that would trigger a fee increase or require consent. Therefore, based on the information provided in the documents, the answer to the question is that there is no indication of a fee increase or consent requirement based on the volume or threshold of use."
+1,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,1.0,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss various aspects of an agreement between Emerald and a Contractor, including the Contractor's obligations, confidentiality, and permitted business activities. However, none of the documents mention a clause granting a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. Therefore, based on the information provided, it is not possible to determine if such a clause exists."
+2,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2,0.2,1.0,1,0.0,0.1414141414141414,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between the Company and the CONSULTANT, including representations and warranties, termination, and the relationship between the parties. However, they do not explicitly mention the duration of any warranty against defects or errors in technology, products, or services provided under the contract.
+
+While document [0] and [1] mention that CONSULTANT represents and warrants that the Services and any work product thereof are the original work of CONSULTANT and do not infringe upon any third-party rights, they do not specify the duration of this warranty. Similarly, the other documents do not provide information on the duration of any warranty against defects or errors. Therefore, it is not possible to determine the duration of such a warranty based on the provided context documents."
+3,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,1.0,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss various aspects of the agreement, such as termination, non-exclusivity, requests for transaction information, and definitions of terms. However, none of the documents mention intellectual property or joint/shared ownership of intellectual property between the parties to the contract. Therefore, it is not possible to determine if such a clause exists based on the provided information."
+4,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.23076923076923078,0.07692307692307693,0.3333333333333333,1,0.013888888888888888,0.006944444444444444,0.5,1,0,0,"According to the documents, there is a restriction on the ability of a party to compete with the counterparty. 
+
+In document [2], Section 3.2 mentions that the grant back by PURCHASER to SONY is ""Subject to SONY's compliance with the covenant not to compete in Section 8.3 of Asset Purchase Agreement"". This implies that there is a covenant not to compete in the Asset Purchase Agreement, which restricts SONY's ability to compete with PURCHASER in some way. However, the exact terms of this covenant are not specified in the provided documents.
+
+There is no information in the documents about restrictions on operating in a certain geography or business or technology sector. 
+
+Therefore, based on the information provided, we can conclude that there is a restriction on the ability of a party to compete with the counterparty, but the details of this restriction are not fully specified in the documents."
+5,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3333333333333333,0.26666666666666666,0.8,0,0.014084507042253521,0.014084507042253521,1.0,1,0,0,"To answer this question, we need to examine the context documents for any information related to intellectual property ownership.
+
+From document [0] and [2], we can see that ""All rights not specifically granted or licensed to Company hereunder shall be reserved and retained by North..."" This implies that North retains ownership of any intellectual property not explicitly granted to the Company.
+
+Document [1] states that ""North acknowledge that they do not now have and in the future will assert no right, title, or interest of any kind or nature whatsoever, in or to any component of the Advertising Materials."" This suggests that North does not have any claim to the intellectual property related to the Advertising Materials, which is owned by the Company.
+
+However, document [4] mentions that the Advertising Materials shall reflect North's personal experience and/or ""testimonial"" concerning the Product, and such testimonial copy is deemed to be North's representation and warranty. This implies that North has some level of ownership or control over their personal testimonial, but it does not explicitly state that this becomes the property of the Company.
+
+Based on the information provided, it appears that intellectual property created by one party does not automatically become the property of the counterparty. Instead, each party retains ownership of their respective intellectual property, unless explicitly granted or licensed to the other party. 
+
+Therefore, the answer to the que"
+6,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.13333333333333333,0.06666666666666667,0.5,1,0.008522727272727272,0.0,0.0,1,0,0,"To answer this question, we need to examine the context documents for any clauses that imply an exclusive dealing commitment between SEV and DCL.
+
+From Document [3], Clause 26.3 states: ""SEV shall not engage agents or sub-contractors to provide the Maintenance Services (or any material part of the Maintenance Services) without DCL's prior consent and DCL's consent shall not be unreasonably withheld or delayed."" This clause does not explicitly imply an exclusive dealing commitment, as it only requires SEV to obtain DCL's consent before engaging sub-contractors, but does not prohibit SEV from working with other parties.
+
+However, there is no explicit clause in the provided documents that prohibits SEV from providing services to third parties or requires DCL to procure all its maintenance services from SEV. 
+
+Therefore, based on the information provided in the documents, there is no clear evidence of an exclusive dealing commitment between SEV and DCL. The documents do not contain a prohibition on SEV licensing or selling services to third parties, or a requirement for DCL to procure all its requirements from SEV. 
+
+The documents are missing some of the information required to answer the question, as they do not explicitly address the issue of exclusive dealing commitments."
+7,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.45454545454545453,0.09090909090909091,0.2,1,0.8372093023255814,0.023255813953488372,0.027777777777777776,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss the terms and conditions of a maintenance agreement between XIMAGE and MORPHO, including error correction, software modifications, and maintenance obligations. However, they do not explicitly mention a license grant by affiliates of the licensor or the inclusion of intellectual property of affiliates of the licensor. 
+
+While document [0] mentions that XIMAGE will give title to all modifications and improvements to the PSS Software, which XIMAGE generally makes available to its other customers, it does not specify whether these modifications or improvements include intellectual property of affiliates of the licensor. 
+
+Therefore, based on the provided documents, it is not possible to determine whether the contract contains a license grant by affiliates of the licensor or includes intellectual property of affiliates of the licensor."
+8,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.016706443914081145,0.007159904534606206,0.14285714285714285,0,0,0,"The documents are missing some of the information required to answer the question. 
+
+The question seems to be asking about exceptions or carveouts to Non-Compete, Exclusivity, and No-Solicit of Customers, but the provided context documents do not explicitly mention these terms or their exceptions. While the documents do discuss agreements between SpinCo and RemainCo regarding the use of marks, intellectual property, and other business aspects, they do not directly address the specific categories of Non-Compete, Exclusivity, and No-Solicit of Customers or their exceptions. Therefore, it's not possible to provide a detailed answer based on the information given in the documents."
+9,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.06666666666666667,0.06666666666666667,1.0,1,0.011764705882352941,0.011764705882352941,1.0,1,0,0,"To answer this question, I will look for information in the context documents that mentions the governing law of the contract. 
+
+In document [4], it is stated: ""This Agreement shall be governed by and construed under the laws of the Commonwealth of Virginia without regard to the conflicts of law provisions thereof.""
+
+Therefore, the law of the Commonwealth of Virginia governs the interpretation of the contract."
+10,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.8461538461538461,0.8461538461538461,1.0,1,0.014367816091954023,0.014367816091954023,0.8,1,0,0,"To answer this question, we need to examine the context documents for any information related to minimum order sizes, minimum amounts, or units per time period that one party must buy from the counterparty.
+
+From Document [0], there is no direct mention of a minimum order size or minimum amount that must be bought.
+
+In Document [1], the definition of ""Applicable Time"" is provided, which refers to the date when a potential purchaser submitted a subscription or committed to purchase Securities. However, it does not specify a minimum order size or amount.
+
+Document [2] mentions the completion of the Syndicated Community Offering and the possibility of forming a syndicate to assist in the solicitation of purchase orders for the remaining Securities. It also mentions the receipt and acceptance of subscriptions and purchase orders for all of the Securities but does not explicitly state a minimum order size or amount.
+
+Document [3] discusses the distribution of Securities among Selected Dealers but does not specify a minimum order size or amount that must be purchased.
+
+Document [4] mentions the provision of information necessary for the allocation of Securities in the event of an oversubscription and the notification of the receipt of funds for the minimum number of Securities set forth in the Prospectus. This implies that there is a minimum number of Securities that must be sold, as referenced in the Prospectus, but the specific number is not provided in the documents.
+
+Given the "
+11,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.21428571428571427,0.14285714285714285,0.6666666666666666,1,0.031746031746031744,0.015873015873015872,0.5,1,0,0,"According to document [1], ""This Agreement may not be assigned, sold or transferred without the prior written consent of the other party."" This indicates that, in general, consent is required from the other party if the contract is assigned to a third party.
+
+However, there are exceptions to this rule. Document [1] also states that ""Rogers may, without consent, assign its rights and obligations under this Agreement in whole or in part to: (i) a person that directly or indirectly controls, is controlled by or is under common control with Rogers; or (ii) a purchaser of all or substantially all of the assets used in connection with the ROD Service."" This means that Rogers does not need consent to assign the contract to certain related entities or to a purchaser of its assets.
+
+There is no mention of a notice requirement in document [1], only a consent requirement. Therefore, based on the information provided, consent is required for assignment to a third party, except in the cases specified, but there is no explicit mention of a notice requirement."
+12,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.003105590062111801,0.003105590062111801,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+My reasoning is that I have been provided with several context documents that appear to be sections of a contract, but none of them mention a date. The documents provide information on various aspects of the contract, such as confidentiality, grant of exclusivity, limitation of liability, and use of names, but they do not include a date. Therefore, I do not have enough information to answer the question about the date of the contract."
+13,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.13333333333333333,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss various aspects of a licensing agreement, including the reversion of the Exclusive License, joint venture, grant of licenses, and sublicenses. However, none of the documents mention the initial term, renewal term, automatic extensions, or unilateral extensions with prior notice. 
+
+For example, document [0] mentions that ""If THI does not make the obligatory payments... the Exclusive License will revert back to Premier,"" but it does not provide information about the term or renewal of the license. Similarly, document [2] discusses reports and payments for exclusive licensing rights but does not mention the term or renewal.
+
+Since the documents do not provide the necessary information to determine the renewal term after the initial term expires, I must conclude that the documents are missing some of the information required to answer the question."
+14,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.014577259475218658,0.011661807580174927,0.8,1,0,0,"The documents provided do not explicitly state that the contract limits the ability of a party to transfer the license being granted to a third party. 
+
+Document [0] discusses the vendor, software products, and maximum license fees, but does not mention transferability of licenses. Document [1] focuses on the enforcement of confidentiality and non-disclosure agreements and the actions to be taken against an employee who violates such agreements, which is not directly related to the transfer of licenses. Document [2] mentions the payment for licenses and the notification of involuntary attachment or judicial process affecting the Licensed Materials, but it does not address the transfer of licenses. Document [3] talks about the use of Unidentified Utility Software Programs and the amendment of Exhibit L to include such programs, but it does not discuss the transfer of licenses to third parties. Document [4] continues the discussion from Document [1] regarding the enforcement against a breaching employee and does not address license transferability.
+
+Since none of the documents explicitly address the issue of transferring licenses to third parties, the information provided is insufficient to determine if the contract limits this ability.
+
+The documents are missing some of the information required to answer the question."
+15,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.5333333333333333,0.2,0.375,1,0.08333333333333333,0.08333333333333333,1.0,1,0,0,"The documents provided do not explicitly state that a party's liability is uncapped upon the breach of its obligation in the contract. In fact, Document [3] and Document [4] mention that Sponsors must have their own liability insurance with limits of one million dollars, which suggests that there is a cap on liability, at least for the Sponsors. However, this does not necessarily apply to all parties or all types of breaches.
+
+Regarding breach of confidentiality obligation, Document [0] defines Confidential Information, but it does not specify the liability for breaching confidentiality obligations. 
+
+Regarding IP infringement, the documents do not mention it at all.
+
+Therefore, based on the information provided in the documents, it is not possible to determine if a party's liability is uncapped for all types of breaches. The documents are missing some of the information required to answer the question."
+16,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.6428571428571429,0.21428571428571427,0.2222222222222222,1,0.02027027027027027,0.02702702702702703,0.6666666666666666,1,0,0,"The documents provided do not explicitly mention a clause that awards liquidated damages for breach. However, they do mention a restocking charge in the event of termination under certain circumstances. According to Document [0], Subsection 18.5, ""If Distributor terminates pursuant to Subsection 18.1 or 18.2, or if Tripath terminates pursuant to Subsection 18.3, Tripath may, at its option, purchase and Distributor will resell to Tripath all or part of Distributor's inventory at the price set forth in Subsection 18.4, less a ten percent restocking charge."" This can be considered a fee associated with the termination of the contract, but it is specifically related to the resale of inventory rather than a general termination fee.
+
+There is no mention of a termination fee that would be paid by one party to the other upon termination of the contract for any reason, including breach. The documents focus more on the obligations that survive termination, such as making payments and confidentiality, rather than on penalties or fees for termination itself.
+
+Therefore, based on the information provided in the documents, the answer to whether the contract contains a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee) is that there is a restocking charge mentioned but no general termination fee or liquidated damages clause is explicitly described."
+17,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3,0.3,1.0,1,0.010810810810810811,0.010810810810810811,1.0,1,0,0,"The documents do not explicitly mention a warranty against defects or errors in technology, products, or services. However, document [1] mentions a ""60 day testing period"" during which modifications and changes are deemed to be completed and in good working order. Additionally, document [4] states that Garman will use its best efforts to repair the Software under the support agreement at no additional charge to Sparkling if it does not operate substantially in conformance with Sparkling's Specifications, but it does not specify a duration for this support.
+
+Therefore, while there is some information related to testing and support, the documents do not provide enough information to determine the duration of a warranty against defects or errors. 
+
+The documents are missing some of the information required to answer the question."
+18,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.03732809430255403,0.03143418467583497,0.8421052631578947,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of an agreement between parties, including equipment usage, exclusivity, year 2000 compliance, brand guidelines, and termination provisions. However, none of the documents explicitly mention the sharing of revenue or profit between the parties for any technology, goods, or services. Therefore, based on the information provided, it is not possible to determine if one party is required to share revenue or profit with the counterparty."
+19,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.4166666666666667,0.25,0.6,1,0.026455026455026454,0.026455026455026454,1.0,1,0,0,"To answer this question, we need to examine the context documents for any mention of a license being granted by one party to another.
+
+In document [0], it is stated: ""Any use by the party (the 'Licensee') of the other party's (the 'Licensor') Marks shall conform with any usage guidelines or instructions that the Licensor may provide from time to time..."" This implies that one party, referred to as the ""Licensor,"" is granting a license to the other party, referred to as the ""Licensee,"" to use its Marks.
+
+Furthermore, the same document [0] also mentions: ""Anything contained herein to the contrary notwithstanding, the Licensee shall, prior to any use of Licensor's Marks pursuant to this Agreement, submit to Licensor a sample of the proposed use thereof and obtain from the Licensor approval of such sample."" This further supports the idea that a license is being granted, as it outlines the conditions under which the Licensee can use the Licensor's Marks.
+
+Document [4] repeats the requirement for the Licensee to obtain approval from the Licensor before using the Licensor's Marks, which is another indication of a licensing agreement.
+
+Based on this information, it appears that the contract does contain a license granted by one party (the Licensor) to its counterparty (the Licensee) for the use of the Licensor's Marks.
+
+Therefore, the answer to the question is: Yes, the contract contains a license granted by one party to its counterparty."
+20,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.09090909090909091,0.09090909090909091,1.0,1,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents do not mention the effective date of the contract. While document [2] mentions that the Franchisee and the Member signed the Agreement on the ""date first written above"", it does not specify what that date is. Therefore, I cannot determine the effective date of the contract based on the information provided in the documents."
+21,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.5,0.0,0.0,1,0.007751937984496124,0.007751937984496124,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided documents discuss various aspects of an agreement between a client and a developer, including the term of the agreement, termination assistance services, and change requests. However, none of the documents mention a notice period for terminating a renewal. The term ""renewal"" is not even mentioned in the provided documents. Therefore, it is not possible to determine the notice period required to terminate a renewal based on the given information."
+22,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+My reasoning is as follows: I have reviewed all the provided context documents, and none of them mention anything about insurance requirements. The documents discuss managed hosting fees, custom software development, project management support, personal technical support, and the terms of a managed hosting agreement, but they do not mention insurance. Therefore, I do not have enough information to answer the question."
+23,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.13333333333333333,0.06666666666666667,0.5,0,0.002840909090909091,0.002840909090909091,1.0,1,0,0,"To answer the question about the date when the contract is effective, we need to look for information related to when the contract starts or commences.
+
+In document [1], it is stated: ""This Agreement shall commence on the Commencement Date..."" This indicates that the contract becomes effective on the ""Commencement Date"". However, the exact date of the ""Commencement Date"" is not specified in the provided documents.
+
+Therefore, based on the information given, we can conclude that the contract is effective from the ""Commencement Date"", but the documents do not provide the specific date of the ""Commencement Date"".
+
+The documents are missing some of the information required to answer the question."
+24,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0967741935483871,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents discuss a Joint Filing Agreement, including its execution, the responsibilities of the undersigned, and the filing of statements and amendments. However, none of the documents mention an initial term, renewal term, automatic extensions, or unilateral extensions with prior notice. Therefore, it is not possible to determine the renewal term after the initial term expires based on the information provided in the documents."
+25,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.36363636363636365,0.36363636363636365,1.0,1,0.005599104143337066,0.0033594624860022394,0.6,1,0,0,"The documents do not provide enough information to answer the question. 
+
+The provided context documents discuss various aspects of a contract, including dispute resolution procedures, indemnification obligations, and restrictions on certain activities. However, they do not explicitly address whether a party is restricted from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract.
+
+While Document [0] mentions that the dispute resolution procedures apply to controversies arising out of or relating to the interpretation or application of the Agreement, a Purchase Order, or a Facility Addendum, it does not explicitly state whether a party can contest the counterparty's ownership of intellectual property or bring unrelated claims. 
+
+Similarly, Document [2] discusses the limitations of the Joint Advisory Committee's (JAC) authority, but it does not address the specific issue of contesting intellectual property ownership or bringing unrelated claims.
+
+Therefore, based on the provided documents, it is not possible to determine whether a party is restricted from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract."
+26,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.08333333333333333,0.08333333333333333,1.0,1,0.07246376811594203,0.028985507246376812,0.4,1,0,0,"To answer this question, I will review the context documents to see if they mention any minimum order size or minimum amount or units per-time period that one party must buy from the counterparty.
+
+Document [1] mentions that ""If the ISP does not have 250 users within the first 90 days we will charge $25.00 each month thereafter."" This implies that there is a minimum number of users (250) that the ISP is expected to have within the first 90 days. If this minimum is not met, a charge of $25.00 per month will be applied.
+
+I did not find any other documents that mention a minimum order size or minimum amount or units per-time period. 
+
+Therefore, based on the information provided in the documents, the answer to the question is: Yes, there is a minimum amount (250 users) that the ISP must have within the first 90 days, as stated in document [1]."
+27,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.16666666666666666,0.16666666666666666,1.0,1,0.004694835680751174,0.004694835680751174,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+Although document [4] mentions the ""Effective Date"" as the start of the Term of the Agreement, it does not provide the actual date. It only mentions that the source of the information is from 3/30/2016, but this is not necessarily the Effective Date of the contract. Therefore, I cannot determine the date when the contract is effective based on the provided documents."
+28,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.35714285714285715,0.21428571428571427,0.6,1,0.0028735632183908046,0.0028735632183908046,1.0,1,0,0,"To answer this question, we need to examine the context documents for any clauses that grant a right of first refusal, right of first offer, or right of first negotiation.
+
+In document [2], it is stated: ""If any of the Securities remain available after the expiration of the Offerings, the Company agrees to offer the Agent the first right to act as lead managing underwriter for the Public Offering."" This indicates that the Agent has a right of first offer to act as the lead managing underwriter for the Public Offering if any Securities remain available after the expiration of the Offerings.
+
+This same information is repeated in document [3], reinforcing the notion that the Agent has been granted a specific right related to the distribution of the Securities.
+
+Therefore, based on the information provided in the documents, there is indeed a clause granting a right of first offer to the Agent to act as the lead managing underwriter for the Public Offering of any remaining Securities."
+29,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.5333333333333333,0.5333333333333333,1.0,1,0.22826086956521738,0.22826086956521738,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss the transfer and sublicensing of licenses, the confidentiality of trade secrets, and the responsibilities of the parties involved. However, they do not mention a clause that would entitle a buyer to better terms if a third party receives them. The documents focus on the conditions under which licenses can be transferred or sublicensed, the maintenance of confidentiality, and the prohibition of further transfers or uses outside the scope of the granted licenses. There is no mention of a ""most favored nation"" or similar clause that would automatically grant better terms to a buyer if such terms are offered to a third party."
+30,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3333333333333333,0.2,0.6,1,0.003676470588235294,0.003676470588235294,1.0,1,0,0,"To answer this question, we need to examine the context documents for any mention of joint or shared ownership of intellectual property between the parties to the contract.
+
+In document [1], Section 3.1 Background IP, it is stated that ""This Agreement shall not confer on either Party any rights in and/or to any Background IP of the other party, except as otherwise provided in this Agreement."" This suggests that the agreement does not automatically grant shared ownership of intellectual property, but it leaves open the possibility that other sections of the agreement might provide for shared ownership.
+
+However, upon reviewing the other documents, there is no explicit mention of joint or shared ownership of intellectual property between the parties. Document [1] further emphasizes the separation of intellectual property rights by stating that the agreement does not change, modify, or affect any rights to intellectual property owned or developed by either party before or after the effective date, except as otherwise provided in the agreement. Since no other section in the provided documents explicitly mentions joint or shared ownership, we must conclude based on the information given.
+
+The documents do provide for the use of intellectual property under certain conditions, such as in document [4], which allows CAPSUGEL to use CARDAX's intellectual property upon breach by CARDAX, but this is not the same as joint or shared ownership.
+
+Therefore, based on the information provided "
+31,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents discuss the terms and conditions of the agreement between Cerus and Porex, including the creation and acceptance of Statements of Work, pricing, and billing queries. However, they do not mention anything about the right to audit the books, records, or physical locations of the counterparty to ensure compliance with the contract. Therefore, based on the information provided, it is not possible to determine if a party has this right."
+32,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.13333333333333333,0.13333333333333333,1.0,1,0.011111111111111112,0.011111111111111112,1.0,0,0,0,"The documents are missing some of the information required to answer the question. 
+
+According to document [0] and [1], ""The Addendum shall not have an Initial Period."" This implies that there is no initial term. However, it does not provide information about the renewal term or any automatic extensions and unilateral extensions with prior notice. Therefore, I cannot provide an answer to the question based on the given documents."
+33,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.9333333333333333,0.9333333333333333,1.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss the obligations of the parties (GINARES and HPIL ET) under the Agreement, including confidentiality and working together as appropriate. They also provide some background information on HPIL ET's activities in the energy sector. However, there is no mention of depositing source code into escrow with a third party or the release of such code upon the occurrence of certain events like bankruptcy or insolvency. Therefore, based on the information given in the documents, it is not possible to determine if one party is required to deposit its source code into escrow."
+34,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0037641154328732747,0.0037641154328732747,0.6666666666666666,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents do not mention the notice period required to terminate renewal. They discuss various topics such as retention schedules, hearing procedures, mediation, detailing requirements, and documentation, but none of them mention the notice period for terminating renewal. Therefore, it is not possible to determine the required notice period based on the given information."
+35,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.015503875968992248,0.007751937984496124,0.5,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss the definition of ""ERROR"", the second level of maintenance, and the terms and conditions of interventions on site, but they do not mention a license grant or its terms, including whether it is irrevocable or perpetual. Therefore, I cannot provide an answer to this question based on the information provided in the documents."
+36,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.6,0.0,1,0.3333333333333333,0.2222222222222222,0.6666666666666666,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss an amendment to the Co-Branding Agreement between PC Quote, Inc. (PCQ) and A.B. Watley, Inc. (ABW), specifically regarding Section 2, Part B, titled ""Term"". However, none of the documents mention anything about the transfer of a license to a third party or any limitations on such transfers. Therefore, based on the information given, it's not possible to determine if the contract limits the ability of a party to transfer the license being granted to a third party."
+37,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.16666666666666666,0.16666666666666666,1.0,1,0.004098360655737705,0.00819672131147541,1.0,1,0,0,"The documents provided do not explicitly mention the name of the contract. However, the first document is titled ""AGREEMENT 1. Engagement"", which suggests that the contract is referred to as an ""Agreement"". 
+
+Since the documents do not provide a specific name for the contract, the best answer that can be given based on the information provided is that the contract is referred to as an ""Agreement"" in the context of the documents."
+38,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.14035087719298245,1.0,1,0,0,"The documents are missing some of the information required to answer the question. The provided context documents do not mention ""Non-Compete, Exclusivity and No-Solicit of Customers"" or any exceptions or carveouts related to these terms. They appear to discuss the responsibilities and obligations of the Adviser and the Trust, including the provision of services, payment of fees, and record-keeping requirements, but do not address the specific topic of the question."
+39,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.045454545454545456,0.045454545454545456,1.0,0,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss the calculation of revenues, allocation of costs, and payment terms between HPS and SHPS, but they do not explicitly mention the parties' liability in case of a breach of contract, including whether such liability is capped or uncapped. Specifically, there is no information regarding the parties' liability for breaches such as IP infringement or breach of confidentiality obligations. Therefore, it is not possible to determine from the provided documents whether a party's liability is uncapped upon the breach of its obligation in the contract."
+40,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3333333333333333,0.3333333333333333,1.0,1,0.031746031746031744,0.010582010582010581,0.3333333333333333,1,0,0,"The documents provided do not explicitly mention a license grant to a licensee (including sublicensor) and the affiliates of such licensee/sublicensor. 
+
+While document [1] and [2] mention a ""Licensee"" and a ""Licensor"", they do not specify that the license grant extends to affiliates of the licensee or sublicensor. In fact, document [2] states that ""Each party retains all right, title and interest in and to its respective Marks and nothing contained herein shall confer in the other party any right, title or interest in or to such Marks."" This suggests that the license grant is limited to the parties specified in the agreement and does not automatically extend to their affiliates.
+
+Therefore, based on the information provided in the documents, the answer to the question is: The documents are missing some of the information required to answer the question."
+41,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.8,0.8,1.0,1,0.96875,0.171875,0.1774193548387097,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss the terms of an agreement between Cerus and Porex, including the acceptance of work orders, the use of dedicated space and equipment, pricing, and billing. However, there is no mention of an ""enterprise,"" ""all you can eat,"" or unlimited usage license in the provided documents. Therefore, it is not possible to determine if such a clause exists based on the given information."
+42,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.08695652173913043,0.07608695652173914,0.875,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between eGain and the Customer, including hosting services, customer support, and indemnification. However, they do not mention anything about revenue or profit sharing between the parties for any technology, goods, or services. Therefore, it is not possible to determine if one party is required to share revenue or profit with the counterparty based on the information provided in the documents."
+43,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.9310344827586207,0.3448275862068966,0.37037037037037035,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+I have reviewed the provided context documents and could not find any information related to a requirement on a party not to disparage the counterparty. The documents discuss topics such as escrow agent fees, return fees, reversal fees, and the terms of the service agreement, but do not mention anything about non-disparagement. Therefore, I cannot provide an answer to this question based on the provided documents."
+44,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.13333333333333333,0.13333333333333333,1.0,0,0.0038314176245210726,0.0019157088122605363,0.5,1,0,0,"To answer this question, we need to examine the context documents for any information related to minimum order sizes, amounts, or units per time period that one party must buy from the counterparty.
+
+The most relevant information is found in document [0], which mentions a ""Minimum Fee"". According to this document, ""The Minimum Fee shall be prorated to account for (i) any periods during which Network Affiliate's annual attendance base in the Theatres is lower than the Base Amount, and (ii) reductions in revenue associated with Network Affiliate's rejection of content as permitted under Section 3.4.""
+
+This implies that there is a minimum fee that one party (likely Network Affiliate) must pay to the other party (likely NCM), but it does not specify a minimum order size or units per time period. Instead, it mentions a minimum fee that is prorated based on certain conditions.
+
+Therefore, based on the information provided in the documents, we can conclude that there is a minimum fee, but it is not a traditional minimum order size or units per time period. The documents do provide enough information to answer the question, and the answer is that there is a minimum fee, but its calculation is based on specific conditions related to attendance and revenue."
+45,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss license agreements, trade secrets, and intellectual property, but they do not mention Non-Compete, Exclusivity, or No-Solicit of Customers. Therefore, it is not possible to identify exceptions or carveouts to these concepts based on the information provided in the documents."
+46,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.15384615384615385,0.15384615384615385,1.0,0,0.00684931506849315,0.00684931506849315,1.0,1,0,0,"To determine the date when the contract is effective, we need to look for information in the context documents that specifies the ""Effective Date"" of the agreement.
+
+In document [0], it is mentioned that ""the Parties have executed this Agreement acting through their duly authorized representatives as of the Effective Date."" However, it does not specify the actual date.
+
+In document [1], it states that ""This Agreement shall be valid for five (5) years from February 1, 2019 through January 31, 2024"". This implies that the agreement starts on February 1, 2019, which could be the effective date.
+
+Since document [1] provides a specific start date for the agreement, and there is no other information in the documents that contradicts this, we can infer that the effective date of the contract is February 1, 2019."
+47,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.4,0.3333333333333333,0.8333333333333334,1,0.044673539518900345,0.003436426116838488,0.07692307692307693,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents do mention ""Sub-Contractor"" which refers to firms or companies retained by MediWound to transform Bromelain SP into Product, and they also mention ""sub-licensees"" in the context of delivering pharmaceutical preparations of the Product. However, there is no explicit information about a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor. The term ""affiliate"" is not defined in the provided documents, and the relationship between the mentioned entities and the licensor is not clearly stated. Therefore, it's not possible to determine if the contract contains a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor based on the given information."
+48,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.06666666666666667,0.06666666666666667,1.0,1,0.9727272727272728,0.08181818181818182,0.08411214953271028,1,0,0,"According to document [0], there is a clause that grants Prolong the right to use the likeness, voice, picture, and signature of Sabco drivers for commercial purposes endorsing Prolong ""at no additional costs during the term of this agreement."" This can be seen as an ""all you can eat"" or unlimited usage license for the specified purposes, as there is no mention of a limit on the number of times Prolong can use the drivers' likenesses.
+
+The relevant text from document [0] is: ""All Sabco drivers, while under contract with Team SABCO, shall allow their likeness, voice, picture and signature to be used for commercial purposes endorsing Prolong at no additional costs during the term of this agreement."" 
+
+However, it's worth noting that this unlimited usage license is limited to the term of the agreement and only for the purpose of endorsing Prolong."
+49,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents do not mention any requirement on a party not to disparage the counterparty. They discuss various terms and conditions related to the agreement between Bank of America and the Supplier, such as the role of a Relationship Manager, the Repair Period, the definition of a Representative, Error classification, and information security requirements, but they do not address the issue of disparagement. Therefore, based on the information provided, it is not possible to determine if there is a requirement on a party not to disparage the counterparty."
+50,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.984375,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss the terms of an agreement between Cerus and Porex, including the scope of work, pricing, and consent to use dedicated space and equipment. However, they do not mention any restrictions on contracting or soliciting customers or partners of the counterparty, either during the contract or after it ends. Therefore, based on the information provided, it is not possible to determine if such restrictions exist."
+51,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.6923076923076923,0.15384615384615385,0.2222222222222222,0,0.04878048780487805,0.04878048780487805,1.0,1,0,0,"According to the context documents, yes, intellectual property created by one party can become the property of the counterparty under certain terms. 
+
+In document [1], it is stated that ""Recipient hereby grants to the Company power of attorney for the purpose of assigning all Recipient's rights in Intellectual Property to the Company for the purposes of filings, registrations and other formalities deemed necessary by the Company to prosecute, protect, perfect or exploit its ownership and interests in Intellectual Property."" This indicates that the Recipient is granting the Company the right to take ownership of the Recipient's intellectual property.
+
+Additionally, document [1] also states that ""Recipient further agrees to execute, acknowledge and deliver any documentation, instruments, specifications or disclosures necessary to assign, prosecute, protect, perfect or exploit the Company ownership of Intellectual Property."" This further supports the idea that the Recipient's intellectual property can become the property of the Company.
+
+There is no mention of specific events that would trigger the transfer of ownership, but it is clear that the contract allows for the assignment of intellectual property rights from the Recipient to the Company."
+52,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.004098360655737705,0.004098360655737705,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents discuss the terms of termination, warranties, and representations, but they do not mention the assignment of the contract to a third party or the requirements for such an assignment, including whether consent or notice is needed. Therefore, based on the given context, it's not possible to determine if consent or notice is required for assigning the contract to a third party."
+53,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.26666666666666666,0.13333333333333333,0.5,1,0.041666666666666664,0.041666666666666664,1.0,1,0,0,"The documents provided do not explicitly address the issue of termination or consent requirements in the event of a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law.
+
+However, Document [0] and Document [2] do state that ""This Agreement, or the rights granted under it, may not be assigned transferred or sublicense by either party without the express prior written consent of the other party."" This suggests that the parties intended to restrict assignments and transfers, but it does not specifically address changes of control.
+
+Since the documents do not provide explicit information on the requirements for termination or consent in the event of a change of control, the answer to the question cannot be determined with certainty based on the provided information.
+
+The documents are missing some of the information required to answer the question."
+54,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between the Shipper and the Transporter, including liability, termination, waivers, and rates. However, none of the documents mention the assignment of the contract to a third party or the requirements for such an assignment, including whether consent or notice is required. Therefore, it is not possible to answer the question based on the information provided in the documents."
+55,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.7272727272727273,0.7272727272727273,1.0,1,0.2222222222222222,0.08333333333333333,0.375,1,0,0,"The documents provided do not explicitly mention a license grant to a licensee (including sublicensor) and the affiliates of such licensee/sublicensor. 
+
+Document [2] mentions that ""Grantor hereby grants to Grantee and Grantee hereby accepts a franchise to construct, reconstruct, operate, maintain, repair, and extend a Gas Distribution System within Grantor's Territorial Limits..."". This indicates a franchise grant from the Grantor to the Grantee, but it does not explicitly mention a license grant or the inclusion of affiliates.
+
+Additionally, the term ""licensee"" and ""sublicensor"" are not mentioned in the provided documents. The documents primarily discuss the terms of the franchise agreement between the Grantor (TOWN OF VINTON, VIRGINIA) and the Grantee (ROANOKE GAS COMPANY), including the payment of franchise fees and the operation of a gas distribution system.
+
+Therefore, based on the information provided in the documents, the answer to the question is: The documents do not provide enough information to confirm the presence of a license grant to a licensee (including sublicensor) and the affiliates of such licensee/sublicensor."
+56,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.013850415512465374,0.00554016620498615,0.4,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents do not mention a license grant, let alone whether it is irrevocable or perpetual. They appear to be related to a securities offering, with discussions of share purchases, registration statements, and regulatory compliance, but do not contain any information about a license grant. Therefore, it is not possible to determine if the contract contains an irrevocable or perpetual license grant based on the provided documents."
+57,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.003278688524590164,0.003278688524590164,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+My reasoning is that none of the provided context documents mention the name of the contract. They appear to be fragments of a contract, discussing topics such as the contract price, ordering procedure, and legal provisions, but they do not provide a title or name for the contract itself. Therefore, I cannot determine the name of the contract based on the information provided."
+58,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.4666666666666667,0.4666666666666667,1.0,1,0.24,0.2,0.8333333333333334,1,0,0,"To answer this question, we need to examine the context documents provided. 
+
+First, let's look at documents [0] and [1]. Both state, ""The Master Franchise Agreement contains covenants not to compete which extend beyond the termination of the agreement."" This directly indicates that there are obligations (specifically, covenants not to compete) that a party is subject to even after the termination of the agreement.
+
+Document [3], the California Appendix to the Master Franchise Agreement, mentions that California law (Business and Professions Code Sections 20000 through 20043) provides rights concerning termination or non-renewal of a franchise and that if the Master Franchise Agreement contains provisions inconsistent with the law, the law will control. However, it does not specifically address post-termination obligations other than implying that legal requirements will be adhered to.
+
+Document [2] discusses the requirement for non-binding mediation and the applicability of California and federal laws to provisions restricting venue, but it does not directly address post-termination obligations.
+
+Given the information provided, we can conclude that a party is indeed subject to obligations after the termination of the contract, at least in terms of covenants not to compete as mentioned in documents [0] and [1]. However, the documents do not provide a comprehensive list of all possible post-termination commitments such as payment, transfer of IP, wind-down, last-buy, or simila"
+59,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,1.0,1.0,1.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents outline the obligations of the parties, confidentiality, and termination clauses, but they do not mention a warranty against defects or errors in technology, products, or services. Specifically, none of the documents (0, 1, 2, 3, 4) discuss warranties or durations of warranties. Therefore, it is not possible to determine the duration of any warranty against defects or errors based on the information provided in the documents."
+60,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.26666666666666666,0.6,1.0,1,0.102803738317757,0.102803738317757,1.0,1,0,0,"The documents provided do not explicitly state that a party is restricted from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract. 
+
+In fact, the documents focus on the obligations of the parties under the agreement, such as following up on developments and working together (Document [3] and [4]), and the process for early termination (Document [0]). They also discuss the scope of HPIL ET's activities in the energy sector (Documents [1] and [2]) and confidentiality (Document [4]).
+
+However, Document [0] mentions that ""The Parties assume no liability to any third party because of any reliance on the representations, warranties and agreements contained in this Agreement."" This suggests that the parties are not assuming liability for certain matters, but it does not explicitly restrict a party from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim for unrelated matters.
+
+Therefore, based on the information provided in the documents, it cannot be determined that a party is restricted from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract. The documents are missing some of the information required to answer the question."
+61,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.004464285714285714,0.004464285714285714,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The question seems to be asking about exceptions or carveouts to Non-Compete, Exclusivity, and No-Solicit of Customers, but none of the provided context documents mention these terms. The documents discuss topics such as contract termination, marketing fees, inventory reporting, and contract formation, but do not address Non-Compete, Exclusivity, or No-Solicit of Customers. Therefore, I do not have enough information to provide an answer to the question."
+62,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.6666666666666666,0.26666666666666666,0.4,0,0.0,0.0,1.0,1,0,0,"The documents provided do not explicitly mention the sharing of revenue or profit between the parties for any technology, goods, or services. However, they do mention ""Additional Charges"" and payment for ""Excepted Services"" and ""Maintenance Services"", which implies that one party (SEV) is providing services to the other party (DCL) and is being paid for those services.
+
+According to document [2], ""The Additional Charges shall be levied at the rates stated in Schedule One"" and ""Payment for Excepted Services... shall be payable in full only at the discretion of DCL"". This suggests that DCL is paying SEV for services, but it does not imply a sharing of revenue or profit.
+
+Additionally, document [3] mentions an ""Additional Charge"" for vehicles operating in excess of 25,000 miles per annum, which is ""calculated on a pro-rata basis, levied annually on the first day of each DCL Financial Year"". This also implies a payment from DCL to SEV, but not a sharing of revenue or profit.
+
+Therefore, based on the information provided in the documents, it appears that one party (DCL) is paying the other party (SEV) for services, but there is no explicit mention of sharing revenue or profit. The documents are missing some of the information required to answer the question, as they do not provide a comprehensive overview of the financial arrangements between the parties."
+63,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.25,0.16666666666666666,0.6666666666666666,1,0.011904761904761904,0.011904761904761904,1.0,1,0,0,"According to the context documents, the answer is yes, a party can terminate this contract without cause. 
+
+As stated in document [1], ""Either party may terminate this Agreement without cause at any time effective upon thirty (30) days' written notice."" This is further reinforced by document [3], which also states, ""Either party may terminate this Agreement without cause at any time effective upon thirty (30) days' written notice.""
+
+Therefore, it is clear that either party can terminate the contract without cause, solely by giving a 30-day written notice and allowing the waiting period to expire."
+64,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.46153846153846156,0.23076923076923078,0.5,0,0.0763888888888889,0.013888888888888888,0.18181818181818182,0,0,0,"To answer this question, we need to examine the context documents for any mention of a license grant to a licensee (including sublicensor) and their affiliates.
+
+In document [1], Section 3.2 mentions a grant back by PURCHASER to SONY, where PURCHASER grants to SONY a worldwide, non-exclusive, fully paid-up, royalty-free license under the Transferred Patents. However, this section does not explicitly mention affiliates of the licensee/sublicensor.
+
+In document [0], Section 5.5 discusses the use of Mask Works by PURCHASER, but it does not mention affiliates of the licensee/sublicensor.
+
+In document [1], Section 3.3 states that ""Except as expressly set out in this IP Agreement and the Asset Purchase Agreement, neither party grants to the other Party, and each Party acknowledges and agrees that the other Party has not granted to it, any other license explicitly or implicitly under any Intellectual Property nor has either party made any transfer or assignment to the other Party of any Intellectual Property or intellectual property rights."" This section implies that any license grants are limited to what is explicitly stated in the agreements, and there is no explicit mention of affiliates of the licensee/sublicensor.
+
+Given the information provided in the context documents, it appears that the contract does contain a license grant, but it does not explicitly mention a license grant to the affiliates of the licensee/sublicensor. Therefore, based on the information available, the an"
+65,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.4666666666666667,0.2,0.42857142857142855,1,0.03755868544600939,0.03755868544600939,1.0,1,0,0,"The documents provided do not explicitly mention a clause granting a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. 
+
+Document [1] discusses the grant of rights by North to Company for the use of North's Likeness and Endorsement in connection with the Endorsed Product, but it does not mention any right of first refusal, right of first offer, or right of first negotiation. 
+
+Documents [2] and [3] mention the retention of rights by North that are not specifically granted or licensed to Company, and the potential for North to license these rights to third parties, but they do not specify any right of first refusal, right of first offer, or right of first negotiation for either party.
+
+Therefore, based on the information provided in the documents, the answer to the question is that there is no explicit mention of such a clause. The documents are missing some of the information required to answer the question."
+66,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3333333333333333,0.2,0.6,0,0.007936507936507936,0.007936507936507936,1.0,1,0,0,"According to the context documents, the answer is yes. 
+
+In document [0], it is stated: ""If Licensor enters, or has entered, into an agreement or series of agreements... with a third party for the distribution and exhibition of Licensed Programs in the U.S. or the Territory on a VOD basis, or any other basis... on terms... that are more favourable than those contained in this Agreement, then Rogers has the right to incorporate, or substitute, as the case may be, such term or terms into this Agreement...""
+
+This indicates that if a third party receives more favorable terms, Rogers (the buyer) is entitled to have those same terms incorporated into their agreement. This is often referred to as a ""most favored nation"" clause, which is also explicitly mentioned in document [3] as ""21. MOST FAVOURED NATIONS"". 
+
+Therefore, the contract does contain a clause that entitles the buyer (Rogers) to the same terms as any third party that receives more favorable terms."
+67,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.03546099290780142,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents do not mention ""Non-Compete"", ""Exclusivity"", or ""No-Solicit of Customers"" at all, let alone any exceptions or carveouts related to these terms. Therefore, it is not possible to provide an answer based on the information given in the documents."
+68,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.06521739130434782,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents do not mention anything about the right to audit the books, records, or physical locations of the counterparty to ensure compliance with the contract. They discuss access to the eGain System, confidentiality of passwords, termination of the Agreement, proprietary rights, and limitations on the use of trademarks, but they do not address the issue of auditing. Therefore, based on the information provided, it is not possible to determine if a party has the right to audit the counterparty."
+69,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.3333333333333333,0.0,1,0.0,1.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents appear to be related to a Joint Filing Agreement, specifically for the purpose of filing a statement on Schedule 13G with respect to the equity securities of Q Biomed, Inc. under the Securities Exchange Act of 1934. They discuss the agreement among the undersigned parties to file jointly, the responsibility of each party for the accuracy of their own information, and the execution of the agreement in counterparts. However, there is no mention of licensing or sale of technology/goods/services, nor any clause regarding entitlement to better terms if a third party receives them. Therefore, based on the information provided in the documents, it is not possible to determine if such a clause exists."
+70,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.8571428571428571,0.14285714285714285,0.16666666666666666,1,0.024054982817869417,0.020618556701030927,0.8571428571428571,1,0,0,"The documents provided do not explicitly state that a party is restricted from contracting or soliciting customers or partners of the counterparty. However, Section 8.2 of document [2] states that ""Any Confidential Information received from the other party shall not be disclosed or used for any purpose other than as provided or anticipated under this Agreement."" This implies that the parties are restricted from using confidential information, which may include customer or partner information, for purposes outside of the agreement.
+
+Additionally, Section 8.3 of document [2] states that ""The confidentiality and non-use obligations contained in this Agreement shall continue for the duration of this Agreement and for a period of 5 (five) years after termination or expiry of this Agreement..."". This suggests that the restriction on using confidential information, including potentially customer or partner information, continues for a period of 5 years after the contract ends.
+
+However, there is no explicit restriction on contracting or soliciting customers or partners of the counterparty. Therefore, based on the provided documents, it can be said that while there are restrictions on using confidential information, there is no clear restriction on contracting or soliciting customers or partners of the counterparty.
+
+The documents are missing some of the information required to answer the question, as they do not explicitly address the issue of soliciting or contracting with the coun"
+71,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.15384615384615385,0.15384615384615385,1.0,0,0.06976744186046512,0.031007751937984496,0.4444444444444444,1,0,0,"To answer this question, I need to examine the provided context documents for any mention of liquidated damages or termination fees.
+
+In document [0], it mentions that XIMAGE's total liability to MORPHO for any damages suffered in connection with, or arising out of, the Agreement is limited to an amount not to exceed the basic Monthly Maintenance Charges for a sixty (60) day term under this Agreement. This can be seen as a limitation of liability rather than a liquidated damages clause, as it limits the amount of damages XIMAGE can be liable for, rather than specifying a fixed amount to be paid in the event of a breach.
+
+In document [1], it discusses the termination of the rights granted to MORPHO to use the Software by license or otherwise for any material breach of Section 7, but it does not mention any specific termination fee or liquidated damages that would be awarded to either party upon termination.
+
+The other documents ([2], [3], and [4]) do not mention liquidated damages or termination fees either. They discuss other aspects of the agreement, such as the provision of technical reports, on-site visits, and the terms for additional services, but do not address the issue of liquidated damages or termination fees.
+
+Given the information provided in the context documents, it appears that the contract does contain a clause that limits XIMAGE's liability, but it does not explicitly mention a liquidated damages clause or a termination fee that would be awarded to either part"
+72,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.38461538461538464,0.15384615384615385,0.4,1,0.017543859649122806,0.017543859649122806,1.0,1,0,0,"To answer this question, we need to examine the context documents for any language that suggests an exclusive dealing commitment between the Adviser and the Trust.
+
+From Document [1] and Document [3], we see the following statement: ""Nothing in this Agreement shall prevent the Adviser or any affiliated person of the Adviser from providing services for any other person, firm or corporation, including other investment companies; provided, however, that the Adviser expressly represents that it will undertake no activities which, in its judgment, will adversely affect the performance of its obligations to the Trust under this Agreement.""
+
+This statement indicates that the Adviser is not prohibited from providing services to other parties, which suggests that there is no exclusive dealing commitment with the Trust. The Adviser is allowed to work with other parties, as long as it does not adversely affect its obligations to the Trust.
+
+Additionally, there is no language in the documents that prohibits the Adviser from licensing or selling technology, goods, or services to third parties, or collaborating with other parties.
+
+Therefore, based on the information in the documents, the answer to the question is: No, there is no exclusive dealing commitment with the counterparty."
+73,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.45454545454545453,0.18181818181818182,0.4,1,0.02054794520547945,0.02054794520547945,1.0,1,0,0,"The documents provided do not explicitly state that the license grant is irrevocable or perpetual. 
+
+In Section 2.6 of document [0], it mentions that ""Sponsorship Benefits"" include ""the license granted in Section 6.1"", but it does not specify the terms of this license. Similarly, in Section 2.7, it mentions the ""license of, and rights with respect to, Allied Marks granted in Section 5"", but again, it does not provide information on whether this license is irrevocable or perpetual.
+
+Since the documents do not provide enough information to determine if the license grant is irrevocable or perpetual, the answer to the question would be: 
+
+The documents are missing some of the information required to answer the question."
+74,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,1.0,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between CAPSUGEL and CARDAX, including dispute resolution, recall and seizure, freedom to operate, agency, and auditing. However, none of the documents mention a requirement on a party not to disparage the counterparty. Therefore, based on the information provided, it is not possible to determine if such a requirement exists."
+75,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. There is no mention of source code escrow or any requirement for a party to deposit its source code into escrow with a third party in any of the provided context documents. The documents primarily discuss confidentiality, trade secrets, and reporting of violations, but do not address the topic of source code escrow."
+76,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.011764705882352941,0.011764705882352941,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents do not mention anything about a warranty against defects or errors in technology, products, or services. They discuss insurance, indemnification, liability, and capital contributions, but do not provide information about warranties. Therefore, it is not possible to determine the duration of any warranty against defects or errors based on the given documents."
+77,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3,0.3,1.0,1,0.00684931506849315,0.00684931506849315,1.0,1,0,0,"The documents do not explicitly mention the name of the contract. Although document [3] mentions ""this Agreement"", it does not provide a specific name for the contract. Similarly, document [4] refers to ""this Agreement"" and provides a source (ALLIED ESPORTS ENTERTAINMENT, INC., 8-K, 8/15/2019), but it does not mention the name of the contract.
+
+Therefore, based on the information provided in the documents, I conclude that ""The documents are missing some of the information required to answer the question."""
+78,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2,0.06666666666666667,0.3333333333333333,1,0.004464285714285714,0.004464285714285714,1.0,1,0,0,"The documents do not explicitly state that a party is restricted from contracting or soliciting customers or partners of the counterparty. However, document [3] provides some information related to this question. It states that the ""Manufacturer understands and agrees that Subcontractor may itself use, manufacture or sell similar products as provided to Manufacturer hereunder to third parties and affiliates, some of whom may be competitors of Manufacturer..."". This implies that the Subcontractor is allowed to work with third parties that may be competitors of the Manufacturer, but it does not explicitly address the issue of soliciting customers or partners of the counterparty.
+
+Additionally, document [3] also mentions that the Subcontractor must not ""use or disclose any Confidential Information of Manufacturer"" and must not ""infringe any of Manufacturer's patents or other intellectual property rights"". This suggests that there are some restrictions on the Subcontractor's actions, but it does not directly address the issue of contracting or soliciting customers or partners of the counterparty.
+
+Since the documents do not provide a clear answer to the question, the answer would be: The documents are missing some of the information required to answer the question."
+79,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.26666666666666666,0.13333333333333333,0.5,0,0.07647058823529412,0.08235294117647059,1.0,1,0,0,"The documents provided do not explicitly address the issue of contesting the validity of a counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract. 
+
+The documents primarily discuss the relationship between the Venture and its Members, including liability, indemnification, and breach of agreement. For example, Document [1] states that ""Each Member will be indemnified and held harmless by the Venture from any and all harm or damages of any nature relating to the Member's participation in Venture affairs except where such harm or damages results from gross negligence or willful misconduct on the part of the Member."" This suggests that Members are protected from certain types of claims, but it does not address the specific issue of contesting intellectual property ownership or bringing unrelated claims.
+
+Similarly, Document [4] provides that ""No Member will be liable to the Venture or to any other Member for any error in judgment or any act or failure to act where made in good faith."" This further supports the idea that Members have certain protections, but again, it does not directly address the question at hand.
+
+Since the documents do not provide explicit information on the issue of contesting intellectual property ownership or bringing unrelated claims, we cannot determine the answer to the question based on the information provided.
+
+The documents are missing some of the information required to ans"
+80,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.07692307692307693,0.07692307692307693,1.0,1,0.0670391061452514,0.01675977653631285,0.25,1,0,0,"The documents do not mention a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract. They do mention that ""Commissions are only paid each month if the amount owing exceeds $100 US"" (Document [3]), but this refers to the minimum amount of commission that must be owed to the reseller in order for a payment to be made, not a minimum purchase requirement. Therefore, based on the information provided, it appears that there is no minimum order size or purchase requirement specified in the contract."
+81,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between About and ebix, including data ownership, termination, and obligations. However, they do not mention any restrictions on soliciting or hiring employees and/or contractors from the counterparty, either during the contract or after it ends. Therefore, based on the information provided, it is not possible to determine if such restrictions exist."
+82,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.0,0.30303030303030304,1.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss amendments to an agreement between parties, including changes to production quantities, invoicing, and purchasing of ingredients and packaging materials. However, none of the documents mention a notice period for terminating a renewal. Therefore, I do not have enough information to provide an answer to the question."
+83,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.06818181818181818,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents discuss various aspects of the agreement between HPS and SHPS, including payment terms, new clients, reports, audit rights, indemnification, and confidentiality. However, they do not explicitly address the issue of contesting the validity of the counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract.
+
+The closest relevant section is the indemnification section (Document [2]), which discusses the parties' obligations to defend and hold harmless each other against certain claims. However, this section does not provide information on whether a party is restricted from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim for unrelated matters.
+
+Therefore, based on the provided documents, it is not possible to determine whether a party is restricted from contesting the validity of the counterparty's ownership of intellectual property or bringing a claim against the counterparty for matters unrelated to the contract."
+84,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.9940828402366864,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between Excite and NetGrocer, including dispute resolution, warranties, claims, termination, and trademark usage. However, none of the documents explicitly mention a requirement for a party not to disparage the counterparty. Therefore, based on the information provided, it is not possible to determine if such a requirement exists."
+85,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.16666666666666666,0.0,0.0,1,0.0,0.06870229007633588,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of an agreement between W2E and SHBV, including the manufacturing agreement, intellectual property rights, objectives, assignment, and technical calculations. However, none of the documents mention the requirement for a party to deposit its source code into escrow with a third party, or the release of such source code to the counterparty upon the occurrence of certain events such as bankruptcy or insolvency. Therefore, it is not possible to determine the answer to this question based on the provided documents."
+86,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2,0.06666666666666667,0.3333333333333333,1,0.07216494845360824,0.041237113402061855,0.5714285714285714,1,0,0,"To answer this question, we need to examine the context documents for any language that suggests an exclusive dealing commitment between Hyatt and Playa.
+
+Document [1] provides some insight into this. It states that if a third party approaches Playa with a proposed offer to manage an all-inclusive resort in the Market Area, and that third party has not already designated a brand, Playa agrees to provide notice to Hyatt and introduce Hyatt to that third party. This allows Hyatt the opportunity to negotiate for the chance to provide franchise rights to brand that resort as a Hyatt All-Inclusive Resort. However, this does not explicitly state that Playa is prohibited from working with other parties or that Hyatt has an exclusive right to provide such services.
+
+There is no language in the provided documents that explicitly prohibits Hyatt or Playa from collaborating or working with other parties, licensing or selling technology, goods, or services to third parties, or that requires them to procure all their requirements from each other exclusively. 
+
+Therefore, based on the information provided in the documents, it does not appear that there is an explicit exclusive dealing commitment between Hyatt and Playa as described in the question. The documents are missing some of the information required to definitively answer the question regarding an exclusive dealing commitment after the contract ends, but within the context provided, no such commitment is evident."
+87,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.4666666666666667,0.2,0.42857142857142855,0,0.043478260869565216,0.016304347826086956,0.375,1,0,0,"According to the context documents, the answer is yes, a party can terminate the contract without cause. 
+
+In document [1], it is stated: ""Either Party may terminate the Project and all commitments and obligations with respect thereto, subject to Section 8.3 herein, upon thirty (30) days written notice to the other Party."" This implies that either party can terminate the project (and the contract) by providing a 30-day written notice, without needing to specify a reason.
+
+Similarly, in document [2], it is stated: ""This Agreement may be terminated by ArTara upon thirty (30) days prior written notice to University."" and ""8.2 Termination by Either Party. Either Party may terminate the Project and all commitments and obligations with respect thereto, subject to Section 8.3 herein, upon thirty (30) days written notice to the other Party."" This further supports the idea that either party can terminate the contract without cause, simply by providing a 30-day written notice.
+
+Therefore, based on the information provided in the context documents, it appears that a party can terminate the contract without cause, solely by giving a notice and allowing a waiting period to expire."
+88,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,1.0,0.38461538461538464,0.38461538461538464,1,0.125,0.125,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents appear to be signature pages from a contract, but none of them mention the name of the contract. They do mention the parties involved, such as ATHENE HOLDING LTD, ATHENE LIFE RE LTD, and ATHENE ANNUITY AND LIFE COMPANY, and the date of execution (July 6, 2020), but the actual name of the contract is not specified in any of the documents."
+89,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.13333333333333333,0.13333333333333333,1.0,0,0.06666666666666667,0.06666666666666667,1.0,1,0,0,"To answer this question, we need to identify the parties involved in the contract. 
+
+From document [4], we can see that the parties involved are the ""Principal"" and the ""Distributor"". The document states: ""2. The Principal grants Distributor non- exclusive rights to sell these products within the countries of Romania (the ""Territory""), which may be amended by mutual written agreement.""
+
+Additionally, document [0] mentions ""neither party, their heirs nor successors"", which also implies that there are at least two parties involved in the contract.
+
+Therefore, the two or more parties who signed the contract are the Principal and the Distributor."
+90,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.3333333333333333,0.3333333333333333,1.0,1,0.03125,0.03125,1.0,1,0,0,"The documents do not explicitly mention the names of the two or more parties who signed the contract. However, they do refer to the parties as ""the Parties"" (Document [0]) and mention specific companies such as ""Cerus"" (Documents [0] and [4]) and ""Porex"" (Document [4]). 
+
+Based on this information, it can be inferred that Cerus and Porex are likely two of the parties involved in the contract, but the documents do not provide a comprehensive list of all parties involved. Therefore, the answer to the question is incomplete. 
+
+The documents are missing some of the information required to answer the question."
+91,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.5333333333333333,0.13333333333333333,0.25,1,0.8666666666666667,0.0761904761904762,0.07692307692307693,1,0,0,"To answer this question, we need to examine the context documents to see if there is any mention of a non-contracting party who is a beneficiary to some or all of the clauses in the contract.
+
+Upon reviewing the documents, we notice that Document [0] mentions ""PACIFICAP ENTERTAINMENT"" and ""THE HENRY FILM AND ENTERTAINMENT CORPORATION"" as the parties involved in the agreement. Document [4] also mentions these two parties, stating that they ""may have access to confidential and proprietary information"" and agree to preserve and protect the confidentiality of such information.
+
+However, there is no explicit mention of a non-contracting party who is a beneficiary to some or all of the clauses in the contract. The documents only discuss the rights and obligations of the two contracting parties, ""PACIFICAP ENTERTAINMENT"" and ""THE HENRY FILM AND ENTERTAINMENT CORPORATION"".
+
+Therefore, based on the information provided in the context documents, we cannot conclude that there is a non-contracting party who is a beneficiary to some or all of the clauses in the contract. The documents are missing some of the information required to answer the question."
+92,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2727272727272727,0.36363636363636365,1.0,0,0.002770083102493075,0.002770083102493075,1.0,1,0,0,"To answer the question about the name of the contract, I need to examine the provided context documents. 
+
+Looking at the documents, I see that document [0] mentions ""Agreement"" in its title, specifically ""Agreement. Section 9. Contribution."" This suggests that the document is part of an agreement, but it does not explicitly state the name of the contract. 
+
+Document [1] also refers to ""this letter and the Agent's acceptance shall constitute a binding agreement"" under Section 18, titled ""Entire Agreement."" This further supports that the documents are related to an agreement but does not provide a specific name for the contract.
+
+Documents [2], [3], and [4] do not provide any information about the name of the contract. They seem to refer to different aspects or sections of the agreement but do not mention a specific name.
+
+Given the information provided in the documents, there is no explicit mention of the contract's name. Therefore, I must conclude that the documents are missing some of the information required to answer the question."
+93,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2,0.13333333333333333,0.6666666666666666,1,0.01764705882352941,0.01764705882352941,1.0,1,0,0,"The documents do not explicitly state that a party is restricted from contracting or soliciting customers or partners of the counterparty. However, document [4] mentions that ""Any and all businesses, ventures or transactions with any appearance of conflict of interest must be fully disclosed to all other Members."" This implies that there may be some restrictions or requirements for transparency when dealing with potential conflicts of interest, but it does not directly address the issue of soliciting customers or partners.
+
+Additionally, document [4] also states that ""Neither the Venture nor any other Member will have any rights to the assets, income or profits of any such business, venture or transaction."" This suggests that the Venture and its Members do not have any claim to the assets or profits of other businesses, but it does not explicitly prohibit soliciting customers or partners.
+
+Since the documents do not provide a clear answer to the question, I must conclude that: The documents are missing some of the information required to answer the question."
+94,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,0.42424242424242425,0.15151515151515152,0.2857142857142857,1,0,0,"The documents provided do not mention a license grant to a licensee (including sublicensor) and the affiliates of such licensee/sublicensor. The documents appear to discuss amendments to an agreement between Heritage and Premier regarding the production and purchase of products, including the terms of production, pricing, and billing. However, there is no mention of a license grant or any terms related to licensing.
+
+Therefore, based on the information provided in the documents, the answer to the question is that there is no indication of a license grant to a licensee (including sublicensor) and the affiliates of such licensee/sublicensor.
+
+The documents are missing some of the information required to answer the question."
+95,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.15384615384615385,0.07692307692307693,0.5,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents discuss various aspects of the agreement, such as license grants, modifications, removal of titles, profit participation, and representations about the titles and materials. However, none of the documents explicitly mention a requirement on a party not to disparage the counterparty. Document [4] mentions that the titles and materials will not be ""slanderous or libelous"", but this is a representation about the content of the titles and materials, not a general requirement on the parties' behavior towards each other. Therefore, based on the provided documents, it is not possible to determine if there is a requirement on a party not to disparage the counterparty."
+96,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.09090909090909091,0.09090909090909091,1.0,1,0.0014577259475218659,0.0014577259475218659,1.0,1,0,0,"To answer this question, I will look at the context documents provided. 
+
+In document [0], it is stated that ""This Agreement shall be construed in accordance with, and governed by, the laws of the State of Georgia, without regard to the conflicts of law rules of such state."" This indicates that the law of the State of Georgia governs the interpretation of the contract.
+
+Therefore, the answer to the question is: the State of Georgia."
+97,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2727272727272727,0.09090909090909091,0.3333333333333333,1,0.05405405405405406,0.02702702702702703,0.5,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The question seems to be asking about exceptions or carveouts to Non-Compete, Exclusivity, and No-Solicit of Customers, but the provided documents do not explicitly mention these terms or their exceptions. 
+
+Although document [4] mentions that ""Distributor will not carry any competitive products without Tripath's consent, which shall not be unreasonable"" (Section 4.2), this is related to non-compete, but it does not provide a comprehensive list of exceptions or carveouts. 
+
+Therefore, I cannot provide a complete answer to the question based on the given documents."
+98,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.07142857142857142,0.07142857142857142,1.0,1,0.0028735632183908046,0.0028735632183908046,1.0,1,0,0,"The state whose law governs the interpretation of the contract is New York. This is stated in document [0]: ""This Agreement shall be governed by and construed in accordance with the laws of the State of New York applicable to agreements made and to be performed in said State..."""
+99,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,1.0,0.0,0.0,1,0.0,0.0,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided documents discuss various aspects of an agreement between parties, including the distribution of common stock, payment of fees, and termination conditions. However, none of the documents mention a clause granting an ""enterprise,"" ""all you can eat,"" or unlimited usage license. Without further information, it is impossible to determine if such a clause exists."

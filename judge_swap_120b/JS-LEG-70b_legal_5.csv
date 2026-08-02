@@ -1,0 +1,28 @@
+idx,domain,exp_id,generator,judge,our_relevance,our_utilization,our_completeness,our_adherence,ref_relevance,ref_utilization,ref_completeness,ref_adherence,dropped_keys,salvaged,answer
+0,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.875,0.5,0.5714285714285714,1,0.010810810810810811,0.005405405405405406,0.5,1,1,0,"The documents do not mention a fee increase or consent requirement based on the volume or threshold of use of the product/services. The fee charges mentioned in the documents are related to specific circumstances such as:
+
+* Failure due to operator errors (Document [0] and implied in [1])
+* Failure to maintain the Software at the updated version or release provided by Garman (Documents [0], [1], and [2])
+* Material modification of the Software by Sparkling (Document [2])
+* Transfer of the Software to a different networking environment or hardware configuration without Garman's prior written consent (Documents [2] and [4])
+* Failure of the hardware or the operating system not caused by Garman or the Software (Document [4])
+
+There is no mention of a threshold for the use of the product/services that would trigger a fee increase or require consent. Therefore, based on the information provided in the documents, the answer to the question is that there is no indication of a fee increase or consent requirement based on the volume or threshold of use."
+1,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,1.0,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question.
+
+The provided context documents discuss various aspects of an agreement between Emerald and a Contractor, including the Contractor's obligations, confidentiality, and permitted business activities. However, none of the documents mention a clause granting a right of first refusal, right of first offer, or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products, or services. Therefore, based on the information provided, it is not possible to determine if such a clause exists."
+2,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.2,0.2,1.0,1,0.0,0.1414141414141414,1.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents discuss various aspects of the agreement between the Company and the CONSULTANT, including representations and warranties, termination, and the relationship between the parties. However, they do not explicitly mention the duration of any warranty against defects or errors in technology, products, or services provided under the contract.
+
+While document [0] and [1] mention that CONSULTANT represents and warrants that the Services and any work product thereof are the original work of CONSULTANT and do not infringe upon any third-party rights, they do not specify the duration of this warranty. Similarly, the other documents do not provide information on the duration of any warranty against defects or errors. Therefore, it is not possible to determine the duration of such a warranty based on the provided context documents."
+3,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.0,0.0,0.0,1,1.0,0.0,0.0,1,0,0,"The documents are missing some of the information required to answer the question. 
+
+The provided context documents do not mention intellectual property or joint/shared ownership of it. They discuss topics such as termination of the agreement, non-exclusivity, requests for transaction information, and definitions of terms like ""Shares"" and ""Shareholder"", but do not provide any information about intellectual property ownership. Therefore, it is not possible to determine if there is a clause providing for joint or shared ownership of intellectual property between the parties to the contract based on the given documents."
+4,legal,JS-LEG-70b,meta-llama/llama-3.3-70b-instruct,meta-llama/llama-3.3-70b-instruct,0.23076923076923078,0.07692307692307693,0.3333333333333333,1,0.013888888888888888,0.006944444444444444,0.5,1,0,0,"According to the documents, there is a restriction on the ability of a party to compete with the counterparty. 
+
+In document [2], Section 3.2 mentions that the grant back by PURCHASER to SONY is ""Subject to SONY's compliance with the covenant not to compete in Section 8.3 of Asset Purchase Agreement"". This implies that there is a covenant not to compete in the Asset Purchase Agreement, which restricts SONY's ability to compete with PURCHASER in some way. However, the exact terms of this covenant are not specified in the provided documents.
+
+There is no information in the documents about restrictions on operating in a certain geography or business or technology sector. 
+
+Therefore, based on the information provided, we can conclude that there is a restriction on the ability of a party to compete with the counterparty, but the details of this restriction are not fully specified in the documents."
