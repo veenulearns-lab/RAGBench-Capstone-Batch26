@@ -1,0 +1,2 @@
+﻿Experiment ID,Judge Model,Embedding Model,Chunking Strategy,Generator LLM,Retrieval Method,Re-ranking Method,Context Ordering,TRACe Context Relevance ↑,TRACe Context Utilization ↑,TRACe Completeness ↑,TRACe Adherence ↑,Valid_Judge_response,Context Relevance RMSE ↓,Context Utilization RMSE ↓,Completeness RMSE ↓,Adherence AUROC ↑,Status
+FIN-062,openai/gpt-oss-120b,bge-small-en-v1.5,sentence_4o1,llama-3.3-70b-versatile,dense,none,reverse,0.164,0.13,0.597,0.732,18/25,0.1863,0.1857,0.5974,0.4107,LOW JUDGE COVERAGE

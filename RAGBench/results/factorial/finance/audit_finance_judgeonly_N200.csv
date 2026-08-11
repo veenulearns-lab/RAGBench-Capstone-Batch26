@@ -1,0 +1,3 @@
+﻿exp_id,n_examples,judge_used,n_fallback,adherence,adherence_judgeonly,auroc,auroc_judgeonly
+FIN-031,200,0.895,21,0.8254,0.8503,0.448,0.4573
+FIN-075,200,0.885,23,0.7849,0.8032,0.4492,0.4665

@@ -1,0 +1,1 @@
+﻿Experiment ID,Judge Model,Embedding Model,Chunking Strategy,Generator LLM,Retrieval Method,Re-ranking Method,Context Ordering,TRACe Context Relevance ↑,TRACe Context Utilization ↑,TRACe Completeness ↑,TRACe Adherence ↑,Valid_Judge_response,Context Relevance RMSE ↓,Context Utilization RMSE ↓,Completeness RMSE ↓,Adherence AUROC ↑,Status
