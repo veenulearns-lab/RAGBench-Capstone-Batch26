@@ -1,0 +1,20 @@
+﻿Experiment ID,Judge Model,Embedding Model,Chunking Strategy,Generator LLM,Retrieval Method,Re-ranking Method,Context Ordering,TRACe Context Relevance ↑,TRACe Context Utilization ↑,TRACe Completeness ↑,TRACe Adherence ↑,Valid_Judge_response,Context Relevance RMSE ↓,Context Utilization RMSE ↓,Completeness RMSE ↓,Adherence AUROC ↑,Status
+CS-041,openai/gpt-oss-120b,bge-small-en-v1.5,sliding_5o2,llama-3.3-70b-versatile,dense,cross_encoder,reverse,0.3011,0.255,0.4765,0.674,14/25,0.2974,0.3063,0.6321,0.6433,LOW JUDGE COVERAGE
+CS-095,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,hybrid,cross_encoder,reverse,0.384,0.328,0.532,0.7809,18/25,0.398,0.3985,0.5543,0.6033,LOW JUDGE COVERAGE
+CS-048,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,dense,cross_encoder,sides,0.304,0.288,0.4367,0.7698,12/25,0.317,0.3294,0.5787,0.5833,LOW JUDGE COVERAGE
+CS-042,openai/gpt-oss-120b,bge-small-en-v1.5,sliding_5o2,llama-3.3-70b-versatile,dense,cross_encoder,sides,0.337,0.2841,0.5231,0.68,14/25,0.3175,0.3134,0.6268,0.5667,LOW JUDGE COVERAGE
+CS-047,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,dense,cross_encoder,reverse,0.288,0.28,0.3867,0.8191,11/25,0.3067,0.3352,0.6102,0.5667,LOW JUDGE COVERAGE
+CS-040,openai/gpt-oss-120b,bge-small-en-v1.5,sliding_5o2,llama-3.3-70b-versatile,dense,cross_encoder,forward,0.3248,0.287,0.5109,0.7033,14/25,0.3106,0.317,0.5491,0.5533,LOW JUDGE COVERAGE
+CS-033,openai/gpt-oss-120b,bge-small-en-v1.5,sentence_3o1,llama-3.3-70b-versatile,dense,none,sides,0.4824,0.1637,0.2949,0.4715,12/25,0.479,0.2388,0.5802,0.5267,LOW JUDGE COVERAGE
+CS-096,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,hybrid,cross_encoder,sides,0.344,0.288,0.5,0.6485,17/25,0.3624,0.3554,0.5978,0.4933,LOW JUDGE COVERAGE
+CS-046,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,dense,cross_encoder,forward,0.304,0.272,0.3867,0.7486,11/25,0.3254,0.3256,0.6236,0.49,LOW JUDGE COVERAGE
+CS-044,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,dense,none,reverse,0.36,0.264,0.224,0.9228,2/25,0.4337,0.2832,0.5856,0.4867,LOW JUDGE COVERAGE
+CS-038,openai/gpt-oss-120b,bge-small-en-v1.5,sliding_5o2,llama-3.3-70b-versatile,dense,none,reverse,0.4032,0.3361,0.4216,0.864,3/25,0.3991,0.3618,0.5347,0.48,LOW JUDGE COVERAGE
+CS-094,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,hybrid,cross_encoder,forward,0.336,0.28,0.4787,0.6832,16/25,0.3681,0.3587,0.6135,0.46,LOW JUDGE COVERAGE
+CS-043,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,dense,none,forward,0.36,0.36,0.472,0.96,2/25,0.4337,0.3917,0.5493,0.4333,LOW JUDGE COVERAGE
+CS-045,openai/gpt-oss-120b,bge-small-en-v1.5,fixed_120w,llama-3.3-70b-versatile,dense,none,sides,0.36,0.36,0.472,0.96,2/25,0.4337,0.3917,0.5493,0.4333,LOW JUDGE COVERAGE
+CS-034,openai/gpt-oss-120b,bge-small-en-v1.5,sentence_3o1,llama-3.3-70b-versatile,dense,cross_encoder,forward,0.4192,0.3851,0.5777,0.8237,9/25,0.4401,0.4301,0.5087,0.4133,LOW JUDGE COVERAGE
+CS-037,openai/gpt-oss-120b,bge-small-en-v1.5,sliding_5o2,llama-3.3-70b-versatile,dense,none,forward,0.4065,0.4004,0.5292,0.92,3/25,0.4,0.4219,0.4348,0.4,LOW JUDGE COVERAGE
+CS-039,openai/gpt-oss-120b,bge-small-en-v1.5,sliding_5o2,llama-3.3-70b-versatile,dense,none,sides,0.4065,0.4004,0.5292,0.92,3/25,0.4,0.4219,0.4348,0.4,LOW JUDGE COVERAGE
+CS-036,openai/gpt-oss-120b,bge-small-en-v1.5,sentence_3o1,llama-3.3-70b-versatile,dense,cross_encoder,sides,0.4274,0.3488,0.4884,0.7709,9/25,0.4456,0.4008,0.5721,0.3667,LOW JUDGE COVERAGE
+CS-035,openai/gpt-oss-120b,bge-small-en-v1.5,sentence_3o1,llama-3.3-70b-versatile,dense,cross_encoder,reverse,0.4328,0.2947,0.3568,0.8067,8/25,0.4498,0.3568,0.6349,0.33,LOW JUDGE COVERAGE
